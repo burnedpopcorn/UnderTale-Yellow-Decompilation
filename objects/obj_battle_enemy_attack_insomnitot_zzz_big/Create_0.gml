@@ -1,0 +1,13 @@
+damage_number = scr_determine_damage_number_enemy("insomnitot a", "insomnitot b", "insomnitot c");
+starting_point_x = x;
+starting_point_y = y;
+draw_position_x = starting_point_x;
+draw_position_y = starting_point_y;
+y_increase = 4;
+image_speed = 0;
+image_index = 1;
+sign_modifier = -1;
+time_elapsed = 4;
+time_max = 16;
+time_increase = 1;
+max_rise = 10;

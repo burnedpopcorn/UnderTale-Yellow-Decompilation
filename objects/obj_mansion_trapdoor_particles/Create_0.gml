@@ -1,0 +1,22 @@
+var xp, yp;
+
+global.ps = part_system_create();
+part_system_depth(global.ps, -1);
+global.pt_pt_dust = part_type_create();
+part_type_shape(global.pt_pt_dust, 0);
+part_type_size(global.pt_pt_dust, 1, 2, 0, 0);
+part_type_scale(global.pt_pt_dust, 1, 1);
+part_type_orientation(global.pt_pt_dust, 0, 0, 0, 0, 0);
+part_type_color3(global.pt_pt_dust, c_white, c_white, c_white);
+part_type_alpha3(global.pt_pt_dust, 0.1, 1, 0);
+part_type_blend(global.pt_pt_dust, 0);
+part_type_life(global.pt_pt_dust, 60, 60);
+part_type_speed(global.pt_pt_dust, 1, 1, 0, 0);
+part_type_direction(global.pt_pt_dust, 40, 140, 0, 5);
+part_type_gravity(global.pt_pt_dust, 0, 0);
+global.pe_pt_dust = part_emitter_create(global.ps);
+xp = x;
+yp = y;
+part_emitter_region(global.ps, global.pe_pt_dust, xp - 30, xp + 30, yp - 30, yp + 30, 0, 0);
+part_emitter_burst(global.ps, global.pe_pt_dust, global.pt_pt_dust, 14);
+alarm[0] = 90;

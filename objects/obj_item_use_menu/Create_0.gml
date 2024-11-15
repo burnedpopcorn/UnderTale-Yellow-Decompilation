@@ -1,0 +1,10 @@
+xs = 1;
+ys = 1;
+sizex = 1;
+sizey = 1;
+enlarge = 0;
+image_index = 0;
+image_speed = 0;
+selection = 1;
+item_selected = 1;
+audio_play_sound(snd_mainmenu_select, 1, 0);

@@ -1,0 +1,9 @@
+starlo_take_aim_shots_current = 0;
+starlo_take_aim_shots_max = 5;
+starlo_take_aim_interval = 40;
+alarm[0] = 18;
+obj_heart_battle_fighting_red.walk_speed *= 0.3;
+alarm[1] = 5;
+starlo_take_aim_overlay_alpha = 0;
+starlo_take_aim_fade_out = false;
+shader_alpha = shader_get_uniform(sh_grayscale, "color_alpha");

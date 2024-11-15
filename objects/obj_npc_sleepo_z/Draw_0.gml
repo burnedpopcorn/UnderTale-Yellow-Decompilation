@@ -1,0 +1,16 @@
+draw_set_alpha(draw_alpha);
+draw_set_halign(fa_center);
+draw_set_color(c_black);
+draw_set_font(fnt_main);
+draw_text(x - 1, y - 1, string_hash_to_newline("Z"));
+draw_text(x - 1, y, string_hash_to_newline("Z"));
+draw_text(x - 1, y + 1, string_hash_to_newline("Z"));
+draw_text(x + 1, y - 1, string_hash_to_newline("Z"));
+draw_text(x + 1, y, string_hash_to_newline("Z"));
+draw_text(x + 1, y + 1, string_hash_to_newline("Z"));
+draw_text(x, y + 1, string_hash_to_newline("Z"));
+draw_text(x, y - 1, string_hash_to_newline("Z"));
+draw_set_color(c_white);
+draw_text(x, y, string_hash_to_newline("Z"));
+draw_set_alpha(1);
+draw_set_halign(fa_left);

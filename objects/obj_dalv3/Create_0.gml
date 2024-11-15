@@ -1,0 +1,16 @@
+script_execute(scr_depth, 0, 0, 0, 0, 0);
+direction = 270;
+waiter = 1;
+fadein = false;
+fadeout = false;
+fade_kill = false;
+spritelock = true;
+npc_walking = false;
+going_through_door = false;
+no_loop_autowalk = false;
+no_loop_destination_dalv = false;
+no_loop_sound = false;
+obj_pl.player_mode = "Normal";
+obj_pl.image_alpha = 1;
+x = 160;
+y = 130;

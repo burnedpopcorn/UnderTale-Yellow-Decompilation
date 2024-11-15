@@ -1,0 +1,10 @@
+bgm = -4;
+current_song = -4;
+dynamic_song = -4;
+volume = 1;
+music_position = 0;
+audio_other_fade = false;
+audio_to_fade = 0;
+audio_fade_length = 0;
+global.radio_restart = false;
+global.radio_pause = false;

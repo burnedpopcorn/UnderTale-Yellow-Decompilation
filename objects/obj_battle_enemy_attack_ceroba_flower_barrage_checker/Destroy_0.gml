@@ -1,0 +1,9 @@
+instance_destroy(obj_battle_enemy_attack_ceroba_flower_barrage_bullet);
+instance_destroy(obj_battle_enemy_attack_ceroba_fire_circle_explosion);
+instance_destroy(obj_battle_enemy_attack_ceroba_flower_barrage_bullet_flipped);
+instance_destroy(obj_battle_enemy_attack_ceroba_flower_barrage_bullet);
+instance_destroy(obj_battle_enemy_attack_ceroba_flower_barrage_black_hole);
+instance_destroy(obj_battle_enemy_attack_ceroba_flower_barrage_black_hole_dmg);
+
+with (obj_dialogue_box_battle_transformation_any)
+    event_user(0);

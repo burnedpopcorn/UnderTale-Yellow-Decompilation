@@ -1,0 +1,16 @@
+bullet_number[0] = 5;
+bullet_number[1] = 6;
+bullet_speed[0] = 4;
+bullet_speed[1] = 6.5;
+bullet_spread = 11;
+current_position = 1;
+timer = 0;
+image_alpha = 0;
+image_speed = 0.2;
+alarm[1] = 70;
+bullet_speed_alt = 6;
+bullet_spread_alt = 10;
+bullet_spread_alt_max = 50;
+bullet_spread_inc = true;
+bullet_spread_amount = 14;
+bullet_pattern_current = 1;

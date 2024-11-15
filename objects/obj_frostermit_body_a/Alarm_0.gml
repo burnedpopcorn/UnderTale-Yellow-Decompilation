@@ -1,0 +1,13 @@
+getting_out = false;
+sprite_index = spr_frostermit_body_crab;
+image_speed = 0;
+image_index = 0;
+instance_create(x, y, obj_frostermit_head_a);
+instance_create(x, y, obj_frostermit_claw_left_a);
+instance_create(x, y, obj_frostermit_claw_right_a);
+instance_create(x, y, obj_frostermit_leg_right_a);
+instance_create(x, y, obj_frostermit_leg_right_2_a);
+instance_create(x, y, obj_frostermit_leg_right_3_a);
+global.enemy_mode_previous = global.enemy_mode;
+global.enemy_mode = 1;
+global.enemy_attacking = true;

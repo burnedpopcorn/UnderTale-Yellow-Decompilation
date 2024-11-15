@@ -1,0 +1,28 @@
+var xscale_min_dec, xscale_min_val;
+
+pixel_dim = 2;
+x = 320;
+y = 0;
+default_x = x;
+default_y = y;
+draw_left = bbox_left;
+draw_top = bbox_top;
+xscale_min_dec = 64;
+xscale_min_val = sprite_width - (2 * xscale_min_dec);
+xscale_min = xscale_min_val / sprite_width;
+darkness_max = 0.7;
+angle_default = 0;
+angle_increase = (pixel_dim * 180) / (sprite_height - 1);
+alpha_base = 1;
+scroll_horizontal = true;
+scroll_vertical = true;
+scroll_default_x = -pixel_dim;
+scroll_current_x = scroll_default_x;
+scroll_ind_inc_x = 3;
+scroll_ind_max_x = 1;
+scroll_ind_total_x = scroll_ind_max_x - scroll_ind_inc_x;
+scroll_default_y = -pixel_dim;
+scroll_current_y = scroll_default_y;
+scroll_ind_inc_y = 3;
+scroll_ind_max_y = 1;
+scroll_ind_total_y = scroll_ind_max_y - scroll_ind_inc_y;

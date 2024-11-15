@@ -1,0 +1,1 @@
+rope_damaged = false;

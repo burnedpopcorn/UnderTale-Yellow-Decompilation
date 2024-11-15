@@ -1,0 +1,10 @@
+message[0] = "* Escaped...";
+message_current = 0;
+message_end = 0;
+message_draw = "";
+increase = global.text_speed;
+hold = 0;
+message_length = string_length(message[message_current]);
+characters = message_length;
+moveable = true;
+script_execute(scr_generate_text_counters);

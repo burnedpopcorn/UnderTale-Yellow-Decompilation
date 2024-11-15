@@ -1,0 +1,1 @@
+collider_type = "blue";

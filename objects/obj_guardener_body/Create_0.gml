@@ -1,0 +1,15 @@
+layer_create(depth, "sequence_layer");
+idle_sequence = layer_sequence_create("sequence_layer", x, y, 2);
+guardener_stop_animating = false;
+damage_disjoint_count = 0;
+damage_disjoint_x = 0;
+damage_disjoint_timer = 2;
+damage_disjoint_timer_max = 2;
+no_loop_damage_disjoint_count = false;
+no_loop_create_clouds = false;
+starting_point_x = x;
+starting_point_y = y;
+low_hp_noloop = false;
+death_noloop = false;
+image_xscale = 2;
+image_yscale = 2;

@@ -1,0 +1,7 @@
+instance_destroy(obj_battle_enemy_attack_ceroba_diamond);
+instance_destroy(obj_battle_enemy_attack_ceroba_white_soul);
+instance_destroy(obj_battle_enemy_attack_ceroba_beam_vertical);
+instance_destroy(obj_battle_enemy_attack_ceroba_beam_horizontal);
+
+with (obj_dialogue_box_battle_transformation_any)
+    event_user(0);

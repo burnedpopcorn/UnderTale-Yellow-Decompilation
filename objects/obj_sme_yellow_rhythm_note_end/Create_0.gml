@@ -1,0 +1,10 @@
+box = 3154;
+image_speed = 0;
+image_index = global.id_store.image_index;
+image_alpha = 1;
+image_xscale = 1;
+image_yscale = 1;
+image_alpha_val = image_alpha;
+image_xscale_inc = 0.2;
+image_yscale_inc = 0.2;
+image_alpha_dec = 0.1;

@@ -1,0 +1,11 @@
+draw_sprite(spr_flier, 0, linear_x, linear_y);
+draw_sprite(spr_flier, 0, angular_x, angular_y);
+draw_sprite(spr_flier, 0, parabolic_x, parabolic_y);
+draw_set_font(global.font_type_text);
+draw_set_color(c_white);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_text(parabolic_x, default_text_top_y, string_hash_to_newline("3 Different Types of Movement"));
+draw_text(linear_x, default_text_bottom_y, string_hash_to_newline("Linear#Movement"));
+draw_text(parabolic_x, default_text_bottom_y, string_hash_to_newline("Parabolic#Movement"));
+draw_text(angular_x, default_text_bottom_y, string_hash_to_newline("Angular#Movement"));

@@ -1,0 +1,10 @@
+damage_number = scr_determine_damage_number_enemy("steam minifight", "void", "void");
+depth = -999;
+image_speed = 1;
+can_raise = false;
+image_alpha = 0;
+vspeed = 0;
+vspeed_max = 5;
+vspeed_inc = 0.2;
+image_xscale = 2;
+image_yscale = 2;

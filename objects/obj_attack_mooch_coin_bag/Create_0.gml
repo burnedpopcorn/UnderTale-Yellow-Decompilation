@@ -1,0 +1,9 @@
+damage_number = scr_determine_damage_number_enemy("mooch", "void", "void");
+image_alpha = 0;
+coin[0] = 0;
+coin_current = 1;
+attack_state = 0;
+move_speed = 4;
+alarm[0] = 30;
+move_delay = 5;
+depth = -50;

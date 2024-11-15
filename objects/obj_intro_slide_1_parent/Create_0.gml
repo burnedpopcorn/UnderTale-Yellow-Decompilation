@@ -1,0 +1,11 @@
+image_xscale = 1;
+image_yscale = 1;
+image_increase_rate = 0;
+image_max = 1;
+x_increase_rate = 0.2;
+x_max = x_increase_rate * 80;
+image_xscale_start = image_xscale;
+image_yscale_start = image_yscale;
+x_start = x;
+effects = false;
+alarm[0] = 20;

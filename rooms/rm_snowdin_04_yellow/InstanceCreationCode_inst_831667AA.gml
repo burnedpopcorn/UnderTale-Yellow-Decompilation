@@ -1,0 +1,9 @@
+message_length = 8;
+message[0] = "* This is a box.";
+message[1] = "* It is a stupid box.";
+message[2] = "* You can put items in it and#  they'll stay there.";
+message[3] = "* Until you take it out that is,#  then it's not there.";
+message[4] = "* And then there are more of#  these boxes later.";
+message[5] = "* You can use them to retrieve#  the stuff you put it this box.";
+message[6] = "* It's super dumb.";
+message[7] = "* Sincerely, a box hater.";

@@ -1,0 +1,7 @@
+instance_destroy(obj_flowey_battle_phase_2_paper_weakpoint);
+instance_destroy(obj_flowey_battle_phase_2_paper_thorn);
+instance_destroy(obj_flowey_battle_phase_2_vine_spinny);
+instance_destroy(obj_flowey_battle_phase_2_vine_thick);
+instance_destroy(obj_flowey_battle_phase_2_paper_ball_thrown);
+instance_destroy(obj_flowey_battle_phase_2_paper_ball);
+instance_destroy(obj_flowey_battle_phase_2_paper_plane);

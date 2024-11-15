@@ -1,0 +1,13 @@
+damage_number = scr_determine_damage_number_enemy("insomnitot a", "insomnitot b", "insomnitot c");
+image_alpha = 0;
+can_move = false;
+in_box = false;
+out_box = false;
+move_speed = 4;
+move_speed_max = irandom_range(5, 6);
+move_speed_increase = (move_speed_max - 4) / 10;
+x_list = ds_list_create();
+y_list = ds_list_create();
+in_box_list = ds_list_create();
+max_points_trail = 10;
+trail_sprite = spr_battle_enemy_attack_insomnitot_star_trail;

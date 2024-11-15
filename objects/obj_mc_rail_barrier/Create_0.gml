@@ -1,0 +1,1 @@
+minecart_direction = "down";

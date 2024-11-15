@@ -1,0 +1,14 @@
+image_alpha = 0;
+image_angle_n = 255;
+image_angle = image_angle_n;
+image_angle_d = image_angle_n;
+image_angle_d_speed = 5;
+image_angle_r = image_angle_n;
+image_angle_r_speed = 5;
+no_loop_t = false;
+state = "normal";
+sign_modifier = -1;
+time_elapsed = 0;
+time_max = 30;
+time_increase = 1;
+max_rise = 10;

@@ -1,0 +1,2 @@
+audio_stop_sound(snd_axis_flashlight);
+audio_falloff_set_model(audio_falloff_none);

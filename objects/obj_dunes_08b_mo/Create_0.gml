@@ -1,0 +1,13 @@
+event_inherited();
+can_walk = true;
+can_interact = false;
+up_sprite = spr_mo_up_yellow;
+right_sprite = spr_mo_right_yellow;
+down_sprite = spr_mo_down_yellow;
+left_sprite = spr_mo_left_yellow;
+up_sprite_idle = spr_mo_up_talk_yellow;
+right_sprite_idle = spr_mo_right_talk_yellow;
+down_sprite_idle = spr_mo_down_talk_yellow;
+left_sprite_idle = spr_mo_left_talk_yellow;
+actor_speed = 1;
+end_direction = "up";

@@ -1,0 +1,13 @@
+damage_number = scr_determine_damage_number_enemy("guardener", "void", "void");
+launch_sound = audio_play_sound(snd_guardener_arm_launched, 1, 0);
+launch_dir = "down";
+launch_speed = 10;
+arm_return = 0.5;
+scene = 0;
+cutscene_timer = 0;
+warning_col = 255;
+warning_draw = true;
+warning_count = 2;
+scene = -1;
+alarm[0] = 5;
+depth = obj_heart_battle_fighting_parent.depth + 1;

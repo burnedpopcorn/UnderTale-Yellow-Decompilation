@@ -1,0 +1,18 @@
+event_inherited();
+up_sprite = spr_asgore_walk_up;
+right_sprite = spr_asgore_walk_right;
+down_sprite = spr_asgore_walk_down;
+left_sprite = spr_asgore_walk_left;
+up_sprite_idle = spr_asgore_talking_up;
+right_sprite_idle = spr_asgore_talking_right;
+down_sprite_idle = spr_asgore_talking_down;
+left_sprite_idle = spr_asgore_talking_left;
+action_sprite = false;
+scene = 0;
+x_dest[0] = x;
+y_dest[0] = y;
+actor_speed = 3;
+axis_override = "nothing";
+end_direction = "left";
+walk_collider = -4;
+npc_voice_sfx = 267;

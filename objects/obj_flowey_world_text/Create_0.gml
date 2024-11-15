@@ -1,0 +1,17 @@
+message[0] = "";
+soundfont = 96;
+message_current = 0;
+message_draw = "";
+increase = 1;
+characters = 0;
+hold = 0;
+draw_alpha = 1;
+counter = 0;
+counter_max = 2;
+increase_message_count = false;
+auto_advance_timer = 45;
+global.dialogue_open = true;
+talker[0] = -4;
+talker_current = 0;
+skippable = false;
+keep_on_screen = false;

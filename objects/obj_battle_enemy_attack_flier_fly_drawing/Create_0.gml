@@ -1,0 +1,16 @@
+damage_number = scr_determine_damage_number_enemy("flier a", "flier b", "flier c");
+image_speed = 0;
+image_index = 0;
+image_alpha = 0;
+y_speed = 4;
+starting_position_x = x;
+starting_position_y = y;
+animation_disjoint_x = 0;
+animation_disjoint_y = 0;
+can_move = false;
+can_vanish = false;
+sign_modifier = -1;
+time_elapsed = 0;
+time_max = 60;
+time_increase = 1;
+max_rise = 0;

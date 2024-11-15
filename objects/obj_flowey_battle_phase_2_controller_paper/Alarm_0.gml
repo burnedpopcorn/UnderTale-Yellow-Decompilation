@@ -1,0 +1,4 @@
+obj_flowey_battle_final.stage_switch = 0;
+instance_destroy(obj_flowey_battle_paper_ball_spawner);
+instance_destroy(obj_flowey_battle_paper_ball_thrown_spawner);
+instance_destroy(obj_flowey_battle_paper_plane_spawner);

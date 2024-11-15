@@ -1,0 +1,1 @@
+instance_destroy(obj_room_controller_mansion_study);

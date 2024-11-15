@@ -1,0 +1,11 @@
+event_inherited();
+up_sprite = spr_blackjack_up_walk;
+right_sprite = spr_blackjack_down_walk;
+down_sprite = spr_blackjack_down_walk;
+left_sprite = spr_blackjack_down_walk;
+up_sprite_idle = spr_blackjack_up_walk;
+right_sprite_idle = spr_blackjack_down_talk;
+down_sprite_idle = spr_blackjack_down_talk;
+left_sprite_idle = spr_blackjack_down_talk;
+action_sprite = false;
+npc_voice_sfx = 391;

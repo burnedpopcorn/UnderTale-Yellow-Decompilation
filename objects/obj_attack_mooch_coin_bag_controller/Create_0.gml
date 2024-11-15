@@ -1,0 +1,9 @@
+coin_number = 3;
+coin_number_max = 9;
+coin_current = 1;
+coin[0] = -1;
+coin_dir_offset = choose(45, 135, 225, 315);
+coin_bag_offset = coin_dir_offset;
+coin_dir_inc = 90;
+coin_offset_time = 15;
+alarm[0] = coin_offset_time;

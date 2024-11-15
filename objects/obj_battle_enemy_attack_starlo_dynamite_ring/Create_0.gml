@@ -1,0 +1,4 @@
+damage_number = scr_determine_damage_number_enemy("starlo", "void", "void");
+image_xscale = 0.1;
+image_yscale = 0.1;
+image_speed = 0;

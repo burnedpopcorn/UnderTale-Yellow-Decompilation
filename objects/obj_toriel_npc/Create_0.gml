@@ -1,0 +1,18 @@
+event_inherited();
+up_sprite = toriel_up;
+right_sprite = toriel_right;
+down_sprite = toriel_down;
+left_sprite = toriel_left;
+up_sprite_idle = toriel_standingu;
+right_sprite_idle = toriel_standingr;
+down_sprite_idle = toriel_standingd;
+left_sprite_idle = toriel_standingl;
+action_sprite = false;
+scene = 0;
+x_dest[0] = x;
+y_dest[0] = y;
+actor_speed = 3;
+axis_override = "nothing";
+end_direction = "left";
+walk_collider = -4;
+npc_voice_sfx = 97;

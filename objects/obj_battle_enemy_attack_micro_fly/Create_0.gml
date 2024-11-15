@@ -1,0 +1,9 @@
+damage_number = scr_determine_damage_number_enemy("micro froggit", "void", "void");
+image_speed = 0.5;
+image_index = 0;
+image_alpha = 0;
+move_speed = 2;
+can_move = false;
+set_alarm = false;
+center_disjoint = 20;
+alarm_time = 30;

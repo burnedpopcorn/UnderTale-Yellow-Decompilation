@@ -1,0 +1,12 @@
+bullet_speed = 6;
+bullet_spread = 10;
+bullet_spread_max = 50;
+bullet_spread_inc = true;
+bullet_spread_amount = 14;
+current_position = 1;
+timer = 0;
+bullet_spread_inc = true;
+alarm[1] = 60;
+image_alpha = 0;
+image_speed = 0.2;
+stage = 0;

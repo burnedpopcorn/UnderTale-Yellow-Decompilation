@@ -1,0 +1,17 @@
+soul_particles_ps = part_system_create();
+part_system_depth(soul_particles_ps, -1);
+pt_ef_soul_particles = part_type_create();
+part_type_shape(pt_ef_soul_particles, 0);
+part_type_size(pt_ef_soul_particles, 3, 3, 0, 0);
+part_type_scale(pt_ef_soul_particles, 1, 1);
+part_type_orientation(pt_ef_soul_particles, 0, 0, 0, 0, 1);
+part_type_color3(pt_ef_soul_particles, 65535, 65535, c_white);
+part_type_alpha3(pt_ef_soul_particles, 1, 1, 0);
+part_type_blend(pt_ef_soul_particles, 0);
+part_type_life(pt_ef_soul_particles, 30, 30);
+part_type_speed(pt_ef_soul_particles, 6, 6, 0, 0);
+part_type_direction(pt_ef_soul_particles, 40, 140, 0, 0);
+part_type_gravity(pt_ef_soul_particles, 0.4, 270);
+pe_ef_soul_particles = part_emitter_create(soul_particles_ps);
+particle_number = 5;
+alarm[0] = 1;

@@ -1,0 +1,14 @@
+damage_number = scr_determine_damage_number_enemy("ceroba", "void", "void");
+state = 0;
+can_move = false;
+attack_distance = 0;
+attack_dir = 90;
+bullet_speed = 2;
+bullet_speed_2 = 0.5;
+bullet_speed_2_max = bullet_speed_2 * 3;
+attack_target_x = x;
+attack_target_y = y;
+creator = 0;
+image_speed = 0.2;
+fade_out = false;
+alarm[0] = 150;

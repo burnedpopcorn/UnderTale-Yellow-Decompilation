@@ -1,0 +1,14 @@
+part_explosionsys = part_system_create();
+part_explosionEm = part_emitter_create(part_explosionsys);
+part_system_depth(part_explosionsys, -room_height - 1000);
+part_explosion2 = part_type_create();
+part_type_sprite(part_explosion2, spr_battle_enemy_attack_falling_stars_big_star, 0, 0, 0);
+part_type_size(part_explosion2, 0.1, 1, 0.1, 0);
+part_type_colour2(part_explosion2, c_white, c_white);
+part_type_alpha2(part_explosion2, 1, 0);
+part_type_orientation(part_explosion2, 0, 359, 10, 0, false);
+part_type_life(part_explosion2, 20, 20);
+part_type_blend(part_explosion2, 0);
+part_emitter_region(part_explosionsys, part_explosionEm, x, x, y, y, 1, 1);
+part_emitter_burst(part_explosionsys, part_explosionEm, part_explosion2, 1);
+alarm[0] = 60;

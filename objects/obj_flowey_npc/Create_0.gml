@@ -1,0 +1,18 @@
+event_inherited();
+up_sprite = flowey_up;
+right_sprite = flowey_right;
+down_sprite = spr_flowey;
+left_sprite = flowey_left;
+up_sprite_idle = flowey_up;
+right_sprite_idle = flowey_right;
+down_sprite_idle = spr_flowey;
+left_sprite_idle = flowey_left;
+action_sprite = false;
+scene = 0;
+x_dest[0] = x;
+y_dest[0] = y;
+actor_speed = 3;
+axis_override = "nothing";
+end_direction = "left";
+walk_collider = -4;
+npc_voice_sfx = 96;

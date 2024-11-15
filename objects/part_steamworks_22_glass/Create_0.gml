@@ -1,0 +1,16 @@
+part_shardsys = part_system_create();
+part_shardEm = part_emitter_create(part_shardsys);
+part_system_depth(part_shardsys, 0);
+part_shard = part_type_create();
+part_type_sprite(part_shard, 3695, 0, 1, 1);
+part_type_size(part_shard, 1, 1, 0, 0);
+part_type_alpha2(part_shard, 1, 0);
+part_type_speed(part_shard, 2, 2, 0, 0);
+part_type_direction(part_shard, 75, 105, 0, 0);
+part_type_gravity(part_shard, 0.2, 270);
+part_type_life(part_shard, 30, 30);
+part_type_blend(part_shard, 1);
+part_emitter_region(part_shardsys, part_shardEm, 1660, 1860, 70, 90, 0, 0);
+part_emitter_burst(part_shardsys, part_shardEm, part_shard, 30);
+audio_play_sound(snd_mirrorbreak3, 1, 0);
+alarm[0] = 60;

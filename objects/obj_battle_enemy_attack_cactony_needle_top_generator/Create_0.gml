@@ -1,0 +1,16 @@
+damage_number = scr_determine_damage_number_enemy("cactony a", "cactony b", "cactony c");
+image_speed = 0;
+image_index = 0;
+box = 3154;
+y_speed = 5;
+animate_alarm = 30;
+attack_alarm = 10;
+end_alarm = 45;
+fire_count = 0;
+fire_max = 10;
+animate_state = 0;
+anim_in_speed = 0.1;
+anim_out_speed = 0.2;
+anim_min = 0.4;
+anim_max = 1;
+in_box = false;

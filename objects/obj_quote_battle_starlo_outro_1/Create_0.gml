@@ -1,0 +1,21 @@
+var turns_passed;
+
+text_effect = "twitchy";
+attack = false;
+turns_passed = global.turns_passed;
+message[0] = "...";
+message[1] = "One... ";
+message[2] = "I have one left#in my#chamber...";
+portrait_head[0] = 2125;
+portrait_head[1] = 2125;
+portrait_head[2] = 2125;
+message_end = 2;
+message_current = 0;
+message_draw = "";
+increase = global.text_speed;
+characters = 0;
+hold = 0;
+message_length = string_length(message[message_current]);
+script_execute(scr_generate_text_counters);
+circle_text_angle = global.circle_text_angle_default;
+circle_text_angle_direction = 1;

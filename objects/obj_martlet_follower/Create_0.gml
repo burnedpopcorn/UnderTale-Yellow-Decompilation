@@ -1,0 +1,54 @@
+var i, x_dist, y_dist;
+
+if (live_call())
+    return global.live_result;
+
+up_sprite = spr_martlet_up;
+right_sprite = spr_martlet_right;
+down_sprite = spr_martlet_down;
+left_sprite = spr_martlet_left;
+up_sprite_idle = spr_martlet_up_talk;
+right_sprite_idle = spr_martlet_right_talk;
+down_sprite_idle = spr_martlet_down_talk;
+left_sprite_idle = spr_martlet_left_talk;
+up_sprite_run = spr_martlet_up_run;
+right_sprite_run = spr_martlet_right_run;
+down_sprite_run = spr_martlet_down_run;
+left_sprite_run = spr_martlet_left_run;
+sprites_water_override = false;
+npc_move_delay_max = 10;
+npc_move_current = 0;
+last_player_dir = obj_pl.direction;
+
+for (i = npc_move_delay_max; i > 0; i--)
+{
+    x_new[i] = -1;
+    y_new[i] = -1;
+    dir_new[i] = obj_pl.direction;
+    sprinting_new[i] = false;
+}
+
+image_index = 0;
+image_speed = 0;
+npc_reset = false;
+is_talking = false;
+follower_idle = true;
+npc_actor = 1164;
+
+if (x != obj_pl.x || y != obj_pl.y)
+{
+    x_dist = obj_pl.x - x;
+    y_dist = obj_pl.y - y;
+    
+    for (i = 0; i <= npc_move_delay_max; i++)
+    {
+        x_new[i] = x + (((obj_pl.x - x) / npc_move_delay_max) * i);
+        y_new[i] = y + (((obj_pl.y - y) / npc_move_delay_max) * i);
+        dir_new[i] = obj_pl.direction;
+        npc_move_current += 1;
+    }
+}
+
+scr_load_palette_shader(0);
+palette_index = 0;
+event_perform(ev_step, ev_step_normal);

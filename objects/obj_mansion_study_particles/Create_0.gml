@@ -1,0 +1,21 @@
+var xp, yp;
+
+global.ps = part_system_create();
+part_system_depth(global.ps, -900);
+global.pt_pt_dust = part_type_create();
+part_type_shape(global.pt_pt_dust, 0);
+part_type_size(global.pt_pt_dust, 1, 2, 0, 0);
+part_type_scale(global.pt_pt_dust, 1, 1);
+part_type_orientation(global.pt_pt_dust, 0, 0, 0, 0, 0);
+part_type_color3(global.pt_pt_dust, c_white, c_white, c_white);
+part_type_alpha3(global.pt_pt_dust, 0, 1, 0);
+part_type_blend(global.pt_pt_dust, 0);
+part_type_life(global.pt_pt_dust, 160, 220);
+part_type_speed(global.pt_pt_dust, 0.5, 1, 0, 0);
+part_type_direction(global.pt_pt_dust, 90, 90, 0, 5);
+part_type_gravity(global.pt_pt_dust, 0, 0);
+global.pe_pt_dust = part_emitter_create(global.ps);
+xp = 140;
+yp = 210;
+part_emitter_region(global.ps, global.pe_pt_dust, xp - 99, xp + 101, yp - 8, yp + 8, 0, 0);
+part_emitter_stream(global.ps, global.pe_pt_dust, global.pt_pt_dust, -16);

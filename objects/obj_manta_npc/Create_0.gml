@@ -1,0 +1,18 @@
+event_inherited();
+up_sprite = spr_steamworks_manta_up;
+right_sprite = spr_steamworks_manta_right;
+down_sprite = spr_steamworks_manta_down;
+left_sprite = spr_steamworks_manta_left;
+up_sprite_idle = spr_steamworks_manta_up_idle;
+right_sprite_idle = spr_steamworks_manta_right_idle;
+down_sprite_idle = spr_steamworks_manta_down_idle;
+left_sprite_idle = spr_steamworks_manta_left_idle;
+action_sprite = false;
+scene = 0;
+x_dest[0] = x;
+y_dest[0] = y;
+actor_speed = 3;
+axis_override = "nothing";
+end_direction = "left";
+walk_collider = -4;
+npc_voice_sfx = 391;

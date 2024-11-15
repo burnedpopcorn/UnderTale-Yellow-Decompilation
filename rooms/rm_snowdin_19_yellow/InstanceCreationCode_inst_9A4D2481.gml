@@ -1,0 +1,11 @@
+message_length = "10";
+message[0] = "* To whom it may concern:";
+message[1] = "* After building the first ball#  puzzle, I realized a fatal flaw#  in its design.";
+message[2] = "* How was an intruder supposed to#  like, see it?";
+message[3] = "* The puzzle was on a higher#  plain, out of your average#  monster's eyesight.";
+message[4] = "* If someone solved that puzzle,#  they must be very good at#  guessing.";
+message[5] = "* In any case, I have created an#  improved version!";
+message[6] = "* With a new vertical design, you#  can see what you're controlling!";
+message[7] = "* The parts may still get stuck#  though.";
+message[8] = "* Please refer to my instructions#  back at the first puzzle if#  that happens.";
+message[9] = "* Signed: Martlet of the#  Underground Royal Guard";

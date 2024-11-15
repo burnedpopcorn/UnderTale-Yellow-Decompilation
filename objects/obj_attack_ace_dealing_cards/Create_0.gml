@@ -1,0 +1,17 @@
+damage_number = scr_determine_damage_number_enemy("ace", "void", "void");
+card_original_x = xstart;
+card_original_y = ystart;
+card_target_x = 0;
+card_target_y = 0;
+card_draw_warning_rectangle = false;
+card_warning_number = 0;
+card_warning_max = 5;
+card_active = false;
+card_return = false;
+activation_delay = 16;
+reset_delay = 10;
+next_attack_delay = 5;
+card_id = 0;
+depth = -999999;
+sprite_index = -4;
+image_alpha = 0;

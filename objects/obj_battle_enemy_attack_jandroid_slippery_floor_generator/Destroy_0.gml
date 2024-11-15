@@ -1,0 +1,5 @@
+instance_destroy(obj_battle_enemy_attack_jandroid_slippery_floor_warning);
+instance_destroy(obj_battle_enemy_attack_jandroid_slippery_floor_bucket);
+
+with (obj_dialogue_box_battle_transformation_any)
+    event_user(0);

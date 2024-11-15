@@ -1,0 +1,1 @@
+message = "* DANGER!#  SANDSTORM AHEAD!#  TAKE COVER!";

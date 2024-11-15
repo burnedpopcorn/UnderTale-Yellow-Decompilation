@@ -1,0 +1,9 @@
+damage_number = scr_determine_damage_number_enemy("ceroba", "void", "void");
+bullet_distance = 0;
+bullet_dir_current = 0;
+bullet_fade_delay = instance_number(obj_battle_enemy_attack_ceroba_arc_diamond) * 10;
+bullet_spin_speed = 0;
+bullet_spin_time = 60;
+bullet_state = 1;
+bullet_can_bounce = false;
+image_alpha = 0;

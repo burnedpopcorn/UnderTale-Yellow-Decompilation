@@ -1,0 +1,14 @@
+seesaw_puzzle_activate = false;
+seesaw_puzzle_countdown = 4;
+seesaw_puzzle_active = false;
+seesaw_spawn_item = false;
+seesaw_item_number = 9;
+seesaw_item_number_max = seesaw_item_number;
+seesaw_item_number_wrong = 3;
+seesaw_item_offset = 120;
+seesaw_item_offset_max = seesaw_item_offset;
+seesaw_angle_max = 10;
+conveyor_item_type_last = "none";
+conveyor_item_type_repeat_count = 0;
+conveyor_item_type_repeat_count_max = 2;
+hint_button_alpha = 0;

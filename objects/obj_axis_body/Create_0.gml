@@ -1,0 +1,12 @@
+image_speed = 1;
+image_xscale = 2;
+image_yscale = 2;
+base_sprite = spr_axis_body;
+death_sprite = false;
+death_noloop = false;
+axis_damaged_act = false;
+damage_disjoint_count = 0;
+damage_disjoint_x = 0;
+no_loop_damage_disjoint_count = false;
+starting_point_x = x;
+starting_point_y = y;

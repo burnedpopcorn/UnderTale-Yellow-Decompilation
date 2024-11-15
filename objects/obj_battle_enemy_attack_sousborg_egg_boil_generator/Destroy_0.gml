@@ -1,0 +1,7 @@
+instance_destroy(obj_battle_enemy_attack_sousborg_egg_fire);
+instance_destroy(obj_battle_enemy_attack_sousborg_egg_boil_fireball);
+instance_destroy(obj_battle_enemy_attack_sousborg_egg_boil_smoke);
+instance_destroy(obj_battle_enemy_attack_sousborg_egg_sizzle);
+
+with (obj_dialogue_box_battle_transformation_any)
+    event_user(0);

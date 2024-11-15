@@ -1,0 +1,18 @@
+event_inherited();
+up_sprite = cdalv_up;
+right_sprite = cdalv_right;
+down_sprite = cdalv_down;
+left_sprite = cdalv_left;
+up_sprite_idle = cdalv_up;
+right_sprite_idle = cdalv_rightt;
+down_sprite = cdalv_downt;
+left_sprite = cdalv_leftt;
+action_sprite = false;
+scene = 0;
+x_dest[0] = x;
+y_dest[0] = y;
+actor_speed = 3;
+axis_override = "nothing";
+end_direction = "left";
+walk_collider = -4;
+npc_voice_sfx = 434;

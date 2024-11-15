@@ -1,0 +1,13 @@
+dropCol = make_color_rgb(19, 157, 232);
+part_dropsys = part_system_create();
+part_dropEm = part_emitter_create(part_dropsys);
+part_system_depth(part_dropsys, 1);
+part_drop = part_type_create();
+part_type_shape(part_drop, 2);
+part_type_size(part_drop, 0.01, 0.01, 0, 0);
+part_type_colour2(part_drop, dropCol, dropCol);
+part_type_alpha3(part_drop, 1, 1, 0);
+part_type_speed(part_drop, 0.6, 0.6, -0.001, 0);
+part_type_direction(part_drop, 260, 280, 0, 0);
+part_type_life(part_drop, 40, 40);
+part_type_blend(part_drop, 1);

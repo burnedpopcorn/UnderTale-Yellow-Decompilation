@@ -1,0 +1,2 @@
+shrink = false;
+active = false;

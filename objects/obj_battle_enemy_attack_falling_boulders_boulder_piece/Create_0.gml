@@ -1,0 +1,9 @@
+damage_number = scr_determine_damage_number_enemy("boulders minifight", "void", "void");
+image_index = irandom_range(0, image_number - 1);
+can_fall = false;
+image_alpha = 0;
+gravity = 0.4;
+vspeed = -10;
+image_speed = 0;
+image_xscale = 2;
+image_yscale = 2;

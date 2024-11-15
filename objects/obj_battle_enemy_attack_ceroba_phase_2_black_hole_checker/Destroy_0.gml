@@ -1,0 +1,6 @@
+if (live_call())
+    return global.live_result;
+
+instance_destroy(obj_battle_enemy_attack_ceroba_flower_barrage_black_hole);
+instance_destroy(obj_battle_enemy_attack_ceroba_flower_barrage_black_hole_dmg);
+instance_destroy(obj_battle_enemy_attack_ceroba_barrage_warning);

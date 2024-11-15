@@ -1,0 +1,7 @@
+instance_destroy(obj_battle_enemy_attack_guardener_bullet);
+instance_destroy(obj_battle_enemy_attack_guardener_bullet_shard);
+instance_destroy(obj_guardener_guy_a_flintlock);
+instance_destroy(obj_guardener_guy_b_shield);
+
+with (obj_dialogue_box_battle_transformation_any)
+    event_user(0);

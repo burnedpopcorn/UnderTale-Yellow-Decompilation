@@ -1,0 +1,55 @@
+function d3d_draw_block(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8)
+{
+    var __x1, __y1, __z1, __x2, __y2, __z2, __tex, __hrepeat, __vrepeat, __oldrep;
+    
+    __x1 = argument0;
+    __y1 = argument1;
+    __z1 = argument2;
+    __x2 = argument3;
+    __y2 = argument4;
+    __z2 = argument5;
+    __tex = argument6;
+    __hrepeat = argument7;
+    __vrepeat = argument8;
+    __oldrep = gpu_get_texrepeat();
+    gpu_set_texrepeat(true);
+    d3d_primitive_begin_texture(4, __tex);
+    d3d_vertex_normal_texture(__x1, __y1, __z1, 0, 0, -1, 0, 0);
+    d3d_vertex_normal_texture(__x1, __y2, __z1, 0, 0, -1, 0, __vrepeat);
+    d3d_vertex_normal_texture(__x2, __y2, __z1, 0, 0, -1, __hrepeat, __vrepeat);
+    d3d_vertex_normal_texture(__x2, __y2, __z1, 0, 0, -1, __hrepeat, __vrepeat);
+    d3d_vertex_normal_texture(__x2, __y1, __z1, 0, 0, -1, __hrepeat, 0);
+    d3d_vertex_normal_texture(__x1, __y1, __z1, 0, 0, -1, 0, 0);
+    d3d_vertex_normal_texture(__x1, __y1, __z2, 0, 0, 1, 0, 0);
+    d3d_vertex_normal_texture(__x2, __y1, __z2, 0, 0, 1, __hrepeat, 0);
+    d3d_vertex_normal_texture(__x2, __y2, __z2, 0, 0, 1, __hrepeat, __vrepeat);
+    d3d_vertex_normal_texture(__x2, __y2, __z2, 0, 0, 1, __hrepeat, __vrepeat);
+    d3d_vertex_normal_texture(__x1, __y2, __z2, 0, 0, 1, 0, __vrepeat);
+    d3d_vertex_normal_texture(__x1, __y1, __z2, 0, 0, 1, 0, 0);
+    d3d_vertex_normal_texture(__x1, __y2, __z1, 0, 1, 0, 0, 0);
+    d3d_vertex_normal_texture(__x1, __y2, __z2, 0, 1, 0, 0, __vrepeat);
+    d3d_vertex_normal_texture(__x2, __y2, __z2, 0, 1, 0, __hrepeat, __vrepeat);
+    d3d_vertex_normal_texture(__x2, __y2, __z2, 0, 1, 0, __hrepeat, __vrepeat);
+    d3d_vertex_normal_texture(__x2, __y2, __z1, 0, 1, 0, __hrepeat, 0);
+    d3d_vertex_normal_texture(__x1, __y2, __z1, 0, 1, 0, 0, 0);
+    d3d_vertex_normal_texture(__x2, __y2, __z1, 1, 0, 0, 0, 0);
+    d3d_vertex_normal_texture(__x2, __y2, __z2, 1, 0, 0, 0, __vrepeat);
+    d3d_vertex_normal_texture(__x2, __y1, __z2, 1, 0, 0, __hrepeat, __vrepeat);
+    d3d_vertex_normal_texture(__x2, __y1, __z2, 1, 0, 0, __hrepeat, __vrepeat);
+    d3d_vertex_normal_texture(__x2, __y1, __z1, 1, 0, 0, __hrepeat, 0);
+    d3d_vertex_normal_texture(__x2, __y2, __z1, 1, 0, 0, 0, 0);
+    d3d_vertex_normal_texture(__x2, __y1, __z1, 0, -1, 0, 0, 0);
+    d3d_vertex_normal_texture(__x2, __y1, __z2, 0, -1, 0, 0, __vrepeat);
+    d3d_vertex_normal_texture(__x1, __y1, __z2, 0, -1, 0, __hrepeat, __vrepeat);
+    d3d_vertex_normal_texture(__x1, __y1, __z2, 0, -1, 0, __hrepeat, __vrepeat);
+    d3d_vertex_normal_texture(__x1, __y1, __z1, 0, -1, 0, __hrepeat, 0);
+    d3d_vertex_normal_texture(__x2, __y1, __z1, 0, -1, 0, 0, 0);
+    d3d_vertex_normal_texture(__x1, __y1, __z1, -1, 0, 0, 0, 0);
+    d3d_vertex_normal_texture(__x1, __y1, __z2, -1, 0, 0, 0, __vrepeat);
+    d3d_vertex_normal_texture(__x1, __y2, __z2, -1, 0, 0, __hrepeat, __vrepeat);
+    d3d_vertex_normal_texture(__x1, __y2, __z2, -1, 0, 0, __hrepeat, __vrepeat);
+    d3d_vertex_normal_texture(__x1, __y2, __z1, -1, 0, 0, __hrepeat, 0);
+    d3d_vertex_normal_texture(__x1, __y1, __z1, -1, 0, 0, 0, 0);
+    d3d_primitive_end();
+    gpu_set_texrepeat(__oldrep);
+}

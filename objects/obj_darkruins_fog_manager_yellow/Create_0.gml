@@ -1,0 +1,14 @@
+image_xstart = 0;
+image_ystart = 0;
+image_xtotal = image_xstart;
+image_ytotal = image_ystart;
+image_xspeed = 0.5;
+image_yspeed = 0.5;
+image_xscale_default = 1;
+image_yscale_default = 1;
+image_xscale = image_xscale_default;
+image_yscale = image_yscale_default;
+image_color = c_white;
+image_alpha_default = 0.2;
+image_alpha = image_alpha_default;
+depth = -room_height * 2;

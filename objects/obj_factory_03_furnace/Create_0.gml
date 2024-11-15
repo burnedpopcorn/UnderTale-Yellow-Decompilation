@@ -1,0 +1,9 @@
+image_speed = 0;
+child_light = -4;
+furnace_number = 0;
+puzzle_number = 0;
+state = 0;
+active_timer = 60;
+text_alpha = 0;
+depth = -y;
+fire_loop = 0;

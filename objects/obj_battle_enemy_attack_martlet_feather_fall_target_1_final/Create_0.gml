@@ -1,0 +1,9 @@
+x = obj_feather_fall_final_holder.x_store;
+y = obj_feather_fall_final_holder.y_store;
+image_angle = obj_feather_fall_final_holder.angle_store;
+image_speed = 0.6;
+image_index = 0;
+geno_target_angle = 0;
+id_feather = global.id_store;
+global.id_store = id;
+draw_angle = 0;

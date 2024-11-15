@@ -1,0 +1,10 @@
+box = 3154;
+dj_note_y = box.bbox_top + 0;
+dj_note_left_x = box.bbox_left + 29;
+dj_note_center_x = box.bbox_left + 79;
+dj_note_right_x = box.bbox_left + 129;
+damage_pos_x = box.bbox_left + 79;
+damage_pos_y = box.bbox_top + 202;
+song_play_ct = 0;
+note_speed_numerator = 183;
+can_end_script = false;

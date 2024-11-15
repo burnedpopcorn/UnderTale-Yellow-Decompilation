@@ -1,0 +1,1 @@
+instance_destroy(obj_battle_enemy_attack_guardener_attack_12);

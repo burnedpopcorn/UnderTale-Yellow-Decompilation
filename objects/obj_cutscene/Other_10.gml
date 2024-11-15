@@ -1,0 +1,13 @@
+message = 0;
+prt = 0;
+talker = 0;
+sndfnt_array = 0;
+message[0] = "";
+prt[0] = 0;
+talker[0] = -4;
+sndfnt_array[0] = 391;
+ch_msg = -1;
+ch[1] = "";
+ch[2] = "";
+ch[3] = "";
+ch[4] = "";

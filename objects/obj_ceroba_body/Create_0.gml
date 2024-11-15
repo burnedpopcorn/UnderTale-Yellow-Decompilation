@@ -1,0 +1,28 @@
+var red_tint;
+
+anim_loop_time = room_speed * 4;
+anim_stretch_current = 1;
+anim_stretch_max = 1.1;
+anim_stage = 1;
+anim_inc_multiplier = 2;
+anim_inc_multiplier_max = 2;
+anim_head_offset = y - obj_ceroba_head.y;
+anim_hand_left_offset = y - obj_ceroba_hand_left.y;
+anim_hand_right_offset = y - obj_ceroba_hand_right.y;
+anim_staff_offset = y - obj_ceroba_staff.y;
+anim_ponytail_offset = obj_ceroba_head.y - obj_ceroba_ponytail.y;
+death_sprite = false;
+red_tint = make_colour_rgb(215, 166, 166);
+image_blend = red_tint;
+obj_ceroba_head.image_blend = red_tint;
+obj_ceroba_hand_left.image_blend = red_tint;
+obj_ceroba_hand_right.image_blend = red_tint;
+obj_ceroba_staff.image_blend = red_tint;
+obj_ceroba_ponytail.image_blend = red_tint;
+image_speed = 0;
+image_index = 0;
+damage_disjoint_count = 0;
+damage_disjoint_x = 0;
+no_loop_damage_disjoint_count = false;
+starting_point_x = x;
+starting_point_y = y;
