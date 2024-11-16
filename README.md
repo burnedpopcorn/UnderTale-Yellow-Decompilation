@@ -1,5 +1,5 @@
 # UnderTale Yellow Decompilation
-A Decompilation of UnderTale Yellow
+A Decompilation of UnderTale Yellow v1.1
 
 GameMaker Version used: 2023.4.0.84
 
