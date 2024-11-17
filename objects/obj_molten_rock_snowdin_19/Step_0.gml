@@ -46,7 +46,3 @@ if (active)
 phy_rotation += (sqrt(sqr(phy_speed_x)) * sign(phy_speed_x) * 10);
 phy_speed_y_last = phy_speed_y;
 phy_speed_x_last = phy_speed_y;
-
-// no, kill ME
-x_kill = phy_position_x;
-y_kill = phy_position_y;

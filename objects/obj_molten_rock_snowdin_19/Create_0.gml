@@ -13,6 +13,3 @@ else
     ball_speed = 4;
     phy_speed_y += 3;
 }
-
-x_kill = 0;
-y_kill = 0;

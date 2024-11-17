@@ -14,4 +14,5 @@ It currently still uses UnderAnalyzer's Stock Enums, but it still works, so...
 
 - rm_dunes_30_old and rm_dunes_30 are MISSING, since they didn't decompile right
 
-- (in rm_snowdin_19_yellow) Second IceCube Puzzle in Snowdin causes a Crash (obj_molten_rock_snowdin_19)
+- (in rm_snowdin_19_yellow) Second IceCube Puzzle in Snowdin is impossible due to the pistons having a very
+big collsion box
