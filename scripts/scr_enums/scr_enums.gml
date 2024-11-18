@@ -1,7 +1,8 @@
 // Enum Declarations
 // because there are Enums in use I guess
+// These Sets are mostly for GMS1 Compatiblity Scripts
 
-// This set is mostly for GMS1 Compatiblity Scripts
+// Unknown Shit
 enum UnknownEnum {
 	Value_0,
 	Value_1,
@@ -61,4 +62,23 @@ enum e__VW {
 	HPort,
 	Camera,
 	SurfaceID
+}
+
+// This set is for Backgrounds and shit
+enum e__BG {
+	Visible,
+	Foreground,
+	Index,
+	X,
+	Y,
+	Width,
+	Height,
+	HTiled,
+	VTiled,
+	XScale,
+	YScale,
+	HSpeed,
+	VSpeed,
+	Blend,
+	Alpha
 }

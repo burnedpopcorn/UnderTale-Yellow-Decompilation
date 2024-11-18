@@ -7,16 +7,16 @@ with (obj_doorway)
 if (global.snowdin_flag[12] == 2)
     exit;
 
-if (active == 1)//true)
+if (active == true)
 {
     instance_create(200, -10, obj_molten_rock_snowdin_19);
-    obj_snowdin_19_piston.active = 1;//true;
-    active = 0;//false;
+    obj_snowdin_19_piston.active = true;
+    active = false;
 }
 
 if (camera_end == true)
 {
-    obj_snowdin_19_piston.active = 0;//false;
+    obj_snowdin_19_piston.active = false;
     
     if (scr_camera_move(obj_pl.x, obj_pl.y, 3) == true)
         active = 2;
@@ -24,7 +24,7 @@ if (camera_end == true)
 
 if (active == 2)
 {
-    active = 0;//false;
+    active = false;
     camera_end = false;
     audio_stop_sound(snd_puzzle_woodmove);
     

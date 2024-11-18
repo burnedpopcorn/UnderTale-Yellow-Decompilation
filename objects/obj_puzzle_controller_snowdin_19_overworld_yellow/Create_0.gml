@@ -1,2 +1,2 @@
-active = 0;//false;
+active = false;
 camera_end = false;
