@@ -9,7 +9,13 @@ This will probably not be changed, as it's not really a problem, and I dont use 
 scr_enums contains all Enum Declarations for the Project
 It currently still uses UnderAnalyzer's Stock Enums, but it still works, so...
 
-CURRENT ISSUES!
+BIG ISSUES!
+
+Steamworks SoftLock near when showing Axis the shitbot you built
+(rm_steamworks_22) (obj_steamworks_22_controller_pacifist)
+
+
+SMALL ISSUES!
 
 rm_dunes_30_old and rm_dunes_30 are MISSING, since they didn't decompile right
 rm_dunes_30 has been """"faithfully"""" recreated from scratch in order to progress, but still, not the original

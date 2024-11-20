@@ -433,17 +433,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;//1161;
             message[0] = "* Well, it was worth a#  shot.";
             message[1] = "* Plan C it is!";
-            prt[0] = 377;
-            prt[1] = 394;
+            prt[0] = spr_portrait_ceroba_closed_eyes;//377;
+            prt[1] = spr_portrait_ceroba_disapproving;//394;
         }
         
         break;
-    
+  // Around Here is Softlock  
     case 58:
-        cutscene_npc_action_sprite(1161, 3699, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_ceroba_guard_1, 1, true, 0);//(1161, 3699, 1, true, 0);
         break;
     
     case 59:
@@ -451,7 +451,7 @@ switch (scene)
         break;
     
     case 60:
-        cutscene_npc_action_sprite(1166, 3525, 1, false, 0);
+        cutscene_npc_action_sprite(obj_axis_npc, spr_steamworks_22_axis_event_throw, 1, false, 0);//(1166, 3525, 1, false, 0);
         break;
     
     case 61:
@@ -470,13 +470,13 @@ switch (scene)
         
         if (!instance_exists(obj_steamworks_22_energy_ball_fake_2))
         {
-            cutscene_npc_action_sprite(1166, 3170, 1, true, 0);
+            cutscene_npc_action_sprite(obj_axis_npc, spr_steamworks_22_axis_event_fall, 1, true, 0);//(1166, 3170, 1, true, 0);
             obj_axis_npc.npc_dynamic_depth = false;
             obj_axis_npc.depth = -999;
         }
         
         break;
-    
+    // case 63 never gets called
     case 63:
         cutscene_wait(3);
         break;
@@ -486,19 +486,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
-            talker[1] = 1161;
-            talker[2] = 1166;
+            talker[0] = obj_axis_npc;//1166;
+            talker[1] = obj_ceroba_npc;//1161;
+            talker[2] = obj_axis_npc;//1166;
             message[0] = "* I AM IMMOBILE.";
             message[1] = "* If you went with our#  surprise, it wouldn't#  have gotten messy.";
             message[2] = "* DO NOT MOCK MY#  JUDGMENT.";
             message[3] = "* I WILL RETURN TO#  CAPTURE YOU.";
             message[4] = "* ...WITH NEW HANDS.";
-            prt[0] = 3332;
-            prt[1] = 377;
-            prt[2] = 473;
-            prt[3] = 473;
-            prt[4] = 473;
+            prt[0] = spr_portrait_axis_wut;//3332;
+            prt[1] = spr_portrait_ceroba_closed_eyes;//377;
+            prt[2] = spr_portrait_axis_normal;//473;
+            prt[3] = spr_portrait_axis_normal;//473;
+            prt[4] = spr_portrait_axis_normal;//473;
         }
         
         break;
