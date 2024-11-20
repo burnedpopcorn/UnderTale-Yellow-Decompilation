@@ -12,6 +12,10 @@ It currently still uses UnderAnalyzer's Stock Enums, but it still works, so...
 CURRENT ISSUES!
 
 rm_dunes_30_old and rm_dunes_30 are MISSING, since they didn't decompile right
+rm_dunes_30 has been """"faithfully"""" recreated from scratch in order to progress, but still, not the original
+
+Some Snowdin Rooms have Tiles that are incorrectly placed
+(Purely Visual Issue)
 
 (rm_snowdin_19_yellow) Second IceCube Puzzle in Snowdin is fucked due to the pistons having a very
 big collsion box
@@ -19,4 +23,4 @@ big collsion box
 spr_snowdin_19_piston had its collison box flattened to make it possible to beat, but its a bad fix
 change it back to automatic when fixed
 
-For any Physics Objects that crash, check if room enables pyhsics
+Also, For any Physics Objects that crash, check if room enables pyhsics
