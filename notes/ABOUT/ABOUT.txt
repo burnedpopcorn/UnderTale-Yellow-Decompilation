@@ -11,8 +11,8 @@ It currently still uses UnderAnalyzer's Stock Enums, but it still works, so...
 
 BIG ISSUES!
 
-Steamworks SoftLock near when showing Axis the shitbot you built
-(rm_steamworks_22) (obj_steamworks_22_controller_pacifist)
+Steamworks (factory_2) Psyhics thing is completely fucked (obj_seesaw)
+Code Lock doesn't show GUI (obj_factory_02_numpad)
 
 
 SMALL ISSUES!
