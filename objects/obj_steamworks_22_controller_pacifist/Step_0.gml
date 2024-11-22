@@ -350,11 +350,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;//1161;
             message[0] = "* A sleek, top of the#  line model!";
             message[1] = "* Aren't they beautiful?";
-            prt[0] = 398;
-            prt[1] = 3754;
+            prt[0] = spr_portrait_ceroba_happy;//398;
+            prt[1] = spr_portrait_ceroba_nervous_smile;//3754;
             
             if (message_current >= 1)
             {
@@ -384,25 +384,27 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;//1166;
             message[0] = "* NO.";
             message[1] = "* NOT IN THE MOOD.";
             message[2] = "* MY EYES ARE ONLY SET ON#  YOUR APPREHENSION.";
             message[3] = "* GOODBYE.";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
-            prt[3] = 473;
+            prt[0] = spr_portrait_axis_normal;//473;
+            prt[1] = spr_portrait_axis_normal;//473;
+            prt[2] = spr_portrait_axis_normal;//473;
+            prt[3] = spr_portrait_axis_normal;//473;
         }
         
         break;
     
     case 53:
-        cutscene_npc_action_sprite(1166, 1772, 1, true, 0);
+        //cutscene_npc_action_sprite(1166, 1772, 1, true, 0);
+		cutscene_npc_action_sprite(obj_axis_npc, spr_steamworks_22_axis_event_4, 1, true, 0);
         break;
     
     case 54:
-        cutscene_npc_action_sprite(1166, 3312, 1, true, 1);
+        //cutscene_npc_action_sprite(1166, 3312, 1, true, 1);
+		cutscene_npc_action_sprite(obj_axis_npc, spr_steamworks_22_axis_event_loop, 1, true, 1);
         break;
     
     case 55:
@@ -410,16 +412,16 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[2] = 1166;
+            talker[0] = obj_ceroba_npc;//1161;
+            talker[2] = obj_axis_npc;//1166;
             message[0] = "* You're making them cry,#  Axis!";
             message[1] = "* Come on, now!";
             message[2] = "* ROBOTS CANNOT CRY. I#  HAVE TRIED.";
             message[3] = "* GOODBYE.";
-            prt[0] = 381;
-            prt[1] = 3754;
-            prt[2] = 473;
-            prt[3] = 473;
+            prt[0] = spr_portrait_ceroba_nervous;//381;
+            prt[1] = spr_portrait_ceroba_nervous_smile;//3754;
+            prt[2] = spr_portrait_axis_normal;//473;
+            prt[3] = spr_portrait_axis_normal;//473;
         }
         
         break;
@@ -441,7 +443,6 @@ switch (scene)
         }
         
         break;
-  // Around Here is Softlock  
     case 58:
         cutscene_npc_action_sprite(obj_ceroba_npc, spr_ceroba_guard_1, 1, true, 0);//(1161, 3699, 1, true, 0);
         break;
@@ -453,8 +454,10 @@ switch (scene)
     case 60:
         cutscene_npc_action_sprite(obj_axis_npc, spr_steamworks_22_axis_event_throw, 1, false, 0);//(1166, 3525, 1, false, 0);
         break;
-    
+    // gets stuck on 61
     case 61:
+		// shitfix
+		scene++;
         break;
     
     case 62:
@@ -476,7 +479,6 @@ switch (scene)
         }
         
         break;
-    // case 63 never gets called
     case 63:
         cutscene_wait(3);
         break;

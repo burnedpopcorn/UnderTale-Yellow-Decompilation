@@ -248,7 +248,9 @@ switch (scene)
         cutscene_advance();
         scr_cutscene_end();
         camera_set_view_target(view_camera[0], 1031);
-        (104950).y = 240;
+		// instance of obj_steam_walk_blocker in room
+        //(104950).y = 240;
+		(inst_4186A273).y = 240;
         global.sworks_flag[14] = 1;
         global.party_member = -4;
         scr_radio_restart();
