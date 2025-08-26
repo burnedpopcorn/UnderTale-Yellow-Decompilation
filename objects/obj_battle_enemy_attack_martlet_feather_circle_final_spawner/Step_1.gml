@@ -1,5 +1,3 @@
-var can_feather_launch;
-
 if (live_call())
     return global.live_result;
 
@@ -50,7 +48,7 @@ if (feather_angle_master >= 360)
 
 if (feather_launch_no_loop == false)
 {
-    can_feather_launch = true;
+    var can_feather_launch = true;
     
     if (obj_battle_enemy_attack_martlet_feather_circle_final_feather.image_alpha < 1)
         can_feather_launch = false;

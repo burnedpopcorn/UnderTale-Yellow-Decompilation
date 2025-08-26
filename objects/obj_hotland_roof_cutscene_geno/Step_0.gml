@@ -13,7 +13,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_npc_walk(1168, obj_martlet_npc.x, obj_pl.y, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, obj_martlet_npc.x, obj_pl.y, 3, "x", "up");
         break;
     
     case 2:
@@ -23,7 +23,7 @@ switch (scene)
         break;
     
     case 2.5:
-        if (cutscene_npc_walk(1168, obj_martlet_npc.x, obj_martlet_npc.y + 60, 1, "x", "up"))
+        if (cutscene_npc_walk(obj_player_npc, obj_martlet_npc.x, obj_martlet_npc.y + 60, 1, "x", "up"))
             cutscene_advance(3);
         
         break;
@@ -47,7 +47,7 @@ switch (scene)
         break;
     
     case 7:
-        cutscene_npc_direction(1164, "down");
+        cutscene_npc_direction(obj_martlet_npc, "down");
         instance_destroy(obj_cutscene_ex);
         break;
     
@@ -60,14 +60,14 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             position = 1;
             message[0] = "* ...";
             message[1] = "* So you found me...";
             message[2] = "* Pretty easy when#  there's so few left.";
-            prt[0] = 315;
-            prt[1] = 336;
-            prt[2] = 338;
+            prt[0] = spr_martlet_head_disappointed;
+            prt[1] = spr_martlet_head_unamused;
+            prt[2] = spr_martlet_head_wondering;
         }
         
         break;
@@ -77,7 +77,7 @@ switch (scene)
         break;
     
     case 11:
-        cutscene_npc_action_sprite(1168, 3380, 1, true, 0, 634, 2);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pl_up_geno_shoot_roof, 1, true, 0, snd_guardener_gun_cock, 2);
         break;
     
     case 12:

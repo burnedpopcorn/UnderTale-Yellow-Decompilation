@@ -1,8 +1,6 @@
 function scr_enemy_timer_attacks_martlet_genocide_final()
 {
-    var enemy_attack, inst;
-    
-    enemy_attack = global.enemy_attack;
+    var enemy_attack = global.enemy_attack;
     
     if (!instance_exists(obj_attack_cycler_martlet_final))
         instance_create(0, 0, obj_attack_cycler_martlet_final);
@@ -63,7 +61,7 @@ function scr_enemy_timer_attacks_martlet_genocide_final()
         }
         else if (enemy_attack == "Martlet Gauntlet 2" && !instance_exists(obj_fmartlet_spawner_gauntlet))
         {
-            inst = instance_create(0, 0, obj_fmartlet_spawner_gauntlet);
+            var inst = instance_create(0, 0, obj_fmartlet_spawner_gauntlet);
             inst.attack_variant = 1;
         }
         else if (enemy_attack == "Martlet Final Opener" && !instance_exists(obj_fmartlet_spawner_opener))

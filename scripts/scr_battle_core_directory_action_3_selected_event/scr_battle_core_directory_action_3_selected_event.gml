@@ -1,8 +1,6 @@
 function scr_battle_core_directory_action_3_selected_event()
 {
-    var event_check, act_number;
-    
-    event_check = false;
+    var event_check = false;
     
     if (game_mode == "customs")
     {
@@ -115,7 +113,7 @@ function scr_battle_core_directory_action_3_selected_event()
             if (!global.enemy_sparing)
             {
                 global.action_2_important = true;
-                global.action_2_color = 65535;
+                global.action_2_color = c_yellow;
             }
             
             global.enemy_attacking = true;
@@ -604,7 +602,7 @@ function scr_battle_core_directory_action_3_selected_event()
     
     if (event_check == true)
     {
-        act_number = global.act_number;
+        var act_number = global.act_number;
         
         switch (act_number)
         {

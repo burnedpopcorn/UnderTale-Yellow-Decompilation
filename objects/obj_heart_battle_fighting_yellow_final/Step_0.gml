@@ -1,5 +1,3 @@
-var ghost, right_boundary, left_boundary, top_boundary, bottom_boundary, collider_id, can_trail, dash_disable, i, turn_angle_target_final, yy, xx, shot, shot_big, image_angle_final, ready_sound, pitch_original;
-
 if (live_call())
     return global.live_result;
 
@@ -14,7 +12,7 @@ vsp = move_y * walk_speed;
 
 if (is_dashing)
 {
-    ghost = instance_create_depth(x, y, depth, obj_dash_ghost);
+    var ghost = instance_create_depth(x, y, depth, obj_dash_ghost);
     ghost.sprite_index = base_sprite;
     hsp = move_x_dash * dash_speed;
     vsp = move_y_dash * dash_speed;
@@ -30,6 +28,7 @@ else
 
 hsp += hsp_factor;
 vsp += vsp_factor;
+var left_boundary, right_boundary, top_boundary, bottom_boundary;
 
 if (room == rm_battle_flowey_phase_2)
 {
@@ -83,7 +82,7 @@ else if (sign(vsp) == 1 && (bbox_bottom + vsp) >= bottom_boundary)
 }
 
 y += vsp;
-collider_id = instance_place(x, y + vsp, obj_martlet_attack_glass);
+var collider_id = instance_place(x, y + vsp, obj_martlet_attack_glass);
 
 if (collider_id != -4)
 {
@@ -103,7 +102,7 @@ if (instance_exists(obj_heart_battle_effect_glow))
 
 if (moveable == true && global.current_sp_self > 0)
 {
-    can_trail = false;
+    var can_trail = false;
     trail_cc_current += 1;
     
     if (trail_cc_current >= trail_cc_max)
@@ -133,12 +132,12 @@ if (room == rm_battle_flowey_phase_2)
 {
     if (sprite_index == spr_heart_yellow_down)
     {
-        base_sprite = spr_heart_yellow_down;
-        dash_disable = true;
+        base_sprite = 1661;
+        var dash_disable = true;
         
         if (instance_exists(obj_flowey_battle_final))
         {
-            for (i = 0; i < array_length(obj_flowey_battle_final.petal_alive); i++)
+            for (var i = 0; i < array_length(obj_flowey_battle_final.petal_alive); i++)
             {
                 if (obj_flowey_battle_final.petal_alive[i] == false)
                     dash_disable = false;
@@ -153,20 +152,20 @@ if (room == rm_battle_flowey_phase_2)
     }
     else
     {
-        base_sprite = spr_heart_yellow_up;
+        base_sprite = 1662;
     }
 }
 
 if ((abs(move_x) + abs(move_y)) == 0)
 {
-    if (keyboard_multicheck_pressed(1))
+    if (keyboard_multicheck_pressed(vk_anykey))
         dash_buffered = true;
     
-    if (keyboard_multicheck_released(1) && dash_buffered == true)
+    if (keyboard_multicheck_released(vk_anykey) && dash_buffered == true)
         dash_buffered = false;
 }
 
-if ((keyboard_multicheck_pressed(1) || dash_buffered) && moveable == true && can_dash == true && (abs(move_x) + abs(move_y)) != 0)
+if ((keyboard_multicheck_pressed(vk_anykey) || dash_buffered) && moveable == true && can_dash == true && (abs(move_x) + abs(move_y)) != 0)
 {
     audio_play_sound(snd_yellow_soul_dash, 1, 0);
     dash_overlay = 1.1;
@@ -195,7 +194,7 @@ if (!can_dash && !is_dashing)
     }
 }
 
-if (keyboard_multicheck_released(1) && is_dashing && can_cancel_dash)
+if (keyboard_multicheck_released(vk_anykey) && is_dashing && can_cancel_dash)
     is_dashing = false;
 
 if (dash_overlay > 0)
@@ -205,7 +204,7 @@ shoot_delay = 10;
 
 if (shoot_buffer <= 0)
 {
-    if (keyboard_multicheck_pressed(0))
+    if (keyboard_multicheck_pressed(vk_nokey))
         shoot_buffer = 10;
 }
 else
@@ -213,7 +212,7 @@ else
     shoot_buffer--;
 }
 
-turn_angle_target_final = turn_angle_target - 90;
+var turn_angle_target_final = turn_angle_target - 90;
 
 switch (turn_state)
 {
@@ -278,7 +277,7 @@ if (global.option_autoshoot == false)
 
 function fireCheck()
 {
-    if (global.autofire_on == true || (global.autofire_on == false && keyboard_multicheck_pressed(0)))
+    if (global.autofire_on == true || (global.autofire_on == false && keyboard_multicheck_pressed(vk_nokey)))
         return true;
     
     return false;
@@ -290,8 +289,8 @@ if ((fireCheck() || shoot_buffer > 0) && sprite_index != spr_heart_yellow_down &
     sprite_index = spr_heart_yellow_shoot;
     image_index = 0;
     image_speed = 1;
-    yy = y - 6;
-    xx = x + 0.5;
+    var yy = y - 6;
+    var xx = x + 0.5;
     
     if (image_angle == 90 || image_angle == 270)
     {
@@ -302,20 +301,20 @@ if ((fireCheck() || shoot_buffer > 0) && sprite_index != spr_heart_yellow_down &
     if (image_angle == 180)
         yy = y + 6;
     
-    shot = instance_create_depth(xx, yy, -10000, obj_heart_yellow_shot);
+    var shot = instance_create_depth(xx, yy, -10000, obj_heart_yellow_shot);
     shot.direction = image_angle + 90;
     shot.image_angle = image_angle;
     can_shoot = false;
     alarm[1] = shoot_delay;
 }
 
-if (keyboard_multicheck(0) && !is_charging && sprite_index != spr_heart_yellow_down && moveable == true && !blast_is_firing && can_charge == true)
+if (keyboard_multicheck(vk_nokey) && !is_charging && sprite_index != spr_heart_yellow_down && moveable == true && !blast_is_firing && can_charge == true)
 {
     if (!alarm[2])
         alarm[2] = 7;
 }
 
-if (keyboard_multicheck_released(0) || keyboard_multicheck_pressed(2))
+if (keyboard_multicheck_released(vk_nokey) || keyboard_multicheck_pressed(2))
 {
     alarm[2] = -1;
     
@@ -331,8 +330,8 @@ if (keyboard_multicheck_released(0) || keyboard_multicheck_pressed(2))
         {
             if (charged_shot_type == 1)
             {
-                yy = y - 6;
-                xx = x + 0.5;
+                var yy = y - 6;
+                var xx = x + 0.5;
                 
                 if (image_angle == 90 || image_angle == 270)
                 {
@@ -340,7 +339,7 @@ if (keyboard_multicheck_released(0) || keyboard_multicheck_pressed(2))
                     xx = x;
                 }
                 
-                shot_big = instance_create_depth(xx, yy, -10000, obj_heart_yellow_shot_big);
+                var shot_big = instance_create_depth(xx, yy, -10000, obj_heart_yellow_shot_big);
                 shot_big.direction = image_angle + 90;
                 shot_big.image_angle = image_angle;
                 is_charged = false;
@@ -352,8 +351,8 @@ if (keyboard_multicheck_released(0) || keyboard_multicheck_pressed(2))
             }
             else if (charged_shot_type == 2)
             {
-                shot_big = instance_create_depth(x, y, -10000, obj_heart_yellow_shot_blast);
-                image_angle_final = turn_angle_target_final;
+                var shot_big = instance_create_depth(x, y, -10000, obj_heart_yellow_shot_blast);
+                var image_angle_final = turn_angle_target_final;
                 shot_big.direction = image_angle_final + 90;
                 shot_big.image_angle = image_angle_final;
                 is_charged = false;
@@ -381,7 +380,7 @@ if (is_charging)
     }
     else if (!is_charged)
     {
-        ready_sound = audio_play_sound(snd_undertale_flash, 1, 0);
+        var ready_sound = audio_play_sound(snd_undertale_flash, 1, 0);
         audio_sound_gain(ready_sound, 0.5, 0);
         audio_sound_gain(charge_sound, 0, 1000);
         is_charged = true;
@@ -405,7 +404,7 @@ else
 
 if (audio_is_playing(charge_sound))
 {
-    pitch_original = audio_sound_get_pitch(charge_sound);
+    var pitch_original = audio_sound_get_pitch(charge_sound);
     
     if (pitch_original < 0.99)
         audio_sound_pitch(charge_sound, 1 - (0.5 * charge_percentage));

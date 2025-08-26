@@ -1,5 +1,3 @@
-var hit_gen;
-
 image_angle = direction;
 image_alpha = lerp(image_alpha, 1, 0.5);
 image_xscale = lerp(image_alpha, 1, 0.15);
@@ -29,7 +27,7 @@ if (place_meeting(x, y, obj_axis_body))
         instance_destroy();
 }
 
-hit_gen = instance_place(x, y, obj_battle_enemy_axis_generator);
+var hit_gen = instance_place(x, y, obj_battle_enemy_axis_generator);
 
 if (hit_gen != -4)
 {

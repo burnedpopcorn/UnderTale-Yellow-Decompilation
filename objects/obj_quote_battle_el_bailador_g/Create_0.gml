@@ -1,9 +1,7 @@
-var turns_passed, enemy_low_hp, enemy_mode, enemy_mode_gen;
-
-turns_passed = global.turns_passed;
-enemy_low_hp = global.enemy_low_hp;
-enemy_mode = global.enemy_mode;
-enemy_mode_gen = global.enemy_mode_gen;
+var turns_passed = global.turns_passed;
+var enemy_low_hp = global.enemy_low_hp;
+var enemy_mode = global.enemy_mode;
+var enemy_mode_gen = global.enemy_mode_gen;
 
 switch (turns_passed)
 {
@@ -42,18 +40,18 @@ switch (turns_passed)
         break;
     
     case 5:
-        scr_audio_fade_out(512, 1000);
+        scr_audio_fade_out(mus_danza_battle_yellow, 1000);
         message[0] = "Ha...";
         message_end = 0;
         break;
     
     case 6:
-        message[0] = "Ha...";
+        message[0] = "Ha......";
         message_end = 0;
         break;
     
     case 7:
-        message[0] = ".....";
+        message[0] = ".........";
         message_end = 0;
         break;
     

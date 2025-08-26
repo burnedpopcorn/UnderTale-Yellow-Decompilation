@@ -1,6 +1,6 @@
 function scr_determine_end_battle_flags_yellow()
 {
-    var battle_enemy_name, act_number, current_turn;
+    var battle_enemy_name;
     
     if (global.battling_boss == true)
     {
@@ -8,7 +8,7 @@ function scr_determine_end_battle_flags_yellow()
     }
     else
     {
-        act_number = global.act_number;
+        var act_number = global.act_number;
         
         switch (act_number)
         {
@@ -194,7 +194,7 @@ function scr_determine_end_battle_flags_yellow()
     }
     else if (battle_enemy_name == "axis")
     {
-        current_turn = global.special_action_count;
+        var current_turn = global.special_action_count;
         ds_list_clear(global.encounter_list);
         global.sworks_flag[31] = 1;
         

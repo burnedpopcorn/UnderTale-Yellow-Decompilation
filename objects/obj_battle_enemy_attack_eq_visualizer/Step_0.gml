@@ -1,5 +1,3 @@
-var i, y_target, box, soul;
-
 if (live_call())
     return global.live_result;
 
@@ -9,7 +7,7 @@ if (!instance_exists(obj_dialogue_box_battle_transformation_any))
 switch (scene)
 {
     case -1:
-        for (i = 0; i < eq_bar_number; i++)
+        for (var i = 0; i < eq_bar_number; i++)
         {
             eq_bar_height_target[i] = irandom_range(eq_bar_height_min, eq_bar_height_max);
             
@@ -78,15 +76,17 @@ switch (scene)
             else
                 instance_destroy();
             
-            for (i = 0; i < eq_bar_number; i++)
+            for (var i = 0; i < eq_bar_number; i++)
                 eq_bar_height_target[i] = eq_bar_height_min;
         }
         
         break;
 }
 
-for (i = 0; i < eq_bar_number; i++)
+for (var i = 0; i < eq_bar_number; i++)
 {
+    var y_target;
+    
     if (scene > 7)
         y_target = eq_bar_height_target[i];
     else
@@ -98,16 +98,16 @@ for (i = 0; i < eq_bar_number; i++)
 if (!instance_exists(obj_dialogue_box_battle_transformation_any))
     exit;
 
-for (i = 0; i < eq_bar_number; i++)
+for (var i = 0; i < eq_bar_number; i++)
 {
-    box = 3154;
+    var box = obj_dialogue_box_battle_transformation_any;
     xx = box.bbox_left + 6 + ((i + 1) * eq_bar_gap) + (eq_bar_width * i);
     yy = box.bbox_bottom - 6;
     yy_2 = yy - eq_bar_height[i];
     
     if (instance_exists(obj_heart_battle_fighting_parent))
     {
-        soul = 2979;
+        var soul = obj_heart_battle_fighting_parent;
         
         if (soul.vulnerable == true && rectangle_in_rectangle(soul.bbox_left, soul.bbox_top, soul.bbox_right, soul.bbox_bottom, xx, yy, xx + eq_bar_width, yy_2))
         {

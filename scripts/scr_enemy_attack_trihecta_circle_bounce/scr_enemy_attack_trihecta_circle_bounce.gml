@@ -1,10 +1,9 @@
 function scr_enemy_attack_trihecta_circle_bounce()
 {
-    var random_number, bbox_var;
-    
     if (!instance_exists(obj_battle_enemy_attack_trihecta_circle_bounce))
     {
-        random_number = irandom_range(0, 1);
+        var random_number = irandom_range(0, 1);
+        var bbox_var;
         
         if (random_number == 0)
         {

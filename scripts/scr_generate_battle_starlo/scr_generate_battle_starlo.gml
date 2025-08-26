@@ -1,7 +1,5 @@
 function scr_generate_battle_starlo()
 {
-    var spawn_x, spawn_y;
-    
     global.battle_enemy_name_1 = "starlo";
     global.battle_menu_number = 1;
     global.speed_self = 4;
@@ -34,7 +32,7 @@ function scr_generate_battle_starlo()
     global.action_1_important = false;
     global.action_2_important = false;
     global.action_3_important = false;
-    global.action_1_color = 65535;
+    global.action_1_color = c_yellow;
     global.action_2_color = c_white;
     global.action_3_color = c_white;
     global.action_amount = 3;
@@ -67,8 +65,8 @@ function scr_generate_battle_starlo()
     audio_extend = false;
     global.sound_carry_battle = false;
     global.mettaton_voice_count = 1;
-    spawn_x = 318;
-    spawn_y = 236;
+    var spawn_x = 318;
+    var spawn_y = 236;
     instance_create(spawn_x, spawn_y - 150, obj_starlo_boss_head);
     instance_create(spawn_x, spawn_y, obj_starlo_boss_body);
     global.enemy_target_x = 318;

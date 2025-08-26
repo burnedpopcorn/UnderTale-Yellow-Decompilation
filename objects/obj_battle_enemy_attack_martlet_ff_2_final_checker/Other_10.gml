@@ -1,5 +1,3 @@
-var fcreate_x, fcreate_y;
-
 if (live_call())
     return global.live_result;
 
@@ -9,8 +7,8 @@ for (i = 0; i < feather_create_max; i++)
 {
     id_counter = i;
     feather_create_angle = feather_angle_master + ((360 / feather_create_max) * i);
-    fcreate_x = x_center + (feather_angle_radius * cos(degtorad(feather_create_angle)));
-    fcreate_y = y_center - (feather_angle_radius * sin(degtorad(feather_create_angle)));
+    var fcreate_x = x_center + (feather_angle_radius * cos(degtorad(feather_create_angle)));
+    var fcreate_y = y_center - (feather_angle_radius * sin(degtorad(feather_create_angle)));
     instance_create_depth(fcreate_x, fcreate_y, -100, obj_battle_enemy_attack_martlet_ff_2_final_feather);
     id_feather[feather_count][i] = global.id_store;
     
@@ -30,14 +28,14 @@ for (i = 0; i < feather_create_max; i++)
 
 switch (feather_sprite)
 {
-    case 2273:
-    case 2274:
-    case 2275:
+    case spr_battle_enemy_attack_martlet_feather_1:
+    case spr_battle_enemy_attack_martlet_feather_2:
+    case spr_battle_enemy_attack_martlet_feather_3:
         audio_play_sound(snd_mart_spiral_attack_2, 20, 0);
         break;
     
-    case 2276:
-    case 2278:
+    case spr_battle_enemy_attack_martlet_feather_4:
+    case spr_battle_enemy_attack_martlet_feather_5:
         audio_play_sound(snd_mart_spiral_attack_1, 20, 0);
         break;
     

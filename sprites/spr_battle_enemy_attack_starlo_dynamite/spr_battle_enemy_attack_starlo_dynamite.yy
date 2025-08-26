@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b8b9344a-2afe-4e3f-b8c3-cf7c4b96605c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2d41b3d3-1745-4ead-9f3d-fd70c33ce918",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 37,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fb4bf35f-4093-4ab9-9878-2380a74298df","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5559dfae-7938-4dd5-aee1-875929adff81","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -53,8 +53,8 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b8b9344a-2afe-4e3f-b8c3-cf7c4b96605c","path":"sprites/spr_battle_enemy_attack_starlo_dynamite/spr_battle_enemy_attack_starlo_dynamite.yy",},},},"Disabled":false,"id":"d4f38cff-3158-4880-b24b-71c322bb0fc1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2d41b3d3-1745-4ead-9f3d-fd70c33ce918","path":"sprites/spr_battle_enemy_attack_starlo_dynamite/spr_battle_enemy_attack_starlo_dynamite.yy",},},},"Disabled":false,"id":"5f9363b3-18c0-437b-a7d3-d6b12e6789b0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleWildEast",
+    "path": "texturegroups/BattleWildEast",
   },
   "type": 0,
   "VTile": false,

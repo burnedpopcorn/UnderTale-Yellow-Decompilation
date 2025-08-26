@@ -1,7 +1,5 @@
 function scr_generate_battle_goosic_solo()
 {
-    var mus_pitch;
-    
     global.battle_enemy_name_1 = "goosic a";
     global.battle_menu_number = 1;
     global.speed_self = 4;
@@ -73,7 +71,7 @@ function scr_generate_battle_goosic_solo()
         {
             audio_play_sound_at(mus_genobattle_yellow, 0, 0, 0, 100, 300, 1, 1, 1);
             audio_sound_gain(mus_genobattle_yellow, 1, 0);
-            mus_pitch = (global.kill_number[4] / 7) * 10 * 0.1;
+            var mus_pitch = (global.kill_number[4] / 7) * 10 * 0.1;
             audio_sound_pitch(mus_genobattle_yellow, mus_pitch);
         }
         else

@@ -1,7 +1,7 @@
 switch (scene)
 {
     case 0:
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             cutscene_advance();
         
         break;
@@ -36,7 +36,7 @@ switch (scene)
             
             with (msg)
             {
-                message[0] = "* (A daunting array of screens#  and buttons lie before you.)";
+                message[0] = "* (A daunting array of screens#  and buttons lies before you.)";
                 message[1] = "* (You press one of the#  buttons.)";
             }
         }
@@ -44,7 +44,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         break;
     
     case 3:
@@ -67,7 +67,7 @@ switch (scene)
             ch[4] = "Games";
             ch[5] = "Settings";
             message[0] = "* Robotics Control Status:#  Functioning at 78%.";
-            message[1] = "* Awaiting input . .";
+            message[1] = "* Awaiting input . . .";
             message[2] = "* MAIN DIRECTORY:";
             
             switch (outcome)
@@ -85,12 +85,12 @@ switch (scene)
                     break;
                 
                 case 3:
-                    message[3] = "* Loading . .";
-                    message[4] = "* Estimated time remaining:#  9 hours . .";
+                    message[3] = "* Loading . . .";
+                    message[4] = "* Estimated time remaining:#  9 hours . . .";
                     break;
                 
                 case 4:
-                    message[3] = "* Loading . .";
+                    message[3] = "* Loading . . .";
                     message[4] = "* Feature BLOCKED.";
                     message[5] = "* Custom message: Trying to#  play video games on#  the job? ";
                     message[6] = "* Please report to the head#  office. We have a#  pink-colored gift for you.";
@@ -147,10 +147,10 @@ switch (scene)
             switch (outcome)
             {
                 case 1:
-                    message[1] = "* Attempting shut down . .";
-                    message[2] = "* . .";
+                    message[1] = "* Attempting shut down . . .";
+                    message[2] = "* . . .";
                     message[3] = "* ERROR: Could not complete#  task.";
-                    message[4] = "* . .";
+                    message[4] = "* . . .";
                     message[5] = "* Just kidding ;)";
                     message[6] = "* Emergency shutdown#  complete.";
                     other.scene = 7;
@@ -206,7 +206,7 @@ switch (scene)
         scr_cutscene_end();
         audio_sound_gain(obj_radio.current_song, 1, 500);
         cutscene_advance();
-        instance_destroy(105663);
+        instance_destroy(105664);
         ds_list_clear(global.encounter_list);
         global.sworks_flag[28] = 1;
         break;

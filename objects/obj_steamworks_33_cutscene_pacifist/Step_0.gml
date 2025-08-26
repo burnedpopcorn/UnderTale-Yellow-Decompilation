@@ -3,7 +3,7 @@ if (live_call())
 
 if (global.sworks_flag[28] >= 2)
 {
-    if (scr_interact() && keyboard_multicheck_pressed(0))
+    if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
     {
         scr_text();
         
@@ -48,7 +48,7 @@ switch (scene)
         break;
     
     case -9:
-        cutscene_npc_walk(1161, 360, 200, 4, "x", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 360, 200, 4, "x", "up");
         break;
     
     case -8:
@@ -56,7 +56,7 @@ switch (scene)
         break;
     
     case -7:
-        cutscene_npc_direction(1161, "right");
+        cutscene_npc_direction(obj_ceroba_npc, "right");
         break;
     
     case -6:
@@ -64,11 +64,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Whoa...";
             message[1] = "* I'm guessing this is our#  ticket out of here.";
-            prt[0] = 393;
-            prt[1] = 377;
+            prt[0] = spr_portrait_ceroba_surprised;
+            prt[1] = spr_portrait_ceroba_closed_eyes;
         }
         
         break;
@@ -79,8 +79,8 @@ switch (scene)
         break;
     
     case -4:
-        cutscene_npc_walk(1161, 290, 160, 3, "x", "up");
-        cutscene_npc_walk(1168, 320, 180, 3, "x", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 290, 160, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 320, 180, 3, "x", "up");
         scene = -3;
         break;
     
@@ -95,13 +95,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Just have to... uh...";
             message[1] = "* Why don't you take a#  stab at it?";
             message[2] = "* Technology and I don't#  exactly mix well.";
-            prt[0] = 371;
-            prt[1] = 370;
-            prt[2] = 377;
+            prt[0] = spr_portrait_ceroba_alt;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
             
             if (message_current == 1)
                 obj_ceroba_npc.npc_direction = "down";
@@ -110,7 +110,7 @@ switch (scene)
         break;
     
     case -1:
-        if (cutscene_npc_walk(1161, obj_player_npc.x, obj_player_npc.y + 20, 3, "y", "up") && cutscene_camera_move(obj_player_npc.x, obj_player_npc.y, 2, true))
+        if (cutscene_npc_walk(obj_ceroba_npc, obj_player_npc.x, obj_player_npc.y + 20, 3, "y", "up") && cutscene_camera_move(obj_player_npc.x, obj_player_npc.y, 2, true))
         {
             instance_destroy(obj_player_npc);
             cutscene_actor_into_follower();
@@ -127,7 +127,7 @@ switch (scene)
         break;
     
     case 0:
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
         {
             scr_cutscene_start();
             cutscene_advance();
@@ -140,14 +140,14 @@ switch (scene)
         
         with (msg)
         {
-            message[0] = "* (A daunting array of screens#  and buttons lie before you.)";
+            message[0] = "* (A daunting array of screens#  and buttons lies before you.)";
             message[1] = "* (You press one of the#  buttons.)";
         }
         
         break;
     
     case 2:
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         break;
     
     case 3:
@@ -170,7 +170,7 @@ switch (scene)
             ch[4] = "Games";
             ch[5] = "Settings";
             message[0] = "* Robotics Control Status:#  Functioning at 78%.";
-            message[1] = "* Awaiting input . .";
+            message[1] = "* Awaiting input . . .";
             message[2] = "* MAIN DIRECTORY:";
             
             switch (outcome)
@@ -188,12 +188,12 @@ switch (scene)
                     break;
                 
                 case 3:
-                    message[3] = "* Loading . .";
-                    message[4] = "* Estimated time remaining:#  9 hours . .";
+                    message[3] = "* Loading . . .";
+                    message[4] = "* Estimated time remaining:#  9 hours . . .";
                     break;
                 
                 case 4:
-                    message[3] = "* Loading . .";
+                    message[3] = "* Loading . . .";
                     message[4] = "* Feature BLOCKED.";
                     message[5] = "* Custom message: Trying to#  play video games on#  the job? ";
                     message[6] = "* Please report to the head#  office. We have a#  pink-colored gift for you.";
@@ -250,10 +250,10 @@ switch (scene)
             switch (outcome)
             {
                 case 1:
-                    message[1] = "* Attempting shut down . .";
-                    message[2] = "* . .";
+                    message[1] = "* Attempting shut down . . .";
+                    message[2] = "* . . .";
                     message[3] = "* ERROR: Could not complete#  task.";
-                    message[4] = "* . .";
+                    message[4] = "* . . .";
                     message[5] = "* Just kidding ;)";
                     message[6] = "* Emergency shutdown#  complete.";
                     other.scene = 7;
@@ -301,7 +301,7 @@ switch (scene)
         break;
     
     case 11:
-        cutscene_npc_direction(1161, "left");
+        cutscene_npc_direction(obj_ceroba_npc, "left");
         break;
     
     case 12:
@@ -316,7 +316,7 @@ switch (scene)
         break;
     
     case 14:
-        cutscene_npc_walk(1161, 210, 190, 3, "y", "left");
+        cutscene_npc_walk(obj_ceroba_npc, 210, 190, 3, "y", "left");
         break;
     
     case 15:
@@ -324,7 +324,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* I hope that worked.";
             message[1] = "* It's unfortunate Axis#  had to end up this way.";
             message[2] = "* Maybe I should...";
@@ -332,13 +332,13 @@ switch (scene)
             message[4] = "* I wish Chujin's project#  could thrive but a line#  had to be drawn.";
             message[5] = "* Can't dwell in the past#  any longer.";
             message[6] = "* Let's go.";
-            prt[0] = 377;
-            prt[1] = 371;
-            prt[2] = 394;
-            prt[3] = 377;
-            prt[4] = 371;
-            prt[5] = 371;
-            prt[6] = 370;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_alt;
+            prt[2] = spr_portrait_ceroba_disapproving;
+            prt[3] = spr_portrait_ceroba_closed_eyes;
+            prt[4] = spr_portrait_ceroba_alt;
+            prt[5] = spr_portrait_ceroba_alt;
+            prt[6] = spr_portrait_ceroba_neutral;
             
             if (message_current == 1)
                 obj_ceroba_npc.npc_direction = "up";
@@ -350,7 +350,7 @@ switch (scene)
         break;
     
     case 16:
-        if (cutscene_npc_walk(1161, obj_pl.x + 20, obj_pl.y, 3, "y", "left"))
+        if (cutscene_npc_walk(obj_ceroba_npc, obj_pl.x + 20, obj_pl.y, 3, "y", "left"))
         {
             cutscene_actor_into_follower();
             scene = 17;
@@ -361,7 +361,7 @@ switch (scene)
     case 17:
         scr_cutscene_end();
         cutscene_advance();
-        instance_destroy(105663);
+        instance_destroy(105664);
         ds_list_clear(global.encounter_list);
         global.sworks_flag[28] = 2;
         break;

@@ -1,11 +1,9 @@
-var item_type_last, item_type_repeat_count, item_type_repeat_count_max;
-
 if (live_call())
     return global.live_result;
 
-item_type_last = obj_factory_02_conveyor_puzzle.conveyor_item_type_last;
-item_type_repeat_count = obj_factory_02_conveyor_puzzle.conveyor_item_type_repeat_count;
-item_type_repeat_count_max = obj_factory_02_conveyor_puzzle.conveyor_item_type_repeat_count_max;
+var item_type_last = obj_factory_02_conveyor_puzzle.conveyor_item_type_last;
+var item_type_repeat_count = obj_factory_02_conveyor_puzzle.conveyor_item_type_repeat_count;
+var item_type_repeat_count_max = obj_factory_02_conveyor_puzzle.conveyor_item_type_repeat_count_max;
 item_type = choose("trash", "blue", "red");
 
 if (item_type == item_type_last)

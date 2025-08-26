@@ -1,5 +1,3 @@
-var chain;
-
 if (global.snowdin_flag[11] == 1)
 {
     image_speed = 0;
@@ -18,6 +16,6 @@ if (global.snowdin_flag[11] == 1)
 
 image_speed = 0.5;
 depth = -y;
-chain = instance_create(x, y, obj_bridge_chain);
+var chain = instance_create(x, y, obj_bridge_chain);
 chain.image_speed = image_speed;
 fall = false;

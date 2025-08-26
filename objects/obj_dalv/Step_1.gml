@@ -107,7 +107,7 @@ if (spritelock == true)
 if (speed > 0)
     image_speed = 0.2;
 
-if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == 100)
+if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == sndfnt_dalv)
 {
     if (obj_dialogue.cutoff == string_length(obj_dialogue.message[obj_dialogue.message_current]))
     {

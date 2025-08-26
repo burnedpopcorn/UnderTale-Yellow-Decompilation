@@ -1,8 +1,7 @@
-var current_song, fav_song;
-
 event_inherited();
-current_song = obj_rodney_snowdin_14b_overworld_yellow.song;
-fav_song = 145;
+var current_song = obj_rodney_snowdin_14b_overworld_yellow.song;
+var fav_song = 145;
+var message_repeating;
 message_repeating[0] = "* (You got the band merch pin.)";
 message_repeating[1] = "* That one's super rare, so don't#  you lose it!";
 message_repeating[2] = "* Only was sold at the concert#  they did at the dump that one#  time!";

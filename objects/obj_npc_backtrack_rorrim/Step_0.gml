@@ -10,7 +10,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Is that a new hat?";
                 message[1] = "* Love it!";
@@ -25,7 +25,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* I think I settled on a goal#  for my journey.";
                 message[1] = "* I wish to become the King's#  tailor!";
@@ -42,9 +42,9 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
-                message[0] = "* I find this resort so quant,#  don't you agree?";
+                message[0] = "* I find this resort so quaint,#  don't you agree?";
                 message[1] = "* Tying the wooden aesthetic#  together with bears and honey?";
                 message[2] = "* Splendid!";
                 message[3] = "* The whole place really says#  \"We love you and would never#  maul you.\"";
@@ -58,7 +58,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Oh, right! My complexion.";
                 message[1] = "* What can I say?";
@@ -72,7 +72,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Knock 'em dead out there!";
                 message[1] = "* Figuratively.";

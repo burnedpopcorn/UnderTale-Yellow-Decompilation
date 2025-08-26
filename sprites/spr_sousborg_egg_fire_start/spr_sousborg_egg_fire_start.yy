@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"76b70c73-c282-4a17-81ec-6f05cf532348",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b415a60f-4680-4a88-8978-7de8c90537c1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0e7e2852-22f1-4e0b-a501-01c782475a69",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a71a5cf3-31dc-4a81-84c5-4763a92c4082",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 71,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"423ea276-ff4d-41c6-a856-c80f87d36c07","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"61a197a0-5ced-4099-8ac8-de781a43f403","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"76b70c73-c282-4a17-81ec-6f05cf532348","path":"sprites/spr_sousborg_egg_fire_start/spr_sousborg_egg_fire_start.yy",},},},"Disabled":false,"id":"843fb182-9c2b-42ac-afea-f46d5cd92178","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b415a60f-4680-4a88-8978-7de8c90537c1","path":"sprites/spr_sousborg_egg_fire_start/spr_sousborg_egg_fire_start.yy",},},},"Disabled":false,"id":"b772d81d-d9ea-4a12-ac89-c6d6bd8528d2","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0e7e2852-22f1-4e0b-a501-01c782475a69","path":"sprites/spr_sousborg_egg_fire_start/spr_sousborg_egg_fire_start.yy",},},},"Disabled":false,"id":"306f2b7f-ebed-49cd-a493-091018b76eda","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a71a5cf3-31dc-4a81-84c5-4763a92c4082","path":"sprites/spr_sousborg_egg_fire_start/spr_sousborg_egg_fire_start.yy",},},},"Disabled":false,"id":"818f8c9e-5f9f-4c91-994b-4d395fff714e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

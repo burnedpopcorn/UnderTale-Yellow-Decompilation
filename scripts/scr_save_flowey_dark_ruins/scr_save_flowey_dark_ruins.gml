@@ -1,8 +1,6 @@
 function scr_save_flowey_dark_ruins()
 {
-    var current_room, kill_number;
-    
-    current_room = room_get_name(room);
+    var current_room = room_get_name(room);
     current_save_number = 1;
     scr_determine_save_area();
     
@@ -13,8 +11,8 @@ function scr_save_flowey_dark_ruins()
     
     with (msg)
     {
-        sndfnt = 96;
-        kill_number = global.kill_number[1];
+        sndfnt = sndfnt_flowey;
+        var kill_number = global.kill_number[1];
         
         if (global.kill_number[1] <= 15 && global.flowey_flag[6] == 0)
         {
@@ -28,7 +26,7 @@ function scr_save_flowey_dark_ruins()
             }
             
             message[0] = "* Gee, it's getting a#  little dusty around here,#  huh?";
-            prt[0] = 357;
+            prt[0] = flowey_worried;
         }
         else if (global.kill_number[1] <= 10 && global.flowey_flag[6] == 1)
         {
@@ -41,12 +39,12 @@ function scr_save_flowey_dark_ruins()
                 exit;
             }
             
-            col_modif[0] = 255;
+            col_modif[0] = c_red;
             message[0] = "* Not too fond of that#  whole mercy thing?";
             message[1] = "* That's alright, whatever#  gets you to ASGORE#  friend!";
             message_col[0][1] = "                          #              ASGORE";
-            prt[0] = 353;
-            prt[1] = 348;
+            prt[0] = flowey_plains;
+            prt[1] = flowey_nice;
         }
         else if (global.kill_number[1] <= 5 && global.flowey_flag[6] == 2)
         {
@@ -62,9 +60,9 @@ function scr_save_flowey_dark_ruins()
             message[0] = "* You've really got some#  passion there.";
             message[1] = "* There's only " + string(global.kill_number[scr_determine_world_value_yellow()]) + " of the#  monsters left not#  counting the weirdo.";
             message[2] = "* Good luck, pal!";
-            prt[0] = 357;
-            prt[1] = 348;
-            prt[2] = 347;
+            prt[0] = flowey_worried;
+            prt[1] = flowey_nice;
+            prt[2] = flowey_niceside;
             global.flowey_flag[6] = 3;
         }
         else if (global.kill_number[1] <= 0 && global.flowey_flag[6] == 3)
@@ -72,22 +70,22 @@ function scr_save_flowey_dark_ruins()
             message[0] = "* Wow, it sure is quiet#  around here.";
             message[1] = "* I gotta say, it's#  a bit nice with no#  disturbances.";
             message[2] = "* Well, nothing left to#  do here I guess. Let's#  keep going!";
-            prt[0] = 347;
-            prt[1] = 348;
-            prt[2] = 348;
+            prt[0] = flowey_niceside;
+            prt[1] = flowey_nice;
+            prt[2] = flowey_nice;
             global.flowey_flag[6] = 4;
         }
         else if (global.flowey_flag[6] == 4 && current_room != "rm_darkruins_16")
         {
             message[0] = "* Let's keep moving!";
-            prt[0] = 348;
+            prt[0] = flowey_nice;
         }
         else if (other.current_save_number < global.flowey_save_number)
         {
             message[0] = "* What are you doing back#  here? The exit's the#  other way, silly!";
             message[1] = "* Let's get going.";
-            prt[0] = 352;
-            prt[1] = 348;
+            prt[0] = flowey_plain;
+            prt[1] = flowey_nice;
         }
         else
         {
@@ -98,19 +96,19 @@ function scr_save_flowey_dark_ruins()
                     {
                         case 0:
                             message[0] = "* Howdy!#* Looks like you got#  it then!  ";
-                            prt[0] = 348;
+                            prt[0] = flowey_nice;
                             global.flowey_flag[0]++;
                             break;
                         
                         case 1:
                             message[0] = "* Why the long face, pal?";
                             message[1] = "* Don't worry, this place#  is way better than up#  there!";
-                            message[2] = "* That old lady would've#  just  spoiled all of#  our fun!";
+                            message[2] = "* That old lady would've#  just spoiled all of#  our fun!";
                             message[3] = "* Come on, let's not stand#  around here all day!";
-                            prt[0] = 348;
-                            prt[1] = 347;
-                            prt[2] = 357;
-                            prt[3] = 348;
+                            prt[0] = flowey_nice;
+                            prt[1] = flowey_niceside;
+                            prt[2] = flowey_worried;
+                            prt[3] = flowey_nice;
                             global.flowey_flag[0]++;
                             break;
                         
@@ -119,10 +117,10 @@ function scr_save_flowey_dark_ruins()
                             message[1] = "* Do you not trust me or#  something?";
                             message[2] = "* Come on!#* I'm your pal!";
                             message[3] = "* I got your back!";
-                            prt[0] = 352;
-                            prt[1] = 357;
-                            prt[2] = 347;
-                            prt[3] = 348;
+                            prt[0] = flowey_plain;
+                            prt[1] = flowey_worried;
+                            prt[2] = flowey_niceside;
+                            prt[3] = flowey_nice;
                             global.flowey_flag[0]++;
                             break;
                         
@@ -131,7 +129,7 @@ function scr_save_flowey_dark_ruins()
                         case 5:
                         case 7:
                             message[0] = "* You should get going...";
-                            prt[0] = 352;
+                            prt[0] = flowey_plain;
                             
                             if (global.flowey_flag[0] != 7)
                                 global.flowey_flag[0]++;
@@ -147,14 +145,14 @@ function scr_save_flowey_dark_ruins()
                             message[5] = "* I'm the only friend #  you'll ever need!";
                             message[6] = "* Can Toriel save for you?#* NO!";
                             message[7] = "* So let's get out of#  here while we're#  still young!";
-                            prt[0] = 351;
-                            prt[1] = 351;
-                            prt[2] = 351;
-                            prt[3] = 347;
-                            prt[4] = 348;
-                            prt[5] = 347;
-                            prt[6] = 348;
-                            prt[7] = 357;
+                            prt[0] = flowey_pissed;
+                            prt[1] = flowey_pissed;
+                            prt[2] = flowey_pissed;
+                            prt[3] = flowey_niceside;
+                            prt[4] = flowey_nice;
+                            prt[5] = flowey_niceside;
+                            prt[6] = flowey_nice;
+                            prt[7] = flowey_worried;
                             global.flowey_flag[0]++;
                             break;
                     }
@@ -166,34 +164,34 @@ function scr_save_flowey_dark_ruins()
                     {
                         case 0:
                             message[0] = "* Howdy!";
-                            prt[0] = 348;
+                            prt[0] = flowey_nice;
                             message[1] = "* I see you're still in#  one piece!";
-                            prt[1] = 357;
+                            prt[1] = flowey_worried;
                             message[2] = "* You saw that weirdo#  right?";
-                            prt[2] = 352;
+                            prt[2] = flowey_plain;
                             message[3] = "* If you want to get out#  of here you'll have to#  go through him.";
-                            prt[3] = 357;
+                            prt[3] = flowey_worried;
                             message[4] = "* He shouldn't be a#  problem though.";
-                            prt[4] = 348;
+                            prt[4] = flowey_nice;
                             message[5] = "* And if he is, that's why#  I'm here!";
-                            prt[5] = 348;
+                            prt[5] = flowey_nice;
                             global.flowey_flag[1]++;
                             break;
                         
                         case 1:
                             message[0] = "* Again?";
-                            prt[0] = 352;
+                            prt[0] = flowey_plain;
                             message[1] = "* Okay, you're double#  saved now!";
-                            prt[1] = 347;
+                            prt[1] = flowey_niceside;
                             global.flowey_flag[1]++;
                             break;
                         
                         case 2:
                             message[0] = "* Again?";
                             message[0] = "* Really?";
-                            prt[0] = 351;
+                            prt[0] = flowey_pissed;
                             message[1] = "* How many saves do you #  need?";
-                            prt[1] = 351;
+                            prt[1] = flowey_pissed;
                             break;
                     }
                     
@@ -209,18 +207,18 @@ function scr_save_flowey_dark_ruins()
                             message[3] = "* That's not like monsters#  at all!";
                             message[4] = "* Don't let this ruin#  your impression of#  the Underground!";
                             message[5] = "* We'll leave this#  dump behind soon#  enough!";
-                            prt[0] = 348;
-                            prt[1] = 352;
-                            prt[2] = 352;
-                            prt[3] = 347;
-                            prt[4] = 348;
-                            prt[5] = 348;
+                            prt[0] = flowey_nice;
+                            prt[1] = flowey_plain;
+                            prt[2] = flowey_plain;
+                            prt[3] = flowey_niceside;
+                            prt[4] = flowey_nice;
+                            prt[5] = flowey_nice;
                             global.flowey_flag[2]++;
                             break;
                         
                         case 1:
                             message[0] = "* You're already saved,#  let's get a move#  on!";
-                            prt[0] = 348;
+                            prt[0] = flowey_nice;
                             break;
                     }
                     
@@ -253,11 +251,11 @@ function scr_save_flowey_dark_ruins()
                                 message[4] = "* It's great to be such#  a needed friend!";
                             }
                             
-                            prt[0] = 348;
-                            prt[1] = 347;
-                            prt[2] = 348;
-                            prt[3] = 348;
-                            prt[4] = 347;
+                            prt[0] = flowey_nice;
+                            prt[1] = flowey_niceside;
+                            prt[2] = flowey_nice;
+                            prt[3] = flowey_nice;
+                            prt[4] = flowey_niceside;
                             
                             if (global.death_count_total > 0)
                                 global.flowey_flag[3] = 1;
@@ -269,16 +267,16 @@ function scr_save_flowey_dark_ruins()
                         case 1:
                             message[0] = "* What? Not happy with#  your death tally?";
                             message[1] = "* Haven't you ever heard#  the phrase: Don't shoot #  the messenger?";
-                            prt[0] = 357;
-                            prt[1] = 347;
+                            prt[0] = flowey_worried;
+                            prt[1] = flowey_niceside;
                             global.flowey_flag[3]++;
                             break;
                         
                         case 2:
                             message[0] = "* Come on, buddy!";
                             message[1] = "* You can save more#  later!";
-                            prt[0] = 352;
-                            prt[1] = 352;
+                            prt[0] = flowey_plain;
+                            prt[1] = flowey_plain;
                             break;
                     }
                     
@@ -295,11 +293,11 @@ function scr_save_flowey_dark_ruins()
                                 message[2] = "* Just gotta deal with#  that downer!";
                                 message[3] = "* Then you're out of#  the Ruins!";
                                 message[4] = "* See you on the other#  side, pal!";
-                                prt[0] = 348;
-                                prt[1] = 348;
-                                prt[2] = 348;
-                                prt[3] = 347;
-                                prt[4] = 348;
+                                prt[0] = flowey_nice;
+                                prt[1] = flowey_nice;
+                                prt[2] = flowey_nice;
+                                prt[3] = flowey_niceside;
+                                prt[4] = flowey_nice;
                                 global.flowey_flag[4]++;
                                 break;
                             
@@ -311,19 +309,19 @@ function scr_save_flowey_dark_ruins()
                                 message[4] = "* And in case you#  haven't noticed...";
                                 message[5] = "* He really won't be#  missed!";
                                 message[6] = "* So go get him!";
-                                prt[0] = 352;
-                                prt[1] = 357;
-                                prt[2] = 348;
-                                prt[3] = 348;
-                                prt[4] = 347;
-                                prt[5] = 348;
-                                prt[6] = 348;
+                                prt[0] = flowey_plain;
+                                prt[1] = flowey_worried;
+                                prt[2] = flowey_nice;
+                                prt[3] = flowey_nice;
+                                prt[4] = flowey_niceside;
+                                prt[5] = flowey_nice;
+                                prt[6] = flowey_nice;
                                 global.flowey_flag[4]++;
                                 break;
                             
                             case 2:
                                 message[0] = "* Come on, kid!#* Show him who's boss!";
-                                prt[0] = 348;
+                                prt[0] = flowey_nice;
                                 break;
                         }
                     }
@@ -341,23 +339,23 @@ function scr_save_flowey_dark_ruins()
                                 message[6] = "* No use in going back#  there.";
                                 message[7] = "* I'll be at this one and#  this one only until#  you wanna leave.";
                                 message[8] = "* See you later!";
-                                prt[0] = 352;
-                                prt[1] = 357;
-                                prt[2] = 348;
-                                prt[3] = 347;
-                                prt[4] = 347;
-                                prt[5] = 348;
-                                prt[6] = 347;
-                                prt[7] = 348;
-                                prt[8] = 348;
+                                prt[0] = flowey_plain;
+                                prt[1] = flowey_worried;
+                                prt[2] = flowey_nice;
+                                prt[3] = flowey_niceside;
+                                prt[4] = flowey_niceside;
+                                prt[5] = flowey_nice;
+                                prt[6] = flowey_niceside;
+                                prt[7] = flowey_nice;
+                                prt[8] = flowey_nice;
                                 global.flowey_flag[5]++;
                                 break;
                             
                             case 1:
                                 message[0] = "* The exit is through#  his house.";
                                 message[1] = "* Go on.";
-                                prt[0] = 348;
-                                prt[1] = 347;
+                                prt[0] = flowey_nice;
+                                prt[1] = flowey_niceside;
                                 break;
                         }
                     }
@@ -379,27 +377,27 @@ function scr_save_flowey_dark_ruins()
                                 message[10] = "* No use in going back#  there.";
                                 message[11] = "* I'll be at this one and#  this one only until#  you wanna leave.";
                                 message[12] = "* See you later!";
-                                prt[0] = 348;
-                                prt[1] = 348;
-                                prt[2] = 348;
-                                prt[3] = 348;
-                                prt[4] = 347;
-                                prt[5] = 348;
-                                prt[6] = 347;
-                                prt[7] = 348;
-                                prt[8] = 348;
-                                prt[9] = 348;
-                                prt[10] = 348;
-                                prt[11] = 348;
-                                prt[12] = 348;
+                                prt[0] = flowey_nice;
+                                prt[1] = flowey_nice;
+                                prt[2] = flowey_nice;
+                                prt[3] = flowey_nice;
+                                prt[4] = flowey_niceside;
+                                prt[5] = flowey_nice;
+                                prt[6] = flowey_niceside;
+                                prt[7] = flowey_nice;
+                                prt[8] = flowey_nice;
+                                prt[9] = flowey_nice;
+                                prt[10] = flowey_nice;
+                                prt[11] = flowey_nice;
+                                prt[12] = flowey_nice;
                                 global.flowey_flag[5]++;
                                 break;
                             
                             case 1:
                                 message[0] = "* The exit is through#  his house.";
                                 message[1] = "* Go on.";
-                                prt[0] = 348;
-                                prt[1] = 347;
+                                prt[0] = flowey_nice;
+                                prt[1] = flowey_niceside;
                                 break;
                         }
                     }
@@ -418,24 +416,24 @@ function scr_save_flowey_dark_ruins()
                                 message[7] = "* No use in going back#  there.";
                                 message[8] = "* I'll be at this one and#  this one only until#  you wanna leave.";
                                 message[9] = "* See you later!";
-                                prt[0] = 348;
-                                prt[1] = 348;
-                                prt[2] = 348;
-                                prt[3] = 349;
-                                prt[4] = 347;
-                                prt[5] = 348;
-                                prt[6] = 348;
-                                prt[7] = 348;
-                                prt[8] = 348;
-                                prt[9] = 348;
+                                prt[0] = flowey_nice;
+                                prt[1] = flowey_nice;
+                                prt[2] = flowey_nice;
+                                prt[3] = flowey_smirk;
+                                prt[4] = flowey_niceside;
+                                prt[5] = flowey_nice;
+                                prt[6] = flowey_nice;
+                                prt[7] = flowey_nice;
+                                prt[8] = flowey_nice;
+                                prt[9] = flowey_nice;
                                 global.flowey_flag[5]++;
                                 break;
                             
                             case 1:
                                 message[0] = "* The exit is through#  his house.";
                                 message[1] = "* Go on.";
-                                prt[0] = 348;
-                                prt[1] = 347;
+                                prt[0] = flowey_nice;
+                                prt[1] = flowey_niceside;
                                 break;
                         }
                     }

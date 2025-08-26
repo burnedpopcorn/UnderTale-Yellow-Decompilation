@@ -1,7 +1,7 @@
-function scr_absolutesign(argument0, argument1)
+function scr_absolutesign(arg0, arg1)
 {
-    if (sign(argument0) == 0)
-        return argument1;
+    if (sign(arg0) == 0)
+        return arg1;
     
-    return sign(argument0);
+    return sign(arg0);
 }

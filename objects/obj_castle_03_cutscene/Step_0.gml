@@ -16,7 +16,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_npc_walk(1168, 390, obj_player_npc.y, 1, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 390, obj_player_npc.y, 1, "x", "up");
         cutscene_advance();
         break;
     
@@ -25,7 +25,7 @@ switch (scene)
         break;
     
     case 3:
-        cutscene_npc_walk(1164, 390, 160, 3, "y", "up");
+        cutscene_npc_walk(obj_martlet_npc, 390, 160, 3, "y", "up");
         break;
     
     case 4:
@@ -33,7 +33,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Wait.";
             message[1] = "* Before we enter, I just#  wanna say...";
             message[2] = "* Thanks for today.";
@@ -46,18 +46,18 @@ switch (scene)
             message[9] = "* I'll see you again once#  monsterkind is free,#  remember?";
             message[10] = "* Wherever you are when#  that time comes,";
             message[11] = "* I will search you out!#  Guaranteed!";
-            prt[0] = 317;
-            prt[1] = 329;
-            prt[2] = 320;
-            prt[3] = 320;
-            prt[4] = 317;
-            prt[5] = 329;
-            prt[6] = 317;
-            prt[7] = 320;
-            prt[8] = 328;
-            prt[9] = 312;
-            prt[10] = 320;
-            prt[11] = 312;
+            prt[0] = spr_martlet_head_downer;
+            prt[1] = spr_martlet_head_sad;
+            prt[2] = spr_martlet_head_melancholic;
+            prt[3] = spr_martlet_head_melancholic;
+            prt[4] = spr_martlet_head_downer;
+            prt[5] = spr_martlet_head_sad;
+            prt[6] = spr_martlet_head_downer;
+            prt[7] = spr_martlet_head_melancholic;
+            prt[8] = spr_martlet_head_regular;
+            prt[9] = spr_martlet_head_content;
+            prt[10] = spr_martlet_head_melancholic;
+            prt[11] = spr_martlet_head_content;
             
             if (message_current == 1)
                 obj_player_npc.npc_direction = "down";
@@ -74,13 +74,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Well...";
             message[1] = "* Guess it's time.";
             message[2] = "* Just follow my lead.";
-            prt[0] = 317;
-            prt[1] = 320;
-            prt[2] = 321;
+            prt[0] = spr_martlet_head_downer;
+            prt[1] = spr_martlet_head_melancholic;
+            prt[2] = spr_martlet_head_moderate;
         }
         
         break;
@@ -90,11 +90,11 @@ switch (scene)
         break;
     
     case 8:
-        cutscene_npc_walk_relative(1168, 20, 0, 2, "x", "down");
+        cutscene_npc_walk_relative(obj_player_npc, 20, 0, 2, "x", "down");
         break;
     
     case 9:
-        cutscene_npc_walk(1164, obj_martlet_npc.x, obj_player_npc.y, 2, "y", "right");
+        cutscene_npc_walk(obj_martlet_npc, obj_martlet_npc.x, obj_player_npc.y, 2, "y", "right");
         
         if (obj_martlet_npc.y < (obj_player_npc.y + 20))
             obj_player_npc.npc_direction = "left";
@@ -106,7 +106,7 @@ switch (scene)
         break;
     
     case 11:
-        cutscene_npc_walk(1164, obj_martlet_npc.x, 106, 1, "y", "up");
+        cutscene_npc_walk(obj_martlet_npc, obj_martlet_npc.x, 106, 1, "y", "up");
         cutscene_advance();
         break;
     
@@ -123,7 +123,7 @@ switch (scene)
         break;
     
     case 13:
-        cutscene_npc_walk(1168, obj_martlet_npc.x, 106, 1, "x", "up");
+        cutscene_npc_walk(obj_player_npc, obj_martlet_npc.x, 106, 1, "x", "up");
         break;
     
     case 14:
@@ -139,6 +139,6 @@ switch (scene)
         break;
     
     case 16:
-        cutscene_change_room(268, 160, 560, 0.025);
+        cutscene_change_room(rm_castle_throne_room, 160, 560, 0.025);
         break;
 }

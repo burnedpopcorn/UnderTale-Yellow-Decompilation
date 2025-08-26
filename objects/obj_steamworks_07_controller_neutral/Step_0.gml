@@ -12,7 +12,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_sfx_play(378, 1);
+        cutscene_sfx_play(snd_success, 1);
         break;
     
     case 3:
@@ -20,7 +20,7 @@ switch (scene)
         break;
     
     case 4:
-        cutscene_npc_walk(1168, 80, 105, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 80, 105, 3, "x", "up");
         break;
     
     case 5:

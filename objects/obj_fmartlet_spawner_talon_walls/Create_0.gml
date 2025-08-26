@@ -1,9 +1,7 @@
-var battle_box;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 attack_tick = 0;
 xx[0] = battle_box.bbox_left + 4 + 50;
 xx[1] = battle_box.bbox_left + 4 + 100;

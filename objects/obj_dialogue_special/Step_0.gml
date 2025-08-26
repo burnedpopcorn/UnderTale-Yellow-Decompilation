@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -16,7 +14,7 @@ if (global.dialogue_open == false)
 
 if (letter_array == -1)
 {
-    for (i = 1; i <= string_length(message[message_current]); i++)
+    for (var i = 1; i <= string_length(message[message_current]); i++)
     {
         letter_array[i] = string_char_at(message[message_current], i);
         
@@ -63,7 +61,7 @@ else
     can_skip = true;
 }
 
-if (keyboard_multicheck_pressed(0) && skippable == true && can_skip == true)
+if (keyboard_multicheck_pressed(vk_nokey) && skippable == true && can_skip == true)
 {
     message_advance = true;
     can_skip = false;
@@ -72,7 +70,7 @@ if (keyboard_multicheck_pressed(0) && skippable == true && can_skip == true)
 if (letter_waiter > 0)
     letter_waiter--;
 
-if (keyboard_multicheck_pressed(1) && skippable == true)
+if (keyboard_multicheck_pressed(vk_anykey) && skippable == true)
     letter_current = array_length(letter_array) - 1;
 
 if (message_advance == true)

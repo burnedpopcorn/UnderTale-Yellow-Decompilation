@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cc9b5fd8-0878-4d7d-83ef-8b8783fcd101",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f767dd63-49ad-449c-8ab2-0bacbef59cfd",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 18,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c549074f-bda1-4afc-bb8f-5744f5f11a68","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"864d038e-386b-4124-8ec5-33468f6f089a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -53,8 +53,8 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cc9b5fd8-0878-4d7d-83ef-8b8783fcd101","path":"sprites/spr_battle_enemy_attack_frostermit_pincher_right_3_inner/spr_battle_enemy_attack_frostermit_pincher_right_3_inner.yy",},},},"Disabled":false,"id":"977c772b-ce6c-4fd9-96a5-c78336b04d39","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f767dd63-49ad-449c-8ab2-0bacbef59cfd","path":"sprites/spr_battle_enemy_attack_frostermit_pincher_right_3_inner/spr_battle_enemy_attack_frostermit_pincher_right_3_inner.yy",},},},"Disabled":false,"id":"67aa5f96-0370-4f0e-852a-953169682f84","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Snowdin",
+    "path": "texturegroups/Snowdin",
   },
   "type": 0,
   "VTile": false,

@@ -1,7 +1,5 @@
 function scr_enemy_attack_flier_swarm_double()
 {
-    var random_number_x, random_number_y, sector, sector_2;
-    
     global.attack_counter_max = 30;
     
     if (global.attack_counter == 0)
@@ -16,13 +14,15 @@ function scr_enemy_attack_flier_swarm_double()
         
         for (i = 1; i <= 2; i += 1)
         {
-            random_number_x = irandom_range(obj_dialogue_box_battle_transformation_any.bbox_left + 13, obj_dialogue_box_battle_transformation_any.bbox_right - 13);
-            random_number_y = irandom_range(obj_dialogue_box_battle_transformation_any.bbox_top + 11, obj_dialogue_box_battle_transformation_any.bbox_bottom - 11);
+            var random_number_x = irandom_range(obj_dialogue_box_battle_transformation_any.bbox_left + 13, obj_dialogue_box_battle_transformation_any.bbox_right - 13);
+            var random_number_y = irandom_range(obj_dialogue_box_battle_transformation_any.bbox_top + 11, obj_dialogue_box_battle_transformation_any.bbox_bottom - 11);
             
             if (i == 1)
                 random_generator = random_generator_1;
             else if (i == 2)
                 random_generator = random_generator_2;
+            
+            var sector, sector_2;
             
             if (random_generator == 1)
             {

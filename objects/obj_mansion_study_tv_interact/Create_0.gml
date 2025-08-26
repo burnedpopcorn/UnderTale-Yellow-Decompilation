@@ -1,7 +1,7 @@
 if (live_call())
     return global.live_result;
 
-npc_voice_sfx = 0;
+npc_voice_sfx = snd_ceroba_staff_lock;
 npc_id = room_get_name(room) + object_get_name(object_index);
 
 if (is_undefined(ds_map_find_value(global.npc_map, npc_id)))

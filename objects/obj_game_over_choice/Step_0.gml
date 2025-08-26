@@ -1,5 +1,3 @@
-var menu_option_number;
-
 if (no_loop)
     exit;
 
@@ -9,7 +7,7 @@ if (image_alpha < 1)
     exit;
 }
 
-menu_option_number = 1;
+var menu_option_number = 1;
 
 if (retry_enabled)
     menu_option_number += 1;
@@ -37,7 +35,7 @@ if (global.up_keyp && menu_option_number > 1)
     audio_play_sound(snd_mainmenu_select, 1, 0);
 }
 
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     if (menu_option_selected == 1)
     {

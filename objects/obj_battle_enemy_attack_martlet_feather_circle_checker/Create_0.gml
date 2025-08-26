@@ -1,5 +1,3 @@
-var random_number, fcreate_x, fcreate_y;
-
 x_store = 0;
 y_store = 0;
 angle_store = 0;
@@ -13,6 +11,7 @@ max_rise_radius = 20;
 feather_angle_radius = (obj_dialogue_box_battle_transformation_any.bbox_right - x_center) + 60;
 feather_angle_master = 0;
 feather_angle_speed = 6;
+var random_number;
 
 if (!instance_exists(obj_martlet_body))
     random_number = irandom_range(1, 3);
@@ -51,8 +50,8 @@ fcreate_angle_diff = 0;
 
 for (i = 0; i < fcreate_count; i += 1)
 {
-    fcreate_x = x_center + (feather_angle_radius * cos(degtorad(fcreate_angle_diff)));
-    fcreate_y = y_center - (feather_angle_radius * sin(degtorad(fcreate_angle_diff)));
+    var fcreate_x = x_center + (feather_angle_radius * cos(degtorad(fcreate_angle_diff)));
+    var fcreate_y = y_center - (feather_angle_radius * sin(degtorad(fcreate_angle_diff)));
     instance_create(fcreate_x, fcreate_y, obj_battle_enemy_attack_martlet_feather_circle_feather);
     id_feather[i] = global.id_store;
     

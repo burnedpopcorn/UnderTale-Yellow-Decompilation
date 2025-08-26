@@ -1,7 +1,7 @@
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+battle_box = obj_dialogue_box_battle_transformation_any;
 heart = obj_heart_battle_fighting_parent;
 scene = 0;
 image_alpha = 0;

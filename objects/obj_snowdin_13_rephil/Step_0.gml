@@ -34,19 +34,19 @@ if (sprite_index == spr_rephil_turn_away)
 
 if (global.snowdin_flag[8] < 5)
 {
-    if (keyboard_multicheck_pressed(0) && scr_interact() == true)
+    if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true)
         obj_room_controller_snowdin_13.scene = 1;
 }
 else if (global.snowdin_flag[8] == 5)
 {
-    if (keyboard_multicheck_pressed(0) && scr_interact())
+    if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
     {
         scr_text();
         
         with (msg)
         {
             portrait = false;
-            talker[0] = 1434;
+            talker[0] = obj_snowdin_13_rephil;
             message[0] = "* You spreadin' the word of the#  Shufflers reign yet?";
             message[1] = "* It's pretty nice knowin' we got#  someone out there, ya know?";
             message[2] = "* It's stressful, havin' to run#  the gang an' run our publicity#  too.";

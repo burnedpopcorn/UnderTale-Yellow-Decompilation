@@ -1,5 +1,3 @@
-var talk_noise;
-
 if (is_reading == false)
 {
     if (pause_time > 0)
@@ -27,7 +25,7 @@ else
 
 if (floor(image_index) == 1 && talk_noloop == false && can_talk == true)
 {
-    talk_noise = audio_play_sound(sndfnt_toriel, 1, 0);
+    var talk_noise = audio_play_sound(sndfnt_toriel, 1, 0);
     audio_sound_gain(talk_noise, 0.2, 0);
     talk_noloop = true;
 }

@@ -1,13 +1,11 @@
 function scr_determine_can_display_enemy_hp_ui()
 {
-    var game_mode, enemy_count, battle_enemy_name;
-    
     hp_ui_alpha_1 = 1;
     hp_ui_alpha_2 = 1;
     hp_ui_alpha_3 = 1;
-    game_mode = global.game_mode;
-    enemy_count = global.enemy_count;
-    battle_enemy_name = global.battle_enemy_name;
+    var game_mode = global.game_mode;
+    var enemy_count = global.enemy_count;
+    var battle_enemy_name = global.battle_enemy_name;
     
     if (global.game_mode == "customs")
     {

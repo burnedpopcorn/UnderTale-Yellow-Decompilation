@@ -1,8 +1,6 @@
 function scr_mettaton_voice()
 {
-    var mettaton_voice_count;
-    
-    mettaton_voice_count = global.mettaton_voice_count;
+    var mettaton_voice_count = global.mettaton_voice_count;
     
     if (mettaton_voice_count == 1)
     {

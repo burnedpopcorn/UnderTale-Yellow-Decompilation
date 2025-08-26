@@ -1,9 +1,7 @@
 function scr_determine_hit_special_effect_boss()
 {
-    var game_mode, battle_enemy_name, enemy_mode;
-    
-    game_mode = global.game_mode;
-    battle_enemy_name = global.battle_enemy_name;
+    var game_mode = global.game_mode;
+    var battle_enemy_name = global.battle_enemy_name;
     
     if (game_mode == "customs")
     {
@@ -12,7 +10,7 @@ function scr_determine_hit_special_effect_boss()
     {
         if (battle_enemy_name == "dalv")
         {
-            enemy_mode = global.enemy_mode;
+            var enemy_mode = global.enemy_mode;
             
             switch (enemy_mode)
             {

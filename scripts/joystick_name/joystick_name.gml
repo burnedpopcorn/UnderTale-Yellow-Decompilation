@@ -1,7 +1,5 @@
-function joystick_name(argument0)
+function joystick_name(arg0)
 {
-    var jid;
-    
-    jid = __joystick_2_gamepad(argument0);
+    var jid = __joystick_2_gamepad(arg0);
     return gamepad_get_description(jid);
 }

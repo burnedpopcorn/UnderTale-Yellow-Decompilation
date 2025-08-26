@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"14c5fbf3-95c6-486f-85fc-1dad7ecd2032",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"477064d0-3bc3-4678-8565-1e62820ebbc1",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 22,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7facaf0b-b860-4e65-bd46-bb4f2c3c555f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b4f38ca2-8cba-410c-98c4-97e451433489","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -53,8 +53,8 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"14c5fbf3-95c6-486f-85fc-1dad7ecd2032","path":"sprites/spr_battle_enemy_attack_bowll_liquid_marshmallow/spr_battle_enemy_attack_bowll_liquid_marshmallow.yy",},},},"Disabled":false,"id":"74453c72-af7c-4ac7-aeaa-f64bee7b1fd0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"477064d0-3bc3-4678-8565-1e62820ebbc1","path":"sprites/spr_battle_enemy_attack_bowll_liquid_marshmallow/spr_battle_enemy_attack_bowll_liquid_marshmallow.yy",},},},"Disabled":false,"id":"4c9e69c1-e33a-4bfc-8868-78386fd5844d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleDunes",
+    "path": "texturegroups/BattleDunes",
   },
   "type": 0,
   "VTile": false,

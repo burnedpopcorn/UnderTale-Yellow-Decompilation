@@ -1,5 +1,3 @@
-var shift_amount, completed, i, ding_sound;
-
 liquid_image_index += 0.25;
 
 if (liquid_image_index >= sprite_get_number(spr_steamworks_04b_liquid))
@@ -7,7 +5,7 @@ if (liquid_image_index >= sprite_get_number(spr_steamworks_04b_liquid))
 
 if (global.geno_complete[3] == true)
 {
-    if (scr_interact() && keyboard_multicheck_pressed(0))
+    if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
     {
         scr_text();
         
@@ -17,7 +15,7 @@ if (global.geno_complete[3] == true)
 }
 else if (global.sworks_flag[1] > 0)
 {
-    if (scr_interact() && keyboard_multicheck_pressed(0))
+    if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
     {
         scr_text();
         
@@ -28,7 +26,7 @@ else if (global.sworks_flag[1] > 0)
     exit;
 }
 
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     scr_cutscene_start();
     audio_play_sound(snd_pinkgoo_initiate, 1, 0);
@@ -44,7 +42,7 @@ switch (scene)
     
     case 2:
         scr_get_input();
-        shift_amount = 0.015;
+        var shift_amount = 0.015;
         
         if (global.left_key)
         {
@@ -112,9 +110,9 @@ switch (scene)
             }
         }
         
-        completed = 0;
+        var completed = 0;
         
-        for (i = 0; i < array_length_1d(liquid_amount); i++)
+        for (var i = 0; i < array_length_1d(liquid_amount); i++)
         {
             liquid_amount[i] = clamp(liquid_amount[i], 0, 1);
             
@@ -125,7 +123,7 @@ switch (scene)
                 if (liquid_noloop[i] == 0)
                 {
                     liquid_noloop[i] = 1;
-                    ding_sound = audio_play_sound(snd_duel_mark, 1, 0);
+                    var ding_sound = audio_play_sound(snd_duel_mark, 1, 0);
                     audio_sound_pitch(ding_sound, 0.8 + (completed * 0.2));
                 }
             }
@@ -155,7 +153,7 @@ switch (scene)
             audio_stop_sound(snd_pinkgoo_move);
         }
         
-        if (keyboard_multicheck_pressed(1))
+        if (keyboard_multicheck_pressed(vk_anykey))
         {
             if (audio_is_playing(snd_pinkgoo_move))
                 audio_stop_sound(snd_pinkgoo_move);
@@ -203,6 +201,6 @@ liquid_overlay_alpha = 0.25 + (sin(liquid_overlay_deg) * 0.25);
 
 if (scene >= 3 && scene < 6)
 {
-    for (i = 0; i < array_length_1d(liquid_amount); i++)
+    for (var i = 0; i < array_length_1d(liquid_amount); i++)
         liquid_amount[i] = lerp(liquid_amount[i], liquid_target[i], 0.1);
 }

@@ -17,13 +17,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Holy...";
             message[1] = "* What happened here?";
             message[2] = "* Hope this stuff is okay#  to touch...";
-            prt[0] = 393;
-            prt[1] = 381;
-            prt[2] = 381;
+            prt[0] = spr_portrait_ceroba_surprised;
+            prt[1] = spr_portrait_ceroba_nervous;
+            prt[2] = spr_portrait_ceroba_nervous;
         }
         
         break;

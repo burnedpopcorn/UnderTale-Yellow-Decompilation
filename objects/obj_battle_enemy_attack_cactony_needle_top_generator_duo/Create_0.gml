@@ -1,7 +1,7 @@
 damage_number = scr_determine_damage_number_enemy("cactony a", "cactony b", "cactony c");
 image_speed = 0;
 image_index = 0;
-box = 3154;
+box = obj_dialogue_box_battle_transformation_any;
 y_speed = 5;
 animate_alarm = 30;
 attack_alarm = 15;

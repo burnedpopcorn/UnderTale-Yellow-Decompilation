@@ -1,6 +1,4 @@
-var rail_switch;
-
-rail_switch = false;
+var rail_switch = false;
 
 with (obj_mc_button)
 {

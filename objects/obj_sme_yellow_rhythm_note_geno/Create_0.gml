@@ -1,5 +1,3 @@
-var generator;
-
 if (live_call())
     return global.live_result;
 
@@ -8,8 +6,8 @@ damage_number = scr_determine_damage_number_enemy("el bailador", "el bailador", 
 if (global.battle_enemy_name == "flowey")
     damage_number = scr_determine_damage_number_enemy("flowey", "flowey", "flowey");
 
-generator = 3142;
-box = 3154;
+var generator = 3143;
+box = obj_dialogue_box_battle_transformation_any;
 image_speed = 0;
 
 if (x == generator.dj_note_center_x)

@@ -1,9 +1,7 @@
-var draw_alpha;
-
 if (live_call())
     return global.live_result;
 
-draw_alpha = 1;
+var draw_alpha = 1;
 
 if (cooldown_timer < cooldown_timer_max)
     draw_alpha = 0.25;

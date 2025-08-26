@@ -1,6 +1,4 @@
-var shop_name;
-
-shop_name = global.shop_name;
+var shop_name = global.shop_name;
 draw_set_font(fnt_main);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

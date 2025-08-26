@@ -1,8 +1,6 @@
-var time_to_fade_in;
-
 image_alpha = 0;
 image_alpha_inc = 0.2;
-time_to_fade_in = 1 / image_alpha_inc;
+var time_to_fade_in = 1 / image_alpha_inc;
 image_angle_inc = 10;
 target_dir = 270;
 

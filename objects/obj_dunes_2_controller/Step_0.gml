@@ -13,16 +13,16 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_npc_walk(1168, 840, obj_player_npc.y, 3, "x", "right");
+        cutscene_npc_walk(obj_player_npc, 840, obj_player_npc.y, 3, "x", "right");
         scene++;
         break;
     
     case 2:
-        cutscene_sfx_play(113, 1);
+        cutscene_sfx_play(mus_cymbal, 1);
         break;
     
     case 3:
-        cutscene_screen_fade_out(c_white, 0.0064);
+        cutscene_screen_fade_out(16777215, 0.0064);
         break;
     
     case 4:

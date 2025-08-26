@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ffb6fdab-8a92-4787-851e-abbac35c349f",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"af78fb22-3995-4779-8959-d29b17db0801",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b1c7dd8e-64a6-4e4b-a37b-4473abf26515",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"54720bfc-225b-4f23-8781-28b397437bbb",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 96,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"30df2ca9-f8ac-427b-8200-16e6d3865cb3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"afdeffab-509a-40a8-a133-d3477eba592d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ffb6fdab-8a92-4787-851e-abbac35c349f","path":"sprites/spr_gilbert_head_blush/spr_gilbert_head_blush.yy",},},},"Disabled":false,"id":"6d6eed5b-4556-45e1-b199-913408a63ea2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"af78fb22-3995-4779-8959-d29b17db0801","path":"sprites/spr_gilbert_head_blush/spr_gilbert_head_blush.yy",},},},"Disabled":false,"id":"bc9a0d8d-f80e-40f5-a31c-4412f81bf4c1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b1c7dd8e-64a6-4e4b-a37b-4473abf26515","path":"sprites/spr_gilbert_head_blush/spr_gilbert_head_blush.yy",},},},"Disabled":false,"id":"334ac04b-46ae-446c-ab88-18623516d230","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"54720bfc-225b-4f23-8781-28b397437bbb","path":"sprites/spr_gilbert_head_blush/spr_gilbert_head_blush.yy",},},},"Disabled":false,"id":"f64298cd-cd89-49d2-a48c-0731bceaeaa5","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Dunes",
+    "path": "texturegroups/Dunes",
   },
   "type": 0,
   "VTile": false,

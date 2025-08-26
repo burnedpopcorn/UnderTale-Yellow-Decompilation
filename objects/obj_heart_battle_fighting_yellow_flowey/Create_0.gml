@@ -1,5 +1,3 @@
-var player_character;
-
 walk_speed = global.speed_self + (1 * sign(global.current_sp_self));
 image_speed = 0;
 image_index = 0;
@@ -23,7 +21,7 @@ move_vsp_count = 0;
 idle_hsp_count = 0;
 idle_vsp_count = 0;
 max_speed_counter = 100;
-player_character = global.player_character;
+var player_character = global.player_character;
 
 switch (player_character)
 {
@@ -44,6 +42,6 @@ max_points_trail = 5;
 trail_cc_max = 3;
 trail_cc_start = trail_cc_max - 1;
 trail_cc_current = trail_cc_start;
-trail_sprite = spr_heart_white;
+trail_sprite = 1677;
 shoot_delay = 10;
 can_shoot = true;

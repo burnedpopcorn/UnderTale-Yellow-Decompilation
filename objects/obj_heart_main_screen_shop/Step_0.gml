@@ -1,6 +1,4 @@
-var main_shop_screen_number;
-
-main_shop_screen_number = global.main_shop_screen_number;
+var main_shop_screen_number = global.main_shop_screen_number;
 script_execute(scr_controls_shop_main);
 
 if (key_select)

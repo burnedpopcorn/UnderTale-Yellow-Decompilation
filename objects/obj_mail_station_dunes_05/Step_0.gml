@@ -1,16 +1,16 @@
 if (global.dunes_flag[41] >= 1 && global.dunes_flag[41] < 6)
 {
-    if (keyboard_multicheck_pressed(0) && scr_interact())
+    if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
     {
         scr_text();
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* You can mess with that#  later.";
             message[1] = "* We need to go to#  Ceroba's house.";
-            prt[0] = 321;
-            prt[1] = 321;
+            prt[0] = spr_martlet_head_moderate;
+            prt[1] = spr_martlet_head_moderate;
         }
     }
     

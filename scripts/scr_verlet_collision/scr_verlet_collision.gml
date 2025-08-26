@@ -1,10 +1,8 @@
 function scr_verlet_collision()
 {
-    var i, p;
-    
-    for (i = 0; i < array_length(points); i++)
+    for (var i = 0; i < array_length(points); i++)
     {
-        p = points[i];
+        var p = points[i];
         
         if (!p[4])
         {

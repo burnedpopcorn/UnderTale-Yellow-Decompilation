@@ -1,11 +1,9 @@
 function scr_text_counter_overworld()
 {
-    var current_char, counter_max, message_length, pause_duration;
-    
-    current_char = string_char_at(message[message_current], cutoff);
-    counter_max = 1;
-    message_length = string_length(message[message_current]);
-    pause_duration = 5;
+    var current_char = string_char_at(message[message_current], cutoff);
+    var counter_max = 1;
+    var message_length = string_length(message[message_current]);
+    var pause_duration = 5;
     
     if (cutoff > 0 && cutoff < message_length)
     {

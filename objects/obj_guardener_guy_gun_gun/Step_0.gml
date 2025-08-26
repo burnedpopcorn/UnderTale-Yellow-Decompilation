@@ -1,12 +1,10 @@
-var xx, yy, point_dir, bullet;
-
 if (live_call())
     return global.live_result;
 
 state = 2;
-xx = obj_heart_battle_fighting_parent.x;
-yy = obj_heart_battle_fighting_parent.y + 5;
-point_dir = point_direction(x, y, xx, yy);
+var xx = obj_heart_battle_fighting_parent.x;
+var yy = obj_heart_battle_fighting_parent.y + 5;
+var point_dir = point_direction(x, y, xx, yy);
 
 if (abs(angle_difference(direction, 0)) > 1 && state == 0)
 {
@@ -44,7 +42,7 @@ if (state == 1)
         else
         {
             sprite_index = spr_guardener_guy_gun_gun_shoot;
-            bullet = instance_create_depth(x + 2, y - 6, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_bullet_b);
+            var bullet = instance_create_depth(x + 2, y - 6, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_bullet_b);
             bullet.image_angle = direction;
             audio_play_sound(snd_guardener_shoot, 1, 0);
             random_y_offset = choose(-10, 10);

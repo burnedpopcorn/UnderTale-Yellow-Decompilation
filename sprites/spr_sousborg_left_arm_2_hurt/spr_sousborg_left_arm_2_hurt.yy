@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6fbd6c5d-18ee-47c1-9262-123f26aff78f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"46395d7e-2625-4625-ba72-8b463aaa8eff",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 38,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"eae8ad06-d1db-41ad-b736-715c7c817a5c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b9ad4a6f-94a7-4ed2-8c8c-6c54ccf89ac4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -53,8 +53,8 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6fbd6c5d-18ee-47c1-9262-123f26aff78f","path":"sprites/spr_sousborg_left_arm_2_hurt/spr_sousborg_left_arm_2_hurt.yy",},},},"Disabled":false,"id":"bc3a74d8-1161-4b29-8432-ed3212e50adf","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"46395d7e-2625-4625-ba72-8b463aaa8eff","path":"sprites/spr_sousborg_left_arm_2_hurt/spr_sousborg_left_arm_2_hurt.yy",},},},"Disabled":false,"id":"b2c5ab0d-454a-4060-9eda-06e11256677f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

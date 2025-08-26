@@ -1,5 +1,3 @@
-var i, player_distance;
-
 if (live_call())
     return global.live_result;
 
@@ -21,7 +19,7 @@ with (obj_ceroba_follower)
     npc_move_current = 0;
     last_player_dir = obj_pl.direction;
     
-    for (i = npc_move_delay_max; i > 0; i--)
+    for (var i = npc_move_delay_max; i > 0; i--)
     {
         x_new[i] = -1;
         y_new[i] = -1;
@@ -34,13 +32,13 @@ with (obj_ceroba_follower)
     npc_reset = false;
     is_talking = false;
     follower_idle = true;
-    npc_actor = 1161;
+    npc_actor = obj_ceroba_npc;
     
     if (x != obj_pl.x || y != obj_pl.y)
     {
-        player_distance = point_distance(x, y, obj_pl.x, obj_pl.y) / 10;
+        var player_distance = point_distance(x, y, obj_pl.x, obj_pl.y) / 10;
         
-        for (i = 0; i <= npc_move_delay_max; i++)
+        for (var i = 0; i <= npc_move_delay_max; i++)
         {
             x_new[i] = x + (((obj_pl.x - x) / npc_move_delay_max) * i);
             y_new[i] = y + (((obj_pl.y - y) / npc_move_delay_max) * i);

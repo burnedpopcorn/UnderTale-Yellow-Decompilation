@@ -1,13 +1,11 @@
 function scr_enemy_timer_attacks_ceroba()
 {
-    var enemy_attack, bell_check;
-    
-    enemy_attack = global.enemy_attack;
+    var enemy_attack = global.enemy_attack;
     
     if (!instance_exists(obj_attack_cycler_ceroba_phase_1))
         instance_create(0, 0, obj_attack_cycler_ceroba_phase_1);
     
-    bell_check = !instance_exists(obj_ceroba_phase_2_shield) || obj_ceroba_phase_2_shield.fill_percentage < 1;
+    var bell_check = !instance_exists(obj_ceroba_phase_2_shield) || obj_ceroba_phase_2_shield.fill_percentage < 1;
     
     if (instance_exists(obj_dialogue_box_battle_transformation_any) && obj_heart_battle_fighting_parent.moveable == true)
     {

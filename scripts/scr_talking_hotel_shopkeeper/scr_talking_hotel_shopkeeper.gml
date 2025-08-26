@@ -1,8 +1,6 @@
 function scr_talking_hotel_shopkeeper()
 {
-    var message_og_length;
-    
-    message_og_length = string_length(message[message_current]);
+    var message_og_length = string_length(message[message_current]);
     
     if (characters > message_og_length && characters < message_length)
     {

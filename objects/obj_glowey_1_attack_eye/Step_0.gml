@@ -1,5 +1,3 @@
-var arc_size, bullet_number, arc_inc, i, bullet;
-
 if (live_call())
     return global.live_result;
 
@@ -21,13 +19,13 @@ switch (scene)
         break;
     
     case 2:
-        arc_size = 70;
-        bullet_number = 5;
-        arc_inc = arc_size / bullet_number;
+        var arc_size = 70;
+        var bullet_number = 5;
+        var arc_inc = arc_size / bullet_number;
         
-        for (i = 0; i < bullet_number; i++)
+        for (var i = 0; i < bullet_number; i++)
         {
-            bullet = instance_create_depth(x, y, depth - 1, obj_battle_enemy_attack_fpellets_simple);
+            var bullet = instance_create_depth(x, y, depth - 1, obj_battle_enemy_attack_fpellets_simple);
             bullet.direction = (direction - (arc_size * 0.5)) + (i * arc_inc);
             bullet.speed = 7;
         }

@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c4e32493-9567-4c2e-9028-693e285346ba",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a36c9910-67c8-4965-9ac8-2f5b5f05f7ff",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3adae1a7-e691-4282-a09d-3345946c3efb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5f864158-a2e6-4e07-a66c-ffa7f4627bb4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7bbc72e0-a4bc-4a86-bca3-6089f20b476f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b75eafba-2a77-4fd0-9041-198ce5362be9",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 106,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8ffebb4c-6ad9-44a7-ae07-0d12be993b28","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"767655aa-91e0-446d-abe5-83f9e89f0e1e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c4e32493-9567-4c2e-9028-693e285346ba","path":"sprites/spr_jandroid_hurt/spr_jandroid_hurt.yy",},},},"Disabled":false,"id":"cc056406-d445-4818-948c-1aadb0371b5e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a36c9910-67c8-4965-9ac8-2f5b5f05f7ff","path":"sprites/spr_jandroid_hurt/spr_jandroid_hurt.yy",},},},"Disabled":false,"id":"cb3d0d8f-5e14-40af-b0b7-9918451384ed","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3adae1a7-e691-4282-a09d-3345946c3efb","path":"sprites/spr_jandroid_hurt/spr_jandroid_hurt.yy",},},},"Disabled":false,"id":"2371ea87-dfcb-4ae2-b89e-3dca10e0387a","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5f864158-a2e6-4e07-a66c-ffa7f4627bb4","path":"sprites/spr_jandroid_hurt/spr_jandroid_hurt.yy",},},},"Disabled":false,"id":"1c4cb257-e6ac-40f2-8dc0-f73950f0f7d5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7bbc72e0-a4bc-4a86-bca3-6089f20b476f","path":"sprites/spr_jandroid_hurt/spr_jandroid_hurt.yy",},},},"Disabled":false,"id":"f5eeb26d-c663-4ee2-ac83-1473bcc4aa36","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b75eafba-2a77-4fd0-9041-198ce5362be9","path":"sprites/spr_jandroid_hurt/spr_jandroid_hurt.yy",},},},"Disabled":false,"id":"70c22c23-f97e-4322-9c56-2754497df657","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

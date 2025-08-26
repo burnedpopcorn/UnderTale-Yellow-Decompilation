@@ -1,5 +1,3 @@
-var martlet_npc;
-
 switch (global.last_room_overworld)
 {
     case "rm_dunes_24":
@@ -21,7 +19,7 @@ switch (global.last_room_overworld)
         
         if (global.party_member != -4)
         {
-            martlet_npc = instance_create(x + 20, y, obj_martlet_npc);
+            var martlet_npc = instance_create(x + 20, y, obj_martlet_npc);
             martlet_npc.npc_direction = "down";
             martlet_npc.sprite_index = martlet_npc.down_sprite_idle;
             martlet_npc.can_walk = false;

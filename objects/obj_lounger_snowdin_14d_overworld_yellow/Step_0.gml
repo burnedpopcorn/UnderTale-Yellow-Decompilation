@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* This is the hottest spot in#  Snowdin. Quite literally.";
                 message[1] = "* I've wanted to come here for#  forever and this is finally my#  chance.";
                 message[2] = "* It was worth the wait. This is#  complete bliss.";
@@ -24,7 +24,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* You know what the best part of#  this place is?";
                 message[1] = "* No one knows why the water is#  so hot here!";
                 message[2] = "* It's a mystery! Not a monster#  alive could tell you!";
@@ -37,7 +37,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* There are all sorts of theories#  of course.";
                 message[1] = "* Some say it's heated by hot#  rocks deep underground.";
                 message[2] = "* Some say it's caused by#  volcanic activity.";
@@ -53,7 +53,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Ahhhh.";
                 message[1] = "* So nice and warm.";
             }

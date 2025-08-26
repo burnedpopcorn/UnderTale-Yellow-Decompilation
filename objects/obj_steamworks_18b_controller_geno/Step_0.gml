@@ -18,7 +18,7 @@ switch (scene)
     
     case 0:
         if (abs(obj_player_npc.x - 209) > 5)
-            cutscene_npc_walk(1168, 209, obj_player_npc.y, 3, "x", "up");
+            cutscene_npc_walk(obj_player_npc, 209, obj_player_npc.y, 3, "x", "up");
         else
             cutscene_advance();
         
@@ -60,7 +60,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_npc_reset_sprite(2063, "down");
+        cutscene_npc_reset_sprite(obj_steamworks_mo, "down");
         break;
     
     case 6:
@@ -69,7 +69,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             message[0] = "* Bam!";
             message[1] = "* You know who it is, right?";
             message[2] = "* It's ya boy";
@@ -81,7 +81,7 @@ switch (scene)
         break;
     
     case 7:
-        cutscene_npc_action_sprite(1168, 3313, 1, true, 0, 634, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pl_up_geno_shoot, 1, true, 0, snd_guardener_gun_cock, 0);
         
         if (obj_player_npc.image_index >= 6)
         {
@@ -109,7 +109,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             message[0] = "* ...Mo.";
             message[1] = "* Hey, buddy... What's with the#  piece?";
             message[2] = "* I thought we had a connection,#  ya know?";
@@ -127,7 +127,7 @@ switch (scene)
     case 11:
         obj_player_npc.action_sprite = false;
         
-        if (cutscene_npc_walk_relative(1168, 0, -10, 0.5, "x", "up"))
+        if (cutscene_npc_walk_relative(obj_player_npc, 0, -10, 0.5, "x", "up"))
         {
             obj_steamworks_mo.up_sprite = spr_mo_down_steamworks_serious;
             obj_steamworks_mo.up_sprite_idle = spr_mo_down_steamworks_serious;
@@ -136,7 +136,7 @@ switch (scene)
         break;
     
     case 12:
-        cutscene_npc_walk_relative(2063, 0, -10, 0.5, "y", "down");
+        cutscene_npc_walk_relative(obj_steamworks_mo, 0, -10, 0.5, "y", "down");
         break;
     
     case 13:
@@ -144,7 +144,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             message[0] = "* Hey hey hey!!";
             message[1] = "* There ain't nothin' up my#  sleeve, kid! Nothin' but fur#  and admittedly cheap cologne!";
             message[2] = "* What you see is what you get#  with Mo!";
@@ -165,7 +165,7 @@ switch (scene)
             }
             
             talker[9] = -4;
-            talker[10] = 2063;
+            talker[10] = obj_steamworks_mo;
             
             if (message_current == 8)
                 sound_noloop = false;
@@ -211,7 +211,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             
             if (other.choice == 1)
             {
@@ -239,7 +239,7 @@ switch (scene)
         break;
     
     case 17:
-        cutscene_sfx_play(325, 1);
+        cutscene_sfx_play(snd_manta_startup, 1);
         obj_steamworks_mo.up_sprite = spr_mo_up_steamworks;
         obj_steamworks_mo.up_sprite_idle = spr_mo_up_steamworks_idle;
         obj_steamworks_mo.npc_direction = "up";
@@ -262,7 +262,7 @@ switch (scene)
         break;
     
     case 21:
-        if (cutscene_npc_walk(437, 210, 95, 2, "y", "down"))
+        if (cutscene_npc_walk(obj_manta_npc, 210, 95, 2, "y", "down"))
         {
             obj_manta_npc.action_sprite = true;
             obj_manta_npc.npc_dynamic_depth = false;
@@ -280,7 +280,7 @@ switch (scene)
     case 23:
         obj_steamworks_mo.npc_dynamic_depth = false;
         obj_steamworks_mo.depth = obj_manta_npc.depth - 100000;
-        cutscene_npc_walk(2063, 210, 80, 2, "y", "down");
+        cutscene_npc_walk(obj_steamworks_mo, 210, 80, 2, "y", "down");
         break;
     
     case 24:

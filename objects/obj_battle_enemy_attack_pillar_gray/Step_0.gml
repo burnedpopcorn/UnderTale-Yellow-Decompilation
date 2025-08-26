@@ -1,9 +1,7 @@
-var bullet, i, left_debris, right_debris, small_debris;
-
 if (live_call())
     return global.live_result;
 
-bullet = instance_place(x, y, obj_battle_enemy_attack_bullet_impact);
+var bullet = instance_place(x, y, obj_battle_enemy_attack_bullet_impact);
 
 if (bullet != -4)
 {
@@ -12,9 +10,9 @@ if (bullet != -4)
     
     if (global.route != 3)
     {
-        for (i = 1; i <= 3; i++)
+        for (var i = 1; i <= 3; i++)
         {
-            left_debris = instance_create_depth(x, y - (20 * i), -100, obj_battle_enemy_attack_pillar_debris);
+            var left_debris = instance_create_depth(x, y - (20 * i), -100, obj_battle_enemy_attack_pillar_debris);
             
             with (left_debris)
             {
@@ -23,7 +21,7 @@ if (bullet != -4)
                 gravity = 0.3;
             }
             
-            right_debris = instance_create_depth(x, y - (20 * i), -100, obj_battle_enemy_attack_pillar_debris);
+            var right_debris = instance_create_depth(x, y - (20 * i), -100, obj_battle_enemy_attack_pillar_debris);
             
             with (right_debris)
             {
@@ -32,7 +30,7 @@ if (bullet != -4)
                 gravity = 0.3;
             }
             
-            small_debris = instance_create_depth(x, y - 60, -100, obj_battle_enemy_attack_pillar_debris);
+            var small_debris = instance_create_depth(x, y - 60, -100, obj_battle_enemy_attack_pillar_debris);
             
             with (small_debris)
             {
@@ -45,9 +43,9 @@ if (bullet != -4)
     }
     else
     {
-        for (i = 1; i <= 2; i++)
+        for (var i = 1; i <= 2; i++)
         {
-            left_debris = instance_create_depth(x, y - (20 * i), -100, obj_battle_enemy_attack_pillar_debris);
+            var left_debris = instance_create_depth(x, y - (20 * i), -100, obj_battle_enemy_attack_pillar_debris);
             
             with (left_debris)
             {
@@ -56,7 +54,7 @@ if (bullet != -4)
                 gravity = 0.3;
             }
             
-            right_debris = instance_create_depth(x, y - (20 * i), -100, obj_battle_enemy_attack_pillar_debris);
+            var right_debris = instance_create_depth(x, y - (20 * i), -100, obj_battle_enemy_attack_pillar_debris);
             
             with (right_debris)
             {
@@ -65,7 +63,7 @@ if (bullet != -4)
                 gravity = 0.3;
             }
             
-            small_debris = instance_create_depth(x, y - 60, -100, obj_battle_enemy_attack_pillar_debris);
+            var small_debris = instance_create_depth(x, y - 60, -100, obj_battle_enemy_attack_pillar_debris);
             
             with (small_debris)
             {

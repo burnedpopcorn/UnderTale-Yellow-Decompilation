@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e7b9bb0d-831e-4316-98cd-cf53e25a1a0a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"463e6d17-b533-49bc-91fe-25d5fbfdaf2e",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 36,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6e5749c3-8504-4177-8a79-8e8867569688","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fa87568f-05f8-4511-b27a-0a9809f5db43","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -53,8 +53,8 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e7b9bb0d-831e-4316-98cd-cf53e25a1a0a","path":"sprites/spr_frostermit_leg_right_shadow/spr_frostermit_leg_right_shadow.yy",},},},"Disabled":false,"id":"9116e44e-b685-4d6a-9e24-1b7da3f4ae5f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"463e6d17-b533-49bc-91fe-25d5fbfdaf2e","path":"sprites/spr_frostermit_leg_right_shadow/spr_frostermit_leg_right_shadow.yy",},},},"Disabled":false,"id":"990fbf9c-4fe8-4cfc-b8c3-c92b43fe8291","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSnowdin",
+    "path": "texturegroups/BattleSnowdin",
   },
   "type": 0,
   "VTile": false,

@@ -1,5 +1,3 @@
-var i, player_distance;
-
 depth = -y;
 
 if (global.player_sprites == "steamworkslava")
@@ -72,7 +70,7 @@ if (npc_move_current >= npc_move_delay_max)
     if (sprinting_new[1] == true)
         image_speed = 0.3;
     
-    for (i = 0; i < npc_move_delay_max; i++)
+    for (var i = 0; i < npc_move_delay_max; i++)
     {
         x_new[i] = x_new[i + 1];
         y_new[i] = y_new[i + 1];
@@ -107,10 +105,10 @@ else
 if (npc_reset == true)
 {
     event_perform(ev_create, 0);
-    player_distance = point_distance(x, y, obj_pl.x, obj_pl.y) / 10;
+    var player_distance = point_distance(x, y, obj_pl.x, obj_pl.y) / 10;
     player_distance = clamp(player_distance, 1, 999);
     
-    for (i = npc_move_delay_max; i > 0; i--)
+    for (var i = npc_move_delay_max; i > 0; i--)
     {
         x_new[i] = x + (sign(obj_pl.x - x) * (i * player_distance));
         y_new[i] = y + (sign(obj_pl.y - y) * (i * player_distance));

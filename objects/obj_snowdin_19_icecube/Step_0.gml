@@ -1,6 +1,4 @@
-var ball_collider;
-
-ball_collider = 1517;
+var ball_collider = 1517;
 
 if (collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, ball_collider, false, true) != -4)
 {

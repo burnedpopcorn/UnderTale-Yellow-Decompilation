@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"af59df7e-5db5-4435-b5cd-243ab841976c",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0dfb44f1-6e1a-4b91-bcac-9cd875253a45",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff5e3465-7197-4854-8bfd-d6674e93bfc1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1afccada-2b5c-4735-a05e-acb18afc46c2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"77ce3c38-d5b4-4bdb-8058-f88144f03e91",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4c3941b0-8d89-4a01-8925-dc2e0efdf1dc",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 44,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6a84a402-97fc-46f9-8295-2bc32b8d1f13","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"64139406-ec5b-4b31-b51a-0470b3190479","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"af59df7e-5db5-4435-b5cd-243ab841976c","path":"sprites/spr_bigfrog_shockwave/spr_bigfrog_shockwave.yy",},},},"Disabled":false,"id":"614d9019-db31-4aa1-92f1-be6734418155","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0dfb44f1-6e1a-4b91-bcac-9cd875253a45","path":"sprites/spr_bigfrog_shockwave/spr_bigfrog_shockwave.yy",},},},"Disabled":false,"id":"054d7754-365e-4983-9f1d-5d8e73d62c9c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ff5e3465-7197-4854-8bfd-d6674e93bfc1","path":"sprites/spr_bigfrog_shockwave/spr_bigfrog_shockwave.yy",},},},"Disabled":false,"id":"d81c8c60-6864-4e0c-a95f-5c7b3604b94f","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1afccada-2b5c-4735-a05e-acb18afc46c2","path":"sprites/spr_bigfrog_shockwave/spr_bigfrog_shockwave.yy",},},},"Disabled":false,"id":"d191f214-a82e-473f-8c1e-38703fba96f2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"77ce3c38-d5b4-4bdb-8058-f88144f03e91","path":"sprites/spr_bigfrog_shockwave/spr_bigfrog_shockwave.yy",},},},"Disabled":false,"id":"a7d2747f-66f6-4edc-9242-ec2250315cef","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4c3941b0-8d89-4a01-8925-dc2e0efdf1dc","path":"sprites/spr_bigfrog_shockwave/spr_bigfrog_shockwave.yy",},},},"Disabled":false,"id":"4046a3ec-f1c5-4c21-8732-b23982cd5ad7","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

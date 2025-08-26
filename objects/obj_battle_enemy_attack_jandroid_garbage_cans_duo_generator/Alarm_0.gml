@@ -1,6 +1,4 @@
-var box;
-
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 excluded_number = irandom_range(1, 3);
 
 if (excluded_number != 1)

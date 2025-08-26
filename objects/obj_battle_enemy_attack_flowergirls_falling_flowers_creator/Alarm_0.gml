@@ -1,6 +1,4 @@
-var box;
-
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if (!green_flower_spawned)
 {

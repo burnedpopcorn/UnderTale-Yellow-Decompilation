@@ -8,7 +8,7 @@ fade_out_gui = false;
 
 if (global.enemy_attack == "Martlet Phase 2 Blocks")
 {
-    obj_martlet_final_2_base.martlet_target_melt_sprite = spr_martlet_f2_goop1;
+    obj_martlet_final_2_base.martlet_target_melt_sprite = 3362;
     obj_martlet_final_bg.draw_shader = true;
     message[0] = "*Huff*";
     message[1] = "I'm...";
@@ -22,7 +22,7 @@ if (global.enemy_attack == "Martlet Phase 2 Blocks")
 
 if (global.enemy_attack == "Martlet Phase 2 Blocks 2")
 {
-    obj_martlet_final_2_base.martlet_target_melt_sprite = spr_martlet_f2_goop2;
+    obj_martlet_final_2_base.martlet_target_melt_sprite = 3248;
     message[0] = "W-What's going#on?";
     message[1] = "The s-serum,#it...";
     message[2] = "N-No! I can#handle it!";
@@ -33,7 +33,7 @@ if (global.enemy_attack == "Martlet Phase 2 Blocks 2")
 
 if (global.enemy_attack == "Martlet Phase 2 Blocks 3")
 {
-    obj_martlet_final_2_base.martlet_target_melt_sprite = spr_martlet_f2_goop3;
+    obj_martlet_final_2_base.martlet_target_melt_sprite = 865;
     message[0] = "Why is it wearing#off!?";
     message[1] = "WHY IS IT WEARING#OFF!?!?";
     message[2] = "I DON'T WANT#TO DIE!";
@@ -43,10 +43,10 @@ if (global.enemy_attack == "Martlet Phase 2 Blocks 3")
 
 if (global.enemy_attack == "Martlet Phase 2 Blocks 4")
 {
-    obj_martlet_final_2_base.martlet_target_melt_sprite = spr_martlet_f2_goop4;
-    message[0] = "Y O U . .";
+    obj_martlet_final_2_base.martlet_target_melt_sprite = 781;
+    message[0] = "Y O U . . .";
     message[1] = "Y O U  C A N ' T#W I N .";
-    message[2] = "Y O U  C A N ' T#. .";
+    message[2] = "Y O U  C A N ' T#. . .";
     message_end = 2;
 }
 

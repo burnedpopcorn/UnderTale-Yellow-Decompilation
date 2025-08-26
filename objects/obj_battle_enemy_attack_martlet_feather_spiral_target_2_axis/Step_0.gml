@@ -1,5 +1,3 @@
-var fade_out_result;
-
 if (can_spiral == true)
 {
     if (can_fade_out == true)
@@ -55,7 +53,7 @@ if (can_spiral == true)
     
     if (can_fade_out == false)
     {
-        fade_out_result = true;
+        var fade_out_result = true;
         
         for (i = 0; i < fcreate_count; i += 1)
         {

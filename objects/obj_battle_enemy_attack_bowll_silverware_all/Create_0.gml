@@ -1,5 +1,5 @@
 damage_number = scr_determine_damage_number_enemy("bowll a", "bowll b", "bowll c");
-box = 3154;
+box = obj_dialogue_box_battle_transformation_any;
 image_speed = 0;
 image_index = irandom_range(0, 2);
 image_alpha = 0;

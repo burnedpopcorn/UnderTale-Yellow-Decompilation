@@ -1,5 +1,3 @@
-var dynamic_mus_pos, world_current;
-
 if (room == rm_battle || room == rm_battle_flowey_phase_2)
 {
     if (!global.sound_carry_overworld)
@@ -222,7 +220,7 @@ switch (room)
             if (!audio_is_playing(mus_dunes_cave_outdoors))
             {
                 dynamic_song = audio_play_sound(mus_dunes_cave_outdoors, 1, 1);
-                dynamic_mus_pos = audio_sound_get_track_position(current_song);
+                var dynamic_mus_pos = audio_sound_get_track_position(current_song);
                 audio_sound_set_track_position(dynamic_song, dynamic_mus_pos);
                 audio_sound_gain(dynamic_song, 0, 0);
             }
@@ -552,7 +550,7 @@ if (!audio_is_playing(bgm) && bgm != -4)
     }
 }
 
-world_current = scr_determine_world_value_yellow();
+var world_current = scr_determine_world_value_yellow();
 
 if (global.geno_complete[world_current])
 {

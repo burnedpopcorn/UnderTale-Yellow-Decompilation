@@ -1,15 +1,13 @@
-var check_confirm, cancel_confirm, blue_button, red_button;
-
 if (live_call())
     return global.live_result;
 
 draw_set_alpha(hint_button_alpha);
-check_confirm = keyboard_multicheck(0);
-cancel_confirm = keyboard_multicheck(1);
+var check_confirm = keyboard_multicheck(vk_nokey);
+var cancel_confirm = keyboard_multicheck(vk_anykey);
 draw_sprite(spr_conveyor_puzzle_hint_blue_base, check_confirm, 254, 645);
 draw_sprite(spr_conveyor_puzzle_hint_red_base, cancel_confirm, 326, 645);
-blue_button = 0;
-red_button = 9;
+var blue_button = 0;
+var red_button = 9;
 
 switch (global.action_key)
 {

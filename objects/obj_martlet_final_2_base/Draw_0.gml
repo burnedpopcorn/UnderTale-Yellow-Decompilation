@@ -20,7 +20,7 @@ if (damage_flash_timer > 0)
 draw_set_alpha(martlet_previous_melt_sprite_alpha);
 draw_sprite(martlet_previous_melt_sprite, 0, x, y);
 
-if (martlet_previous_melt_sprite == spr_martlet_f2_torso)
+if (martlet_previous_melt_sprite == 2690)
 {
     with (obj_martlet_body_part_base)
         draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, other.martlet_previous_melt_sprite_alpha);

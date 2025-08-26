@@ -1,6 +1,4 @@
-var damage;
-
-damage = (global.enemy_attack_stat - global.player_armor_defense - global.player_armor_modifier_defense - global.player_defense) + 10;
+var damage = (global.enemy_attack_stat - global.player_armor_defense - global.player_armor_modifier_defense - global.player_defense) + 10;
 
 if (damage < 1)
     damage = 1;
@@ -28,14 +26,14 @@ if ((bbox_top - 1) <= (obj_dialogue_box_battle_transformation_any.bbox_top + 4))
     alarm[1] = 0;
     vsp = key_down * -jumpspeed;
 }
-else if (place_meeting(x, y - 1, obj_battle_enemy_attack_platform_parent) && !box_collision(x, y, 3150))
+else if (place_meeting(x, y - 1, obj_battle_enemy_attack_platform_parent) && !box_collision(x, y, 3151))
 {
     floating = false;
     alarm[1] = 0;
     vsp = key_down * -jumpspeed;
 }
 
-if (!place_meeting(x, y - 1, obj_battle_enemy_attack_platform_parent) || box_collision(x, y, 3150))
+if (!place_meeting(x, y - 1, obj_battle_enemy_attack_platform_parent) || box_collision(x, y, 3151))
     hsp_carry = 0;
 
 if (sign(hsp) == -1 && (bbox_left + hsp) <= (obj_dialogue_box_battle_transformation_any.bbox_left + 4))
@@ -71,7 +69,7 @@ else if (sign(vsp) == 1 && (bbox_bottom + vsp) >= (obj_dialogue_box_battle_trans
 }
 else if (instance_exists(obj_battle_enemy_attack_platform_parent))
 {
-    if (!box_collision(x, y, 3150))
+    if (!box_collision(x, y, 3151))
     {
         if (place_meeting(x, y_position + vsp, obj_battle_enemy_attack_platform_parent) && vsp <= 0)
         {

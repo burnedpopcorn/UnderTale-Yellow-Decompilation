@@ -1,6 +1,4 @@
-var yy;
-
-yy = 250;
+var yy = 250;
 
 if (room == rm_steamworks_37)
     yy = 150;

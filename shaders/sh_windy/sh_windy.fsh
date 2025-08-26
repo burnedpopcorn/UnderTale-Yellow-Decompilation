@@ -4,12 +4,10 @@
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 varying vec2 v_vPosition;
-
 uniform float time;
 uniform sampler2D distort_texture;
 uniform vec4 uvs;
 uniform float str;
-
 void main() { //Thanks to Gaming Reverends for the shader code
  
 	vec2 wind;

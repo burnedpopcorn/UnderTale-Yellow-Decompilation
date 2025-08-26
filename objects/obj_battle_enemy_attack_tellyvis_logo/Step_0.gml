@@ -1,5 +1,3 @@
-var readjust, box;
-
 if (image_alpha < 1)
 {
     if (image_alpha < 1)
@@ -16,8 +14,8 @@ if (image_alpha < 1)
     }
 }
 
-readjust = false;
-box = 3154;
+var readjust = false;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if (bbox_left <= (box.bbox_left + 4))
 {

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"605d9ade-b6e6-4ef6-b11a-6867003321dd",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"21b7d3d1-574e-4e46-84eb-8339d80ca112",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7d28c39c-5fb2-475b-8bd2-b6edee85d0b1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e1cf4567-2ce7-4fb3-968a-380c73c3a0fc",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 33,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6f37e416-3a8e-4605-b57f-4ce9d5802a51","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6ee66575-e337-4374-b2a5-6bbe79d7c22d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"605d9ade-b6e6-4ef6-b11a-6867003321dd","path":"sprites/spr_fortune_teller/spr_fortune_teller.yy",},},},"Disabled":false,"id":"b99d5c92-6f5c-44a4-a313-47e2006fc9f3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"21b7d3d1-574e-4e46-84eb-8339d80ca112","path":"sprites/spr_fortune_teller/spr_fortune_teller.yy",},},},"Disabled":false,"id":"edc9221f-e0ee-4522-b29c-46a2078026dc","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7d28c39c-5fb2-475b-8bd2-b6edee85d0b1","path":"sprites/spr_fortune_teller/spr_fortune_teller.yy",},},},"Disabled":false,"id":"25a4255c-18c0-44b5-80ca-2a3332b57a96","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e1cf4567-2ce7-4fb3-968a-380c73c3a0fc","path":"sprites/spr_fortune_teller/spr_fortune_teller.yy",},},},"Disabled":false,"id":"d9764c41-25d0-433a-938d-a1544f1a4f75","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Dunes",
+    "path": "texturegroups/Dunes",
   },
   "type": 0,
   "VTile": false,

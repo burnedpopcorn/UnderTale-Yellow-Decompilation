@@ -1,10 +1,8 @@
-var confirm_key, cancel_key, rotate_key, rotate_key_released;
-
 scr_get_input();
-confirm_key = keyboard_multicheck_pressed(0);
-cancel_key = keyboard_multicheck_pressed(2);
-rotate_key = keyboard_multicheck_pressed(1);
-rotate_key_released = keyboard_multicheck_released(1);
+var confirm_key = keyboard_multicheck_pressed(vk_nokey);
+var cancel_key = keyboard_multicheck_pressed(2);
+var rotate_key = keyboard_multicheck_pressed(vk_anykey);
+var rotate_key_released = keyboard_multicheck_released(vk_anykey);
 
 if (robot_item_is_destroyed)
 {

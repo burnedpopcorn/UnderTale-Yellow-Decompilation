@@ -1,8 +1,6 @@
 function scr_end_enemy_attacking_axis()
 {
-    var turns_passed;
-    
-    turns_passed = global.special_action_count;
+    var turns_passed = global.special_action_count;
     
     if (turns_passed != global.special_action_count_last)
     {

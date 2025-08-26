@@ -1,6 +1,6 @@
 if (global.flag[17] == 1)
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
         waiter = 1;
     
     if (waiter == 1)
@@ -37,20 +37,20 @@ if (global.flag[17] == 1)
                     instance_create(0, 0, obj_dialoguebox_dummy);
                 
                 portrait = true;
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* You like those?";
                 message[1] = "* Those are my projects.";
                 message[2] = "* I sometimes try to write#  books. Like for kids and#  stuff...";
-                prt[0] = 1776;
-                prt[1] = 1769;
-                prt[2] = 1761;
+                prt[0] = spr_dalv_head_moderate;
+                prt[1] = spr_dalv_head_content;
+                prt[2] = spr_dalv_head_happy;
             }
             else
             {
                 portrait = true;
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* ...";
-                prt[0] = 1755;
+                prt[0] = spr_dalv_head_regular;
             }
         }
         
@@ -77,7 +77,7 @@ if (global.flag[17] == 1)
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (The table is covered in#  colorful pencils and pages#  strewn with cute pictures.)";
         }
         
@@ -94,17 +94,17 @@ if (global.flag[17] == 1)
         with (msg)
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* I sometimes kinda forget#  what colors things are#  outside this place...";
             message[1] = "* So I just make them up!";
             message[2] = "* I think the kids will#  find it more interesting#  like that anyway!";
             message[3] = "* ...";
             message[4] = "* It might not be as#  educational though...";
-            prt[0] = 1780;
-            prt[1] = 1776;
-            prt[2] = 1761;
-            prt[3] = 1755;
-            prt[4] = 1780;
+            prt[0] = spr_dalv_head_sad_side;
+            prt[1] = spr_dalv_head_moderate;
+            prt[2] = spr_dalv_head_happy;
+            prt[3] = spr_dalv_head_regular;
+            prt[4] = spr_dalv_head_sad_side;
         }
         
         waiter++;
@@ -131,7 +131,7 @@ if (global.flag[17] == 1)
 }
 else if (global.flag[17] != 1 && global.route != 3)
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
         waiter = 1;
     
     if (waiter == 1)
@@ -141,7 +141,7 @@ else if (global.flag[17] != 1 && global.route != 3)
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (The table is covered in#  colorful pencils and pages#  strewn with cute pictures.)";
             obj_books.waiter = 2;
         }
@@ -156,7 +156,7 @@ else if (global.flag[17] != 1 && global.route != 3)
 }
 else if (global.route == 3)
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
         waiter = 1;
     
     if (waiter == 1)
@@ -166,7 +166,7 @@ else if (global.route == 3)
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (Childish pictures scattered on#  the table.)";
             obj_books.waiter = 2;
         }

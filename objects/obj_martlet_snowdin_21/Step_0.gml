@@ -43,7 +43,7 @@ if (global.snowdin_flag[13] == 0)
             with (msg)
             {
                 position = 0;
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* Hm? Oh, uh, hello!";
                 message[1] = "* Sorry, I don't know#  where my head was right#  there.";
                 message[2] = "* It seems I have#  a summer home in lala#  land these days!";
@@ -63,25 +63,25 @@ if (global.snowdin_flag[13] == 0)
                 message[16] = "* transitive property or#  something like that?";
                 message[17] = "* Actually, I think he#  was from space... are#  there space humans?";
                 message[18] = "* You know what, I'll#  have plenty of time to#  ask you questions later.";
-                prt[0] = 333;
-                prt[1] = 323;
-                prt[2] = 318;
-                prt[3] = 331;
-                prt[4] = 313;
-                prt[5] = 313;
-                prt[6] = 331;
-                prt[7] = 312;
-                prt[8] = 312;
-                prt[9] = 334;
-                prt[10] = 335;
-                prt[11] = 313;
-                prt[12] = 313;
-                prt[13] = 318;
-                prt[14] = 318;
-                prt[15] = 312;
-                prt[16] = 312;
-                prt[17] = 324;
-                prt[18] = 313;
+                prt[0] = spr_martlet_head_surprised;
+                prt[1] = spr_martlet_head_nervous_smile;
+                prt[2] = spr_martlet_head_happy;
+                prt[3] = spr_martlet_head_smirk;
+                prt[4] = spr_martlet_head_determined;
+                prt[5] = spr_martlet_head_determined;
+                prt[6] = spr_martlet_head_smirk;
+                prt[7] = spr_martlet_head_content;
+                prt[8] = spr_martlet_head_content;
+                prt[9] = spr_martlet_head_suspicious;
+                prt[10] = spr_martlet_head_suspiciouser;
+                prt[11] = spr_martlet_head_determined;
+                prt[12] = spr_martlet_head_determined;
+                prt[13] = spr_martlet_head_happy;
+                prt[14] = spr_martlet_head_happy;
+                prt[15] = spr_martlet_head_content;
+                prt[16] = spr_martlet_head_content;
+                prt[17] = spr_martlet_head_questioning;
+                prt[18] = spr_martlet_head_determined;
             }
             
             scene++;
@@ -113,11 +113,11 @@ if (global.snowdin_flag[13] == 0)
             with (msg)
             {
                 prt = false;
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* Are you ready for some#  Royal Guard protocol?";
                 message[1] = "* I hope you are, 'cause#  I memorized it!";
-                prt[0] = 313;
-                prt[1] = 313;
+                prt[0] = spr_martlet_head_determined;
+                prt[1] = spr_martlet_head_determined;
             }
             
             scene++;
@@ -158,7 +158,7 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* If the Royal Guard#  doesn't know you're#  here...";
                 message[1] = "* ...they won't know I#  broke protocol!";
                 message[2] = "* Instead, we'll just get#  you home before any of#  them see you!";
@@ -168,15 +168,15 @@ if (global.snowdin_flag[13] == 1)
                 message[6] = "* Anyway, we'll bypass the#  Royal Guard and plead#  your case to ASGORE!";
                 message[7] = "* There's no way he can#  say no to a cute little#  face like yours!";
                 message[8] = "* Meet me up ahead and#  I'll show you my plan#  to get you home!";
-                prt[0] = 328;
-                prt[1] = 318;
-                prt[2] = 328;
-                prt[3] = 328;
-                prt[4] = 321;
-                prt[5] = 338;
-                prt[6] = 328;
-                prt[7] = 318;
-                prt[8] = 312;
+                prt[0] = spr_martlet_head_regular;
+                prt[1] = spr_martlet_head_happy;
+                prt[2] = spr_martlet_head_regular;
+                prt[3] = spr_martlet_head_regular;
+                prt[4] = spr_martlet_head_moderate;
+                prt[5] = spr_martlet_head_wondering;
+                prt[6] = spr_martlet_head_regular;
+                prt[7] = spr_martlet_head_happy;
+                prt[8] = spr_martlet_head_content;
             }
             
             scene++;

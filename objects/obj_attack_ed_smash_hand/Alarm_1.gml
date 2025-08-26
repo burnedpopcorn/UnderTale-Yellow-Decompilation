@@ -1,6 +1,4 @@
-var fade_inc;
-
-fade_inc = 0.35;
+var fade_inc = 0.35;
 image_alpha -= fade_inc;
 image_index = image_number - 1;
 

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"621da529-4c84-44b4-ac6e-b5ba87a7e90d",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e9b37906-7a56-452f-a7c8-18fd6070637a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7cb9a277-b976-43cc-9aaf-90701baa1f64",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"47451ec5-9a2c-4b28-ab17-b1acecae2d7c",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 41,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"42864d4b-3b5d-4e5b-a457-cc7802e496a2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"871e2f4b-8b07-45e4-9df3-80f16ff0e62a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": {
     "resourceType": "GMNineSliceData",
@@ -29,6 +29,7 @@
     "bottom": 0,
     "enabled": false,
     "guideColour": [
+      4294902015,
       4294902015,
       4294902015,
       4294902015,
@@ -77,9 +78,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"621da529-4c84-44b4-ac6e-b5ba87a7e90d","path":"sprites/spr_hotland_spidergirl/spr_hotland_spidergirl.yy",},},},"Disabled":false,"id":"ad7039a4-df43-4a8b-b58b-2f86f6880add","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e9b37906-7a56-452f-a7c8-18fd6070637a","path":"sprites/spr_hotland_spidergirl/spr_hotland_spidergirl.yy",},},},"Disabled":false,"id":"f2eb2690-039d-417b-91d4-b8b3a07301d4","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7cb9a277-b976-43cc-9aaf-90701baa1f64","path":"sprites/spr_hotland_spidergirl/spr_hotland_spidergirl.yy",},},},"Disabled":false,"id":"441c17be-6632-4c1f-ab6b-f684450165ae","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"47451ec5-9a2c-4b28-ab17-b1acecae2d7c","path":"sprites/spr_hotland_spidergirl/spr_hotland_spidergirl.yy",},},},"Disabled":false,"id":"0e1a87fb-dc66-4a2f-b03a-f8037217b784","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -90,8 +91,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Hotland",
+    "path": "texturegroups/Hotland",
   },
   "type": 0,
   "VTile": false,

@@ -1,7 +1,5 @@
-var game_mode, battle_enemy_name;
-
-game_mode = global.game_mode;
-battle_enemy_name = global.battle_enemy_name;
+var game_mode = global.game_mode;
+var battle_enemy_name = global.battle_enemy_name;
 sc_able = false;
 sc_index = 0;
 sc_xdisjoint = 0;

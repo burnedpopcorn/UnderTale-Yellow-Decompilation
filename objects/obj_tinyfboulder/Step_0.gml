@@ -1,10 +1,10 @@
-if (keyboard_multicheck_pressed(0) && scr_interact() == true)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true)
 {
     scr_text();
     
     with (msg)
     {
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         portrait = false;
         message[0] = "* (You notice a dark path beyond#  the rocks but you can't squeeze#  past them.)";
         

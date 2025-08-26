@@ -1,5 +1,3 @@
-var target_bubble;
-
 if (!instance_exists(obj_quote_bubble_battle))
 {
     instance_destroy();
@@ -58,7 +56,7 @@ else
             with (obj_heart_battle_fighting_parent)
                 moveable = true;
             
-            target_bubble = 2141;
+            var target_bubble = 2141;
             
             if (spawner != -4)
                 target_bubble = spawner;

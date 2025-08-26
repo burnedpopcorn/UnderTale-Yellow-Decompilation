@@ -20,13 +20,13 @@ if (waiter == 1)
     
     with (msg)
     {
-        sndfnt = 102;
+        sndfnt = snd_talk_martlet;
         message[0] = "* Hmm... \t";
         message[1] = "* It is rather late isn't#  it?";
         message[2] = "* Narrows down the#  locations they could've#  gone at least.";
-        prt[0] = 311;
-        prt[1] = 324;
-        prt[2] = 321;
+        prt[0] = spr_martlet_head_confused;
+        prt[1] = spr_martlet_head_questioning;
+        prt[2] = spr_martlet_head_moderate;
     }
     
     waiter = 0;

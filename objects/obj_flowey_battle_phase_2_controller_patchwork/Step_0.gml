@@ -1,9 +1,7 @@
-var rng, xx, yy;
-
 if (live_call())
     return global.live_result;
 
-rng = irandom(hand_spawn_chance_curent);
+var rng = irandom(hand_spawn_chance_curent);
 
 if (!instance_exists(obj_flowey_battle_phase_2_yarn_weakpoint))
 {
@@ -13,8 +11,8 @@ if (!instance_exists(obj_flowey_battle_phase_2_yarn_weakpoint))
 
 if (rng == 1)
 {
-    xx = choose(130, 510);
-    yy = choose(irandom_range(300, 420), obj_heart_battle_fighting_parent.y);
+    var xx = choose(130, 510);
+    var yy = choose(irandom_range(300, 420), obj_heart_battle_fighting_parent.y);
     instance_create_depth(xx, yy, -100, obj_flowey_battle_phase_2_yarn_hand_shoot);
     hand_spawn_chance_curent = hand_spawn_chance_max;
 }

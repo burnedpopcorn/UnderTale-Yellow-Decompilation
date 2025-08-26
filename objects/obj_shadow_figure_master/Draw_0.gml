@@ -1,9 +1,7 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
-for (i = 0; i < array_length(object_array); i++)
+for (var i = 0; i < array_length(object_array); i++)
 {
     if (!instance_exists(object_array[i]))
         continue;

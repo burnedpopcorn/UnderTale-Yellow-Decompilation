@@ -1,4 +1,4 @@
-function draw_set_alpha_test(argument0)
+function draw_set_alpha_test(arg0)
 {
-    gpu_set_alphatestenable(argument0);
+    gpu_set_alphatestenable(arg0);
 }

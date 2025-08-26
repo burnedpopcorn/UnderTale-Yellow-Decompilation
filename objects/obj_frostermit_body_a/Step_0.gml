@@ -1,9 +1,7 @@
-var enemy_low_hp, enemy_dead, enemy_spared, enemy_mode, y_val, y_store, time_elapsed_1, time_elapsed_2, time_elapsed_3, position_var, time_elapsed_head_new;
-
-enemy_low_hp = global.enemy_low_hp;
-enemy_dead = global.enemy_dead;
-enemy_spared = global.enemy_spared;
-enemy_mode = global.enemy_mode;
+var enemy_low_hp = global.enemy_low_hp;
+var enemy_dead = global.enemy_dead;
+var enemy_spared = global.enemy_spared;
+var enemy_mode = global.enemy_mode;
 
 if (enemy_dead == false && enemy_spared == false)
     image_alpha = global.image_alpha_enemy_attacking;
@@ -158,9 +156,9 @@ if (!(instance_exists(obj_text_damage_count) && global.fight_number == 1) && ene
         if (time_elapsed >= time_max)
             time_elapsed = 0;
         
-        y_val = draw_position_y + animation_disjoint_y;
-        y_store = y_val;
-        time_elapsed_1 = time_elapsed - 4;
+        var y_val = draw_position_y + animation_disjoint_y;
+        var y_store = y_val;
+        var time_elapsed_1 = time_elapsed - 4;
         
         if (time_elapsed_1 < 0)
             time_elapsed_1 += time_max;
@@ -170,7 +168,7 @@ if (!(instance_exists(obj_text_damage_count) && global.fight_number == 1) && ene
         y_val = draw_position_y + animation_disjoint_y;
         leg_1_displacement_y = y_val;
         y_val = y_store;
-        time_elapsed_2 = time_elapsed - 8;
+        var time_elapsed_2 = time_elapsed - 8;
         
         if (time_elapsed_2 < 0)
             time_elapsed_2 += time_max;
@@ -180,7 +178,7 @@ if (!(instance_exists(obj_text_damage_count) && global.fight_number == 1) && ene
         y_val = draw_position_y + animation_disjoint_y;
         leg_2_displacement_y = y_val;
         y_val = y_store;
-        time_elapsed_3 = time_elapsed - 12;
+        var time_elapsed_3 = time_elapsed - 12;
         
         if (time_elapsed_3 < 0)
             time_elapsed_3 += time_max;
@@ -189,9 +187,9 @@ if (!(instance_exists(obj_text_damage_count) && global.fight_number == 1) && ene
         animation_disjoint_y = sign_modifier * (max_rise - game_maker_cannot_do_math);
         y_val = draw_position_y + animation_disjoint_y;
         leg_3_displacement_y = y_val;
-        position_var = draw_position_y + damage_disjoint_y;
+        var position_var = draw_position_y + damage_disjoint_y;
         y = head_displacement_y - ((head_displacement_y - position_var) / 3);
-        time_elapsed_head_new = time_elapsed_head - 4;
+        var time_elapsed_head_new = time_elapsed_head - 4;
         
         if (time_elapsed_head_new < 0)
         {

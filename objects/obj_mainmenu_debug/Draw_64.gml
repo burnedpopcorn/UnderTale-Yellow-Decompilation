@@ -1,5 +1,3 @@
-var soul_xx, soul_yy;
-
 if (live_call())
     return global.live_result;
 
@@ -19,8 +17,8 @@ draw_text(320, 300, "INSTANT CEROBA");
 draw_text(320, 330, "INSTANT FLOWEY");
 draw_text(320, 360, "INSTANT MARTLET");
 draw_set_color(c_white);
-soul_xx = 240;
-soul_yy = 100;
+var soul_xx = 240;
+var soul_yy = 100;
 
 switch (menu_selection)
 {

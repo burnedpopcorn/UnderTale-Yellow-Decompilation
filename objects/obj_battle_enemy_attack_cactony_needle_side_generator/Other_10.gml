@@ -1,7 +1,6 @@
-var box, random_direction, create_x;
-
-box = 3154;
-random_direction = irandom_range(0, 1);
+var box = obj_dialogue_box_battle_transformation_any;
+var random_direction = irandom_range(0, 1);
+var create_x;
 
 if (random_direction == 0)
     create_x = box.bbox_left + 5;

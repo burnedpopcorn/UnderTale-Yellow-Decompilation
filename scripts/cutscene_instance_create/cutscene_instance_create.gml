@@ -1,5 +1,5 @@
-function cutscene_instance_create(argument0, argument1, argument2)
+function cutscene_instance_create(arg0, arg1, arg2)
 {
-    instance_create(argument0, argument1, argument2);
+    instance_create(arg0, arg1, arg2);
     cutscene_advance();
 }

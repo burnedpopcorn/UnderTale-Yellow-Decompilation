@@ -28,13 +28,13 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* I think that did the#  trick!";
             message[1] = "* You're pretty clever in#  intense situations.";
             message[2] = "* I'm... impressed.";
-            prt[0] = 374;
-            prt[1] = 372;
-            prt[2] = 370;
+            prt[0] = spr_portrait_ceroba_smile_alt;
+            prt[1] = spr_portrait_ceroba_smile;
+            prt[2] = spr_portrait_ceroba_neutral;
         }
         
         if (!global.dialogue_open)

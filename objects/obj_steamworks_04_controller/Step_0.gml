@@ -1,5 +1,3 @@
-var rumble_sound;
-
 if (global.sworks_flag[0] == 2)
 {
     switch (scene)
@@ -17,9 +15,9 @@ if (global.sworks_flag[0] == 2)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Guess I should've#  expected this.";
-                prt[0] = 377;
+                prt[0] = spr_portrait_ceroba_closed_eyes;
             }
             
             break;
@@ -37,13 +35,13 @@ if (global.sworks_flag[0] == 2)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* In its prime, this was#  the main power source of#  the Underground.";
                 message[1] = "* That, obviously, was#  many years ago.";
                 message[2] = "* Until we breathe life#  back into this thing, we#  can't progress.";
-                prt[0] = 370;
-                prt[1] = 371;
-                prt[2] = 394;
+                prt[0] = spr_portrait_ceroba_neutral;
+                prt[1] = spr_portrait_ceroba_alt;
+                prt[2] = spr_portrait_ceroba_disapproving;
             }
             
             break;
@@ -73,13 +71,13 @@ if (global.sworks_flag[0] == 2)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* There's some kinda#  console here.";
                 message[1] = "* Maybe one of Chujin's#  codes will work? Just#  give me a second.";
                 message[2] = "* In the meantime, you#  can... wait over in the#  corner or something.";
-                prt[0] = 370;
-                prt[1] = 370;
-                prt[2] = 377;
+                prt[0] = spr_portrait_ceroba_neutral;
+                prt[1] = spr_portrait_ceroba_neutral;
+                prt[2] = spr_portrait_ceroba_closed_eyes;
             }
             
             break;
@@ -101,7 +99,7 @@ if (global.sworks_flag[0] == 2)
 
 with (actor_ceroba)
 {
-    if (scr_interact() && keyboard_multicheck_pressed(0))
+    if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
     {
         scr_text();
         
@@ -110,9 +108,9 @@ with (actor_ceroba)
             case 0:
                 with (msg)
                 {
-                    talker[0] = 1161;
+                    talker[0] = obj_ceroba_npc;
                     message[0] = "* I need to concentrate#  right now.";
-                    prt[0] = 370;
+                    prt[0] = spr_portrait_ceroba_neutral;
                 }
                 
                 break;
@@ -120,9 +118,9 @@ with (actor_ceroba)
             case 1:
                 with (msg)
                 {
-                    talker[0] = 1161;
+                    talker[0] = obj_ceroba_npc;
                     message[0] = "* I think I'm getting#  somewhere. Hold on.";
-                    prt[0] = 370;
+                    prt[0] = spr_portrait_ceroba_neutral;
                 }
                 
                 break;
@@ -130,9 +128,9 @@ with (actor_ceroba)
             case 2:
                 with (msg)
                 {
-                    talker[0] = 1161;
+                    talker[0] = obj_ceroba_npc;
                     message[0] = "* Almost got it! Didn't#  think this would#  actually work!";
-                    prt[0] = 370;
+                    prt[0] = spr_portrait_ceroba_neutral;
                 }
                 
                 break;
@@ -160,7 +158,7 @@ if (global.sworks_flag[1] == 3)
         case 2:
             obj_steamworks_04_generator.image_speed = 1/3;
             audio_play_sound(snd_generator_start, 1, 0);
-            rumble_sound = audio_play_sound(snd_machinery, 1, 0);
+            var rumble_sound = audio_play_sound(snd_machinery, 1, 0);
             audio_sound_gain(rumble_sound, 0, 0);
             audio_sound_gain(rumble_sound, 1, 1500);
             instance_create(obj_ceroba_npc.x, obj_ceroba_npc.y - 35, obj_cutscene_ex);
@@ -172,7 +170,7 @@ if (global.sworks_flag[1] == 3)
             break;
         
         case 4:
-            cutscene_change_room(152, 655, 170, 0.05);
+            cutscene_change_room(rm_steamworks_05d, 655, 170, 0.05);
             break;
     }
 }
@@ -191,11 +189,11 @@ if (global.sworks_flag[1] == 4)
             break;
         
         case 2:
-            cutscene_npc_walk(1168, 300, obj_ceroba_npc.y, 3, "y", "left", false);
+            cutscene_npc_walk(obj_player_npc, 300, obj_ceroba_npc.y, 3, "y", "left", false);
             break;
         
         case 3:
-            cutscene_npc_direction(1161, "right");
+            cutscene_npc_direction(obj_ceroba_npc, "right");
             break;
         
         case 4:
@@ -207,11 +205,11 @@ if (global.sworks_flag[1] == 4)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* It's working!";
                 message[1] = "* Wait... What have you#  been up to?";
-                prt[0] = 372;
-                prt[1] = 393;
+                prt[0] = spr_portrait_ceroba_smile;
+                prt[1] = spr_portrait_ceroba_surprised;
             }
             
             break;
@@ -221,7 +219,7 @@ if (global.sworks_flag[1] == 4)
             break;
         
         case 7:
-            cutscene_npc_direction(1161, "up");
+            cutscene_npc_direction(obj_ceroba_npc, "up");
             break;
         
         case 8:
@@ -229,7 +227,7 @@ if (global.sworks_flag[1] == 4)
             break;
         
         case 9:
-            cutscene_npc_direction(1161, "down");
+            cutscene_npc_direction(obj_ceroba_npc, "down");
             break;
         
         case 10:
@@ -237,7 +235,7 @@ if (global.sworks_flag[1] == 4)
             break;
         
         case 11:
-            cutscene_npc_direction(1161, "left");
+            cutscene_npc_direction(obj_ceroba_npc, "left");
             break;
         
         case 12:
@@ -245,7 +243,7 @@ if (global.sworks_flag[1] == 4)
             break;
         
         case 13:
-            cutscene_npc_direction(1161, "right");
+            cutscene_npc_direction(obj_ceroba_npc, "right");
             break;
         
         case 14:
@@ -257,17 +255,17 @@ if (global.sworks_flag[1] == 4)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Oh...";
                 message[1] = "* I... wasn't actually#  doing anything this#  whole time was I?";
                 message[2] = "* Ugh, alright. You're#  clearly more capable of#  problem solving.";
                 message[3] = "* I suppose you should#  lead the way from now#  on.";
                 message[4] = "* Just head west from#  here and we'll reach#  Hotland eventually.";
-                prt[0] = 377;
-                prt[1] = 382;
-                prt[2] = 384;
-                prt[3] = 377;
-                prt[4] = 377;
+                prt[0] = spr_portrait_ceroba_closed_eyes;
+                prt[1] = spr_portrait_ceroba_muttering;
+                prt[2] = spr_portrait_ceroba_unamused;
+                prt[3] = spr_portrait_ceroba_closed_eyes;
+                prt[4] = spr_portrait_ceroba_closed_eyes;
             }
             
             break;
@@ -279,7 +277,7 @@ if (global.sworks_flag[1] == 4)
             break;
         
         case 17:
-            cutscene_npc_walk(1161, ceroba_x_dest, obj_player_npc.y, 3, "y", ceroba_end_dir);
+            cutscene_npc_walk(obj_ceroba_npc, ceroba_x_dest, obj_player_npc.y, 3, "y", ceroba_end_dir);
             break;
         
         case 18:
@@ -290,7 +288,7 @@ if (global.sworks_flag[1] == 4)
             obj_pl.image_alpha = 1;
             __view_set(e__VW.Object, 0, obj_pl);
             instance_destroy(obj_player_npc);
-            global.party_member = 1171;
+            global.party_member = obj_ceroba_follower;
             scr_actor_into_follower(1161, 1171);
             global.sworks_flag[1] = 5;
             scr_cutscene_end();

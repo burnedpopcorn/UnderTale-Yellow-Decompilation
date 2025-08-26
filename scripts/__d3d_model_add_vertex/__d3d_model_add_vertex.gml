@@ -1,12 +1,10 @@
-function __d3d_model_add_vertex(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9)
+function __d3d_model_add_vertex(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9)
 {
-    var m, i, uv_i, colarrayi, colnum, colarray, b, uvb, globalcol, c;
-    
-    m = argument0;
-    i = UnknownEnum.Value_2;
-    uv_i = UnknownEnum.Value_5;
-    colarrayi = UnknownEnum.Value_18;
-    colnum = UnknownEnum.Value_15;
+    var m = arg0;
+    var i = UnknownEnum.Value_2;
+    var uv_i = UnknownEnum.Value_5;
+    var colarrayi = UnknownEnum.Value_18;
+    var colnum = UnknownEnum.Value_15;
     
     switch (m[UnknownEnum.Value_12])
     {
@@ -26,8 +24,8 @@ function __d3d_model_add_vertex(argument0, argument1, argument2, argument3, argu
             break;
     }
     
-    colarray = m[colarrayi];
-    b = m[i];
+    var colarray = m[colarrayi];
+    var b = m[i];
     
     if (b == undefined)
     {
@@ -35,7 +33,7 @@ function __d3d_model_add_vertex(argument0, argument1, argument2, argument3, argu
         array_set(m, i, b);
     }
     
-    uvb = m[uv_i];
+    var uvb = m[uv_i];
     
     if (uvb == undefined)
     {
@@ -43,29 +41,29 @@ function __d3d_model_add_vertex(argument0, argument1, argument2, argument3, argu
         array_set(m, uv_i, uvb);
     }
     
-    globalcol = false;
+    var globalcol = false;
     
-    if (argument7 == 65536)
+    if (arg7 == 65536)
         globalcol = true;
     
-    c = m[UnknownEnum.Value_11];
+    var c = m[UnknownEnum.Value_11];
     
     switch (m[UnknownEnum.Value_12])
     {
         case 1:
         case 2:
         case 4:
-            buffer_write(b, buffer_f32, argument1);
-            buffer_write(b, buffer_f32, argument2);
-            buffer_write(b, buffer_f32, argument3);
-            buffer_write(b, buffer_f32, argument4);
-            buffer_write(b, buffer_f32, argument5);
-            buffer_write(b, buffer_f32, argument6);
-            buffer_write(b, buffer_u32, argument7);
-            buffer_write(b, buffer_f32, argument8);
-            buffer_write(b, buffer_f32, argument9);
-            buffer_write(uvb, buffer_f32, argument8);
-            buffer_write(uvb, buffer_f32, argument9);
+            buffer_write(b, buffer_f32, arg1);
+            buffer_write(b, buffer_f32, arg2);
+            buffer_write(b, buffer_f32, arg3);
+            buffer_write(b, buffer_f32, arg4);
+            buffer_write(b, buffer_f32, arg5);
+            buffer_write(b, buffer_f32, arg6);
+            buffer_write(b, buffer_u32, arg7);
+            buffer_write(b, buffer_f32, arg8);
+            buffer_write(b, buffer_f32, arg9);
+            buffer_write(uvb, buffer_f32, arg8);
+            buffer_write(uvb, buffer_f32, arg9);
             c++;
             
             if (globalcol)
@@ -99,26 +97,26 @@ function __d3d_model_add_vertex(argument0, argument1, argument2, argument3, argu
                 }
             }
             
-            array_set(m, UnknownEnum.Value_19, argument1);
-            array_set(m, UnknownEnum.Value_20, argument2);
-            array_set(m, UnknownEnum.Value_21, argument3);
-            array_set(m, UnknownEnum.Value_22, argument4);
-            array_set(m, UnknownEnum.Value_23, argument5);
-            array_set(m, UnknownEnum.Value_24, argument6);
-            array_set(m, UnknownEnum.Value_25, argument7);
-            array_set(m, UnknownEnum.Value_26, argument8);
-            array_set(m, UnknownEnum.Value_27, argument9);
-            buffer_write(b, buffer_f32, argument1);
-            buffer_write(b, buffer_f32, argument2);
-            buffer_write(b, buffer_f32, argument3);
-            buffer_write(b, buffer_f32, argument4);
-            buffer_write(b, buffer_f32, argument5);
-            buffer_write(b, buffer_f32, argument6);
-            buffer_write(b, buffer_u32, argument7);
-            buffer_write(b, buffer_f32, argument8);
-            buffer_write(b, buffer_f32, argument9);
-            buffer_write(uvb, buffer_f32, argument8);
-            buffer_write(uvb, buffer_f32, argument9);
+            array_set(m, UnknownEnum.Value_19, arg1);
+            array_set(m, UnknownEnum.Value_20, arg2);
+            array_set(m, UnknownEnum.Value_21, arg3);
+            array_set(m, UnknownEnum.Value_22, arg4);
+            array_set(m, UnknownEnum.Value_23, arg5);
+            array_set(m, UnknownEnum.Value_24, arg6);
+            array_set(m, UnknownEnum.Value_25, arg7);
+            array_set(m, UnknownEnum.Value_26, arg8);
+            array_set(m, UnknownEnum.Value_27, arg9);
+            buffer_write(b, buffer_f32, arg1);
+            buffer_write(b, buffer_f32, arg2);
+            buffer_write(b, buffer_f32, arg3);
+            buffer_write(b, buffer_f32, arg4);
+            buffer_write(b, buffer_f32, arg5);
+            buffer_write(b, buffer_f32, arg6);
+            buffer_write(b, buffer_u32, arg7);
+            buffer_write(b, buffer_f32, arg8);
+            buffer_write(b, buffer_f32, arg9);
+            buffer_write(uvb, buffer_f32, arg8);
+            buffer_write(uvb, buffer_f32, arg9);
             c++;
             
             if (globalcol)
@@ -175,26 +173,26 @@ function __d3d_model_add_vertex(argument0, argument1, argument2, argument3, argu
             array_set(m, UnknownEnum.Value_25, m[UnknownEnum.Value_34]);
             array_set(m, UnknownEnum.Value_26, m[UnknownEnum.Value_35]);
             array_set(m, UnknownEnum.Value_27, m[UnknownEnum.Value_36]);
-            array_set(m, UnknownEnum.Value_28, argument1);
-            array_set(m, UnknownEnum.Value_29, argument2);
-            array_set(m, UnknownEnum.Value_30, argument3);
-            array_set(m, UnknownEnum.Value_31, argument4);
-            array_set(m, UnknownEnum.Value_32, argument5);
-            array_set(m, UnknownEnum.Value_33, argument6);
-            array_set(m, UnknownEnum.Value_34, argument7);
-            array_set(m, UnknownEnum.Value_35, argument8);
-            array_set(m, UnknownEnum.Value_36, argument9);
-            buffer_write(b, buffer_f32, argument1);
-            buffer_write(b, buffer_f32, argument2);
-            buffer_write(b, buffer_f32, argument3);
-            buffer_write(b, buffer_f32, argument4);
-            buffer_write(b, buffer_f32, argument5);
-            buffer_write(b, buffer_f32, argument6);
-            buffer_write(b, buffer_u32, argument7);
-            buffer_write(b, buffer_f32, argument8);
-            buffer_write(b, buffer_f32, argument9);
-            buffer_write(uvb, buffer_f32, argument8);
-            buffer_write(uvb, buffer_f32, argument9);
+            array_set(m, UnknownEnum.Value_28, arg1);
+            array_set(m, UnknownEnum.Value_29, arg2);
+            array_set(m, UnknownEnum.Value_30, arg3);
+            array_set(m, UnknownEnum.Value_31, arg4);
+            array_set(m, UnknownEnum.Value_32, arg5);
+            array_set(m, UnknownEnum.Value_33, arg6);
+            array_set(m, UnknownEnum.Value_34, arg7);
+            array_set(m, UnknownEnum.Value_35, arg8);
+            array_set(m, UnknownEnum.Value_36, arg9);
+            buffer_write(b, buffer_f32, arg1);
+            buffer_write(b, buffer_f32, arg2);
+            buffer_write(b, buffer_f32, arg3);
+            buffer_write(b, buffer_f32, arg4);
+            buffer_write(b, buffer_f32, arg5);
+            buffer_write(b, buffer_f32, arg6);
+            buffer_write(b, buffer_u32, arg7);
+            buffer_write(b, buffer_f32, arg8);
+            buffer_write(b, buffer_f32, arg9);
+            buffer_write(uvb, buffer_f32, arg8);
+            buffer_write(uvb, buffer_f32, arg9);
             
             if (globalcol)
             {
@@ -208,15 +206,15 @@ function __d3d_model_add_vertex(argument0, argument1, argument2, argument3, argu
         case 6:
             if (c == 0)
             {
-                array_set(m, UnknownEnum.Value_19, argument1);
-                array_set(m, UnknownEnum.Value_20, argument2);
-                array_set(m, UnknownEnum.Value_21, argument3);
-                array_set(m, UnknownEnum.Value_22, argument4);
-                array_set(m, UnknownEnum.Value_23, argument5);
-                array_set(m, UnknownEnum.Value_24, argument6);
-                array_set(m, UnknownEnum.Value_25, argument7);
-                array_set(m, UnknownEnum.Value_26, argument8);
-                array_set(m, UnknownEnum.Value_27, argument9);
+                array_set(m, UnknownEnum.Value_19, arg1);
+                array_set(m, UnknownEnum.Value_20, arg2);
+                array_set(m, UnknownEnum.Value_21, arg3);
+                array_set(m, UnknownEnum.Value_22, arg4);
+                array_set(m, UnknownEnum.Value_23, arg5);
+                array_set(m, UnknownEnum.Value_24, arg6);
+                array_set(m, UnknownEnum.Value_25, arg7);
+                array_set(m, UnknownEnum.Value_26, arg8);
+                array_set(m, UnknownEnum.Value_27, arg9);
             }
             
             if (c >= 3)
@@ -255,26 +253,26 @@ function __d3d_model_add_vertex(argument0, argument1, argument2, argument3, argu
                 }
             }
             
-            array_set(m, UnknownEnum.Value_28, argument1);
-            array_set(m, UnknownEnum.Value_29, argument2);
-            array_set(m, UnknownEnum.Value_30, argument3);
-            array_set(m, UnknownEnum.Value_31, argument4);
-            array_set(m, UnknownEnum.Value_32, argument5);
-            array_set(m, UnknownEnum.Value_33, argument6);
-            array_set(m, UnknownEnum.Value_34, argument7);
-            array_set(m, UnknownEnum.Value_35, argument8);
-            array_set(m, UnknownEnum.Value_36, argument9);
-            buffer_write(b, buffer_f32, argument1);
-            buffer_write(b, buffer_f32, argument2);
-            buffer_write(b, buffer_f32, argument3);
-            buffer_write(b, buffer_f32, argument4);
-            buffer_write(b, buffer_f32, argument5);
-            buffer_write(b, buffer_f32, argument6);
-            buffer_write(b, buffer_u32, argument7);
-            buffer_write(b, buffer_f32, argument8);
-            buffer_write(b, buffer_f32, argument9);
-            buffer_write(uvb, buffer_f32, argument8);
-            buffer_write(uvb, buffer_f32, argument9);
+            array_set(m, UnknownEnum.Value_28, arg1);
+            array_set(m, UnknownEnum.Value_29, arg2);
+            array_set(m, UnknownEnum.Value_30, arg3);
+            array_set(m, UnknownEnum.Value_31, arg4);
+            array_set(m, UnknownEnum.Value_32, arg5);
+            array_set(m, UnknownEnum.Value_33, arg6);
+            array_set(m, UnknownEnum.Value_34, arg7);
+            array_set(m, UnknownEnum.Value_35, arg8);
+            array_set(m, UnknownEnum.Value_36, arg9);
+            buffer_write(b, buffer_f32, arg1);
+            buffer_write(b, buffer_f32, arg2);
+            buffer_write(b, buffer_f32, arg3);
+            buffer_write(b, buffer_f32, arg4);
+            buffer_write(b, buffer_f32, arg5);
+            buffer_write(b, buffer_f32, arg6);
+            buffer_write(b, buffer_u32, arg7);
+            buffer_write(b, buffer_f32, arg8);
+            buffer_write(b, buffer_f32, arg9);
+            buffer_write(uvb, buffer_f32, arg8);
+            buffer_write(uvb, buffer_f32, arg9);
             c++;
             
             if (globalcol)

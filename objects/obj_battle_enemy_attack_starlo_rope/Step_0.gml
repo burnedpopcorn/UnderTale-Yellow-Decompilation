@@ -1,5 +1,3 @@
-var soul_distance;
-
 if (!instance_exists(obj_heart_battle_fighting_parent))
     exit;
 
@@ -27,7 +25,7 @@ if (rope_damaged == true)
     }
 }
 
-soul_distance = point_distance(x, y, obj_heart_battle_fighting_red.x, obj_heart_battle_fighting_red.y);
+var soul_distance = point_distance(x, y, obj_heart_battle_fighting_red.x, obj_heart_battle_fighting_red.y);
 
 if (soul_distance > 28 && rope_strain_noloop == false)
 {

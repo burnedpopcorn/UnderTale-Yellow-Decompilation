@@ -1,6 +1,4 @@
-var snap_sound;
-
-if (scene == 0 && scr_interact() && keyboard_multicheck_pressed(0))
+if (scene == 0 && scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     audio_play_sound(snd_switch, 1, 0);
     image_index = 1;
@@ -17,7 +15,7 @@ switch (scene)
         break;
     
     case 2:
-        snap_sound = audio_play_sound(snd_flowey_world_snap, 1, 0);
+        var snap_sound = audio_play_sound(snd_flowey_world_snap, 1, 0);
         audio_sound_pitch(snap_sound, random_range(0.8, 1.2));
         obj_pl.y += 20;
         obj_pl.direction = 90;
@@ -41,7 +39,7 @@ switch (scene)
         break;
     
     case 4:
-        snap_sound = audio_play_sound(snd_flowey_world_snap, 1, 0);
+        var snap_sound = audio_play_sound(snd_flowey_world_snap, 1, 0);
         audio_sound_pitch(snap_sound, random_range(0.8, 1.2));
         obj_pl.x -= 20;
         obj_pl.direction = 0;

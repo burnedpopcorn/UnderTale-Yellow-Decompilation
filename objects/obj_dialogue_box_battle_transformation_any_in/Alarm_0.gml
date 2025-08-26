@@ -1,5 +1,3 @@
-var game_mode;
-
 global.enemy_attacking = false;
 instance_create(32, 250, obj_dialogue_box_battle);
 
@@ -9,7 +7,7 @@ if (global.last_text_move_select == -1)
 if (global.last_text_move_select < 1)
     global.last_text_move_select += 1;
 
-game_mode = global.game_mode;
+var game_mode = global.game_mode;
 
 if (game_mode == "customs")
 {

@@ -21,7 +21,7 @@ if (global.up_keyp)
     audio_play_sound(snd_mainmenu_select, 1, 0);
 }
 
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     audio_play_sound(snd_confirm, 1, 0);
     

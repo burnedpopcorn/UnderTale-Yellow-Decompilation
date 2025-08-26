@@ -1,4 +1,4 @@
-function d3d_model_vertex_normal(argument0, argument1, argument2, argument3, argument4, argument5, argument6)
+function d3d_model_vertex_normal(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
 {
-    __d3d_model_add_vertex(argument0, argument1, argument2, argument3, argument4, argument5, argument6, 65536, 0, 0);
+    __d3d_model_add_vertex(arg0, arg1, arg2, arg3, arg4, arg5, arg6, 65536, 0, 0);
 }

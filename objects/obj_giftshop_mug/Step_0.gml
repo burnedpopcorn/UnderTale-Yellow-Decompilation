@@ -3,7 +3,7 @@ if (sprite_index == spr_mug_broken)
     if (solid == false && !place_meeting(x, y, obj_pl))
         solid = true;
     
-    if (keyboard_multicheck_pressed(0) && scr_interact())
+    if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
     {
         scr_text();
         waiter = 1;

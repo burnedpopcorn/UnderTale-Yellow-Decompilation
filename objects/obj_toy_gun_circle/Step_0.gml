@@ -1,5 +1,3 @@
-var fight_number, enemy_sparing, enemy_vulnerable, current_hp_enemy, attacking_damage_stat_critical, enemy_target_x, enemy_target_y;
-
 function shotFail()
 {
     outline = 0;
@@ -9,7 +7,8 @@ function shotFail()
     no_loop = true;
 }
 
-fight_number = global.fight_number;
+var fight_number = global.fight_number;
+var enemy_sparing, enemy_vulnerable, current_hp_enemy, attacking_damage_stat_critical, enemy_target_x, enemy_target_y;
 
 if (fight_number == 1)
 {
@@ -54,23 +53,23 @@ if (key_select)
     else if ((enemy_sparing == true && enemy_vulnerable == true) || (enemy_vulnerable == true && current_hp_enemy <= attacking_damage_stat_critical) || outline <= (small_circle * 0.25))
     {
         shot_type = "strong";
-        hit_object = 2913;
+        hit_object = obj_shot_strong;
         
         if (global.battle_enemy_name == "micro froggit" && outline > (small_circle * 0.25))
         {
             shot_type = "weak";
-            hit_object = 2911;
+            hit_object = obj_shot_weak;
         }
     }
     else if (outline <= (small_circle * 0.6) && outline > (small_circle * 0.25))
     {
         shot_type = "medium";
-        hit_object = 2912;
+        hit_object = obj_shot_medium;
     }
     else if (outline < small_circle && outline > (small_circle * 0.6))
     {
         shot_type = "weak";
-        hit_object = 2911;
+        hit_object = obj_shot_weak;
     }
     
     if (shrink == true)

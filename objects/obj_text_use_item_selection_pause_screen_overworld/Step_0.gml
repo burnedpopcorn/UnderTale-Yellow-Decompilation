@@ -1,5 +1,3 @@
-var case_end;
-
 script_execute(scr_controls_text);
 
 if (key_revert_pressed)
@@ -31,7 +29,7 @@ else if (characters == message_length)
     }
     else if (key_select_pressed)
     {
-        case_end = false;
+        var case_end = false;
         
         if (message_current < message_end && !(message_current == (con_message_number - 1) && item_category == "consumable"))
         {

@@ -1,10 +1,8 @@
-function script_execute_alt(argument0, argument1)
+function script_execute_alt(arg0, arg1)
 {
-    var s, a, len;
-    
-    s = argument0;
-    a = argument1;
-    len = array_length_1d(argument1);
+    var s = arg0;
+    var a = arg1;
+    var len = array_length_1d(arg1);
     
     switch (len)
     {

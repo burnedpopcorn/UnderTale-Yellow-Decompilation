@@ -1,14 +1,12 @@
-var rephil, toast, swig, toast_col, swig_col, rephil_col, new_col, i, talker_current;
-
 if (live_call())
     return global.live_result;
 
-rephil = 1434;
-toast = 1437;
-swig = 1435;
-toast_col = make_color_rgb(119, 255, 198);
-swig_col = make_color_rgb(150, 173, 255);
-rephil_col = make_color_rgb(211, 231, 221);
+var rephil = 1434;
+var toast = 1437;
+var swig = 1435;
+var toast_col = make_color_rgb(119, 255, 198);
+var swig_col = make_color_rgb(150, 173, 255);
+var rephil_col = make_color_rgb(211, 231, 221);
 
 if (global.snowdin_flag[8] == 0)
 {
@@ -321,7 +319,7 @@ else if (global.snowdin_flag[8] == 1)
         case 9:
             if (!instance_exists(obj_dialogue))
             {
-                scr_audio_fade(156, 1000);
+                scr_audio_fade(mus_occupied_turf_yellow, 1000);
                 shufflers_turn_away = true;
                 
                 if (timer > 0)
@@ -423,7 +421,7 @@ if ((global.snowdin_flag[8] == 2 || global.snowdin_flag[8] == 3) && !failure)
         case 4:
             if (!instance_exists(obj_dialogue))
             {
-                scr_audio_fade(156, 1000);
+                scr_audio_fade(mus_occupied_turf_yellow, 1000);
                 shufflers_turn_away = true;
                 
                 if (timer > 0)
@@ -590,7 +588,7 @@ if (global.snowdin_flag[8] == 4)
             if (instance_exists(obj_dialogue))
                 break;
             
-            scr_audio_fade(156, 500);
+            scr_audio_fade(mus_occupied_turf_yellow, 500);
             
             with (rephil)
             {
@@ -700,15 +698,15 @@ if (instance_exists(obj_dialogue))
         col_modif[0] = toast_col;
         col_modif[1] = swig_col;
         col_modif[2] = rephil_col;
-        new_col = 2;
+        var new_col = 2;
         
         if (!color_noloop)
         {
-            for (i = 0; i < array_length(message); i++)
+            for (var i = 0; i < array_length(message); i++)
             {
                 if (is_array(talker))
                 {
-                    talker_current = talker[clamp(i, 0, array_length(talker) - 1)];
+                    var talker_current = talker[clamp(i, 0, array_length(talker) - 1)];
                     
                     if (talker_current != -4 || other.shufflers_puzzle == true)
                     {

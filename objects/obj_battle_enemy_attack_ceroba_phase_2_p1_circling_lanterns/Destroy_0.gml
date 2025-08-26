@@ -1,11 +1,9 @@
-var shield_perc;
-
 instance_destroy(obj_ceroba_phase_2_p1_circling_lantern);
 instance_destroy(obj_ceroba_attack_fireball);
 
 if (instance_exists(obj_ceroba_phase_2_shield))
 {
-    shield_perc = obj_ceroba_phase_2_shield.fill_percentage;
+    var shield_perc = obj_ceroba_phase_2_shield.fill_percentage;
     
     if (shield_perc < 1)
     {

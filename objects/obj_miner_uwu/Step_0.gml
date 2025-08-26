@@ -1,7 +1,5 @@
-var dialogue_type;
-
 event_inherited();
-dialogue_type = 1;
+var dialogue_type = 1;
 
 if (global.dunes_flag[4] >= 1)
     dialogue_type = 2;
@@ -23,7 +21,7 @@ if (dialogue_type == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Haven't seen you around the#  mines, friend!";
                     message[1] = "* Welcome to the greatest place#  in the Underground!";
                     message[2] = "* I love it here!";
@@ -39,7 +37,7 @@ if (dialogue_type == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* I like these mines so much that#  I never leave!";
                     message[1] = "* Everyone tells me to go home#  but I find the cold, rocky#  floor very comfortable!";
                     message[2] = "* And no, they do not pay me for#  overtime!";
@@ -55,7 +53,7 @@ if (dialogue_type == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* (Whistling)";
                 }
                 
@@ -251,7 +249,7 @@ if (dialogue_type == 2)
                         other.npc_flag = 4;
                         other.scene = 0;
                         audio_sound_gain(obj_radio.current_song, 1, 600);
-                        scr_audio_fade_out(186, 300);
+                        scr_audio_fade_out(mus_gemstone_fever, 300);
                     }
                     else if (message_current == 3)
                     {
@@ -260,7 +258,7 @@ if (dialogue_type == 2)
                         other.scene = 0;
                         other.sprite_index = spr_miner_uwu;
                         audio_sound_gain(obj_radio.current_song, 1, 600);
-                        scr_audio_fade_out(186, 300);
+                        scr_audio_fade_out(mus_gemstone_fever, 300);
                     }
                 }
                 
@@ -276,7 +274,7 @@ if (dialogue_type == 2)
                 npc_flag = 5;
                 scene = 0;
                 audio_sound_gain(obj_radio.current_song, 1, 600);
-                scr_audio_fade_out(186, 300);
+                scr_audio_fade_out(mus_gemstone_fever, 300);
                 break;
         }
     }

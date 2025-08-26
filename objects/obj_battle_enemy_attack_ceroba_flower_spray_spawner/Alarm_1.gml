@@ -1,6 +1,4 @@
-var current_position_new;
-
-current_position_new = irandom_range(1, 3);
+var current_position_new = irandom_range(1, 3);
 
 while (current_position_new == current_position)
     current_position_new = irandom_range(1, 3);

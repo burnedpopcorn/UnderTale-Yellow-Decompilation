@@ -10,7 +10,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Look who it is!";
                 message[1] = "* Didn't think I'd see you back#  here before the boss.";
@@ -26,7 +26,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Aight, I'll spill, you've#  convinced me.";
                 message[1] = "* There's a fella who likes to#  loiter ‘round here. You#  might've seen ‘em.";
@@ -49,7 +49,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Yeah yeah, there's more to the#  story.";
                 message[1] = "* So the guy still owes us big#  time, right?";
@@ -75,7 +75,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = string("* I'd be off searchin' with the#  boss but {0} gets lonely#  easily.", global.fun_swig_name);
                 message[1] = "* What's that classic saying? Oh#  yeah:";

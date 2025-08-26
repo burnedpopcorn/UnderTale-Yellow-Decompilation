@@ -1,5 +1,3 @@
-var actor_toriel;
-
 if (global.ruins_flag[0] == 0)
 {
     if (obj_pl.y <= 300)
@@ -16,7 +14,7 @@ if (global.ruins_flag[0] == 0)
 
 if (global.ruins_flag[0] == 1)
 {
-    actor_toriel = 1159;
+    var actor_toriel = obj_toriel_npc;
     
     switch (scene)
     {
@@ -35,8 +33,8 @@ if (global.ruins_flag[0] == 1)
             {
                 talker[0] = actor_toriel;
                 color = true;
-                col_modif[0] = 16711680;
-                col_modif[1] = 255;
+                col_modif[0] = c_blue;
+                col_modif[1] = c_red;
                 message[0] = "* Ah! Hello.";
                 message[1] = "* Are you all right?";
                 message[2] = "* You must be wondering#  what is going on...";
@@ -49,16 +47,16 @@ if (global.ruins_flag[0] == 1)
                 message[9] = "* Come! I shall guide you#  through your new home.";
                 message_col[3][0] = "       TORIEL                           ";
                 message_col[3][1] = "                        #         RUINS ";
-                prt[0] = 343;
-                prt[1] = 343;
-                prt[2] = 343;
-                prt[3] = 343;
-                prt[4] = 343;
-                prt[5] = 343;
-                prt[6] = 343;
-                prt[7] = 343;
-                prt[8] = 343;
-                prt[9] = 343;
+                prt[0] = toriel_normal;
+                prt[1] = toriel_normal;
+                prt[2] = toriel_normal;
+                prt[3] = toriel_normal;
+                prt[4] = toriel_normal;
+                prt[5] = toriel_normal;
+                prt[6] = toriel_normal;
+                prt[7] = toriel_normal;
+                prt[8] = toriel_normal;
+                prt[9] = toriel_normal;
                 position = 0;
             }
             

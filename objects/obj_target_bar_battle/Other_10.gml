@@ -1,7 +1,6 @@
-var fight_number, battle_enemy_name, enemy_vulnerable_hold, player_weapon_attack_original, player_attack_original, attack_code;
-
-fight_number = global.fight_number;
-battle_enemy_name = global.battle_enemy_name;
+var fight_number = global.fight_number;
+var battle_enemy_name = global.battle_enemy_name;
+var enemy_vulnerable_hold;
 
 if (fight_number == 1)
     enemy_vulnerable_hold = global.enemy_vulnerable;
@@ -10,8 +9,8 @@ else if (fight_number == 2)
 else if (fight_number == 3)
     enemy_vulnerable_hold = global.enemy_vulnerable_3;
 
-player_weapon_attack_original = global.player_weapon_attack;
-player_attack_original = global.player_attack;
+var player_weapon_attack_original = global.player_weapon_attack;
+var player_attack_original = global.player_attack;
 
 switch (global.player_weapon_modifier)
 {
@@ -45,7 +44,7 @@ if (global.battling_boss == true)
         instance_create(319, 120, obj_text_damage_count);
         audio_play_sound(10, 20, false, 1, 0, random_range(0.8, 1.2));
         damage_type = "normal";
-        attack_code = instance_create(0, 0, obj_battle_boss_attacking_code);
+        var attack_code = instance_create(0, 0, obj_battle_boss_attacking_code);
         attack_code.alarm[1] = 20;
     }
     else if (battle_enemy_name == "axis" && instance_exists(obj_battle_enemy_axis_generator))
@@ -54,7 +53,7 @@ if (global.battling_boss == true)
         instance_create(319, 120, obj_text_damage_count);
         audio_play_sound(354, 20, false, 1, 0, random_range(0.8, 1.2));
         damage_type = "normal";
-        attack_code = instance_create(0, 0, obj_battle_boss_attacking_code);
+        var attack_code = instance_create(0, 0, obj_battle_boss_attacking_code);
         attack_code.alarm[1] = 20;
     }
     else if (battle_enemy_name == "micro froggit")
@@ -65,7 +64,7 @@ if (global.battling_boss == true)
             instance_create(319, 120, obj_text_damage_count);
             audio_play_sound(364, 20, false, 1, 0, random_range(0.8, 1.2));
             damage_type = "normal";
-            attack_code = instance_create(0, 0, obj_battle_boss_attacking_code);
+            var attack_code = instance_create(0, 0, obj_battle_boss_attacking_code);
             attack_code.alarm[1] = 20;
         }
         else
@@ -79,7 +78,7 @@ if (global.battling_boss == true)
         instance_create(319, 120, obj_text_damage_count);
         audio_play_sound(635, 20, false, 1, 0, random_range(0.8, 1.2));
         damage_type = "normal";
-        attack_code = instance_create(0, 0, obj_battle_boss_attacking_code);
+        var attack_code = instance_create(0, 0, obj_battle_boss_attacking_code);
         attack_code.alarm[1] = 20;
     }
     else if (battle_enemy_name == "ceroba")
@@ -96,7 +95,7 @@ if (global.battling_boss == true)
         }
         
         damage_type = "normal";
-        attack_code = instance_create(0, 0, obj_battle_boss_attacking_code);
+        var attack_code = instance_create(0, 0, obj_battle_boss_attacking_code);
         attack_code.alarm[1] = 20;
     }
     else

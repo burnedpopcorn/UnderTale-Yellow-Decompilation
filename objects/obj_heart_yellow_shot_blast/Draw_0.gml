@@ -1,12 +1,10 @@
-var x_offset, y_offset;
-
 if (live_call())
     return global.live_result;
 
 if (laser_active == true)
 {
-    x_offset = 0;
-    y_offset = 0;
+    var x_offset = 0;
+    var y_offset = 0;
     
     switch (image_angle)
     {

@@ -1,5 +1,3 @@
-var can_attack;
-
 script_execute(scr_controls_text);
 
 if (key_revert_pressed)
@@ -35,7 +33,7 @@ else
         }
         else
         {
-            can_attack = true;
+            var can_attack = true;
             
             switch (global.turns_passed)
             {

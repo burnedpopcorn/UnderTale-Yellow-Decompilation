@@ -1,6 +1,4 @@
-var shake;
-
-shake = false;
+var shake = false;
 
 if (scene == 1)
 {

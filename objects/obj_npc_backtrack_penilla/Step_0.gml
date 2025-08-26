@@ -10,7 +10,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Oh, didn't see you there!";
                 message[1] = "* I'm just staring at this pond#  for my next landscape study.";
@@ -31,7 +31,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* I thought starting small would#  be best after leaving the#  Ruins.";
                 message[1] = "* It's a little overwhelming,#  thinking of how much art I can#  make now.";
@@ -45,7 +45,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* When I feel like branching#  out, I might try my hand at ice#  sculpting!";
                 message[1] = "* I would definitely need a#  teacher, though.";
@@ -61,7 +61,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Sorry, but I have work to do!";
                 message[1] = "* Catch you later, yeah?";

@@ -1,5 +1,3 @@
-var turns_passed;
-
 if (live_call())
     return global.live_result;
 
@@ -13,17 +11,17 @@ message_adv = false;
 if (global.turns_passed > 16)
     global.turns_passed = 16;
 
-turns_passed = global.turns_passed;
+var turns_passed = global.turns_passed;
 enemy_talker = 0;
 voice_pitch = 0.25;
 
 if (global.enemy_sparing)
 {
-    scr_audio_fade_out(37, 1000);
+    scr_audio_fade_out(mus_guardener_theme, 1000);
     message[0] = "WAIT-";
     message[1] = "YOU- Y0U / _I. ..";
     message[2] = "[>/0FFENSE LEVEL#LOWERED_]";
-    message[3] = ". .";
+    message[3] = ". . .";
     message[4] = "OH. ";
     message[5] = "WHAT HAPPENED?";
     message[6] = "THERE S_SEEMS TO#BE A GAP IN MY#MEMORY CORE.";
@@ -155,7 +153,7 @@ else
             break;
         
         case 16:
-            message[0] = "[GIVE_IN, #0_ALREADY// ..";
+            message[0] = "[GIVE_IN, #0_ALREADY// . ..";
             message_end = 0;
             break;
     }

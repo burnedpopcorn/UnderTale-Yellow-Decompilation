@@ -1,5 +1,3 @@
-var player_character, soul_mode;
-
 moveable = false;
 no_loop = true;
 no_loop_moveable = false;
@@ -13,8 +11,8 @@ alarm[0] = 1;
 image_speed = 0;
 image_index = 0;
 text_deadlock_1 = false;
-text_desdlock_contents_1 = 3016;
-player_character = global.player_character;
+text_desdlock_contents_1 = 3017;
+var player_character = global.player_character;
 
 switch (player_character)
 {
@@ -23,7 +21,7 @@ switch (player_character)
         break;
     
     default:
-        soul_mode = global.soul_mode;
+        var soul_mode = global.soul_mode;
         
         if (soul_mode == "Red")
         {

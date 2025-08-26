@@ -1,10 +1,12 @@
-var actor_ceroba, actor_clover, message_last;
+var actor_ceroba;
 
 if (instance_exists(obj_ceroba_npc))
-    actor_ceroba = 1161;
+    actor_ceroba = obj_ceroba_npc;
+
+var actor_clover;
 
 if (instance_exists(obj_player_npc))
-    actor_clover = 1168;
+    actor_clover = obj_player_npc;
 
 switch (scene)
 {
@@ -19,7 +21,7 @@ switch (scene)
         {
             talker[0] = actor_ceroba;
             message[0] = "* Hey! Clover!";
-            prt[0] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
         }
         
         break;
@@ -43,35 +45,35 @@ switch (scene)
             ch[2] = "I'm sorry";
             talker[0] = actor_ceroba;
             message[0] = "* Have you seen Starlo?";
-            prt[0] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
             
             if (outcome == 1)
             {
                 message[1] = "* Didn't think so...";
-                prt[1] = 394;
+                prt[1] = spr_portrait_ceroba_disapproving;
             }
             
             if (outcome == 2)
             {
                 message[1] = "* It wasn't your fault#  this happened. Don't#  apologize.";
                 message[2] = "* I gotta find out where#  he went.";
-                prt[1] = 377;
-                prt[2] = 394;
+                prt[1] = spr_portrait_ceroba_closed_eyes;
+                prt[2] = spr_portrait_ceroba_disapproving;
             }
             
             if (outcome != 0)
             {
-                message_last = array_length(message) - 1;
+                var message_last = array_length(message) - 1;
                 message[message_last + 1] = "* I haven't seen him#  anywhere since the#  breakup.";
                 message[message_last + 2] = "* That's the most upset#  he's been in quite some#  time. I'm worried.";
                 message[message_last + 3] = "* ...";
                 message[message_last + 4] = "* I'll speak to his#  family up ahead, maybe#  they know something.";
                 message[message_last + 5] = "* See you later.";
-                prt[message_last + 1] = 370;
-                prt[message_last + 2] = 394;
-                prt[message_last + 3] = 394;
-                prt[message_last + 4] = 370;
-                prt[message_last + 5] = 370;
+                prt[message_last + 1] = spr_portrait_ceroba_neutral;
+                prt[message_last + 2] = spr_portrait_ceroba_disapproving;
+                prt[message_last + 3] = spr_portrait_ceroba_disapproving;
+                prt[message_last + 4] = spr_portrait_ceroba_neutral;
+                prt[message_last + 5] = spr_portrait_ceroba_neutral;
             }
         }
         
@@ -100,9 +102,9 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* Clover! Clover!";
-            prt[0] = 318;
+            prt[0] = spr_martlet_head_happy;
         }
         
         actor_clover.npc_direction = "down";
@@ -113,7 +115,7 @@ switch (scene)
         break;
     
     case 28:
-        cutscene_npc_walk(1164, 160, 220, 3, "x", "up");
+        cutscene_npc_walk(obj_martlet_npc, 160, 220, 3, "x", "up");
         break;
     
     case 29:
@@ -121,7 +123,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* Was that Ceroba?";
             message[1] = "* I wonder where she's#  off to in such a hurry?";
             message[2] = "* -Oh yeah, hi!";
@@ -144,35 +146,35 @@ switch (scene)
             message[19] = "* And I know you're tough#  enough to handle#  yourself.\t";
             message[20] = "* I'll send ya a message#  where to meet back up,#  alright?";
             message[21] = "* Again, I'm#  so-so-so-SO sorry about#  this but I'll cya later!";
-            prt[0] = 311;
-            prt[1] = 324;
-            prt[2] = 333;
-            prt[3] = 320;
-            prt[4] = 321;
-            prt[5] = 318;
-            prt[6] = 318;
-            prt[7] = 328;
-            prt[8] = 317;
-            prt[9] = 320;
-            prt[10] = 333;
-            prt[11] = 321;
-            prt[12] = 329;
-            prt[13] = 321;
-            prt[14] = 321;
-            prt[15] = 321;
-            prt[16] = 323;
-            prt[17] = 321;
-            prt[18] = 328;
-            prt[19] = 328;
-            prt[20] = 312;
-            prt[21] = 323;
+            prt[0] = spr_martlet_head_confused;
+            prt[1] = spr_martlet_head_questioning;
+            prt[2] = spr_martlet_head_surprised;
+            prt[3] = spr_martlet_head_melancholic;
+            prt[4] = spr_martlet_head_moderate;
+            prt[5] = spr_martlet_head_happy;
+            prt[6] = spr_martlet_head_happy;
+            prt[7] = spr_martlet_head_regular;
+            prt[8] = spr_martlet_head_downer;
+            prt[9] = spr_martlet_head_melancholic;
+            prt[10] = spr_martlet_head_surprised;
+            prt[11] = spr_martlet_head_moderate;
+            prt[12] = spr_martlet_head_sad;
+            prt[13] = spr_martlet_head_moderate;
+            prt[14] = spr_martlet_head_moderate;
+            prt[15] = spr_martlet_head_moderate;
+            prt[16] = spr_martlet_head_nervous_smile;
+            prt[17] = spr_martlet_head_moderate;
+            prt[18] = spr_martlet_head_regular;
+            prt[19] = spr_martlet_head_regular;
+            prt[20] = spr_martlet_head_content;
+            prt[21] = spr_martlet_head_nervous_smile;
             position = 1;
         }
         
         break;
     
     case 30:
-        cutscene_npc_walk(1164, obj_martlet_npc.x, __view_get(e__VW.YView, 0) + __view_get(e__VW.WView, 0) + 50, 4, "x", "down");
+        cutscene_npc_walk(obj_martlet_npc, obj_martlet_npc.x, __view_get(e__VW.YView, 0) + __view_get(e__VW.WView, 0) + 50, 4, "x", "down");
         break;
     
     case 31:

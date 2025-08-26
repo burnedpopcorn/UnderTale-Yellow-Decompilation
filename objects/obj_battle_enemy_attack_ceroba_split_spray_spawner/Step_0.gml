@@ -1,5 +1,3 @@
-var xx, yy;
-
 if (stage == 1)
 {
     if (image_alpha > 0)
@@ -18,6 +16,8 @@ if (image_xscale > 1)
 
 if (image_yscale > 1)
     image_yscale -= 0.05;
+
+var xx, yy;
 
 switch (current_position)
 {

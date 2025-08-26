@@ -8,14 +8,14 @@ if (global.battle_phase == 1)
         case 3:
         case 5:
         case 6:
-            ring_object = 2727;
+            ring_object = 2728;
             break;
         
         case 1:
         case 2:
         case 4:
         default:
-            ring_object = 2725;
+            ring_object = 2726;
             break;
     }
 }
@@ -30,7 +30,7 @@ if (global.battle_phase == 2)
         case 5:
         case 8:
         case 9:
-            ring_object = 2727;
+            ring_object = 2728;
             break;
         
         case 1:
@@ -38,7 +38,7 @@ if (global.battle_phase == 2)
         case 6:
         case 7:
         default:
-            ring_object = 2725;
+            ring_object = 2726;
             break;
     }
 }

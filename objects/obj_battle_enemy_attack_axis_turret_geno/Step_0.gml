@@ -1,5 +1,3 @@
-var bullet, shootsnd;
-
 if (live_call())
     return global.live_result;
 
@@ -22,8 +20,8 @@ switch (scene)
     
     case 2:
         image_speed = 1;
-        bullet = instance_create_depth(x, y, -100, obj_battle_enemy_attack_axis_turret_bullet_geno);
-        shootsnd = audio_play_sound(snd_arc_shoot, 1, 0);
+        var bullet = instance_create_depth(x, y, -100, obj_battle_enemy_attack_axis_turret_bullet_geno);
+        var shootsnd = audio_play_sound(snd_arc_shoot, 1, 0);
         audio_sound_gain(shootsnd, 0.2, 0);
         bullet.direction = direction;
         bullet.image_angle = bullet.direction;

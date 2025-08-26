@@ -1,7 +1,5 @@
-var enemy_dead, enemy_spared, anim_loop_time_half, anim_inc_current;
-
-enemy_dead = global.enemy_dead;
-enemy_spared = global.enemy_spared;
+var enemy_dead = global.enemy_dead;
+var enemy_spared = global.enemy_spared;
 
 if (damage_disjoint_count > 0)
     damage_disjoint_count -= 1;
@@ -71,8 +69,8 @@ else if (enemy_spared == true)
 
 if (!enemy_dead && !enemy_spared)
 {
-    anim_loop_time_half = anim_loop_time / 2;
-    anim_inc_current = ((anim_stretch_max - 1) / anim_loop_time_half) * anim_inc_multiplier;
+    var anim_loop_time_half = anim_loop_time / 2;
+    var anim_inc_current = ((anim_stretch_max - 1) / anim_loop_time_half) * anim_inc_multiplier;
     
     if (anim_stage == 1)
     {

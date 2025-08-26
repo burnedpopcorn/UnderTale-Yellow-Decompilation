@@ -1,9 +1,7 @@
-var player_soul;
-
 if (live_call())
     return global.live_result;
 
-player_soul = 2979;
+var player_soul = 2980;
 button_pressed = false;
 
 if (fade_in == false)
@@ -23,7 +21,7 @@ else if (fade_in == true)
         
         if (place_meeting(x, y, player_soul))
         {
-            if (keyboard_multicheck_pressed(0))
+            if (keyboard_multicheck_pressed(vk_nokey))
             {
                 audio_play_sound(snd_confirm, 1, 0);
                 button_pressed = true;

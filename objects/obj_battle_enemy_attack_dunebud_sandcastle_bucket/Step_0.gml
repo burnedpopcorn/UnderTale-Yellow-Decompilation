@@ -1,5 +1,3 @@
-var vsp;
-
 if (state == 0)
 {
     if (image_alpha < 1)
@@ -17,7 +15,7 @@ else if (state == 1)
 {
     if (bbox_bottom < (obj_dialogue_box_battle_transformation_any.bbox_bottom - 5))
     {
-        vsp = fall_speed;
+        var vsp = fall_speed;
         
         if ((bbox_bottom + vsp) >= (obj_dialogue_box_battle_transformation_any.bbox_bottom - 4))
         {

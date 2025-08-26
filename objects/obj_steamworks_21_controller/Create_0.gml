@@ -1,6 +1,4 @@
-var times_caught;
-
-times_caught = global.sworks_flag[43];
+var times_caught = global.sworks_flag[43];
 
 if (global.geno_complete[3] == true)
 {

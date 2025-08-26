@@ -1,4 +1,4 @@
-if (scr_interact() && keyboard_multicheck_pressed(0) && scene == 0)
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey) && scene == 0)
 {
     scr_cutscene_start();
     scene = 1;
@@ -44,15 +44,15 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt_array[0] = 391;
-            sndfnt_array[1] = 108;
+            sndfnt_array[0] = snd_talk_default;
+            sndfnt_array[1] = snd_talk_ceroba;
             message[0] = "* (An empty elevator#  shaft lies before you.)";
             message[1] = "* Well then...";
             message[2] = "* \"Convenience\" was never#  in today's dictionary#  anyway.";
             message[3] = "* Gotta be a staircase#  closeby.";
-            prt[1] = 377;
-            prt[2] = 370;
-            prt[3] = 370;
+            prt[1] = spr_portrait_ceroba_closed_eyes;
+            prt[2] = spr_portrait_ceroba_neutral;
+            prt[3] = spr_portrait_ceroba_neutral;
         }
         
         break;

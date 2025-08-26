@@ -1,12 +1,10 @@
-var flDelay;
-
 if (start_delay > 0)
 {
     start_delay -= 1;
     exit;
 }
 
-flDelay = flash_delay;
+var flDelay = flash_delay;
 
 if (image_alpha == 0 && no_loop == false)
 {

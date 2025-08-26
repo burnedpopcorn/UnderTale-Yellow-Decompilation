@@ -1,8 +1,6 @@
 function scr_enemy_timer_attacks_ceroba_genocide()
 {
-    var enemy_attack;
-    
-    enemy_attack = global.enemy_attack;
+    var enemy_attack = global.enemy_attack;
     
     if (!instance_exists(obj_attack_cycler_ceroba))
         instance_create(0, 0, obj_attack_cycler_ceroba);

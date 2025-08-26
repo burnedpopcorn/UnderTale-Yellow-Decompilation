@@ -1,5 +1,3 @@
-var actor_clover, msg;
-
 if (live_call())
     return global.live_result;
 
@@ -42,7 +40,7 @@ if (room == rm_battle_flashback_final)
             if (!instance_exists(obj_player_npc) && scene == 0)
             {
                 scene++;
-                actor_clover = instance_create(obj_pl.x, obj_pl.y, obj_player_npc);
+                var actor_clover = instance_create(obj_pl.x, obj_pl.y, obj_player_npc);
                 
                 with (actor_clover)
                 {
@@ -85,7 +83,7 @@ switch (scene)
         break;
     
     case 2:
-        msg = instance_create_depth(0, 0, -999, obj_dialogue_flowey_distant);
+        var msg = instance_create_depth(0, 0, -999, obj_dialogue_flowey_distant);
         
         with (msg)
         {
@@ -120,7 +118,7 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_npc_walk(1168, 800, obj_player_npc.y, 3, "x", "right");
+        cutscene_npc_walk(obj_player_npc, 800, obj_player_npc.y, 3, "x", "right");
         break;
     
     case 7:

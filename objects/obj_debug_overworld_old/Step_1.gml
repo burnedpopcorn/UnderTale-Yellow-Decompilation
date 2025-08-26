@@ -1,5 +1,3 @@
-var i;
-
 script_execute(scr_controls_debug_overworld_old);
 
 if (key_display)
@@ -14,7 +12,7 @@ if (global.debug_toggle == true)
 {
     if (key_left)
     {
-        i = array_length_1d(enemy) - 1;
+        var i = array_length_1d(enemy) - 1;
         
         if (enemy_selection_number <= 0)
             enemy_selection_number = i;
@@ -23,7 +21,7 @@ if (global.debug_toggle == true)
     }
     else if (key_right)
     {
-        i = array_length_1d(enemy) - 1;
+        var i = array_length_1d(enemy) - 1;
         
         if (enemy_selection_number >= i)
             enemy_selection_number = 0;
@@ -33,7 +31,7 @@ if (global.debug_toggle == true)
     
     if (key_left2)
     {
-        i = array_length_1d(shop) - 1;
+        var i = array_length_1d(shop) - 1;
         
         if (shop_selection_number <= 0)
             shop_selection_number = i;
@@ -42,7 +40,7 @@ if (global.debug_toggle == true)
     }
     else if (key_right2)
     {
-        i = array_length_1d(shop) - 1;
+        var i = array_length_1d(shop) - 1;
         
         if (shop_selection_number >= i)
             shop_selection_number = 0;
@@ -107,7 +105,7 @@ if (global.debug_toggle == true)
         {
             case "Honeydew Resort Normal":
                 global.sound_carry_overworld = true;
-                instance_create(__view_get(e__VW.XView, 0), __view_get(e__VW.YView, obj_quote_battle_ceroba_outro_4), obj_overworld_shop_fade_out_screen);
+                instance_create(__view_get(e__VW.XView, 0), __view_get(e__VW.YView, 0), obj_overworld_shop_fade_out_screen);
                 
                 with (obj_frisk)
                 {
@@ -118,7 +116,7 @@ if (global.debug_toggle == true)
                 break;
             
             default:
-                instance_create(__view_get(e__VW.XView, 0), __view_get(e__VW.YView, obj_quote_battle_ceroba_outro_4), obj_overworld_shop_fade_out_screen);
+                instance_create(__view_get(e__VW.XView, 0), __view_get(e__VW.YView, 0), obj_overworld_shop_fade_out_screen);
                 
                 with (obj_frisk)
                 {
@@ -173,7 +171,7 @@ if (global.debug_toggle == true)
         
         with (obj_frisk)
         {
-            instance_create(__view_get(e__VW.XView, 0), __view_get(e__VW.YView, obj_quote_battle_ceroba_outro_4), obj_overworld_room_special_fade_out_screen);
+            instance_create(__view_get(e__VW.XView, 0), __view_get(e__VW.YView, 0), obj_overworld_room_special_fade_out_screen);
             moveable = false;
             event = true;
         }

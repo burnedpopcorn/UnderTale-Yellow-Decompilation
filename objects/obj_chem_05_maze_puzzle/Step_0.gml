@@ -17,7 +17,7 @@ if (draw_alpha < 0.99)
 }
 else if (puzzle_draw_guide == true)
 {
-    if (keyboard_multicheck_pressed(0) || keyboard_multicheck_pressed(1))
+    if (keyboard_multicheck_pressed(vk_nokey) || keyboard_multicheck_pressed(vk_anykey))
         puzzle_draw_guide = false;
     
     exit;

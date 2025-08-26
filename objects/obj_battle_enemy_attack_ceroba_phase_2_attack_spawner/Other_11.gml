@@ -1,13 +1,12 @@
-var list_pos, attack_choice, attack_index;
-
 if (live_call())
     return global.live_result;
 
 if (created_spawner != 0)
     created_spawner.attack_stop = true;
 
-list_pos = irandom_range(0, ds_list_size(attack_list) - 1);
-attack_choice = ds_list_find_value(attack_list, list_pos);
+var list_pos = irandom_range(0, ds_list_size(attack_list) - 1);
+var attack_choice = ds_list_find_value(attack_list, list_pos);
+var attack_index;
 
 do
 {

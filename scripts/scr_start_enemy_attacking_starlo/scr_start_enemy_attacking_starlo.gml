@@ -5,7 +5,7 @@ function scr_start_enemy_attacking_starlo()
     if (global.turns_passed >= 18)
     {
         instance_create(round(obj_dialogue_box_battle_transformation_any.bbox_left + ((obj_dialogue_box_battle_transformation_any.bbox_right - obj_dialogue_box_battle_transformation_any.bbox_left) / 2)), round(obj_dialogue_box_battle_transformation_any.bbox_top + ((obj_dialogue_box_battle_transformation_any.bbox_bottom - obj_dialogue_box_battle_transformation_any.bbox_top) / 2)), obj_heart_battle_fighting_red);
-        scr_audio_fade_out(210, 750);
+        scr_audio_fade_out(mus_showdown, 750);
         
         if (global.action_1_selected_count >= 1)
         {
@@ -24,7 +24,7 @@ function scr_start_enemy_attacking_starlo()
         instance_create(380, 74, obj_quote_bubble_battle_yellow_3);
         instance_create(0, 0, obj_quote_battle_starlo_outro_1);
         instance_create(round(obj_dialogue_box_battle_transformation_any.bbox_left + ((obj_dialogue_box_battle_transformation_any.bbox_right - obj_dialogue_box_battle_transformation_any.bbox_left) / 2)), round(obj_dialogue_box_battle_transformation_any.bbox_top + ((obj_dialogue_box_battle_transformation_any.bbox_bottom - obj_dialogue_box_battle_transformation_any.bbox_top) / 2)), obj_heart_battle_fighting_red);
-        scr_audio_fade_out(210, 750);
+        scr_audio_fade_out(mus_showdown, 750);
         global.action_amount = 1;
         global.action_1_important = true;
     }

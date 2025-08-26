@@ -1,20 +1,18 @@
-var battle_box, ball_offset, bomb, i, bullet;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-ball_offset = 30;
-bomb = -4;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var ball_offset = 30;
+var bomb = -4;
 
 switch (scene)
 {
     case 0:
-        for (i = 0; i < bullet_number_max; i++)
+        for (var i = 0; i < bullet_number_max; i++)
         {
             if (timer == floor(i * (360 / bullet_number_max / bullet_speed)))
             {
-                bullet = instance_create_depth(battle_box.x, battle_box.y - bullet_distance, -1100, obj_battle_enemy_attack_axis_turret_circling_geno);
+                var bullet = instance_create_depth(battle_box.x, battle_box.y - bullet_distance, -1100, obj_battle_enemy_attack_axis_turret_circling_geno);
                 bullet.bullet_speed = bullet_speed * bullet_spin_dir;
                 bullet.attack_dir = bullet_attack_dir;
                 bullet.bullet_spawner = id;

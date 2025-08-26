@@ -1,13 +1,11 @@
 function scr_dialogue_battle_action_selected_action_2_martlet_genocide()
 {
-    var enemy_mode, action_2_selected_count, random_number;
-    
-    enemy_mode = global.enemy_mode;
-    action_2_selected_count = global.action_2_selected_count;
+    var enemy_mode = global.enemy_mode;
+    var action_2_selected_count = global.action_2_selected_count;
     
     if (enemy_mode == 3)
     {
-        random_number = irandom_range(1, 2);
+        var random_number = irandom_range(1, 2);
         
         if (random_number == 1)
         {

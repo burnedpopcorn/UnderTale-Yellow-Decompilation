@@ -1,11 +1,9 @@
-var sprite_width_multiplier, sprite_height_multiplier;
-
 if (no_loop_create == false)
 {
     sprite_width_end = sprite_width_destination / sprite_width;
     sprite_height_end = sprite_height_destination / sprite_height;
-    sprite_width_multiplier = abs(image_xscale_default - (sprite_width_end * image_xscale_default));
-    sprite_height_multiplier = abs(image_yscale_default - (sprite_height_end * image_yscale_default));
+    var sprite_width_multiplier = abs(image_xscale_default - (sprite_width_end * image_xscale_default));
+    var sprite_height_multiplier = abs(image_yscale_default - (sprite_height_end * image_yscale_default));
     
     if ((sprite_width_end * image_xscale_default) > image_xscale_default)
         width_increase_type = 1;

@@ -3,19 +3,19 @@ if (live_call())
 
 if (global.route != 3 && global.hotland_flag[10] == 0)
 {
-    if (scr_interact() && keyboard_multicheck_pressed(0))
+    if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
     {
         scr_text();
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* I think this elevator#  goes to the Castle.";
             message[1] = "* Probably the last place#  Ceroba would run to.";
             message[2] = "* Let's keep searching#  this area for now.";
-            prt[0] = 338;
-            prt[1] = 315;
-            prt[2] = 321;
+            prt[0] = spr_martlet_head_wondering;
+            prt[1] = spr_martlet_head_disappointed;
+            prt[2] = spr_martlet_head_moderate;
         }
     }
 }
@@ -44,7 +44,7 @@ else
             break;
         
         case 2:
-            if (cutscene_npc_walk(1168, obj_player_npc.x, 140, 3, "y", "down"))
+            if (cutscene_npc_walk(obj_player_npc, obj_player_npc.x, 140, 3, "y", "down"))
             {
                 if (global.party_member != -4)
                     scene = 3;
@@ -63,7 +63,7 @@ else
             break;
         
         case 4:
-            cutscene_npc_walk(1164, obj_player_npc.x, obj_pl.y - 1, 3, "y", "down");
+            cutscene_npc_walk(obj_martlet_npc, obj_player_npc.x, obj_pl.y - 1, 3, "y", "down");
             break;
         
         case 5:
@@ -93,7 +93,7 @@ else
     switch (scene)
     {
         case 8:
-            if (scr_interact() && keyboard_multicheck_pressed(0))
+            if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             {
                 audio_play_sound(snd_sliding_door_open, 1, 0);
                 image_speed = 1;
@@ -133,7 +133,7 @@ else
             break;
         
         case 11:
-            if (cutscene_npc_walk(1168, 260, 100, 3, "x", "down"))
+            if (cutscene_npc_walk(obj_player_npc, 260, 100, 3, "x", "down"))
             {
                 if (global.party_member != -4)
                     scene = 12;
@@ -147,7 +147,7 @@ else
             break;
         
         case 12:
-            cutscene_npc_walk(1164, obj_player_npc.x, 135, 3, "x", "up");
+            cutscene_npc_walk(obj_martlet_npc, obj_player_npc.x, 135, 3, "x", "up");
             
             if (obj_martlet_npc.y < 140 && obj_martlet_npc.image_alpha > 0)
                 obj_martlet_npc.image_alpha -= 0.2;
@@ -155,7 +155,7 @@ else
             break;
         
         case 13:
-            cutscene_change_room(259, 160, 220, 0.1);
+            cutscene_change_room(rm_hotland_elevator, 160, 220, 0.1);
             break;
     }
 }

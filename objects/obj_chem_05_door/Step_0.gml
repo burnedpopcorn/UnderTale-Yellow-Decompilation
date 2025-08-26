@@ -1,7 +1,7 @@
 if (live_call())
     return global.live_result;
 
-if (keyboard_multicheck_pressed(0) && scr_interact())
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
 {
     scr_text();
     
@@ -121,26 +121,26 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* HELLO.";
             message[1] = "* I HAD TROUBLE LOCATING#  YOU AFTER OUR LAST#  ENCOUNTER.";
             message[2] = "* WORRY NO MORE, I HAVE#  LOCATED YOU.";
             message[3] = "* MY LAST PLAN DID NOT#  WORK SO I WILL TRY#  SOMETHING NEW.";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
-            prt[3] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
+            prt[3] = spr_portrait_axis_normal;
         }
         
         break;
     
     case 6:
-        cutscene_npc_walk(1166, obj_axis_npc.x, 170, 3, "x", "down");
+        cutscene_npc_walk(obj_axis_npc, obj_axis_npc.x, 170, 3, "x", "down");
         cutscene_advance();
         break;
     
     case 7:
-        cutscene_sfx_play(410, 1);
+        cutscene_sfx_play(snd_monster_damage_hit_critical, 1);
         break;
     
     case 8:
@@ -158,7 +158,7 @@ switch (scene)
         break;
     
     case 10:
-        cutscene_npc_set_sprites(1166, 488, 487, 3220, 486, 488, 487, 3220, 486);
+        cutscene_npc_set_sprites(obj_axis_npc, spr_axis_up, spr_axis_right, spr_axis_hold_acid, spr_axis_left, spr_axis_up, spr_axis_right, spr_axis_hold_acid, spr_axis_left);
         break;
     
     case 11:
@@ -172,28 +172,28 @@ switch (scene)
         {
             ch[1] = "No way!";
             ch[2] = "Sure!";
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* I JUST FOUND THIS#  HIGHLY-CORROSIVE#  CONCOCTION.";
             message[1] = "* I WOULD LIKE TO APPLY#  IT ON YOUR SKIN.";
             message[2] = "* WILL YOU BE MY TEST#  SUBJECT?";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
             ch_msg = 2;
             
             if (outcome == 1)
             {
                 message[3] = "* WONDERFUL.";
-                prt[3] = 473;
+                prt[3] = spr_portrait_axis_normal;
             }
             else if (outcome == 2)
             {
                 message[3] = "* CORRECT DECISION.";
-                prt[3] = 473;
+                prt[3] = spr_portrait_axis_normal;
             }
             
             message[4] = "* ALLOW ME TO TERMINATE#  THE CORK FIRST.";
-            prt[4] = 473;
+            prt[4] = spr_portrait_axis_normal;
         }
         
         break;
@@ -203,11 +203,11 @@ switch (scene)
         break;
     
     case 14:
-        cutscene_npc_action_sprite(1166, 3707, 6, true, 0);
+        cutscene_npc_action_sprite(obj_axis_npc, spr_axis_acid_2, 6, true, 0);
         break;
     
     case 15:
-        cutscene_npc_action_sprite(1166, 3105, 1, true, 1);
+        cutscene_npc_action_sprite(obj_axis_npc, spr_axis_acid_3, 1, true, 1);
         cutscene_advance();
         break;
     
@@ -220,17 +220,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* IT IS TOUGH TO OPEN#  CONTAINERS...";
             message[1] = "* ...WHEN MY ONLY POINT#  OF FORCE IS AT THE BACK#  OF MY HANDS.";
-            prt[0] = 473;
-            prt[1] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
         }
         
         break;
     
     case 18:
-        cutscene_npc_action_sprite(1166, 174, 1, true, 1, 72, 0);
+        cutscene_npc_action_sprite(obj_axis_npc, spr_axis_acid_4, 1, true, 1, snd_chem_05_axis_acid_2, 0);
         cutscene_advance();
         break;
     
@@ -243,16 +243,16 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* ALMOST HAVE IT.";
-            prt[0] = 473;
+            prt[0] = spr_portrait_axis_normal;
         }
         
         break;
     
     case 21:
         audio_stop_sound(cutscene_music);
-        cutscene_npc_action_sprite(1166, 3304, 1, true, 0, 30, 0);
+        cutscene_npc_action_sprite(obj_axis_npc, spr_axis_acid_5, 1, true, 0, snd_chem_05_axis_acid_3, 0);
         break;
     
     case 22:
@@ -264,11 +264,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* [Shoot]";
             message[1] = "* DO NOT FRET, I WILL#  RETRIEVE ANOTHER TUBE-";
-            prt[0] = 473;
-            prt[1] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
         }
         
         break;
@@ -291,11 +291,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* HUH.";
             message[1] = "* HOW THE TABLES TURN.";
-            prt[0] = 473;
-            prt[1] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
         }
         
         break;
@@ -356,7 +356,7 @@ switch (scene)
         break;
     
     case 32:
-        cutscene_sfx_play(384, 0.5);
+        cutscene_sfx_play(snd_undertale_thud, 0.5);
         break;
     
     case 33:
@@ -370,7 +370,7 @@ switch (scene)
         instance_destroy(obj_chem_05_floor_melt_front);
         scr_radio_restart();
         scr_cutscene_end();
-        instance_activate_object(inst_105566);
+        instance_activate_object(inst_9D9DB53);
         solid = false;
         
         if (global.route == 3 || global.geno_complete[3] == true)

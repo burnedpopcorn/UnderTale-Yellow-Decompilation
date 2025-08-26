@@ -1,6 +1,4 @@
-var item_slot;
-
-item_slot = global.item_slot[3];
+var item_slot = global.item_slot[3];
 
 if (item_slot == "Hot Dog...?")
 {

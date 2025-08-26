@@ -1,15 +1,13 @@
-var xx, yy, dir;
-
 if (live_call())
     return global.live_result;
 
-xx = obj_heart_battle_fighting_parent.x;
-yy = obj_heart_battle_fighting_parent.y;
+var xx = obj_heart_battle_fighting_parent.x;
+var yy = obj_heart_battle_fighting_parent.y;
 
 switch (scene)
 {
     case 0:
-        dir = random_range(0, 180);
+        var dir = random_range(0, 180);
         bul = instance_create_depth(xx + lengthdir_x(100, dir), yy + lengthdir_y(100, dir), -100, obj_flowey_battle_phase_2_gray_pellet);
         bul.direction = point_direction(bul.x, bul.y, xx, yy);
         bul.speed = 0;

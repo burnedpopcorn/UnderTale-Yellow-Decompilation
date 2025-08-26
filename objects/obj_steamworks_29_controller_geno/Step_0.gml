@@ -22,18 +22,18 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* ST4Y pUT, OK?";
             message[1] = "* YoUR'E s-SAFE.";
-            prt[0] = 3282;
-            prt[1] = 3282;
+            prt[0] = spr_portrait_axis_damaged;
+            prt[1] = spr_portrait_axis_damaged;
             position = 0;
         }
         
         break;
     
     case 3:
-        cutscene_npc_walk(1166, obj_axis_npc.x, 0, 4, "y", "up");
+        cutscene_npc_walk(obj_axis_npc, obj_axis_npc.x, 0, 4, "y", "up");
         cutscene_advance();
         break;
     
@@ -42,7 +42,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_npc_walk(1168, obj_player_npc.x, 380, 2, "y", "up");
+        cutscene_npc_walk(obj_player_npc, obj_player_npc.x, 380, 2, "y", "up");
         break;
     
     case 6:

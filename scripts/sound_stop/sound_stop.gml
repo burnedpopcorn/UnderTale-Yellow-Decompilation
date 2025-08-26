@@ -1,4 +1,4 @@
-function sound_stop(argument0)
+function sound_stop(arg0)
 {
-    audio_stop_sound(argument0);
+    audio_stop_sound(arg0);
 }

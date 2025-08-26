@@ -1,4 +1,4 @@
-function action_set_alarm(argument0, argument1)
+function action_set_alarm(arg0, arg1)
 {
-    alarm_set(argument1, argument0);
+    alarm_set(arg1, arg0);
 }

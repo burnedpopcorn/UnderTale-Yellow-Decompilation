@@ -1,5 +1,3 @@
-var random_number;
-
 script_execute(scr_controls_battle_mercy);
 
 if (key_select)
@@ -163,7 +161,7 @@ if (key_select)
     }
     else if (global.mercy_number == 2)
     {
-        random_number = irandom_range(0, 1);
+        var random_number = irandom_range(0, 1);
         
         if (global.player_armor_modifier == "Patch")
             random_number = 1;

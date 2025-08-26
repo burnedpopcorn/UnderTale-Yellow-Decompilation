@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 103.032,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/unforgiving.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "unforgiving.ogg",
+  "type": 1,
   "volume": 1.0,
 }

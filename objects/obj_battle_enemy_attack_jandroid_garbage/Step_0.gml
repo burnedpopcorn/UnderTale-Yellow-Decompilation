@@ -1,12 +1,10 @@
-var box;
-
 if (live_call())
     return global.live_result;
 
 if (vspeed > vspeed_max)
     vspeed = vspeed_max;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if ((bbox_bottom + vspeed) >= (box.bbox_bottom - 3))
 {

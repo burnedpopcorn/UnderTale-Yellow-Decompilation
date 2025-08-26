@@ -1,11 +1,9 @@
-var random_message;
-
 execute_normal = false;
 execute_random = false;
 text_effect = "twitchy";
 text_effect_2 = "twitchy";
 color_count = 0;
-random_message = 0;
+var random_message = 0;
 
 if (global.battle_enemy_name == "jandroid duo")
 {

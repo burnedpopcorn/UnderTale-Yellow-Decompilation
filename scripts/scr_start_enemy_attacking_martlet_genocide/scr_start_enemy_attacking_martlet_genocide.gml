@@ -1,10 +1,8 @@
 function scr_start_enemy_attacking_martlet_genocide()
 {
-    var enemy_mode;
-    
     instance_create(319, 320, obj_dialogue_box_battle_transformation_any);
     instance_create(380, 74, obj_quote_bubble_battle_yellow_3);
-    enemy_mode = global.enemy_mode;
+    var enemy_mode = global.enemy_mode;
     
     switch (enemy_mode)
     {

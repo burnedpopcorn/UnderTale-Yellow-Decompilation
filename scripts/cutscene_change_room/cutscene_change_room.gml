@@ -1,7 +1,5 @@
 function cutscene_change_room()
 {
-    var trn;
-    
     if (room == argument[0])
     {
         cutscene_advance();
@@ -10,7 +8,7 @@ function cutscene_change_room()
     
     if (!instance_exists(obj_transition))
     {
-        trn = instance_create(0, 0, obj_transition);
+        var trn = instance_create(0, 0, obj_transition);
         
         with (trn)
         {

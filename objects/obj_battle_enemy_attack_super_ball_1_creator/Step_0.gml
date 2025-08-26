@@ -1,5 +1,3 @@
-var ball;
-
 if (live_call())
     return global.live_result;
 
@@ -35,7 +33,7 @@ switch (scene)
         break;
     
     case 2:
-        ball = instance_create_depth(obj_axis_body.x, obj_axis_body.y - 80, -300, obj_battle_enemy_attack_axis_energy_ball_boss_red);
+        var ball = instance_create_depth(obj_axis_body.x, obj_axis_body.y - 80, -300, obj_battle_enemy_attack_axis_energy_ball_boss_red);
         ball.launch_speed = launch_speed;
         scene++;
         break;

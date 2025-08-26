@@ -1,17 +1,15 @@
 function scr_start_enemy_attacking_cactony_slither_duo()
 {
-    var dialogue_1_spawn, dialogue_2_spawn, enemy_dead, enemy_dead_2, enemy_spared, enemy_spared_2, bubble, quote;
-    
     if (live_call())
         return global.live_result;
     
     instance_create(319, 320, obj_dialogue_box_battle_transformation_any);
-    dialogue_1_spawn = false;
-    dialogue_2_spawn = false;
-    enemy_dead = global.enemy_dead;
-    enemy_dead_2 = global.enemy_dead_2;
-    enemy_spared = global.enemy_spared;
-    enemy_spared_2 = global.enemy_spared_2;
+    var dialogue_1_spawn = false;
+    var dialogue_2_spawn = false;
+    var enemy_dead = global.enemy_dead;
+    var enemy_dead_2 = global.enemy_dead_2;
+    var enemy_spared = global.enemy_spared;
+    var enemy_spared_2 = global.enemy_spared_2;
     end_loop = false;
     
     if (enemy_dead == false && enemy_spared == false)
@@ -42,8 +40,8 @@ function scr_start_enemy_attacking_cactony_slither_duo()
     
     if (dialogue_2_spawn)
     {
-        bubble = instance_create(390, 16, obj_quote_bubble_battle_yellow_above_thin);
-        quote = instance_create_depth(0, 0, -1000, obj_quote_battle_slither_b);
+        var bubble = instance_create(390, 16, obj_quote_bubble_battle_yellow_above_thin);
+        var quote = instance_create_depth(0, 0, -1000, obj_quote_battle_slither_b);
         quote.spawner = bubble;
     }
     

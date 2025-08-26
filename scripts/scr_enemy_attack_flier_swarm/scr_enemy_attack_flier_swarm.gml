@@ -1,17 +1,15 @@
 function scr_enemy_attack_flier_swarm()
 {
-    var distance_x, distance_y, random_number_x, random_number_y, sector, sector_2;
-    
     global.attack_counter_max = 30;
     
     if (global.attack_counter == 0)
     {
-        distance_x = 13;
-        distance_y = 11;
-        random_number_x = irandom_range(obj_dialogue_box_battle_transformation_any.bbox_left + 13, obj_dialogue_box_battle_transformation_any.bbox_right - 13);
-        random_number_y = irandom_range(obj_dialogue_box_battle_transformation_any.bbox_top + 11, obj_dialogue_box_battle_transformation_any.bbox_bottom - 11);
-        sector = irandom_range(0, 1);
-        sector_2 = irandom_range(0, 1);
+        var distance_x = 13;
+        var distance_y = 11;
+        var random_number_x = irandom_range(obj_dialogue_box_battle_transformation_any.bbox_left + 13, obj_dialogue_box_battle_transformation_any.bbox_right - 13);
+        var random_number_y = irandom_range(obj_dialogue_box_battle_transformation_any.bbox_top + 11, obj_dialogue_box_battle_transformation_any.bbox_bottom - 11);
+        var sector = irandom_range(0, 1);
+        var sector_2 = irandom_range(0, 1);
         
         if (sector == 0)
         {

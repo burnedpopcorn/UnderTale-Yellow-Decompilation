@@ -1,11 +1,9 @@
 function scr_determine_world_value_yellow()
 {
-    var current_room_overworld;
-    
     if (room != rm_battle && room != rm_shop && room != rm_mainmenu && room != rm_death_screen)
         global.current_room_overworld = room_get_name(room);
     
-    current_room_overworld = global.current_room_overworld;
+    var current_room_overworld = global.current_room_overworld;
     
     switch (current_room_overworld)
     {

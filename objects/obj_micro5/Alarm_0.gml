@@ -6,7 +6,7 @@ if (!instance_exists(obj_dialogue))
 with (msg)
 {
     portrait = false;
-    sndfnt = 99;
+    sndfnt = sndfnt_default;
     message[0] = "* (You hear movement in the#  distance...)";
     message[1] = "* (An intimidating presence fills#  the Ruins.)";
 }

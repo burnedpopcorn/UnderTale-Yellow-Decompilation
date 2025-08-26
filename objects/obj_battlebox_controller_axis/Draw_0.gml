@@ -1,21 +1,19 @@
-var box, xx, yy;
-
 if (live_call())
     return global.live_result;
 
 if (instance_exists(obj_dialogue_box_battle_transformation_any))
-    box = 3154;
+    var box = obj_dialogue_box_battle_transformation_any;
 else if (instance_exists(obj_dialogue_box_battle))
-    box = 3112;
+    var box = obj_dialogue_box_battle;
 else if (instance_exists(obj_dialogue_box_battle_transformation_any_out))
-    box = 3157;
+    var box = obj_dialogue_box_battle_transformation_any_out;
 else if (instance_exists(obj_dialogue_box_battle_transformation_any_in))
-    box = 3156;
+    var box = obj_dialogue_box_battle_transformation_any_in;
 else
     exit;
 
-xx = axis_trash_meter_x;
-yy = axis_trash_meter_y;
+var xx = axis_trash_meter_x;
+var yy = axis_trash_meter_y;
 
 if (global.geno_complete[3] == true)
     exit;
@@ -35,12 +33,12 @@ if (shield_enabled)
 {
     shader_set(sh_yellow);
     draw_set_alpha(axis_shield_pulse_alpha);
-    draw_outline(3019, 0, xx, yy, 1, 1, 0, c_white, axis_shield_pulse_alpha);
+    draw_outline(3019, 0, xx, yy, 1, 1, 0, 16777215, axis_shield_pulse_alpha);
     
     with (obj_axis_body)
     {
         draw_set_alpha(other.axis_shield_pulse_alpha);
-        draw_outline(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_white, other.axis_shield_pulse_alpha);
+        draw_outline(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, 16777215, other.axis_shield_pulse_alpha);
         shader_reset();
         draw_set_alpha(1);
         draw_self();

@@ -1,5 +1,3 @@
-var dir;
-
 if (live_call())
     return global.live_result;
 
@@ -45,7 +43,7 @@ x_offset_base = obj_ceroba_phase_2_shield.x - obj_ceroba_phase_2_shield.xstart;
 
 if (can_move == true)
 {
-    dir = point_direction(x_offset, y, target_position[0], target_position[1]);
+    var dir = point_direction(x_offset, y, target_position[0], target_position[1]);
     
     if (point_distance(x_offset, y, target_position[0], target_position[1]) > move_speed)
     {

@@ -1,7 +1,5 @@
-var player_gold, buy_shop_screen_number, i;
-
-player_gold = global.player_gold;
-buy_shop_screen_number = global.buy_shop_screen_number;
+var player_gold = global.player_gold;
+var buy_shop_screen_number = global.buy_shop_screen_number;
 script_execute(scr_controls_shop_response);
 
 if (key_select)
@@ -25,7 +23,7 @@ if (key_select)
             global.player_response = 1;
             global.able_to_buy = 0;
             
-            for (i = 1; i <= 8; i += 1)
+            for (var i = 1; i <= 8; i += 1)
             {
                 if (global.item_slot[i] == "Nothing")
                 {

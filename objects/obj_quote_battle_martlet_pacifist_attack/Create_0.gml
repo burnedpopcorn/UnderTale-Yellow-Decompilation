@@ -1,9 +1,7 @@
-var hit_count, no_hit_count, miss_count;
-
 text_effect = "twitchy";
-hit_count = global.hit_count;
-no_hit_count = global.no_hit_count;
-miss_count = global.miss_count;
+var hit_count = global.hit_count;
+var no_hit_count = global.no_hit_count;
+var miss_count = global.miss_count;
 
 if ((hit_count + no_hit_count + miss_count) <= 0)
 {

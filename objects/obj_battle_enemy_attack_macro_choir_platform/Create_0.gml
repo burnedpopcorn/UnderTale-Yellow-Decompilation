@@ -1,10 +1,8 @@
-var spawn_frog;
-
 if (live_call())
     return global.live_result;
 
 damage_number = scr_determine_damage_number_enemy("macro froggit", "void", "void");
-spawn_frog = 224;
+var spawn_frog = 224;
 
 if (irandom(4) == 1)
     spawn_frog = 227;

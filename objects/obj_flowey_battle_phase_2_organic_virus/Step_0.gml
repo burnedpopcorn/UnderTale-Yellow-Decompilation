@@ -1,9 +1,7 @@
-var launch_speed, soul;
-
 if (live_call())
     return global.live_result;
 
-launch_speed = 10;
+var launch_speed = 10;
 
 switch (scene)
 {
@@ -38,7 +36,7 @@ switch (scene)
         break;
     
     case 3:
-        soul = 2979;
+        var soul = obj_heart_battle_fighting_parent;
         target_x = soul.x;
         target_y = soul.y;
         direction = point_direction(x, y, target_x, target_y);

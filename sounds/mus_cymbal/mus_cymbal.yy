@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 5.1896877,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/cymbal.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "cymbal.ogg",
+  "type": 1,
   "volume": 1.0,
 }

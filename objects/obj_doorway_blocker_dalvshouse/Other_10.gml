@@ -21,40 +21,40 @@ if (waiter == 2)
             instance_create(0, 0, obj_dialoguebox_dummy);
         
         portrait = true;
-        sndfnt = 99;
-        sndfnt_array[0] = 100;
-        sndfnt_array[1] = 99;
-        sndfnt_array[2] = 100;
+        sndfnt = sndfnt_default;
+        sndfnt_array[0] = sndfnt_dalv;
+        sndfnt_array[1] = sndfnt_default;
+        sndfnt_array[2] = sndfnt_dalv;
         message[0] = "* Are you ready to leave?";
         message[1] = "* Leave Dalv's house?";
-        prt[0] = 1755;
+        prt[0] = spr_dalv_head_regular;
         
         if (outcome == 1 && message_current == 1)
         {
             obj_doorway_blocker_dalvshouse.response = "yes";
             obj_doorway_blocker_dalvshouse.waiter = 7;
             message[2] = "* If that's what you want,#  I'll lead the way.";
-            prt[2] = 1776;
-            sndfnt = 100;
+            prt[2] = spr_dalv_head_moderate;
+            sndfnt = sndfnt_dalv;
         }
         else if (outcome == 2 && message_current == 1)
         {
             obj_doorway_blocker_dalvshouse.response = "no";
             obj_doorway_blocker_dalvshouse.waiter = 7;
             message[2] = "* Alright, take as long as#  you like.";
-            prt[2] = 1776;
-            sndfnt = 100;
+            prt[2] = spr_dalv_head_moderate;
+            sndfnt = sndfnt_dalv;
         }
         
         if (message_current == 0 || message_current == 2)
         {
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
         }
         else
         {
             obj_dalv2.image_index = 0;
             obj_dalv2.image_speed = 0;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
         }
         
         ch_msg = 1;
@@ -75,16 +75,16 @@ if (waiter == 6)
         if (obj_doorway_blocker_dalvshouse.response == "yes")
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* If that's what you want,#  I'll lead the way.";
-            prt[0] = 1776;
+            prt[0] = spr_dalv_head_moderate;
         }
         else if (obj_doorway_blocker_dalvshouse.response == "no")
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* Alright, take as long as#  you like.";
-            prt[0] = 1776;
+            prt[0] = spr_dalv_head_moderate;
         }
     }
     
@@ -120,7 +120,7 @@ if (waiter >= 7 && waiter <= 8 && !instance_exists(obj_dialogue))
 
 if (waiter == 9)
 {
-    if (cutscene_npc_walk(1168, obj_pl.x, 115, 3, "y", "up"))
+    if (cutscene_npc_walk(obj_player_npc, obj_pl.x, 115, 3, "y", "up"))
     {
         user_event_0_activated = false;
         global.cutscene = false;
@@ -132,7 +132,7 @@ if (waiter == 9)
 
 if (waiter == 10)
 {
-    if (cutscene_npc_walk(1168, obj_pl.x, 115, 3, "y", "up"))
+    if (cutscene_npc_walk(obj_player_npc, obj_pl.x, 115, 3, "y", "up"))
     {
         obj_dalv2.destination_x_dalv = 219;
         obj_dalv2.destination_y_dalv = 90;

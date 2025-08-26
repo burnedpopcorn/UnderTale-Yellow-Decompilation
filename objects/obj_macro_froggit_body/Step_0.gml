@@ -1,7 +1,5 @@
-var enemy_dead, enemy_spared;
-
-enemy_dead = global.enemy_dead;
-enemy_spared = global.enemy_spared;
+var enemy_dead = global.enemy_dead;
+var enemy_spared = global.enemy_spared;
 
 if (global.turns_passed < 1 || instance_exists(obj_buff_froggit_body))
     exit;

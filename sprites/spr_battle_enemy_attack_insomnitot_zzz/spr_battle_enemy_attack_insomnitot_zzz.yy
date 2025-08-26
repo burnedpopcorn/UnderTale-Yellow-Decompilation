@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd94a319-6158-42e7-863b-b96fe7452ff4",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4621f7ab-9963-458e-b96a-e018e574d9cb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"605c2394-1f0c-42cb-98a7-e1d2b4a4a230",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f54fed16-e6b2-42b5-b195-d2599cf2f495",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 17,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"39d388d4-fb20-4b47-b93c-5bb0d31f5374","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3b9015af-8717-42af-af07-61ae67b2f29c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fd94a319-6158-42e7-863b-b96fe7452ff4","path":"sprites/spr_battle_enemy_attack_insomnitot_zzz/spr_battle_enemy_attack_insomnitot_zzz.yy",},},},"Disabled":false,"id":"402b374d-64d9-4f8d-baea-265dbc988276","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4621f7ab-9963-458e-b96a-e018e574d9cb","path":"sprites/spr_battle_enemy_attack_insomnitot_zzz/spr_battle_enemy_attack_insomnitot_zzz.yy",},},},"Disabled":false,"id":"eac1283e-3cf3-49cd-9f33-f072dc3f081f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"605c2394-1f0c-42cb-98a7-e1d2b4a4a230","path":"sprites/spr_battle_enemy_attack_insomnitot_zzz/spr_battle_enemy_attack_insomnitot_zzz.yy",},},},"Disabled":false,"id":"66f69b1a-2d4d-4a8c-bca3-a5bc1194e06b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f54fed16-e6b2-42b5-b195-d2599cf2f495","path":"sprites/spr_battle_enemy_attack_insomnitot_zzz/spr_battle_enemy_attack_insomnitot_zzz.yy",},},},"Disabled":false,"id":"b8ec0e2d-1e8a-4bb8-b3df-4116cfdb5382","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Snowdin",
+    "path": "texturegroups/Snowdin",
   },
   "type": 0,
   "VTile": false,

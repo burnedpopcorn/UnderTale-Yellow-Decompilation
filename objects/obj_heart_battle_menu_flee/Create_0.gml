@@ -1,10 +1,8 @@
-var player_character;
-
 image_speed = 0.5;
 image_index = 0;
 move_speed = 4;
 no_loop = false;
-player_character = global.player_character;
+var player_character = global.player_character;
 
 switch (player_character)
 {

@@ -3,7 +3,6 @@
 //
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
-
 uniform sampler2D palette_tex; //the palette texture
 uniform float palette_index; //the y index of the current palette (+1 to go to next palette, starts at 0)
 uniform float palette_texel_width; //needs the texture_get_texel_width from the palette texture; tells our shader how "wide" each palette strip is
@@ -11,7 +10,6 @@ uniform float palette_texel_height; //needs the texture_get_texel_height from th
 uniform float palette_x_offset; //needs the texture_get_uvs[0] from the palette texture; tells our shader where the palette is located horizontally on the texture page
 uniform float palette_y_offset; //needs the texture_get_uvs[1] from the palette texture; tells our shader where the palette is located vertically on the texture page
 uniform int color_vect; //takes a value between 0 and 2 to tell our shader if we check r(0), g(1) or b(2) values before swapping colours. We could also use alpha with 3.
-
 void main()
 {
 	

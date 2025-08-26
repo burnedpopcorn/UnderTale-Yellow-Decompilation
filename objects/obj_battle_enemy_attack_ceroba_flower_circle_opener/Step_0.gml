@@ -1,16 +1,14 @@
-var i, bullet, speed_perc, walk_speed, key_right, key_left, key_down, key_up, move_x, move_y, hsp, vsp, battle_box;
-
 if (live_call())
     return global.live_result;
 
 switch (scene)
 {
     case 0:
-        for (i = 0; i < bullet_number_max; i++)
+        for (var i = 0; i < bullet_number_max; i++)
         {
             if (timer == floor(i * (360 / bullet_number_max / bullet_speed)))
             {
-                bullet = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y - 80, -100, obj_battle_enemy_attack_ceroba_flower_circle_flower);
+                var bullet = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y - 80, -100, obj_battle_enemy_attack_ceroba_flower_circle_flower);
                 bullet.bullet_speed = bullet_speed;
                 bullet.attack_dir = attack_dir;
                 bullet.bullet_spawner = id;
@@ -40,7 +38,7 @@ switch (scene)
         break;
     
     case 2:
-        speed_perc = _speed_perc;
+        var speed_perc = _speed_perc;
         
         if (instance_exists(obj_petal_generator_phase_2))
             obj_petal_generator_phase_2.petals_enabled = false;
@@ -110,22 +108,22 @@ switch (scene)
         
         hint_draw = true;
         
-        if (keyboard_multicheck_pressed(1))
+        if (keyboard_multicheck_pressed(vk_anykey))
         {
-            walk_speed = global.speed_self + (1 * sign(global.current_sp_self));
-            key_right = global.right_key;
-            key_left = -global.left_key;
-            key_down = global.down_key;
-            key_up = -global.up_key;
-            move_x = key_left + key_right;
-            move_y = key_down + key_up;
-            hsp = move_x * walk_speed;
-            vsp = move_y * walk_speed;
+            var walk_speed = global.speed_self + (1 * sign(global.current_sp_self));
+            var key_right = global.right_key;
+            var key_left = -global.left_key;
+            var key_down = global.down_key;
+            var key_up = -global.up_key;
+            var move_x = key_left + key_right;
+            var move_y = key_down + key_up;
+            var hsp = move_x * walk_speed;
+            var vsp = move_y * walk_speed;
             
             if (vsp == 0 && hsp == 0)
                 vsp = -1 * walk_speed;
             
-            battle_box = 3154;
+            var battle_box = obj_dialogue_box_battle_transformation_any;
             
             with (obj_heart_battle_fighting_yellow_final)
             {
@@ -148,7 +146,7 @@ switch (scene)
         break;
     
     case 5:
-        speed_perc = _speed_perc;
+        var speed_perc = _speed_perc;
         obj_petal_generator_phase_2.petals_enabled = true;
         
         with (obj_battle_enemy_attack_ceroba_flower_circle_flower)

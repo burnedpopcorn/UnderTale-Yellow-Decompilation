@@ -1,9 +1,7 @@
-function scr_audio_fade_out(argument0, argument1)
+function scr_audio_fade_out(arg0, arg1)
 {
-    var snd, fade_len;
-    
-    snd = argument0;
-    fade_len = argument1;
+    var snd = arg0;
+    var fade_len = arg1;
     
     if (!audio_is_playing(snd))
         return false;

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dafca264-356b-41b8-8558-0ff18e321c7b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cbaeccd4-7949-4312-a2ea-cf705fc02501",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f4d57538-bbcb-4987-ba2d-0e983217288c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2ebe8f72-bb60-47f7-b74a-6e500bfd108f",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 106,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"deddde48-0183-4607-9416-2698eb01cbc2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"79a85e4b-6258-40bb-9f34-8d67e81eaa48","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dafca264-356b-41b8-8558-0ff18e321c7b","path":"sprites/spr_portrait_fchujin_happy/spr_portrait_fchujin_happy.yy",},},},"Disabled":false,"id":"12e96d41-0747-4168-8e50-5d15c5466845","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cbaeccd4-7949-4312-a2ea-cf705fc02501","path":"sprites/spr_portrait_fchujin_happy/spr_portrait_fchujin_happy.yy",},},},"Disabled":false,"id":"f66de03c-50b3-4226-8b14-835a7e9370cd","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f4d57538-bbcb-4987-ba2d-0e983217288c","path":"sprites/spr_portrait_fchujin_happy/spr_portrait_fchujin_happy.yy",},},},"Disabled":false,"id":"e0653233-58a3-4c3a-b9be-41b4c389293e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2ebe8f72-bb60-47f7-b74a-6e500bfd108f","path":"sprites/spr_portrait_fchujin_happy/spr_portrait_fchujin_happy.yy",},},},"Disabled":false,"id":"5e3435c3-5d42-4885-9365-65c00512bcb7","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Mansion",
+    "path": "texturegroups/Mansion",
   },
   "type": 0,
   "VTile": false,

@@ -1,7 +1,7 @@
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+battle_box = obj_dialogue_box_battle_transformation_any;
 xx = battle_box.x;
 yy = battle_box.y + 30;
 layer_create(-90, "sequence_layer");

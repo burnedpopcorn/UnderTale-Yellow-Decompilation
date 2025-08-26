@@ -1,5 +1,3 @@
-var can_trail, spin_radius_speed_last, angle_diff, id_feather_explosion;
-
 if (live_call())
     return global.live_result;
 
@@ -16,7 +14,7 @@ if (state == 0)
 
 if (state == 1)
 {
-    can_trail = false;
+    var can_trail = false;
     trail_cc_current += 1;
     
     if (trail_cc_current >= trail_cc_max)
@@ -39,7 +37,7 @@ if (state == 1)
         }
     }
     
-    spin_radius_speed_last = spin_radius_speed;
+    var spin_radius_speed_last = spin_radius_speed;
     game_maker_cannot_do_math = power((time_elapsed_spin / ((time_max_spin / 2) * (1 / sqrt(max_rise_spin)))) - sqrt(max_rise_spin), 2);
     spin_radius_speed = sign_modifier_spin * (max_rise_spin - round(game_maker_cannot_do_math));
     time_elapsed_spin += time_increase_spin;
@@ -70,7 +68,7 @@ else if (state == 2)
     if (image_angle != angle_destination)
         image_angle += (target_speed * target_direction);
     
-    angle_diff = angle_difference(image_angle, angle_destination);
+    var angle_diff = angle_difference(image_angle, angle_destination);
     
     if ((angle_diff * target_direction) < 0)
         image_angle = angle_destination;
@@ -84,7 +82,7 @@ else if (state == 2)
 }
 else if (state == 3)
 {
-    can_trail = false;
+    var can_trail = false;
     trail_cc_current += 1;
     
     if (trail_cc_current >= trail_cc_max)
@@ -129,7 +127,7 @@ else if (state == 3)
     
     if (distance_to_point(id_target.x, id_target.y) <= ((attack_speed / 2) + 1))
     {
-        id_feather_explosion = instance_create(id_target.x, id_target.y, obj_martlet_attack_splitting_feather_ext_checker);
+        var id_feather_explosion = instance_create(id_target.x, id_target.y, obj_martlet_attack_splitting_feather_ext_checker);
         id_feather_explosion.fcreate_angle_diff = explosion_angle;
         id_feather_explosion.feather_targetted = feather_targetted;
         id_feather_explosion.fcreate_count = feather_create_count;

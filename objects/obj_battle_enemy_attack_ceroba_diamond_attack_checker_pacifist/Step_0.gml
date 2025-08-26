@@ -1,11 +1,9 @@
-var counter_timer_max, player_soul, battle_box;
-
 if (live_call())
     return global.live_result;
 
-counter_timer_max = 0;
-player_soul = 2979;
-battle_box = 3154;
+var counter_timer_max = 0;
+var player_soul = 2980;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 switch (counter_current)
 {

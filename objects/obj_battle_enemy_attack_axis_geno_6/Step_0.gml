@@ -1,11 +1,9 @@
-var battle_box, ball_offset, bomb, laser;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-ball_offset = 30;
-bomb = -4;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var ball_offset = 30;
+var bomb = -4;
 
 switch (attack_tick)
 {
@@ -14,18 +12,18 @@ switch (attack_tick)
         break;
     
     case 70:
-        laser = instance_create_depth(battle_box.x, battle_box.bbox_bottom + 20, -100, obj_battle_enemy_attack_axis_blue_laser_geno);
+        var laser = instance_create_depth(battle_box.x, battle_box.bbox_bottom + 20, -100, obj_battle_enemy_attack_axis_blue_laser_geno);
         laser.vspeed = -3;
         break;
     
     case 100:
-        laser = instance_create_depth(battle_box.bbox_left - 20, battle_box.y, -100, obj_battle_enemy_attack_axis_orange_laser_geno);
+        var laser = instance_create_depth(battle_box.bbox_left - 20, battle_box.y, -100, obj_battle_enemy_attack_axis_orange_laser_geno);
         laser.hspeed = 3;
         laser.image_angle = 90;
         break;
     
     case 110:
-        laser = instance_create_depth(battle_box.x, battle_box.bbox_bottom + 20, -100, obj_battle_enemy_attack_axis_blue_laser_geno);
+        var laser = instance_create_depth(battle_box.x, battle_box.bbox_bottom + 20, -100, obj_battle_enemy_attack_axis_blue_laser_geno);
         laser.vspeed = -3;
         break;
     
@@ -34,7 +32,7 @@ switch (attack_tick)
         break;
     
     case 160:
-        laser = instance_create_depth(battle_box.bbox_left - 20, battle_box.y, -100, obj_battle_enemy_attack_axis_blue_laser_geno);
+        var laser = instance_create_depth(battle_box.bbox_left - 20, battle_box.y, -100, obj_battle_enemy_attack_axis_blue_laser_geno);
         laser.hspeed = 3;
         laser.image_angle = 90;
         break;

@@ -1,9 +1,7 @@
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
-
 uniform vec4 new_colour;
 uniform float new_alpha;
-
 void main()
 {
 	vec4 new_colour_replacement = texture2D( gm_BaseTexture, v_vTexcoord );

@@ -1,9 +1,7 @@
-var variation;
-
 if (live_call())
     return global.live_result;
 
-variation = choose(1, 2, 3);
+var variation = choose(1, 2, 3);
 
 switch (variation)
 {

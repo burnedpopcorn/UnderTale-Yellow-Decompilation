@@ -1,5 +1,3 @@
-var enemy_mode;
-
 execute_normal = false;
 execute_random = false;
 
@@ -7,7 +5,7 @@ if (global.battle_enemy_name == "frostermit know cone duo")
 {
     if (global.enemy_dead == true && global.fight_number == 1 && global.battle_menu_number == 1)
     {
-        enemy_mode = global.enemy_mode;
+        var enemy_mode = global.enemy_mode;
         
         switch (enemy_mode)
         {
@@ -115,7 +113,7 @@ if (execute_normal == true)
         {
             if ((global.enemy_dead + global.enemy_spared) < 1)
             {
-                enemy_mode = global.enemy_mode;
+                var enemy_mode = global.enemy_mode;
                 
                 switch (enemy_mode)
                 {

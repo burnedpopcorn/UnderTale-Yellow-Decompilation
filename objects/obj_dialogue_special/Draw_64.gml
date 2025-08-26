@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -14,7 +12,7 @@ scr_draw_dialogue_box(4.421875, 1.09375, 0.1);
 if (letter_array == -1)
     exit;
 
-for (i = 1; i <= letter_current; i++)
+for (var i = 1; i <= letter_current; i++)
 {
     if (mode == "shake")
     {

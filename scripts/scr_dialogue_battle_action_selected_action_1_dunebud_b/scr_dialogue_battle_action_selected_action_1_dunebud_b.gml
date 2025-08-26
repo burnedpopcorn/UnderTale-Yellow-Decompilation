@@ -1,9 +1,7 @@
 function scr_dialogue_battle_action_selected_action_1_dunebud_b()
 {
-    var action_1_selected_count, action_2_selected_count;
-    
-    action_1_selected_count = global.action_1_selected_count_2;
-    action_2_selected_count = global.action_2_selected_count_2;
+    var action_1_selected_count = global.action_1_selected_count_2;
+    var action_2_selected_count = global.action_2_selected_count_2;
     
     if (global.enemy_low_hp_2 == true)
     {

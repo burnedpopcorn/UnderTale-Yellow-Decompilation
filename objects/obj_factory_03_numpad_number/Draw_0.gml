@@ -1,8 +1,6 @@
-var x_offset, y_offset, draw_alpha;
-
-x_offset = 0;
-y_offset = 0;
-draw_alpha = 1 * image_alpha;
+var x_offset = 0;
+var y_offset = 0;
+var draw_alpha = 1 * image_alpha;
 
 if (button_pressed)
 {

@@ -1,7 +1,7 @@
-var elevator_collided_player, shake_x, shake_y, trn;
-
 if (elevator_can_collide)
 {
+    var elevator_collided_player;
+    
     if (place_meeting(x, y, obj_pl))
         elevator_collided_player = true;
     else
@@ -44,8 +44,8 @@ if (act == 0)
         if (shake_strength > 0)
             shake_strength -= 0.05;
         
-        shake_x = random_range(-shake_strength, shake_strength);
-        shake_y = random_range(-shake_strength, shake_strength);
+        var shake_x = random_range(-shake_strength, shake_strength);
+        var shake_y = random_range(-shake_strength, shake_strength);
         x += shake_x;
         y += shake_y;
         obj_pl.x += shake_x;
@@ -100,7 +100,7 @@ if (act == 0)
             {
                 if (!instance_exists(obj_transition))
                 {
-                    trn = instance_create(x, y, obj_transition);
+                    var trn = instance_create(x, y, obj_transition);
                     trn.newRoom = elevator_next_room;
                     trn.xx = 195;
                     trn.yy = 440;
@@ -145,7 +145,7 @@ if (act == 1)
             pull_speed = 0;
             timer = 20;
             elevator_can_collide = true;
-            scr_audio_fade_out(256, 600);
+            scr_audio_fade_out(snd_helivator, 600);
             
             if (instance_exists(obj_martlet_npc))
             {

@@ -1,4 +1,4 @@
-function sound_volume(argument0, argument1)
+function sound_volume(arg0, arg1)
 {
-    audio_sound_gain(argument0, argument1, 0);
+    audio_sound_gain(arg0, arg1, 0);
 }

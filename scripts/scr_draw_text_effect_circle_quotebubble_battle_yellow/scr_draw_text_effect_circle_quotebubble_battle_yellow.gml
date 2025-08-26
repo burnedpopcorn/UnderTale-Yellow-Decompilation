@@ -1,15 +1,13 @@
 function scr_draw_text_effect_circle_quotebubble_battle_yellow()
 {
-    var circle_text_angle_increase, circle_text_radius, circle_text_speed, i;
-    
-    circle_text_angle_increase = 0;
-    circle_text_radius = global.circle_text_radius;
-    circle_text_speed = global.circle_text_speed;
+    var circle_text_angle_increase = 0;
+    var circle_text_radius = global.circle_text_radius;
+    var circle_text_speed = global.circle_text_speed;
     str_indent = "";
     str_indent_count = 0;
     str_offset = -string_width(string_hash_to_newline(string_copy("A", 1, 1)));
     
-    for (i = 1; i <= characters; i += 1)
+    for (var i = 1; i <= characters; i += 1)
     {
         str_char = string_char_at(message[message_current], i);
         

@@ -1,6 +1,4 @@
-var enemy_count;
-
-enemy_count = global.enemy_count;
+var enemy_count = global.enemy_count;
 damage = (global.enemy_attack_stat - global.player_armor_defense - global.player_armor_modifier_defense - global.player_defense) + 10;
 
 if (damage < 1)

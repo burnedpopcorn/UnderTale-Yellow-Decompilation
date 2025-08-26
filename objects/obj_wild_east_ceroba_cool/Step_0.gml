@@ -1,15 +1,15 @@
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     scr_text();
-    msg.sndfnt = 108;
+    msg.sndfnt = snd_talk_ceroba;
     msg.message[0] = "* ...";
-    msg.prt[0] = 370;
+    msg.prt[0] = spr_portrait_ceroba_neutral;
 }
 
 switch (scene)
 {
     case 0:
-        cutscene_npc_walk_relative(1168, 0, 10, 0.5, "y", "down");
+        cutscene_npc_walk_relative(obj_player_npc, 0, 10, 0.5, "y", "down");
         break;
     
     case 1:
@@ -18,11 +18,11 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* You there. Human.";
             message[1] = "* You okay?";
-            prt[0] = 377;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_neutral;
             ch_msg = 1;
             ch[1] = "Yeah";
             ch[2] = "Not\nreally";
@@ -31,14 +31,14 @@ switch (scene)
             {
                 message[2] = "* Really?";
                 message[3] = "* Well... alright then.";
-                prt[2] = 393;
-                prt[3] = 377;
+                prt[2] = spr_portrait_ceroba_surprised;
+                prt[3] = spr_portrait_ceroba_closed_eyes;
             }
             
             if (outcome == 2)
             {
                 message[2] = "* About what I expected.";
-                prt[2] = 377;
+                prt[2] = spr_portrait_ceroba_closed_eyes;
             }
         }
         
@@ -62,7 +62,7 @@ switch (scene)
             {
                 color = true;
                 col_modif[0] = make_color_rgb(237, 140, 36);
-                sndfnt = 108;
+                sndfnt = snd_talk_ceroba;
                 message[0] = "* I apologize for Star's#  antics.";
                 message[1] = "* He's really into human#  culture and whatnot.";
                 message[2] = "* You show up here and he#  flips out.";
@@ -90,34 +90,34 @@ switch (scene)
                 message[21] = "* Ah, I'm getting ahead#  of myself.";
                 message[22] = "* Talk to you later,#  Clover.";
                 message[23] = "* It was nice to#  meet you.";
-                prt[0] = 377;
-                prt[1] = 370;
-                prt[2] = 370;
-                prt[3] = 377;
-                prt[4] = 371;
-                prt[5] = 370;
-                prt[6] = 395;
-                prt[7] = 372;
-                prt[8] = 372;
-                prt[9] = 374;
-                prt[10] = 372;
-                prt[11] = 372;
-                prt[12] = 395;
-                prt[13] = 370;
-                prt[14] = 371;
-                prt[15] = 370;
-                prt[16] = 371;
-                prt[17] = 371;
-                prt[18] = 372;
-                prt[19] = 372;
-                prt[20] = 371;
-                prt[21] = 393;
-                prt[22] = 372;
-                prt[23] = 372;
+                prt[0] = spr_portrait_ceroba_closed_eyes;
+                prt[1] = spr_portrait_ceroba_neutral;
+                prt[2] = spr_portrait_ceroba_neutral;
+                prt[3] = spr_portrait_ceroba_closed_eyes;
+                prt[4] = spr_portrait_ceroba_alt;
+                prt[5] = spr_portrait_ceroba_neutral;
+                prt[6] = spr_portrait_ceroba_snarky;
+                prt[7] = spr_portrait_ceroba_smile;
+                prt[8] = spr_portrait_ceroba_smile;
+                prt[9] = spr_portrait_ceroba_smile_alt;
+                prt[10] = spr_portrait_ceroba_smile;
+                prt[11] = spr_portrait_ceroba_smile;
+                prt[12] = spr_portrait_ceroba_snarky;
+                prt[13] = spr_portrait_ceroba_neutral;
+                prt[14] = spr_portrait_ceroba_alt;
+                prt[15] = spr_portrait_ceroba_neutral;
+                prt[16] = spr_portrait_ceroba_alt;
+                prt[17] = spr_portrait_ceroba_alt;
+                prt[18] = spr_portrait_ceroba_smile;
+                prt[19] = spr_portrait_ceroba_smile;
+                prt[20] = spr_portrait_ceroba_alt;
+                prt[21] = spr_portrait_ceroba_surprised;
+                prt[22] = spr_portrait_ceroba_smile;
+                prt[23] = spr_portrait_ceroba_smile;
                 
                 if (message_current == 23)
                 {
-                    scr_audio_fade_out(176, 300);
+                    scr_audio_fade_out(mus_blossom, 300);
                     other.scene++;
                 }
             }
@@ -128,7 +128,7 @@ switch (scene)
             {
                 color = true;
                 col_modif[0] = make_color_rgb(237, 140, 36);
-                sndfnt = 108;
+                sndfnt = snd_talk_ceroba;
                 message[0] = "* I apologize for Star's#  antics.";
                 message[1] = "* He's really into human#  culture and whatnot.";
                 message[2] = "* You show up here and he#  flips out.";
@@ -153,31 +153,31 @@ switch (scene)
                 message[18] = "* He'll probably allow#  you to leave eventually.";
                 message[19] = "* Well...";
                 message[20] = "* Good luck, Clover.";
-                prt[0] = 377;
-                prt[1] = 370;
-                prt[2] = 370;
-                prt[3] = 377;
-                prt[4] = 371;
-                prt[5] = 371;
-                prt[6] = 372;
-                prt[7] = 372;
-                prt[8] = 374;
-                prt[9] = 372;
-                prt[10] = 372;
-                prt[11] = 395;
-                prt[12] = 370;
-                prt[13] = 371;
-                prt[14] = 370;
-                prt[15] = 371;
-                prt[16] = 374;
-                prt[17] = 372;
-                prt[18] = 372;
-                prt[19] = 395;
-                prt[20] = 372;
+                prt[0] = spr_portrait_ceroba_closed_eyes;
+                prt[1] = spr_portrait_ceroba_neutral;
+                prt[2] = spr_portrait_ceroba_neutral;
+                prt[3] = spr_portrait_ceroba_closed_eyes;
+                prt[4] = spr_portrait_ceroba_alt;
+                prt[5] = spr_portrait_ceroba_alt;
+                prt[6] = spr_portrait_ceroba_smile;
+                prt[7] = spr_portrait_ceroba_smile;
+                prt[8] = spr_portrait_ceroba_smile_alt;
+                prt[9] = spr_portrait_ceroba_smile;
+                prt[10] = spr_portrait_ceroba_smile;
+                prt[11] = spr_portrait_ceroba_snarky;
+                prt[12] = spr_portrait_ceroba_neutral;
+                prt[13] = spr_portrait_ceroba_alt;
+                prt[14] = spr_portrait_ceroba_neutral;
+                prt[15] = spr_portrait_ceroba_alt;
+                prt[16] = spr_portrait_ceroba_smile_alt;
+                prt[17] = spr_portrait_ceroba_smile;
+                prt[18] = spr_portrait_ceroba_smile;
+                prt[19] = spr_portrait_ceroba_snarky;
+                prt[20] = spr_portrait_ceroba_smile;
                 
                 if (message_current == 20)
                 {
-                    scr_audio_fade_out(176, 1500);
+                    scr_audio_fade_out(mus_blossom, 1500);
                     other.scene++;
                 }
             }

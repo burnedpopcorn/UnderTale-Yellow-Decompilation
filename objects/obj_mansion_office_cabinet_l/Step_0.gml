@@ -7,18 +7,18 @@ if (interact)
     
     with (msg)
     {
-        sndfnt_array[0] = 391;
+        sndfnt_array[0] = snd_talk_default;
         message[0] = "* (The cabinet contains#  thesis papers on many#  different subjects.)";
         
         if (other.npc_flag == 0 && global.party_member != -4)
         {
-            sndfnt_array[1] = 102;
+            sndfnt_array[1] = snd_talk_martlet;
             message[1] = "* Whoa...";
             message[2] = "* These are all typed on#  cardstock...";
             message[3] = "* How wealthy was#  Chujin...?";
-            prt[1] = 333;
-            prt[2] = 338;
-            prt[3] = 324;
+            prt[1] = spr_martlet_head_surprised;
+            prt[2] = spr_martlet_head_wondering;
+            prt[3] = spr_martlet_head_questioning;
         }
     }
     

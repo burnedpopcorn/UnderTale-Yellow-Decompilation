@@ -1,11 +1,9 @@
-var trail_col;
-
 if (live_call())
     return global.live_result;
 
 global.ps_outer = part_system_create();
 part_system_depth(global.ps_outer, -1);
-trail_col = make_color_rgb(255, 255, 255);
+var trail_col = make_color_rgb(255, 255, 255);
 global.pt_trail_outer = part_type_create();
 part_type_shape(global.pt_trail_outer, 1);
 part_type_size(global.pt_trail_outer, 0.3, 0.3, -0.07, 0);

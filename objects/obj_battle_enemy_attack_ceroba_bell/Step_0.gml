@@ -1,10 +1,8 @@
-var battle_box;
-
 if (live_call())
     return global.live_result;
 
 image_alpha += 0.2;
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 if (bbox_bottom >= battle_box.bbox_bottom && !bounce_noloop)
 {

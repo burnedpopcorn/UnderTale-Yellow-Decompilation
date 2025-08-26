@@ -1,10 +1,8 @@
 function scr_enemy_attack_candy_corn()
 {
-    var distance_x, distance_y, max_variations;
-    
-    distance_x = 20;
-    distance_y = 26;
-    max_variations = 3;
+    var distance_x = 20;
+    var distance_y = 26;
+    var max_variations = 3;
     global.attack_counter_max = 25;
     
     if (global.attack_counter == 0 && global.timer_attacks_counter < 6)

@@ -1,5 +1,3 @@
-var flowey_npc;
-
 if (global.sworks_flag[29] == 0)
 {
     if (obj_pl.x < 980)
@@ -16,7 +14,7 @@ switch (scene)
         {
             cutscene_advance();
             obj_determination.image_alpha = 0;
-            flowey_npc = instance_create(obj_determination.x, obj_determination.y, obj_flowey_npc);
+            var flowey_npc = instance_create(obj_determination.x, obj_determination.y, obj_flowey_npc);
             flowey_npc.action_sprite = true;
             flowey_npc.sprite_index = spr_floweyrise;
             flowey_npc.image_speed = 0.2;
@@ -40,27 +38,27 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Howdy!";
             message[1] = "* Looks like things are#  heating up!";
             message[2] = "* Literally, that is.";
             message[3] = "* Since you shut the bots#  down, it should be an#  easy stroll to the exit.";
-            prt[0] = 348;
-            prt[1] = 347;
-            prt[2] = 353;
-            prt[3] = 348;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_niceside;
+            prt[2] = flowey_plains;
+            prt[3] = flowey_nice;
             
             if (global.dunes_flag[51] == 2)
             {
                 message[4] = "* Good luck, Clover.";
-                prt[4] = 348;
+                prt[4] = flowey_nice;
             }
             else
             {
                 message[4] = "* But just in case, I'd#  like to give you a#  little gift...";
                 message[5] = "* From your best friend.";
-                prt[4] = 348;
-                prt[5] = 3251;
+                prt[4] = flowey_nice;
+                prt[5] = flowey_wink;
             }
         }
         
@@ -88,19 +86,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* I think it's time you#  try your hand at#  wielding the pellets.";
             message[1] = "* Sure, you could use#  rubber, silver, nails,#  whatever.";
             message[2] = "* But these are#  the real deal.";
             message[3] = "* It's fully up to you#  but I just wanted to let#  you know...";
             message[4] = "* ...Our partnership#  means a lot to me.";
             message[5] = "* Good luck, Clover.";
-            prt[0] = 348;
-            prt[1] = 349;
-            prt[2] = 349;
-            prt[3] = 347;
-            prt[4] = 3251;
-            prt[5] = 348;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_smirk;
+            prt[2] = flowey_smirk;
+            prt[3] = flowey_niceside;
+            prt[4] = flowey_wink;
+            prt[5] = flowey_nice;
         }
         
         break;
@@ -108,7 +106,7 @@ switch (scene)
     case 6:
         scr_determine_save_area();
         global.sworks_flag[29] = 2;
-        instance_create(__view_get(e__VW.XView, 0) + 160, __view_get(e__VW.YView, obj_quote_battle_ceroba_outro_4) + 120, obj_savebox);
+        instance_create(__view_get(e__VW.XView, 0) + 160, __view_get(e__VW.YView, 0) + 120, obj_savebox);
         cutscene_advance();
         break;
     
@@ -119,7 +117,7 @@ switch (scene)
         break;
     
     case 8:
-        cutscene_npc_action_sprite(3194, 245, 0.2, true, 0);
+        cutscene_npc_action_sprite(obj_flowey_npc, spr_floweyleave, 0.2, true, 0);
         break;
     
     case 9:

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cc1a1a3f-adcc-4376-8dd3-cbce700d7a90",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"64394c22-4816-4864-bfce-678a53e409b1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"45ff97fa-7b03-46e9-93ac-8c6a9c27f3a3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3d607028-112e-42c5-8a24-e6adeed6b7be",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 16,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ec0dc2c7-3ade-4540-9cf1-285f5178adf8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3e6bb10e-2d8e-4d94-b70b-8a87762fd15d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cc1a1a3f-adcc-4376-8dd3-cbce700d7a90","path":"sprites/spr_cafe_npc_gamer_talk/spr_cafe_npc_gamer_talk.yy",},},},"Disabled":false,"id":"4ea158de-9846-4f3b-945e-4741ee8ae388","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"64394c22-4816-4864-bfce-678a53e409b1","path":"sprites/spr_cafe_npc_gamer_talk/spr_cafe_npc_gamer_talk.yy",},},},"Disabled":false,"id":"6a962db6-5222-4b5d-8e30-27e8a8256d43","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"45ff97fa-7b03-46e9-93ac-8c6a9c27f3a3","path":"sprites/spr_cafe_npc_gamer_talk/spr_cafe_npc_gamer_talk.yy",},},},"Disabled":false,"id":"50db9bd6-e914-4e90-898f-eb620220edf9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3d607028-112e-42c5-8a24-e6adeed6b7be","path":"sprites/spr_cafe_npc_gamer_talk/spr_cafe_npc_gamer_talk.yy",},},},"Disabled":false,"id":"8d0ac5b1-a57b-4e5f-b6fe-5fcc712c9db3","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Dunes",
+    "path": "texturegroups/Dunes",
   },
   "type": 0,
   "VTile": false,

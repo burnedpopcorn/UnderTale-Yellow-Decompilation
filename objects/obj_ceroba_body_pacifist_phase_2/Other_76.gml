@@ -1,5 +1,3 @@
-var scream_rings;
-
 if (ds_map_find_value(event_data, "event_type") == "sprite event")
 {
     switch (ds_map_find_value(event_data, "message"))
@@ -18,7 +16,7 @@ if (ds_map_find_value(event_data, "event_type") == "sprite event")
         
         case "ceroba_scream":
             scr_screenshake_battle(110, 1);
-            scream_rings = instance_create_depth(x, y - 100, depth + 10, obj_ceroba_scream_ring_spawner);
+            var scream_rings = instance_create_depth(x, y - 100, depth + 10, obj_ceroba_scream_ring_spawner);
             scream_rings.alarm[0] = 60;
             global.battle_music = audio_play_sound(mus_mothers_love_phase_3, 20, true);
             obj_petal_generator_phase_2.fade_out = false;

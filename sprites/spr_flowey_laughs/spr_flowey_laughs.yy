@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3840a9aa-e155-4d88-9f7e-2ad6b66ffffb",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c23b3ce7-afa6-4975-8265-103b2198a080",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a7beda2b-ade9-433b-82f1-47e82787b2f5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"24d4e301-1293-4910-a829-351a11b52aac",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a2fc2490-54a9-4732-a667-c101b1451c6b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5168c2eb-81ce-47e1-b0e3-38d2fdfd2ba9",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 46,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e427c89c-4bde-483c-bae7-d28256cb8886","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"93b894ee-40db-47db-be36-3cfe1fbdc7b9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3840a9aa-e155-4d88-9f7e-2ad6b66ffffb","path":"sprites/spr_flowey_laughs/spr_flowey_laughs.yy",},},},"Disabled":false,"id":"7cad6b69-9f00-4e49-9c1e-cbbb0d293f38","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c23b3ce7-afa6-4975-8265-103b2198a080","path":"sprites/spr_flowey_laughs/spr_flowey_laughs.yy",},},},"Disabled":false,"id":"b7c96aa0-d2f1-4347-9120-00aabf1a4787","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a7beda2b-ade9-433b-82f1-47e82787b2f5","path":"sprites/spr_flowey_laughs/spr_flowey_laughs.yy",},},},"Disabled":false,"id":"72d6d3f8-2afb-45f7-b100-9300952966de","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"24d4e301-1293-4910-a829-351a11b52aac","path":"sprites/spr_flowey_laughs/spr_flowey_laughs.yy",},},},"Disabled":false,"id":"562581a0-9423-426e-aa67-6adc2d251b90","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a2fc2490-54a9-4732-a667-c101b1451c6b","path":"sprites/spr_flowey_laughs/spr_flowey_laughs.yy",},},},"Disabled":false,"id":"47a5aae7-f96e-4399-b8bb-9b76e7a22798","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5168c2eb-81ce-47e1-b0e3-38d2fdfd2ba9","path":"sprites/spr_flowey_laughs/spr_flowey_laughs.yy",},},},"Disabled":false,"id":"9cd013bf-4e9b-4312-a510-7a341217139e","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Hotland",
+    "path": "texturegroups/Hotland",
   },
   "type": 0,
   "VTile": false,

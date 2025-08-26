@@ -1,9 +1,7 @@
-var box, xx;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 audio_listener_position(audio_pos_x_current, 0, 0);
 
 switch (audio_pos)
@@ -28,6 +26,8 @@ spawn_interval_max = 2;
 
 if (spawn_notes == true)
 {
+    var xx;
+    
     switch (audio_pos)
     {
         case "left":

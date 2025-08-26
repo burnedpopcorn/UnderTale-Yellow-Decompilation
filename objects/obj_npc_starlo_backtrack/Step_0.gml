@@ -15,10 +15,10 @@ switch (npc_flag)
             message[1] = "* Howdy!";
             message[2] = "* I am ever so delighted#  that you returned.";
             message[3] = "* ...Makes my parting#  letter a bit awkward but#  hey, s'all good!";
-            prt[0] = 422;
-            prt[1] = 417;
-            prt[2] = 417;
-            prt[3] = 415;
+            prt[0] = spr_portrait_starlo_smile;
+            prt[1] = spr_portrait_starlo_normal;
+            prt[2] = spr_portrait_starlo_normal;
+            prt[3] = spr_portrait_starlo_hidden;
         }
         
         npc_flag = 1;
@@ -32,10 +32,10 @@ switch (npc_flag)
             message[1] = "* I mean, I'm flattered#  you wanted to see me#  but...";
             message[2] = "* I already said goodbye!";
             message[3] = "* Now I gotta go through#  the feisty five stages#  of grief AGAIN!";
-            prt[0] = 417;
-            prt[1] = 415;
-            prt[2] = 417;
-            prt[3] = 420;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_hidden;
+            prt[2] = spr_portrait_starlo_normal;
+            prt[3] = spr_portrait_starlo_sad;
         }
         
         npc_flag = 2;
@@ -50,11 +50,11 @@ switch (npc_flag)
             message[2] = "* Feel free to relax for#  a bit before you go!";
             message[3] = "* Moray's playin' a#  lovely set tonight.";
             message[4] = "* They have been on this#  particular tune for a#  while though...";
-            prt[0] = 407;
-            prt[1] = 418;
-            prt[2] = 417;
-            prt[3] = 415;
-            prt[4] = 421;
+            prt[0] = spr_portrait_starlo_distracted;
+            prt[1] = spr_portrait_starlo_plain;
+            prt[2] = spr_portrait_starlo_normal;
+            prt[3] = spr_portrait_starlo_hidden;
+            prt[4] = spr_portrait_starlo_serious;
         }
         
         npc_flag = 3;
@@ -66,8 +66,8 @@ switch (npc_flag)
             talker[0] = other.object_index;
             message[0] = "* Wish nothin' but the#  absolute best for ya,#  partner!";
             message[1] = "* Yeehaw!";
-            prt[0] = 417;
-            prt[1] = 422;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_smile;
         }
         
         break;

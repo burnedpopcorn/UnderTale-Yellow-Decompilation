@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a6daf169-0b9b-4892-93b0-1da3f5dc81a9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4e697e49-576c-4821-a8be-d6fd51b9bed6",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 196,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"68ae869b-6817-4442-8a28-87e7bcb855b4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c07d1470-9842-468f-8978-0602fa040376","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -53,8 +53,8 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a6daf169-0b9b-4892-93b0-1da3f5dc81a9","path":"sprites/spr_battle_flowey_lowpoly_vulnerable_vines/spr_battle_flowey_lowpoly_vulnerable_vines.yy",},},},"Disabled":false,"id":"dbe5ddbe-e663-4843-a440-df6d1111b06a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4e697e49-576c-4821-a8be-d6fd51b9bed6","path":"sprites/spr_battle_flowey_lowpoly_vulnerable_vines/spr_battle_flowey_lowpoly_vulnerable_vines.yy",},},},"Disabled":false,"id":"28bf9af5-3174-4108-8fa9-ebe041530483","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleHotlandFloweyLowpoly",
+    "path": "texturegroups/BattleHotlandFloweyLowpoly",
   },
   "type": 0,
   "VTile": false,

@@ -1,10 +1,8 @@
 function scr_dialogue_battle_action_selected_action_2_dalv()
 {
-    var enemy_sparing, action_2_important, enemy_mode;
-    
-    enemy_sparing = global.enemy_sparing;
-    action_2_important = global.action_2_important;
-    enemy_mode = global.enemy_mode;
+    var enemy_sparing = global.enemy_sparing;
+    var action_2_important = global.action_2_important;
+    var enemy_mode = global.enemy_mode;
     
     switch (enemy_mode)
     {

@@ -1,12 +1,10 @@
-var ed;
-
 instance_create(200, 400, obj_starlo_npc);
 obj_starlo_npc.image_alpha = 0;
 obj_starlo_npc.npc_direction = "up";
 instance_create(200, 400, obj_ed_npc);
 obj_ed_npc.image_alpha = 0;
 obj_ed_npc.npc_direction = "up";
-ed = 1162;
+var ed = 1162;
 ed.up_sprite = spr_ed_up_walk_clover;
 ed.right_sprite = spr_ed_right_walk_clover;
 ed.down_sprite = spr_ed_down_walk_clover;

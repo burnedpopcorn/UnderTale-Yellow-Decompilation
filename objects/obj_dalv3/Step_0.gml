@@ -1,5 +1,3 @@
-var __b__;
-
 script_execute(scr_depth, 0, 0, 0, 0, 0);
 
 if (global.route == 2 && global.flag[21] == false)
@@ -11,7 +9,7 @@ if (global.route == 2 && global.flag[21] == false)
         with (msg)
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* Well, here we are.";
             message[1] = "* Thank you...";
             message[2] = "* For everything.";
@@ -35,29 +33,29 @@ if (global.route == 2 && global.flag[21] == false)
             message[20] = "* Oh...";
             message[21] = "* It seems the exit is#  blocked off...";
             message[22] = "* Let's see.";
-            prt[0] = 1755;
-            prt[1] = 1769;
-            prt[2] = 1769;
-            prt[3] = 1769;
-            prt[4] = 1780;
-            prt[5] = 1776;
-            prt[6] = 1763;
-            prt[7] = 1780;
-            prt[8] = 1776;
-            prt[9] = 1761;
-            prt[10] = 1769;
-            prt[11] = 1769;
-            prt[12] = 1761;
-            prt[13] = 1761;
-            prt[14] = 1769;
-            prt[15] = 1769;
-            prt[16] = 1776;
-            prt[17] = 1769;
-            prt[18] = 1768;
-            prt[19] = 1776;
-            prt[20] = 1755;
-            prt[21] = 1755;
-            prt[22] = 1755;
+            prt[0] = spr_dalv_head_regular;
+            prt[1] = spr_dalv_head_content;
+            prt[2] = spr_dalv_head_content;
+            prt[3] = spr_dalv_head_content;
+            prt[4] = spr_dalv_head_sad_side;
+            prt[5] = spr_dalv_head_moderate;
+            prt[6] = spr_dalv_head_sad;
+            prt[7] = spr_dalv_head_sad_side;
+            prt[8] = spr_dalv_head_moderate;
+            prt[9] = spr_dalv_head_happy;
+            prt[10] = spr_dalv_head_content;
+            prt[11] = spr_dalv_head_content;
+            prt[12] = spr_dalv_head_happy;
+            prt[13] = spr_dalv_head_happy;
+            prt[14] = spr_dalv_head_content;
+            prt[15] = spr_dalv_head_content;
+            prt[16] = spr_dalv_head_moderate;
+            prt[17] = spr_dalv_head_content;
+            prt[18] = spr_dalv_head_downer;
+            prt[19] = spr_dalv_head_moderate;
+            prt[20] = spr_dalv_head_regular;
+            prt[21] = spr_dalv_head_regular;
+            prt[22] = spr_dalv_head_regular;
         }
         
         waiter++;
@@ -114,7 +112,7 @@ if (global.route == 2 && global.flag[21] == false)
         with (msg)
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             ch_msg = 2;
             ch[1] = "Clover";
             message[0] = "* There we go. You're all#  set.";
@@ -124,13 +122,13 @@ if (global.route == 2 && global.flag[21] == false)
             message[4] = "* Well, Clover, thank you#  so much.";
             message[5] = "* See you later...";
             message[6] = "* Friend.";
-            prt[0] = 1776;
-            prt[1] = 1769;
-            prt[2] = 1776;
-            prt[3] = 1769;
-            prt[4] = 1776;
-            prt[5] = 1769;
-            prt[6] = 1773;
+            prt[0] = spr_dalv_head_moderate;
+            prt[1] = spr_dalv_head_content;
+            prt[2] = spr_dalv_head_moderate;
+            prt[3] = spr_dalv_head_content;
+            prt[4] = spr_dalv_head_moderate;
+            prt[5] = spr_dalv_head_content;
+            prt[6] = spr_dalv_head_content_2;
         }
         
         waiter++;
@@ -193,7 +191,7 @@ else if (global.route == 2 && global.flag[21] == true)
         with (msg)
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* Well, here we are.";
             message[1] = "* I should thank you...";
             message[2] = "* For helping me out#  so much.";
@@ -216,28 +214,28 @@ else if (global.route == 2 && global.flag[21] == true)
             message[19] = "* ...";
             message[20] = "* It seems the exit is#  blocked off...";
             message[21] = "* I'll deal with it.";
-            prt[0] = 1755;
-            prt[1] = 1769;
-            prt[2] = 1769;
-            prt[3] = 1780;
-            prt[4] = 1759;
-            prt[5] = 1763;
-            prt[6] = 1780;
-            prt[7] = 1776;
-            prt[8] = 1755;
-            prt[9] = 1763;
-            prt[10] = 1768;
-            prt[11] = 1768;
-            prt[12] = 1763;
-            prt[13] = 1763;
-            prt[14] = 1780;
-            prt[15] = 1759;
-            prt[16] = 1776;
-            prt[17] = 1755;
-            prt[18] = 1780;
-            prt[19] = 1755;
-            prt[20] = 1763;
-            prt[21] = 1755;
+            prt[0] = spr_dalv_head_regular;
+            prt[1] = spr_dalv_head_content;
+            prt[2] = spr_dalv_head_content;
+            prt[3] = spr_dalv_head_sad_side;
+            prt[4] = spr_dalv_head_sleepy;
+            prt[5] = spr_dalv_head_sad;
+            prt[6] = spr_dalv_head_sad_side;
+            prt[7] = spr_dalv_head_moderate;
+            prt[8] = spr_dalv_head_regular;
+            prt[9] = spr_dalv_head_sad;
+            prt[10] = spr_dalv_head_downer;
+            prt[11] = spr_dalv_head_downer;
+            prt[12] = spr_dalv_head_sad;
+            prt[13] = spr_dalv_head_sad;
+            prt[14] = spr_dalv_head_sad_side;
+            prt[15] = spr_dalv_head_sleepy;
+            prt[16] = spr_dalv_head_moderate;
+            prt[17] = spr_dalv_head_regular;
+            prt[18] = spr_dalv_head_sad_side;
+            prt[19] = spr_dalv_head_regular;
+            prt[20] = spr_dalv_head_sad;
+            prt[21] = spr_dalv_head_regular;
         }
         
         waiter++;
@@ -276,7 +274,7 @@ else if (global.route == 2 && global.flag[21] == true)
         with (msg)
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             ch_msg = 2;
             ch[1] = "Clover";
             message[0] = "* There we go. You're all#  set.";
@@ -286,13 +284,13 @@ else if (global.route == 2 && global.flag[21] == true)
             message[4] = "* Well, Clover, you should#  get going.";
             message[5] = "* See you later...";
             message[6] = "* Friend.";
-            prt[0] = 1776;
-            prt[1] = 1769;
-            prt[2] = 1776;
-            prt[3] = 1769;
-            prt[4] = 1776;
-            prt[5] = 1769;
-            prt[6] = 1773;
+            prt[0] = spr_dalv_head_moderate;
+            prt[1] = spr_dalv_head_content;
+            prt[2] = spr_dalv_head_moderate;
+            prt[3] = spr_dalv_head_content;
+            prt[4] = spr_dalv_head_moderate;
+            prt[5] = spr_dalv_head_content;
+            prt[6] = spr_dalv_head_content_2;
         }
         
         waiter++;
@@ -355,7 +353,7 @@ else if (global.route == 1 && global.flag[21] == false)
         with (msg)
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* Well, here we are.";
             message[1] = "* Thank you...";
             message[2] = "* For everything.";
@@ -375,25 +373,25 @@ else if (global.route == 1 && global.flag[21] == false)
             message[16] = "* Oh...";
             message[17] = "* It seems the exit is#  blocked off...";
             message[18] = "* Let's see.";
-            prt[0] = 1755;
-            prt[1] = 1776;
-            prt[2] = 1769;
-            prt[3] = 1769;
-            prt[4] = 1769;
-            prt[5] = 1769;
-            prt[6] = 1769;
-            prt[7] = 1761;
-            prt[8] = 1761;
-            prt[9] = 1761;
-            prt[10] = 1780;
-            prt[11] = 1776;
-            prt[12] = 1763;
-            prt[13] = 1759;
-            prt[14] = 1780;
-            prt[15] = 1755;
-            prt[16] = 1768;
-            prt[17] = 1763;
-            prt[18] = 1755;
+            prt[0] = spr_dalv_head_regular;
+            prt[1] = spr_dalv_head_moderate;
+            prt[2] = spr_dalv_head_content;
+            prt[3] = spr_dalv_head_content;
+            prt[4] = spr_dalv_head_content;
+            prt[5] = spr_dalv_head_content;
+            prt[6] = spr_dalv_head_content;
+            prt[7] = spr_dalv_head_happy;
+            prt[8] = spr_dalv_head_happy;
+            prt[9] = spr_dalv_head_happy;
+            prt[10] = spr_dalv_head_sad_side;
+            prt[11] = spr_dalv_head_moderate;
+            prt[12] = spr_dalv_head_sad;
+            prt[13] = spr_dalv_head_sleepy;
+            prt[14] = spr_dalv_head_sad_side;
+            prt[15] = spr_dalv_head_regular;
+            prt[16] = spr_dalv_head_downer;
+            prt[17] = spr_dalv_head_sad;
+            prt[18] = spr_dalv_head_regular;
         }
         
         waiter++;
@@ -452,7 +450,7 @@ else if (global.route == 1 && global.flag[21] == false)
             ch_msg = 2;
             ch[1] = "Clover";
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* There we go. You're all#  set.";
             message[1] = "* Oh, before I forget,#  I never asked for#  your name.";
             message[2] = "* Mind informing me?";
@@ -460,13 +458,13 @@ else if (global.route == 1 && global.flag[21] == false)
             message[4] = "* Well, Clover, you should#  get going.";
             message[5] = "* Goodbye...";
             message[6] = "* Friend.";
-            prt[0] = 1776;
-            prt[1] = 1769;
-            prt[2] = 1776;
-            prt[3] = 1769;
-            prt[4] = 1776;
-            prt[5] = 1769;
-            prt[6] = 1773;
+            prt[0] = spr_dalv_head_moderate;
+            prt[1] = spr_dalv_head_content;
+            prt[2] = spr_dalv_head_moderate;
+            prt[3] = spr_dalv_head_content;
+            prt[4] = spr_dalv_head_moderate;
+            prt[5] = spr_dalv_head_content;
+            prt[6] = spr_dalv_head_content_2;
         }
         
         waiter++;
@@ -529,7 +527,7 @@ else if (global.route == 1 && global.flag[21] == true)
         with (msg)
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* Well, here we are.";
             message[1] = "* I should thank you...";
             message[2] = "* You have really helped#  me out.";
@@ -554,30 +552,30 @@ else if (global.route == 1 && global.flag[21] == true)
             message[21] = "* ...";
             message[22] = "* Well, anyway. It seems#  the exit is blocked#  off...";
             message[23] = "* I'll deal with it.";
-            prt[0] = 1755;
-            prt[1] = 1769;
-            prt[2] = 1769;
-            prt[3] = 1769;
-            prt[4] = 1769;
-            prt[5] = 1755;
-            prt[6] = 1780;
-            prt[7] = 1763;
-            prt[8] = 1763;
-            prt[9] = 1763;
-            prt[10] = 1780;
-            prt[11] = 1763;
-            prt[12] = 1763;
-            prt[13] = 1759;
-            prt[14] = 1755;
-            prt[15] = 1769;
-            prt[16] = 1763;
-            prt[17] = 1764;
-            prt[18] = 1768;
-            prt[19] = 1776;
-            prt[20] = 1769;
-            prt[21] = 1780;
-            prt[22] = 1755;
-            prt[23] = 1755;
+            prt[0] = spr_dalv_head_regular;
+            prt[1] = spr_dalv_head_content;
+            prt[2] = spr_dalv_head_content;
+            prt[3] = spr_dalv_head_content;
+            prt[4] = spr_dalv_head_content;
+            prt[5] = spr_dalv_head_regular;
+            prt[6] = spr_dalv_head_sad_side;
+            prt[7] = spr_dalv_head_sad;
+            prt[8] = spr_dalv_head_sad;
+            prt[9] = spr_dalv_head_sad;
+            prt[10] = spr_dalv_head_sad_side;
+            prt[11] = spr_dalv_head_sad;
+            prt[12] = spr_dalv_head_sad;
+            prt[13] = spr_dalv_head_sleepy;
+            prt[14] = spr_dalv_head_regular;
+            prt[15] = spr_dalv_head_content;
+            prt[16] = spr_dalv_head_sad;
+            prt[17] = spr_dalv_head_sadder;
+            prt[18] = spr_dalv_head_downer;
+            prt[19] = spr_dalv_head_moderate;
+            prt[20] = spr_dalv_head_content;
+            prt[21] = spr_dalv_head_sad_side;
+            prt[22] = spr_dalv_head_regular;
+            prt[23] = spr_dalv_head_regular;
         }
         
         waiter++;
@@ -616,7 +614,7 @@ else if (global.route == 1 && global.flag[21] == true)
         with (msg)
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             ch_msg = 2;
             ch[1] = "Clover";
             message[0] = "* There we go. You're all#  set.";
@@ -626,13 +624,13 @@ else if (global.route == 1 && global.flag[21] == true)
             message[4] = "* Well, Clover, you should#  get going.";
             message[5] = "* Goodbye...";
             message[6] = "* Friend.";
-            prt[0] = 1776;
-            prt[1] = 1769;
-            prt[2] = 1776;
-            prt[3] = 1769;
-            prt[4] = 1776;
-            prt[5] = 1776;
-            prt[6] = 1769;
+            prt[0] = spr_dalv_head_moderate;
+            prt[1] = spr_dalv_head_content;
+            prt[2] = spr_dalv_head_moderate;
+            prt[3] = spr_dalv_head_content;
+            prt[4] = spr_dalv_head_moderate;
+            prt[5] = spr_dalv_head_moderate;
+            prt[6] = spr_dalv_head_content;
         }
         
         waiter++;
@@ -738,7 +736,7 @@ with (other)
                         break;
                 }
                 
-                if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == 100)
+                if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == sndfnt_dalv)
                 {
                     if (obj_dialogue.cutoff == string_length(obj_dialogue.message[obj_dialogue.message_current]))
                     {
@@ -758,7 +756,7 @@ with (other)
     }
 }
 
-__b__ = action_if_variable(fadein, true, 0);
+var __b__ = action_if_variable(fadein, true, 0);
 
 if (__b__)
     script_execute(anim_fade, 0.05, 0, 0, 0, 0);

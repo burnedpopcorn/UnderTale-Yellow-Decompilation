@@ -1,7 +1,5 @@
-var snow_geno, animate;
-
 event_inherited();
-snow_geno = false;
+var snow_geno = false;
 
 if (global.kill_number[2] <= 0)
     snow_geno = true;
@@ -85,7 +83,7 @@ if (waiter == 1)
     }
 }
 
-animate = obj_rodney_snowdin_14b_overworld_yellow.animate;
+var animate = obj_rodney_snowdin_14b_overworld_yellow.animate;
 
 if (animate == 0)
 {

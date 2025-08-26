@@ -1,10 +1,8 @@
-var battle_box, soul, xtarget, ytarget, tardist, tardir, orange, xx, spray_spawner;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-soul = 2979;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var soul = obj_heart_battle_fighting_parent;
 
 if (is_active == false)
     exit;
@@ -12,8 +10,8 @@ if (is_active == false)
 switch (scene)
 {
     case 0:
-        xtarget = xstart + lengthdir_x(40, 90 + (45 * image_xscale));
-        ytarget = ystart + lengthdir_y(40, 90 + (45 * image_xscale));
+        var xtarget = xstart + lengthdir_x(40, 90 + (45 * image_xscale));
+        var ytarget = ystart + lengthdir_y(40, 90 + (45 * image_xscale));
         x = lerp(x, xtarget, 0.15);
         y = lerp(y, ytarget, 0.15);
         
@@ -33,10 +31,10 @@ switch (scene)
         break;
     
     case 2:
-        tardist = point_distance(xstart, ystart, battle_box.x, battle_box.y);
-        tardir = point_direction(xstart, ystart, battle_box.x, battle_box.y);
-        xtarget = xstart + lengthdir_x(tardist, tardir);
-        ytarget = ystart + lengthdir_y(tardist, tardir);
+        var tardist = point_distance(xstart, ystart, battle_box.x, battle_box.y);
+        var tardir = point_direction(xstart, ystart, battle_box.x, battle_box.y);
+        var xtarget = xstart + lengthdir_x(tardist, tardir);
+        var ytarget = ystart + lengthdir_y(tardist, tardir);
         x = lerp(x, xtarget, 0.3);
         y = lerp(y, ytarget, 0.3);
         
@@ -47,7 +45,7 @@ switch (scene)
     
     case 3:
         sprite_index = -4;
-        orange = instance_create_depth(x, y, depth, obj_battle_enemy_attack_ceroba_staff_orange);
+        var orange = instance_create_depth(x, y, depth, obj_battle_enemy_attack_ceroba_staff_orange);
         orange.image_xscale = image_xscale;
         orange.spawner = id;
         audio_play_sound(snd_undertale_flash, 1, 0);
@@ -103,12 +101,12 @@ switch (scene)
         }
         else
         {
-            xx = battle_box.x - 160;
+            var xx = battle_box.x - 160;
             
             if (obj_heart_battle_fighting_parent.x < battle_box.x)
                 xx = battle_box.x + 160;
             
-            spray_spawner = instance_create(xx, soul.y, obj_battle_enemy_attack_ceroba_flower_spray_spawner_pacifist);
+            var spray_spawner = instance_create(xx, soul.y, obj_battle_enemy_attack_ceroba_flower_spray_spawner_pacifist);
             spray_spawner.bullet_number[0] = 2;
             spray_spawner.bullet_number[1] = 3;
             spray_spawner.bullet_speed[0] = 3;

@@ -1,12 +1,10 @@
-var dialogue;
-
 if (live_call())
     return global.live_result;
 
 switch (scene)
 {
     case 1:
-        dialogue = instance_create_depth(camera_get_view_x(view_camera[0]) + 120, y - 40, -9999, obj_dialogue_withered_floweys);
+        var dialogue = instance_create_depth(camera_get_view_x(view_camera[0]) + 120, y - 40, -9999, obj_dialogue_withered_floweys);
         
         with (dialogue)
         {

@@ -1,4 +1,4 @@
-function background_create_from_surface(argument0, argument1, argument2, argument3, argument4, argument5, argument6)
+function background_create_from_surface(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
 {
-    return sprite_create_from_surface(argument0, argument1, argument2, argument3, argument4, argument5, argument6, 0, 0);
+    return sprite_create_from_surface(arg0, arg1, arg2, arg3, arg4, arg5, arg6, 0, 0);
 }

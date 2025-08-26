@@ -1,7 +1,5 @@
-var enemy_dead, enemy_spared, image_yscale_store, time_elapsed_head, time_elapsed_hand_left, time_elapsed_hand_right;
-
-enemy_dead = global.enemy_dead;
-enemy_spared = global.enemy_spared;
+var enemy_dead = global.enemy_dead;
+var enemy_spared = global.enemy_spared;
 
 if (enemy_dead == false && enemy_spared == false)
     image_alpha = global.image_alpha_enemy_attacking;
@@ -106,8 +104,8 @@ if (!(instance_exists(obj_text_damage_count) && global.fight_number == 1) && ene
     animation_disjoint_yscale = sign_modifier * (max_rise - game_maker_cannot_do_math);
     image_yscale = draw_position_yscale + animation_disjoint_yscale;
     image_xscale = draw_position_xscale - (animation_disjoint_yscale * (max_rise_ext / max_rise));
-    image_yscale_store = image_yscale;
-    time_elapsed_head = time_elapsed - time_elapsed_decrease_head;
+    var image_yscale_store = image_yscale;
+    var time_elapsed_head = time_elapsed - time_elapsed_decrease_head;
     
     if (time_elapsed_head < 0)
     {
@@ -124,7 +122,7 @@ if (!(instance_exists(obj_text_damage_count) && global.fight_number == 1) && ene
     image_yscale = draw_position_yscale + animation_disjoint_yscale;
     head_displacement_y = bbox_top + (sprite_height * head_displacement_y_multiplier);
     image_yscale = image_yscale_store;
-    time_elapsed_hand_left = time_elapsed - time_elapsed_decrease_hand_left;
+    var time_elapsed_hand_left = time_elapsed - time_elapsed_decrease_hand_left;
     
     if (time_elapsed_hand_left < 0)
     {
@@ -141,7 +139,7 @@ if (!(instance_exists(obj_text_damage_count) && global.fight_number == 1) && ene
     image_yscale = draw_position_yscale + animation_disjoint_yscale;
     hand_left_displacement_y = bbox_top + (sprite_height * hand_left_displacement_y_multiplier);
     image_yscale = image_yscale_store;
-    time_elapsed_hand_right = time_elapsed - time_elapsed_decrease_hand_right;
+    var time_elapsed_hand_right = time_elapsed - time_elapsed_decrease_hand_right;
     
     if (time_elapsed_hand_right < 0)
     {

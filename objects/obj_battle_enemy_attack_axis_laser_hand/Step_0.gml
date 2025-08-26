@@ -1,9 +1,7 @@
-var battle_box, damage;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 direction = point_direction(x, y, battle_box.x, battle_box.y);
 image_angle = direction;
 
@@ -84,7 +82,7 @@ if (laser_active == true)
     {
         if (obj_heart_battle_fighting_parent.vulnerable == true)
         {
-            damage = (global.enemy_attack_stat - global.player_armor_defense - global.player_armor_modifier_defense - global.player_defense) + 10;
+            var damage = (global.enemy_attack_stat - global.player_armor_defense - global.player_armor_modifier_defense - global.player_defense) + 10;
             
             if (damage < 1)
                 damage = 1;

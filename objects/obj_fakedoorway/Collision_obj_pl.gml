@@ -6,11 +6,11 @@ if (!instance_exists(obj_dialogue) && waiter == 0)
 
 with (msg)
 {
-    sndfnt = 97;
+    sndfnt = sndfnt_toriel;
     message[0] = "* Do not wander off.";
     message[1] = "* It's dangerous in here.";
-    prt[0] = 340;
-    prt[1] = 343;
+    prt[0] = toriel_side;
+    prt[1] = toriel_normal;
 }
 
 if (!global.dialogue_open && waiter == 1)

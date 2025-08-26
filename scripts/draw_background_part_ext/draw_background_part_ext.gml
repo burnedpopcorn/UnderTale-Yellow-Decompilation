@@ -1,4 +1,4 @@
-function draw_background_part_ext(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9, argument10)
+function draw_background_part_ext(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10)
 {
-    draw_sprite_part_ext(argument0, 0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9, argument10);
+    draw_sprite_part_ext(arg0, 0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
 }

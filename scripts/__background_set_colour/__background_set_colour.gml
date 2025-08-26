@@ -1,9 +1,7 @@
-function __background_set_colour(argument0)
+function __background_set_colour(arg0)
 {
-    var __newcol, __colinfo;
-    
-    __newcol = argument0;
-    __colinfo = __background_get_colour_element();
+    var __newcol = arg0;
+    var __colinfo = __background_get_colour_element();
     
     if (__colinfo[0] == -1)
         return 0;

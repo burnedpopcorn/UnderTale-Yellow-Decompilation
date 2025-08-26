@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 0.8780045,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "snd/fall2.ogg",
-  "type": 0,
+  "soundFile": "fall2.ogg",
+  "type": 1,
   "volume": 1.0,
 }

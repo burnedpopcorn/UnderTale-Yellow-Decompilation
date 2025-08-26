@@ -1,8 +1,8 @@
-function cutscene_wait(argument0)
+function cutscene_wait(arg0)
 {
     cutscene_timer++;
     
-    if (cutscene_timer >= (argument0 * 30))
+    if (cutscene_timer >= (arg0 * 30))
     {
         cutscene_timer = 0;
         cutscene_advance();

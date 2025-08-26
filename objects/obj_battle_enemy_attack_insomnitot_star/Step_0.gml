@@ -1,5 +1,3 @@
-var random_pitch, return_in_box;
-
 if (!instance_exists(obj_dialogue_box_battle_transformation_any))
 {
     instance_destroy();
@@ -17,7 +15,7 @@ if (image_alpha < 1 && can_move == false)
     {
         angle = point_direction(x, y, obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y);
         can_move = true;
-        random_pitch = irandom_range(-1, 1);
+        var random_pitch = irandom_range(-1, 1);
         audio_play_sound(snd_stars, 20, 0);
         audio_sound_pitch(snd_stars, 1 + (random_pitch * 0.3));
     }
@@ -51,7 +49,7 @@ if (can_move == true)
     }
 }
 
-return_in_box = script_execute(scr_determine_if_in_battle_box);
+var return_in_box = script_execute(scr_determine_if_in_battle_box);
 
 if (return_in_box == true && in_box == false)
     in_box = true;

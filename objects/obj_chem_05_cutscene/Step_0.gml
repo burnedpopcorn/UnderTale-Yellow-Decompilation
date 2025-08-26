@@ -33,11 +33,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Howdy!";
             message[1] = "* What do we have here...";
-            prt[0] = 348;
-            prt[1] = 347;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_niceside;
         }
         
         break;
@@ -47,7 +47,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_npc_direction(3194, "up");
+        cutscene_npc_direction(obj_flowey_npc, "up");
         break;
     
     case 6:
@@ -59,7 +59,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Really? ANOTHER locked#  door?";
             message[1] = "* How many unique doors#  are installed in this#  place?";
             message[2] = "* Talk about#  inconsistent!";
@@ -67,19 +67,19 @@ switch (scene)
             message[4] = "* There's plenty of#  science equipment lying#  around.";
             message[5] = "* Maybe we can drill#  through with something? ";
             message[6] = "* Start searching!";
-            prt[0] = 351;
-            prt[1] = 351;
-            prt[2] = 351;
-            prt[3] = 353;
-            prt[4] = 352;
-            prt[5] = 348;
-            prt[6] = 347;
+            prt[0] = flowey_pissed;
+            prt[1] = flowey_pissed;
+            prt[2] = flowey_pissed;
+            prt[3] = flowey_plains;
+            prt[4] = flowey_plain;
+            prt[5] = flowey_nice;
+            prt[6] = flowey_niceside;
         }
         
         break;
     
     case 8:
-        if (cutscene_npc_action_sprite_reverse(3194, 242, 0.15, true, 0))
+        if (cutscene_npc_action_sprite_reverse(obj_flowey_npc, spr_floweyrise, 0.15, true, 0))
         {
             global.sworks_flag[25] = 1;
             instance_destroy(obj_flowey_npc);

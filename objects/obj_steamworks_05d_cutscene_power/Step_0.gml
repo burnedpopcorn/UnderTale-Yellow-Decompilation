@@ -5,7 +5,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_sfx_play(376, 1);
+        cutscene_sfx_play(snd_soul_battle_flash, 1);
         break;
     
     case 2:
@@ -27,7 +27,7 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_sfx_play(376, 1);
+        cutscene_sfx_play(snd_soul_battle_flash, 1);
         break;
     
     case 7:
@@ -49,7 +49,7 @@ switch (scene)
         break;
     
     case 11:
-        cutscene_sfx_play(384, 1);
+        cutscene_sfx_play(snd_undertale_thud, 1);
         break;
     
     case 12:

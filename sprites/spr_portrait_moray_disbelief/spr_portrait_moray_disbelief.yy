@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"22e989e9-c621-4adf-a643-3c4de0e3a84f",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c20478eb-827f-4674-818e-d0c2fc45335a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"412760ec-577b-48fe-a19b-267f9dfad889",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0044d4ff-4330-490a-9862-984bbcb423db",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 102,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7eefd74c-dd4c-4edf-a3d2-2b5eabfd9a85","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"abfa76c2-68ce-470c-92ef-ff8092983b66","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"22e989e9-c621-4adf-a643-3c4de0e3a84f","path":"sprites/spr_portrait_moray_disbelief/spr_portrait_moray_disbelief.yy",},},},"Disabled":false,"id":"00f06850-fca4-4281-bde1-3f854462511f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c20478eb-827f-4674-818e-d0c2fc45335a","path":"sprites/spr_portrait_moray_disbelief/spr_portrait_moray_disbelief.yy",},},},"Disabled":false,"id":"9e3602e7-f327-46c4-8dd8-28356ff0d2fd","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"412760ec-577b-48fe-a19b-267f9dfad889","path":"sprites/spr_portrait_moray_disbelief/spr_portrait_moray_disbelief.yy",},},},"Disabled":false,"id":"cf2cff1d-9d1d-4b6b-8cfc-e4f7cb90ec9c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0044d4ff-4330-490a-9862-984bbcb423db","path":"sprites/spr_portrait_moray_disbelief/spr_portrait_moray_disbelief.yy",},},},"Disabled":false,"id":"b9d171e4-e641-454c-b9f7-e4bf0e7b9751","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "WildEast",
+    "path": "texturegroups/WildEast",
   },
   "type": 0,
   "VTile": false,

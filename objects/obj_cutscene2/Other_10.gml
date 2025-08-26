@@ -1,11 +1,11 @@
 message = 0;
-prt = 0;
-talker = 0;
-sndfnt_array = 0;
+prt = spr_collisionbox;
+talker = obj_quote_battle_ceroba_outro_4;
+sndfnt_array = snd_ceroba_staff_lock;
 message[0] = "";
-prt[0] = 0;
+prt[0] = spr_collisionbox;
 talker[0] = -4;
-sndfnt_array[0] = 391;
+sndfnt_array[0] = snd_talk_default;
 ch_msg = -1;
 ch[1] = "";
 ch[2] = "";

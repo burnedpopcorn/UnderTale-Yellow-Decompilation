@@ -1,10 +1,9 @@
-var note_hit, y_restore, instance;
-
-note_hit = false;
+var note_hit = false;
+var instance;
 
 if (instance_exists(obj_sme_yellow_rhythm_note))
 {
-    y_restore = y;
+    var y_restore = y;
     i = -hit_extend_neg;
     
     while (i <= hit_extend_pos)

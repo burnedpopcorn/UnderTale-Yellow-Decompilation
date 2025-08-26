@@ -1,6 +1,4 @@
-var actor_toriel;
-
-actor_toriel = 1159;
+var actor_toriel = obj_toriel_npc;
 
 switch (scene)
 {
@@ -18,10 +16,10 @@ switch (scene)
             message[1] = "* Ancient fusions between#  diversions and doorkeys.";
             message[2] = "* They must be solved in#  order to move from room#  to room.";
             message[3] = "* Allow me to demonstrate.";
-            prt[0] = 343;
-            prt[1] = 343;
-            prt[2] = 343;
-            prt[3] = 343;
+            prt[0] = toriel_normal;
+            prt[1] = toriel_normal;
+            prt[2] = toriel_normal;
+            prt[3] = toriel_normal;
         }
         
         break;
@@ -31,7 +29,7 @@ switch (scene)
         break;
     
     case 3:
-        cutscene_sfx_play(379, 1);
+        cutscene_sfx_play(snd_switch, 1);
         obj_switch1.image_index = 1;
         instance_destroy(obj_door);
         break;
@@ -52,8 +50,8 @@ switch (scene)
             talker[0] = actor_toriel;
             message[0] = "* We are free to proceed #  now. ";
             message[1] = "* Follow me, my child.#* There are more puzzles#  ahead.";
-            prt[0] = 343;
-            prt[1] = 343;
+            prt[0] = toriel_normal;
+            prt[1] = toriel_normal;
         }
         
         break;

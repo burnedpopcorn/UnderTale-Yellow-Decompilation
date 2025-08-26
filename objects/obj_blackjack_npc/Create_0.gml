@@ -8,4 +8,4 @@ right_sprite_idle = spr_blackjack_down_talk;
 down_sprite_idle = spr_blackjack_down_talk;
 left_sprite_idle = spr_blackjack_down_talk;
 action_sprite = false;
-npc_voice_sfx = 391;
+npc_voice_sfx = snd_talk_default;

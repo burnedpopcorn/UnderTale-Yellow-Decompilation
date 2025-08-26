@@ -1,16 +1,14 @@
-var battle_box, dir, dir_inc, real_turret, i, distance;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-dir = irandom_range(0, 359);
-dir_inc = 360/7;
-real_turret = irandom_range(0, 6);
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var dir = irandom_range(0, 359);
+var dir_inc = 360/7;
+var real_turret = irandom_range(0, 6);
 
-for (i = 0; i < 7; i++)
+for (var i = 0; i < 7; i++)
 {
-    distance = irandom_range(100, 140);
+    var distance = irandom_range(100, 140);
     
     if (i != real_turret)
         instance_create_depth(battle_box.x + lengthdir_x(distance, dir + (dir_inc * i)), battle_box.y + lengthdir_y(distance, dir + (dir_inc * i)), -100, obj_battle_enemy_attack_axis_turret_fake);

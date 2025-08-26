@@ -1,5 +1,3 @@
-var charge_pos, charge_percentage, new_trash, new_soap, disc, box;
-
 if (live_call())
     return global.live_result;
 
@@ -22,14 +20,14 @@ switch (scene)
         break;
     
     case 1:
-        charge_pos = ystart - 30;
+        var charge_pos = ystart - 30;
         
         if (y > (charge_pos + 0.01))
             y = lerp(y, charge_pos, 0.5);
         else
             cutscene_advance();
         
-        charge_percentage = (ystart - y) / (charge_pos - ystart);
+        var charge_percentage = (ystart - y) / (charge_pos - ystart);
         image_angle = -180 * charge_percentage;
         break;
     
@@ -43,11 +41,11 @@ switch (scene)
         }
         else
         {
-            new_trash = instance_create_depth((x - (spawn_offset_x_max * 0.5)) + (spawn_number_current * spawn_offset_x_inc), y + 15, depth + 1, obj_battle_enemy_attack_jandroid_garbage);
+            var new_trash = instance_create_depth((x - (spawn_offset_x_max * 0.5)) + (spawn_number_current * spawn_offset_x_inc), y + 15, depth + 1, obj_battle_enemy_attack_jandroid_garbage);
             
             if (irandom(pseudo_random) == 0 && green_spawn_noloop == false)
             {
-                new_soap = instance_create_depth(new_trash.x, new_trash.y, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_jandroid_soap_collider);
+                var new_soap = instance_create_depth(new_trash.x, new_trash.y, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_jandroid_soap_collider);
                 new_soap.white_id = new_trash;
                 new_trash.sprite_index = -4;
                 green_spawn_noloop = true;
@@ -65,7 +63,7 @@ switch (scene)
                 
                 if (disc_count == 0)
                 {
-                    disc = instance_create_depth(x, y, depth + 1, obj_battle_enemy_attack_goosic_disk);
+                    var disc = instance_create_depth(x, y, depth + 1, obj_battle_enemy_attack_goosic_disk);
                     disc.alarm[0] = 999999999;
                     disc.alarm[1] = 999999999;
                     disc.image_alpha = 1;
@@ -81,7 +79,7 @@ switch (scene)
     
     case 4:
         x = 320 + irandom_range(-1, 1);
-        charge_pos = ystart + 5;
+        var charge_pos = ystart + 5;
         
         if (y < (charge_pos - 0.05))
             y = lerp(y, charge_pos, 0.4);
@@ -96,12 +94,12 @@ switch (scene)
         break;
     
     case 6:
-        box = 3154;
-        new_trash = instance_create_depth(box.x - 120, box.bbox_top - 30, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_jandroid_garbage_can);
+        var box = obj_dialogue_box_battle_transformation_any;
+        var new_trash = instance_create_depth(box.x - 120, box.bbox_top - 30, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_jandroid_garbage_can);
         
         if (green_spawn_noloop == false)
         {
-            new_soap = instance_create_depth(new_trash.x, new_trash.y, obj_heart_battle_fighting_parent.depth - 2, obj_battle_enemy_attack_jandroid_soap_collider);
+            var new_soap = instance_create_depth(new_trash.x, new_trash.y, obj_heart_battle_fighting_parent.depth - 2, obj_battle_enemy_attack_jandroid_soap_collider);
             new_soap.white_id = new_trash;
             new_trash.sprite_index = -4;
             green_spawn_noloop = true;

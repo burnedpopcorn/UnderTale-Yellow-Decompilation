@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Howdy...";
                 message[1] = "* You got any of that...";
                 message[2] = "* Any of that good catnip?";
@@ -29,7 +29,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* The fact you didn't fall for my#  trap is pretty neato.";
                 message[1] = "* Maybe you'll fit in 'round here#  better than I thought.";
                 message[2] = "* Unless you're a bandit in#  disguise???";
@@ -43,7 +43,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Ain't no place like the Wild#  East, I'll tell ya that!";
             }
             

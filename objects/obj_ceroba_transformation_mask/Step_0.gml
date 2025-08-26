@@ -1,15 +1,13 @@
-var x_target, y_target, collider_id, xp, yp;
-
 if (live_call())
     return global.live_result;
 
 if (mask_is_vulnerable)
 {
-    x_target = (obj_ceroba_body_pacifist_phase_2.x - sprite_get_xoffset(obj_ceroba_body_pacifist_phase_2.sprite_index)) + 330;
-    y_target = (obj_ceroba_body_pacifist_phase_2.y - sprite_get_yoffset(obj_ceroba_body_pacifist_phase_2.sprite_index)) + 259;
+    var x_target = (obj_ceroba_body_pacifist_phase_2.x - sprite_get_xoffset(obj_ceroba_body_pacifist_phase_2.sprite_index)) + 330;
+    var y_target = (obj_ceroba_body_pacifist_phase_2.y - sprite_get_yoffset(obj_ceroba_body_pacifist_phase_2.sprite_index)) + 259;
     x = x_target;
     y = y_target;
-    collider_id = instance_place(x, y, obj_heart_yellow_shot);
+    var collider_id = instance_place(x, y, obj_heart_yellow_shot);
     
     if (collider_id != -4)
     {
@@ -25,8 +23,8 @@ if (mask_is_vulnerable)
             mask_hit_points -= 1;
         
         instance_destroy(collider_id);
-        xp = x;
-        yp = y;
+        var xp = x;
+        var yp = y;
         part_emitter_region(mask_ps, mask_pe_effect_1, xp - 1, xp + 1, yp - 1, yp + 1, 0, 0);
         part_emitter_burst(mask_ps, mask_pe_effect_1, mask_pt_effect_1, 4);
         
@@ -72,7 +70,7 @@ if (instance_exists(obj_ceroba_body_pacifist_phase_1))
     {
         case spr_ceroba_transformation_p1_7:
             attach_points = [[-400, -400], [148, 114], [149, 110], [149, 106], [148, 140], [147, 146], [147, 150], [147, 146], [147, 150], [147, 150], [147, 146], [147, 150], [147, 150], [147, 146], [147, 150], [147, 150], [147, 146], [147, 150], [-400, -400], [-400, -400], [-400, -400], [-400, -400], [-400, -400], [145, 86], [145, 86], [145, 86], [145, 86], [145, 86], [145, 84], [145, 84], [145, 82]];
-            scr_point_attach(attach_points, 773);
+            scr_point_attach(attach_points, obj_ceroba_body_pacifist_phase_1);
             break;
         
         default:
@@ -116,5 +114,5 @@ if (instance_exists(obj_ceroba_body_pacifist_phase_2))
             break;
     }
     
-    scr_point_attach(attach_points, 2833);
+    scr_point_attach(attach_points, obj_ceroba_body_pacifist_phase_2);
 }

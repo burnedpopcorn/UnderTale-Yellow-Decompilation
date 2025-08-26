@@ -23,4 +23,4 @@ color_alt_total = 0;
 shot_type = "nothing";
 button_pressed = false;
 no_loop = false;
-hit_object = 2911;
+hit_object = obj_shot_weak;

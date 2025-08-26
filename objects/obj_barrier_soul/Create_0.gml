@@ -3,7 +3,7 @@ if (live_call())
 
 spawner = -4;
 track_spawner = true;
-soul_color = 255;
+soul_color = c_red;
 image_speed = 0.2;
 idle_animation = false;
 y_offset = 0;

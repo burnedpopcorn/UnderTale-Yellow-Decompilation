@@ -1,5 +1,3 @@
-var sin_value, fireball;
-
 if (live_call())
     return global.live_result;
 
@@ -8,14 +6,14 @@ if (sin_deg < 180)
 else
     instance_destroy();
 
-sin_value = sin(degtorad(sin_deg));
+var sin_value = sin(degtorad(sin_deg));
 
 switch (scene)
 {
     case 0:
         if (sin_deg > 90)
         {
-            fireball = instance_create_depth(x, y, -100, obj_flowey_battle_gray_fireball);
+            var fireball = instance_create_depth(x, y, -100, obj_flowey_battle_gray_fireball);
             fireball.direction = direction;
             fireball.speed = 4;
             sin_inc = 2;

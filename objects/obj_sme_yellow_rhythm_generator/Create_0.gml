@@ -1,4 +1,4 @@
-box = 3154;
+box = obj_dialogue_box_battle_transformation_any;
 dj_note_y = box.bbox_top + 0;
 dj_note_left_x = box.bbox_left + 29;
 dj_note_center_x = box.bbox_left + 79;

@@ -1,0 +1,9 @@
+message[0] = "* To: Science Division\t";
+message[1] = "* Employees have reported the#  generator is showing more wear#  than ever.\t";
+message[2] = "* The engineers predict the#  machine won't last longer than#  one year from now.\t";
+message[3] = "* I need you to speed up the#  testing of alternate power#  sources.\t";
+message[4] = "* The Underground depends on it.";
+message[5] = "* - Head Office";
+color = true;
+message_col[0][0] = "      Science Division";
+col_modif[0] = c_teal;

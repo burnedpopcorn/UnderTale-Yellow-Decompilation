@@ -1,10 +1,8 @@
-var battle_box;
-
 if (live_call())
     return global.live_result;
 
 damage_number = scr_determine_damage_number_enemy("ceroba", "void", "void");
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 image_alpha = 0;
 scene = 0;
 cutscene_timer = 0;

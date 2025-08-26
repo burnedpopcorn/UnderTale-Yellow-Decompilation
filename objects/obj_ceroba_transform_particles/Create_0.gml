@@ -1,5 +1,3 @@
-var trail_col, xp, yp;
-
 if (live_call())
     return global.live_result;
 
@@ -20,7 +18,7 @@ part_type_life(global.pt_trail_inner, 8, 8);
 part_type_speed(global.pt_trail_inner, 0, 0, 0, 0);
 part_type_direction(global.pt_trail_inner, 0, 360, 0, 0);
 part_type_gravity(global.pt_trail_inner, 0, 0);
-trail_col = make_color_rgb(255, 0, 55);
+var trail_col = make_color_rgb(255, 0, 55);
 global.pt_trail_outer = part_type_create();
 part_type_shape(global.pt_trail_outer, 1);
 part_type_size(global.pt_trail_outer, 0.25, 0.25, -0.02, 0);
@@ -33,7 +31,7 @@ part_type_life(global.pt_trail_outer, 16, 16);
 part_type_speed(global.pt_trail_outer, 0, 0, 0, 0);
 part_type_direction(global.pt_trail_outer, 0, 360, 0, 0);
 part_type_gravity(global.pt_trail_outer, 0, 0);
-xp = x;
-yp = y;
+var xp = x;
+var yp = y;
 xp = x;
 yp = y;

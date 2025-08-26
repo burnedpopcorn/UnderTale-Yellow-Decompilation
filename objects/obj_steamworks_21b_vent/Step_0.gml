@@ -1,4 +1,4 @@
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     if (switch_no_crawl == false)
     {
@@ -50,4 +50,4 @@ if (scene == 4)
 }
 
 if (scene == 5)
-    cutscene_change_room(170, 100, 150, 0.1);
+    cutscene_change_room(rm_steamworks_20, 100, 150, 0.1);

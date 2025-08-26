@@ -1,8 +1,6 @@
 function scr_enemy_timer_attacks_decibat()
 {
-    var enemy_attack;
-    
-    enemy_attack = global.enemy_attack;
+    var enemy_attack = global.enemy_attack;
     
     if (instance_exists(obj_dialogue_box_battle_transformation_any) && enemy_attack == "Decibat Wave Blue" && obj_heart_battle_fighting_parent.moveable == true)
     {

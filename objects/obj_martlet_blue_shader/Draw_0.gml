@@ -1,26 +1,24 @@
-var color_id, alpha_id, _color_new, i, text_col;
-
 if (live_call())
     return global.live_result;
 
-object[0] = 2860;
-object[1] = 2869;
-object[2] = 2876;
-object[3] = 2877;
-object[4] = 2879;
+object[0] = 2861;
+object[1] = 2870;
+object[2] = 2877;
+object[3] = 2878;
+object[4] = 2880;
 object[5] = 12;
-color_id = color_uniform;
-alpha_id = alpha_uniform;
-_color_new = color_new;
+var color_id = color_uniform;
+var alpha_id = alpha_uniform;
+var _color_new = color_new;
 
-for (i = 0; i < array_length_1d(object); i++)
+for (var i = 0; i < array_length_1d(object); i++)
 {
     with (object[i])
     {
         shader_set(sh_replace_color);
         
         if (object_index == obj_autofire_toggle && global.autofire_on == false)
-            _color_new = [0.5, 0.5];
+            _color_new = [0.5, 0.5, 0.5];
         else
             _color_new = other.color_new;
         
@@ -33,7 +31,7 @@ for (i = 0; i < array_length_1d(object); i++)
 }
 
 draw_set_font(fnt_mars_needs_cunnilingus);
-text_col = make_color_rgb(color_new[0] * 255, color_new[1] * 255, color_new[2] * 255);
+var text_col = make_color_rgb(color_new[0] * 255, color_new[1] * 255, color_new[2] * 255);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_text_colour(30, 400, string_hash_to_newline(string(global.player_name)), text_col, text_col, text_col, text_col, global.image_alpha_enemy_attacking * image_alpha);

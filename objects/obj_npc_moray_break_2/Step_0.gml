@@ -20,12 +20,12 @@ switch (global.dunes_flag_ext[1])
             message[3] = "* So... you don't need to#  worry about her.";
             message[4] = "* I'll make sure she's#  treated as well as one#  in jail can be.";
             message[5] = "* This is for the best.";
-            prt[0] = 445;
-            prt[1] = 445;
-            prt[2] = 449;
-            prt[3] = 445;
-            prt[4] = 445;
-            prt[5] = 449;
+            prt[0] = spr_portrait_moray_normal;
+            prt[1] = spr_portrait_moray_normal;
+            prt[2] = spr_portrait_moray_plain;
+            prt[3] = spr_portrait_moray_normal;
+            prt[4] = spr_portrait_moray_normal;
+            prt[5] = spr_portrait_moray_plain;
         }
         
         global.dunes_flag_ext[1] += 1;
@@ -38,9 +38,9 @@ switch (global.dunes_flag_ext[1])
             message[0] = "* Look on the bright side!";
             message[1] = "* Things are about to ramp#  up!";
             message[2] = "* Soon, you'll be one of#  us. How exciting!";
-            prt[0] = 445;
-            prt[1] = 445;
-            prt[2] = 445;
+            prt[0] = spr_portrait_moray_normal;
+            prt[1] = spr_portrait_moray_normal;
+            prt[2] = spr_portrait_moray_normal;
         }
         
         break;

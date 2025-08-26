@@ -1,7 +1,5 @@
 function scr_talking_axis()
 {
-    var axis_talknoise;
-    
     switch (current_char)
     {
         case " ":
@@ -9,7 +7,7 @@ function scr_talking_axis()
             break;
         
         default:
-            axis_talknoise = 111;
+            var axis_talknoise = 111;
             audio_stop_sound(axis_talknoise);
             audio_play_sound(axis_talknoise, 20, false);
     }

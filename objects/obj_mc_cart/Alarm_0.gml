@@ -4,21 +4,21 @@ if (live_call())
 switch (cart_color)
 {
     case "yellow":
-        side_sprite = spr_mc_yellow_side;
-        forward_sprite = spr_mc_yellow_forward;
-        drain_sprite = spr_mc_yellow_drain;
+        side_sprite = 1149;
+        forward_sprite = 1152;
+        drain_sprite = 1153;
         break;
     
     case "green":
-        side_sprite = spr_mc_green_side;
-        forward_sprite = spr_mc_green_forward;
-        drain_sprite = spr_mc_green_drain;
+        side_sprite = 1156;
+        forward_sprite = 1159;
+        drain_sprite = 1161;
         break;
     
     case "blue":
-        side_sprite = spr_mc_blue_side;
-        forward_sprite = spr_mc_blue_forward;
-        drain_sprite = spr_mc_blue_drain;
+        side_sprite = 1167;
+        forward_sprite = 1169;
+        drain_sprite = 1170;
         break;
 }
 

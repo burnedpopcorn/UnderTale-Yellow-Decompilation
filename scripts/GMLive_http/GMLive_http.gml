@@ -1,3 +1,3 @@
-function live_async_http(argument0)
+function live_async_http(arg0)
 {
 }

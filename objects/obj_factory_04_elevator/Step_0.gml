@@ -1,7 +1,7 @@
 switch (scene)
 {
     case 0:
-        if (scr_interact() && keyboard_multicheck_pressed(0) && global.sworks_flag[38] >= 3)
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey) && global.sworks_flag[38] >= 3)
             cutscene_advance();
         
         break;
@@ -29,7 +29,7 @@ switch (scene)
         break;
     
     case 4:
-        cutscene_npc_walk(1168, 120, 340, 3, "x", "down");
+        cutscene_npc_walk(obj_player_npc, 120, 340, 3, "x", "down");
         scene++;
         break;
     
@@ -38,7 +38,7 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_npc_walk(1161, 120, 340, 3, "x", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 120, 340, 3, "x", "up");
         scene++;
         break;
     
@@ -47,7 +47,7 @@ switch (scene)
         break;
     
     case 8:
-        cutscene_change_room(209, 160, 108, 0.1);
+        cutscene_change_room(rm_steamworks_factory_elevator, 160, 108, 0.1);
         break;
 }
 

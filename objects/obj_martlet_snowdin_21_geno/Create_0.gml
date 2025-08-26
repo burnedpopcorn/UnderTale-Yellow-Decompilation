@@ -1,6 +1,4 @@
-var battle_flag;
-
-battle_flag = global.snowdin_flag[13];
+var battle_flag = global.snowdin_flag[13];
 
 if (global.snowdin_flag[14] >= 1 || (battle_flag == 0 && global.geno_complete[2] == false) || (battle_flag == 1 || battle_flag == 2))
 {

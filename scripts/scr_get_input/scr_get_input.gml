@@ -38,13 +38,13 @@ function scr_get_input()
         else if (global.button2 == gp_face4)
             global.cancel_key = "Y";
         
-        if (global.button3 == 32769)
+        if (global.button3 == gp_face1)
             global.pause_key = "A";
-        else if (global.button3 == 32770)
+        else if (global.button3 == gp_face2)
             global.pause_key = "B";
-        else if (global.button3 == 32771)
+        else if (global.button3 == gp_face3)
             global.pause_key = "X";
-        else if (global.button3 == 32772)
+        else if (global.button3 == gp_face4)
             global.pause_key = "Y";
     }
     else

@@ -1,14 +1,12 @@
-var battle_enemy_name, game_mode, random_number;
-
-battle_enemy_name = global.battle_enemy_name;
-game_mode = global.game_mode;
-sndfnt = 96;
+var battle_enemy_name = global.battle_enemy_name;
+var game_mode = global.game_mode;
+sndfnt = sndfnt_flowey;
 
 if (global.sworks_flag[45] == 1)
 {
     global.battling_boss = false;
-    message[0] = "* . .";
-    message[1] = "* . .";
+    message[0] = "* . . .";
+    message[1] = "* . . .";
     message[2] = "* Why?";
     message_end = 2;
 }
@@ -17,7 +15,7 @@ else
     switch (global.battle_enemy_name)
     {
         case "decibat":
-            random_number = irandom_range(1, 3);
+            var random_number = irandom_range(1, 3);
             
             if (random_number == 1)
             {
@@ -43,7 +41,7 @@ else
             break;
         
         case "dalv":
-            random_number = irandom_range(1, 3);
+            var random_number = irandom_range(1, 3);
             
             if (random_number == 1)
             {
@@ -69,7 +67,7 @@ else
             break;
         
         case "martlet pacifist":
-            random_number = irandom_range(1, 3);
+            var random_number = irandom_range(1, 3);
             
             if (random_number == 1)
             {
@@ -95,7 +93,7 @@ else
             break;
         
         case "el bailador":
-            random_number = irandom_range(1, 3);
+            var random_number = irandom_range(1, 3);
             
             if (random_number == 1)
             {
@@ -121,7 +119,7 @@ else
             break;
         
         case "feisty five":
-            random_number = irandom_range(1, 3);
+            var random_number = irandom_range(1, 3);
             
             if (random_number == 1)
             {
@@ -147,7 +145,7 @@ else
             break;
         
         case "starlo":
-            random_number = irandom_range(1, 3);
+            var random_number = irandom_range(1, 3);
             
             if (random_number == 1)
             {
@@ -173,7 +171,7 @@ else
             break;
         
         case "guardener":
-            random_number = irandom_range(1, 3);
+            var random_number = irandom_range(1, 3);
             
             if (random_number == 1)
             {
@@ -199,7 +197,7 @@ else
             break;
         
         case "axis":
-            random_number = irandom_range(1, 3);
+            var random_number = irandom_range(1, 3);
             
             if (random_number == 1)
             {
@@ -225,7 +223,7 @@ else
             break;
         
         case "ceroba":
-            random_number = irandom_range(1, 5);
+            var random_number = irandom_range(1, 5);
             
             if (random_number == 1)
             {
@@ -265,7 +263,7 @@ else
             break;
         
         case "martlet genocide":
-            random_number = irandom_range(1, 3);
+            var random_number = irandom_range(1, 3);
             
             if (random_number == 1)
             {
@@ -291,7 +289,7 @@ else
             break;
         
         case "ceroba genocide":
-            random_number = irandom_range(1, 5);
+            var random_number = irandom_range(1, 5);
             
             if (random_number == 1)
             {
@@ -331,7 +329,7 @@ else
             break;
         
         case "axis genocide":
-            random_number = irandom_range(1, 3);
+            var random_number = irandom_range(1, 3);
             
             if (random_number == 1)
             {
@@ -357,11 +355,11 @@ else
             break;
         
         case "martlet genocide final":
-            random_number = irandom_range(1, 1);
+            var random_number = irandom_range(1, 1);
             
             if (random_number == 1)
             {
-                sndfnt = 391;
+                sndfnt = snd_talk_default;
                 message[0] = "Again.";
                 message_end = 0;
             }
@@ -371,7 +369,7 @@ else
         default:
             if (global.route != 3)
             {
-                random_number = irandom_range(1, 6);
+                var random_number = irandom_range(1, 6);
                 
                 if (random_number == 1)
                 {
@@ -417,7 +415,7 @@ else
             }
             else
             {
-                random_number = irandom_range(1, 6);
+                var random_number = irandom_range(1, 6);
                 
                 if (random_number == 1)
                 {

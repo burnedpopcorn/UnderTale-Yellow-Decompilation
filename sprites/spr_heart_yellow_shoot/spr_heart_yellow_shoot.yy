@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f8499be1-f872-41a6-8f79-bb2d1f9b9351",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a8e2f045-8b2b-44e1-bed0-99a05572d938",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"188ec0e2-a7ee-4404-9a54-fab67cd58204",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"02d2ddfc-bc75-49d1-8df4-f3e6436058fb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c83cabdf-75b8-4129-829f-0fbbe0479ba4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ea4d2182-61ba-487f-bfff-fcd83d5fa9af",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 38,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0575e2ee-71bc-4578-ad26-16670f135f73","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bbc19c6a-03b5-4226-898d-539854356cc1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f8499be1-f872-41a6-8f79-bb2d1f9b9351","path":"sprites/spr_heart_yellow_shoot/spr_heart_yellow_shoot.yy",},},},"Disabled":false,"id":"857b56bb-73b0-44db-a95f-742cfca6c2dc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a8e2f045-8b2b-44e1-bed0-99a05572d938","path":"sprites/spr_heart_yellow_shoot/spr_heart_yellow_shoot.yy",},},},"Disabled":false,"id":"e4cd1d8f-b163-4cec-a490-9ee319aad49a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"188ec0e2-a7ee-4404-9a54-fab67cd58204","path":"sprites/spr_heart_yellow_shoot/spr_heart_yellow_shoot.yy",},},},"Disabled":false,"id":"369d85b3-6b44-426f-a390-5a19b4cab7ac","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"02d2ddfc-bc75-49d1-8df4-f3e6436058fb","path":"sprites/spr_heart_yellow_shoot/spr_heart_yellow_shoot.yy",},},},"Disabled":false,"id":"13baa2af-aea2-4b5a-918a-1931df4d2186","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c83cabdf-75b8-4129-829f-0fbbe0479ba4","path":"sprites/spr_heart_yellow_shoot/spr_heart_yellow_shoot.yy",},},},"Disabled":false,"id":"d1693972-5d26-4b2a-b8f2-711a2e9d301c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ea4d2182-61ba-487f-bfff-fcd83d5fa9af","path":"sprites/spr_heart_yellow_shoot/spr_heart_yellow_shoot.yy",},},},"Disabled":false,"id":"89721e04-9227-49ff-b3a4-27825ab5f7fe","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleBase",
+    "path": "texturegroups/BattleBase",
   },
   "type": 0,
   "VTile": false,

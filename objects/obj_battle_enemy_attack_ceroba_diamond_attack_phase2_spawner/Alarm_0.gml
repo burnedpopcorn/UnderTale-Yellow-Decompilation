@@ -1,7 +1,5 @@
-var player_soul, battle_box;
-
-player_soul = 2979;
-battle_box = 3154;
+var player_soul = 2980;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 if (attack_stop)
     exit;

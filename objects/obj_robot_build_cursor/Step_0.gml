@@ -1,5 +1,3 @@
-var confirm_key, cancel_key;
-
 if (global.dialogue_open || obj_robot_build_controller.destroy_self == true)
 {
     image_alpha = 0;
@@ -7,8 +5,8 @@ if (global.dialogue_open || obj_robot_build_controller.destroy_self == true)
 }
 
 scr_get_input();
-confirm_key = keyboard_multicheck_pressed(0);
-cancel_key = keyboard_multicheck_pressed(1);
+var confirm_key = keyboard_multicheck_pressed(vk_nokey);
+var cancel_key = keyboard_multicheck_pressed(vk_anykey);
 soul_speed = 6;
 
 with (obj_robot_build_item)

@@ -1,13 +1,11 @@
-var counter_timer_max, player_soul, box, gun_top_y, gun_mid_y, gun_bot_y, gun_left_x, gun_right_x;
-
-counter_timer_max = 0;
-player_soul = 2979;
-box = 3154;
-gun_top_y = box.y - 25;
-gun_mid_y = box.y;
-gun_bot_y = box.y + 25;
-gun_left_x = box.bbox_left - 60;
-gun_right_x = box.bbox_right + 60;
+var counter_timer_max = 0;
+var player_soul = 2980;
+var box = obj_dialogue_box_battle_transformation_any;
+var gun_top_y = box.y - 25;
+var gun_mid_y = box.y;
+var gun_bot_y = box.y + 25;
+var gun_left_x = box.bbox_left - 60;
+var gun_right_x = box.bbox_right + 60;
 
 switch (counter_current)
 {

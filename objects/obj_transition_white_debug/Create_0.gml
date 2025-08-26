@@ -19,5 +19,5 @@ else
 
 y = yy;
 sw = false;
-new_room = 0;
+new_room = rm_intro;
 new_route = 1;

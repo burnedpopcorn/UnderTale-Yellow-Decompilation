@@ -1,4 +1,4 @@
-if (keyboard_multicheck_pressed(0) && scr_interact())
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
 {
     if (global.route == 1 && instance_exists(obj_steamworks_21_controller) && obj_steamworks_21_controller.scene >= 47 && obj_steamworks_21_controller.scene <= 50)
     {

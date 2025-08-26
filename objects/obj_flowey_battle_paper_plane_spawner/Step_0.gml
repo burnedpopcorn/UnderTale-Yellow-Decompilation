@@ -1,9 +1,7 @@
-var rng;
-
 if (paper_spawn_chance_current > 1)
     paper_spawn_chance_current--;
 
-rng = irandom(paper_spawn_chance_current);
+var rng = irandom(paper_spawn_chance_current);
 
 if (rng == 1)
 {

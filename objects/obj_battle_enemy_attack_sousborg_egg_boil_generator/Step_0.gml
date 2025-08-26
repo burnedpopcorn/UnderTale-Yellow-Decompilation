@@ -1,9 +1,7 @@
-var box, i, yy;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
@@ -21,7 +19,7 @@ switch (scene)
         break;
     
     case 2:
-        for (i = 0; i < array_length(attack_interval_current); i++)
+        for (var i = 0; i < array_length(attack_interval_current); i++)
         {
             attack_interval_current[i] -= 1;
             
@@ -37,7 +35,7 @@ switch (scene)
                         xx[i] = xx[i - 1] - 50;
                 }
                 
-                yy = box.bbox_bottom + 40;
+                var yy = box.bbox_bottom + 40;
                 instance_create_depth(xx[i], yy, box.depth - 1, obj_battle_enemy_attack_sousborg_egg_boil_smoke);
                 attack_interval_current[i] = attack_interval;
             }
@@ -70,7 +68,7 @@ switch (scene)
         break;
     
     case 5:
-        for (i = 0; i < array_length(attack_interval_fire); i++)
+        for (var i = 0; i < array_length(attack_interval_fire); i++)
         {
             attack_interval_fire[i] -= 1;
             
@@ -86,7 +84,7 @@ switch (scene)
                         xx[i] = xx[i - 1] - 50;
                 }
                 
-                yy = box.bbox_bottom + 40;
+                var yy = box.bbox_bottom + 40;
                 instance_create_depth(xx[i], yy, box.depth - 1, obj_battle_enemy_attack_sousborg_egg_boil_fireball);
                 attack_interval_fire[i] = attack_interval;
             }

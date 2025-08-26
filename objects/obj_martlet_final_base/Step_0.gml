@@ -1,5 +1,3 @@
-var _speed_multiplier, scale_modif, y_modif, shot_damage;
-
 if (live_call())
     return global.live_result;
 
@@ -45,7 +43,7 @@ else
 
 if (martlet_animation_enabled == true)
 {
-    _speed_multiplier = speed_multiplier;
+    var _speed_multiplier = speed_multiplier;
     no_loop = false;
     sin_timer += (33 * _speed_multiplier);
     
@@ -58,45 +56,45 @@ if (martlet_animation_enabled == true)
     
     with (obj_martlet_final_leg_front)
     {
-        scale_modif = cos(current_time / 500) * 0.04;
+        var scale_modif = cos(current_time / 500) * 0.04;
         image_yscale = 1 + (scale_modif * _speed_multiplier);
-        y_modif = cos(current_time / 500) * 2;
+        var y_modif = cos(current_time / 500) * 2;
         y += (y_modif * _speed_multiplier);
     }
     
     with (obj_martlet_final_talon_front)
     {
-        scale_modif = cos(current_time / 500) * 0.04;
+        var scale_modif = cos(current_time / 500) * 0.04;
         image_yscale = 1 + (scale_modif * _speed_multiplier);
-        y_modif = cos(current_time / 500) * 3;
+        var y_modif = cos(current_time / 500) * 3;
         y += (y_modif * _speed_multiplier);
     }
     
     with (obj_martlet_final_leg_back)
     {
-        scale_modif = cos(current_time / 750) * 0.04;
+        var scale_modif = cos(current_time / 750) * 0.04;
         image_yscale = 1 + (scale_modif * _speed_multiplier);
-        y_modif = cos(current_time / 750) * 1;
+        var y_modif = cos(current_time / 750) * 1;
         y += (y_modif * _speed_multiplier);
     }
     
     with (obj_martlet_final_talon_back)
     {
-        scale_modif = cos(current_time / 750) * 0.04;
+        var scale_modif = cos(current_time / 750) * 0.04;
         image_yscale = 1 + (scale_modif * _speed_multiplier);
-        y_modif = cos(current_time / 300) * 2;
+        var y_modif = cos(current_time / 300) * 2;
         y += (y_modif * _speed_multiplier);
     }
     
     with (obj_martlet_final_head)
     {
-        y_modif = cos(current_time / 1000) * 3;
+        var y_modif = cos(current_time / 1000) * 3;
         y += (y_modif * _speed_multiplier);
     }
     
     with (obj_martlet_final_hair)
     {
-        y_modif = cos(current_time / 1000) * 3;
+        var y_modif = cos(current_time / 1000) * 3;
         y += (y_modif * _speed_multiplier);
     }
 }
@@ -126,7 +124,7 @@ if ((sprite_index == martlet_sprite_base || sprite_index == spr_martlet_final_wi
             other.healthbar_timer = other.healthbar_timer_max;
             other.healthbar_alpha = 1;
             other.damage_flash_timer = 3;
-            shot_damage = round(((global.player_weapon_attack + global.player_attack) - global.enemy_defense_stat) * 1);
+            var shot_damage = round(((global.player_weapon_attack + global.player_attack) - global.enemy_defense_stat) * 1);
             global.current_hp_enemy -= shot_damage;
             global.current_hp_enemy_draw = global.current_hp_enemy;
             audio_play_sound(snd_arc_hit, 0.1, 0);

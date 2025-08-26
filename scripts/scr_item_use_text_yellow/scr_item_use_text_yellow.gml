@@ -1,24 +1,22 @@
 function scr_item_use_text_yellow()
 {
-    var item_use_hold, item_slot, current_hp_self, max_hp_self, current_pp_self, max_pp_self, current_sp_self, max_sp_self, current_rp_self, max_rp_self, execute_hp, execute_pp, execute_sp, execute_rp, cmsgn;
-    
     if (live_call())
         return global.live_result;
     
-    item_use_hold = global.item_use_hold;
-    item_slot = item_use_hold.item_slot;
-    current_hp_self = global.current_hp_self;
-    max_hp_self = global.max_hp_self;
-    current_pp_self = global.current_pp_self;
-    max_pp_self = global.max_pp_self;
-    current_sp_self = global.current_sp_self;
-    max_sp_self = global.max_sp_self;
-    current_rp_self = global.current_rp_self;
-    max_rp_self = global.max_rp_self;
-    execute_hp = false;
-    execute_pp = false;
-    execute_sp = false;
-    execute_rp = false;
+    var item_use_hold = global.item_use_hold;
+    var item_slot = item_use_hold.item_slot;
+    var current_hp_self = global.current_hp_self;
+    var max_hp_self = global.max_hp_self;
+    var current_pp_self = global.current_pp_self;
+    var max_pp_self = global.max_pp_self;
+    var current_sp_self = global.current_sp_self;
+    var max_sp_self = global.max_sp_self;
+    var current_rp_self = global.current_rp_self;
+    var max_rp_self = global.max_rp_self;
+    var execute_hp = false;
+    var execute_pp = false;
+    var execute_sp = false;
+    var execute_rp = false;
     
     if (item_slot == "Missing Poster" || item_slot == "Necklace")
     {
@@ -64,7 +62,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
         execute_hp = true;
@@ -76,7 +74,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
         execute_hp = true;
@@ -88,7 +86,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
         execute_hp = true;
@@ -100,7 +98,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
         execute_hp = true;
@@ -111,7 +109,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 1;
         execute_hp = true;
@@ -123,7 +121,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
         execute_hp = true;
@@ -136,7 +134,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 3;
         execute_hp = true;
@@ -148,7 +146,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
         execute_hp = true;
@@ -160,7 +158,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
         execute_hp = true;
@@ -173,7 +171,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 3;
         execute_hp = true;
@@ -185,7 +183,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
         execute_hp = true;
@@ -197,7 +195,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
         execute_hp = true;
@@ -209,7 +207,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 2;
         execute_hp = true;
@@ -221,7 +219,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 2;
         execute_hp = true;
@@ -232,7 +230,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 1;
         execute_hp = true;
@@ -243,7 +241,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 1;
         execute_hp = true;
@@ -254,7 +252,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 1;
         execute_hp = true;
@@ -262,11 +260,11 @@ function scr_item_use_text_yellow()
     }
     else if (item_slot == "Fruitcake")
     {
-        message[0] = "* (You scarf down the Fruitcake.#  The Swealterstones burn your#  throat!)";
+        message[0] = "* (You scarf down the Fruitcake.#  The Swelterstones burn your#  throat!)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 1;
         execute_hp = true;
@@ -277,7 +275,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 1;
         execute_hp = true;
@@ -288,7 +286,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 1;
         execute_hp = true;
@@ -299,7 +297,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 1;
         execute_hp = true;
@@ -310,7 +308,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 1;
         execute_hp = true;
@@ -321,7 +319,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 1;
         execute_hp = true;
@@ -332,7 +330,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 1;
         execute_hp = true;
@@ -344,7 +342,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 2;
         execute_hp = true;
@@ -357,7 +355,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "protection";
         item_use_hold.item_number = scr_item_stats_protection(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 3;
         execute_pp = true;
@@ -369,7 +367,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "speed";
         item_use_hold.item_number = scr_item_stats_speed(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
         execute_sp = true;
@@ -382,7 +380,7 @@ function scr_item_use_text_yellow()
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "restore";
         item_use_hold.item_number = scr_item_stats_restore(item_slot);
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 3;
         execute_rp = true;
@@ -393,7 +391,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (The texture can only be#  described as \"insolation#  esque.\")";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 2;
@@ -405,7 +403,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (Is this what life has really#  come to?)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 2;
@@ -417,7 +415,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (Mmm... chunky...)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
@@ -429,7 +427,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (You can really taste all 9.8#  meters!)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 2;
@@ -440,7 +438,7 @@ function scr_item_use_text_yellow()
         message[0] = "* (You drink the H2O. Kinda#  tastes like window cleaner...)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 1;
@@ -451,7 +449,7 @@ function scr_item_use_text_yellow()
         message[0] = "* (You eat the Popato Chisps.#  The crunch is deafening.)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = false;
         item_use_hold.con_message_number = 1;
@@ -463,7 +461,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (What a classic flavor.)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 1;
@@ -475,7 +473,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (Delicious!)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 1;
@@ -487,7 +485,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (What a rich flavor!)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
@@ -499,7 +497,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (The taste is faintly#  familiar...)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
@@ -511,7 +509,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (The overwhelming sweetness is#  at war with your taste buds.)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
@@ -523,7 +521,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (The taste is strangely#  familiar...)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
@@ -534,7 +532,7 @@ function scr_item_use_text_yellow()
         message[0] = "* (You scarf down the 'dog.)#  (Mmm, hits the spot!)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 1;
@@ -546,7 +544,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (...Could've been worse.)";
         item_use_hold.item_category = "consumable";
         item_use_hold.item_type = "healing";
-        item_use_hold.item_sound = snd_battle_item_eat;
+        item_use_hold.item_sound = 390;
         item_use_hold.item_number = scr_item_stats_heal(item_slot);
         item_use_hold.con_keep_previous = true;
         item_use_hold.con_message_number = 2;
@@ -557,28 +555,28 @@ function scr_item_use_text_yellow()
         message[0] = "* (You equipped the " + string(item_slot) + ".)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "weapon";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Wild Revolver")
     {
         message[0] = "* (You equipped the " + string(item_slot) + ".)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "weapon";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Worn Hat")
     {
         message[0] = "* (You equipped the " + string(item_slot) + ".)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "armor";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Rubber Ammo")
     {
         message[0] = "* (You load the rubber ammo into#  your weapon.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "ammo";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Pebble Ammo")
     {
@@ -586,7 +584,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (It feels a little heavier#  now.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "ammo";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Silver Ammo")
     {
@@ -594,7 +592,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (The pellets shimmer#  in the light.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "ammo";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Ice Pellets")
     {
@@ -602,7 +600,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (Your gun is now cold to the#  touch.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "ammo";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Cff Bean Ammo")
     {
@@ -610,7 +608,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (Your gun now smells#  delightful.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "ammo";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Glass Ammo")
     {
@@ -618,7 +616,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (Phew! No cuts!)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "ammo";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Flint")
     {
@@ -626,21 +624,21 @@ function scr_item_use_text_yellow()
         message[1] = "* (Might start some fire#   with this one!)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "ammo";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Nails")
     {
         message[0] = "* (You load the Nails#  into your gun.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "ammo";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Friendliness Pellets")
     {
         message[0] = "* (You load the Friendliness#  Pellets into your gun.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "ammo";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Super Ammo")
     {
@@ -648,7 +646,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (Your gun now feels lighter#  than your conscience.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "ammo";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Patch")
     {
@@ -662,7 +660,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (It gives you a proud feeling.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "accessory";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "G. Bandana")
     {
@@ -670,21 +668,21 @@ function scr_item_use_text_yellow()
         message[1] = "* (You feel like you can take on#  anything now.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "accessory";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Honeydew Pin")
     {
         message[0] = "* (You pin the " + string(item_slot) + "#  to your hat.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "accessory";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Band Merch Pin")
     {
         message[0] = "* (You pin the Merch Pin to your#  hat.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "accessory";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Fancy Holster")
     {
@@ -692,7 +690,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (You're ready for anything#  now!)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "accessory";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Steel Buckle")
     {
@@ -700,7 +698,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (Your pants feel sturdier than#  ever!)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "accessory";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Safety Jacket")
     {
@@ -708,14 +706,14 @@ function scr_item_use_text_yellow()
         message[1] = "* (You're all ready to take care#  of business!)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "accessory";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Golden Scarf")
     {
         message[0] = "* (You put the Golden Scarf on.#* Your tremendous taste for fashion#  makes monsters go easy on you.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "accessory";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Safety Goggles")
     {
@@ -723,7 +721,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (It looks like it has eyes#  now.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "accessory";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Delta Rune Patch")
     {
@@ -731,7 +729,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (The unwavering hopes and#  dreams of Monsterkind.)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "accessory";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "Silver Scarf")
     {
@@ -739,7 +737,7 @@ function scr_item_use_text_yellow()
         message[1] = "* (So cozy!)";
         item_use_hold.item_category = "equip";
         item_use_hold.item_type = "accessory";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     else if (item_slot == "H. Acid")
     {
@@ -751,7 +749,7 @@ function scr_item_use_text_yellow()
         message[0] = "* (You cannot use this item.)";
         item_use_hold.item_category = "nonconsumable";
         item_use_hold.item_type = "story";
-        item_use_hold.item_sound = snd_battle_item_equip;
+        item_use_hold.item_sound = 388;
     }
     
     if (global.route == 3)
@@ -772,7 +770,7 @@ function scr_item_use_text_yellow()
     
     if (execute_hp == true)
     {
-        cmsgn = item_use_hold.con_message_number;
+        var cmsgn = item_use_hold.con_message_number;
         
         if ((current_hp_self + item_use_hold.item_number) < max_hp_self)
             message[cmsgn] = message_add + "* (You recovered " + string(item_use_hold.item_number) + " HP!)";
@@ -782,7 +780,7 @@ function scr_item_use_text_yellow()
     
     if (execute_pp == true)
     {
-        cmsgn = item_use_hold.con_message_number;
+        var cmsgn = item_use_hold.con_message_number;
         
         if ((current_pp_self + item_use_hold.item_number) < max_pp_self)
             message[cmsgn] = message_add + "* (You gained " + string(item_use_hold.item_number) + " PP!)";
@@ -792,7 +790,7 @@ function scr_item_use_text_yellow()
     
     if (execute_sp == true)
     {
-        cmsgn = item_use_hold.con_message_number;
+        var cmsgn = item_use_hold.con_message_number;
         
         if ((current_sp_self + item_use_hold.item_number) < max_sp_self)
             message[cmsgn] = message_add + "* (You gained " + string(item_use_hold.item_number) + " SP!)";
@@ -802,7 +800,7 @@ function scr_item_use_text_yellow()
     
     if (execute_rp == true)
     {
-        cmsgn = item_use_hold.con_message_number;
+        var cmsgn = item_use_hold.con_message_number;
         
         if ((current_rp_self + item_use_hold.item_number) < max_rp_self)
             message[cmsgn] = message_add + "* You will heal for " + string(item_use_hold.item_number) + " turns!";

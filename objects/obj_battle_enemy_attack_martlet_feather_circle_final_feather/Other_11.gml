@@ -1,5 +1,3 @@
-var sound;
-
 if (live_call())
     return global.live_result;
 
@@ -7,6 +5,7 @@ state = 1;
 spin_default_x = x;
 spin_default_y = y;
 spin_direction = angle_position_current;
+var sound;
 
 switch (sprite_index)
 {

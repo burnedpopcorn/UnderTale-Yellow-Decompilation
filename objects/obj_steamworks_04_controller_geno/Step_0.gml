@@ -1,5 +1,3 @@
-var flowey;
-
 if (live_call())
     return global.live_result;
 
@@ -23,7 +21,7 @@ if (global.sworks_flag[0] == 0)
             break;
         
         case 1:
-            cutscene_npc_walk(1168, 224, obj_player_npc.y, 3, "x", "up");
+            cutscene_npc_walk(obj_player_npc, 224, obj_player_npc.y, 3, "x", "up");
             break;
         
         case 2:
@@ -35,14 +33,14 @@ if (global.sworks_flag[0] == 0)
             break;
         
         case 4:
-            flowey = instance_create(199, 364, obj_flowey_npc);
+            var flowey = instance_create(199, 364, obj_flowey_npc);
             flowey.image_alpha = 0;
             cutscene_advance();
             break;
         
         case 5:
             obj_flowey_npc.image_alpha = 1;
-            cutscene_npc_action_sprite(3194, 242, 0.2, false);
+            cutscene_npc_action_sprite(obj_flowey_npc, spr_floweyrise, 0.2, false);
             break;
         
         case 6:
@@ -50,13 +48,13 @@ if (global.sworks_flag[0] == 0)
             
             with (msg)
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* Howdy!";
                 message[1] = "* This area seems totally#  abandoned.";
                 message[2] = "* Guess there's no more#  need for fighting. Real#  shame.";
-                prt[0] = 354;
-                prt[1] = 353;
-                prt[2] = 352;
+                prt[0] = flowey_worriedside;
+                prt[1] = flowey_plains;
+                prt[2] = flowey_plain;
             }
             
             break;
@@ -66,7 +64,7 @@ if (global.sworks_flag[0] == 0)
             break;
         
         case 8:
-            cutscene_npc_direction(3194, "up");
+            cutscene_npc_direction(obj_flowey_npc, "up");
             break;
         
         case 9:
@@ -74,7 +72,7 @@ if (global.sworks_flag[0] == 0)
             break;
         
         case 10:
-            cutscene_npc_direction(3194, "down");
+            cutscene_npc_direction(obj_flowey_npc, "down");
             break;
         
         case 11:
@@ -82,11 +80,11 @@ if (global.sworks_flag[0] == 0)
             
             with (msg)
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* A generator, huh?";
                 message[1] = "* There's probably some#  way to turn it back on#  around he";
-                prt[0] = 353;
-                prt[1] = 348;
+                prt[0] = flowey_plains;
+                prt[1] = flowey_nice;
                 
                 if (message_current == 1)
                     message_timer = 15;
@@ -95,7 +93,7 @@ if (global.sworks_flag[0] == 0)
             break;
         
         case 12:
-            cutscene_npc_action_sprite(1168, 3313, 1, false);
+            cutscene_npc_action_sprite(obj_player_npc, spr_pl_up_geno_shoot, 1, false);
             
             if (obj_player_npc.image_index >= 8 && !instance_exists(obj_steamworks_04_generator_screen_geno))
             {
@@ -119,12 +117,12 @@ if (global.sworks_flag[0] == 0)
             break;
         
         case 14:
-            cutscene_npc_direction(3194, "down");
+            cutscene_npc_direction(obj_flowey_npc, "down");
             break;
         
         case 15:
             obj_player_npc.image_speed = 1;
-            cutscene_npc_action_sprite(1168, 3313, 1, false);
+            cutscene_npc_action_sprite(obj_player_npc, spr_pl_up_geno_shoot, 1, false);
             break;
         
         case 16:
@@ -132,13 +130,13 @@ if (global.sworks_flag[0] == 0)
             
             with (msg)
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* Oh, come on! Again??";
                 message[1] = "* Hate to rock your world#  but bullets aren't the#  answer to everything!";
                 message[2] = "* Would it kill you to#  think before shooting at#  your problems?";
-                prt[0] = 351;
-                prt[1] = 351;
-                prt[2] = 351;
+                prt[0] = flowey_pissed;
+                prt[1] = flowey_pissed;
+                prt[2] = flowey_pissed;
             }
             
             break;
@@ -148,7 +146,7 @@ if (global.sworks_flag[0] == 0)
             break;
         
         case 18:
-            cutscene_npc_walk(1168, obj_player_npc.x, 400, 1, "y", "up");
+            cutscene_npc_walk(obj_player_npc, obj_player_npc.x, 400, 1, "y", "up");
             break;
         
         case 19:
@@ -160,21 +158,21 @@ if (global.sworks_flag[0] == 0)
             
             with (msg)
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* Hey, it's just a#  pattern I've noticed#  recently!";
                 message[1] = "* You've already solved#  tons of puzzles on our#  journey.";
                 message[2] = "* I was only curious why#  your patience has worn#  so thin!";
                 message[3] = "* Cool it, will ya?";
-                prt[0] = 357;
-                prt[1] = 354;
-                prt[2] = 357;
-                prt[3] = 349;
+                prt[0] = flowey_worried;
+                prt[1] = flowey_worriedside;
+                prt[2] = flowey_worried;
+                prt[3] = flowey_smirk;
             }
             
             break;
         
         case 21:
-            cutscene_npc_walk(1168, 198, 384, 3, "x", "up");
+            cutscene_npc_walk(obj_player_npc, 198, 384, 3, "x", "up");
             break;
         
         case 22:
@@ -188,7 +186,7 @@ if (global.sworks_flag[0] == 0)
                 cutscene_camera_move(220, 120, 1, true);
             }
             
-            cutscene_npc_walk(1168, 96, 190, 3, "x", "up", false, 220, 128);
+            cutscene_npc_walk(obj_player_npc, 96, 190, 3, "x", "up", false, 220, 128);
             break;
         
         case 24:
@@ -204,7 +202,7 @@ if (global.sworks_flag[0] == 0)
         
         case 26:
             obj_flowey_npc.image_alpha = 1;
-            cutscene_npc_action_sprite(3194, 3745, 1, false);
+            cutscene_npc_action_sprite(obj_flowey_npc, spr_floweyrise_up, 1, false);
             break;
         
         case 27:
@@ -216,11 +214,11 @@ if (global.sworks_flag[0] == 0)
             
             with (msg)
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* Heh, I'm afraid that#  door is far too thick to#  shoot down.";
                 message[1] = "* Looks like you'll have#  to stick with my#  original plan of";
-                prt[0] = 347;
-                prt[1] = 348;
+                prt[0] = flowey_niceside;
+                prt[1] = flowey_nice;
                 
                 if (message_current == 1)
                     message_timer = 15;
@@ -229,7 +227,7 @@ if (global.sworks_flag[0] == 0)
             break;
         
         case 29:
-            cutscene_npc_action_sprite(1168, 2732, 1, true, 0);
+            cutscene_npc_action_sprite(obj_player_npc, spr_pl_up_geno_point, 1, true, 0);
             break;
         
         case 30:
@@ -241,19 +239,19 @@ if (global.sworks_flag[0] == 0)
             
             with (msg)
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* ...What?";
                 message[1] = "* Me?";
                 message[2] = "* You've found yourself#  some nerve, haven't you?";
-                prt[0] = 352;
-                prt[1] = 351;
-                prt[2] = 351;
+                prt[0] = flowey_plain;
+                prt[1] = flowey_pissed;
+                prt[2] = flowey_pissed;
             }
             
             break;
         
         case 32:
-            cutscene_npc_action_sprite(1168, 2943, 1, true, 0);
+            cutscene_npc_action_sprite(obj_player_npc, spr_pl_up_geno_point_turn, 1, true, 0);
             break;
         
         case 33:
@@ -265,16 +263,16 @@ if (global.sworks_flag[0] == 0)
             
             with (msg)
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* ...Fine.";
-                prt[0] = 353;
+                prt[0] = flowey_plains;
             }
             
             break;
         
         case 35:
             obj_player_npc.action_sprite = false;
-            cutscene_action_sprite(1983, 987, 1, true, 0, 537, 0);
+            cutscene_action_sprite(obj_steamworks_04_door, spr_steamworks_04_door_geno, 1, true, 0, snd_flowey_open_steamworks_door, 0);
             break;
         
         case 36:
@@ -293,9 +291,9 @@ if (global.sworks_flag[0] == 0)
             
             with (msg)
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* There. Your exit, my#  king.";
-                prt[0] = 349;
+                prt[0] = flowey_smirk;
             }
             
             break;
@@ -305,7 +303,7 @@ if (global.sworks_flag[0] == 0)
             break;
         
         case 40:
-            cutscene_npc_action_sprite(1168, 3340, 1, true, 0);
+            cutscene_npc_action_sprite(obj_player_npc, spr_pl_up_geno_turn, 1, true, 0);
             break;
         
         case 41:
@@ -317,19 +315,19 @@ if (global.sworks_flag[0] == 0)
             
             with (msg)
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* Did you forget my#  warning when you started#  down this road?";
                 message[1] = "* I'm in control here.";
                 message[2] = "* That hasn't and won't#  change, got it?";
                 message[3] = "* The next time you pull#  a stunt like this...";
                 message[4] = "* ...";
                 message[5] = "* Let's just keep moving.";
-                prt[0] = 352;
-                prt[1] = 349;
-                prt[2] = 348;
-                prt[3] = 347;
-                prt[4] = 352;
-                prt[5] = 353;
+                prt[0] = flowey_plain;
+                prt[1] = flowey_smirk;
+                prt[2] = flowey_nice;
+                prt[3] = flowey_niceside;
+                prt[4] = flowey_plain;
+                prt[5] = flowey_plains;
             }
             
             break;
@@ -344,7 +342,7 @@ if (global.sworks_flag[0] == 0)
             break;
         
         case 45:
-            if (cutscene_npc_action_sprite(3194, 245, 0.2, false))
+            if (cutscene_npc_action_sprite(obj_flowey_npc, spr_floweyleave, 0.2, false))
                 instance_destroy(obj_flowey_npc);
             
             break;
@@ -395,7 +393,7 @@ if (global.sworks_flag[1] == 3)
             break;
         
         case 4:
-            cutscene_change_room(152, 655, 170, 0.05);
+            cutscene_change_room(rm_steamworks_05d, 655, 170, 0.05);
             break;
     }
 }

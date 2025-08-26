@@ -1,13 +1,12 @@
-function scr_draw_dialogue_box(argument0, argument1, argument2)
+function scr_draw_dialogue_box(arg0, arg1, arg2)
 {
-    var xs1, ys1, xs2, ys2, xx, yy;
-    
-    xs1 = argument0;
-    ys1 = argument1;
-    bsize = argument2;
-    xs2 = xs1 + bsize;
-    ys2 = ys1 + bsize;
-    xx = 160;
+    var xs1 = arg0;
+    var ys1 = arg1;
+    bsize = arg2;
+    var xs2 = xs1 + bsize;
+    var ys2 = ys1 + bsize;
+    var xx = 160;
+    var yy;
     
     if (position == 0)
         yy = 198;

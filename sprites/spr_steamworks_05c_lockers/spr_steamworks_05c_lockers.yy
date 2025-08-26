@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3ad82f91-e301-4495-bffd-4629da611459",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"44765302-dbf7-4841-bb5e-2b7be2458064",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4bbd45b6-3874-4c9f-891d-feee3ca8d465",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"57892536-b5f9-4d22-8643-09822c1080a6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"00f2867b-297a-42c6-82b3-44a1264be229",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4852e4e3-4c36-4d98-9f2b-374a18b2a733",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 115,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0e1d555c-84e3-424d-aef1-8c8b62d9c0c7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a33a2d9c-6ed8-4e49-8ef8-252760846709","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3ad82f91-e301-4495-bffd-4629da611459","path":"sprites/spr_steamworks_05c_lockers/spr_steamworks_05c_lockers.yy",},},},"Disabled":false,"id":"a61f94f5-7737-4b89-b6bf-3b74e2701813","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"44765302-dbf7-4841-bb5e-2b7be2458064","path":"sprites/spr_steamworks_05c_lockers/spr_steamworks_05c_lockers.yy",},},},"Disabled":false,"id":"dd608727-327a-4ed5-87cb-2eaff66dc8eb","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4bbd45b6-3874-4c9f-891d-feee3ca8d465","path":"sprites/spr_steamworks_05c_lockers/spr_steamworks_05c_lockers.yy",},},},"Disabled":false,"id":"ad1eb424-8cba-46d3-9cfe-7459ebcd1ca9","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"57892536-b5f9-4d22-8643-09822c1080a6","path":"sprites/spr_steamworks_05c_lockers/spr_steamworks_05c_lockers.yy",},},},"Disabled":false,"id":"a2d7b10a-74fc-428e-8c99-c2d13665d010","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"00f2867b-297a-42c6-82b3-44a1264be229","path":"sprites/spr_steamworks_05c_lockers/spr_steamworks_05c_lockers.yy",},},},"Disabled":false,"id":"64d6a3a7-5705-4a59-bb71-7342fad359d7","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4852e4e3-4c36-4d98-9f2b-374a18b2a733","path":"sprites/spr_steamworks_05c_lockers/spr_steamworks_05c_lockers.yy",},},},"Disabled":false,"id":"8134404b-231e-43bc-afbf-185bc325778c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Steamworks",
+    "path": "texturegroups/Steamworks",
   },
   "type": 0,
   "VTile": false,

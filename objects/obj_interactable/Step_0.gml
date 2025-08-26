@@ -1,8 +1,6 @@
-var narrator, i, j, c;
-
 message_length = array_length_1d(message);
 
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     if (target_direction != -1 && obj_pl.direction != target_direction)
         exit;
@@ -13,7 +11,7 @@ if (keyboard_multicheck_pressed(0))
         {
             if (!instance_exists(obj_dialogue_narrator))
             {
-                narrator = instance_create_depth(0, 0, -100, obj_dialogue_narrator);
+                var narrator = instance_create_depth(0, 0, -100, obj_dialogue_narrator);
                 
                 with (narrator)
                 {
@@ -33,15 +31,15 @@ if (keyboard_multicheck_pressed(0))
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             
-            for (i = 0; i < other.message_length; i++)
+            for (var i = 0; i < other.message_length; i++)
             {
                 message[i] = other.message[i];
                 
                 if (i <= (array_length(other.message_col) - 1))
                 {
-                    for (j = 0; j < array_length(other.message_col[i]); j++)
+                    for (var j = 0; j < array_length(other.message_col[i]); j++)
                         message_col[i][j] = other.message_col[i][j];
                 }
             }
@@ -50,7 +48,7 @@ if (keyboard_multicheck_pressed(0))
             {
                 color = other.color;
                 
-                for (c = 0; c < array_length_1d(other.col_modif); c++)
+                for (var c = 0; c < array_length_1d(other.col_modif); c++)
                     col_modif[c] = other.col_modif[c];
             }
         }

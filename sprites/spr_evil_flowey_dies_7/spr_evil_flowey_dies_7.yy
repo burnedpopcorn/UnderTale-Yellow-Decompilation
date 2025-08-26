@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3e6ac327-932e-45cb-b724-489557ee4c0c",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9aa613b7-f166-4f20-8207-4af6541e4acb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"746ab12d-8dbc-4939-b808-4c415616fd23",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"58d64a51-044a-473c-9d6c-f833d1afb361",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 88,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6bec420b-61f4-44cb-8af2-07b627c258cc","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cf6806a7-e095-4827-ad5b-47acdf151b61","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3e6ac327-932e-45cb-b724-489557ee4c0c","path":"sprites/spr_evil_flowey_dies_7/spr_evil_flowey_dies_7.yy",},},},"Disabled":false,"id":"3933fa8d-4bad-4513-b918-0b7cba1fa3be","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9aa613b7-f166-4f20-8207-4af6541e4acb","path":"sprites/spr_evil_flowey_dies_7/spr_evil_flowey_dies_7.yy",},},},"Disabled":false,"id":"496244e7-647e-4855-8e35-ad765c6c901c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"746ab12d-8dbc-4939-b808-4c415616fd23","path":"sprites/spr_evil_flowey_dies_7/spr_evil_flowey_dies_7.yy",},},},"Disabled":false,"id":"cc4d77f3-4f8a-4d36-87f1-5d4e82cf16c5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"58d64a51-044a-473c-9d6c-f833d1afb361","path":"sprites/spr_evil_flowey_dies_7/spr_evil_flowey_dies_7.yy",},},},"Disabled":false,"id":"a35f8816-4d15-46ee-a45d-1da376312714","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Hotland",
+    "path": "texturegroups/Hotland",
   },
   "type": 0,
   "VTile": false,

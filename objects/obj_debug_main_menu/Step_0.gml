@@ -1,5 +1,3 @@
-var trn;
-
 if (live_call())
     return global.live_result;
 
@@ -75,7 +73,7 @@ if (pos > 5)
 else
     page = 1;
 
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     if (pos == 0)
     {
@@ -97,7 +95,7 @@ if (keyboard_multicheck_pressed(0))
     
     if (pos >= 2)
     {
-        trn = instance_create(0, 0, obj_transition_white_debug);
+        var trn = instance_create(0, 0, obj_transition_white_debug);
         trn.new_route = current_route;
         audio_stop_sound(creepymus);
         audio_play_sound(snd_mo_pop, 1, 0);
@@ -106,23 +104,23 @@ if (keyboard_multicheck_pressed(0))
         switch (pos)
         {
             case 2:
-                trn.new_room = 6;
+                trn.new_room = rm_ruins00;
                 break;
             
             case 3:
-                trn.new_room = 43;
+                trn.new_room = rm_snowdin_01_yellow;
                 break;
             
             case 4:
-                trn.new_room = 77;
+                trn.new_room = rm_dunes_01;
                 break;
             
             case 5:
-                trn.new_room = 105;
+                trn.new_room = rm_dunes_24;
                 break;
             
             case 6:
-                trn.new_room = 127;
+                trn.new_room = rm_dunes_37;
                 break;
         }
         

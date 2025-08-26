@@ -1,9 +1,7 @@
 function scr_determine_enemy_music_yellow()
 {
-    var current_world_value, battle_mus, mus_pitch;
-    
-    current_world_value = script_execute(scr_determine_world_value_yellow);
-    battle_mus = 124;
+    var current_world_value = script_execute(scr_determine_world_value_yellow);
+    var battle_mus = 124;
     
     switch (current_world_value)
     {
@@ -36,7 +34,7 @@ function scr_determine_enemy_music_yellow()
             {
                 audio_sound_gain(mus_genobattle_yellow, 1, 0);
                 audio_play_sound(mus_genobattle_yellow, 20, true);
-                mus_pitch = (global.kill_number[current_world_value] / 7) * 10 * 0.1;
+                var mus_pitch = (global.kill_number[current_world_value] / 7) * 10 * 0.1;
                 audio_sound_pitch(mus_genobattle_yellow, mus_pitch);
             }
             else

@@ -1,5 +1,3 @@
-var weaken_sound, heart, new_soul, i, new_capsule, yellow_col;
-
 if (live_call())
     return global.live_result;
 
@@ -17,7 +15,7 @@ if (stage == 1)
     {
         if (global.hit_self == true)
         {
-            weaken_sound = audio_play_sound(snd_soul_gameover_hit, 1, 0);
+            var weaken_sound = audio_play_sound(snd_soul_gameover_hit, 1, 0);
             audio_sound_pitch(weaken_sound, 0.75);
             soul_shake = true;
             obj_heart_battle_fighting_parent.moveable = false;
@@ -83,7 +81,7 @@ if (stage == 1)
 }
 else
 {
-    heart = obj_heart_battle_fighting_parent;
+    var heart = obj_heart_battle_fighting_parent;
     
     switch (scene)
     {
@@ -158,8 +156,8 @@ else
                 obj_battle_enemy_attack_asgore_soul_capsule.image_speed = 0;
                 obj_battle_enemy_attack_asgore_soul_capsule.image_index = 0;
                 obj_battle_enemy_attack_asgore_soul_capsule.soul_color = make_color_rgb(255, 255, 0);
-                new_soul = instance_create_depth(obj_battle_enemy_attack_asgore_soul_capsule.x, obj_battle_enemy_attack_asgore_soul_capsule.y, -1000, obj_barrier_soul_battle);
-                new_soul.spawner = 2884;
+                var new_soul = instance_create_depth(obj_battle_enemy_attack_asgore_soul_capsule.x, obj_battle_enemy_attack_asgore_soul_capsule.y, -1000, obj_barrier_soul_battle);
+                new_soul.spawner = 2885;
                 new_soul.image_alpha = 1;
                 new_soul.image_xscale = 2;
                 new_soul.image_yscale = 2;
@@ -180,15 +178,15 @@ else
             soul_color[3] = make_color_rgb(0, 0, 255);
             soul_color[4] = make_color_rgb(0, 255, 255);
             
-            for (i = 0; i < 5; i++)
+            for (var i = 0; i < 5; i++)
             {
-                new_capsule = instance_create_depth(192 + (64 * i), 384, -1010, obj_battle_enemy_attack_asgore_soul_capsule);
+                var new_capsule = instance_create_depth(192 + (64 * i), 384, -1010, obj_battle_enemy_attack_asgore_soul_capsule);
                 new_capsule.sprite_index = spr_container_open;
                 new_capsule.image_speed = 0;
                 new_capsule.image_index = 0;
                 new_capsule.image_alpha = 0;
                 new_capsule.soul_color = other.soul_color[i];
-                new_soul = instance_create_depth(new_capsule.x, new_capsule.y, -1020, obj_barrier_soul_battle);
+                var new_soul = instance_create_depth(new_capsule.x, new_capsule.y, -1020, obj_barrier_soul_battle);
                 new_soul.spawner = new_capsule;
                 new_soul.image_alpha = 0;
                 new_soul.image_xscale = 2;
@@ -201,7 +199,7 @@ else
             break;
         
         case 8:
-            yellow_col = make_color_rgb(255, 255, 0);
+            var yellow_col = make_color_rgb(255, 255, 0);
             
             with (obj_battle_enemy_attack_asgore_soul_capsule)
             {
@@ -241,7 +239,7 @@ else
             
             with (msg)
             {
-                sndfnt = 267;
+                sndfnt = snd_talk_asgore;
                 message[0] = "       Rest well, young one.";
                 message[1] = "           I am sorry.";
                 skippable = false;

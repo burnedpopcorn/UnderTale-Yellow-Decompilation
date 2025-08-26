@@ -1,5 +1,3 @@
-var xp, yp;
-
 if (live_call())
     return global.live_result;
 
@@ -18,6 +16,6 @@ part_type_speed(global.pt_Effect1, 8, 8, 0, 0);
 part_type_direction(global.pt_Effect1, 270, 270, 0, 0);
 part_type_gravity(global.pt_Effect1, 0, 0);
 global.pe_Effect1 = part_emitter_create(global.ps);
-xp = x;
-yp = y;
+var xp = x;
+var yp = y;
 part_emitter_region(global.ps, global.pe_Effect1, xp - 80, xp + 80, yp - 30, yp + 30, 0, 0);

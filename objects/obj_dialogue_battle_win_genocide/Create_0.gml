@@ -1,5 +1,3 @@
-var i;
-
 global.player_exp += global.enemy_exp;
 global.player_gold += global.enemy_gold;
 
@@ -17,7 +15,7 @@ else if (global.game_mode == "yellow")
 
 if (global.player_exp >= global.player_exp_next[global.player_level])
 {
-    for (i = global.player_level; i <= 20; i += 1)
+    for (var i = global.player_level; i <= 20; i += 1)
     {
         if (global.player_exp >= global.player_exp_next[i])
         {

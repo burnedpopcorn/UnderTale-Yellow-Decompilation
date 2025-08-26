@@ -1,6 +1,4 @@
-var color_part;
-
-color_part = make_colour_rgb(228, 69, 101);
+var color_part = make_colour_rgb(228, 69, 101);
 part_embersys = part_system_create();
 part_emberEm = part_emitter_create(part_embersys);
 part_system_depth(part_embersys, 60);

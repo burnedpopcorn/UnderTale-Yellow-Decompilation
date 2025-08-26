@@ -1,14 +1,12 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+battle_box = obj_dialogue_box_battle_transformation_any;
 attack_tick = 0;
 frog_count = 4;
 scr_enable_battle_box_surface();
 
-for (i = 0; i < frog_count; i++)
+for (var i = 0; i < frog_count; i++)
 {
     frog_top[i] = instance_create_depth(battle_box.bbox_left - 20 - (45 * i), battle_box.bbox_bottom - 4, -100, obj_battle_enemy_attack_bigfrog_frog_run);
     frog_bot[i] = instance_create_depth(battle_box.bbox_right + 20 + (45 * i), battle_box.bbox_top + 4, -100, obj_battle_enemy_attack_bigfrog_frog_run);

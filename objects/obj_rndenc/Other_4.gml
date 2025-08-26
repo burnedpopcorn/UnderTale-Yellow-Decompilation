@@ -1,6 +1,4 @@
-var specific_encounter;
-
-specific_encounter = "null";
+var specific_encounter = "null";
 
 switch (room)
 {

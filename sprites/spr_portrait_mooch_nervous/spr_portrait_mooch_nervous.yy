@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2162c6ca-dc4e-4c7f-b82e-7008920d719b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5efa187d-9556-491c-aee8-ac10571e9a4e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c5e3add6-7439-44f5-86e9-6ac74df4d24f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a8422aa4-33df-4ba8-9cb6-85370ab4ae87",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 112,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e08bee85-883b-4227-b3d3-0e01956c92f5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3c369035-b58c-43c7-aba8-8f7a6f961001","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2162c6ca-dc4e-4c7f-b82e-7008920d719b","path":"sprites/spr_portrait_mooch_nervous/spr_portrait_mooch_nervous.yy",},},},"Disabled":false,"id":"31b7d71a-a7f8-41aa-beee-68a1f52763ee","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5efa187d-9556-491c-aee8-ac10571e9a4e","path":"sprites/spr_portrait_mooch_nervous/spr_portrait_mooch_nervous.yy",},},},"Disabled":false,"id":"56befec9-e5dd-45dc-b3b5-1053725378ee","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c5e3add6-7439-44f5-86e9-6ac74df4d24f","path":"sprites/spr_portrait_mooch_nervous/spr_portrait_mooch_nervous.yy",},},},"Disabled":false,"id":"5fe30f00-3265-4102-a565-73e1574de983","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a8422aa4-33df-4ba8-9cb6-85370ab4ae87","path":"sprites/spr_portrait_mooch_nervous/spr_portrait_mooch_nervous.yy",},},},"Disabled":false,"id":"5502be0d-6ee1-4e30-8acf-6b9499934b77","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "WildEast",
+    "path": "texturegroups/WildEast",
   },
   "type": 0,
   "VTile": false,

@@ -1,10 +1,8 @@
-var yy_left, yy_right;
-
 if (live_call())
     return global.live_result;
 
-yy_left = 0;
-yy_right = 0;
+var yy_left = 0;
+var yy_right = 0;
 
 if (image_index >= 5 && image_index < 11)
     yy_right -= 10;

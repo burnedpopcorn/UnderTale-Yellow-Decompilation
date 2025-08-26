@@ -16,7 +16,7 @@ if (waiter == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Oh ho! Why if it isn't the#  Deputy!";
                     message[1] = "* Will you sign my needle? ";
                     message[2] = "* Please do!";
@@ -51,7 +51,7 @@ if (waiter == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Good luck with the new job! Ah#  ha!!";
                 }
                 
@@ -68,7 +68,7 @@ if (waiter == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Why if it isn't the Deputy!\t";
                     message[1] = "* Do you think the Feisty Five#  will ever get back together!\t";
                     message[2] = "* I hope-hope-hope they do!\t";
@@ -82,7 +82,7 @@ if (waiter == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* You're Star's right-hand man,#  correct?\t";
                     message[1] = "* If you see him, tell him we#  all miss his leadership!\t";
                     message[2] = "* That we do!";

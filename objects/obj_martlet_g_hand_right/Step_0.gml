@@ -1,8 +1,6 @@
-var enemy_dead, enemy_spared, enemy_mode;
-
-enemy_dead = global.enemy_dead;
-enemy_spared = global.enemy_spared;
-enemy_mode = global.enemy_mode;
+var enemy_dead = global.enemy_dead;
+var enemy_spared = global.enemy_spared;
+var enemy_mode = global.enemy_mode;
 
 if (enemy_dead == true)
 {
@@ -23,9 +21,9 @@ if (damage_disjoint_count > 0)
 else if (enemy_dead == false && enemy_spared == false)
 {
     if (obj_martlet_g_body.fight_mode == true)
-        hand_right_sprite = spr_martlet_g_hand_right;
+        hand_right_sprite = 2074;
     else
-        hand_right_sprite = spr_martlet_hand_right_down;
+        hand_right_sprite = 2058;
 }
 
 if (instance_exists(obj_text_damage_count) && global.fight_number == 1 && no_loop_damage_disjoint_count == false)

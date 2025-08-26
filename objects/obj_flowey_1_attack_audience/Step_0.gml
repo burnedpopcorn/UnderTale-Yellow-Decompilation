@@ -1,9 +1,7 @@
-var box, spawnx, spawny;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if (fadeout == false)
 {
@@ -21,8 +19,8 @@ else
 }
 
 throw_dir = irandom_range(135, 405);
-spawnx = x + lengthdir_x(spawn_dist, throw_dir);
-spawny = y + lengthdir_y(spawn_dist, throw_dir);
+var spawnx = x + lengthdir_x(spawn_dist, throw_dir);
+var spawny = y + lengthdir_y(spawn_dist, throw_dir);
 
 if (active == true)
 {

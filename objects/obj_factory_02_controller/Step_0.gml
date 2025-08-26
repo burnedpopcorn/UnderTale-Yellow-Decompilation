@@ -9,7 +9,7 @@ switch (scene)
     case 1:
         scr_cutscene_start();
         scr_audio_fade_out(obj_radio.current_song, 750);
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         break;
     
     case 2:
@@ -25,7 +25,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_sfx_play(318, 1);
+        cutscene_sfx_play(snd_generator_start, 1);
         obj_steamworks_factory_02_face.sprite_index = spr_steamworks_38_face_hello;
         break;
     
@@ -69,11 +69,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Uh, hello?";
             message[1] = "* Are you sentient or a#  pre-recording?";
-            prt[0] = 381;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_nervous;
+            prt[1] = spr_portrait_ceroba_neutral;
         }
         
         break;
@@ -96,13 +96,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Right...";
             message[1] = "* Can you unlock all the#  doors in this factory?";
             message[2] = "* We're in a hurry.";
-            prt[0] = 382;
-            prt[1] = 370;
-            prt[2] = 377;
+            prt[0] = spr_portrait_ceroba_muttering;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
         }
         
         break;
@@ -131,9 +131,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* What kind of policy is#  that???";
-            prt[0] = 368;
+            prt[0] = spr_portrait_ceroba_irked;
         }
         
         break;
@@ -159,9 +159,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Of course but I don't#  work here!";
-            prt[0] = 384;
+            prt[0] = spr_portrait_ceroba_unamused;
         }
         
         break;
@@ -196,17 +196,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Fine, we'll do the job!";
             message[1] = "* Clover, this bot might#  have connections to#  Axis.";
             message[2] = "* Seems we gotta do what#  it says to avoid#  unwanted attention.";
             message[3] = "* You can work this thing#  right?";
             message[4] = "* Push the start button#  and we'll get it over#  with.";
-            prt[0] = 377;
-            prt[1] = 370;
-            prt[2] = 377;
-            prt[3] = 370;
-            prt[4] = 370;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
+            prt[3] = spr_portrait_ceroba_neutral;
+            prt[4] = spr_portrait_ceroba_neutral;
             
             if (message_current == 1)
                 obj_ceroba_npc.npc_direction = "right";
@@ -215,7 +215,7 @@ switch (scene)
         break;
     
     case 20:
-        cutscene_npc_direction(1161, "up");
+        cutscene_npc_direction(obj_ceroba_npc, "up");
         break;
     
     case 21:
@@ -223,7 +223,7 @@ switch (scene)
         break;
     
     case 22:
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         break;
     
     case 23:
@@ -277,11 +277,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Your machine's broken.";
             message[1] = "* The second conveyor#  belt doesn't move.";
-            prt[0] = 377;
-            prt[1] = 371;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_alt;
         }
         
         break;
@@ -311,11 +311,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* ...Yes?";
             message[1] = "* It's broke-";
-            prt[0] = 371;
-            prt[1] = 377;
+            prt[0] = spr_portrait_ceroba_alt;
+            prt[1] = spr_portrait_ceroba_closed_eyes;
             
             if (message_current == 1)
             {
@@ -348,11 +348,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* ...";
             message[1] = "* Screw this.";
-            prt[0] = 384;
-            prt[1] = 384;
+            prt[0] = spr_portrait_ceroba_unamused;
+            prt[1] = spr_portrait_ceroba_unamused;
         }
         
         break;
@@ -370,7 +370,7 @@ switch (scene)
         obj_ceroba_npc.sprite_index = spr_ceroba_up_run;
         obj_ceroba_npc.image_index = 0;
         obj_ceroba_npc.image_speed = 0;
-        cutscene_sfx_play(373, 1);
+        cutscene_sfx_play(snd_playerjump, 1);
         break;
     
     case 39:
@@ -396,7 +396,7 @@ switch (scene)
         obj_ceroba_npc.action_sprite = false;
         obj_ceroba_npc.npc_direction = "up";
         scr_screenshake(1, 1);
-        cutscene_sfx_play(384, 1);
+        cutscene_sfx_play(snd_undertale_thud, 1);
         break;
     
     case 42:
@@ -404,7 +404,7 @@ switch (scene)
         break;
     
     case 43:
-        cutscene_npc_direction(1161, "down");
+        cutscene_npc_direction(obj_ceroba_npc, "down");
         break;
     
     case 44:
@@ -412,15 +412,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Clover, you box the#  goods and I'll toss 'em#  into the chute.";
             message[1] = "* Teamwork, right? ";
             message[2] = "* Something like that.";
             message[3] = "* Let's give it a shot!";
-            prt[0] = 370;
-            prt[1] = 377;
-            prt[2] = 371;
-            prt[3] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_closed_eyes;
+            prt[2] = spr_portrait_ceroba_alt;
+            prt[3] = spr_portrait_ceroba_neutral;
         }
         
         break;
@@ -483,11 +483,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Hey alright! Good work,#  Clover!";
             message[1] = "* Onto whatever awaits us#  next...";
-            prt[0] = 372;
-            prt[1] = 371;
+            prt[0] = spr_portrait_ceroba_smile;
+            prt[1] = spr_portrait_ceroba_alt;
         }
         
         break;

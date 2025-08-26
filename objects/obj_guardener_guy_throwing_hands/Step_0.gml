@@ -1,5 +1,3 @@
-var dir_min, dir_max, item;
-
 if (live_call())
     return global.live_result;
 
@@ -46,17 +44,17 @@ if (image_index >= 5 && throw_noloop == false)
 {
     if (bombs == true)
     {
-        dir_min = 60;
-        dir_max = 80;
-        item = instance_create_depth(x, y, depth, obj_battle_enemy_attack_guardener_throwable_bomb);
+        var dir_min = 60;
+        var dir_max = 80;
+        var item = instance_create_depth(x, y, depth, obj_battle_enemy_attack_guardener_throwable_bomb);
         item.direction = irandom_range(dir_min, dir_max) * image_xscale;
         item.speed = 8 * image_xscale;
     }
     else
     {
-        item = instance_create_depth(x, y, depth, obj_battle_enemy_attack_guardener_throwable_item);
-        dir_min = 25;
-        dir_max = 80;
+        var item = instance_create_depth(x, y, depth, obj_battle_enemy_attack_guardener_throwable_item);
+        var dir_min = 25;
+        var dir_max = 80;
         item.direction = irandom_range(dir_min, dir_max) * image_xscale;
         item.speed = 8 * image_xscale;
     }

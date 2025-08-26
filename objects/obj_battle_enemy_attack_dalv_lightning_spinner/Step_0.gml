@@ -1,5 +1,3 @@
-var move_steps;
-
 if (image_alpha < 1 && move == false)
 {
     image_alpha += 0.1;
@@ -29,7 +27,7 @@ if (move == true)
     if (image_angle > 360)
         image_angle -= 360;
     
-    move_steps = 1 + floor(spin_speed / (spin_speed_max / 2));
+    var move_steps = 1 + floor(spin_speed / (spin_speed_max / 2));
     
     for (i = 0; i < move_steps; i += 1)
     {

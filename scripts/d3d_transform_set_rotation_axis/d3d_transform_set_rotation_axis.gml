@@ -1,18 +1,17 @@
-function d3d_transform_set_rotation_axis(argument0, argument1, argument2, argument3)
+function d3d_transform_set_rotation_axis(arg0, arg1, arg2, arg3)
 {
-    var c, s, omc, xx, yy, zz, length2, length, m;
-    
-    c = dcos(-argument3);
-    s = dsin(-argument3);
-    omc = 1 - c;
-    xx = argument0;
-    yy = argument1;
-    zz = argument2;
-    length2 = sqr(xx) + sqr(yy) + sqr(zz);
-    length = sqrt(length2);
+    var c = dcos(-arg3);
+    var s = dsin(-arg3);
+    var omc = 1 - c;
+    var xx = arg0;
+    var yy = arg1;
+    var zz = arg2;
+    var length2 = sqr(xx) + sqr(yy) + sqr(zz);
+    var length = sqrt(length2);
     xx /= length;
     yy /= length;
     zz /= length;
+    var m;
     m[0] = (omc * xx * xx) + c;
     m[1] = (omc * xx * yy) + (s * zz);
     m[2] = (omc * xx * zz) - (s * yy);

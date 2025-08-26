@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 3.5520182,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "snd/wood_zap.ogg",
+  "soundFile": "wood_zap.ogg",
   "type": 0,
   "volume": 1.0,
 }

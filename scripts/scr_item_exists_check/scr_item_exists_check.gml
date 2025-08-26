@@ -1,10 +1,8 @@
-function scr_item_exists_check(argument0)
+function scr_item_exists_check(arg0)
 {
-    var i;
-    
-    for (i = 1; i <= 8; i += 1)
+    for (var i = 1; i <= 8; i += 1)
     {
-        if (global.item_slot[i] == argument0)
+        if (global.item_slot[i] == arg0)
         {
             return true;
             exit;

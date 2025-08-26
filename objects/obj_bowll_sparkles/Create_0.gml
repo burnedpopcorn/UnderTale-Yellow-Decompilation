@@ -1,6 +1,4 @@
-var random_number;
-
-random_number = irandom_range(0, 1);
+var random_number = irandom_range(0, 1);
 
 if (random_number == 0)
     sprite_index = spr_bowll_sparkles_small;

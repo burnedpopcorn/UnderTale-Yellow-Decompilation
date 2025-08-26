@@ -1,15 +1,13 @@
-function scr_walk_ai(argument0, argument1, argument2, argument3, argument4)
+function scr_walk_ai(arg0, arg1, arg2, arg3, arg4)
 {
-    var destination_x, destination_y, axis_override, result;
-    
-    dalv_walk_speed = argument3;
+    dalv_walk_speed = arg3;
     condition_1 = false;
     
     if (no_loop_destination_dalv == false)
     {
-        destination_x = abs(x - argument0);
-        destination_y = abs(y - argument1);
-        axis_override = argument4;
+        var destination_x = abs(x - arg0);
+        var destination_y = abs(y - arg1);
+        var axis_override = arg4;
         
         if (axis_override == "x" || axis_override == "y")
         {
@@ -17,7 +15,7 @@ function scr_walk_ai(argument0, argument1, argument2, argument3, argument4)
         }
         else
         {
-            result = sign(destination_x - destination_y);
+            var result = sign(destination_x - destination_y);
             
             switch (result)
             {
@@ -34,12 +32,12 @@ function scr_walk_ai(argument0, argument1, argument2, argument3, argument4)
             }
         }
         
-        dalv_walk_speed_x = sign(argument0 - x) * dalv_walk_speed;
-        dalv_walk_speed_y = sign(argument1 - y) * dalv_walk_speed;
+        dalv_walk_speed_x = sign(arg0 - x) * dalv_walk_speed;
+        dalv_walk_speed_y = sign(arg1 - y) * dalv_walk_speed;
         no_loop_destination_dalv = true;
     }
     
-    if (x == argument0 && y == argument1)
+    if (x == arg0 && y == arg1)
     {
         npc_walking = false;
         path_speed = 0;
@@ -54,10 +52,10 @@ function scr_walk_ai(argument0, argument1, argument2, argument3, argument4)
             x_previous = x;
             x += dalv_walk_speed_x;
             
-            if (abs(argument0 - x) < dalv_walk_speed && place_free(argument0, y) && !place_meeting(argument0, y, argument2))
-                x = argument0;
+            if (abs(arg0 - x) < dalv_walk_speed && place_free(arg0, y) && !place_meeting(arg0, y, arg2))
+                x = arg0;
             
-            if (place_free(x, y) && !place_meeting(x, y, argument2) && x_previous != argument0)
+            if (place_free(x, y) && !place_meeting(x, y, arg2) && x_previous != arg0)
             {
                 npc_walking = true;
                 image_speed = 0.2;
@@ -68,28 +66,28 @@ function scr_walk_ai(argument0, argument1, argument2, argument3, argument4)
                     direction = 0;
             }
             
-            if (!place_free(x, y) || place_meeting(x, y, argument2) || x_previous == argument0)
+            if (!place_free(x, y) || place_meeting(x, y, arg2) || x_previous == arg0)
             {
                 x = x_previous;
                 dalv_walk_axis = "y";
                 exit;
             }
             
-            dalv_walk_speed_y = sign(argument1 - y) * dalv_walk_speed;
+            dalv_walk_speed_y = sign(arg1 - y) * dalv_walk_speed;
             i = x + dalv_walk_speed_x;
             j = y;
             
-            if (abs(argument0 - i) < dalv_walk_speed)
-                i = argument0;
+            if (abs(arg0 - i) < dalv_walk_speed)
+                i = arg0;
             
-            while (j != argument1)
+            while (j != arg1)
             {
                 j += dalv_walk_speed_y;
                 
-                if (abs(argument1 - j) < dalv_walk_speed)
-                    j = argument1;
+                if (abs(arg1 - j) < dalv_walk_speed)
+                    j = arg1;
                 
-                if (!place_free(i, j) || place_meeting(i, j, argument2))
+                if (!place_free(i, j) || place_meeting(i, j, arg2))
                 {
                     condition_1 = true;
                     break;
@@ -98,26 +96,26 @@ function scr_walk_ai(argument0, argument1, argument2, argument3, argument4)
             
             if (condition_1 == true)
             {
-                while (i != argument0)
+                while (i != arg0)
                 {
                     i += dalv_walk_speed_x;
                     j = y;
                     
-                    if (abs(argument0 - i) < dalv_walk_speed)
-                        i = argument0;
+                    if (abs(arg0 - i) < dalv_walk_speed)
+                        i = arg0;
                     
-                    while (j != argument1)
+                    while (j != arg1)
                     {
                         j += dalv_walk_speed_y;
                         
-                        if (abs(argument1 - j) < dalv_walk_speed)
-                            j = argument1;
+                        if (abs(arg1 - j) < dalv_walk_speed)
+                            j = arg1;
                         
-                        if (i == argument0 && j == argument1)
+                        if (i == arg0 && j == arg1)
                             exit;
-                        else if (!place_free(i, j) || place_meeting(i, j, argument2))
+                        else if (!place_free(i, j) || place_meeting(i, j, arg2))
                             break;
-                        else if (j == argument1)
+                        else if (j == arg1)
                             exit;
                     }
                 }
@@ -132,10 +130,10 @@ function scr_walk_ai(argument0, argument1, argument2, argument3, argument4)
             y_previous = y;
             y += dalv_walk_speed_y;
             
-            if (abs(argument1 - y) < dalv_walk_speed && place_free(x, argument1) && !place_meeting(x, argument1, argument2))
-                y = argument1;
+            if (abs(arg1 - y) < dalv_walk_speed && place_free(x, arg1) && !place_meeting(x, arg1, arg2))
+                y = arg1;
             
-            if (place_free(x, y) && !place_meeting(x, y, argument2) && y_previous != argument1)
+            if (place_free(x, y) && !place_meeting(x, y, arg2) && y_previous != arg1)
             {
                 npc_walking = true;
                 image_speed = 0.2;
@@ -146,28 +144,28 @@ function scr_walk_ai(argument0, argument1, argument2, argument3, argument4)
                     direction = 270;
             }
             
-            if (!place_free(x, y) || place_meeting(x, y, argument2) || y_previous == argument1)
+            if (!place_free(x, y) || place_meeting(x, y, arg2) || y_previous == arg1)
             {
                 y = y_previous;
                 dalv_walk_axis = "x";
                 exit;
             }
             
-            dalv_walk_speed_x = sign(argument0 - x) * dalv_walk_speed;
+            dalv_walk_speed_x = sign(arg0 - x) * dalv_walk_speed;
             i = x;
             j = y + dalv_walk_speed_y;
             
-            if (abs(argument1 - j) < dalv_walk_speed)
-                j = argument1;
+            if (abs(arg1 - j) < dalv_walk_speed)
+                j = arg1;
             
-            while (i != argument0)
+            while (i != arg0)
             {
                 i += dalv_walk_speed_x;
                 
-                if (abs(argument0 - i) < dalv_walk_speed)
-                    i = argument0;
+                if (abs(arg0 - i) < dalv_walk_speed)
+                    i = arg0;
                 
-                if (!place_free(i, j) || place_meeting(i, j, argument2))
+                if (!place_free(i, j) || place_meeting(i, j, arg2))
                 {
                     condition_1 = true;
                     break;
@@ -176,26 +174,26 @@ function scr_walk_ai(argument0, argument1, argument2, argument3, argument4)
             
             if (condition_1 == true)
             {
-                while (j != argument1)
+                while (j != arg1)
                 {
                     i = x;
                     j += dalv_walk_speed_y;
                     
-                    if (abs(argument1 - j) < dalv_walk_speed)
-                        j = argument1;
+                    if (abs(arg1 - j) < dalv_walk_speed)
+                        j = arg1;
                     
-                    while (i != argument0)
+                    while (i != arg0)
                     {
                         i += dalv_walk_speed_x;
                         
-                        if (abs(argument0 - i) < dalv_walk_speed)
-                            i = argument0;
+                        if (abs(arg0 - i) < dalv_walk_speed)
+                            i = arg0;
                         
-                        if (i == argument0 && j == argument1)
+                        if (i == arg0 && j == arg1)
                             exit;
-                        else if (!place_free(i, j) || place_meeting(i, j, argument2))
+                        else if (!place_free(i, j) || place_meeting(i, j, arg2))
                             break;
-                        else if (i == argument0)
+                        else if (i == arg0)
                             exit;
                     }
                 }
@@ -207,7 +205,7 @@ function scr_walk_ai(argument0, argument1, argument2, argument3, argument4)
             break;
     }
     
-    if (x == argument0 && y == argument1)
+    if (x == arg0 && y == arg1)
     {
         npc_walking = false;
         path_speed = 0;

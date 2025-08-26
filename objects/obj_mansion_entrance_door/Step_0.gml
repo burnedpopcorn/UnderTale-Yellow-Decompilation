@@ -7,16 +7,16 @@ if (interact)
     
     with (msg)
     {
-        sndfnt_array[0] = 391;
+        sndfnt_array[0] = snd_talk_default;
         message[0] = "* (The door is locked from the#  other side.)";
         
         if (other.npc_flag == 0 && global.party_member != -4)
         {
-            sndfnt_array[1] = 102;
+            sndfnt_array[1] = snd_talk_martlet;
             message[1] = "* Locked, huh? Strange...";
             message[2] = "* Guess Ed and Star took#  another route.";
-            prt[1] = 311;
-            prt[2] = 324;
+            prt[1] = spr_martlet_head_confused;
+            prt[2] = spr_martlet_head_questioning;
         }
     }
     

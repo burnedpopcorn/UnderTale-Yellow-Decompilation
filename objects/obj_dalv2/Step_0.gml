@@ -1,5 +1,3 @@
-var __b__;
-
 script_execute(scr_depth, 0, 0, 0, 0, 0);
 
 if (fadeout == true)
@@ -49,7 +47,7 @@ if (spritelock == true)
                 break;
         }
         
-        if (instance_exists(obj_dialogue) && (obj_dialogue.sndfnt == 100 || obj_dialogue.sndfnt_array[clamp(obj_dialogue.message_current, 0, array_length(obj_dialogue.sndfnt_array) - 1)] == 100))
+        if (instance_exists(obj_dialogue) && (obj_dialogue.sndfnt == sndfnt_dalv || obj_dialogue.sndfnt_array[clamp(obj_dialogue.message_current, 0, array_length(obj_dialogue.sndfnt_array) - 1)] == sndfnt_dalv))
         {
             if (obj_dialogue.cutoff == string_length(obj_dialogue.message[obj_dialogue.message_current]))
             {
@@ -98,11 +96,11 @@ with (other)
             
             with (msg)
             {
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* Alright, I know you're#  probably eager to get#  going.";
                 message[1] = "* But feel free to#  stay as long as#  you like.";
-                prt[0] = 1755;
-                prt[1] = 1769;
+                prt[0] = spr_dalv_head_regular;
+                prt[1] = spr_dalv_head_content;
             }
             
             waiter++;
@@ -147,17 +145,17 @@ with (other)
                 
                 with (msg)
                 {
-                    sndfnt = 100;
+                    sndfnt = sndfnt_dalv;
                     message[0] = "* Welcome back.";
                     message[1] = "* Um... I'm not sure what#  to say...";
                     message[2] = "* I had some cards made#  for emergency friend#  situations...#";
                     message[3] = "* ...but I've misplaced#  them.";
                     message[4] = "* Make yourself at home...#  again.";
-                    prt[0] = 1769;
-                    prt[1] = 1780;
-                    prt[2] = 1763;
-                    prt[3] = 1763;
-                    prt[4] = 1755;
+                    prt[0] = spr_dalv_head_content;
+                    prt[1] = spr_dalv_head_sad_side;
+                    prt[2] = spr_dalv_head_sad;
+                    prt[3] = spr_dalv_head_sad;
+                    prt[4] = spr_dalv_head_regular;
                 }
             }
             
@@ -348,7 +346,7 @@ if (room == rm_dalvhallway && obj_pl.player_mode == "DalvExit")
     }
 }
 
-if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && dalv_talk_waiter == 0 && !instance_exists(obj_dialogue))
+if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && dalv_talk_waiter == 0 && !instance_exists(obj_dialogue))
     dalv_talk_waiter = 1;
 
 if (dalv_talk_waiter >= 1 && dalv_talk_waiter <= 7)
@@ -373,16 +371,16 @@ if (dalv_talk_waiter == 2)
                 instance_create(0, 0, obj_dialoguebox_dummy);
             
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* Are you ready to leave?";
-            prt[0] = 1755;
+            prt[0] = spr_dalv_head_regular;
         }
         else
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* I hope I'm being a good#  host!";
-            prt[0] = 1769;
+            prt[0] = spr_dalv_head_content;
         }
     }
     
@@ -404,7 +402,7 @@ if (dalv_talk_waiter == 4)
     with (msg)
     {
         portrait = false;
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         message[0] = "* Leave Dalv's house?";
         
         if (outcome == 1 && message_current == 0)
@@ -436,16 +434,16 @@ if (dalv_talk_waiter == 6)
         if (obj_dalv2.response == "yes")
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* If that's what you want,#  I'll lead the way.";
-            prt[0] = 1776;
+            prt[0] = spr_dalv_head_moderate;
         }
         else if (obj_dalv2.response == "no")
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* Alright, take as long as#  you like.";
-            prt[0] = 1776;
+            prt[0] = spr_dalv_head_moderate;
         }
     }
     
@@ -527,7 +525,7 @@ if (dalv_talk_waiter == 10)
     obj_pl.alarm[0] = 1;
 }
 
-__b__ = action_if_variable(fadein, true, 0);
+var __b__ = action_if_variable(fadein, true, 0);
 
 if (__b__)
     script_execute(anim_fade, 0.05, 0, 0, 0, 0);

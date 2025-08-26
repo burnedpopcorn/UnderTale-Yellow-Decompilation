@@ -1,6 +1,4 @@
-var i;
-
-for (i = 0; i < array_length(line_y); i++)
+for (var i = 0; i < array_length(line_y); i++)
 {
     line_y[i] += 4;
     

@@ -4,4 +4,4 @@ attack_count = 12;
 scene = 0;
 cutscene_timer = 0;
 flowey_sprite_original = obj_battle_flowey_body_1.base_sprite;
-obj_battle_flowey_body_1.base_sprite = spr_corrupted_axis;
+obj_battle_flowey_body_1.base_sprite = 2935;

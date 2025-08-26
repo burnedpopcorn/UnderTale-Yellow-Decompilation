@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"88d6417d-8a27-427e-b674-86a40a6aeff7",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cb049106-4f9a-451e-a972-f70fa16e0b3e",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d1c63804-f164-4f18-b068-1d9d2086b507",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bf8dff45-8b31-4a3c-a64c-302f15952a4b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a0ba539e-e163-479c-9974-bed3399a0cb3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"34d26cbd-e0b4-45c0-a760-cb9dd8aaa84c",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 39,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e8a23aeb-d3b9-468e-bc09-a2c33debb8de","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ab1f504d-0cc0-432a-86b8-979e87ce8aa9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"88d6417d-8a27-427e-b674-86a40a6aeff7","path":"sprites/spr_bigfrog_knight_air_slash_small/spr_bigfrog_knight_air_slash_small.yy",},},},"Disabled":false,"id":"f7d9b489-ed51-47bc-9e35-e36fc78cdd4c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cb049106-4f9a-451e-a972-f70fa16e0b3e","path":"sprites/spr_bigfrog_knight_air_slash_small/spr_bigfrog_knight_air_slash_small.yy",},},},"Disabled":false,"id":"377d9832-807b-442f-98d9-3f460d5505ac","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d1c63804-f164-4f18-b068-1d9d2086b507","path":"sprites/spr_bigfrog_knight_air_slash_small/spr_bigfrog_knight_air_slash_small.yy",},},},"Disabled":false,"id":"68996374-490f-4753-a96d-482248a54b91","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bf8dff45-8b31-4a3c-a64c-302f15952a4b","path":"sprites/spr_bigfrog_knight_air_slash_small/spr_bigfrog_knight_air_slash_small.yy",},},},"Disabled":false,"id":"cb3f893c-54cb-40d9-a9f1-c1e5a6500c0c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a0ba539e-e163-479c-9974-bed3399a0cb3","path":"sprites/spr_bigfrog_knight_air_slash_small/spr_bigfrog_knight_air_slash_small.yy",},},},"Disabled":false,"id":"b9f51d73-19b5-4b89-b7de-72cb9b1d0996","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"34d26cbd-e0b4-45c0-a760-cb9dd8aaa84c","path":"sprites/spr_bigfrog_knight_air_slash_small/spr_bigfrog_knight_air_slash_small.yy",},},},"Disabled":false,"id":"ebe9c6d5-3c7a-4d1d-94de-3cccb005b25c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

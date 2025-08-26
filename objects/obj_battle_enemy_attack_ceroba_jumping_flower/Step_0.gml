@@ -1,5 +1,3 @@
-var a;
-
 switch (jumping_flower_stage)
 {
     case 0:
@@ -15,7 +13,7 @@ switch (jumping_flower_stage)
             image_yscale = 1.5;
             audio_play_sound(snd_enemy_bullet_shot, 1, 0);
             
-            for (a = 1; a <= jumping_flower_bullet_number; a++)
+            for (var a = 1; a <= jumping_flower_bullet_number; a++)
             {
                 with (instance_create(x, y, obj_battle_enemy_attack_ceroba_jumping_flower_bullet))
                 {

@@ -1,4 +1,4 @@
-var action, new_sprite;
+var action;
 
 if (instance_exists(obj_dialogue_shop_parent))
     action = obj_dialogue_shop_parent.action[obj_dialogue_shop_parent.message_current];
@@ -21,9 +21,9 @@ if (action != "Override")
     {
         if (obj_dialogue_shop_parent.can_talk == true && obj_dialogue_shop_parent.characters > string_length(obj_dialogue_shop_parent.message[obj_dialogue_shop_parent.message_current]))
         {
-            new_sprite = shopkeeper_sprite[clamp(obj_dialogue_shop_parent.message_current, 0, array_length(shopkeeper_sprite) - 1)];
+            var new_sprite = shopkeeper_sprite[clamp(obj_dialogue_shop_parent.message_current, 0, array_length(shopkeeper_sprite) - 1)];
             
-            if (new_sprite == spr_collisionbox)
+            if (new_sprite == 0)
                 new_sprite = shopkeeper_sprite[0];
             
             obj_hotel_shop_head.sprite_index = new_sprite;

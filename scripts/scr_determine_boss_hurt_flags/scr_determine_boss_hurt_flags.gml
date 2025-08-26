@@ -1,6 +1,6 @@
 function scr_determine_boss_hurt_flags()
 {
-    var battle_enemy_name, act_number;
+    var battle_enemy_name;
     
     if (global.battling_boss == true)
     {
@@ -8,7 +8,7 @@ function scr_determine_boss_hurt_flags()
     }
     else
     {
-        act_number = global.act_number;
+        var act_number = global.act_number;
         
         switch (act_number)
         {

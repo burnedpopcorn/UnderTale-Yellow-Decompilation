@@ -1,5 +1,3 @@
-var doorway;
-
 if (live_call())
     return global.live_result;
 
@@ -17,8 +15,8 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_npc_walk(1161, 330, 310, 2, "x", "up");
-        cutscene_npc_walk(1168, 370, 310, 2, "x", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 330, 310, 2, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 370, 310, 2, "x", "up");
         cutscene_advance(2);
         break;
     
@@ -39,7 +37,7 @@ switch (scene)
         break;
     
     case 4:
-        cutscene_npc_direction(1161, "left");
+        cutscene_npc_direction(obj_ceroba_npc, "left");
         break;
     
     case 5:
@@ -47,7 +45,7 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_npc_direction(1161, "up");
+        cutscene_npc_direction(obj_ceroba_npc, "up");
         break;
     
     case 7:
@@ -59,9 +57,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Two paths...";
-            prt[0] = 371;
+            prt[0] = spr_portrait_ceroba_alt;
         }
         
         break;
@@ -75,9 +73,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Hold on...";
-            prt[0] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
         }
         
         obj_player_npc.npc_direction = "left";
@@ -85,8 +83,8 @@ switch (scene)
         break;
     
     case 11:
-        cutscene_npc_walk(1161, 250, 310, 3, "x", "left");
-        cutscene_npc_walk(1168, 280, 310, 3, "x", "left");
+        cutscene_npc_walk(obj_ceroba_npc, 250, 310, 3, "x", "left");
+        cutscene_npc_walk(obj_player_npc, 280, 310, 3, "x", "left");
         cutscene_advance();
         break;
     
@@ -116,17 +114,17 @@ switch (scene)
         with (msg)
         {
             position = 1;
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* That symbol, I've seen#  it on Chujin's work#  uniform.";
             message[1] = "* Lemme try one of his#  codes...";
-            prt[0] = 393;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_surprised;
+            prt[1] = spr_portrait_ceroba_neutral;
         }
         
         break;
     
     case 16:
-        cutscene_npc_walk(1161, 140, 320, 3, "x", "left");
+        cutscene_npc_walk(obj_ceroba_npc, 140, 320, 3, "x", "left");
         break;
     
     case 17:
@@ -134,7 +132,7 @@ switch (scene)
         break;
     
     case 18:
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         audio_sound_pitch(snd_beep, random_range(0.7, 1.3));
         break;
     
@@ -143,7 +141,7 @@ switch (scene)
         break;
     
     case 20:
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         audio_sound_pitch(snd_beep, random_range(0.7, 1.3));
         break;
     
@@ -152,7 +150,7 @@ switch (scene)
         break;
     
     case 22:
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         audio_sound_pitch(snd_beep, random_range(0.7, 1.3));
         break;
     
@@ -161,7 +159,7 @@ switch (scene)
         break;
     
     case 24:
-        cutscene_sfx_play(364, 1);
+        cutscene_sfx_play(snd_fail, 1);
         audio_sound_pitch(snd_fail, 0.5);
         break;
     
@@ -175,9 +173,9 @@ switch (scene)
         with (msg)
         {
             position = 1;
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Nope.";
-            prt[0] = 377;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
         }
         
         break;
@@ -187,7 +185,7 @@ switch (scene)
         break;
     
     case 28:
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         audio_sound_pitch(snd_beep, random_range(0.7, 1.3));
         break;
     
@@ -196,7 +194,7 @@ switch (scene)
         break;
     
     case 30:
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         audio_sound_pitch(snd_beep, random_range(0.7, 1.3));
         break;
     
@@ -205,7 +203,7 @@ switch (scene)
         break;
     
     case 32:
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         audio_sound_pitch(snd_beep, random_range(0.7, 1.3));
         break;
     
@@ -214,7 +212,7 @@ switch (scene)
         break;
     
     case 34:
-        cutscene_sfx_play(364, 1);
+        cutscene_sfx_play(snd_fail, 1);
         audio_sound_pitch(snd_fail, 0.5);
         break;
     
@@ -228,13 +226,13 @@ switch (scene)
         with (msg)
         {
             position = 1;
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Ugh.";
             message[1] = "* Well, I only have one#  left but I've already#  used it. ";
             message[2] = "* Here goes!";
-            prt[0] = 366;
-            prt[1] = 377;
-            prt[2] = 394;
+            prt[0] = spr_portrait_ceroba_angry;
+            prt[1] = spr_portrait_ceroba_closed_eyes;
+            prt[2] = spr_portrait_ceroba_disapproving;
             
             if (message_current == 1)
                 obj_ceroba_npc.npc_direction = "right";
@@ -248,7 +246,7 @@ switch (scene)
         break;
     
     case 38:
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         audio_sound_pitch(snd_beep, random_range(0.7, 1.3));
         break;
     
@@ -257,7 +255,7 @@ switch (scene)
         break;
     
     case 40:
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         audio_sound_pitch(snd_beep, random_range(0.7, 1.3));
         break;
     
@@ -266,7 +264,7 @@ switch (scene)
         break;
     
     case 42:
-        cutscene_sfx_play(657, 1);
+        cutscene_sfx_play(snd_beep, 1);
         audio_sound_pitch(snd_beep, random_range(0.7, 1.3));
         break;
     
@@ -275,7 +273,7 @@ switch (scene)
         break;
     
     case 44:
-        cutscene_sfx_play(378, 1);
+        cutscene_sfx_play(snd_success, 1);
         break;
     
     case 45:
@@ -300,7 +298,7 @@ switch (scene)
         break;
     
     case 48:
-        cutscene_npc_direction(1161, "right");
+        cutscene_npc_direction(obj_ceroba_npc, "right");
         break;
     
     case 49:
@@ -309,20 +307,20 @@ switch (scene)
         with (msg)
         {
             position = 1;
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Seriously? Same code as#  the Dunes gate?";
             message[1] = "* With this kinda#  security, no wonder Axis#  is so vigilant.";
             message[2] = "* After you.";
-            prt[0] = 384;
-            prt[1] = 370;
-            prt[2] = 395;
+            prt[0] = spr_portrait_ceroba_unamused;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_snarky;
         }
         
         break;
     
     case 50:
         cutscene_camera_move(obj_pl.x, obj_pl.y, 3, true);
-        cutscene_npc_walk(1161, obj_player_npc.x + 30, obj_player_npc.y, 3, "x", "left");
+        cutscene_npc_walk(obj_ceroba_npc, obj_player_npc.x + 30, obj_player_npc.y, 3, "x", "left");
         break;
     
     case 51:
@@ -335,11 +333,11 @@ switch (scene)
         with (obj_determination)
             image_alpha = 1;
         
-        doorway = instance_create_depth(120, 300, 300, obj_doorway);
+        var doorway = instance_create_depth(120, 300, 300, obj_doorway);
         
         with (doorway)
         {
-            nextroom = 192;
+            nextroom = rm_steamworks_factory_01;
             xx = 720;
             yy = 470;
             image_xscale = 3;

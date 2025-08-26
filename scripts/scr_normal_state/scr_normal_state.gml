@@ -1,7 +1,5 @@
 function scr_normal_state()
 {
-    var hsp, vsp, pl_spd, can_pause;
-    
     if (live_call())
         return global.live_result;
     
@@ -27,11 +25,11 @@ function scr_normal_state()
     if (global.cutscene == true)
         exit;
     
-    hsp = 0;
-    vsp = 0;
-    pl_spd = plspd;
+    var hsp = 0;
+    var vsp = 0;
+    var pl_spd = plspd;
     
-    if (global.option_autorun ^^ keyboard_multicheck(1) && global.player_can_run == true)
+    if (global.option_autorun ^^ keyboard_multicheck(vk_anykey) && global.player_can_run == true)
     {
         is_sprinting = true;
         pl_spd = plspd + 2;
@@ -215,7 +213,7 @@ function scr_normal_state()
         image_speed = 0.2;
     }
     
-    can_pause = true;
+    var can_pause = true;
     
     if (instance_exists(obj_flowey_world_controller) || instance_exists(obj_flowey_1_controller_base) || room == rm_battle_flashback_final_2 || room == rm_battle_flashback_07 || (room == rm_steamworks_21 && instance_exists(obj_steamworks_21_controller) && obj_steamworks_21_controller.axis_is_running))
         can_pause = false;

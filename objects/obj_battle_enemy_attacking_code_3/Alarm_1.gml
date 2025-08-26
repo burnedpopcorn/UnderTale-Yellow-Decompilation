@@ -1,6 +1,4 @@
-var attack_missed, enemy_count;
-
-attack_missed = false;
+var attack_missed = false;
 
 if (instance_exists(obj_text_damage_count))
 {
@@ -30,7 +28,7 @@ if (global.current_hp_enemy_3 < 0)
 
 if (global.current_hp_enemy_3 == 0)
 {
-    enemy_count = global.enemy_count;
+    var enemy_count = global.enemy_count;
     global.enemy_dead_3 = true;
     
     if (enemy_count == 3)

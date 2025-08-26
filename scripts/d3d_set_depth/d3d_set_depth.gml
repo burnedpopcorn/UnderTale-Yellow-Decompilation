@@ -1,4 +1,4 @@
-function d3d_set_depth(argument0)
+function d3d_set_depth(arg0)
 {
-    global.__d3dDepth = argument0;
+    global.__d3dDepth = arg0;
 }

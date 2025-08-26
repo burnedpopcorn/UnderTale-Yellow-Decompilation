@@ -1,7 +1,7 @@
 var text_parent;
 
 if (instance_exists(obj_quote_defeat_parent))
-    text_parent = 2961;
+    text_parent = 2962;
 else
     text_parent = 2532;
 

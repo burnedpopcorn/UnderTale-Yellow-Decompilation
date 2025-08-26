@@ -27,15 +27,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Humans are dangerous#  and cannot be trusted.";
-            prt[0] = 315;
+            prt[0] = spr_martlet_head_disappointed;
         }
         
         break;
     
     case 4:
-        cutscene_npc_walk(1164, 200, 100, 1, "y", "up");
+        cutscene_npc_walk(obj_martlet_npc, 200, 100, 1, "y", "up");
         break;
     
     case 5:
@@ -67,9 +67,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Humans are dangerous...";
-            prt[0] = 315;
+            prt[0] = spr_martlet_head_disappointed;
         }
         
         break;
@@ -79,7 +79,7 @@ switch (scene)
         break;
     
     case 11:
-        cutscene_npc_walk(1164, 200, 80, 0.2, "y", "up");
+        cutscene_npc_walk(obj_martlet_npc, 200, 80, 0.2, "y", "up");
         cutscene_advance();
         break;
     
@@ -108,7 +108,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Humans are dangerous...";
         }
         

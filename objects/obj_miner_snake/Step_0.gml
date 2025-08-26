@@ -35,7 +35,7 @@ if (waiter == 1)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Hello, visitor.";
                 message[1] = "* Did you venture through the#  whole mine?";
                 message[2] = "* What a journey.";

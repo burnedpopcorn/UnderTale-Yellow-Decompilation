@@ -1,11 +1,9 @@
-var xx, yy, point_dir, item, shoot_sound;
-
 if (live_call())
     return global.live_result;
 
-xx = obj_heart_battle_fighting_parent.x;
-yy = obj_heart_battle_fighting_parent.y - 10;
-point_dir = point_direction(x, y, xx, yy);
+var xx = obj_heart_battle_fighting_parent.x;
+var yy = obj_heart_battle_fighting_parent.y - 10;
+var point_dir = point_direction(x, y, xx, yy);
 
 if (robot_parent != -4)
 {
@@ -43,13 +41,13 @@ if (image_speed == 0)
         
         if (shoot_noloop == false)
         {
-            item = instance_create_depth(x, y, depth, obj_battle_enemy_attack_guardener_arrow);
+            var item = instance_create_depth(x, y, depth, obj_battle_enemy_attack_guardener_arrow);
             item.direction = direction;
             item.speed = 6;
             shoot_noloop = true;
             audio_play_sound(snd_yellow_soul_dash, 1, 0);
             audio_play_sound(snd_undertale_swoosh, 1, 0);
-            shoot_sound = audio_play_sound(snd_undertale_swoosh, 1, 0);
+            var shoot_sound = audio_play_sound(snd_undertale_swoosh, 1, 0);
             audio_sound_gain(shoot_sound, 1, 0.5);
         }
     }

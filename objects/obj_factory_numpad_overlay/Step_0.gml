@@ -1,5 +1,3 @@
-var confirm, current_number;
-
 if (live_call())
     return global.live_result;
 
@@ -57,19 +55,19 @@ if (global.up_keyp)
     audio_play_sound(snd_mainmenu_select, 1, 0);
 }
 
-confirm = false;
+var confirm = false;
 
 if (instance_exists(obj_factory_03_numpad_number))
 {
     with (obj_factory_03_numpad_number)
     {
-        current_number = image_index + 1;
+        var current_number = image_index + 1;
         
         if (current_number == other.number_selected)
         {
             active = true;
             
-            if (keyboard_multicheck_pressed(0))
+            if (keyboard_multicheck_pressed(vk_nokey))
             {
                 if (other.number_selected != 10)
                 {

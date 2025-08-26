@@ -1,5 +1,3 @@
-var bul1, bul2, bul3;
-
 if (arc_enemy_death == false)
 {
     if (step == 0)
@@ -20,9 +18,9 @@ if (arc_enemy_death == false)
     
     if (step == 2)
     {
-        bul1 = instance_create(x, y + 12, obj_arcade_enemy_bullet);
-        bul2 = instance_create(x - 2, y + 12, obj_arcade_enemy_bullet);
-        bul3 = instance_create(x + 2, y + 12, obj_arcade_enemy_bullet);
+        var bul1 = instance_create(x, y + 12, obj_arcade_enemy_bullet);
+        var bul2 = instance_create(x - 2, y + 12, obj_arcade_enemy_bullet);
+        var bul3 = instance_create(x + 2, y + 12, obj_arcade_enemy_bullet);
         
         with (bul1)
             direction = 270;

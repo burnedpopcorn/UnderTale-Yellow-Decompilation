@@ -37,7 +37,7 @@ switch (scene)
         {
             y -= fly_speed;
             mail_whale_shadow_alpha -= 0.05;
-            scr_audio_fade_out(114, 500);
+            scr_audio_fade_out(mus_delivery, 500);
             
             if (y > -40 && fly_speed < 2)
                 fly_speed += 0.2;

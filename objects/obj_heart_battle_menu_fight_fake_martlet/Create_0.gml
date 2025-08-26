@@ -1,5 +1,3 @@
-var player_character, soul_mode;
-
 image_speed = 0;
 image_index = 0;
 key_select_simulate = false;
@@ -31,7 +29,7 @@ else if (global.fight_number == 2)
 else if (global.fight_number == 3)
     y = obj_dialogue_box_battle.y + 100;
 
-player_character = global.player_character;
+var player_character = global.player_character;
 
 switch (player_character)
 {
@@ -40,7 +38,7 @@ switch (player_character)
         break;
     
     default:
-        soul_mode = global.soul_mode;
+        var soul_mode = global.soul_mode;
         
         if (soul_mode == "Red")
         {

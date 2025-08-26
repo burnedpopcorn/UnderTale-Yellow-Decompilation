@@ -11,5 +11,5 @@ damage_disjoint_y = 0;
 damage_disjoint_count = 0;
 no_loop_damage_disjoint_count = false;
 can_talk_no_loop = false;
-head_sprite = spr_martlet_head_regular_battle;
+head_sprite = 126;
 instance_create(x, y, obj_martlet_head_shadow);

@@ -1,7 +1,5 @@
-var enemy_dead, enemy_spared;
-
-enemy_dead = global.enemy_dead_2;
-enemy_spared = global.enemy_spared_2;
+var enemy_dead = global.enemy_dead_2;
+var enemy_spared = global.enemy_spared_2;
 
 if (enemy_dead == false && enemy_spared == false)
 {

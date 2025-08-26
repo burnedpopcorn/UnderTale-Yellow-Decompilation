@@ -1,16 +1,14 @@
 function scr_enemy_attack_flier_flies_drawing()
 {
-    var distance, distance_2, max_variations, random_number_1, random_number_2;
-    
     global.attack_counter_max = 60;
     
     if (global.attack_counter == 0)
     {
-        distance = -13;
-        distance_2 = 20;
-        max_variations = 4;
-        random_number_1 = irandom_range(0, max_variations);
-        random_number_2 = irandom_range(0, max_variations - 1);
+        var distance = -13;
+        var distance_2 = 20;
+        var max_variations = 4;
+        var random_number_1 = irandom_range(0, max_variations);
+        var random_number_2 = irandom_range(0, max_variations - 1);
         
         if (random_number_2 >= random_number_1)
             random_number_2 += 1;

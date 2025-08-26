@@ -6,7 +6,7 @@ function scr_controls_battle_heart_yellow_rhythm()
     {
         key_right = global.right_key;
         key_left = global.left_key;
-        key_select = keyboard_multicheck_pressed(0);
+        key_select = keyboard_multicheck_pressed(vk_nokey);
     }
     else
     {

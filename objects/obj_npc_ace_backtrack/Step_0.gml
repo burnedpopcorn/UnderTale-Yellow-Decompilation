@@ -15,10 +15,10 @@ switch (npc_flag)
             message[1] = "* ...";
             message[2] = "* ...";
             message[3] = "* ...What?";
-            prt[0] = 435;
-            prt[1] = 437;
-            prt[2] = 437;
-            prt[3] = 439;
+            prt[0] = spr_portrait_ace_stern;
+            prt[1] = spr_portrait_ace_concealed;
+            prt[2] = spr_portrait_ace_concealed;
+            prt[3] = spr_portrait_ace_hand;
         }
         
         npc_flag = 1;
@@ -32,10 +32,10 @@ switch (npc_flag)
             message[1] = "* This song is one of my#  favorites but...";
             message[2] = "* I don't know how much#  longer Moray will be#  playing it.";
             message[3] = "* Not gonna spend its#  length chatting, sorry.";
-            prt[0] = 435;
-            prt[1] = 437;
-            prt[2] = 437;
-            prt[3] = 439;
+            prt[0] = spr_portrait_ace_stern;
+            prt[1] = spr_portrait_ace_concealed;
+            prt[2] = spr_portrait_ace_concealed;
+            prt[3] = spr_portrait_ace_hand;
         }
         
         npc_flag = 2;
@@ -52,13 +52,13 @@ switch (npc_flag)
             message[4] = "* Nah...";
             message[5] = "* Growth is for main#  characters like Star.";
             message[6] = "* I might be as 2D as my#  cards but hey, that's#  fine by me.";
-            prt[0] = 439;
-            prt[1] = 437;
-            prt[2] = 435;
-            prt[3] = 435;
-            prt[4] = 437;
-            prt[5] = 437;
-            prt[6] = 439;
+            prt[0] = spr_portrait_ace_hand;
+            prt[1] = spr_portrait_ace_concealed;
+            prt[2] = spr_portrait_ace_stern;
+            prt[3] = spr_portrait_ace_stern;
+            prt[4] = spr_portrait_ace_concealed;
+            prt[5] = spr_portrait_ace_concealed;
+            prt[6] = spr_portrait_ace_hand;
         }
         
         npc_flag = 3;
@@ -69,7 +69,7 @@ switch (npc_flag)
         {
             talker[0] = other.object_index;
             message[0] = "* ...";
-            prt[0] = 437;
+            prt[0] = spr_portrait_ace_concealed;
         }
         
         break;

@@ -1,5 +1,3 @@
-var i, new_string, target_pos;
-
 if (live_call())
     return global.live_result;
 
@@ -14,10 +12,10 @@ switch (room)
     case rm_steamworks_factory_03:
         target_code_array = ["0", "0", "0", "0"];
         
-        for (i = 0; i < ds_list_size(global.factory_code_2); i++)
+        for (var i = 0; i < ds_list_size(global.factory_code_2); i++)
         {
-            new_string = "";
-            target_pos = 0;
+            var new_string = "";
+            var target_pos = 0;
             
             switch (ds_list_find_value(global.factory_code_2, i))
             {
@@ -103,7 +101,7 @@ switch (room)
         
         target_code = "";
         
-        for (i = 0; i < array_length(target_code_array); i++)
+        for (var i = 0; i < array_length(target_code_array); i++)
             target_code += target_code_array[i];
         
         break;

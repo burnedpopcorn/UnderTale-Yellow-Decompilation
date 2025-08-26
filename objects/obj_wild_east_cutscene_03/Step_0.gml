@@ -1,11 +1,9 @@
-var actor_starlo, actor_ed, actor_mooch, actor_moray, actor_ace, actor_clover;
-
-actor_starlo = 1169;
-actor_ed = 1162;
-actor_mooch = 1165;
-actor_moray = 1167;
-actor_ace = 1158;
-actor_clover = 1168;
+var actor_starlo = 1169;
+var actor_ed = 1162;
+var actor_mooch = 1165;
+var actor_moray = 1167;
+var actor_ace = 1158;
+var actor_clover = obj_player_npc;
 
 if (live_call())
     return global.live_result;
@@ -27,10 +25,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = actor_starlo;
             message[0] = "* Group up, everyone!";
-            prt[0] = 417;
+            prt[0] = spr_portrait_starlo_normal;
         }
         
         break;
@@ -56,66 +54,66 @@ switch (scene)
         {
             position = 1;
             message[0] = "* Gettin' a bit of deja#  vu here.";
-            prt[0] = 454;
-            sndfnt_array[0] = 104;
+            prt[0] = spr_portrait_ed_mutter;
+            sndfnt_array[0] = snd_talk_ed;
             talker[0] = actor_ed;
             message[1] = "* As ya should, buddy.";
             message[2] = "* Thanks to Ace's keen#  eye for fashion, we#  took a lil detour.";
             message[3] = "* Great job there.";
-            prt[1] = 421;
-            prt[2] = 407;
-            prt[3] = 421;
-            sndfnt_array[1] = 107;
+            prt[1] = spr_portrait_starlo_serious;
+            prt[2] = spr_portrait_starlo_distracted;
+            prt[3] = spr_portrait_starlo_serious;
+            sndfnt_array[1] = snd_talk_starlo;
             talker[1] = actor_starlo;
             message[4] = "* Thank you, Star.";
             message[5] = "* Clover looks much#  better now.";
-            prt[4] = 436;
-            prt[5] = 435;
-            sndfnt_array[4] = 106;
+            prt[4] = spr_portrait_ace_smile;
+            prt[5] = spr_portrait_ace_stern;
+            sndfnt_array[4] = snd_talk_ace;
             talker[4] = actor_ace;
             message[6] = "* I agree! Clover's#  looking like a real#  wrangler!";
-            prt[6] = 445;
-            sndfnt_array[6] = 391;
+            prt[6] = spr_portrait_moray_normal;
+            sndfnt_array[6] = snd_talk_default;
             talker[6] = actor_moray;
             message[7] = "* For sure!";
             message[8] = "* That new gun is...#  awfully shiny.";
-            prt[7] = 458;
-            prt[8] = 463;
-            sndfnt_array[7] = 105;
+            prt[7] = spr_portrait_mooch_happy;
+            prt[8] = spr_portrait_mooch_smirk;
+            sndfnt_array[7] = snd_talk_mooch;
             talker[7] = actor_mooch;
             message[9] = "* Had to shake Mr.#  Blackjack down for it.";
             message[10] = "* I was real tough, too.";
             message[11] = "* Put ol' Jack in his#  place, I did.";
-            prt[9] = 417;
-            prt[10] = 424;
-            prt[11] = 424;
-            sndfnt_array[9] = 107;
+            prt[9] = spr_portrait_starlo_normal;
+            prt[10] = spr_portrait_starlo_smirk;
+            prt[11] = spr_portrait_starlo_smirk;
+            sndfnt_array[9] = snd_talk_starlo;
             talker[9] = actor_starlo;
             message[12] = "* You coulda' sent me in#  to get it.";
             message[13] = "* You know I'm the best#  negotiator.";
-            prt[12] = 455;
-            prt[13] = 463;
-            sndfnt_array[12] = 105;
+            prt[12] = spr_portrait_mooch_normal;
+            prt[13] = spr_portrait_mooch_smirk;
+            sndfnt_array[12] = snd_talk_mooch;
             talker[12] = actor_mooch;
             message[14] = "* We might bend the rules#  a bit but we ain't#  bandits.";
-            prt[14] = 419;
-            sndfnt_array[14] = 107;
+            prt[14] = spr_portrait_starlo_point;
+            sndfnt_array[14] = snd_talk_starlo;
             talker[14] = actor_starlo;
             message[15] = "* Mhm, totally.";
-            prt[15] = 458;
-            sndfnt_array[15] = 105;
+            prt[15] = spr_portrait_mooch_happy;
+            sndfnt_array[15] = snd_talk_mooch;
             talker[15] = actor_mooch;
             message[16] = "* Let's get to the#  mission already.";
-            prt[16] = 454;
-            sndfnt_array[16] = 104;
+            prt[16] = spr_portrait_ed_mutter;
+            sndfnt_array[16] = snd_talk_ed;
             talker[16] = actor_ed;
             message[17] = "* Right ya are, Ed.";
             message[18] = "* What other mission#  would it be than the#  one we skipped before?";
             message[19] = "* Get ready, Clover!";
-            prt[17] = 417;
-            prt[18] = 417;
-            prt[19] = 415;
-            sndfnt_array[17] = 107;
+            prt[17] = spr_portrait_starlo_normal;
+            prt[18] = spr_portrait_starlo_normal;
+            prt[19] = spr_portrait_starlo_hidden;
+            sndfnt_array[17] = snd_talk_starlo;
             talker[17] = actor_starlo;
         }
         
@@ -144,7 +142,7 @@ switch (scene)
         {
             position = 1;
             message[0] = "* It's time for us to#  dual!";
-            prt[0] = 422;
+            prt[0] = spr_portrait_starlo_smile;
             talker[0] = actor_starlo;
         }
         
@@ -166,7 +164,7 @@ switch (scene)
         {
             position = 1;
             message[0] = "* You mean \"duel.\"";
-            prt[0] = 447;
+            prt[0] = spr_portrait_moray_disbelief;
             talker[0] = actor_moray;
         }
         
@@ -192,12 +190,12 @@ switch (scene)
             message[3] = "* Dual, duel, who cares?#  Tomato potato and all#  that.";
             message[4] = "* Y'all need to quit#  interrupin' me so often.";
             message[5] = "* Upsets my frontier zen.";
-            prt[0] = 413;
-            prt[1] = 437;
-            prt[2] = 453;
-            prt[3] = 410;
-            prt[4] = 410;
-            prt[5] = 410;
+            prt[0] = spr_portrait_starlo_flustered;
+            prt[1] = spr_portrait_ace_concealed;
+            prt[2] = spr_portrait_ed_mad;
+            prt[3] = spr_portrait_starlo_embarassed;
+            prt[4] = spr_portrait_starlo_embarassed;
+            prt[5] = spr_portrait_starlo_embarassed;
             talker[0] = actor_starlo;
             talker[1] = actor_ace;
             talker[2] = actor_ed;
@@ -226,10 +224,10 @@ switch (scene)
             message[1] = "* Oh yeah, it's time to#  d...";
             message[2] = "* Participate in a#  carefully timed#  shootin' competition.";
             message[3] = "* Mooch! Provide Clover#  with the designated#  tool.";
-            prt[0] = 421;
-            prt[1] = 417;
-            prt[2] = 421;
-            prt[3] = 417;
+            prt[0] = spr_portrait_starlo_serious;
+            prt[1] = spr_portrait_starlo_normal;
+            prt[2] = spr_portrait_starlo_serious;
+            prt[3] = spr_portrait_starlo_normal;
             talker[0] = actor_starlo;
         }
         
@@ -250,11 +248,11 @@ switch (scene)
             message[2] = "* Mooooch? Bring the gun#  here.";
             message[3] = "* That's what I was gonna#  do, Moray.";
             message[4] = "* Get off my back, will#  ya?";
-            prt[0] = 458;
-            prt[1] = 462;
-            prt[2] = 445;
-            prt[3] = 460;
-            prt[4] = 460;
+            prt[0] = spr_portrait_mooch_happy;
+            prt[1] = spr_portrait_mooch_smile;
+            prt[2] = spr_portrait_moray_normal;
+            prt[3] = spr_portrait_mooch_nervous;
+            prt[4] = spr_portrait_mooch_nervous;
             talker[0] = actor_mooch;
             talker[2] = actor_moray;
             talker[3] = actor_mooch;
@@ -293,15 +291,15 @@ switch (scene)
             message[6] = "* Right...";
             message[7] = "* I take responsibility#  and apologize for the#  oversight.";
             message[8] = "* Bring the glasses here.";
-            prt[0] = 422;
-            prt[1] = 439;
-            prt[2] = 416;
-            prt[3] = 416;
-            prt[4] = 435;
-            prt[5] = 454;
-            prt[6] = 412;
-            prt[7] = 412;
-            prt[8] = 417;
+            prt[0] = spr_portrait_starlo_smile;
+            prt[1] = spr_portrait_ace_hand;
+            prt[2] = spr_portrait_starlo_hurt;
+            prt[3] = spr_portrait_starlo_hurt;
+            prt[4] = spr_portrait_ace_stern;
+            prt[5] = spr_portrait_ed_mutter;
+            prt[6] = spr_portrait_starlo_embarassed_smile;
+            prt[7] = spr_portrait_starlo_embarassed_smile;
+            prt[8] = spr_portrait_starlo_normal;
             talker[0] = actor_starlo;
             talker[1] = actor_ace;
             talker[2] = actor_starlo;
@@ -333,9 +331,9 @@ switch (scene)
             message[0] = "* (I want the pair with#  the blue flames.)";
             message[1] = "* (Red flames clash with#  my uniform.)";
             message[2] = "* Here.";
-            prt[0] = 407;
-            prt[1] = 407;
-            prt[2] = 434;
+            prt[0] = spr_portrait_starlo_distracted;
+            prt[1] = spr_portrait_starlo_distracted;
+            prt[2] = spr_portrait_ace_normal;
             talker[0] = actor_starlo;
             talker[2] = actor_ace;
         }
@@ -355,7 +353,7 @@ switch (scene)
         break;
     
     case 36:
-        cutscene_npc_set_sprites(actor_starlo, 214, 213, 215, 210, 214, 220, 218, 219);
+        cutscene_npc_set_sprites(actor_starlo, spr_starlo_goggles_up_walk, spr_starlo_goggles_right_walk, spr_starlo_goggles_down_walk, spr_starlo_goggles_left_walk, spr_starlo_goggles_up_walk, spr_starlo_goggles_right_talk, spr_starlo_goggles_down_talk, spr_starlo_goggles_left_talk);
         break;
     
     case 37:
@@ -375,7 +373,7 @@ switch (scene)
         break;
     
     case 41:
-        cutscene_npc_set_sprites(actor_clover, 28, 26, 27, 25, 28, 26, 27, 25);
+        cutscene_npc_set_sprites(actor_clover, spr_pl_goggles_up, spr_pl_goggles_right, spr_pl_goggles_down, spr_pl_goggles_left, spr_pl_goggles_up, spr_pl_goggles_right, spr_pl_goggles_down, spr_pl_goggles_left);
         break;
     
     case 42:
@@ -406,12 +404,12 @@ switch (scene)
             message[3] = "* When you hear the#  \"draw\" sound...";
             message[4] = "* Grab yer gun and shoot#  me as fast as you can!";
             message[5] = "* Here we go!";
-            prt[0] = 422;
-            prt[1] = 417;
-            prt[2] = 417;
-            prt[3] = 417;
-            prt[4] = 419;
-            prt[5] = 422;
+            prt[0] = spr_portrait_starlo_smile;
+            prt[1] = spr_portrait_starlo_normal;
+            prt[2] = spr_portrait_starlo_normal;
+            prt[3] = spr_portrait_starlo_normal;
+            prt[4] = spr_portrait_starlo_point;
+            prt[5] = spr_portrait_starlo_smile;
             talker[0] = actor_starlo;
             
             if (message_current == 1)
@@ -425,7 +423,7 @@ switch (scene)
         break;
     
     case 48:
-        cutscene_sfx_play(179, 1);
+        cutscene_sfx_play(mus_dual, 1);
         cutscene_npc_walk(actor_starlo, 700, 490, 2, "x", "right");
         cutscene_npc_walk(actor_clover, 740, 490, 2, "x", "left");
         cutscene_npc_walk(actor_ace, 700, 378, 3, "x", "down");
@@ -459,9 +457,9 @@ switch (scene)
         break;
     
     case 53:
-        cutscene_npc_action_sprite(actor_starlo, 221, 0, true);
+        cutscene_npc_action_sprite(actor_starlo, spr_starlo_goggles_shoot, 0, true);
         actor_starlo.image_index = 0;
-        cutscene_npc_action_sprite(actor_clover, 30, 0, true);
+        cutscene_npc_action_sprite(actor_clover, spr_pl_goggles_shoot, 0, true);
         cutscene_advance(54);
         break;
     
@@ -502,10 +500,10 @@ switch (scene)
                 actor_starlo.image_speed = 0.5;
         }
         
-        cutscene_sfx_play_at_frame(actor_clover, 6, 248);
+        cutscene_sfx_play_at_frame(actor_clover, 6, snd_duel_shot);
         
         if (!audio_is_playing(snd_duel_shot))
-            cutscene_sfx_play_at_frame(actor_starlo, 6, 230);
+            cutscene_sfx_play_at_frame(actor_starlo, 6, snd_shotweak);
         
         if (actor_clover.image_index >= 6)
             cutscene_advance(63);
@@ -515,7 +513,7 @@ switch (scene)
         break;
     
     case 57:
-        cutscene_npc_action_sprite(actor_clover, 31, 0.5, true, 0);
+        cutscene_npc_action_sprite(actor_clover, spr_pl_goggles_hit, 0.5, true, 0);
     
     case 58:
         cutscene_wait(1);
@@ -528,15 +526,15 @@ switch (scene)
         {
             message[0] = "* Awww, too bad!";
             message[1] = "* Let's try one more time!";
-            prt[0] = 406;
-            prt[1] = 417;
+            prt[0] = spr_portrait_starlo_disappointed;
+            prt[1] = spr_portrait_starlo_normal;
             talker[0] = actor_starlo;
         }
         
         break;
     
     case 60:
-        cutscene_sfx_play(180, 1);
+        cutscene_sfx_play(mus_dual_short, 1);
         cutscene_advance(53);
         break;
     
@@ -548,9 +546,9 @@ switch (scene)
             message[0] = "* Whoa, whoa, whoa!";
             message[1] = "* You gotta wait for#  the signal, or it#  ain't fair!";
             message[2] = "* Let's try one more time!";
-            prt[0] = 426;
-            prt[1] = 419;
-            prt[2] = 417;
+            prt[0] = spr_portrait_starlo_surprised;
+            prt[1] = spr_portrait_starlo_point;
+            prt[2] = spr_portrait_starlo_normal;
             talker[0] = actor_starlo;
         }
         
@@ -561,7 +559,7 @@ switch (scene)
         break;
     
     case 63:
-        cutscene_npc_action_sprite(actor_starlo, 222, 0, true, 0);
+        cutscene_npc_action_sprite(actor_starlo, spr_starlo_goggles_hit, 0, true, 0);
         cutscene_advance(64);
         break;
     
@@ -575,7 +573,7 @@ switch (scene)
         {
             actor_starlo.image_index = 1;
             scr_screenshake(30, 3);
-            cutscene_sfx_play(293, 1);
+            cutscene_sfx_play(snd_rock_break, 1);
             cutscene_music_start(193);
         }
         
@@ -591,8 +589,8 @@ switch (scene)
         with (msg)
         {
             message[0] = "* Ah... Clover got me...";
-            prt[0] = 416;
-            sndfnt_array[0] = 107;
+            prt[0] = spr_portrait_starlo_hurt;
+            sndfnt_array[0] = snd_talk_starlo;
         }
         
         break;
@@ -625,23 +623,23 @@ switch (scene)
             message[5] = "* Heck.";
             message[6] = "* Clover... this was...#  your...";
             message[7] = "* Emotional trauma test!";
-            prt[0] = 450;
-            prt[1] = 416;
-            prt[2] = 461;
-            prt[3] = 455;
-            prt[4] = 416;
-            prt[5] = 460;
-            prt[6] = 416;
-            prt[7] = 415;
+            prt[0] = spr_portrait_moray_sweat;
+            prt[1] = spr_portrait_starlo_hurt;
+            prt[2] = spr_portrait_mooch_crying;
+            prt[3] = spr_portrait_mooch_normal;
+            prt[4] = spr_portrait_starlo_hurt;
+            prt[5] = spr_portrait_mooch_nervous;
+            prt[6] = spr_portrait_starlo_hurt;
+            prt[7] = spr_portrait_starlo_hidden;
             talker[0] = actor_moray;
             talker[1] = -4;
             talker[2] = actor_mooch;
             talker[4] = -4;
             talker[5] = actor_mooch;
             talker[6] = -4;
-            sndfnt_array[1] = 107;
-            sndfnt_array[4] = 107;
-            sndfnt_array[6] = 107;
+            sndfnt_array[1] = snd_talk_starlo;
+            sndfnt_array[4] = snd_talk_starlo;
+            sndfnt_array[6] = snd_talk_starlo;
         }
         
         break;
@@ -669,18 +667,18 @@ switch (scene)
         
         with (msg)
         {
-            message[0] = "* This job ain't all#  swealterstones and#  rainbows, ya understand?";
+            message[0] = "* This job ain't all#  swelterstones and#  rainbows, ya understand?";
             message[1] = "* Ya might end up hurtin'#  someone and must carry#  that weight on yer back.";
             message[2] = "* Hope I didn't scar ya!";
             message[3] = "* Anyway, you pass!";
             message[4] = "* I'll be waitin' in the#  Saloon again when ye're#  ready for mission three!";
             message[5] = "* I'm seein' good things#  in ya, kid!";
-            prt[0] = 419;
-            prt[1] = 421;
-            prt[2] = 417;
-            prt[3] = 422;
-            prt[4] = 417;
-            prt[5] = 417;
+            prt[0] = spr_portrait_starlo_point;
+            prt[1] = spr_portrait_starlo_serious;
+            prt[2] = spr_portrait_starlo_normal;
+            prt[3] = spr_portrait_starlo_smile;
+            prt[4] = spr_portrait_starlo_normal;
+            prt[5] = spr_portrait_starlo_normal;
             talker[0] = actor_starlo;
         }
         
@@ -711,7 +709,7 @@ switch (scene)
         with (msg)
         {
             message[0] = "* Here's your iron. Also,#  I'll be needing those#  glasses.";
-            prt[0] = 435;
+            prt[0] = spr_portrait_ace_stern;
             talker[0] = actor_ace;
         }
         

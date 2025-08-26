@@ -40,4 +40,4 @@ max_points_trail = 5;
 trail_cc_max = 3;
 trail_cc_start = trail_cc_max - 1;
 trail_cc_current = trail_cc_start;
-trail_sprite = spr_heart_white;
+trail_sprite = 1677;

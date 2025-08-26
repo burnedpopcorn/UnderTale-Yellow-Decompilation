@@ -1,7 +1,5 @@
-var current_turn;
-
 script_execute(scr_controls_text);
-current_turn = global.special_action_count;
+var current_turn = global.special_action_count;
 
 if (key_revert_pressed)
 {

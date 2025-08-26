@@ -1,9 +1,7 @@
-var side, variation;
-
 if (live_call())
     return global.live_result;
 
-side = choose(-1, 1);
+var side = choose(-1, 1);
 
 if (side == -1)
 {
@@ -18,5 +16,5 @@ else
     instance_create_depth(680, 460, -100, obj_flowey_battle_phase_2_lowpoly_hspike);
 }
 
-variation = irandom_range(-60, 60);
+var variation = irandom_range(-60, 60);
 alarm[0] = attack_delay + variation;

@@ -1,14 +1,12 @@
-var xx, yy;
-
 if (obj_puzzle1.done == true || !instance_exists(obj_pl))
     exit;
 
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     if (scr_interact() == true)
     {
-        xx = obj_pl.x + (64 * cos(degtorad(obj_pl.direction)));
-        yy = obj_pl.y - (64 * sin(degtorad(obj_pl.direction)));
+        var xx = obj_pl.x + (64 * cos(degtorad(obj_pl.direction)));
+        var yy = obj_pl.y - (64 * sin(degtorad(obj_pl.direction)));
         
         if (collision_line_first(obj_pl.x, obj_pl.y, xx, yy, id, false, false))
         {

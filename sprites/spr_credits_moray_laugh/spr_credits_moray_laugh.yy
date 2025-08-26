@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a01ded23-d05d-4a1e-ab94-1386b9ec2a73",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3bbcaa0b-966c-49c6-9790-76112f19d8f9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6d7c81ed-6975-4bf3-9f59-dfb6f52e7f8e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"33eeee85-9d58-467b-89cb-509ef89b2780",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 55,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a8d598da-d268-4ffe-92ca-eef450aced70","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"40319ced-5f9b-4f9b-b544-1908c08093b5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a01ded23-d05d-4a1e-ab94-1386b9ec2a73","path":"sprites/spr_credits_moray_laugh/spr_credits_moray_laugh.yy",},},},"Disabled":false,"id":"6b004f37-921d-414c-9774-8f0959f1503d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3bbcaa0b-966c-49c6-9790-76112f19d8f9","path":"sprites/spr_credits_moray_laugh/spr_credits_moray_laugh.yy",},},},"Disabled":false,"id":"79851e58-e580-46a3-9327-b9ac14761a05","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6d7c81ed-6975-4bf3-9f59-dfb6f52e7f8e","path":"sprites/spr_credits_moray_laugh/spr_credits_moray_laugh.yy",},},},"Disabled":false,"id":"fa3780df-ee81-4c93-8eec-b24bcde2f1ac","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"33eeee85-9d58-467b-89cb-509ef89b2780","path":"sprites/spr_credits_moray_laugh/spr_credits_moray_laugh.yy",},},},"Disabled":false,"id":"361c21b7-dc46-498c-9011-ff195f9f3422","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "newhome",
+    "path": "texturegroups/newhome",
   },
   "type": 0,
   "VTile": false,

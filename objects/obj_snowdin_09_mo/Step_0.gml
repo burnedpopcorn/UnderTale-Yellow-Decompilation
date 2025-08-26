@@ -1,6 +1,4 @@
-var i;
-
-for (i = 0; i <= (array_length_1d(timer) - 1); i++)
+for (var i = 0; i <= (array_length_1d(timer) - 1); i++)
 {
     if (timer[i] > 0)
     {
@@ -94,7 +92,7 @@ depth = 10;
 if (global.extra_flag[1] == 1 && global.extra_flag[2] == 1 && global.extra_flag[3] == 1)
     global.snowdin_flag[5] = 2;
 
-if (scr_interact() && keyboard_multicheck_pressed(0) && waiter == 0)
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey) && waiter == 0)
 {
     waiter = 5;
     scr_cutscene_start();

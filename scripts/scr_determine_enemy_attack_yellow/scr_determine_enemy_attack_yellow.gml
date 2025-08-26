@@ -1,15 +1,14 @@
 function scr_determine_enemy_attack_yellow()
 {
-    var determine_attack_priority, battle_enemy_name, turns_passed, enemy_dead, enemy_spared, enemy_dead_2, enemy_spared_2, enemy_dead_3, enemy_spared_3, enemy_mode;
-    
     if (live_call())
         return global.live_result;
     
-    determine_attack_priority = global.determine_attack_priority;
-    battle_enemy_name = global.battle_enemy_name;
-    turns_passed = global.turns_passed;
-    enemy_dead = global.enemy_dead;
-    enemy_spared = global.enemy_spared;
+    var determine_attack_priority = global.determine_attack_priority;
+    var battle_enemy_name = global.battle_enemy_name;
+    var turns_passed = global.turns_passed;
+    var enemy_dead = global.enemy_dead;
+    var enemy_spared = global.enemy_spared;
+    var enemy_dead_2, enemy_spared_2;
     
     if (global.enemy_count >= 2)
     {
@@ -17,10 +16,12 @@ function scr_determine_enemy_attack_yellow()
         enemy_spared_2 = global.enemy_spared_2;
     }
     
+    var enemy_dead_3;
+    
     if (global.enemy_count >= 3)
     {
         enemy_dead_3 = global.enemy_dead_3;
-        enemy_spared_3 = global.enemy_spared_3;
+        var enemy_spared_3 = global.enemy_spared_3;
     }
     
     if (battle_enemy_name == "flier solo")
@@ -473,7 +474,7 @@ function scr_determine_enemy_attack_yellow()
             
             if (turns_passed == 8)
             {
-                enemy_mode = global.enemy_mode;
+                var enemy_mode = global.enemy_mode;
                 
                 switch (enemy_mode)
                 {
@@ -488,7 +489,7 @@ function scr_determine_enemy_attack_yellow()
             }
             else if (turns_passed == 10)
             {
-                enemy_mode = global.enemy_mode;
+                var enemy_mode = global.enemy_mode;
                 
                 switch (enemy_mode)
                 {
@@ -685,7 +686,7 @@ function scr_determine_enemy_attack_yellow()
     }
     else if (battle_enemy_name == "frostermit solo")
     {
-        enemy_mode = global.enemy_mode;
+        var enemy_mode = global.enemy_mode;
         
         switch (enemy_mode)
         {
@@ -741,7 +742,7 @@ function scr_determine_enemy_attack_yellow()
         }
         else if ((enemy_dead_2 + enemy_spared_2) >= 1)
         {
-            enemy_mode = global.enemy_mode;
+            var enemy_mode = global.enemy_mode;
             
             switch (enemy_mode)
             {

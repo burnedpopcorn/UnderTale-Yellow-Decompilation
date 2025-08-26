@@ -1,6 +1,4 @@
-var box;
-
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 instance_create(irandom_range(box.bbox_left + 10, box.bbox_right - 10), box.bbox_top - 60, obj_battle_enemy_attack_falling_boulders_boulder);
 boulder_spawned_count += 1;
 

@@ -1,7 +1,5 @@
-var yy, i;
-
-yy = 0;
-i = floor(obj_raft_snowdin_22.image_index);
+var yy = 0;
+var i = floor(obj_raft_snowdin_22.image_index);
 
 switch (i)
 {

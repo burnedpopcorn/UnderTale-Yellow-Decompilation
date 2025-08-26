@@ -1,6 +1,6 @@
-function scr_determine_sell_price_shop(argument0)
+function scr_determine_sell_price_shop(arg0)
 {
-    switch (argument0)
+    switch (arg0)
     {
         case "Lemonade":
         case "Candy Corn":

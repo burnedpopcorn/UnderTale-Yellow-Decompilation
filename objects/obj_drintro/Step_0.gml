@@ -8,7 +8,7 @@ if (waiter == 30)
     
     with (msg)
     {
-        sndfnt = 97;
+        sndfnt = sndfnt_toriel;
         portrait = false;
         message[0] = "* My child!";
         message[1] = "* Are you all right?";

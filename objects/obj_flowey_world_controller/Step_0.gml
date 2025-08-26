@@ -1,5 +1,3 @@
-var sound_percentage, ef_distort, ef_scr, msg, flowey_face, x_original, y_original, mus_pos, mus_length, glitch_out;
-
 if (live_call())
     return global.live_result;
 
@@ -13,9 +11,9 @@ switch (scene)
         break;
     
     case 1:
-        sound_percentage = audio_sound_get_track_position(entrance_sound) / audio_sound_length(entrance_sound);
-        ef_distort = layer_get_fx("distort");
-        ef_scr = layer_get_fx("pixelate");
+        var sound_percentage = audio_sound_get_track_position(entrance_sound) / audio_sound_length(entrance_sound);
+        var ef_distort = layer_get_fx("distort");
+        var ef_scr = layer_get_fx("pixelate");
         fx_set_parameter(ef_distort, "g_DistortAmount", 40 - (sound_percentage * 40));
         fx_set_parameter(ef_scr, "g_CellSize", 15 - (sound_percentage * 15));
         
@@ -35,7 +33,7 @@ switch (scene)
     case 3:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
@@ -79,11 +77,11 @@ switch (scene)
     case 7:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
-                talker[0] = 1159;
+                talker[0] = obj_toriel_npc;
                 message[0] = "* Ah! Hello!";
                 message[1] = "* Are you all right?";
                 message[2] = "* You must be wondering#  what is going on...";
@@ -98,7 +96,7 @@ switch (scene)
         break;
     
     case 8:
-        cutscene_sfx_play(650, 1);
+        cutscene_sfx_play(snd_flowey_world_transition, 1);
         instance_create_depth(0, 0, 0, obj_flashback_transition_glitch);
         break;
     
@@ -121,7 +119,7 @@ switch (scene)
     case 11:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
@@ -144,7 +142,7 @@ switch (scene)
             if (!instance_exists(obj_flowey_world_text))
             {
                 global.cutscene = true;
-                msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+                var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
                 
                 with (msg)
                 {
@@ -152,14 +150,14 @@ switch (scene)
                     {
                         other.tori_dialogue = 1;
                         message[0] = "* Go on, press the#  switch on the left.";
-                        talker[0] = 1159;
+                        talker[0] = obj_toriel_npc;
                         skippable = true;
                     }
                     else
                     {
                         message[0] = "* You do know which#  way left is, do#  you not?";
                         message[1] = "* Press the switch that#  I labelled for you.";
-                        talker[0] = 1159;
+                        talker[0] = obj_toriel_npc;
                         skippable = true;
                     }
                     
@@ -191,11 +189,11 @@ switch (scene)
         {
             if (!instance_exists(obj_flowey_world_text))
             {
-                msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+                var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
                 
                 with (msg)
                 {
-                    talker[0] = 1159;
+                    talker[0] = obj_toriel_npc;
                     message[0] = "* Splendid!";
                     message[1] = "* I am proud of you,#  little one.";
                     soundfont = 97;
@@ -209,7 +207,7 @@ switch (scene)
         break;
     
     case 15:
-        cutscene_sfx_play(650, 1);
+        cutscene_sfx_play(snd_flowey_world_transition, 1);
         instance_create_depth(0, 0, 0, obj_flashback_transition_glitch);
         break;
     
@@ -230,12 +228,12 @@ switch (scene)
             if (!instance_exists(obj_flowey_world_text))
             {
                 global.cutscene = true;
-                msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+                var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
                 
                 with (msg)
                 {
                     message[0] = "* Go ahead and#  push the rock!";
-                    talker[0] = 1159;
+                    talker[0] = obj_toriel_npc;
                     skippable = true;
                     soundfont = 97;
                 }
@@ -263,11 +261,11 @@ switch (scene)
     case 19:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
-                talker[0] = 1159;
+                talker[0] = obj_toriel_npc;
                 message[0] = "* You are learning#  so much, my child!";
                 soundfont = 97;
             }
@@ -285,7 +283,7 @@ switch (scene)
         break;
     
     case 21:
-        cutscene_npc_set_sprites(1159, 3135, 59, 2613, 3261, 3135, 59, 2613, 3261);
+        cutscene_npc_set_sprites(obj_toriel_npc, spr_toriel_up_hold, spr_toriel_right_hold, spr_toriel_down_hold, spr_toriel_left_hold, spr_toriel_up_hold, spr_toriel_right_hold, spr_toriel_down_hold, spr_toriel_left_hold);
         obj_pl.x = 896;
         obj_pl.y = 288;
         obj_pl.image_alpha = 0;
@@ -303,7 +301,7 @@ switch (scene)
     case 23:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
@@ -327,7 +325,7 @@ switch (scene)
         break;
     
     case 26:
-        cutscene_npc_set_sprites(1159, 3135, 2788, 2613, 3261, 3135, 2788, 2613, 3261);
+        cutscene_npc_set_sprites(obj_toriel_npc, spr_toriel_up_hold, spr_toriel_right_hold_ahead, spr_toriel_down_hold, spr_toriel_left_hold, spr_toriel_up_hold, spr_toriel_right_hold_ahead, spr_toriel_down_hold, spr_toriel_left_hold);
         actor_toriel.x = 1215;
         actor_toriel.y = 200;
         actor_toriel.npc_direction = "right";
@@ -343,7 +341,7 @@ switch (scene)
     case 28:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
@@ -402,7 +400,7 @@ switch (scene)
     case 37:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
@@ -435,7 +433,7 @@ switch (scene)
     case 41:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
@@ -480,7 +478,7 @@ switch (scene)
     case 46:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
@@ -516,7 +514,7 @@ switch (scene)
     case 50:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
@@ -562,7 +560,7 @@ switch (scene)
     case 54:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
@@ -605,7 +603,7 @@ switch (scene)
     case 58:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
@@ -662,7 +660,7 @@ switch (scene)
     case 64:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
@@ -776,7 +774,7 @@ switch (scene)
     case 78:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
                 message[0] = "* I had to steer you#  off the path of failure#  as early as possible.";
@@ -822,7 +820,7 @@ switch (scene)
     case 83:
         if (!instance_exists(obj_flowey_world_text))
         {
-            msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
+            var msg = instance_create_depth(0, 0, -9999, obj_flowey_world_text);
             
             with (msg)
             {
@@ -879,9 +877,11 @@ switch (scene)
             return true;
         }
         
+        var flowey_face;
+        
         with (msg_flowey)
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "* ...";
             message[1] = "* Oh come on! You're still here?";
             message[2] = "* I thought at least my story#  might bore you so much that#  you'd give in!";
@@ -935,12 +935,12 @@ switch (scene)
             
             if (message_current == 3)
             {
-                sndfnt = 664;
+                sndfnt = sndfnt_flowey_2;
                 shake = true;
             }
             else
             {
-                sndfnt = 96;
+                sndfnt = sndfnt_flowey;
                 shake = false;
             }
         }
@@ -949,8 +949,8 @@ switch (scene)
         break;
     
     case 89:
-        x_original = obj_player_npc.xstart;
-        y_original = obj_player_npc.ystart;
+        var x_original = obj_player_npc.xstart;
+        var y_original = obj_player_npc.ystart;
         
         if (shake_intensity < 1)
         {
@@ -1102,9 +1102,9 @@ switch (scene)
         break;
     
     case 104:
-        mus_pos = audio_sound_get_track_position(fight_music);
-        mus_length = audio_sound_length(fight_music);
-        glitch_out = false;
+        var mus_pos = audio_sound_get_track_position(fight_music);
+        var mus_length = audio_sound_length(fight_music);
+        var glitch_out = false;
         
         switch (glitch_number)
         {

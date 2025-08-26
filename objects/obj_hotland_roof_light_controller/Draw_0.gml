@@ -1,6 +1,4 @@
-var pl_sprite;
-
-pl_sprite = spr_collisionbox;
+var pl_sprite = 0;
 depth = active_object.depth - 1;
 
 if (global.route == 3)
@@ -8,23 +6,23 @@ if (global.route == 3)
     switch (active_object.sprite_index)
     {
         case spr_pl_up:
-            pl_sprite = spr_pl_up_roof;
+            pl_sprite = 3466;
             break;
         
         case spr_pl_down_geno:
-            pl_sprite = spr_pl_down_roof_geno;
+            pl_sprite = 3705;
             break;
         
         case spr_pl_left_geno:
-            pl_sprite = spr_pl_left_roof_geno;
+            pl_sprite = 3117;
             break;
         
         case spr_pl_right_geno:
-            pl_sprite = spr_pl_right_roof_geno;
+            pl_sprite = 2574;
             break;
         
         case spr_pl_up_geno_shoot_roof:
-            pl_sprite = spr_pl_up_geno_shoot_roof;
+            pl_sprite = 3380;
             break;
         
         default:
@@ -38,19 +36,19 @@ else
     switch (active_object.sprite_index)
     {
         case spr_pl_up:
-            pl_sprite = spr_pl_up_roof;
+            pl_sprite = 3466;
             break;
         
         case spr_pl_down:
-            pl_sprite = spr_pl_down_roof;
+            pl_sprite = 732;
             break;
         
         case spr_pl_left:
-            pl_sprite = spr_pl_left_roof;
+            pl_sprite = 620;
             break;
         
         case spr_pl_right:
-            pl_sprite = spr_pl_right_roof;
+            pl_sprite = 2617;
             break;
         
         default:

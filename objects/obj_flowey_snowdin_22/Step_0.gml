@@ -1,4 +1,4 @@
-if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == 96)
+if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == sndfnt_flowey)
 {
     if (obj_dialogue.cutoff == string_length(obj_dialogue.message[obj_dialogue.message_current]))
     {
@@ -38,7 +38,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "* Wowie, what a day!";
             message[1] = "* Congrats, pal.";
             message[2] = "* You beat your first#  Royal Guard.";
@@ -48,27 +48,27 @@ switch (scene)
             message[6] = "* If you follow this#  current...";
             message[7] = "* You'll be living it up#  in Hotland before you#  know it.";
             message[8] = "* Now there's no time to#  waste.";
-            prt[0] = 348;
-            prt[1] = 349;
-            prt[2] = 349;
-            prt[3] = 347;
-            prt[4] = 348;
-            prt[5] = 347;
-            prt[6] = 348;
-            prt[7] = 348;
-            prt[8] = 348;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_smirk;
+            prt[2] = flowey_smirk;
+            prt[3] = flowey_niceside;
+            prt[4] = flowey_nice;
+            prt[5] = flowey_niceside;
+            prt[6] = flowey_nice;
+            prt[7] = flowey_nice;
+            prt[8] = flowey_nice;
             
             if (global.snowdin_flag[15] == 1)
             {
                 message[9] = "* See you later,#  Clover!";
-                prt[9] = 348;
+                prt[9] = flowey_nice;
                 other.timer = 15;
                 other.scene = 6;
             }
             else
             {
                 message[9] = "* See you later,#  Gun-hat!";
-                prt[9] = 349;
+                prt[9] = flowey_smirk;
                 other.timer = 30;
                 other.scene = 4;
             }
@@ -84,13 +84,13 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "* Okay, I've been#  thinking. ";
             message[1] = "* Gun-hat can't be your#  real name.";
             message[2] = "* You can't pull one over#  on old Flowey.";
-            prt[0] = 348;
-            prt[1] = 347;
-            prt[2] = 3251;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_niceside;
+            prt[2] = flowey_wink;
         }
         
         if (!global.dialogue_open)
@@ -109,15 +109,15 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "* Whatever your real name#  is,";
             message[1] = "* I've decided I don't#  care.";
             message[2] = "* Just know, friends#  shouldn't do that to one#  another.";
             message[3] = "* I wouldn't do that to#  you, now would I,#  Clover?";
-            prt[0] = 348;
-            prt[1] = 349;
-            prt[2] = 349;
-            prt[3] = 3251;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_smirk;
+            prt[2] = flowey_smirk;
+            prt[3] = flowey_wink;
         }
         
         if (!global.dialogue_open)

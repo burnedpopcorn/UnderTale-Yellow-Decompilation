@@ -1,11 +1,10 @@
-var final_spear, spear_x, spear_y, spear;
-
 spear_spawn_delay -= 1;
 
 if (spear_spawn_delay <= 0)
 {
     spear_spawn_delay = 30;
-    final_spear = false;
+    var final_spear = false;
+    var spear_x, spear_y;
     
     if (spear_spawn_count > 0 && obj_pl.x < 1580)
     {
@@ -20,7 +19,7 @@ if (spear_spawn_delay <= 0)
         scr_cutscene_start();
     }
     
-    spear = instance_create_depth(spear_x, spear_y, obj_pl.depth - 1, obj_flowey_world_spear);
+    var spear = instance_create_depth(spear_x, spear_y, obj_pl.depth - 1, obj_flowey_world_spear);
     
     if (final_spear)
     {

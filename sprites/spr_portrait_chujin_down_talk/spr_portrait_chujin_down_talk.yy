@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd6c5bb4-99a7-4b0f-a412-887d8878e791",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fb7e2fd3-6865-4665-8603-f5e6cd477e51",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d2022de7-d471-4516-a7a0-1dd85a001c56",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4004c585-23fe-43f4-954a-fac30038bedc",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 106,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dc532b99-a328-493c-aede-811cb6d27ea9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0071f07a-7ccc-44b0-bf76-7c422330c8fc","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fd6c5bb4-99a7-4b0f-a412-887d8878e791","path":"sprites/spr_portrait_chujin_down_talk/spr_portrait_chujin_down_talk.yy",},},},"Disabled":false,"id":"733d18bb-ba2b-49f3-a99c-6572bbb76901","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fb7e2fd3-6865-4665-8603-f5e6cd477e51","path":"sprites/spr_portrait_chujin_down_talk/spr_portrait_chujin_down_talk.yy",},},},"Disabled":false,"id":"befff3f6-5bac-4fb4-9872-74db779819f7","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d2022de7-d471-4516-a7a0-1dd85a001c56","path":"sprites/spr_portrait_chujin_down_talk/spr_portrait_chujin_down_talk.yy",},},},"Disabled":false,"id":"3a757aae-0cb3-4874-837a-394d4c805c65","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4004c585-23fe-43f4-954a-fac30038bedc","path":"sprites/spr_portrait_chujin_down_talk/spr_portrait_chujin_down_talk.yy",},},},"Disabled":false,"id":"d6581d74-290a-400c-9bd8-e04f9562ffa2","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Mansion",
+    "path": "texturegroups/Mansion",
   },
   "type": 0,
   "VTile": false,

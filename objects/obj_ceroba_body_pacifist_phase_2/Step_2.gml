@@ -1,9 +1,7 @@
-var fade_back;
-
 if (live_call())
     return global.live_result;
 
-fade_back = false;
+var fade_back = false;
 
 if (instance_exists(obj_ceroba_phase_2_opener) && obj_ceroba_phase_2_opener.scene < 19)
     fade_back = true;

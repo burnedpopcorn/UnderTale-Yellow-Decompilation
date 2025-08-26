@@ -72,26 +72,26 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Clover? You okay?";
             message[1] = "* Did you faint or#  something?";
             message[2] = "* Hey, we can take a#  break soon, alright?\t";
             message[3] = "* (That was strange...)";
-            prt[0] = 381;
-            prt[1] = 381;
-            prt[2] = 377;
-            prt[3] = 371;
+            prt[0] = spr_portrait_ceroba_nervous;
+            prt[1] = spr_portrait_ceroba_nervous;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
+            prt[3] = spr_portrait_ceroba_alt;
         }
         
         break;
     
     case 7:
         obj_player_npc.npc_direction = "right";
-        cutscene_npc_walk(1161, obj_player_npc.x - 20, obj_player_npc.y, 3, "y", "right");
+        cutscene_npc_walk(obj_ceroba_npc, obj_player_npc.x - 20, obj_player_npc.y, 3, "y", "right");
         break;
     
     case 8:
-        actor_follower = 1161;
+        actor_follower = obj_ceroba_npc;
         obj_pl.direction = 0;
         cutscene_actor_into_follower();
         cutscene_camera_reset(true);

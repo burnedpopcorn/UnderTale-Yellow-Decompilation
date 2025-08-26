@@ -1,5 +1,3 @@
-var twinkle;
-
 if (live_call())
     return global.live_result;
 
@@ -14,7 +12,7 @@ if (image_index >= (image_number - 1))
 if (image_index >= 3 && !audio_noloop)
 {
     audio_noloop = true;
-    twinkle = audio_play_sound(snd_axis_twinkle, 1, 0);
+    var twinkle = audio_play_sound(snd_axis_twinkle, 1, 0);
     audio_sound_pitch(twinkle, random_range(0.8, 1.2));
     audio_sound_gain(twinkle, 0.7, 0);
 }

@@ -1,7 +1,5 @@
 function scr_battle_core_directory_action_2_selected_text()
 {
-    var act_number;
-    
     if (global.battling_boss == true)
     {
         battle_enemy_name = global.battle_enemy_name;
@@ -9,7 +7,7 @@ function scr_battle_core_directory_action_2_selected_text()
     }
     else
     {
-        act_number = global.act_number;
+        var act_number = global.act_number;
         
         switch (act_number)
         {

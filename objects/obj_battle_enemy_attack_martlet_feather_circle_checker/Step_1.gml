@@ -1,5 +1,3 @@
-var can_feather_launch;
-
 game_maker_cannot_do_math = power((time_elapsed_radius / ((time_max_radius / 2) * (1 / sqrt(max_rise_radius)))) - sqrt(max_rise_radius), 2);
 radius_increase = sign_modifier_radius * (max_rise_radius - round(game_maker_cannot_do_math));
 time_elapsed_radius += time_increase_radius;
@@ -47,7 +45,7 @@ if (feather_angle_master >= 360)
 
 if (feather_launch_no_loop == false)
 {
-    can_feather_launch = true;
+    var can_feather_launch = true;
     
     if (obj_battle_enemy_attack_martlet_feather_circle_feather.image_alpha < 1)
         can_feather_launch = false;

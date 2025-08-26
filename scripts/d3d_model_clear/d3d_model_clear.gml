@@ -1,8 +1,6 @@
-function d3d_model_clear(argument0)
+function d3d_model_clear(arg0)
 {
-    var __m;
-    
-    __m = argument0;
+    var __m = arg0;
     
     if (__m[UnknownEnum.Value_0] != undefined)
     {

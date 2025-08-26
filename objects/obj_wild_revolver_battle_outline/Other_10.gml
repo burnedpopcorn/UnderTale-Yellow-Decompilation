@@ -1,5 +1,3 @@
-var _target_max, target_circle;
-
 if (live_call())
     return global.live_result;
 
@@ -7,13 +5,15 @@ time_elapsed = 0;
 target_current += 1;
 can_rotate = false;
 no_loop_rotate = false;
-_target_max = target_max;
+var _target_max = target_max;
 
 if (instance_exists(obj_wild_revolver_circle_multi))
     _target_max -= (obj_wild_revolver_circle_multi.circle_count - 1);
 
 if (target_current < _target_max)
 {
+    var target_circle;
+    
     if (instance_exists(obj_wild_revolver_circle_multi))
     {
         if (!instance_exists(obj_wild_revolver_circle_multi_pre))
@@ -44,5 +44,5 @@ else if (instance_exists(obj_target_bar_battle))
     with (obj_target_bar_battle)
         can_execute = true;
     
-    multishot_id = 2856;
+    multishot_id = obj_target_bar_battle;
 }

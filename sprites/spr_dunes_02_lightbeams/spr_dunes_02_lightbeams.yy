@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cf4836b6-95ba-4f21-aefc-3dae65bd195c",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0066851a-f2db-4ac9-b8df-21def664a704",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2da34c88-f6a4-4d7f-8174-3af56bcb0904",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c7e42c10-c43d-4347-bc92-bbf9642b46f0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b01a50e5-74a3-4598-810e-9001743e6dbb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6c9f6dee-07e8-41a2-97cb-7372e21b18be",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 197,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ff596ab3-9f85-40f8-9ec1-0cda17e50fae","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0c678173-3d96-4357-b02b-02162d15908f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cf4836b6-95ba-4f21-aefc-3dae65bd195c","path":"sprites/spr_dunes_02_lightbeams/spr_dunes_02_lightbeams.yy",},},},"Disabled":false,"id":"b75eba7e-7ea7-4645-b9e5-7b9706a751ac","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0066851a-f2db-4ac9-b8df-21def664a704","path":"sprites/spr_dunes_02_lightbeams/spr_dunes_02_lightbeams.yy",},},},"Disabled":false,"id":"d28c08d5-13ef-43a2-ae13-0855d60923af","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2da34c88-f6a4-4d7f-8174-3af56bcb0904","path":"sprites/spr_dunes_02_lightbeams/spr_dunes_02_lightbeams.yy",},},},"Disabled":false,"id":"7432d267-b171-488f-8e4c-88931440090a","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c7e42c10-c43d-4347-bc92-bbf9642b46f0","path":"sprites/spr_dunes_02_lightbeams/spr_dunes_02_lightbeams.yy",},},},"Disabled":false,"id":"7be15e60-2191-4f67-a37d-de600259d603","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b01a50e5-74a3-4598-810e-9001743e6dbb","path":"sprites/spr_dunes_02_lightbeams/spr_dunes_02_lightbeams.yy",},},},"Disabled":false,"id":"5fc139b8-05b1-41c9-9d78-a072374a13c5","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6c9f6dee-07e8-41a2-97cb-7372e21b18be","path":"sprites/spr_dunes_02_lightbeams/spr_dunes_02_lightbeams.yy",},},},"Disabled":false,"id":"7970057f-37f8-4c0d-a0a9-41a1353509f8","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Dunes",
+    "path": "texturegroups/Dunes",
   },
   "type": 0,
   "VTile": false,

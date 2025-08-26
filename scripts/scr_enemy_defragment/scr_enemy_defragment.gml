@@ -1,15 +1,13 @@
 function scr_enemy_defragment()
 {
-    var width, height, i, j;
-    
-    width = sprite_get_width(sprite_index);
-    height = sprite_get_height(sprite_index);
+    var width = sprite_get_width(sprite_index);
+    var height = sprite_get_height(sprite_index);
     i_inc = width / 20;
     j_inc = 2;
     
-    for (i = 0; i < width; i += i_inc)
+    for (var i = 0; i < width; i += i_inc)
     {
-        for (j = 0; j < height; j += j_inc)
+        for (var j = 0; j < height; j += j_inc)
         {
             part = instance_create(bbox_left + i, bbox_top + j, obj_piece);
             

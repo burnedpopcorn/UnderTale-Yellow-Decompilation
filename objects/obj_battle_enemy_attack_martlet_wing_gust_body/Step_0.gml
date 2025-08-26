@@ -1,9 +1,7 @@
-var particles_spawn, inc, i, xx, yy;
-
 if (live_call())
     return global.live_result;
 
-particles_spawn = false;
+var particles_spawn = false;
 
 if (sprite_index == spr_martlet_p_full_fly_begin || sprite_index == spr_martlet_g_full_fly_begin)
 {
@@ -119,12 +117,12 @@ else if (sprite_index == spr_martlet_p_full_fly_during || sprite_index == spr_ma
 
 if (particles_spawn)
 {
-    inc = 22.857142857142858;
+    var inc = 22.857142857142858;
     
-    for (i = 0; i < 7; i++)
+    for (var i = 0; i < 7; i++)
     {
-        xx = 250 + (i * inc);
-        yy = 270 + (sign(i % 2) * 20) + random_range(-10, 10);
+        var xx = 250 + (i * inc);
+        var yy = 270 + (sign(i % 2) * 20) + random_range(-10, 10);
         part_particles_create(global.ps, xx, yy, global.pt_Effect1, 1);
         part_particles_create(global.ps, xx, (yy - 60) + random_range(-10, 10), global.pt_Effect1, 1);
     }

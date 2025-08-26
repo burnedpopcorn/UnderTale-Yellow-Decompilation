@@ -1,5 +1,3 @@
-var compound_id, i, status_1, status_2;
-
 if (live_call())
     return global.live_result;
 
@@ -12,7 +10,7 @@ switch (screen_state)
             {
                 if (point_distance(x, y, other.x + 55, other.y + 64) < 30)
                 {
-                    if (other.item_throw_noloop == false || keyboard_multicheck_pressed(1))
+                    if (other.item_throw_noloop == false || keyboard_multicheck_pressed(vk_anykey))
                     {
                         scr_cutscene_start();
                         robot_item_x_target = 165;
@@ -29,10 +27,10 @@ switch (screen_state)
             }
         }
         
-        if (keyboard_multicheck_pressed(0) && scr_interact() && screen_interact_noloop == false)
+        if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() && screen_interact_noloop == false)
         {
             screen_counter = 0;
-            screen_message = "...\nWaiting for correct\ncompounds to complete\nmixture . .";
+            screen_message = "...\nWaiting for correct\ncompounds to complete\nmixture . . .";
             
             if (global.route == 3)
                 screen_message = "ERROR: Power low";
@@ -69,7 +67,7 @@ switch (screen_state)
             else
             {
                 other.screen_counter = 0;
-                other.screen_message = "Reading. .";
+                other.screen_message = "Reading. . .";
                 other.screen_state += 1;
             }
         }
@@ -143,13 +141,13 @@ switch (screen_state)
         if (global.route != 3)
         {
             scr_text();
-            compound_id = compound_active;
+            var compound_id = compound_active;
             
             with (msg)
             {
-                for (i = 0; i < array_length(compound_id.message); i++)
+                for (var i = 0; i < array_length(compound_id.message); i++)
                 {
-                    col_modif[0] = 65280;
+                    col_modif[0] = c_lime;
                     message[i] = compound_id.message[i];
                     message_col[i][0] = message[i];
                     color = true;
@@ -169,7 +167,7 @@ switch (screen_state)
         if (compound_count == 0)
         {
             screen_counter = 0;
-            screen_message = "...\nWaiting for correct\ncompounds to complete\nmixture . .";
+            screen_message = "...\nWaiting for correct\ncompounds to complete\nmixture . . .";
             
             if (global.route == 3)
                 screen_message = "ERROR: Power low";
@@ -179,8 +177,8 @@ switch (screen_state)
         else
         {
             screen_counter = 0;
-            status_1 = "MISSING";
-            status_2 = "MISSING";
+            var status_1 = "MISSING";
+            var status_2 = "MISSING";
             
             if (compound_count > 0)
                 status_1 = "PRESENT";
@@ -194,10 +192,10 @@ switch (screen_state)
         
         if (compound_count > 1)
         {
-            screen_message = ". .Booting process.";
+            screen_message = ". . .Booting process.";
             
             if (global.route == 3)
-                screen_message = ". .";
+                screen_message = ". . .";
             
             screen_state += 1;
         }
@@ -268,7 +266,7 @@ switch (screen_state)
 
 if (screen_counter < string_length(screen_message))
 {
-    if (keyboard_multicheck_pressed(1) && screen_state > 0)
+    if (keyboard_multicheck_pressed(vk_anykey) && screen_state > 0)
         screen_counter = string_length(screen_message);
     
     screen_counter += 1;

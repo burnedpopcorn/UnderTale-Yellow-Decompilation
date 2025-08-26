@@ -1,6 +1,6 @@
 if (window == 0)
 {
-    if (keyboard_multicheck_pressed(0) && scr_interact())
+    if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
         window = 1;
 }
 

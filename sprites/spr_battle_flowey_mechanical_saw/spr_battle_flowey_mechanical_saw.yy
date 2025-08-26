@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"40ca564d-324d-4369-a311-12d195084e3e",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3e01929-921c-400d-8d37-070f2df3785e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5005ce07-4cbb-416f-b211-36929177e510",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"41aba124-0c32-4759-958f-615db18441d2",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 78,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cebf39a6-a5e6-4087-8544-9b105257c009","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8ae06475-552a-4abd-be27-f4d77c51819b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"40ca564d-324d-4369-a311-12d195084e3e","path":"sprites/spr_battle_flowey_mechanical_saw/spr_battle_flowey_mechanical_saw.yy",},},},"Disabled":false,"id":"522dc9ef-b105-419e-b620-22d0f76a269c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c3e01929-921c-400d-8d37-070f2df3785e","path":"sprites/spr_battle_flowey_mechanical_saw/spr_battle_flowey_mechanical_saw.yy",},},},"Disabled":false,"id":"199e96aa-b9be-4754-a7a4-68ea9084a3c2","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5005ce07-4cbb-416f-b211-36929177e510","path":"sprites/spr_battle_flowey_mechanical_saw/spr_battle_flowey_mechanical_saw.yy",},},},"Disabled":false,"id":"4809cf5a-b378-403a-b9a5-f1935cfee6fd","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"41aba124-0c32-4759-958f-615db18441d2","path":"sprites/spr_battle_flowey_mechanical_saw/spr_battle_flowey_mechanical_saw.yy",},},},"Disabled":false,"id":"f9985c27-ae4a-4986-99ad-bccf4bc52921","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleHotlandFloweyMechanical",
+    "path": "texturegroups/BattleHotlandFloweyMechanical",
   },
   "type": 0,
   "VTile": false,

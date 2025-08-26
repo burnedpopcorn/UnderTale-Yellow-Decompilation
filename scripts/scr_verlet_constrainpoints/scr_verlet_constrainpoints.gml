@@ -1,36 +1,34 @@
-function scr_verlet_constrainpoints(argument0, argument1, argument2)
+function scr_verlet_constrainpoints(arg0, arg1, arg2)
 {
-    var i, p, vx, vy;
-    
-    for (i = 0; i < array_length(argument0); i++)
+    for (var i = 0; i < array_length(arg0); i++)
     {
-        p = argument0[i];
+        var p = arg0[i];
         
         if (!p[4])
         {
-            vx = (p[0] - p[2]) * argument1;
-            vy = (p[1] - p[3]) * argument1;
+            var vx = (p[0] - p[2]) * arg1;
+            var vy = (p[1] - p[3]) * arg1;
             
             if (p[0] > room_width)
             {
                 p[0] = room_width;
-                p[2] = p[0] + (vx * argument2);
+                p[2] = p[0] + (vx * arg2);
             }
             else if (p[0] < 0)
             {
                 p[0] = 0;
-                p[2] = p[0] + (vx * argument2);
+                p[2] = p[0] + (vx * arg2);
             }
             
             if (p[1] > room_height)
             {
                 p[1] = room_height;
-                p[3] = p[1] + (vy * argument2);
+                p[3] = p[1] + (vy * arg2);
             }
             else if (p[1] < 0)
             {
                 p[1] = 0;
-                p[3] = p[1] + (vy * argument2);
+                p[3] = p[1] + (vy * arg2);
             }
         }
     }

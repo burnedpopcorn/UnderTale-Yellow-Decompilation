@@ -1,5 +1,3 @@
-var move_steps;
-
 if (image_alpha < 1 && move == false)
 {
     image_alpha += 0.1;
@@ -21,7 +19,7 @@ if (move == true)
             move_speed = move_speed_max;
     }
     
-    move_steps = 1 + floor(move_speed / (move_speed_max / 2));
+    var move_steps = 1 + floor(move_speed / (move_speed_max / 2));
     
     for (i = 0; i < move_steps; i += 1)
     {

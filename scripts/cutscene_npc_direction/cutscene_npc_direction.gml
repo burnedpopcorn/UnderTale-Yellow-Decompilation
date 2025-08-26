@@ -1,10 +1,10 @@
-function cutscene_npc_direction(argument0, argument1)
+function cutscene_npc_direction(arg0, arg1)
 {
-    if (instance_exists(argument0))
+    if (instance_exists(arg0))
     {
-        with (argument0)
+        with (arg0)
         {
-            npc_direction = argument1;
+            npc_direction = arg1;
             
             with (other)
                 cutscene_advance();

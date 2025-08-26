@@ -1,8 +1,7 @@
-function scr_item_info(argument0)
+function scr_item_info(arg0)
 {
-    var item, info, msg_number, i;
-    
-    item = argument0;
+    var item = arg0;
+    var info;
     info[0] = "* Info message";
     
     switch (item)
@@ -328,9 +327,9 @@ function scr_item_info(argument0)
     
     with (msg)
     {
-        msg_number = array_length_1d(info);
+        var msg_number = array_length_1d(info);
         
-        for (i = 0; i < msg_number; i++)
+        for (var i = 0; i < msg_number; i++)
             message[i] = info[i];
     }
 }

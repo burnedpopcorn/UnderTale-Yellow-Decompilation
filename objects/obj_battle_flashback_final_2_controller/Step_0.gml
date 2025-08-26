@@ -1,5 +1,3 @@
-var dialogue, _fx_haze, distort_amount_current, effect, laugh;
-
 if (live_call())
     return global.live_result;
 
@@ -15,7 +13,7 @@ switch (scene)
         break;
     
     case 1:
-        dialogue = instance_create_depth(camera_get_view_x(view_camera[0]) + 140, camera_get_view_y(view_camera[0]) + 80, -9999, obj_dialogue_withered_floweys);
+        var dialogue = instance_create_depth(camera_get_view_x(view_camera[0]) + 140, camera_get_view_y(view_camera[0]) + 80, -9999, obj_dialogue_withered_floweys);
         
         with (dialogue)
         {
@@ -84,8 +82,8 @@ switch (scene)
         break;
     
     case 10:
-        _fx_haze = layer_get_fx("distort_effect");
-        distort_amount_current = fx_get_parameter(_fx_haze, "g_Distort1Amount") + 0.2;
+        var _fx_haze = layer_get_fx("distort_effect");
+        var distort_amount_current = fx_get_parameter(_fx_haze, "g_Distort1Amount") + 0.2;
         
         if (distort_amount_current < 3)
         {
@@ -135,7 +133,7 @@ switch (scene)
         else
         {
             cutscene_advance();
-            effect = audio_effect_create(AudioEffectType.Delay);
+            var effect = audio_effect_create(AudioEffectType.Delay);
             effect.mix = 0.5;
             effect.time = 0.1;
             audio_bus_main.effects[0] = effect;
@@ -148,7 +146,7 @@ switch (scene)
         
         if (irandom(8) == 1)
         {
-            laugh = audio_play_sound(choose(23, 630), 1, 0, random_range(0.3, 0.5), 0, random_range(0.6, 1.2));
+            var laugh = audio_play_sound(choose(23, 630), 1, 0, random_range(0.3, 0.5), 0, random_range(0.6, 1.2));
             audio_sound_set_track_position(laugh, random_range(0, audio_sound_length(laugh)));
             audio_sound_gain(laugh, 0, 300);
         }
@@ -179,7 +177,7 @@ switch (scene)
         break;
     
     case 20:
-        dialogue = instance_create_depth(camera_get_view_x(view_camera[0]) + 100, camera_get_view_y(view_camera[0]) + 80, -9999, obj_dialogue_withered_floweys);
+        var dialogue = instance_create_depth(camera_get_view_x(view_camera[0]) + 100, camera_get_view_y(view_camera[0]) + 80, -9999, obj_dialogue_withered_floweys);
         
         with (dialogue)
             message[0] = "* what have i done.";
@@ -240,7 +238,7 @@ switch (scene)
             depth = 0;
             draw_alpha = 1;
             persistent = true;
-            cutscene_change_room(233, 160, 1490, 0.1);
+            cutscene_change_room(rm_battle_flashback_07, 160, 1490, 0.1);
             
             if (!texture_is_ready("BattleHotlandFloweyPaper"))
                 texture_prefetch("BattleHotlandFloweyPaper");
@@ -288,7 +286,5 @@ switch (scene)
 if (flowey_bg_alpha > 0)
     flowey_bg_offset -= 0.1;
 
-//if (room == rm_battle_flashback_final_2 && instance_exists(106520) && obj_pl.x > ((106520).bbox_right + 20))
-//   (106520).y = 160;
-if (room == rm_battle_flashback_final_2 && instance_exists(inst_7CF772ED) && obj_pl.x > ((inst_7CF772ED).bbox_right + 20))
-    inst_7CF772ED.y = 160;
+if (room == rm_battle_flashback_final_2 && instance_exists(inst_7F1F14AE) && obj_pl.x > (inst_7F1F14AE.bbox_right + 20))
+    inst_7F1F14AE.y = 160;

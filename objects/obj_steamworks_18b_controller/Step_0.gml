@@ -1,5 +1,3 @@
-var sale_number, i;
-
 if (live_call())
     return global.live_result;
 
@@ -51,7 +49,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_npc_reset_sprite(2063, "down");
+        cutscene_npc_reset_sprite(obj_steamworks_mo, "down");
         break;
     
     case 6:
@@ -59,7 +57,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             message[0] = "* Bam!";
             message[1] = "* It's ya boy, Mo!";
             message[2] = "* How did I get here?";
@@ -90,7 +88,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             message[0] = "* First thought that sprung to#  mind? Taste them.";
             message[1] = "* And I'll tell ya what, the#  stuff hit me like WAM!";
             message[2] = "* Best cuisine you'll ever#  experience, truly.";
@@ -129,20 +127,20 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt_array[0] = 108;
-            talker[0] = 1171;
+            sndfnt_array[0] = snd_talk_ceroba;
+            talker[0] = obj_ceroba_follower;
             message[0] = "* Uh...#  You got something...";
-            prt[0] = 381;
-            sndfnt_array[1] = 391;
-            talker[1] = 2063;
+            prt[0] = spr_portrait_ceroba_nervous;
+            sndfnt_array[1] = snd_talk_default;
+            talker[1] = obj_steamworks_mo;
             message[1] = "* I ain't done with the pitch#  yet, miss.";
             message[2] = "* This is important.";
-            sndfnt_array[3] = 108;
-            talker[3] = 1171;
+            sndfnt_array[3] = snd_talk_ceroba;
+            talker[3] = obj_ceroba_follower;
             message[3] = "* But-";
-            prt[3] = 384;
-            sndfnt_array[4] = 391;
-            talker[4] = 2063;
+            prt[3] = spr_portrait_ceroba_unamused;
+            sndfnt_array[4] = snd_talk_default;
+            talker[4] = obj_steamworks_mo;
             message[4] = "* Like I was sayin', plants?#  More like PLEASED!!!!";
             message[5] = "* I even molded them into#  recognizable food shapes for#  that visual appeal!";
             
@@ -169,7 +167,7 @@ switch (scene)
         if (instance_exists(obj_steamworks_mo_flame))
             instance_destroy(obj_steamworks_mo_flame);
         
-        cutscene_npc_action_sprite(2063, 1363, 1/3, false, 0, 334, 2);
+        cutscene_npc_action_sprite(obj_steamworks_mo, spr_mo_steamworks_throw_hat, 1/3, false, 0, snd_mo_hat_toss, 2);
         
         if (obj_steamworks_mo.image_index >= 7 && !instance_exists(obj_steamworks_mo_hat))
             instance_create(obj_steamworks_mo.x + 22, obj_steamworks_mo.y + 16, obj_steamworks_mo_hat);
@@ -178,7 +176,7 @@ switch (scene)
         break;
     
     case 15:
-        cutscene_npc_reset_sprite(2063, "down");
+        cutscene_npc_reset_sprite(obj_steamworks_mo, "down");
         break;
     
     case 16:
@@ -186,7 +184,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             message[0] = "* Visual appeal is half the#  battle I say!";
         }
         
@@ -197,7 +195,7 @@ switch (scene)
         break;
     
     case 18:
-        cutscene_npc_action_sprite(2063, 1362, 1/3, false, 0, 337, 4);
+        cutscene_npc_action_sprite(obj_steamworks_mo, spr_mo_steamworks_undress, 1/3, false, 0, snd_mo_jacket_toss, 4);
         
         if (obj_steamworks_mo.image_index >= 16 && obj_steamworks_mo_hat.sprite_index != spr_mo_steamworks_coat)
         {
@@ -215,7 +213,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             message[0] = "* Ain't nobody gonna buy ya#  product if it looks ugly#  right???";
         }
         
@@ -253,7 +251,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             message[0] = "* But you would, I know it. Ol'#  Mo can always count on your#  business!";
         }
         
@@ -264,7 +262,7 @@ switch (scene)
             break;
     
     case 25:
-        cutscene_npc_action_sprite(2063, 1378, 1/3, false, 0, 338, 6);
+        cutscene_npc_action_sprite(obj_steamworks_mo, spr_mo_steamworks_kick, 1/3, false, 0, snd_mo_jacket_kick, 6);
         
         if (obj_steamworks_mo.image_index >= 6 && obj_steamworks_mo_hat.hspeed == 0)
             obj_steamworks_mo_hat.state = 1;
@@ -283,18 +281,18 @@ switch (scene)
         {
             if (global.party_member != -4)
             {
-                talker[0] = 1171;
-                sndfnt_array[0] = 108;
+                talker[0] = obj_ceroba_follower;
+                sndfnt_array[0] = snd_talk_ceroba;
                 message[0] = "* You okay?";
-                prt[0] = 370;
-                talker[1] = 2063;
-                sndfnt_array[1] = 391;
+                prt[0] = spr_portrait_ceroba_neutral;
+                talker[1] = obj_steamworks_mo;
+                sndfnt_array[1] = snd_talk_default;
                 message[1] = "* Never better, haha!";
                 message[2] = "* Now, where's my stand?";
             }
             else
             {
-                talker[0] = 2063;
+                talker[0] = obj_steamworks_mo;
                 message[0] = "* Now, where's my stand?";
             }
         }
@@ -302,14 +300,14 @@ switch (scene)
         break;
     
     case 28:
-        cutscene_npc_set_sprites(2063, 1381, 1371, 1374, 1370, 1381, 1371, 1369, 1370);
+        cutscene_npc_set_sprites(obj_steamworks_mo, spr_mo_steamworks_alt_up, spr_mo_steamworks_alt_right, spr_mo_steamworks_alt_down, spr_mo_steamworks_alt_left, spr_mo_steamworks_alt_up, spr_mo_steamworks_alt_right, spr_mo_steamworks_alt_talk, spr_mo_steamworks_alt_left);
     
     case 29:
-        cutscene_npc_walk(2063, 260, obj_steamworks_mo.y, 2, "x", "down");
+        cutscene_npc_walk(obj_steamworks_mo, 260, obj_steamworks_mo.y, 2, "x", "down");
         break;
     
     case 30:
-        cutscene_npc_action_sprite(2063, 1365, 1/3, false, 0, 303, 3);
+        cutscene_npc_action_sprite(obj_steamworks_mo, spr_mo_steamworks_snap, 1/3, false, 0, snd_mo_snap, 3);
         break;
     
     case 31:
@@ -406,7 +404,7 @@ switch (scene)
         break;
     
     case 41:
-        cutscene_npc_direction(2063, "down");
+        cutscene_npc_direction(obj_steamworks_mo, "down");
         break;
     
     case 42:
@@ -418,7 +416,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             message[0] = "* I... uh... I have a few#  products left in my pocket!";
             message[1] = "* Don't go yet!";
         }
@@ -432,7 +430,7 @@ switch (scene)
         break;
     
     case 45:
-        cutscene_npc_walk(2063, 210, 135, 3, "y", "down");
+        cutscene_npc_walk(obj_steamworks_mo, 210, 135, 3, "y", "down");
         
         if (obj_steamworks_mo.y < (obj_steamworks_mo_stand.y - 10))
             obj_steamworks_mo_stand.depth = -obj_steamworks_mo_stand.y;
@@ -462,7 +460,7 @@ switch (scene)
             if (global.extra_flag[9] == true)
                 ch[3] = "-SOLD OUT-";
             
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             message[0] = "* Here's what I got. (30 G)";
             
             if (global.sworks_flag[10] == 1)
@@ -494,7 +492,7 @@ switch (scene)
                         else
                         {
                             talker[message_current + 1] = -4;
-                            talker[message_current + 2] = 2063;
+                            talker[message_current + 2] = obj_steamworks_mo;
                             message[message_current + 1] = "* (You got some " + ch[outcome] + "!)";
                             message[message_current + 2] = "* Appreciate it!";
                             global.player_gold -= 30;
@@ -530,7 +528,7 @@ switch (scene)
         if (global.extra_flag[7] && global.extra_flag[8] && global.extra_flag[9])
         {
             scene = 48.5;
-            scr_audio_fade_out(164, 750);
+            scr_audio_fade_out(mus_gimme_ur_cash_yellow, 750);
             scr_cutscene_start();
             exit;
         }
@@ -547,7 +545,7 @@ switch (scene)
     case 48:
         with (obj_steamworks_mo)
         {
-            if (scr_interact() && keyboard_multicheck_pressed(0))
+            if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
                 other.scene = 46;
         }
         
@@ -560,9 +558,9 @@ switch (scene)
         break;
     
     case 49:
-        sale_number = 0;
+        var sale_number = 0;
         
-        for (i = 1; i < array_length(global.extra_flag); i++)
+        for (var i = 1; i < array_length(global.extra_flag); i++)
         {
             if (global.extra_flag[i] == true)
                 sale_number += 1;
@@ -572,7 +570,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             
             if (sale_number <= 3)
             {
@@ -602,7 +600,7 @@ switch (scene)
         break;
     
     case 50:
-        cutscene_npc_walk(2063, 210, 115, 1, "y", "down");
+        cutscene_npc_walk(obj_steamworks_mo, 210, 115, 1, "y", "down");
         break;
     
     case 51:
@@ -610,11 +608,11 @@ switch (scene)
         break;
     
     case 52:
-        cutscene_npc_direction(2063, "down");
+        cutscene_npc_direction(obj_steamworks_mo, "down");
         break;
     
     case 53:
-        cutscene_npc_action_sprite(2063, 1365, 1/3, false, 0, 303, 3);
+        cutscene_npc_action_sprite(obj_steamworks_mo, spr_mo_steamworks_snap, 1/3, false, 0, snd_mo_snap, 3);
         break;
     
     case 54:
@@ -622,7 +620,7 @@ switch (scene)
         break;
     
     case 55:
-        cutscene_sfx_play(325, 1);
+        cutscene_sfx_play(snd_manta_startup, 1);
         break;
     
     case 56:
@@ -642,7 +640,7 @@ switch (scene)
         break;
     
     case 59:
-        if (cutscene_npc_walk(437, 210, 95, 4, "y", "down"))
+        if (cutscene_npc_walk(obj_manta_npc, 210, 95, 4, "y", "down"))
         {
             obj_manta_npc.action_sprite = true;
             obj_manta_npc.npc_dynamic_depth = false;
@@ -662,7 +660,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2063;
+            talker[0] = obj_steamworks_mo;
             message[0] = "* Mo, out!";
         }
         
@@ -671,7 +669,7 @@ switch (scene)
     case 62:
         obj_steamworks_mo.npc_dynamic_depth = false;
         obj_steamworks_mo.depth = obj_manta_npc.depth - 100000;
-        cutscene_npc_walk(2063, 210, 80, 3, "y", "down");
+        cutscene_npc_walk(obj_steamworks_mo, 210, 80, 3, "y", "down");
         break;
     
     case 63:

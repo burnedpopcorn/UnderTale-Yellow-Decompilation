@@ -48,18 +48,18 @@ if (waiter == 3)
         if (global.interaction_count_dalvroomhall_door == 0)
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* ...";
             message[1] = "* Let's look at something#  else, okay?";
-            prt[0] = 1763;
-            prt[1] = 1780;
+            prt[0] = spr_dalv_head_sad;
+            prt[1] = spr_dalv_head_sad_side;
         }
         else
         {
             portrait = true;
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* ...";
-            prt[0] = 1780;
+            prt[0] = spr_dalv_head_sad_side;
         }
     }
     

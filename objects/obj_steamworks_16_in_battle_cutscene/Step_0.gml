@@ -5,9 +5,9 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Wait! Another robot!?";
-            prt[0] = 381;
+            prt[0] = spr_portrait_ceroba_nervous;
         }
         
         if (!global.dialogue_open)
@@ -37,17 +37,17 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* No way! We can't fight#  this thing!";
             message[1] = "* What if Chujin built-";
             message[2] = "* You know what? We'll#  talk later.";
             message[3] = "* Let's find a peaceful#  way around them.";
             message[4] = "* I'll do my best to#  provide defense for us.";
-            prt[0] = 388;
-            prt[1] = 381;
-            prt[2] = 394;
-            prt[3] = 377;
-            prt[4] = 371;
+            prt[0] = spr_portrait_ceroba_confounded;
+            prt[1] = spr_portrait_ceroba_nervous;
+            prt[2] = spr_portrait_ceroba_disapproving;
+            prt[3] = spr_portrait_ceroba_closed_eyes;
+            prt[4] = spr_portrait_ceroba_alt;
         }
         
         if (!global.dialogue_open)

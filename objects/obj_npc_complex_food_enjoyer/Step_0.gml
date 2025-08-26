@@ -10,11 +10,11 @@ if (interact)
         with (msg)
         {
             other.is_talking = 0;
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* (We need to stay#  focused.)";
             message[1] = "* (Let's not bother#  others with our#  problems.)";
-            prt[0] = 321;
-            prt[1] = 329;
+            prt[0] = spr_martlet_head_moderate;
+            prt[1] = spr_martlet_head_sad;
         }
     }
     else
@@ -25,7 +25,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* This has got to be the best#  restaurant in the Underground.#  Seriously.";
                     message[1] = "* You can't beat the food, the#  service, the atmosphere...";
                     message[2] = "* Something has always puzzled#  me though...";
@@ -39,7 +39,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* I must confess, there is ONE#  thing about this place that#  gets me down.";
                     message[1] = "* The music.";
                     message[2] = "* Like, this band is FINE. A#  little too \"new wave\" for my#  taste.";
@@ -57,7 +57,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* My food should be out any#  minute. Can't wait!";
                 }
         }

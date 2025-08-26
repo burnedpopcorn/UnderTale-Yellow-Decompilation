@@ -1,4 +1,4 @@
-if (scr_interact() && keyboard_multicheck_pressed(0) && !interacted_with)
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey) && !interacted_with)
 {
     scene = 0;
     interacted_with = true;

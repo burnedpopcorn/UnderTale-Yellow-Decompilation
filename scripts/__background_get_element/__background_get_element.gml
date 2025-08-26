@@ -1,32 +1,31 @@
-function __background_get_element(argument0)
+function __background_get_element(arg0)
 {
-    var __bind, __fgstring, __bgstring, __fglen, __bglen, __layerlist, __layerlistlength, __layerid, __isforeground, __i, __layername, __slotchr, __slot, __els, __elslength, __newback, __result;
-    
-    __bind = argument0;
+    var __bind = arg0;
+    var __result;
     __result[0] = -1;
     __result[1] = -1;
     __result[2] = -1;
-    __fgstring = "Compatibility_Foreground_";
-    __bgstring = "Compatibility_Background_";
-    __fglen = string_length(__fgstring);
-    __bglen = string_length(__bgstring);
-    __layerlist = layer_get_all();
-    __layerlistlength = array_length_1d(__layerlist);
-    __layerid = -1;
-    __isforeground = false;
+    var __fgstring = "Compatibility_Foreground_";
+    var __bgstring = "Compatibility_Background_";
+    var __fglen = string_length(__fgstring);
+    var __bglen = string_length(__bgstring);
+    var __layerlist = layer_get_all();
+    var __layerlistlength = array_length_1d(__layerlist);
+    var __layerid = -1;
+    var __isforeground = false;
     
-    for (__i = 0; __i < __layerlistlength; __i++)
+    for (var __i = 0; __i < __layerlistlength; __i++)
     {
-        __layername = layer_get_name(__layerlist[__i]);
+        var __layername = layer_get_name(__layerlist[__i]);
         
         if (string_pos(__fgstring, __layername) > 0)
         {
-            __slotchr = string_char_at(__layername, __fglen + 1);
+            var __slotchr = string_char_at(__layername, __fglen + 1);
             
             if (__slotchr == "")
                 continue;
             
-            __slot = real(__slotchr);
+            var __slot = real(__slotchr);
             
             if (__slot == __bind)
             {
@@ -37,14 +36,14 @@ function __background_get_element(argument0)
         }
         else if (string_pos(__bgstring, __layername) > 0)
         {
-            __slotchr = string_char_at(__layername, __bglen + 1);
+            var __slotchr = string_char_at(__layername, __bglen + 1);
             
             if (__slotchr == "")
             {
             }
             else
             {
-                __slot = real(__slotchr);
+                var __slot = real(__slotchr);
                 
                 if (__slot == __bind)
                 {
@@ -58,10 +57,10 @@ function __background_get_element(argument0)
     
     if (__layerid != -1)
     {
-        __els = layer_get_all_elements(__layerid);
-        __elslength = array_length_1d(__els);
+        var __els = layer_get_all_elements(__layerid);
+        var __elslength = array_length_1d(__els);
         
-        for (__i = 0; __i < __elslength; __i++)
+        for (var __i = 0; __i < __elslength; __i++)
         {
             if (layer_get_element_type(__els[__i]) == 1)
             {
@@ -73,7 +72,7 @@ function __background_get_element(argument0)
     }
     else
     {
-        __newback = __background_set_element(__bind, false, false, -1, 0, 0, true, true, 1, 1, false, 0, 0, c_white, 1);
+        var __newback = __background_set_element(__bind, false, false, -1, 0, 0, true, true, 1, 1, false, 0, 0, 16777215, 1);
         __result[0] = __newback[0];
         __result[1] = __newback[1];
         __result[2] = false;

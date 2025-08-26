@@ -1,5 +1,3 @@
-var i, x_dist, y_dist;
-
 if (live_call())
     return global.live_result;
 
@@ -20,7 +18,7 @@ npc_move_delay_max = 10;
 npc_move_current = 0;
 last_player_dir = obj_pl.direction;
 
-for (i = npc_move_delay_max; i > 0; i--)
+for (var i = npc_move_delay_max; i > 0; i--)
 {
     x_new[i] = -1;
     y_new[i] = -1;
@@ -33,14 +31,14 @@ image_speed = 0;
 npc_reset = false;
 is_talking = false;
 follower_idle = true;
-npc_actor = 1164;
+npc_actor = obj_martlet_npc;
 
 if (x != obj_pl.x || y != obj_pl.y)
 {
-    x_dist = obj_pl.x - x;
-    y_dist = obj_pl.y - y;
+    var x_dist = obj_pl.x - x;
+    var y_dist = obj_pl.y - y;
     
-    for (i = 0; i <= npc_move_delay_max; i++)
+    for (var i = 0; i <= npc_move_delay_max; i++)
     {
         x_new[i] = x + (((obj_pl.x - x) / npc_move_delay_max) * i);
         y_new[i] = y + (((obj_pl.y - y) / npc_move_delay_max) * i);

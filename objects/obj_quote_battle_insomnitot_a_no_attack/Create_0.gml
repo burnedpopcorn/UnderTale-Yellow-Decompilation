@@ -1,5 +1,3 @@
-var heart_position;
-
 execute_normal = false;
 execute_random = false;
 text_effect = "twitchy";
@@ -8,7 +6,7 @@ color_count = 0;
 
 if (global.battle_enemy_name == "insomnitot duo")
 {
-    heart_position = script_execute(scr_return_heart_battle_menu_position);
+    var heart_position = script_execute(scr_return_heart_battle_menu_position);
     
     if (global.enemy_dead_2 == true && global.fight_number == 2 && global.battle_menu_number == 1)
     {

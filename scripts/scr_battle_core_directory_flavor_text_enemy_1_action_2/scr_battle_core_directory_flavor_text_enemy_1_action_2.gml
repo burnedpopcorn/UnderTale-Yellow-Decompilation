@@ -1,10 +1,8 @@
 function scr_battle_core_directory_flavor_text_enemy_1_action_2()
 {
-    var action_2_selected_count, battle_enemy_name, game_mode;
-    
-    action_2_selected_count = global.action_2_selected_count;
-    battle_enemy_name = global.battle_enemy_name;
-    game_mode = global.game_mode;
+    var action_2_selected_count = global.action_2_selected_count;
+    var battle_enemy_name = global.battle_enemy_name;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {

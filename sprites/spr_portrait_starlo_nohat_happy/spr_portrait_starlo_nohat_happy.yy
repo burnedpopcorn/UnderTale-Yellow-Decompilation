@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b663eeb1-a2c7-462b-a52f-65ee475d9ffc",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3b042458-70df-4681-8890-13866dfc4c7c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"77c94ddf-51d3-49fd-b42a-f9bff18712c2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"47d219ad-4adb-4af2-929f-a792657e3a40",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 122,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"33a17000-22ef-41ca-9051-b1c47d3ca596","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b17291e6-fbdc-4a4e-8026-e483a447fb90","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b663eeb1-a2c7-462b-a52f-65ee475d9ffc","path":"sprites/spr_portrait_starlo_nohat_happy/spr_portrait_starlo_nohat_happy.yy",},},},"Disabled":false,"id":"94e04e87-0f04-4da3-b1d0-a884f36fd715","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3b042458-70df-4681-8890-13866dfc4c7c","path":"sprites/spr_portrait_starlo_nohat_happy/spr_portrait_starlo_nohat_happy.yy",},},},"Disabled":false,"id":"eecda052-14b5-4362-a882-7622bff3c855","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"77c94ddf-51d3-49fd-b42a-f9bff18712c2","path":"sprites/spr_portrait_starlo_nohat_happy/spr_portrait_starlo_nohat_happy.yy",},},},"Disabled":false,"id":"70e376cc-99bc-48e8-b5b6-003c288e171e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"47d219ad-4adb-4af2-929f-a792657e3a40","path":"sprites/spr_portrait_starlo_nohat_happy/spr_portrait_starlo_nohat_happy.yy",},},},"Disabled":false,"id":"083ad5d9-177d-4d6e-b3d2-f0d72204d119","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "WildEast",
+    "path": "texturegroups/WildEast",
   },
   "type": 0,
   "VTile": false,

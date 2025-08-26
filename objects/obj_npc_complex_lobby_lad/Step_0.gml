@@ -10,11 +10,11 @@ if (interact)
         with (msg)
         {
             other.is_talking = 0;
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* (We need to stay#  focused.)";
             message[1] = "* (Let's not bother#  others with our#  problems.)";
-            prt[0] = 321;
-            prt[1] = 329;
+            prt[0] = spr_martlet_head_moderate;
+            prt[1] = spr_martlet_head_sad;
         }
     }
     else
@@ -25,7 +25,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* You know that UGPS station#  right outside?";
                     message[1] = "* I hear it's going to be#  removed soon. All of them, in#  fact.";
                     message[2] = "* You might think it's because#  letters are going out of style#  but nah.";
@@ -42,7 +42,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* While the new mail system is#  nice, the King's kinda given up#  on improving society.";
                     message[1] = "* I respect what's been#  accomplished but most monsters#  act like we've peaked.";
                     message[2] = "* Not true, there's always more#  that could be done in my#  opinion!";
@@ -58,7 +58,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* I wonder if I could get a job#  as a mailmonster?";
                     message[1] = "* Sure I can't fly but I placed#  fourth on my highschool track#  team!";
                 }

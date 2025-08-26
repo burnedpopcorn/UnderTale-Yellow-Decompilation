@@ -1,10 +1,8 @@
-var battle_box, destroy_check, dir_add, dir_base, col_generator, hurt_player;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-destroy_check = false;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var destroy_check = false;
 
 switch (scene)
 {
@@ -53,8 +51,8 @@ if (!is_active)
 if (place_meeting(x, y, obj_battle_enemy_attack_axis_shield) && deflect_noloop == false)
 {
     obj_battle_enemy_attack_axis_shield.shield_hit = true;
-    dir_add = point_direction(obj_battle_enemy_attack_axis_shield.x, obj_battle_enemy_attack_axis_shield.y + 10, x, y);
-    dir_base = obj_battle_enemy_attack_axis_shield.direction;
+    var dir_add = point_direction(obj_battle_enemy_attack_axis_shield.x, obj_battle_enemy_attack_axis_shield.y + 10, x, y);
+    var dir_base = obj_battle_enemy_attack_axis_shield.direction;
     direction = dir_add;
     speed *= 1.2;
     deflect_noloop = true;
@@ -84,7 +82,7 @@ if (place_meeting(x, y, obj_axis_body) && is_deflected == true)
     }
 }
 
-col_generator = instance_place(x, y, obj_battle_enemy_axis_generator);
+var col_generator = instance_place(x, y, obj_battle_enemy_axis_generator);
 
 if (col_generator != -4 && is_deflected == true)
 {
@@ -102,7 +100,7 @@ if (col_generator != -4 && is_deflected == true)
         instance_destroy();
 }
 
-hurt_player = false;
+var hurt_player = false;
 
 if (obj_heart_battle_fighting_axis.movement_mode == 1)
 {

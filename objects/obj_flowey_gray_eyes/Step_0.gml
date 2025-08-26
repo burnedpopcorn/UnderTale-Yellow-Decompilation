@@ -1,5 +1,3 @@
-var soul;
-
 if (live_call())
     return global.live_result;
 
@@ -14,5 +12,5 @@ else
     y = lerp(y, ystart, 0.15);
 }
 
-soul = 2979;
+var soul = obj_heart_battle_fighting_parent;
 x = (xstart - 10) + (10 * (soul.x / 320));

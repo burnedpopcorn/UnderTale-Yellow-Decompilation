@@ -1,6 +1,4 @@
-var song_pitch;
-
-song_pitch = audio_sound_get_pitch(mus_showdown);
+var song_pitch = audio_sound_get_pitch(mus_showdown);
 
 if (song_pitch < 1)
 {

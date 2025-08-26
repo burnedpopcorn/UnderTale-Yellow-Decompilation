@@ -1,5 +1,3 @@
-var colliding_clay;
-
 if (live_call())
     return global.live_result;
 
@@ -16,7 +14,7 @@ switch (step)
             timer = 5;
         }
         
-        colliding_clay = collision_circle(x, y, 50, obj_flowey_battle_phase_2_clay_bullet, false, false);
+        var colliding_clay = collision_circle(x, y, 50, obj_flowey_battle_phase_2_clay_bullet, false, false);
         
         if (colliding_clay != -4)
         {

@@ -2,16 +2,12 @@
 // Simple passthrough fragment shader
 //
 #define TAU 6.28318530718 
-
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 varying vec2 v_vPosition; 
-
 uniform float time;
 uniform vec4 uvs;
 uniform vec2 txl_d;
-
-
 void main()
 {
     vec2 position = vec2(v_vPosition.x/640.0,v_vPosition.y/480.0);
@@ -25,5 +21,4 @@ void main()
     
     
     gl_FragColor = v_vColour * texture2D( gm_BaseTexture, new_uvs);
-
 }

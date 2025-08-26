@@ -1,4 +1,4 @@
-function background_get_width(argument0)
+function background_get_width(arg0)
 {
-    return sprite_get_width(argument0);
+    return sprite_get_width(arg0);
 }

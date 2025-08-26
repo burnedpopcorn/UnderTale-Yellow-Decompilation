@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 7.988479,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "snd/axis_flashlight.ogg",
-  "type": 0,
+  "sampleRate": 48000,
+  "soundFile": "axis_flashlight.ogg",
+  "type": 1,
   "volume": 1.0,
 }

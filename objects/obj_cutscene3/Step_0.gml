@@ -1,6 +1,4 @@
-var actor_starlo;
-
-actor_starlo = 1169;
+var actor_starlo = 1169;
 
 switch (scene)
 {

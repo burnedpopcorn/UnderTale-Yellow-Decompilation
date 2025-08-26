@@ -1,7 +1,7 @@
 switch (scene)
 {
     case 0:
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
         {
             scene = 1;
             scr_cutscene_start();
@@ -42,9 +42,9 @@ switch (scene)
     
     case 3:
         if (obj_player_npc.ystart < y)
-            cutscene_npc_walk(1168, 200, obj_player_npc.ystart, 3, "y", "up", "nothing", 250, 150);
+            cutscene_npc_walk(obj_player_npc, 200, obj_player_npc.ystart, 3, "y", "up", "nothing", 250, 150);
         else
-            cutscene_npc_walk(1168, 250, 150, 3, "y", "up");
+            cutscene_npc_walk(obj_player_npc, 250, 150, 3, "y", "up");
         
         break;
     
@@ -77,7 +77,7 @@ switch (scene)
         break;
     
     case 7:
-        if (global.down_keyp || global.up_keyp || global.left_keyp || global.right_keyp || keyboard_multicheck_pressed(0) || keyboard_multicheck_pressed(1) || keyboard_multicheck_pressed(2))
+        if (global.down_keyp || global.up_keyp || global.left_keyp || global.right_keyp || keyboard_multicheck_pressed(vk_nokey) || keyboard_multicheck_pressed(vk_anykey) || keyboard_multicheck_pressed(2))
         {
             alarm[0] = -1;
             alarm[1] = -1;

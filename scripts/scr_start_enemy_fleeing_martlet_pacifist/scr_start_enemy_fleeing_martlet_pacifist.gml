@@ -1,10 +1,8 @@
 function scr_start_enemy_fleeing_martlet_pacifist()
 {
-    var enemy_mode;
-    
     scr_audio_fade_out_battle(1000);
     instance_create(380, 74, obj_quote_bubble_battle_yellow_3);
-    enemy_mode = global.enemy_mode;
+    var enemy_mode = global.enemy_mode;
     
     switch (enemy_mode)
     {

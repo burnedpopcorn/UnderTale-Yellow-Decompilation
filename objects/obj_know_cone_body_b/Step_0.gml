@@ -1,7 +1,5 @@
-var enemy_dead_2, enemy_spared_2, y_store, time_elapsed_ball;
-
-enemy_dead_2 = global.enemy_dead_2;
-enemy_spared_2 = global.enemy_spared_2;
+var enemy_dead_2 = global.enemy_dead_2;
+var enemy_spared_2 = global.enemy_spared_2;
 
 if (enemy_dead_2 == false && enemy_spared_2 == false)
     image_alpha = global.image_alpha_enemy_attacking;
@@ -82,8 +80,8 @@ if (!(instance_exists(obj_text_damage_count) && global.fight_number == 2) && ene
     game_maker_cannot_do_math = power((time_elapsed / ((time_max / 2) * (1 / sqrt(max_rise)))) - sqrt(max_rise), 2);
     animation_disjoint_y = sign_modifier * (max_rise - round(game_maker_cannot_do_math));
     y = draw_position_y + animation_disjoint_y;
-    y_store = y;
-    time_elapsed_ball = time_elapsed - time_elapsed_decrease_ball;
+    var y_store = y;
+    var time_elapsed_ball = time_elapsed - time_elapsed_decrease_ball;
     
     if (time_elapsed_ball < 0)
     {

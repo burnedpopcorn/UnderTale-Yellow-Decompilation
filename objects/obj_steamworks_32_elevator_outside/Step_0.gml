@@ -27,7 +27,7 @@ switch (scene)
         break;
     
     case 2:
-        if (cutscene_npc_walk(1168, 800, 290, 3, "y", "left"))
+        if (cutscene_npc_walk(obj_player_npc, 800, 290, 3, "y", "left"))
         {
             if (global.party_member != -4)
                 scene = 3;
@@ -76,7 +76,7 @@ switch (scene)
 switch (scene)
 {
     case 8:
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
         {
             if (global.route == 2 || global.sworks_flag[41] == 1 || global.sworks_flag[61] == 1)
             {
@@ -115,7 +115,7 @@ switch (scene)
         break;
     
     case 11:
-        if (cutscene_npc_walk(1168, 840, 260, 3, "x", "up"))
+        if (cutscene_npc_walk(obj_player_npc, 840, 260, 3, "x", "up"))
         {
             if (global.party_member != -4)
                 scene = 12;
@@ -130,7 +130,7 @@ switch (scene)
         break;
     
     case 13:
-        cutscene_change_room(209, 160, 220, 0.1);
+        cutscene_change_room(rm_steamworks_factory_elevator, 160, 220, 0.1);
         break;
 }
 

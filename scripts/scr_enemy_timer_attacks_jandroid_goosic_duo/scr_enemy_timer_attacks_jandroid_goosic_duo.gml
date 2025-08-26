@@ -1,8 +1,6 @@
 function scr_enemy_timer_attacks_jandroid_goosic_duo()
 {
-    var enemy_attack;
-    
-    enemy_attack = global.enemy_attack;
+    var enemy_attack = global.enemy_attack;
     
     if (instance_exists(obj_dialogue_box_battle_transformation_any) && obj_heart_battle_fighting_parent.moveable == true)
     {

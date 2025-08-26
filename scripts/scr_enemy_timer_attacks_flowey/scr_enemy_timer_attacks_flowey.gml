@@ -1,11 +1,9 @@
 function scr_enemy_timer_attacks_flowey()
 {
-    var enemy_attack, charts;
-    
     if (live_call())
         return global.live_result;
     
-    enemy_attack = global.enemy_attack;
+    var enemy_attack = global.enemy_attack;
     
     if (!instance_exists(obj_attack_cycler_flowey))
         instance_create(0, 0, obj_attack_cycler_flowey);
@@ -61,7 +59,7 @@ function scr_enemy_timer_attacks_flowey()
         }
         else if (enemy_attack == "Flowey Corrupt Attack 2" && !instance_exists(obj_sme_yellow_rhythm_generator))
         {
-            charts = [[1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7], [0, 2, 1, 0, 1, 2, 2, 1, 0, 1, 1, 2]];
+            var charts = [[1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7], [0, 2, 1, 0, 1, 2, 2, 1, 0, 1, 1, 2]];
             instance_create(0, 0, obj_sme_yellow_rhythm_generator);
             
             with (obj_sme_yellow_rhythm_generator)
@@ -71,7 +69,7 @@ function scr_enemy_timer_attacks_flowey()
                 damage_name_3 = "void";
                 end_script = scr_sme_yellow_rhythm_out_gen_end_script_flowey;
                 alarm_0_script = scr_sme_yellow_rhythm_out_gen_alarm_0_script_el_bailador;
-                audio_restore = 512;
+                audio_restore = mus_danza_battle_yellow;
                 scr_sme_yellow_rhythm_song_data_danza(scr_sme_yellow_rhythm_song_data_flowey_nosong, charts[0], charts[1]);
             }
         }

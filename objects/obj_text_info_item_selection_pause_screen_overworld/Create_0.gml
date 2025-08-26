@@ -1,9 +1,7 @@
-var game_mode;
-
 depth = -room_height - global.depth_overworld_text_normal;
 global.item_info_hold = id;
 item_slot = global.item_slot[global.item_pause_screen_number];
-game_mode = global.game_mode;
+var game_mode = global.game_mode;
 story_item = false;
 
 if (game_mode == "customs")

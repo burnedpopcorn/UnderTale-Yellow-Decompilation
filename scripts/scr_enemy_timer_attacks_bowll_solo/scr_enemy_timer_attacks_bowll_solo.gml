@@ -1,14 +1,12 @@
 function scr_enemy_timer_attacks_bowll_solo()
 {
-    var enemy_attack, script_tgt, turns_passed;
-    
-    enemy_attack = global.enemy_attack;
+    var enemy_attack = global.enemy_attack;
     
     if (instance_exists(obj_dialogue_box_battle_transformation_any) && obj_heart_battle_fighting_parent.moveable == true)
     {
         if (enemy_attack == "Bowll Liquid" && !instance_exists(obj_battle_enemy_attack_bowll_liquid_generator))
         {
-            script_tgt = 3154;
+            var script_tgt = obj_dialogue_box_battle_transformation_any;
             scr_create_attack_boundary(script_tgt.bbox_left + 5, script_tgt.bbox_top + 5, script_tgt.sprite_width - 10, script_tgt.sprite_height - 10, 20, 0);
             instance_create(0, 0, obj_battle_enemy_attack_bowll_liquid_generator);
         }
@@ -31,12 +29,12 @@ function scr_enemy_timer_attacks_bowll_solo()
                 damage_name_3 = "bowll c";
                 end_script = scr_sme_yellow_rhythm_out_gen_end_script_bowll;
                 alarm_0_script = scr_sme_yellow_rhythm_out_gen_alarm_0_script_bowll;
-                audio_restore = 512;
+                audio_restore = mus_danza_battle_yellow;
                 
                 if (global.turns_passed > 10 || global.turns_passed < 0)
                     global.turns_passed = 0;
                 
-                turns_passed = global.turns_passed;
+                var turns_passed = global.turns_passed;
                 
                 switch (turns_passed)
                 {
@@ -81,7 +79,7 @@ function scr_enemy_timer_attacks_bowll_solo()
                         break;
                     
                     case 10:
-                        audio_restore = 0;
+                        audio_restore = snd_ceroba_staff_lock;
                         script_execute(scr_sme_yellow_rhythm_song_data_danza_finale_01);
                         break;
                     

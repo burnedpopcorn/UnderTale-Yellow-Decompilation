@@ -1,5 +1,3 @@
-var hit_count;
-
 text_effect = "twitchy";
 attack = false;
 transform = false;
@@ -14,7 +12,7 @@ if (global.enemy_hit == false)
 }
 else
 {
-    hit_count = global.hit_count;
+    var hit_count = global.hit_count;
     
     if (hit_count == 0)
     {

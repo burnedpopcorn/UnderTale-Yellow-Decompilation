@@ -1,4 +1,4 @@
-function d3d_set_lighting(argument0)
+function d3d_set_lighting(arg0)
 {
-    draw_set_lighting(argument0);
+    draw_set_lighting(arg0);
 }

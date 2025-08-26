@@ -1,5 +1,3 @@
-var app_sound;
-
 damage_number = scr_determine_damage_number_enemy("sweet corn a", "sweet corn b", "sweet corn c");
 image_speed = 0;
 image_index = 0;
@@ -20,5 +18,5 @@ animation_disjoint_y = 0;
 reverse = true;
 can_move = false;
 can_vanish = false;
-app_sound = audio_play_sound(snd_undertale_appear, 1, 0);
+var app_sound = audio_play_sound(snd_undertale_appear, 1, 0);
 audio_sound_gain(app_sound, 0.5, 0);

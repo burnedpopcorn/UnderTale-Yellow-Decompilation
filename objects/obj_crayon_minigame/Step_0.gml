@@ -1,5 +1,3 @@
-var h_mouse, v_mouse, cursor_speed, cursor_x_target, cursor_y_target, j, i;
-
 if (live_call())
     return global.live_result;
 
@@ -33,9 +31,9 @@ if (event_fade_out == true)
     exit;
 }
 
-h_mouse = global.right_key - global.left_key;
-v_mouse = global.down_key - global.up_key;
-cursor_speed = 4;
+var h_mouse = global.right_key - global.left_key;
+var v_mouse = global.down_key - global.up_key;
+var cursor_speed = 4;
 
 if (window_get_fullscreen() == true)
     cursor_speed = 8;
@@ -48,7 +46,7 @@ cursor_y = mouse_y;
 cursor_x -= view_x;
 cursor_y -= view_y;
 
-if (mouse_check_button(mb_left) || keyboard_multicheck(0))
+if (mouse_check_button(mb_left) || keyboard_multicheck(vk_nokey))
     cursor_click = true;
 else
     cursor_click = false;
@@ -63,8 +61,8 @@ if (cursor_click == true)
             brush_size_current = brush_size_normal;
     }
     
-    cursor_x_target = cursor_x;
-    cursor_y_target = cursor_y;
+    var cursor_x_target = cursor_x;
+    var cursor_y_target = cursor_y;
     
     if (abs(cursor_x_last - cursor_x) > brush_size_current || abs(cursor_y_last - cursor_y) > brush_size_current)
     {
@@ -76,11 +74,11 @@ if (cursor_click == true)
     {
         if ((cursor_x > id_xx && cursor_x < (id_xx + ds_grid_width(drawing_grid))) && (cursor_y > id_yy && cursor_y < (id_yy + ds_grid_height(drawing_grid))))
         {
-            j = -brush_size_normal;
+            var j = -brush_size_normal;
             
             while (j < brush_size_current)
             {
-                i = -brush_size_normal;
+                var i = -brush_size_normal;
                 
                 while (i < brush_size_current)
                 {
@@ -101,7 +99,7 @@ if (cursor_click == true)
     until (cursor_x == cursor_x_target && cursor_y == cursor_y_target);
 }
 
-for (i = 0; i < array_length(button_x); i++)
+for (var i = 0; i < array_length(button_x); i++)
 {
     if (point_in_rectangle(cursor_x, cursor_y, button_x[i], button_y[i], button_x[i] + button_width, button_y[i] + button_height))
     {

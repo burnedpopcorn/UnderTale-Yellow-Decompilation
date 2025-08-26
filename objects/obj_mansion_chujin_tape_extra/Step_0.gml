@@ -1,5 +1,3 @@
-var overlay_alpha_default;
-
 if (live_call())
     return global.live_result;
 
@@ -51,32 +49,32 @@ switch (scene)
             message[20] = "  With more work, Axis can be the#  future, I'm sure of it.";
             message[21] = "     Anyway, I need to sleep.";
             message[22] = "   Though something tells me that#   will be difficult to do for a#   while.";
-            prt[0] = 3563;
-            prt[1] = 3392;
-            prt[2] = 2129;
-            prt[3] = 629;
-            prt[4] = 629;
-            prt[5] = 908;
-            prt[6] = 3392;
-            prt[7] = 908;
-            prt[8] = 3414;
-            prt[9] = 3414;
-            prt[10] = 2782;
-            prt[11] = 2782;
-            prt[12] = 3194;
-            prt[13] = 2782;
-            prt[14] = 3414;
-            prt[15] = 908;
-            prt[16] = 3563;
-            prt[17] = 3392;
-            prt[18] = 2129;
-            prt[19] = 3563;
-            prt[20] = 908;
-            prt[21] = 3392;
-            prt[22] = 908;
+            prt[0] = spr_chujin_default_idle;
+            prt[1] = spr_chujin_look_right_finger_down;
+            prt[2] = spr_chujin_look_right;
+            prt[3] = spr_chujin_look_left;
+            prt[4] = spr_chujin_look_left;
+            prt[5] = spr_chujin_looking_down;
+            prt[6] = spr_chujin_look_right_finger_down;
+            prt[7] = spr_chujin_looking_down;
+            prt[8] = spr_chujin_anxious;
+            prt[9] = spr_chujin_anxious;
+            prt[10] = spr_chujin_lower_head;
+            prt[11] = spr_chujin_lower_head;
+            prt[12] = spr_chujin_lower_head_lower;
+            prt[13] = spr_chujin_lower_head;
+            prt[14] = spr_chujin_anxious;
+            prt[15] = spr_chujin_looking_down;
+            prt[16] = spr_chujin_default_idle;
+            prt[17] = spr_chujin_look_right_finger_down;
+            prt[18] = spr_chujin_look_right;
+            prt[19] = spr_chujin_default_idle;
+            prt[20] = spr_chujin_looking_down;
+            prt[21] = spr_chujin_look_right_finger_down;
+            prt[22] = spr_chujin_looking_down;
             
             if (message_current == 21)
-                scr_audio_fade_out(589, 1500);
+                scr_audio_fade_out(mus_nothing_but_the_truth, 1500);
         }
         
         break;
@@ -114,7 +112,7 @@ switch (scene)
     
     case 10:
         scr_audio_fade_out(cutscene_music, 1500);
-        scr_audio_fade_out(633, 2500);
+        scr_audio_fade_out(snd_f_noise, 2500);
         cutscene_advance();
         break;
     
@@ -163,7 +161,7 @@ if (scene_change == true)
 if (scene >= 8)
     exit;
 
-overlay_alpha_default = 0.15;
+var overlay_alpha_default = 0.15;
 
 if (irandom(80) == 1)
 {

@@ -1,14 +1,12 @@
-var enemy_dead, enemy_spared, enemy_mode;
-
 if (!instance_exists(obj_feisty_four_ace_legs))
 {
     instance_destroy();
     exit;
 }
 
-enemy_dead = global.enemy_dead;
-enemy_spared = global.enemy_spared;
-enemy_mode = global.enemy_mode;
+var enemy_dead = global.enemy_dead;
+var enemy_spared = global.enemy_spared;
+var enemy_mode = global.enemy_mode;
 
 if (enemy_dead == true)
 {

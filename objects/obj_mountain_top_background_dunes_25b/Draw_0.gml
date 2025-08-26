@@ -1,7 +1,5 @@
-var yy, i;
-
-yy = (__view_get(e__VW.YView, 0) / 1.2) - 100;
-i = 0;
+var yy = (__view_get(e__VW.YView, 0) / 1.2) - 100;
+var i = 0;
 
 while (i <= room_width)
 {

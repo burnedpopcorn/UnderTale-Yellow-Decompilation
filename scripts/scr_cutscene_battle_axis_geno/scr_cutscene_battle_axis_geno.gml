@@ -1,13 +1,11 @@
 function scr_cutscene_battle_axis_geno()
 {
-    var enemy_target_x, enemy_target_y, battle_box, dummy_bar, attack_code, piece_count, dir_inc, i, piece, lvl_up;
-    
     if (live_call())
         return global.live_result;
     
-    enemy_target_x = global.enemy_target_x;
-    enemy_target_y = global.enemy_target_y;
-    battle_box = 3154;
+    var enemy_target_x = global.enemy_target_x;
+    var enemy_target_y = global.enemy_target_y;
+    var battle_box = obj_dialogue_box_battle_transformation_any;
     
     switch (scene)
     {
@@ -50,7 +48,7 @@ function scr_cutscene_battle_axis_geno()
             if (!instance_exists(obj_shot_strong_fake))
             {
                 global.attacking_damage_stat = 0;
-                dummy_bar = instance_create(0, 0, obj_target_bar_battle);
+                var dummy_bar = instance_create(0, 0, obj_target_bar_battle);
                 dummy_bar.image_alpha = 0;
                 dummy_bar.no_loop = true;
                 dummy_bar.button_pressed = true;
@@ -58,7 +56,7 @@ function scr_cutscene_battle_axis_geno()
                 instance_create(319, 120, obj_text_damage_count);
                 audio_play_sound(10, 20, false, 1, 0, random_range(0.8, 1.2));
                 damage_type = "normal";
-                attack_code = instance_create(0, 0, obj_battle_boss_attacking_code);
+                var attack_code = instance_create(0, 0, obj_battle_boss_attacking_code);
                 attack_code.alarm[1] = 20;
                 cutscene_advance();
             }
@@ -76,7 +74,7 @@ function scr_cutscene_battle_axis_geno()
             break;
         
         case 5:
-            scr_audio_fade_out(544, 100);
+            scr_audio_fade_out(mus_guns_blazing_geno, 100);
             cutscene_advance();
             break;
         
@@ -216,12 +214,12 @@ function scr_cutscene_battle_axis_geno()
                     obj_axis_body_geno.sprite_index = spr_axis_body_geno;
                     obj_axis_body_geno.image_speed = 1;
                     audio_play_sound(snd_undertale_explosion, 1, 0);
-                    piece_count = sprite_get_number(spr_axis_geno_trashlid_pieces);
-                    dir_inc = 360 / piece_count;
+                    var piece_count = sprite_get_number(spr_axis_geno_trashlid_pieces);
+                    var dir_inc = 360 / piece_count;
                     
-                    for (i = 0; i < piece_count; i++)
+                    for (var i = 0; i < piece_count; i++)
                     {
-                        piece = instance_create_depth(obj_axis_body_geno.x, obj_axis_body_geno.y, -150, obj_battle_axis_geno_shield_piece);
+                        var piece = instance_create_depth(obj_axis_body_geno.x, obj_axis_body_geno.y, -150, obj_battle_axis_geno_shield_piece);
                         piece.direction = dir_inc * i;
                         piece.image_index = i;
                         piece.speed = 8;
@@ -244,7 +242,7 @@ function scr_cutscene_battle_axis_geno()
             
             if (!instance_exists(obj_axis_geno_rapid_lvl) && global.player_level < 19)
             {
-                lvl_up = instance_create(0, 0, obj_axis_geno_rapid_lvl);
+                var lvl_up = instance_create(0, 0, obj_axis_geno_rapid_lvl);
                 lvl_up.target_lvl = 19;
             }
             

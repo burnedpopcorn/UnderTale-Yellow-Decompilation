@@ -1,5 +1,3 @@
-var x_move, y_move;
-
 if (!instance_exists(obj_heart_battle_fighting_parent))
 {
     instance_destroy();
@@ -24,8 +22,8 @@ if (can_move == true)
 {
     x += lengthdir_x(move_speed, angle);
     y += lengthdir_y(move_speed, angle);
-    x_move = lengthdir_x(move_speed, angle);
-    y_move = lengthdir_y(move_speed, angle);
+    var x_move = lengthdir_x(move_speed, angle);
+    var y_move = lengthdir_y(move_speed, angle);
     
     if (bbox_left <= (obj_dialogue_box_battle_transformation_any.bbox_left + 4) && x_move < 0)
     {

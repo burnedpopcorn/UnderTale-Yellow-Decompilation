@@ -1,7 +1,5 @@
 function scr_cutscene_battle_martlet_final_2_outro()
 {
-    var xtarget, ytarget, inc, i, _len, _dir, pellet, soul, vine1, vine2, vine3, vine4, battle_box, bullet, hit_sound;
-    
     if (live_call())
         return global.live_result;
     
@@ -55,7 +53,7 @@ function scr_cutscene_battle_martlet_final_2_outro()
             message_adv = true;
             skippable = true;
             draw_enabled = false;
-            obj_martlet_final_2_base.martlet_target_melt_sprite = spr_martlet_f2_goop5;
+            obj_martlet_final_2_base.martlet_target_melt_sprite = 2933;
             scr_screenshake_battle_custom(6, 4);
             audio_play_sound(snd_undertale_thud, 1, 0);
             cutscene_advance();
@@ -81,7 +79,7 @@ function scr_cutscene_battle_martlet_final_2_outro()
             break;
         
         case 6:
-            obj_martlet_final_2_base.martlet_target_melt_sprite = spr_martlet_f2_goop6;
+            obj_martlet_final_2_base.martlet_target_melt_sprite = 1922;
             scr_screenshake_battle_custom(6, 4);
             audio_play_sound(snd_undertale_thud, 1, 0);
             cutscene_advance();
@@ -103,7 +101,7 @@ function scr_cutscene_battle_martlet_final_2_outro()
             break;
         
         case 9:
-            obj_martlet_final_2_base.martlet_target_melt_sprite = spr_martlet_f2_goop7;
+            obj_martlet_final_2_base.martlet_target_melt_sprite = 1278;
             scr_screenshake_battle_custom(6, 4);
             audio_play_sound(snd_undertale_thud, 1, 0);
             cutscene_advance();
@@ -125,7 +123,7 @@ function scr_cutscene_battle_martlet_final_2_outro()
             break;
         
         case 12:
-            obj_martlet_final_2_base.martlet_target_melt_sprite = spr_martlet_f2_goop8;
+            obj_martlet_final_2_base.martlet_target_melt_sprite = 2791;
             scr_screenshake_battle_custom(6, 4);
             audio_play_sound(snd_undertale_thud, 1, 0);
             cutscene_advance();
@@ -147,7 +145,7 @@ function scr_cutscene_battle_martlet_final_2_outro()
             break;
         
         case 15:
-            obj_martlet_final_2_base.martlet_target_melt_sprite = spr_martlet_f2_goop9;
+            obj_martlet_final_2_base.martlet_target_melt_sprite = 810;
             scr_screenshake_battle_custom(6, 4);
             audio_play_sound(snd_undertale_thud, 1, 0);
             cutscene_advance();
@@ -270,8 +268,8 @@ function scr_cutscene_battle_martlet_final_2_outro()
         case 31:
             with (obj_heart_battle_menu_fake_martlet)
             {
-                xtarget = obj_fight.x + 17;
-                ytarget = obj_fight.y + 23;
+                var xtarget = obj_fight.x + 17;
+                var ytarget = obj_fight.y + 23;
                 obj_heart_battle_menu_fake_martlet.x = lerp(x, xtarget, 0.15);
                 obj_heart_battle_menu_fake_martlet.y = lerp(y, ytarget, 0.15);
                 
@@ -408,8 +406,8 @@ function scr_cutscene_battle_martlet_final_2_outro()
             
             with (obj_dialogue_box_battle_transformation_any_out_cutscene)
             {
-                sprite_width_destination = spr_ed_right_walk;
-                sprite_height_destination = spr_ed_right_walk;
+                sprite_width_destination = 140;
+                sprite_height_destination = 140;
                 disjoint_x = 0;
                 disjoint_y = 0;
             }
@@ -494,13 +492,13 @@ function scr_cutscene_battle_martlet_final_2_outro()
             break;
         
         case 64:
-            inc = 12;
+            var inc = 12;
             
-            for (i = 0; i < 30; i++)
+            for (var i = 0; i < 30; i++)
             {
-                _len = 100;
-                _dir = inc + (i * inc);
-                pellet = instance_create_depth(320, 320, -1000, obj_fpellets_fake_martlet);
+                var _len = 100;
+                var _dir = inc + (i * inc);
+                var pellet = instance_create_depth(320, 320, -1000, obj_fpellets_fake_martlet);
                 pellet.alarm[0] = i + 1;
                 pellet.dir = _dir;
                 pellet.len = _len;
@@ -540,10 +538,10 @@ function scr_cutscene_battle_martlet_final_2_outro()
             break;
         
         case 69:
-            soul = 2979;
-            vine1 = instance_create_depth(-20, soul.y, -1000, obj_vines_fake_martlet);
+            var soul = obj_heart_battle_fighting_parent;
+            var vine1 = instance_create_depth(-20, soul.y, -1000, obj_vines_fake_martlet);
             vine1.hspeed = 30;
-            vine2 = instance_create_depth(660, soul.y, -1000, obj_vines_fake_martlet);
+            var vine2 = instance_create_depth(660, soul.y, -1000, obj_vines_fake_martlet);
             vine2.image_xscale = -1;
             vine2.hspeed = -30;
             scr_screenshake_battle_custom(7, 2);
@@ -579,20 +577,20 @@ function scr_cutscene_battle_martlet_final_2_outro()
             break;
         
         case 73:
-            soul = 2979;
-            vine1 = instance_create_depth(-20, -20, -1000, obj_vines_fake_martlet);
+            var soul = obj_heart_battle_fighting_parent;
+            var vine1 = instance_create_depth(-20, -20, -1000, obj_vines_fake_martlet);
             vine1.direction = 315;
             vine1.image_angle = 315;
             vine1.speed = 30;
-            vine2 = instance_create_depth(660, 660, -1000, obj_vines_fake_martlet);
+            var vine2 = instance_create_depth(660, 660, -1000, obj_vines_fake_martlet);
             vine2.direction = 135;
             vine2.image_angle = 135;
             vine2.speed = 30;
-            vine3 = instance_create_depth(-20, 660, -1000, obj_vines_fake_martlet);
+            var vine3 = instance_create_depth(-20, 660, -1000, obj_vines_fake_martlet);
             vine3.direction = 45;
             vine3.image_angle = 45;
             vine3.speed = 30;
-            vine4 = instance_create_depth(660, -20, -1000, obj_vines_fake_martlet);
+            var vine4 = instance_create_depth(660, -20, -1000, obj_vines_fake_martlet);
             vine4.direction = 225;
             vine4.image_angle = 225;
             vine4.speed = 30;
@@ -617,17 +615,17 @@ function scr_cutscene_battle_martlet_final_2_outro()
             break;
         
         case 76:
-            battle_box = 3154;
+            var battle_box = obj_dialogue_box_battle_transformation_any;
             
-            for (i = 0; i < 6; i++)
+            for (var i = 0; i < 6; i++)
             {
-                bullet = instance_create_depth(battle_box.bbox_left - 30, battle_box.bbox_top + 15 + ((70/3) * i), -1000, obj_battle_enemy_attack_fpellets_simple);
+                var bullet = instance_create_depth(battle_box.bbox_left - 30, battle_box.bbox_top + 15 + ((70/3) * i), -1000, obj_battle_enemy_attack_fpellets_simple);
                 bullet.direction = 0;
             }
             
-            for (i = 0; i < 7; i++)
+            for (var i = 0; i < 7; i++)
             {
-                bullet = instance_create_depth(battle_box.bbox_right + 30, battle_box.bbox_top + ((70/3) * i), -1000, obj_battle_enemy_attack_fpellets_simple);
+                var bullet = instance_create_depth(battle_box.bbox_right + 30, battle_box.bbox_top + ((70/3) * i), -1000, obj_battle_enemy_attack_fpellets_simple);
                 bullet.direction = 180;
             }
             
@@ -787,14 +785,14 @@ function scr_cutscene_battle_martlet_final_2_outro()
             break;
         
         case 95:
-            for (i = 0; i < array_length(shot); i++)
+            for (var i = 0; i < array_length(shot); i++)
             {
                 if (shot[i] != -4 && !instance_exists(shot[i]))
                 {
                     shot[i] = -4;
                     obj_battle_fmartlet_flowey.flowey_shake_intensity = (i + 1) * 2;
                     obj_battle_fmartlet_flowey.sprite_index = asset_get_index("spr_evil_flowey_dies_" + string(i + 2));
-                    hit_sound = audio_play_sound(snd_monster_damage_hit_critical, 1, 0);
+                    var hit_sound = audio_play_sound(snd_monster_damage_hit_critical, 1, 0);
                     audio_sound_pitch(hit_sound, random_range(0.7, 1.3));
                     scene = 93;
                 }

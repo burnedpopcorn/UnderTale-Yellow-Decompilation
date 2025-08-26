@@ -1,8 +1,6 @@
-var game_mode, shop_name;
-
 depth = -room_height - 164;
-game_mode = global.game_mode;
-shop_name = global.shop_name;
+var game_mode = global.game_mode;
+var shop_name = global.shop_name;
 
 if (game_mode == "customs")
 {

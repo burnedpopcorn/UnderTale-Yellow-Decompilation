@@ -1,8 +1,6 @@
 function scr_end_enemy_attacking_macro()
 {
-    var turns_passed;
-    
-    turns_passed = global.turns_passed;
+    var turns_passed = global.turns_passed;
     
     if (turns_passed >= 10 && obj_macro_frog_counter.frog_count <= 0)
     {

@@ -5,13 +5,13 @@ if (scr_timer())
     
     with (msg)
     {
-        sndfnt = 97;
+        sndfnt = sndfnt_toriel;
         message[0] = "* Hello?";
         message[1] = "* Are you still present,#  little one?";
         message[2] = "* I am going to rescue#  you! Come!";
-        prt[0] = 343;
-        prt[1] = 340;
-        prt[2] = 343;
+        prt[0] = toriel_normal;
+        prt[1] = toriel_side;
+        prt[2] = toriel_normal;
     }
     
     if (!global.dialogue_open)

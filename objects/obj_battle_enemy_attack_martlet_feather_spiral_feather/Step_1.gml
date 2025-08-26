@@ -1,6 +1,4 @@
-var can_trail;
-
-can_trail = false;
+var can_trail = false;
 trail_cc_current += 1;
 
 if (trail_cc_current >= trail_cc_max)

@@ -1,11 +1,9 @@
-function instance_place_all(argument0, argument1, argument2)
+function instance_place_all(arg0, arg1, arg2)
 {
-    var _a, _n, _h, _id, _i;
-    
-    _a = undefined;
-    _n = 0;
-    _h = abs(sprite_height);
-    _id = instance_place(argument0, argument1, argument2);
+    var _a = undefined;
+    var _n = 0;
+    var _h = abs(sprite_height);
+    var _id = instance_place(arg0, arg1, arg2);
     
     while (_id)
     {
@@ -16,10 +14,10 @@ function instance_place_all(argument0, argument1, argument2)
             y -= (abs(sprite_height) + _h);
         }
         
-        _id = instance_place(argument0, argument1, argument2);
+        _id = instance_place(arg0, arg1, arg2);
     }
     
-    for (_i = 0; _i < _n; _i++)
+    for (var _i = 0; _i < _n; _i++)
     {
         with (_a[_i])
             y += (abs(sprite_height) + _h);

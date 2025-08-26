@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -9,7 +7,7 @@ color_fill = lerp(color_fill, curr_fill, 0.1);
 shader_set_uniform_f(u_nb_rect, color_fill - 1);
 shader_set_uniform_f(u_time, current_time / 1000);
 
-for (i = 0; i < curr_fill; i++)
+for (var i = 0; i < curr_fill; i++)
     draw_rectangle(x + cood_offset[0] + (i * 10), y + cood_offset[1], x + cood_offset[0] + (i * 10) + 8, y + cood_offset[1] + 14, false);
 
 if (curr_fill != prev_fill)

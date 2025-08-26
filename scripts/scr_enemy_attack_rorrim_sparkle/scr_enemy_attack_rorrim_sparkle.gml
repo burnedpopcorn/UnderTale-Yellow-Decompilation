@@ -1,8 +1,6 @@
 function scr_enemy_attack_rorrim_sparkle()
 {
-    var distance;
-    
-    distance = 20;
+    var distance = 20;
     global.attack_counter_max = 30;
     
     if (global.attack_counter == 0 && global.timer_attacks_counter < 5)

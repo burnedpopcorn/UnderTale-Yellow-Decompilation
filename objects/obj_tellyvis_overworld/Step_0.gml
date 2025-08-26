@@ -11,7 +11,7 @@ if (interact == 1)
             with (msg)
             {
                 color = true;
-                col_modif[0] = 16776960;
+                col_modif[0] = c_aqua;
                 message[0] = "* How goes it, lil fella?";
                 message[1] = "* Sorry, but we're on a station#  break at the moment.";
                 message[2] = "* What's broadcasting in the#  meantime?";
@@ -30,7 +30,7 @@ if (interact == 1)
             with (msg)
             {
                 color = true;
-                col_modif[0] = 16776960;
+                col_modif[0] = c_aqua;
                 message[0] = "* When can I play a movie I#  like?";
                 message[1] = "* Your movies go against the#  very nature of television!";
                 message[2] = "* Gratuitous violence... heavy#  cursing... a secret third#  thing...";
@@ -53,7 +53,7 @@ if (interact == 1)
             with (msg)
             {
                 color = true;
-                col_modif[0] = 16776960;
+                col_modif[0] = c_aqua;
                 message[0] = "* We hope we've entertained you,#  fella!";
                 message[1] = "* Television is a wonderful#  invention!";
                 message[2] = "* It's even better when you sit#  inches from the screen with#  your eyes WIDE open!";
@@ -78,7 +78,7 @@ if (interact == 1)
             with (msg)
             {
                 color = true;
-                col_modif[0] = 16776960;
+                col_modif[0] = c_aqua;
                 message[0] = "* We'll be back after these#  messages!";
                 message_col[0][0] = "* We'll be back after these#  messages!";
                 message[1] = "* Man, I hope not.";

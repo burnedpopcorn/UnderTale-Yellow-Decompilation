@@ -1,10 +1,8 @@
-function __background_get_internal(argument0, argument1, argument2)
+function __background_get_internal(arg0, arg1, arg2)
 {
-    var __prop, __bind, __backinfo, __res, __backid, __layerid, __isfore;
-    
-    __prop = argument0;
-    __bind = argument1;
-    __backinfo = argument2;
+    var __prop = arg0;
+    var __bind = arg1;
+    var __backinfo = arg2;
     
     if (__backinfo[0] == -1 || layer_background_exists(__backinfo[1], __backinfo[0]) == false)
     {
@@ -14,10 +12,10 @@ function __background_get_internal(argument0, argument1, argument2)
             return -1;
     }
     
-    __res = -1;
-    __backid = __backinfo[0];
-    __layerid = __backinfo[1];
-    __isfore = __backinfo[2];
+    var __res = -1;
+    var __backid = __backinfo[0];
+    var __layerid = __backinfo[1];
+    var __isfore = __backinfo[2];
     
     switch (__prop)
     {

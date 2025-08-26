@@ -1,5 +1,3 @@
-var y_target, i, new_dir, xx, yy, new_laser, turn_speed_inc;
-
 if (live_call())
     return global.live_result;
 
@@ -19,7 +17,7 @@ switch (scene)
         break;
     
     case 2:
-        y_target = obj_dialogue_box_battle_transformation_any.y;
+        var y_target = obj_dialogue_box_battle_transformation_any.y;
         
         if (abs(y - y_target) > 1)
         {
@@ -47,12 +45,12 @@ switch (scene)
         break;
     
     case 4:
-        for (i = 0; i < 8; i++)
+        for (var i = 0; i < 8; i++)
         {
-            new_dir = image_angle + (i * 45);
-            xx = x;
-            yy = y;
-            new_laser = instance_create_depth(xx, yy, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_laser);
+            var new_dir = image_angle + (i * 45);
+            var xx = x;
+            var yy = y;
+            var new_laser = instance_create_depth(xx, yy, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_laser);
             new_laser.direction = new_dir;
         }
         
@@ -63,7 +61,7 @@ switch (scene)
         break;
     
     case 5:
-        turn_speed_inc = 0.25;
+        var turn_speed_inc = 0.25;
         
         if (turn_speed < turn_speed_max)
             turn_speed += turn_speed_inc;
@@ -79,7 +77,7 @@ switch (scene)
         break;
     
     case 7:
-        turn_speed_inc = 0.25;
+        var turn_speed_inc = 0.25;
         
         if (turn_speed > -turn_speed_max)
             turn_speed -= turn_speed_inc;

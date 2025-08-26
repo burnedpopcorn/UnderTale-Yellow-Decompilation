@@ -1,6 +1,6 @@
 if (seesaw_item_number <= 0)
 {
-    scr_audio_fade_out(218, 1500);
+    scr_audio_fade_out(mus_build_a_bot, 1500);
     instance_create(0, 0, obj_factory_02_seesaw_victory);
 }
 

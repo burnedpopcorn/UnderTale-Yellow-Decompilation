@@ -4,7 +4,7 @@ if (live_call())
 switch (scene)
 {
     case 1:
-        cutscene_sfx_play(316, 1);
+        cutscene_sfx_play(snd_footstep1, 1);
         break;
     
     case 2:
@@ -12,7 +12,7 @@ switch (scene)
         break;
     
     case 3:
-        cutscene_sfx_play(317, 1);
+        cutscene_sfx_play(snd_footstep2, 1);
         break;
     
     case 4:
@@ -35,9 +35,9 @@ switch (scene)
     
     case 7:
         if (room == rm_steamworks_05b)
-            cutscene_sfx_play(578, 1);
+            cutscene_sfx_play(snd_undertale_impact, 1);
         else
-            cutscene_sfx_play(373, 1);
+            cutscene_sfx_play(snd_playerjump, 1);
         
         break;
     
@@ -81,7 +81,7 @@ switch (scene)
         break;
     
     case 12:
-        cutscene_npc_action_sprite(1168, 2776, 1, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_clover_chute_shakeoff, 1, 0);
         break;
     
     case 13:

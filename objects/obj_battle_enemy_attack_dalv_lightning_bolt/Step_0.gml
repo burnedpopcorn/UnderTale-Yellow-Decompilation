@@ -1,5 +1,3 @@
-var random_intensity;
-
 if (move == false)
 {
     if (image_alpha < 1)
@@ -17,7 +15,7 @@ if (move == false)
     {
         if (instance_exists(obj_heart_battle_fighting_parent))
         {
-            random_intensity = irandom_range(-1, 1);
+            var random_intensity = irandom_range(-1, 1);
             angle = point_direction(x, y, obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y);
             image_angle = angle + (angle_intensity * random_intensity);
         }

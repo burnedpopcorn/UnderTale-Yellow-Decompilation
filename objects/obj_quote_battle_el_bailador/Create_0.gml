@@ -1,9 +1,7 @@
-var turns_passed, enemy_low_hp, enemy_mode, enemy_mode_gen;
-
-turns_passed = global.turns_passed;
-enemy_low_hp = global.enemy_low_hp;
-enemy_mode = global.enemy_mode;
-enemy_mode_gen = global.enemy_mode_gen;
+var turns_passed = global.turns_passed;
+var enemy_low_hp = global.enemy_low_hp;
+var enemy_mode = global.enemy_mode;
+var enemy_mode_gen = global.enemy_mode_gen;
 
 switch (turns_passed)
 {

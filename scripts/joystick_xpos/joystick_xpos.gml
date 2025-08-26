@@ -1,7 +1,5 @@
-function joystick_xpos(argument0)
+function joystick_xpos(arg0)
 {
-    var jid;
-    
-    jid = __joystick_2_gamepad(argument0);
+    var jid = __joystick_2_gamepad(arg0);
     return gamepad_axis_value(jid, 0);
 }

@@ -1,6 +1,4 @@
-var world_current;
-
-world_current = scr_determine_world_value_yellow();
+var world_current = scr_determine_world_value_yellow();
 
 if (global.geno_complete[world_current] == true)
     instance_destroy();

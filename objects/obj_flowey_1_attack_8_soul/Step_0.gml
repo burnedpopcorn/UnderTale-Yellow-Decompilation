@@ -1,5 +1,3 @@
-var shard_number, i, shard;
-
 if (live_call())
     return global.live_result;
 
@@ -21,11 +19,11 @@ switch (scene)
         break;
     
     case 3:
-        shard_number = 6;
+        var shard_number = 6;
         
-        for (i = 0; i <= shard_number; i++)
+        for (var i = 0; i <= shard_number; i++)
         {
-            shard = instance_create_depth(x, y, -100, obj_flowey_1_attack_7_shard);
+            var shard = instance_create_depth(x, y, -100, obj_flowey_1_attack_7_shard);
             shard.direction = 90 + (i * (360 / shard_number));
         }
         

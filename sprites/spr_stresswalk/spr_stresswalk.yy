@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9ad30476-b71a-474b-80a0-be7e32ef9e53",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"193ed680-a609-4ffa-b774-d767b5090033",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e68a65b5-dbca-4e2b-bfd1-0b9398695c9d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f60a95c4-eb84-45c4-a630-214d27f57384",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 39,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"af63e5ce-7b66-45ce-ac76-ef01c073ef93","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"96c374a1-7a7f-4de0-9a2f-ab4b7546f89d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9ad30476-b71a-474b-80a0-be7e32ef9e53","path":"sprites/spr_stresswalk/spr_stresswalk.yy",},},},"Disabled":false,"id":"ff912d1b-935f-421c-9200-57da92a31d3c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"193ed680-a609-4ffa-b774-d767b5090033","path":"sprites/spr_stresswalk/spr_stresswalk.yy",},},},"Disabled":false,"id":"06ab42a2-094f-4063-83bf-c849f76bcc3b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e68a65b5-dbca-4e2b-bfd1-0b9398695c9d","path":"sprites/spr_stresswalk/spr_stresswalk.yy",},},},"Disabled":false,"id":"b1b97421-ef5d-4f95-81f5-2df5cc188187","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f60a95c4-eb84-45c4-a630-214d27f57384","path":"sprites/spr_stresswalk/spr_stresswalk.yy",},},},"Disabled":false,"id":"307ef2d4-5249-43dd-aa4f-c1072ecdf3d2","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Dunes",
+    "path": "texturegroups/Dunes",
   },
   "type": 0,
   "VTile": false,

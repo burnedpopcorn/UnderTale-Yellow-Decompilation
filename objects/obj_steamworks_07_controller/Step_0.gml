@@ -16,7 +16,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_npc_direction(1161, "left");
+        cutscene_npc_direction(obj_ceroba_npc, "left");
         break;
     
     case 3:
@@ -24,19 +24,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* What luck.";
             message[1] = "* Turn the power on and#  the whole facility goes#  insane!";
             message[2] = "* Since you're now the#  leader and all... ";
             message[3] = "* How'bout you run ahead#  and turn this steam off?";
             message[4] = "* I think I see a switch#  over there so no#  problem, right?";
             message[5] = "* Don't worry, I'll catch#  up.";
-            prt[0] = 382;
-            prt[1] = 382;
-            prt[2] = 377;
-            prt[3] = 370;
-            prt[4] = 372;
-            prt[5] = 395;
+            prt[0] = spr_portrait_ceroba_muttering;
+            prt[1] = spr_portrait_ceroba_muttering;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
+            prt[3] = spr_portrait_ceroba_neutral;
+            prt[4] = spr_portrait_ceroba_smile;
+            prt[5] = spr_portrait_ceroba_snarky;
         }
         
         break;
@@ -61,11 +61,11 @@ switch (scene)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* I know you're skilled#  enough for this small#  task.";
                 message[1] = "* Go on.";
-                prt[0] = 395;
-                prt[1] = 372;
+                prt[0] = spr_portrait_ceroba_snarky;
+                prt[1] = spr_portrait_ceroba_smile;
             }
         }
         
@@ -80,7 +80,7 @@ switch (scene)
         break;
     
     case 9:
-        cutscene_sfx_play(378, 1);
+        cutscene_sfx_play(snd_success, 1);
         break;
     
     case 10:
@@ -88,7 +88,7 @@ switch (scene)
         break;
     
     case 11:
-        cutscene_npc_walk(1168, 80, 105, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 80, 105, 3, "x", "up");
         break;
     
     case 12:
@@ -119,7 +119,7 @@ switch (scene)
         break;
     
     case 16:
-        cutscene_npc_direction(1168, "right");
+        cutscene_npc_direction(obj_player_npc, "right");
         break;
     
     case 17:
@@ -134,11 +134,11 @@ switch (scene)
         break;
     
     case 19:
-        cutscene_npc_set_sprites(1161, 81, 80, 78, 79, 61, 65, 60, 63);
+        cutscene_npc_set_sprites(obj_ceroba_npc, spr_ceroba_up_run, spr_ceroba_right_run, spr_ceroba_down_run, spr_ceroba_left_run, spr_ceroba_up_talk, spr_ceroba_right_talk, spr_ceroba_down_talk, spr_ceroba_left_talk);
         break;
     
     case 20:
-        cutscene_npc_walk(1161, obj_pl.x + 20, obj_pl.y, 4, "x", "left");
+        cutscene_npc_walk(obj_ceroba_npc, obj_pl.x + 20, obj_pl.y, 4, "x", "left");
         break;
     
     case 21:
@@ -146,17 +146,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* See? No sweat.";
-            prt[0] = 395;
+            prt[0] = spr_portrait_ceroba_snarky;
         }
         
         break;
     
     case 22:
         obj_pl.direction = 180;
-        global.party_member = 1171;
-        actor_follower = 1161;
+        global.party_member = obj_ceroba_follower;
+        actor_follower = obj_ceroba_npc;
         cutscene_actor_into_follower();
         break;
     

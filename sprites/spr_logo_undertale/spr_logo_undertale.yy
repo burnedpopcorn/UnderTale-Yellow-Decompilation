@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f6cab81f-01d2-4760-9b48-b8f4a8537f77",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8e472b65-b3e2-4c2a-9734-1376107f3ffe",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2d8d2c49-71c2-4339-a06a-018106a3e6fc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7987b459-63ad-4dd8-bac4-87b8527771e8",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 48,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0d5be915-7cc3-4ab7-add3-635518a57d09","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"84c2ed18-6801-44d5-8db1-5a8d3b4b2629","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f6cab81f-01d2-4760-9b48-b8f4a8537f77","path":"sprites/spr_logo_undertale/spr_logo_undertale.yy",},},},"Disabled":false,"id":"99e49bab-40f5-40fc-aa3d-1613850b1996","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8e472b65-b3e2-4c2a-9734-1376107f3ffe","path":"sprites/spr_logo_undertale/spr_logo_undertale.yy",},},},"Disabled":false,"id":"6c28f233-cecb-4521-b3fd-8beb9c1c287d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2d8d2c49-71c2-4339-a06a-018106a3e6fc","path":"sprites/spr_logo_undertale/spr_logo_undertale.yy",},},},"Disabled":false,"id":"e13a750b-8f65-4548-9d94-19af9c5131e5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7987b459-63ad-4dd8-bac4-87b8527771e8","path":"sprites/spr_logo_undertale/spr_logo_undertale.yy",},},},"Disabled":false,"id":"27aff706-4c88-4854-9ce8-764a540ff793","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "MainMenu",
+    "path": "texturegroups/MainMenu",
   },
   "type": 0,
   "VTile": false,

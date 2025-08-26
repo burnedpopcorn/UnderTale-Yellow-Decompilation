@@ -1,9 +1,7 @@
-var play_machine_sound;
-
 if (active == false)
     exit;
 
-play_machine_sound = false;
+var play_machine_sound = false;
 
 if (global.up_key)
 {

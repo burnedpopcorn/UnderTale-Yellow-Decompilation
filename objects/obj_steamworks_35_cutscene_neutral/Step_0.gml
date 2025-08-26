@@ -11,7 +11,7 @@ switch (scene)
     
     case 1:
         obj_pl.direction = 90;
-        cutscene_sfx_play(529, 1);
+        cutscene_sfx_play(snd_steamworks_35_axis_beep, 1);
         break;
     
     case 2:
@@ -19,7 +19,7 @@ switch (scene)
         break;
     
     case 3:
-        cutscene_sfx_play(529, 1);
+        cutscene_sfx_play(snd_steamworks_35_axis_beep, 1);
         break;
     
     case 4:
@@ -31,9 +31,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             color = true;
-            col_modif[0] = 16711935;
+            col_modif[0] = c_fuchsia;
             message[0] = "* [MAIN POWER SOURCE NOT#  FOUND_]";
             message[1] = "* [INITIATING EMERGENCY#  BACKUP POWER_]";
             message_col[0][0] = "* [MAIN POWER SOURCE NOT#  FOUND_]";
@@ -44,7 +44,7 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_npc_action_sprite(1166, 2989, 0.5, false);
+        cutscene_npc_action_sprite(obj_axis_npc, spr_axis_down_bonk_restore, 0.5, false);
         obj_axis_npc.npc_direction = "down";
         break;
     
@@ -61,19 +61,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* H-H-HUMA-N.";
             message[1] = "* Y-YOU HAVE ANGERED ME#  GREATLY.";
             message[2] = "* I HAVE HAD IT WITH YOU#  DOING NOTHING AS I FAIL#  OVER AND OVER.";
             message[3] = "* DO YOU KNOW HOW HARD IT#  WAS TO GET THE ACID OUT#  OF MY STEEL?";
             message[4] = "* I HAD TO PUT MYSELF IN#  A WASHING MACHINE. IT#  WAS QUITE DIZZYING.";
             message[5] = "* THOUGH I DO FEEL, AS#  THE KIDS SAY: \"FRESH AS#  HELL.\"";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
-            prt[3] = 473;
-            prt[4] = 473;
-            prt[5] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
+            prt[3] = spr_portrait_axis_normal;
+            prt[4] = spr_portrait_axis_normal;
+            prt[5] = spr_portrait_axis_normal;
             position = 0;
         }
         
@@ -88,17 +88,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* ...";
             message[1] = "* ANYWAY.";
             message[2] = "* IF YOU CANNOT TELL, I#  AM [ticked] OFF AND OUT#  OF NON-LETHAL OPTIONS.";
             message[3] = "* THAT, AND THIS FURNACE#  HAS A NICE \"TIME TO DIE\"#  AESTHETIC TO IT.";
             message[4] = "* SO PREPARE YOURSELF. I#  AM ATTACKING NOW.";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
-            prt[3] = 473;
-            prt[4] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
+            prt[3] = spr_portrait_axis_normal;
+            prt[4] = spr_portrait_axis_normal;
             position = 0;
         }
         
@@ -134,17 +134,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* WHAT.";
             message[1] = "* MY PROGRAMMING IS#  PREVENTING ME FROM#  ATTACK.";
             message[2] = "* IT SAYS YOU ARE NOT A#  CURRENT THREAT OR#  RESISTING ARREST.";
             message[3] = "* UGH, [forget] THIS.";
             message[4] = "* HERE, I WILL MAKE YOU A#  THREAT.";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
-            prt[3] = 473;
-            prt[4] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
+            prt[3] = spr_portrait_axis_normal;
+            prt[4] = spr_portrait_axis_normal;
             position = 0;
             
             if (message_current == 1)
@@ -154,7 +154,7 @@ switch (scene)
         break;
     
     case 17:
-        cutscene_npc_walk(1166, obj_steamworks_35_trashcan.x + 20, obj_steamworks_35_trashcan.y - 1, 2, "x", "left");
+        cutscene_npc_walk(obj_axis_npc, obj_steamworks_35_trashcan.x + 20, obj_steamworks_35_trashcan.y - 1, 2, "x", "left");
         break;
     
     case 18:
@@ -163,11 +163,11 @@ switch (scene)
         break;
     
     case 18.5:
-        if (cutscene_npc_action_sprite(1166, 1393, 1, true))
+        if (cutscene_npc_action_sprite(obj_axis_npc, spr_steamworks_36_axis_open_trash, 1, true))
         {
             obj_steamworks_35_trashcan.image_index = 1;
             obj_axis_npc.action_sprite = false;
-            cutscene_npc_set_sprites(1166, 488, 3297, 3267, 233, 488, 3297, 3267, 233);
+            cutscene_npc_set_sprites(obj_axis_npc, spr_axis_up, spr_steamworks_36_axis_walk_right, spr_steamworks_36_axis_walk_down, spr_steamworks_36_axis_walk_left, spr_axis_up, spr_steamworks_36_axis_walk_right, spr_steamworks_36_axis_walk_down, spr_steamworks_36_axis_walk_left);
             cutscene_advance(19);
         }
         
@@ -178,15 +178,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* HOLD THIS, IT SUITS#  YOU.";
-            prt[0] = 473;
+            prt[0] = spr_portrait_axis_normal;
         }
         
         break;
     
     case 20:
-        cutscene_npc_walk(1166, obj_pl.x, clamp(obj_pl.y - 30, 90, 10000), 3, "x", "down");
+        cutscene_npc_walk(obj_axis_npc, obj_pl.x, clamp(obj_pl.y - 30, 90, 10000), 3, "x", "down");
         break;
     
     case 21:
@@ -194,18 +194,18 @@ switch (scene)
         break;
     
     case 22:
-        cutscene_sfx_play(424, 1);
+        cutscene_sfx_play(snd_mart_impact_2, 1);
         break;
     
     case 23:
         instance_create_depth(obj_pl.x, obj_pl.y, obj_pl.depth, obj_player_npc);
         obj_player_npc.npc_direction = "up";
         obj_player_npc.up_sprite_idle = spr_pl_up_trash;
-        cutscene_npc_set_sprites(1166, 488, 487, 484, 486, 488, 487, 484, 486);
+        cutscene_npc_set_sprites(obj_axis_npc, spr_axis_up, spr_axis_right, spr_axis_down, spr_axis_left, spr_axis_up, spr_axis_right, spr_axis_down, spr_axis_left);
         break;
     
     case 24:
-        cutscene_npc_walk(1166, obj_pl.x, clamp(obj_pl.y - 40, 90, 10000), 3, "y", "down");
+        cutscene_npc_walk(obj_axis_npc, obj_pl.x, clamp(obj_pl.y - 40, 90, 10000), 3, "y", "down");
         break;
     
     case 25:
@@ -213,13 +213,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* THERE. NOW YOU HAVE A#  DRAWN \"WEAPON.\"";
             message[1] = "* LOOPHOLES ARE#  WONDERFUL, ARE THEY NOT?";
             message[2] = "* YOUR CRIMES END HERE,#  HUMAN.";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
             position = 0;
             
             if (message_current == 2)
@@ -255,7 +255,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* I APOLOGIZE FOR#  TORMENTING YOU AND#  CALLING YOU NAMES.";
             message[1] = "* MY CODED PROTOCOL#  BLINDED ME FROM#  SOMETHING...";
             message[2] = "* SOMETHING CALLED...#  \"BASIC DECENCY.\"";
@@ -274,24 +274,24 @@ switch (scene)
             message[15] = "* THE FREEDOM TO BE#  FLAWED.";
             message[16] = "* ALL THAT TO SAY, I#  WOULD NOT INVITE ANY#  OTHER HUMANS HERE.";
             message[17] = "* SOMEONE WILL JUMP THEM.";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
-            prt[3] = 473;
-            prt[4] = 473;
-            prt[5] = 473;
-            prt[6] = 473;
-            prt[7] = 473;
-            prt[8] = 473;
-            prt[9] = 473;
-            prt[10] = 473;
-            prt[11] = 473;
-            prt[12] = 473;
-            prt[13] = 473;
-            prt[14] = 473;
-            prt[15] = 473;
-            prt[16] = 473;
-            prt[17] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
+            prt[3] = spr_portrait_axis_normal;
+            prt[4] = spr_portrait_axis_normal;
+            prt[5] = spr_portrait_axis_normal;
+            prt[6] = spr_portrait_axis_normal;
+            prt[7] = spr_portrait_axis_normal;
+            prt[8] = spr_portrait_axis_normal;
+            prt[9] = spr_portrait_axis_normal;
+            prt[10] = spr_portrait_axis_normal;
+            prt[11] = spr_portrait_axis_normal;
+            prt[12] = spr_portrait_axis_normal;
+            prt[13] = spr_portrait_axis_normal;
+            prt[14] = spr_portrait_axis_normal;
+            prt[15] = spr_portrait_axis_normal;
+            prt[16] = spr_portrait_axis_normal;
+            prt[17] = spr_portrait_axis_normal;
             
             switch (message_current)
             {
@@ -326,7 +326,7 @@ switch (scene)
         break;
     
     case 31:
-        cutscene_sfx_play(529, 1);
+        cutscene_sfx_play(snd_steamworks_35_axis_beep, 1);
         break;
     
     case 32:
@@ -334,7 +334,7 @@ switch (scene)
         break;
     
     case 33:
-        cutscene_sfx_play(529, 1);
+        cutscene_sfx_play(snd_steamworks_35_axis_beep, 1);
         break;
     
     case 34:
@@ -348,27 +348,27 @@ switch (scene)
         {
             color = true;
             message_col[0][0] = "";
-            col_modif[0] = 16711935;
-            talker[0] = 1166;
+            col_modif[0] = c_fuchsia;
+            talker[0] = obj_axis_npc;
             message[0] = "  BACKUP BATTERY EXTREMELY LOW.#  PLEASE RECHARGE.";
             message_col[0][0] = "  BACKUP BATTERY EXTREMELY LOW.#  PLEASE RECHARGE.";
             message[1] = "* OH, SUPPOSE I SHOULD GO#  DO THAT.";
             message[2] = "* RECHARGING WILL RESTORE#  ME BACK TO MY FACTORY#  STATE BUT...";
-            prt[1] = 473;
-            prt[2] = 473;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
             message[3] = "  ADDED \"HATTED HUMAN\" TO#  \"AUTHORIZED\" LIST.";
             message_col[3][0] = message[3];
             message[4] = "* THERE. NOW I WILL NOT#  ATTEMPT APPREHENSION#  NEXT TIME WE MEET.";
             message[5] = "* HAVE A PLEASANT#  JOURNEY, HUMAN.";
-            prt[4] = 473;
-            prt[5] = 473;
+            prt[4] = spr_portrait_axis_normal;
+            prt[5] = spr_portrait_axis_normal;
         }
         
         break;
     
     case 36:
         audio_sound_gain(cutscene_music, 0, 900);
-        cutscene_npc_walk(1166, 760, obj_axis_npc.y, 2, "y", "left", 1031, 880, 140);
+        cutscene_npc_walk(obj_axis_npc, 760, obj_axis_npc.y, 2, "y", "left", 1031, 880, 140);
         
         if (x > (obj_pl.x + 3))
             obj_pl.direction = 0;
@@ -381,11 +381,11 @@ switch (scene)
     
     case 38:
         audio_sound_gain(cutscene_music, 1, 300);
-        cutscene_npc_set_sprites(1166, 488, 487, 484, 487, 488, 487, 484, 487);
+        cutscene_npc_set_sprites(obj_axis_npc, spr_axis_up, spr_axis_right, spr_axis_down, spr_axis_right, spr_axis_up, spr_axis_right, spr_axis_down, spr_axis_right);
         break;
     
     case 39:
-        cutscene_npc_walk(1166, 790, 140, 5, "x", "right");
+        cutscene_npc_walk(obj_axis_npc, 790, 140, 5, "x", "right");
         break;
     
     case 40:
@@ -393,22 +393,22 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* OH, ONE MORE THING.";
             message[1] = "* LEAVE THE POWER ON WHEN#  YOU EXIT, WILL YOU?";
             message[2] = "* I LIKE LIVING. ";
             message[3] = "* THANKS.";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
-            prt[3] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
+            prt[3] = spr_portrait_axis_normal;
         }
         
         break;
     
     case 41:
         scr_audio_fade_out(cutscene_music, 300);
-        cutscene_npc_walk(1166, 880, 140, 5, "y", "left");
+        cutscene_npc_walk(obj_axis_npc, 880, 140, 5, "y", "left");
         break;
     
     case 42:

@@ -36,7 +36,7 @@ else
             break;
         
         case 3:
-            scr_audio_fade_out(40, 1000);
+            scr_audio_fade_out(mus_guns_blazing, 1000);
             message[0] = "COME ON, YOU#DO NOT MEAN#THAT.";
             message[1] = "YOU DO?";
             message[2] = "WHOA. HEY.#I FEEL FUNNY.";

@@ -1,5 +1,3 @@
-var text_parent, anim_loop_time_half, anim_inc_current, mask_offset;
-
 if (live_call())
     return global.live_result;
 
@@ -17,7 +15,7 @@ if (global.enemy_spared == true)
     image_speed = 0;
 }
 
-text_parent = 2721;
+var text_parent = 2722;
 
 if (instance_exists(text_parent) && instance_exists(obj_quote_bubble_battle))
 {
@@ -44,8 +42,8 @@ else
 }
 
 anim_loop_time = room_speed * 3;
-anim_loop_time_half = anim_loop_time / 1;
-anim_inc_current = ((anim_stretch_max - 1) / anim_loop_time_half) * anim_inc_multiplier;
+var anim_loop_time_half = anim_loop_time / 1;
+var anim_inc_current = ((anim_stretch_max - 1) / anim_loop_time_half) * anim_inc_multiplier;
 
 if (anim_stage == 1)
 {
@@ -87,7 +85,7 @@ obj_ceroba_phase_2_staff.y += (50 * (image_yscale - 1));
 if (instance_exists(obj_ceroba_transformation_mask))
 {
     obj_ceroba_transformation_mask.y *= image_yscale;
-    mask_offset = obj_ceroba_transformation_mask.y - obj_ceroba_transformation_mask.ystart;
+    var mask_offset = obj_ceroba_transformation_mask.y - obj_ceroba_transformation_mask.ystart;
     obj_ceroba_phase_2_head.y += mask_offset;
     obj_ceroba_sideburn_left.y += mask_offset;
     obj_ceroba_sideburn_right.y += mask_offset;

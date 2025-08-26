@@ -1,5 +1,3 @@
-var mus;
-
 if (live_call())
     return global.live_result;
 
@@ -24,12 +22,12 @@ switch (scene)
     case 3:
         if (global.route == 3)
         {
-            mus = audio_play_sound(mus_greenhouse, 20, 1);
+            var mus = audio_play_sound(mus_greenhouse, 20, 1);
             audio_sound_pitch(mus, 0.3);
         }
         else
         {
-            mus = audio_play_sound(mus_kanako, 1, 0);
+            var mus = audio_play_sound(mus_kanako, 1, 0);
         }
         
         scene++;

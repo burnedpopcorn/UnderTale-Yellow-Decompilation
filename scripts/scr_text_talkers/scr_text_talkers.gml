@@ -1,10 +1,8 @@
 function scr_text_talkers()
 {
-    var talker_enabled, i, talking_npc;
+    var talker_enabled = false;
     
-    talker_enabled = false;
-    
-    for (i = 0; i < array_length(talker); i++)
+    for (var i = 0; i < array_length(talker); i++)
     {
         if (talker[i] != -4)
             talker_enabled = true;
@@ -16,7 +14,7 @@ function scr_text_talkers()
         {
             talker_current = message_current;
             
-            if (talker[talker_current] == 0 && talker_current > 0)
+            if (talker[talker_current] == obj_quote_battle_ceroba_outro_4 && talker_current > 0)
                 talker[talker_current] = talker[talker_current - 1];
         }
         
@@ -26,7 +24,7 @@ function scr_text_talkers()
                 is_talking = false;
         }
         
-        talking_npc = talker[talker_current];
+        var talking_npc = talker[talker_current];
         
         with (obj_npc_parent)
         {
@@ -40,7 +38,7 @@ function scr_text_talkers()
                 is_talking = true;
         }
         
-        if (object_is_ancestor(talker[talker_current], obj_npc_parent) && talker[talker_current].npc_voice_sfx != 0)
+        if (object_is_ancestor(talker[talker_current], obj_npc_parent) && talker[talker_current].npc_voice_sfx != snd_ceroba_staff_lock)
             sndfnt_array[talker_current] = talker[talker_current].npc_voice_sfx;
     }
 }

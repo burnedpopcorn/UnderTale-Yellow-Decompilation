@@ -1,9 +1,7 @@
-var particles_spawn, flap_sound, inc, i, xx, yy;
-
 if (live_call())
     return global.live_result;
 
-particles_spawn = false;
+var particles_spawn = false;
 item_offset = 15;
 
 switch (scene)
@@ -32,7 +30,7 @@ switch (scene)
             if (obj_martlet_final_base.image_index >= 2)
             {
                 particles_spawn = true;
-                flap_sound = audio_play_sound(snd_mart_flap, 20, 0);
+                var flap_sound = audio_play_sound(snd_mart_flap, 20, 0);
                 audio_sound_pitch(flap_sound, 0.8);
                 flap_noloop = true;
             }
@@ -84,12 +82,12 @@ else
 
 if (particles_spawn)
 {
-    inc = 22.857142857142858;
+    var inc = 22.857142857142858;
     
-    for (i = 0; i < 7; i++)
+    for (var i = 0; i < 7; i++)
     {
-        xx = 250 + (i * inc);
-        yy = 270 + (sign(i % 2) * 20) + random_range(-10, 10);
+        var xx = 250 + (i * inc);
+        var yy = 270 + (sign(i % 2) * 20) + random_range(-10, 10);
         part_particles_create(global.ps, xx, yy, global.pt_Effect1, 1);
         part_particles_create(global.ps, xx, (yy - 60) + random_range(-10, 10), global.pt_Effect1, 1);
     }

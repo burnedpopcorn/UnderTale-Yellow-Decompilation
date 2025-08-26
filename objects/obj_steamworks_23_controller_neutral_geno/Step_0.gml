@@ -39,7 +39,7 @@ switch (scene)
         {
             if (global.route == 1 && global.geno_complete[3] == false)
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* Howdy!";
                 message[1] = "* I know I usually let you#  handle imminent threats#  but...";
                 message[2] = "* ...You really looked#  cornered back there!";
@@ -48,18 +48,18 @@ switch (scene)
                 message[5] = "* You should take it easy#  for a while, pal!";
                 message[6] = "* Grab a snack, hydrate,#  won't bother me!";
                 message[7] = "* Need to be in tip-top#  shape for what's coming!";
-                prt[0] = 348;
-                prt[1] = 347;
-                prt[2] = 357;
-                prt[3] = 348;
-                prt[4] = 348;
-                prt[5] = 348;
-                prt[6] = 347;
-                prt[7] = 3251;
+                prt[0] = flowey_nice;
+                prt[1] = flowey_niceside;
+                prt[2] = flowey_worried;
+                prt[3] = flowey_nice;
+                prt[4] = flowey_nice;
+                prt[5] = flowey_nice;
+                prt[6] = flowey_niceside;
+                prt[7] = flowey_wink;
             }
             else
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* ...";
                 message[1] = "* Can I be real with you?";
                 message[2] = "* I'm gonna be real with#  you.";
@@ -74,27 +74,27 @@ switch (scene)
                 message[11] = "* ...";
                 message[12] = "* ...";
                 message[13] = "* Fine, we can talk later#  I guess.";
-                prt[0] = 353;
-                prt[1] = 352;
-                prt[2] = 352;
-                prt[3] = 353;
-                prt[4] = 352;
-                prt[5] = 357;
-                prt[6] = 352;
-                prt[7] = 353;
-                prt[8] = 352;
-                prt[9] = 3692;
-                prt[10] = 348;
-                prt[11] = 347;
-                prt[12] = 352;
-                prt[13] = 3122;
+                prt[0] = flowey_plains;
+                prt[1] = flowey_plain;
+                prt[2] = flowey_plain;
+                prt[3] = flowey_plains;
+                prt[4] = flowey_plain;
+                prt[5] = flowey_worried;
+                prt[6] = flowey_plain;
+                prt[7] = flowey_plains;
+                prt[8] = flowey_plain;
+                prt[9] = spr_flowey_disappointed;
+                prt[10] = flowey_nice;
+                prt[11] = flowey_niceside;
+                prt[12] = flowey_plain;
+                prt[13] = spr_flowey_snarky;
             }
         }
         
         break;
     
     case 4:
-        cutscene_npc_action_sprite(3194, 245, 0.2, true);
+        cutscene_npc_action_sprite(obj_flowey_npc, spr_floweyleave, 0.2, true);
         break;
     
     case 5:

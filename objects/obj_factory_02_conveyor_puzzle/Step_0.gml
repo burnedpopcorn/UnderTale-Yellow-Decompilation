@@ -1,9 +1,7 @@
-var spawn_modifier, strikes;
-
 if (live_call())
     return global.live_result;
 
-spawn_modifier = 1 + ((1 - (conveyor_item_number / conveyor_item_number_max)) * 1.5);
+var spawn_modifier = 1 + ((1 - (conveyor_item_number / conveyor_item_number_max)) * 1.5);
 
 if (conveyor_puzzle_activate == true)
 {
@@ -23,7 +21,7 @@ if (conveyor_puzzle_active == true)
         conveyor_spawn_item = true;
     }
     
-    if (keyboard_multicheck_pressed(0))
+    if (keyboard_multicheck_pressed(vk_nokey))
     {
         with (obj_conveyor_stamp_blue)
         {
@@ -32,7 +30,7 @@ if (conveyor_puzzle_active == true)
         }
     }
     
-    if (keyboard_multicheck_pressed(1))
+    if (keyboard_multicheck_pressed(vk_anykey))
         obj_conveyor_stamp_red.activate = true;
     
     with (obj_steamworks_factory_02_face)
@@ -71,7 +69,7 @@ if (conveyor_spawn_item)
     }
 }
 
-strikes = 3 - conveyor_item_number_wrong;
+var strikes = 3 - conveyor_item_number_wrong;
 
 with (obj_factory_02_conveyor_indicator)
 {

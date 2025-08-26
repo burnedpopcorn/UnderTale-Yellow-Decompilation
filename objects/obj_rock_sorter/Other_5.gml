@@ -1,1 +1,1 @@
-scr_audio_fade_out(257, 150);
+scr_audio_fade_out(snd_machinery, 150);

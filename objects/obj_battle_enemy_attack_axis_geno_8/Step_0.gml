@@ -1,15 +1,13 @@
-var battle_box, ball_offset, variant, i;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-ball_offset = 30;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var ball_offset = 30;
 
 switch (attack_tick)
 {
     case 30:
-        variant = choose(1, 2);
+        var variant = choose(1, 2);
         
         if (variant == 1)
         {
@@ -39,7 +37,7 @@ switch (attack_tick)
             attack_turret[5] = instance_create_depth(battle_box.bbox_right + 20, battle_box.y + 15, -100, obj_battle_enemy_attack_axis_turret_geno);
         }
         
-        for (i = 0; i < array_length(attack_turret); i++)
+        for (var i = 0; i < array_length(attack_turret); i++)
         {
             with (attack_turret[i])
             {

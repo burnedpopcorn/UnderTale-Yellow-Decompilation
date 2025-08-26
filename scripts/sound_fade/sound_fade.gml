@@ -1,4 +1,4 @@
-function sound_fade(argument0, argument1, argument2)
+function sound_fade(arg0, arg1, arg2)
 {
-    audio_sound_gain(argument0, argument1, argument2);
+    audio_sound_gain(arg0, arg1, arg2);
 }

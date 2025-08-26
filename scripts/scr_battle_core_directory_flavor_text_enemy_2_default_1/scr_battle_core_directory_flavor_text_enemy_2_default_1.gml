@@ -1,10 +1,8 @@
 function scr_battle_core_directory_flavor_text_enemy_2_default_1()
 {
-    var battle_enemy_name, enemy_mode_2, game_mode;
-    
-    battle_enemy_name = global.battle_enemy_name;
-    enemy_mode_2 = global.enemy_mode_2;
-    game_mode = global.game_mode;
+    var battle_enemy_name = global.battle_enemy_name;
+    var enemy_mode_2 = global.enemy_mode_2;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {
@@ -30,6 +28,6 @@ function scr_battle_core_directory_flavor_text_enemy_2_default_1()
         else if (battle_enemy_name == "jandroid goosic duo")
             message[0] = "* Goosic slowly scratches a#  record with its needle. The#  sound is unbearable.";
         else if (battle_enemy_name == "jandroid duo")
-            message[0] = "* The Jandroid's are trying to#  harmonize.";
+            message[0] = "* The Jandroids are trying to#  harmonize.";
     }
 }

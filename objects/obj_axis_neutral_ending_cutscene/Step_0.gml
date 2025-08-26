@@ -17,7 +17,7 @@ switch (scene)
     
     case 2:
         obj_axis_body.sprite_index = spr_axis_body_nocharge;
-        obj_axis_body.base_sprite = spr_axis_body_nocharge;
+        obj_axis_body.base_sprite = 1391;
         instance_destroy(obj_quote_battle_axis_attack_end);
         instance_destroy(obj_background_boss_battle_axis_yellow);
         instance_create_depth(obj_axis_body.x, obj_axis_body.y, obj_axis_body.depth - 1, obj_axis_heart);
@@ -58,7 +58,7 @@ switch (scene)
         if (!instance_exists(obj_quote_battle_axis_neutral_post_attacks))
         {
             global.action_1_important = true;
-            global.action_1_color = 65535;
+            global.action_1_color = c_yellow;
             global.action_amount = 1;
             instance_destroy();
         }

@@ -1,12 +1,10 @@
-var battle_box, side, xx, yy, twinkle;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-side = choose(1, 2, 3, 4);
-xx = battle_box.x;
-yy = battle_box.y;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var side = choose(1, 2, 3, 4);
+var xx = battle_box.x;
+var yy = battle_box.y;
 
 switch (side)
 {
@@ -31,7 +29,7 @@ switch (side)
         break;
 }
 
-twinkle = instance_create_depth(xx, yy, -100, obj_battle_enemy_attack_axis_turret_twinkle_2);
+var twinkle = instance_create_depth(xx, yy, -100, obj_battle_enemy_attack_axis_turret_twinkle_2);
 twinkle.side = side;
 turret_count--;
 

@@ -30,9 +30,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Oh, hey.";
-            prt[0] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
         }
         
         break;
@@ -50,9 +50,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* ...Hellooo?";
-            prt[0] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
         }
         
         break;
@@ -78,9 +78,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Rusted through.";
-            prt[0] = 377;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
             position = 0;
         }
         
@@ -100,15 +100,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* The sign says \"If the#  receptionist is#  unreceptive...";
             message[1] = "* ...check with the robot#  control station three#  floors up.\" ";
             message[2] = "* Robot control#  station...";
             message[3] = "* Clover! Are you thinking#  what I'm thinking?";
-            prt[0] = 370;
-            prt[1] = 370;
-            prt[2] = 393;
-            prt[3] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_surprised;
+            prt[3] = spr_portrait_ceroba_neutral;
             ch_msg = 3;
             ch[1] = "Axis?";
             ch[2] = "Uh...";
@@ -117,20 +117,20 @@ switch (scene)
             if (outcome == 1)
             {
                 message[4] = "* Exactly.";
-                prt[4] = 377;
+                prt[4] = spr_portrait_ceroba_closed_eyes;
             }
             else if (outcome == 2)
             {
                 message[4] = "* You zoned out? Listen!";
-                prt[4] = 368;
+                prt[4] = spr_portrait_ceroba_irked;
             }
             
             message[5] = "* If there's some sorta#  \"breaker box\" for all#  robots in the area...";
             message[6] = "* ...we can shut Axis down#  and get to Hotland#  as planned!";
             message[7] = "* It's worth an#  investigation at least.#  Let's go!";
-            prt[5] = 377;
-            prt[6] = 370;
-            prt[7] = 377;
+            prt[5] = spr_portrait_ceroba_closed_eyes;
+            prt[6] = spr_portrait_ceroba_neutral;
+            prt[7] = spr_portrait_ceroba_closed_eyes;
             
             if (message_current == 3)
                 obj_ceroba_npc.npc_direction = "down";
@@ -139,7 +139,7 @@ switch (scene)
         break;
     
     case 17:
-        cutscene_npc_walk(1161, obj_pl.x, obj_pl.y + 30, 3, "x", "up");
+        cutscene_npc_walk(obj_ceroba_npc, obj_pl.x, obj_pl.y + 30, 3, "x", "up");
         break;
     
     case 18:

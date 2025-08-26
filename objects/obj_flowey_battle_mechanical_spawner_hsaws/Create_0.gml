@@ -1,13 +1,11 @@
-var side, saw_speed;
-
 if (live_call())
     return global.live_result;
 
-side = choose(-1, 1);
+var side = choose(-1, 1);
 yy[0] = 320;
 yy[1] = 380;
 yy[2] = 440;
-saw_speed = 12;
+var saw_speed = 12;
 
 switch (side)
 {

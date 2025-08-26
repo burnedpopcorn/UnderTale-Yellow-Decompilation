@@ -1,15 +1,13 @@
 function scr_create_player_attack()
 {
-    var player_weapon, player_weapon_modifier, random_generator;
-    
     if (global.battle_enemy_name == "macro froggit" && global.turns_passed == 0)
     {
         global.enemy_attacking = true;
         exit;
     }
     
-    player_weapon = global.player_weapon;
-    player_weapon_modifier = global.player_weapon_modifier;
+    var player_weapon = global.player_weapon;
+    var player_weapon_modifier = global.player_weapon_modifier;
     
     switch (player_weapon)
     {
@@ -101,7 +99,7 @@ function scr_create_player_attack()
             break;
         
         default:
-            random_generator = irandom_range(1, 2);
+            var random_generator = irandom_range(1, 2);
             
             if (random_generator == 1)
                 instance_create(44, 255, obj_target_bar_battle);

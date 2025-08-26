@@ -15,7 +15,7 @@ if (waiter == 1)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Wow. It's colder today than#  usual, huh?";
                 message[1] = "* If I wasn't extremely lazy, I'd#  go to the Honeydew Resort and#  get some hot coffee.";
             }
@@ -30,7 +30,7 @@ if (waiter == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* (You take out the cup of#  coffee.)";
                     message[1] = "* For me? How can I ever thank#  you!";
                     message[2] = "* Here, I found this in the snow.#  It was probably out there for#  ages.";
@@ -57,7 +57,7 @@ if (waiter == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Wow. It's colder today than#  usual, huh?";
                     message[1] = "* If I wasn't extremely lazy, I'd#  go to the Honeydew Resort and#  get some hot coffee.";
                 }
@@ -71,7 +71,7 @@ if (waiter == 1)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* The coffee is a little hot.";
                 message[1] = "* I'm going to let it cool down.#  I'm not crazy, ya know.";
                 message[2] = "* In the meantime, I'll get to#  making a campfire so I don't#  freeze.";
@@ -87,7 +87,7 @@ if (waiter == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* (You take out the matches.)";
                     message[1] = "* Are those matches? Can I have#  them?";
                     ch_msg = 1;
@@ -130,7 +130,7 @@ if (waiter == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* The coffee is a little hot.";
                     message[1] = "* I'm going to let it cool down.#  I'm not crazy, ya know.";
                     message[2] = "* In the meantime, I'll get to#  making a campfire so I don't#  freeze.";
@@ -144,7 +144,7 @@ if (waiter == 1)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Why am I still standing here,#  idle?";
                 message[1] = "* I've frozen. I cannot move my#  body anymore.";
                 message[2] = "* Don't worry, this is nature's#  way of letting me be lazy.";

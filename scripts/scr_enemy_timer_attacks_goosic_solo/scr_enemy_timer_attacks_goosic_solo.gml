@@ -1,9 +1,7 @@
 function scr_enemy_timer_attacks_goosic_solo()
 {
-    var enemy_attack, battle_box;
-    
-    enemy_attack = global.enemy_attack;
-    battle_box = 3154;
+    var enemy_attack = global.enemy_attack;
+    var battle_box = obj_dialogue_box_battle_transformation_any;
     
     if (instance_exists(obj_dialogue_box_battle_transformation_any) && obj_heart_battle_fighting_parent.moveable == true)
     {

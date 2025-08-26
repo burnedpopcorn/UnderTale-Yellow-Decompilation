@@ -14,7 +14,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_npc_walk(1161, obj_pl.x, obj_pl.y + 30, 3, "y", "up");
+        cutscene_npc_walk(obj_ceroba_npc, obj_pl.x, obj_pl.y + 30, 3, "y", "up");
         break;
     
     case 3:
@@ -22,9 +22,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* I'll wait outside.";
-            prt[0] = 377;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
         }
         
         break;
@@ -35,7 +35,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_change_room(275, 160, 380, 0.1);
+        cutscene_change_room(rm_steamworks_macro_froggit_room, 160, 380, 0.1);
         global.cutscene = false;
         global.party_member = -4;
         global.sworks_flag[50] = 1;
@@ -46,7 +46,7 @@ switch (scene)
         break;
     
     case 7:
-        cutscene_npc_walk(1168, obj_ceroba_npc.x, obj_ceroba_npc.y - 20, 2, "y", "down");
+        cutscene_npc_walk(obj_player_npc, obj_ceroba_npc.x, obj_ceroba_npc.y - 20, 2, "y", "down");
         break;
     
     case 8:
@@ -58,24 +58,24 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Where'd you go?";
             message[1] = "* It's like I blinked and#  lost you.";
             message[2] = "* Well, uh, don't do that#  again.";
-            prt[0] = 370;
-            prt[1] = 371;
-            prt[2] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_alt;
+            prt[2] = spr_portrait_ceroba_neutral;
         }
         
-        actor_follower = 1161;
+        actor_follower = obj_ceroba_npc;
         break;
     
     case 10:
-        cutscene_npc_walk(1161, obj_player_npc.x, obj_player_npc.y - 20, 3, "y", "down");
+        cutscene_npc_walk(obj_ceroba_npc, obj_player_npc.x, obj_player_npc.y - 20, 3, "y", "down");
         break;
     
     case 11:
-        global.party_member = 1171;
+        global.party_member = obj_ceroba_follower;
         cutscene_actor_into_follower();
         break;
     

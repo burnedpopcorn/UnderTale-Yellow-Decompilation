@@ -10,11 +10,11 @@ if (interact)
         if (global.hotland_flag[1] > 0 && global.party_member != -4)
         {
             other.is_talking = 0;
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* (We need to stay#  focused.)";
             message[1] = "* (Let's not bother#  others with our#  problems.)";
-            prt[0] = 321;
-            prt[1] = 329;
+            prt[0] = spr_martlet_head_moderate;
+            prt[1] = spr_martlet_head_sad;
         }
         else
         {

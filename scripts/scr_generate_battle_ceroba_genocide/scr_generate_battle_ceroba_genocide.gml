@@ -1,7 +1,5 @@
 function scr_generate_battle_ceroba_genocide()
 {
-    var spawn_x, spawn_y;
-    
     global.battle_enemy_name_1 = "ceroba";
     global.battle_menu_number = 1;
     global.speed_self = 4;
@@ -66,8 +64,8 @@ function scr_generate_battle_ceroba_genocide()
     audio_extend = false;
     global.sound_carry_battle = false;
     global.mettaton_voice_count = 1;
-    spawn_x = 318;
-    spawn_y = 230;
+    var spawn_x = 318;
+    var spawn_y = 230;
     instance_create(spawn_x - 14, spawn_y - 99, obj_ceroba_staff);
     instance_create(spawn_x + 5, spawn_y - 177, obj_ceroba_ponytail);
     instance_create(spawn_x - 18, spawn_y - 116, obj_ceroba_hand_left);

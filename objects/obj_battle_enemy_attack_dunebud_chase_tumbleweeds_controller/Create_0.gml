@@ -1,13 +1,11 @@
-var box, chosen_dunebud;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
-chosen_dunebud = choose(2205, 3193);
+var box = obj_dialogue_box_battle_transformation_any;
+var chosen_dunebud = choose(2205, 3194);
 
 if (global.enemy_spared || global.enemy_dead)
-    chosen_dunebud = 3193;
+    chosen_dunebud = 3194;
 
 if (global.enemy_spared_2 || global.enemy_dead_2)
     chosen_dunebud = 2205;

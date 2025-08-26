@@ -1,7 +1,5 @@
 function scr_generate_battle_ceroba_2()
 {
-    var first_box, transformation_attack;
-    
     if (live_call())
         return global.live_result;
     
@@ -99,7 +97,7 @@ function scr_generate_battle_ceroba_2()
     instance_create(0, 0, obj_text_battle_stat_lv);
     instance_create(244, 405, obj_text_hp);
     instance_create(0, 0, obj_text_hp_stat);
-    first_box = instance_create(319, 320, obj_dialogue_box_battle_transformation_any_out);
+    var first_box = instance_create(319, 320, obj_dialogue_box_battle_transformation_any_out);
     
     with (first_box)
     {
@@ -131,6 +129,6 @@ function scr_generate_battle_ceroba_2()
     with (obj_heart_battle_menu)
         image_alpha = 0;
     
-    transformation_attack = instance_create_depth(0, 0, -100, obj_battle_ceroba_phase_1_transformation);
+    var transformation_attack = instance_create_depth(0, 0, -100, obj_battle_ceroba_phase_1_transformation);
     transformation_attack.scene = 34;
 }

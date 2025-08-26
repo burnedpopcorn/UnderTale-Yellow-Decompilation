@@ -27,16 +27,16 @@ if (can_talk)
                 with (msg)
                 {
                     color = true;
-                    col_modif[0] = 65535;
+                    col_modif[0] = c_yellow;
                     ch_msg = 2;
                     ch[1] = "Hazards";
                     ch[2] = "Foreman";
                     message[0] = "* Hello there!";
                     message[1] = "* My name is Angie! I'm#  the receptionist of#  Mining Co.";
                     message[2] = "* How may I help you?";
-                    prt[0] = 363;
-                    prt[1] = 364;
-                    prt[2] = 364;
+                    prt[0] = spr_angie_head;
+                    prt[1] = spr_angie_head_smile;
+                    prt[2] = spr_angie_head_smile;
                     
                     if (outcome == 1)
                     {
@@ -54,18 +54,18 @@ if (can_talk)
                         message[12] = "* They tend to step out#  of line every now and#  then.";
                         message[13] = "* I can't help but feel#  they're a bad influence#  on Moray.";
                         message[14] = "* Ah, these matters don't#  pertain to you.#  I apologize.";
-                        prt[3] = 363;
-                        prt[4] = 365;
-                        prt[5] = 363;
-                        prt[6] = 363;
-                        prt[7] = 365;
-                        prt[8] = 363;
-                        prt[9] = 363;
-                        prt[10] = 363;
-                        prt[11] = 363;
-                        prt[12] = 365;
-                        prt[13] = 365;
-                        prt[14] = 363;
+                        prt[3] = spr_angie_head;
+                        prt[4] = spr_angie_head_unamused;
+                        prt[5] = spr_angie_head;
+                        prt[6] = spr_angie_head;
+                        prt[7] = spr_angie_head_unamused;
+                        prt[8] = spr_angie_head;
+                        prt[9] = spr_angie_head;
+                        prt[10] = spr_angie_head;
+                        prt[11] = spr_angie_head;
+                        prt[12] = spr_angie_head_unamused;
+                        prt[13] = spr_angie_head_unamused;
+                        prt[14] = spr_angie_head;
                         other.npc_flag++;
                         other.can_talk = false;
                         other.scene = 0;
@@ -88,8 +88,8 @@ if (can_talk)
                 {
                     message[0] = "* The Foreman right over#  there is my husband,#  Gillbert.";
                     message[1] = "* He's the boss of the#  mines but I do more#  than him around here.";
-                    prt[0] = 363;
-                    prt[1] = 364;
+                    prt[0] = spr_angie_head;
+                    prt[1] = spr_angie_head_smile;
                 }
                 
                 timer = 20;
@@ -118,19 +118,19 @@ if (can_talk)
                     }
                     
                     message[0] = "* What was that?";
-                    prt[0] = 359;
+                    prt[0] = spr_gilbert_head;
                     message[1] = "* I work harder than you.";
-                    prt[1] = 363;
+                    prt[1] = spr_angie_head;
                     message[2] = "* Hey!";
                     message[3] = "* ...";
                     message[4] = "* Yeah, you're right.";
-                    prt[2] = 361;
-                    prt[3] = 361;
-                    prt[4] = 359;
+                    prt[2] = spr_gilbert_head_sweat;
+                    prt[3] = spr_gilbert_head_sweat;
+                    prt[4] = spr_gilbert_head;
                     message[5] = "* It's a mutual#  understanding.";
-                    prt[5] = 364;
+                    prt[5] = spr_angie_head_smile;
                     message[6] = "* And I love you for it.";
-                    prt[6] = 362;
+                    prt[6] = spr_gilbert_head_blush;
                 }
                 
                 if (!global.dialogue_open)
@@ -150,15 +150,15 @@ if (can_talk)
             
             with (msg)
             {
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* This business is more#  important than it may#  seem.";
                 message[1] = "* It isn't easy for#  monsters to find a job#  these days.";
                 message[2] = "* For that reason, we#  hire anyone who applies!";
                 message[3] = "* All except for children.#  I think that's illegal.";
-                prt[0] = 363;
-                prt[1] = 365;
-                prt[2] = 363;
-                prt[3] = 363;
+                prt[0] = spr_angie_head;
+                prt[1] = spr_angie_head_unamused;
+                prt[2] = spr_angie_head;
+                prt[3] = spr_angie_head;
             }
             
             can_talk = false;
@@ -174,11 +174,11 @@ if (can_talk)
                 
                 with (msg)
                 {
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* You have a good journey!";
                     message[1] = "* Heard it could get#  rocky!";
-                    prt[0] = 364;
-                    prt[1] = 363;
+                    prt[0] = spr_angie_head_smile;
+                    prt[1] = spr_angie_head;
                 }
                 
                 if (!global.dialogue_open)
@@ -196,7 +196,7 @@ if (can_talk)
                 
                 with (msg)
                 {
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     
                     if (message_current == 1)
                     {
@@ -212,9 +212,9 @@ if (can_talk)
                     message[0] = "* Haha! Good one, dear!";
                     message[1] = "* I've been waiting to#  say that.";
                     message[2] = "* That's my Angie!";
-                    prt[0] = 359;
-                    prt[1] = 364;
-                    prt[2] = 362;
+                    prt[0] = spr_gilbert_head;
+                    prt[1] = spr_angie_head_smile;
+                    prt[2] = spr_gilbert_head_blush;
                 }
                 
                 if (!global.dialogue_open)
@@ -233,9 +233,9 @@ if (can_talk)
             
             with (msg)
             {
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Hope you've had a good#  time at Mining Co.!";
-                prt[0] = 364;
+                prt[0] = spr_angie_head_smile;
             }
             
             can_talk = false;
@@ -247,13 +247,13 @@ if (can_talk)
             
             with (msg)
             {
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Oh, hello.";
                 message[1] = "* If you need a place to#  hide out right now, you#  can stay here.";
                 message[2] = "* Would hate a youngin#  like you to get into#  trouble.";
-                prt[0] = 365;
-                prt[1] = 363;
-                prt[2] = 365;
+                prt[0] = spr_angie_head_unamused;
+                prt[1] = spr_angie_head;
+                prt[2] = spr_angie_head_unamused;
             }
             
             can_talk = false;
@@ -266,11 +266,11 @@ if (can_talk)
             
             with (msg)
             {
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I hope little Moray is#  alright...";
                 message[1] = "* Need to go to the Wild#  East as soon as I can.";
-                prt[0] = 365;
-                prt[1] = 365;
+                prt[0] = spr_angie_head_unamused;
+                prt[1] = spr_angie_head_unamused;
             }
             
             can_talk = false;

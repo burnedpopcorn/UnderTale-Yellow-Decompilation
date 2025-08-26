@@ -1,7 +1,5 @@
-var main_shop_screen_number, player_character;
-
 depth = -room_height - 164;
-main_shop_screen_number = global.main_shop_screen_number;
+var main_shop_screen_number = global.main_shop_screen_number;
 
 if (main_shop_screen_number == 1)
 {
@@ -24,7 +22,7 @@ else if (main_shop_screen_number == 4)
     y = obj_main_screen_shop.y + 79;
 }
 
-player_character = global.player_character;
+var player_character = global.player_character;
 
 switch (player_character)
 {

@@ -1,5 +1,3 @@
-var shot_damage;
-
 if (live_call())
     return global.live_result;
 
@@ -115,17 +113,17 @@ else if (damage_disjoint_count == 2)
 else if (damage_disjoint_count == 0)
     damage_disjoint_x = 0;
 
-if (martlet_target_melt_sprite != martlet_previous_melt_sprite && martlet_previous_melt_sprite_alpha == spr_collisionbox)
+if (martlet_target_melt_sprite != martlet_previous_melt_sprite && martlet_previous_melt_sprite_alpha == 0)
 {
     sprite_index = martlet_target_melt_sprite;
-    martlet_previous_melt_sprite_alpha = spr_steamworks_21_background;
+    martlet_previous_melt_sprite_alpha = 1;
 }
 
 martlet_previous_melt_sprite_alpha = lerp(martlet_previous_melt_sprite_alpha, 0, 0.1);
 
 if (martlet_previous_melt_sprite_alpha <= 0.1)
 {
-    martlet_previous_melt_sprite_alpha = spr_collisionbox;
+    martlet_previous_melt_sprite_alpha = 0;
     martlet_previous_melt_sprite = martlet_target_melt_sprite;
 }
 
@@ -146,7 +144,7 @@ if (image_alpha > 0)
             other.healthbar_timer = other.healthbar_timer_max;
             other.healthbar_alpha = 1;
             other.damage_flash_timer = 3;
-            shot_damage = 3;
+            var shot_damage = 3;
             global.current_hp_enemy = clamp(global.current_hp_enemy - shot_damage, 1, 9999);
             global.current_hp_enemy_draw = global.current_hp_enemy;
             audio_play_sound(snd_arc_hit, 0.1, 0);

@@ -22,17 +22,17 @@ switch (global.dunes_flag_ext[6])
             message[8] = "* I suppose I outgrew it...#  moved here a few weeks#  back.";
             message[9] = "* Star and I have been#  friends since childhood,#  so there's no rent.";
             message[10] = "* It's nice...";
-            prt[0] = 370;
-            prt[1] = 394;
-            prt[2] = 382;
-            prt[3] = 384;
-            prt[4] = 382;
-            prt[5] = 377;
-            prt[6] = 370;
-            prt[7] = 370;
-            prt[8] = 394;
-            prt[9] = 370;
-            prt[10] = 372;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_disapproving;
+            prt[2] = spr_portrait_ceroba_muttering;
+            prt[3] = spr_portrait_ceroba_unamused;
+            prt[4] = spr_portrait_ceroba_muttering;
+            prt[5] = spr_portrait_ceroba_closed_eyes;
+            prt[6] = spr_portrait_ceroba_neutral;
+            prt[7] = spr_portrait_ceroba_neutral;
+            prt[8] = spr_portrait_ceroba_disapproving;
+            prt[9] = spr_portrait_ceroba_neutral;
+            prt[10] = spr_portrait_ceroba_smile;
         }
         
         global.dunes_flag_ext[6] = 1;
@@ -46,10 +46,10 @@ switch (global.dunes_flag_ext[6])
             message[1] = "* Once you pass your#  training, you'll be#  free to roam wherever.";
             message[2] = "* It'll be tough when I#  have to tell Star about#  your departure.";
             message[3] = "* He's taken a real liking#  to you. Shame you'll be#  gone so soon...";
-            prt[0] = 375;
-            prt[1] = 375;
-            prt[2] = 377;
-            prt[3] = 372;
+            prt[0] = spr_portrait_ceroba_default;
+            prt[1] = spr_portrait_ceroba_default;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
+            prt[3] = spr_portrait_ceroba_smile;
         }
         
         global.dunes_flag_ext[6] = 2;
@@ -60,7 +60,7 @@ switch (global.dunes_flag_ext[6])
         {
             talker[0] = other.object_index;
             message[0] = "* The sooner you do your#  missions, the sooner#  you're on your way.";
-            prt[0] = 377;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
         }
         
         break;

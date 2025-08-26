@@ -17,7 +17,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_npc_walk(1161, 450, obj_ceroba_npc.y, 3, "x", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 450, obj_ceroba_npc.y, 3, "x", "up");
         break;
     
     case 3:
@@ -25,11 +25,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Well, there we go.";
             message[1] = "* Definitely what I need#  after that madness.";
-            prt[0] = 395;
-            prt[1] = 372;
+            prt[0] = spr_portrait_ceroba_snarky;
+            prt[1] = spr_portrait_ceroba_smile;
         }
         
         break;
@@ -44,12 +44,12 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_npc_walk(1161, 408, 160, 3, "y", "down");
+        cutscene_npc_walk(obj_ceroba_npc, 408, 160, 3, "y", "down");
         cutscene_advance();
         break;
     
     case 7:
-        cutscene_npc_walk(1168, 408, 210, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 408, 210, 3, "x", "up");
         cutscene_advance();
         break;
     
@@ -66,7 +66,7 @@ switch (scene)
         obj_player_npc.x = 408;
         obj_player_npc.y = 196;
         obj_player_npc.npc_action_sprite = true;
-        cutscene_npc_action_sprite(1168, 3483, 1, true, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_steamworks_22_clover_sit, 1, true, 0);
         break;
     
     case 10:
@@ -82,7 +82,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* ...";
             message[1] = "* I wonder what Starlo's#  up to right now?";
             message[2] = "* Probably on some Feisty#  Five quest with a smile#  on his face.";
@@ -100,22 +100,22 @@ switch (scene)
             message[13] = "* ...";
             message[14] = "* You haven't seen my#  Kanako yet, have you?";
             message[15] = "* Here, take a look.";
-            prt[0] = 370;
-            prt[1] = 394;
-            prt[2] = 374;
-            prt[3] = 377;
-            prt[4] = 377;
-            prt[5] = 394;
-            prt[6] = 370;
-            prt[7] = 370;
-            prt[8] = 377;
-            prt[9] = 370;
-            prt[10] = 370;
-            prt[11] = 377;
-            prt[12] = 394;
-            prt[13] = 394;
-            prt[14] = 370;
-            prt[15] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_disapproving;
+            prt[2] = spr_portrait_ceroba_smile_alt;
+            prt[3] = spr_portrait_ceroba_closed_eyes;
+            prt[4] = spr_portrait_ceroba_closed_eyes;
+            prt[5] = spr_portrait_ceroba_disapproving;
+            prt[6] = spr_portrait_ceroba_neutral;
+            prt[7] = spr_portrait_ceroba_neutral;
+            prt[8] = spr_portrait_ceroba_closed_eyes;
+            prt[9] = spr_portrait_ceroba_neutral;
+            prt[10] = spr_portrait_ceroba_neutral;
+            prt[11] = spr_portrait_ceroba_closed_eyes;
+            prt[12] = spr_portrait_ceroba_disapproving;
+            prt[13] = spr_portrait_ceroba_disapproving;
+            prt[14] = spr_portrait_ceroba_neutral;
+            prt[15] = spr_portrait_ceroba_neutral;
         }
         
         if (msg.message_current == 5 && !audio_is_playing(mus_kanako))
@@ -127,7 +127,7 @@ switch (scene)
         break;
     
     case 13:
-        cutscene_npc_action_sprite(1161, 2583, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_ceroba_kanako_picture, 1, true, 0);
         break;
     
     case 14:
@@ -156,7 +156,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Look at that smile.#  Definitely her father's.";
             message[1] = "* ...";
             message[2] = "* Gifted like her father#  too. She's a...";
@@ -164,13 +164,13 @@ switch (scene)
             message[4] = "* ...She didn't deserve#  this life.";
             message[5] = "* I truly wish things#  could be different...";
             message[6] = "* ...But, that's not what#  \"fate\" had planned.";
-            prt[0] = 395;
-            prt[1] = 394;
-            prt[2] = 395;
-            prt[3] = 394;
-            prt[4] = 370;
-            prt[5] = 394;
-            prt[6] = 394;
+            prt[0] = spr_portrait_ceroba_snarky;
+            prt[1] = spr_portrait_ceroba_disapproving;
+            prt[2] = spr_portrait_ceroba_snarky;
+            prt[3] = spr_portrait_ceroba_disapproving;
+            prt[4] = spr_portrait_ceroba_neutral;
+            prt[5] = spr_portrait_ceroba_disapproving;
+            prt[6] = spr_portrait_ceroba_disapproving;
         }
         
         break;
@@ -189,7 +189,7 @@ switch (scene)
         break;
     
     case 19:
-        cutscene_npc_action_sprite_reverse(1161, 2583, 1, false);
+        cutscene_npc_action_sprite_reverse(obj_ceroba_npc, spr_ceroba_kanako_picture, 1, false);
         break;
     
     case 20:
@@ -201,11 +201,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* I apologize for my#  vagueness.";
             message[1] = "* I prefer to keep the#  bad memories to myself.";
-            prt[0] = 377;
-            prt[1] = 394;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_disapproving;
         }
         
         break;
@@ -219,19 +219,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Anyway, the Lab#  shouldn't be horribly#  far from here.";
             message[1] = "* We WILL get to the#  bottom of this, Clover.";
             message[2] = "* In the meantime, you#  can scout ahead. I'm#  gonna rest a bit longer.";
-            prt[0] = 377;
-            prt[1] = 370;
-            prt[2] = 377;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
         }
         
         break;
     
     case 24:
-        if (cutscene_npc_action_sprite_reverse(1168, 3483, 0.5, false))
+        if (cutscene_npc_action_sprite_reverse(obj_player_npc, spr_steamworks_22_clover_sit, 0.5, false))
         {
             instance_destroy(obj_player_npc);
             obj_pl.x = 389;
@@ -248,9 +248,7 @@ switch (scene)
         cutscene_advance();
         scr_cutscene_end();
         camera_set_view_target(view_camera[0], 1031);
-		// instance of obj_steam_walk_blocker in room
-        //(104950).y = 240;
-		(inst_4186A273).y = 240;
+        (104950).y = 240;
         global.sworks_flag[14] = 1;
         global.party_member = -4;
         scr_radio_restart();
@@ -265,11 +263,11 @@ switch (scene)
                 
                 with (msg)
                 {
-                    talker[0] = 1161;
+                    talker[0] = obj_ceroba_npc;
                     message[0] = "* Go on.";
                     message[1] = "* Just scream if#  something makes an#  attempt on your life.";
-                    prt[0] = 370;
-                    prt[1] = 377;
+                    prt[0] = spr_portrait_ceroba_neutral;
+                    prt[1] = spr_portrait_ceroba_closed_eyes;
                 }
             }
         }

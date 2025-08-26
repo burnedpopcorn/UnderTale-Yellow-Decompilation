@@ -1,5 +1,3 @@
-var per_frac;
-
 angle_current = angle_default;
 
 if (scroll_horizontal == true)
@@ -68,7 +66,7 @@ for (i = 0; i < sprite_height; i += pixel_dim)
     else if (scroll_temp_y < 0)
         scroll_temp_y += sprite_height;
     
-    per_frac = sin(degtorad(angle_current));
+    var per_frac = sin(degtorad(angle_current));
     xscale_current = image_xscale * (1 - ((1 - xscale_min) * per_frac));
     x_disjoint = (sprite_width - (sprite_width * xscale_current)) / 2;
     event_user(0);

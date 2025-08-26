@@ -1,6 +1,6 @@
 depth = -y;
 
-if (keyboard_multicheck_pressed(0) && scr_interact() == true && waiter == 0 && !instance_exists(obj_dialogue))
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true && waiter == 0 && !instance_exists(obj_dialogue))
 {
     if (global.snowdin_flag[4] == 0)
     {
@@ -19,7 +19,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true && waiter == 0 && !
         
         with (msg)
         {
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             portrait = false;
             
             if (global.route == 3)
@@ -57,7 +57,7 @@ if (waiter == 3)
     
     with (msg)
     {
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         portrait = false;
         message[0] = "* (Take the Ice Pellets?)";
         ch_msg = 0;

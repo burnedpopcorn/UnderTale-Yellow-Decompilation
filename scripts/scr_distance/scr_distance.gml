@@ -1,8 +1,6 @@
-function scr_distance(argument0, argument1)
+function scr_distance(arg0, arg1)
 {
-    var dx, dy;
-    
-    dx = argument1[0] - argument0[0];
-    dy = argument1[1] - argument0[1];
+    var dx = arg1[0] - arg0[0];
+    var dy = arg1[1] - arg0[1];
     return sqrt((dx * dx) + (dy * dy));
 }

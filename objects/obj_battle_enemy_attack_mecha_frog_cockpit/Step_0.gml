@@ -1,12 +1,10 @@
-var is_punched, i;
-
 if (live_call())
     return global.live_result;
 
 switch (scene)
 {
     case 0:
-        is_punched = false;
+        var is_punched = false;
         
         with (obj_battle_enemy_attack_mecha_frog_hand)
         {
@@ -20,7 +18,7 @@ switch (scene)
             audio_play_sound(snd_mart_impact_2, 1, 0);
             scr_screenshake_battle(6, 2);
             
-            for (i = 0; i < 4; i++)
+            for (var i = 0; i < 4; i++)
                 instance_create_depth(x + 35, y + 10, depth + 1, obj_battle_enemy_attack_mecha_frog_glass);
             
             sprite_index = spr_bigfrog_cockpit_surprised;
@@ -35,7 +33,7 @@ switch (scene)
         if (hit_noloop == true)
             exit;
         
-        is_punched = false;
+        var is_punched = false;
         
         with (obj_battle_enemy_attack_mecha_frog_hand)
         {
@@ -49,7 +47,7 @@ switch (scene)
             audio_play_sound(snd_mart_impact_2, 1, 0);
             scr_screenshake_battle(6, 2);
             
-            for (i = 0; i < 6; i++)
+            for (var i = 0; i < 6; i++)
                 instance_create_depth(x + 35, y + 5, depth + 1, obj_battle_enemy_attack_mecha_frog_glass);
             
             sprite_index = spr_bigfrog_cockpit_punched;

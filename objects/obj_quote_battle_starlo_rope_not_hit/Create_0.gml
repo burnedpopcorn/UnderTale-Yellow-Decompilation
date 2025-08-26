@@ -1,8 +1,6 @@
-var turns_passed;
-
 text_effect = "twitchy";
 attack = false;
-turns_passed = global.turns_passed;
+var turns_passed = global.turns_passed;
 message[0] = "Stay still!";
 message[1] = "I don't wanna#hit my lasso!";
 portrait_head[0] = 2124;

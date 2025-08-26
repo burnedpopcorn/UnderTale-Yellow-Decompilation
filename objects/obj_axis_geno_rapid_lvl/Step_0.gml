@@ -1,10 +1,8 @@
-var lvl_dif, modifier;
-
 if (live_call())
     return global.live_result;
 
-lvl_dif = target_lvl - initial_lvl;
-modifier = timer_current / timer_max;
+var lvl_dif = target_lvl - initial_lvl;
+var modifier = timer_current / timer_max;
 level_current = initial_lvl + (modifier * lvl_dif);
 timer_current++;
 

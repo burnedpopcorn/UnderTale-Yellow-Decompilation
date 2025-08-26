@@ -1,10 +1,8 @@
 function scr_battle_core_directory_no_attack()
 {
-    var battle_enemy_name, enemy_attack, game_mode;
-    
-    battle_enemy_name = global.battle_enemy_name;
-    enemy_attack = global.enemy_attack;
-    game_mode = global.game_mode;
+    var battle_enemy_name = global.battle_enemy_name;
+    var enemy_attack = global.enemy_attack;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {

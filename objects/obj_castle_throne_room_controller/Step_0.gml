@@ -1,5 +1,3 @@
-var break_sound, i, shard, pitch_original, ready_sound;
-
 if (live_call())
     return global.live_result;
 
@@ -21,7 +19,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_npc_walk(1168, 160, 420, 3, "y", "up");
+        cutscene_npc_walk(obj_player_npc, 160, 420, 3, "y", "up");
         break;
     
     case 3:
@@ -41,17 +39,17 @@ switch (scene)
         
         with (msg)
         {
-            message[0] = "* . .";
+            message[0] = "* . . .";
             message[1] = "* The Underground is full#  of beauty.";
             message[2] = "* Friends... Families...";
             message[3] = "* Hopes... Dreams...";
             message[4] = "* Or at least... it was.";
-            prt[0] = 3090;
-            prt[1] = 3090;
-            prt[2] = 3090;
-            prt[3] = 3597;
-            prt[4] = 3557;
-            talker[0] = 959;
+            prt[0] = spr_portrait_asgore_melancholic;
+            prt[1] = spr_portrait_asgore_melancholic;
+            prt[2] = spr_portrait_asgore_melancholic;
+            prt[3] = spr_portrait_asgore_saddester;
+            prt[4] = spr_portrait_asgore_saddest;
+            talker[0] = obj_asgore_npc;
             position = 0;
         }
         
@@ -62,7 +60,7 @@ switch (scene)
         break;
     
     case 8:
-        cutscene_npc_walk(959, 160, 288, 1, "x", "right");
+        cutscene_npc_walk(obj_asgore_npc, 160, 288, 1, "x", "right");
         break;
     
     case 9:
@@ -70,7 +68,7 @@ switch (scene)
         break;
     
     case 10:
-        cutscene_npc_direction(959, "down");
+        cutscene_npc_direction(obj_asgore_npc, "down");
         break;
     
     case 11:
@@ -82,13 +80,13 @@ switch (scene)
         
         with (msg)
         {
-            message[0] = "* . .";
+            message[0] = "* . . .";
             message[1] = "* Though valiantly they#  fought...";
             message[2] = "* Nobody could stop you,#  could they?";
-            prt[0] = 3557;
-            prt[1] = 3597;
-            prt[2] = 3107;
-            talker[0] = 959;
+            prt[0] = spr_portrait_asgore_saddest;
+            prt[1] = spr_portrait_asgore_saddester;
+            prt[2] = spr_portrait_asgore_sadder;
+            talker[0] = obj_asgore_npc;
             position = 0;
         }
         
@@ -106,17 +104,17 @@ switch (scene)
             message[0] = "* I had hoped this day#  wouldn't come.";
             message[1] = "* Retaliation was#  inevitable but...";
             message[2] = "* I believed we could#  handle it as we always#  have.";
-            prt[0] = 1923;
-            prt[1] = 3107;
-            prt[2] = 3090;
-            talker[0] = 959;
+            prt[0] = spr_portrait_asgore_sad;
+            prt[1] = spr_portrait_asgore_sadder;
+            prt[2] = spr_portrait_asgore_melancholic;
+            talker[0] = obj_asgore_npc;
             position = 0;
         }
         
         break;
     
     case 15:
-        cutscene_npc_direction(959, "left");
+        cutscene_npc_direction(obj_asgore_npc, "left");
         break;
     
     case 16:
@@ -130,16 +128,16 @@ switch (scene)
         {
             message[0] = "* My dear friends... ";
             message[1] = "* I am sorry.";
-            prt[0] = 3090;
-            prt[1] = 3597;
-            talker[0] = 959;
+            prt[0] = spr_portrait_asgore_melancholic;
+            prt[1] = spr_portrait_asgore_saddester;
+            talker[0] = obj_asgore_npc;
             position = 0;
         }
         
         break;
     
     case 18:
-        cutscene_npc_direction(959, "down");
+        cutscene_npc_direction(obj_asgore_npc, "down");
         break;
     
     case 19:
@@ -156,23 +154,23 @@ switch (scene)
             message[6] = "* Your violence has#  ensured this war never#  to end.";
             message[7] = "* Many more, of both our#  kinds, will perish#  because of this day.";
             message[8] = "* Such is the path you#  chose.";
-            prt[0] = 3107;
-            prt[1] = 3107;
-            prt[2] = 3090;
-            prt[3] = 3090;
-            prt[4] = 3557;
-            prt[5] = 3557;
-            prt[6] = 3597;
-            prt[7] = 3597;
-            prt[8] = 3557;
-            talker[0] = 959;
+            prt[0] = spr_portrait_asgore_sadder;
+            prt[1] = spr_portrait_asgore_sadder;
+            prt[2] = spr_portrait_asgore_melancholic;
+            prt[3] = spr_portrait_asgore_melancholic;
+            prt[4] = spr_portrait_asgore_saddest;
+            prt[5] = spr_portrait_asgore_saddest;
+            prt[6] = spr_portrait_asgore_saddester;
+            prt[7] = spr_portrait_asgore_saddester;
+            prt[8] = spr_portrait_asgore_saddest;
+            talker[0] = obj_asgore_npc;
             position = 0;
         }
         
         break;
     
     case 20:
-        cutscene_npc_direction(959, "left");
+        cutscene_npc_direction(obj_asgore_npc, "left");
         break;
     
     case 21:
@@ -189,17 +187,17 @@ switch (scene)
             message[0] = "* But...";
             message[1] = "* Even if you chose#  differently...";
             message[2] = "* The unfortunate truth#  of the matter is...";
-            prt[0] = 3090;
-            prt[1] = 3107;
-            prt[2] = 3090;
-            talker[0] = 959;
+            prt[0] = spr_portrait_asgore_melancholic;
+            prt[1] = spr_portrait_asgore_sadder;
+            prt[2] = spr_portrait_asgore_melancholic;
+            talker[0] = obj_asgore_npc;
             position = 0;
         }
         
         break;
     
     case 23:
-        cutscene_npc_direction(959, "down");
+        cutscene_npc_direction(obj_asgore_npc, "down");
         obj_asgore_npc.action_sprite = true;
         obj_asgore_npc.sprite_index = spr_asgore_ready;
         obj_asgore_npc.image_index = 0;
@@ -212,8 +210,8 @@ switch (scene)
         with (msg)
         {
             message[0] = "* Your fate was sealed#  the moment you entered#  my kingdom.";
-            prt[0] = 1703;
-            talker[0] = 959;
+            prt[0] = spr_portrait_asgore_ashamed;
+            talker[0] = obj_asgore_npc;
             position = 0;
         }
         
@@ -224,7 +222,7 @@ switch (scene)
         break;
     
     case 26:
-        cutscene_npc_action_sprite(959, 3197, 1, true, 0, 658, 6);
+        cutscene_npc_action_sprite(obj_asgore_npc, spr_asgore_ready, 1, true, 0, snd_undertale_cinematic_cut, 6);
         obj_asgore_npc.image_speed = 1;
         darken_target = 0.6;
         break;
@@ -237,10 +235,10 @@ switch (scene)
             message[0] = "* We will rebuild.";
             message[1] = "* And with the help of#  your SOUL, we will be#  free.";
             message[2] = "* Goodbye.";
-            prt[0] = 1703;
-            prt[1] = 1703;
-            prt[2] = 1703;
-            talker[0] = 959;
+            prt[0] = spr_portrait_asgore_ashamed;
+            prt[1] = spr_portrait_asgore_ashamed;
+            prt[2] = spr_portrait_asgore_ashamed;
+            talker[0] = obj_asgore_npc;
             position = 0;
         }
         
@@ -252,7 +250,7 @@ switch (scene)
     
     case 29:
         if (obj_asgore_npc.sprite_index != spr_asgore_throw)
-            cutscene_npc_action_sprite(959, 3615, 1, true, 0);
+            cutscene_npc_action_sprite(obj_asgore_npc, spr_asgore_throw, 1, true, 0);
         
         if (obj_asgore_npc.image_index >= 12 && !instance_exists(obj_asgore_trident))
         {
@@ -262,7 +260,7 @@ switch (scene)
         }
         
         if (obj_player_npc.sprite_index != spr_clover_geno_summon)
-            cutscene_npc_action_sprite(1168, 190, 1, true, 0);
+            cutscene_npc_action_sprite(obj_player_npc, spr_clover_geno_summon, 1, true, 0);
         
         if (obj_player_npc.image_index >= 7)
             obj_player_npc.image_speed = 0;
@@ -278,17 +276,17 @@ switch (scene)
             
             if (cutscene_wait(1))
             {
-                break_sound = audio_play_sound(snd_mirrorbreak1, 1, 0);
+                var break_sound = audio_play_sound(snd_mirrorbreak1, 1, 0);
                 audio_sound_pitch(break_sound, 0.8);
                 audio_play_sound(snd_soul_gameover_hit_break, 1, 0);
                 instance_destroy(obj_asgore_trident);
-                i = 200;
+                var i = 200;
                 
                 while (i <= 340)
                 {
                     if (round(i) != 270)
                     {
-                        shard = instance_create_depth(obj_player_npc.x + 14, obj_player_npc.y - 5, obj_player_npc.depth - 1, obj_asgore_trident_shard);
+                        var shard = instance_create_depth(obj_player_npc.x + 14, obj_player_npc.y - 5, obj_player_npc.depth - 1, obj_asgore_trident_shard);
                         shard.direction = i;
                         shard.speed = 3;
                     }
@@ -312,8 +310,8 @@ switch (scene)
         with (msg)
         {
             message[0] = "* !";
-            prt[0] = 64;
-            talker[0] = 959;
+            prt[0] = spr_portrait_asgore_surprised;
+            talker[0] = obj_asgore_npc;
             position = 0;
             skippable = false;
         }
@@ -331,7 +329,7 @@ switch (scene)
     
     case 33:
         obj_player_npc.image_speed = 1;
-        cutscene_npc_action_sprite(1168, 190, 1, true, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_clover_geno_summon, 1, true, 0);
         charge_time = 110;
         charge_time_max = 110;
         is_charged = false;
@@ -349,7 +347,7 @@ switch (scene)
         }
         else
         {
-            pitch_original = audio_sound_get_pitch(charge_sound);
+            var pitch_original = audio_sound_get_pitch(charge_sound);
             
             if (pitch_original < 0.99)
                 audio_sound_pitch(charge_sound, 1 - (0.5 * charge_percentage));
@@ -366,7 +364,7 @@ switch (scene)
             darken_target = 0.75;
             scr_screenshake(6, 3);
             is_charged = true;
-            ready_sound = audio_play_sound(snd_undertale_flash, 1, 0);
+            var ready_sound = audio_play_sound(snd_undertale_flash, 1, 0);
             audio_sound_gain(ready_sound, 0.5, 0);
             instance_create_depth(0, 0, -9999, obj_clover_flash);
             cutscene_advance();
@@ -395,7 +393,7 @@ switch (scene)
         break;
     
     case 38:
-        cutscene_npc_action_sprite(1168, 75, 1, false);
+        cutscene_npc_action_sprite(obj_player_npc, spr_clover_geno_unsummon, 1, false);
         break;
     
     case 39:
@@ -410,7 +408,7 @@ switch (scene)
         break;
     
     case 41:
-        cutscene_npc_walk(1168, obj_player_npc.x, obj_asgore_soul.y + 40, 1, "y", "up");
+        cutscene_npc_walk(obj_player_npc, obj_player_npc.x, obj_asgore_soul.y + 40, 1, "y", "up");
         break;
     
     case 42:
@@ -438,7 +436,7 @@ switch (scene)
         if (obj_pl.y < 300)
             cutscene_camera_move(1168, 120, 1, true);
         
-        cutscene_npc_walk(1168, 160, 120, 1, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 160, 120, 1, "x", "up");
         break;
     
     case 47:
@@ -449,7 +447,7 @@ switch (scene)
         if (instance_exists(obj_player_npc))
             instance_destroy(obj_player_npc);
         
-        if (cutscene_change_room(269, 160, 210, 0.03))
+        if (cutscene_change_room(rm_castle_barrier, 160, 210, 0.03))
             obj_pl.image_alpha = 1;
         
         break;

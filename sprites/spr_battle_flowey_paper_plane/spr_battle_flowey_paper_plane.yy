@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"55f5f1f0-2508-4112-8cf6-ccc104d0ebce",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"05ccb8b9-2a86-4c34-8ae2-888f4d01e070",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"497acc4b-88b8-4ed6-bc4a-aab24eb53562",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7dcf5787-3eea-4913-8b9e-a4b223fa64f0",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 76,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cd9a6298-a8b8-4446-b15d-7d8f4623a894","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3e878227-2383-4a2d-911e-2c7749c11a56","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"55f5f1f0-2508-4112-8cf6-ccc104d0ebce","path":"sprites/spr_battle_flowey_paper_plane/spr_battle_flowey_paper_plane.yy",},},},"Disabled":false,"id":"0ad3cd2b-c3b9-47df-9657-9f4347387768","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"05ccb8b9-2a86-4c34-8ae2-888f4d01e070","path":"sprites/spr_battle_flowey_paper_plane/spr_battle_flowey_paper_plane.yy",},},},"Disabled":false,"id":"14e1922d-c3bd-4814-a891-7429749b96d2","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"497acc4b-88b8-4ed6-bc4a-aab24eb53562","path":"sprites/spr_battle_flowey_paper_plane/spr_battle_flowey_paper_plane.yy",},},},"Disabled":false,"id":"c8d99c1c-0773-426e-ab07-6e5f6978258e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7dcf5787-3eea-4913-8b9e-a4b223fa64f0","path":"sprites/spr_battle_flowey_paper_plane/spr_battle_flowey_paper_plane.yy",},},},"Disabled":false,"id":"973d8de3-3b9b-4d36-a259-c32fcbd11f5a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleHotlandFloweyPaper",
+    "path": "texturegroups/BattleHotlandFloweyPaper",
   },
   "type": 0,
   "VTile": false,

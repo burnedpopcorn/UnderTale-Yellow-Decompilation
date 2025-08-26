@@ -1,9 +1,7 @@
-var battle_box, i, glass;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 switch (attack_tick)
 {
@@ -51,9 +49,9 @@ switch (attack_tick)
         break;
     
     case 165:
-        for (i = battle_box.bbox_top; i < battle_box.bbox_bottom; i += 24)
+        for (var i = battle_box.bbox_top; i < battle_box.bbox_bottom; i += 24)
         {
-            glass = instance_create_depth(battle_box.bbox_left - 40, i, -100, obj_martlet_attack_glass);
+            var glass = instance_create_depth(battle_box.bbox_left - 40, i, -100, obj_martlet_attack_glass);
             glass.hspeed = 8;
             glass.vspeed = 0;
         }
@@ -61,9 +59,9 @@ switch (attack_tick)
         break;
     
     case 195:
-        for (i = battle_box.bbox_top; i < battle_box.bbox_bottom; i += 24)
+        for (var i = battle_box.bbox_top; i < battle_box.bbox_bottom; i += 24)
         {
-            glass = instance_create_depth(battle_box.bbox_right + 40, i, -100, obj_martlet_attack_glass);
+            var glass = instance_create_depth(battle_box.bbox_right + 40, i, -100, obj_martlet_attack_glass);
             glass.hspeed = -8;
             glass.vspeed = 0;
         }

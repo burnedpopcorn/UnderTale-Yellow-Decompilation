@@ -19,10 +19,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* Huh? Hang on, I think#  someone's coming this#  way.";
-            prt[0] = 333;
-            talker[0] = 1170;
+            prt[0] = spr_martlet_head_surprised;
+            talker[0] = obj_martlet_follower;
         }
         
         if (!global.dialogue_open)
@@ -120,8 +120,8 @@ switch (scene)
         msg.talker[0] = moray;
         msg.message[0] = "* Guys! Looky here!";
         msg.message[1] = "* Someone new has stumbled#  into our humble town.";
-        msg.prt[0] = 445;
-        msg.prt[1] = 445;
+        msg.prt[0] = spr_portrait_moray_normal;
+        msg.prt[1] = spr_portrait_moray_normal;
         
         if (!global.dialogue_open)
             scene++;
@@ -141,10 +141,10 @@ switch (scene)
     
     case 8:
         scr_text();
-        msg.sndfnt = 106;
+        msg.sndfnt = snd_talk_ace;
         msg.talker[0] = ace;
         msg.message[0] = "* This better not be#  another joke...";
-        msg.prt[0] = 439;
+        msg.prt[0] = spr_portrait_ace_hand;
         
         if (!global.dialogue_open)
         {
@@ -169,10 +169,10 @@ switch (scene)
     
     case 10:
         scr_text();
-        msg.sndfnt = 104;
+        msg.sndfnt = snd_talk_ed;
         msg.talker[0] = ed;
         msg.message[0] = "* For once, don't look#  like it is.";
-        msg.prt[0] = 451;
+        msg.prt[0] = spr_portrait_ed_normal;
         
         if (!global.dialogue_open)
         {
@@ -197,10 +197,10 @@ switch (scene)
     
     case 12:
         scr_text();
-        msg.sndfnt = 105;
+        msg.sndfnt = snd_talk_mooch;
         msg.talker[0] = mooch;
         msg.message[0] = "* Hiya, strangers!";
-        msg.prt[0] = 462;
+        msg.prt[0] = spr_portrait_mooch_smile;
         
         if (!global.dialogue_open)
         {
@@ -215,14 +215,14 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* Oh, hello!";
             message[1] = "* We're just passing#  through.";
             message[2] = "* We mean no harm, I#  promise.";
-            prt[0] = 318;
-            prt[1] = 323;
-            prt[2] = 323;
+            prt[0] = spr_martlet_head_happy;
+            prt[1] = spr_martlet_head_nervous_smile;
+            prt[2] = spr_martlet_head_nervous_smile;
         }
         
         if (!global.dialogue_open)
@@ -235,12 +235,12 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 104;
+            sndfnt = snd_talk_ed;
             talker[0] = other.ed;
             message[0] = "* That's what the last#  guy said.";
             message[1] = "* Let's just say he's one#  with the wind now...";
-            prt[0] = 454;
-            prt[1] = 451;
+            prt[0] = spr_portrait_ed_mutter;
+            prt[1] = spr_portrait_ed_normal;
         }
         
         if (!global.dialogue_open)
@@ -253,10 +253,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* O-oh my gosh... You...";
-            prt[0] = 330;
+            prt[0] = spr_martlet_head_shocked;
         }
         
         if (!global.dialogue_open)
@@ -269,14 +269,14 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 104;
+            sndfnt = snd_talk_ed;
             talker[0] = other.ed;
             message[0] = "* BWAHAHA!";
             message[1] = "* I'm just kiddin' around.";
             message[2] = "* You were shakin' in#  your boots for a second!";
-            prt[0] = 452;
-            prt[1] = 452;
-            prt[2] = 452;
+            prt[0] = spr_portrait_ed_smile;
+            prt[1] = spr_portrait_ed_smile;
+            prt[2] = spr_portrait_ed_smile;
         }
         
         if (!global.dialogue_open)
@@ -289,10 +289,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* Heheh... heh... you sure#  got me!";
-            prt[0] = 323;
+            prt[0] = spr_martlet_head_nervous_smile;
         }
         
         if (!global.dialogue_open)
@@ -305,7 +305,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 109;
+            sndfnt = snd_talk_moray;
             talker[0] = other.moray;
             color = true;
             col_modif[0] = make_color_rgb(255, 70, 160);
@@ -313,9 +313,9 @@ switch (scene)
             message_col[0][0] = "                         #  Edward ";
             message[1] = "* I can assure you we are#  a delight to be around.";
             message[2] = "* Nothing you can't#  handle I'm sure.";
-            prt[0] = 446;
-            prt[1] = 449;
-            prt[2] = 445;
+            prt[0] = spr_portrait_moray_downer;
+            prt[1] = spr_portrait_moray_plain;
+            prt[2] = spr_portrait_moray_normal;
         }
         
         if (!global.dialogue_open)
@@ -328,10 +328,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* I...";
-            prt[0] = 322;
+            prt[0] = spr_martlet_head_nervous;
         }
         
         if (!global.dialogue_open)
@@ -346,15 +346,15 @@ switch (scene)
         {
             color = true;
             col_modif[0] = make_color_rgb(52, 170, 85);
-            sndfnt = 106;
+            sndfnt = snd_talk_ace;
             talker[0] = other.ace;
             message[0] = "* Ugh...";
             message[1] = "* Why do you two insist#  on scaring away every#  monster you meet?";
             message[2] = "* At least Mooch never#  oversteps her bounds.";
             message_col[2][0] = "           Mooch                              ";
-            prt[0] = 435;
-            prt[1] = 435;
-            prt[2] = 434;
+            prt[0] = spr_portrait_ace_stern;
+            prt[1] = spr_portrait_ace_stern;
+            prt[2] = spr_portrait_ace_normal;
         }
         
         if (!global.dialogue_open)
@@ -367,10 +367,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 105;
+            sndfnt = snd_talk_mooch;
             talker[0] = other.mooch;
             message[0] = "* Never!";
-            prt[0] = 458;
+            prt[0] = spr_portrait_mooch_happy;
         }
         
         if (!global.dialogue_open)
@@ -383,12 +383,12 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* Um, well, it was a#  pleasure to meet you#  four but...";
             message[1] = "* We'll be going#  now-   ";
-            prt[0] = 322;
-            prt[1] = 323;
+            prt[0] = spr_martlet_head_nervous;
+            prt[1] = spr_martlet_head_nervous_smile;
             
             if (message_current == 1)
             {
@@ -409,7 +409,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             message[0] = "* Hold it right there, missy.";
         }
         
@@ -444,14 +444,14 @@ switch (scene)
             {
                 skippable = false;
                 position = 0;
-                sndfnt = 107;
+                sndfnt = snd_talk_starlo;
                 talker[0] = other.starlo;
                 message[0] = "* Are my pals givin' you#  trouble?";
                 message[1] = "* Come now...";
                 message[2] = "* That ain't a way to#  treat guests, now is it?";
-                prt[0] = 415;
-                prt[1] = 415;
-                prt[2] = 415;
+                prt[0] = spr_portrait_starlo_hidden;
+                prt[1] = spr_portrait_starlo_hidden;
+                prt[2] = spr_portrait_starlo_hidden;
             }
             
             if (scr_timer())
@@ -508,17 +508,17 @@ switch (scene)
         {
             color = true;
             col_modif[0] = make_color_rgb(255, 205, 107);
-            sndfnt = 107;
-            talker[0] = 1169;
+            sndfnt = snd_talk_starlo;
+            talker[0] = obj_starlo_npc;
             message[0] = "* The name's North Star.#  I run this town.";
             message_col[0][0] = "             North Star                    ";
             message[1] = "* Not alone, of course.";
             message[2] = "* These fine monsters are#  my posse.";
             message[3] = "* Together, we are...";
-            prt[0] = 417;
-            prt[1] = 417;
-            prt[2] = 417;
-            prt[3] = 417;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_normal;
+            prt[2] = spr_portrait_starlo_normal;
+            prt[3] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)
@@ -551,7 +551,7 @@ switch (scene)
         if (!global.dialogue_open)
         {
             audio_sound_gain(mus_feisty, 0, 300);
-            instance_create(__view_get(e__VW.XView, 0) + (__view_get(e__VW.WView, 0) / 2), __view_get(e__VW.YView, 0) + (__view_get(e__VW.HView, obj_quote_battle_ceroba_outro_4) / 4), obj_wild_east_stamp_feisty);
+            instance_create(__view_get(e__VW.XView, 0) + (__view_get(e__VW.WView, 0) / 2), __view_get(e__VW.YView, 0) + (__view_get(e__VW.HView, 0) / 4), obj_wild_east_stamp_feisty);
             scene += 0.2;
         }
         
@@ -569,9 +569,9 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             message[0] = "* Our name stands for:";
-            prt[0] = 417;
+            prt[0] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)
@@ -605,11 +605,11 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 65535;
+            col_modif[0] = c_yellow;
             message_col[0][0] = "  F";
-            sndfnt = 104;
+            sndfnt = snd_talk_ed;
             message[0] = "* Fearlessness!";
-            prt[0] = 452;
+            prt[0] = spr_portrait_ed_smile;
         }
         
         if (!global.dialogue_open)
@@ -643,11 +643,11 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 65535;
+            col_modif[0] = c_yellow;
             message_col[0][0] = "  E";
-            sndfnt = 109;
+            sndfnt = snd_talk_moray;
             message[0] = "* Excellence!";
-            prt[0] = 445;
+            prt[0] = spr_portrait_moray_normal;
         }
         
         if (!global.dialogue_open)
@@ -681,11 +681,11 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 65535;
+            col_modif[0] = c_yellow;
             message_col[0][0] = "  I";
-            sndfnt = 106;
+            sndfnt = snd_talk_ace;
             message[0] = "* Intuition!";
-            prt[0] = 436;
+            prt[0] = spr_portrait_ace_smile;
         }
         
         if (!global.dialogue_open)
@@ -719,11 +719,11 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 65535;
+            col_modif[0] = c_yellow;
             message_col[0][0] = "  S";
-            sndfnt = 105;
+            sndfnt = snd_talk_mooch;
             message[0] = "* Sneakiness!";
-            prt[0] = 462;
+            prt[0] = spr_portrait_mooch_smile;
         }
         
         if (!global.dialogue_open)
@@ -756,11 +756,11 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 65535;
+            col_modif[0] = c_yellow;
             message_col[0][0] = "  T";
-            sndfnt = 104;
+            sndfnt = snd_talk_ed;
             message[0] = "* Toughness!";
-            prt[0] = 451;
+            prt[0] = spr_portrait_ed_normal;
         }
         
         if (!global.dialogue_open)
@@ -793,11 +793,11 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 65535;
+            col_modif[0] = c_yellow;
             message_col[0][0] = "  Y";
-            sndfnt = 109;
+            sndfnt = snd_talk_moray;
             message[0] = "* Youthfulness!";
-            prt[0] = 445;
+            prt[0] = spr_portrait_moray_normal;
         }
         
         if (!global.dialogue_open)
@@ -811,12 +811,12 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 65535;
+            col_modif[0] = c_yellow;
             message_col[0][0] = "  J";
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             message[0] = "* Justice!";
             message[1] = "* ...";
-            talker[1] = 1169;
+            talker[1] = obj_starlo_npc;
             message[2] = "* The J is silent.";
             message[3] = "* Anyway,";
             message[4] = "* Now that we're#  introduced...";
@@ -824,15 +824,15 @@ switch (scene)
             message[6] = "* Hold on...";
             message[7] = "* Yer buddy...";
             message[8] = "* Are they a... HUMAN?";
-            prt[0] = 422;
-            prt[1] = 421;
-            prt[2] = 407;
-            prt[3] = 417;
-            prt[4] = 415;
-            prt[5] = 417;
-            prt[6] = 421;
-            prt[7] = 421;
-            prt[8] = 426;
+            prt[0] = spr_portrait_starlo_smile;
+            prt[1] = spr_portrait_starlo_serious;
+            prt[2] = spr_portrait_starlo_distracted;
+            prt[3] = spr_portrait_starlo_normal;
+            prt[4] = spr_portrait_starlo_hidden;
+            prt[5] = spr_portrait_starlo_normal;
+            prt[6] = spr_portrait_starlo_serious;
+            prt[7] = spr_portrait_starlo_serious;
+            prt[8] = spr_portrait_starlo_surprised;
         }
         
         if (msg.message_current == 1)
@@ -877,12 +877,12 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* Um...";
             message[1] = "* Well... I won't say no?";
-            prt[0] = 322;
-            prt[1] = 323;
+            prt[0] = spr_martlet_head_nervous;
+            prt[1] = spr_martlet_head_nervous_smile;
         }
         
         if (!global.dialogue_open)
@@ -895,20 +895,20 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
-            talker[0] = 1169;
+            sndfnt = snd_talk_starlo;
+            talker[0] = obj_starlo_npc;
             message[0] = "* I knew it!";
             message[1] = "* There ain't no doubt in#  my mind!";
             message[2] = "* That this kid is a real,#  living, authentic human!";
             message[3] = "* Sorry 'bout this.";
             message[4] = "* I gotta seize this#  once-in-a-lifetime#  opportunity!";
             message[5] = "* Ed, fetch me that kid.";
-            prt[0] = 417;
-            prt[1] = 419;
-            prt[2] = 422;
-            prt[3] = 415;
-            prt[4] = 417;
-            prt[5] = 421;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_point;
+            prt[2] = spr_portrait_starlo_smile;
+            prt[3] = spr_portrait_starlo_hidden;
+            prt[4] = spr_portrait_starlo_normal;
+            prt[5] = spr_portrait_starlo_serious;
         }
         
         if (!global.dialogue_open)
@@ -921,10 +921,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 104;
+            sndfnt = snd_talk_ed;
             talker[0] = other.ed;
             message[0] = "* Sure thing.";
-            prt[0] = 451;
+            prt[0] = spr_portrait_ed_normal;
         }
         
         if (!global.dialogue_open)
@@ -1011,10 +1011,10 @@ switch (scene)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 talker[0] = other.martlet;
                 message[0] = "* Wait! What are you doing#  with Clover!";
-                prt[0] = 330;
+                prt[0] = spr_martlet_head_shocked;
             }
             
             if (!global.dialogue_open)
@@ -1054,12 +1054,12 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
-            talker[0] = 1169;
+            sndfnt = snd_talk_starlo;
+            talker[0] = obj_starlo_npc;
             message[0] = "* Ah, Clover, is it?#  That's a mighty fine#  name!";
             message[1] = "* To answer yer question,#  Feathers, Clover and I#  got a town to run!";
-            prt[0] = 407;
-            prt[1] = 417;
+            prt[0] = spr_portrait_starlo_distracted;
+            prt[1] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)
@@ -1072,14 +1072,14 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* Don't \"Feathers\" me!";
             message[1] = "* You're speaking to#  Martlet of the Royal#  Guard!";
             message[2] = "* I can and will report#  you to King ASGORE for#  this abrasive behavior!";
-            prt[0] = 309;
-            prt[1] = 309;
-            prt[2] = 309;
+            prt[0] = spr_martlet_head_angry;
+            prt[1] = spr_martlet_head_angry;
+            prt[2] = spr_martlet_head_angry;
         }
         
         if (!global.dialogue_open)
@@ -1092,14 +1092,14 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
-            talker[0] = 1169;
+            sndfnt = snd_talk_starlo;
+            talker[0] = obj_starlo_npc;
             message[0] = "* Ye're Royal Guard? ";
             message[1] = "* That's funny, 'cuz I#  don't see anythin' to#  indicate that.";
             message[2] = "* No armor? Weapon? Badge?";
-            prt[0] = 407;
-            prt[1] = 421;
-            prt[2] = 424;
+            prt[0] = spr_portrait_starlo_distracted;
+            prt[1] = spr_portrait_starlo_serious;
+            prt[2] = spr_portrait_starlo_smirk;
         }
         
         if (!global.dialogue_open)
@@ -1112,10 +1112,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* I... left it all at#  my post in Snowdin!";
-            prt[0] = 329;
+            prt[0] = spr_martlet_head_sad;
         }
         
         if (!global.dialogue_open)
@@ -1128,10 +1128,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 106;
+            sndfnt = snd_talk_ace;
             talker[0] = other.ace;
             message[0] = "* Please, don't bother#  trying to fool#  us.";
-            prt[0] = 435;
+            prt[0] = spr_portrait_ace_stern;
         }
         
         if (!global.dialogue_open)
@@ -1144,16 +1144,16 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
-            talker[0] = 1169;
+            sndfnt = snd_talk_starlo;
+            talker[0] = obj_starlo_npc;
             message[0] = "* He's right.";
             message[1] = "* I am truly sorry 'bout#  this, I really am.";
             message[2] = "* But business is#  business.";
             message[3] = "* Together, we'll be the#  Feisty SIX!";
-            prt[0] = 421;
-            prt[1] = 415;
-            prt[2] = 417;
-            prt[3] = 422;
+            prt[0] = spr_portrait_starlo_serious;
+            prt[1] = spr_portrait_starlo_hidden;
+            prt[2] = spr_portrait_starlo_normal;
+            prt[3] = spr_portrait_starlo_smile;
         }
         
         if (!global.dialogue_open)
@@ -1169,10 +1169,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 104;
+            sndfnt = snd_talk_ed;
             talker[0] = other.ed;
             message[0] = "* The alliteration...";
-            prt[0] = 454;
+            prt[0] = spr_portrait_ed_mutter;
         }
         
         if (!global.dialogue_open)
@@ -1185,10 +1185,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
-            talker[0] = 1169;
+            sndfnt = snd_talk_starlo;
+            talker[0] = obj_starlo_npc;
             message[0] = "* Shh.";
-            prt[0] = 412;
+            prt[0] = spr_portrait_starlo_embarassed_smile;
         }
         
         if (!global.dialogue_open)
@@ -1201,14 +1201,14 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* Tsk!";
             message[1] = "* Clover! I can't go up#  against these guys.";
             message[2] = "* Don't worry! I'll figure#  this out!";
-            prt[0] = 309;
-            prt[1] = 329;
-            prt[2] = 317;
+            prt[0] = spr_martlet_head_angry;
+            prt[1] = spr_martlet_head_sad;
+            prt[2] = spr_martlet_head_downer;
         }
         
         if (!global.dialogue_open)
@@ -1221,12 +1221,12 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 109;
+            sndfnt = snd_talk_moray;
             talker[0] = other.moray;
             message[0] = "* Star, should we be doing#  this?";
             message[1] = "* Poor Martlet is upset.";
-            prt[0] = 449;
-            prt[1] = 446;
+            prt[0] = spr_portrait_moray_plain;
+            prt[1] = spr_portrait_moray_downer;
         }
         
         if (!global.dialogue_open)
@@ -1241,13 +1241,13 @@ switch (scene)
         {
             color = true;
             col_modif[0] = make_color_rgb(90, 88, 207);
-            sndfnt = 105;
+            sndfnt = snd_talk_mooch;
             talker[0] = other.mooch;
             message[0] = "* Don't be a buzzkill,#  Moray.";
             message_col[0][0] = "                      #  Moray ";
             message[1] = "* When's the last time#  something exciting#  happened around here?";
-            prt[0] = 460;
-            prt[1] = 455;
+            prt[0] = spr_portrait_mooch_nervous;
+            prt[1] = spr_portrait_mooch_normal;
         }
         
         if (!global.dialogue_open)
@@ -1260,10 +1260,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 109;
+            sndfnt = snd_talk_moray;
             talker[0] = other.moray;
             message[0] = "* You've got a point.";
-            prt[0] = 449;
+            prt[0] = spr_portrait_moray_plain;
         }
         
         if (!global.dialogue_open)
@@ -1276,14 +1276,14 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
-            talker[0] = 1169;
+            sndfnt = snd_talk_starlo;
+            talker[0] = obj_starlo_npc;
             message[0] = "* Ahem!";
             message[1] = "* This town's FULL of#  excitement. Especially#  now.";
             message[2] = "* Let's go, bud!";
-            prt[0] = 421;
-            prt[1] = 417;
-            prt[2] = 417;
+            prt[0] = spr_portrait_starlo_serious;
+            prt[1] = spr_portrait_starlo_normal;
+            prt[2] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)
@@ -1295,7 +1295,7 @@ switch (scene)
             starlo.y_dest[0] = starlo.y - 60;
             starlo.actor_speed = 1;
             starlo.end_direction = "up";
-            scr_audio_fade_out(184, 3000);
+            scr_audio_fade_out(mus_feisty, 3000);
         }
         
         break;
@@ -1315,15 +1315,15 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 65535;
-            sndfnt = 107;
+            col_modif[0] = c_yellow;
+            sndfnt = snd_talk_starlo;
             position = 0;
             talker[0] = other.starlo;
             message[0] = "* Oh, and Feathers...";
             message[1] = "* Welcome to The Wild#  East.";
             message_col[1][0] = "             The Wild#  East ";
-            prt[0] = 415;
-            prt[1] = 417;
+            prt[0] = spr_portrait_starlo_hidden;
+            prt[1] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)

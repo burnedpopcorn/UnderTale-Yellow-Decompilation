@@ -1,5 +1,3 @@
-var i, angle_base;
-
 if (image_blend == c_red)
 {
     image_blend = c_white;
@@ -15,8 +13,8 @@ alarm[1] = 3;
 
 if (feather_explode_counter > 3)
 {
-    i = 1;
-    angle_base = irandom_range(0, 359);
+    var i = 1;
+    var angle_base = irandom_range(0, 359);
     
     while (i <= 3)
     {

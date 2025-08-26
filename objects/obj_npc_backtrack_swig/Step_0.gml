@@ -10,7 +10,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Man, I don't know what's goin'#  on these days.";
                 message[1] = "* Debt... Drama...";
@@ -26,7 +26,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* You wanna know my real dream?";
                 message[1] = "* Bein' a bodyguard!";
@@ -43,7 +43,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Don't worry about us.";
                 message[1] = "* Best to leave this type-a#  business to the Shufflers.";

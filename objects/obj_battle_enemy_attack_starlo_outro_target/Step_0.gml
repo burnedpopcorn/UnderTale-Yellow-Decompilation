@@ -1,5 +1,3 @@
-var bubble;
-
 if (!is_active)
     exit;
 
@@ -12,7 +10,7 @@ if (target_radius_deg > 30)
 }
 else if (!instance_exists(obj_quote_battle_starlo_outro_3))
 {
-    bubble = instance_create(440, 74, obj_quote_bubble_battle_yellow_2_reverse);
+    var bubble = instance_create(440, 74, obj_quote_bubble_battle_yellow_2_reverse);
     instance_create(0, 0, obj_quote_battle_starlo_outro_3);
 }
 

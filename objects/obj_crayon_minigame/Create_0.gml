@@ -1,5 +1,3 @@
-var i, pencil;
-
 if (live_call())
     return global.live_result;
 
@@ -40,9 +38,9 @@ depth = -100000;
 instance_create_depth(82 + view_x, 140 + view_y, depth - 100, obj_crayon_box);
 instance_create_depth(0 + sprite_get_xoffset(spr_size_crayon_1) + view_x, 160 + sprite_get_yoffset(spr_size_crayon_1) + view_y, depth - 100, obj_crayon_indicator);
 
-for (i = 7; i >= 0; i--)
+for (var i = 7; i >= 0; i--)
 {
-    pencil = instance_create_depth(obj_crayon_box.x + pencil_xx[i], obj_crayon_box.y + pencil_yy[i], depth - 200, obj_crayon);
+    var pencil = instance_create_depth(obj_crayon_box.x + pencil_xx[i], obj_crayon_box.y + pencil_yy[i], depth - 200, obj_crayon);
     pencil.crayon_color = pencil_color_selected[i];
 }
 

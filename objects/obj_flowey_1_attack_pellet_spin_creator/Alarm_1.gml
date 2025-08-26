@@ -1,13 +1,11 @@
-var attack_offset, box, side, x_offset, y_offset;
-
 if (live_call())
     return global.live_result;
 
-attack_offset = 42;
-box = 3154;
-side = choose(1, 2, 3, 4);
-x_offset = 0;
-y_offset = 0;
+var attack_offset = 42;
+var box = obj_dialogue_box_battle_transformation_any;
+var side = choose(1, 2, 3, 4);
+var x_offset = 0;
+var y_offset = 0;
 
 switch (side)
 {

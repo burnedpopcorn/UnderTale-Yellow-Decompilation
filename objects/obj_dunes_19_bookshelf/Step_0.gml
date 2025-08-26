@@ -1,4 +1,4 @@
-if (scr_interact() && keyboard_multicheck_pressed(0) && !interacted_with)
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey) && !interacted_with)
 {
     scene = 0;
     interacted_with = true;
@@ -42,10 +42,10 @@ if (interacted_with)
         
         with (msg)
         {
-            col_modif[0] = 65535;
-            col_modif[1] = 16711680;
-            col_modif[2] = 65280;
-            col_modif[3] = 16711935;
+            col_modif[0] = c_yellow;
+            col_modif[1] = c_blue;
+            col_modif[2] = c_lime;
+            col_modif[3] = c_fuchsia;
             color = true;
             message[0] = "* The Underground has been the#  home to thousands of gemstones,";
             message[1] = "* Yet only four types have been#  discovered.";
@@ -55,7 +55,7 @@ if (interacted_with)
             message[4] = "* It is also the brightest stone,#  frequently used to illuminate#  various Underground locations.";
             message[5] = "* The Glacialstone - Hue, Blue";
             message_col[5][1] = "  The Glacialstone";
-            message[6] = "* Opposite of the Swelterstone;#  emmits a frigid temperature.";
+            message[6] = "* Opposite of the Swelterstone;#  emits a frigid temperature.";
             message[7] = "* This stone is abundant in#  cooler areas such as Snowdin#  and Waterfall.";
             message[8] = "* The Aromaticstone - Hue, Green";
             message_col[8][2] = "  The Aromaticstone";

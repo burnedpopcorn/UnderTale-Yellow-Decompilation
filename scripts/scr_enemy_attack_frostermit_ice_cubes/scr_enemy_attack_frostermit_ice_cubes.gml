@@ -1,7 +1,5 @@
 function scr_enemy_attack_frostermit_ice_cubes()
 {
-    var distance_y, max_variations, random_result, place_meetings_max, continue_loop, place_meetings;
-    
     if (instance_number(obj_battle_enemy_attack_frostermit_ice_cube) < 8)
         global.attack_counter_max = 15;
     else
@@ -16,9 +14,9 @@ function scr_enemy_attack_frostermit_ice_cubes()
         }
         else
         {
-            distance_y = 20;
-            max_variations = 4;
-            random_result = irandom_range(0, max_variations);
+            var distance_y = 20;
+            var max_variations = 4;
+            var random_result = irandom_range(0, max_variations);
             
             if (instance_exists(obj_battle_enemy_attack_frostermit_ice_cube))
             {
@@ -27,12 +25,12 @@ function scr_enemy_attack_frostermit_ice_cubes()
                 
                 with (obj_battle_enemy_attack_frostermit_ice_cube_check)
                 {
-                    place_meetings_max = 3;
-                    continue_loop = true;
+                    var place_meetings_max = 3;
+                    var continue_loop = true;
                     
                     while (continue_loop == true)
                     {
-                        place_meetings = 0;
+                        var place_meetings = 0;
                         
                         for (i = 0; i <= max_variations; i++)
                         {

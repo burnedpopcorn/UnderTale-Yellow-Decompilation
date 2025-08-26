@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"72e1daa5-a2d3-4792-b9cb-10c2dff63121",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0c99dc44-40fd-427d-866c-d2d80ebeb62a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fe49fcdc-e527-4ba9-8398-a2c6b81dba42",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fc214754-4f84-48c1-97ae-90381c6365d9",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 22,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8a82ca87-3b1b-424f-8717-b1fddaeb137e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c4fe4562-50a7-4e38-b75b-046ad6f35bea","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"72e1daa5-a2d3-4792-b9cb-10c2dff63121","path":"sprites/spr_dog_walk/spr_dog_walk.yy",},},},"Disabled":false,"id":"b3f8f86f-b4b8-4e93-bd14-07e0f6c98a8d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0c99dc44-40fd-427d-866c-d2d80ebeb62a","path":"sprites/spr_dog_walk/spr_dog_walk.yy",},},},"Disabled":false,"id":"31ee7c34-1b19-4fc2-8cf4-f78f9450f16d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fe49fcdc-e527-4ba9-8398-a2c6b81dba42","path":"sprites/spr_dog_walk/spr_dog_walk.yy",},},},"Disabled":false,"id":"78804b9d-7746-435b-a4a3-a021732a1c04","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fc214754-4f84-48c1-97ae-90381c6365d9","path":"sprites/spr_dog_walk/spr_dog_walk.yy",},},},"Disabled":false,"id":"b6b75fdf-dd76-4448-a3f2-0e9d67c85000","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Steamworks",
+    "path": "texturegroups/Steamworks",
   },
   "type": 0,
   "VTile": false,

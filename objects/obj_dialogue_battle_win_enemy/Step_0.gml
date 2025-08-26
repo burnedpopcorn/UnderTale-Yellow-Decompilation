@@ -1,5 +1,3 @@
-var game_mode, world_current, enemy_dead_count, geno_count;
-
 if (obj_dialogue_box_battle.image_alpha > 0)
 {
     script_execute(scr_controls_text);
@@ -37,7 +35,7 @@ if (obj_dialogue_box_battle.image_alpha > 0)
             }
             else if (moveable == true)
             {
-                game_mode = global.game_mode;
+                var game_mode = global.game_mode;
                 
                 if (game_mode == "customs")
                 {
@@ -46,9 +44,9 @@ if (obj_dialogue_box_battle.image_alpha > 0)
                 }
                 else if (game_mode == "yellow")
                 {
-                    world_current = scr_determine_world_value_yellow();
-                    enemy_dead_count = global.enemy_dead + global.enemy_dead_2 + global.enemy_dead_3;
-                    geno_count = global.kill_number[world_current] - enemy_dead_count;
+                    var world_current = scr_determine_world_value_yellow();
+                    var enemy_dead_count = global.enemy_dead + global.enemy_dead_2 + global.enemy_dead_3;
+                    var geno_count = global.kill_number[world_current] - enemy_dead_count;
                     
                     if (geno_count <= 0 && world_current == 1)
                     {

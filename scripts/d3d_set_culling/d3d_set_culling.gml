@@ -1,4 +1,4 @@
-function d3d_set_culling(argument0)
+function d3d_set_culling(arg0)
 {
-    gpu_set_cullmode(argument0 ? 2 : 0);
+    gpu_set_cullmode(arg0 ? 2 : 0);
 }

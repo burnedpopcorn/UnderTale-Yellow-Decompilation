@@ -40,19 +40,19 @@ if (global.sworks_flag[0] == 0)
             
             with (msg)
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* Howdy again!";
                 message[1] = "* Golly, this area sure#  is grim!";
                 message[2] = "* Doesn't look like#  anyone's been around for#  years.";
                 message[3] = "* This machine looks#  mighty important though!";
                 message[4] = "* Snoop around and see#  what you can find!";
                 message[5] = "* Talk to you soon!";
-                prt[0] = 348;
-                prt[1] = 347;
-                prt[2] = 348;
-                prt[3] = 347;
-                prt[4] = 348;
-                prt[5] = 348;
+                prt[0] = flowey_nice;
+                prt[1] = flowey_niceside;
+                prt[2] = flowey_nice;
+                prt[3] = flowey_niceside;
+                prt[4] = flowey_nice;
+                prt[5] = flowey_nice;
                 
                 if (message_current == 3)
                     obj_flowey_npc.npc_direction = "up";
@@ -64,7 +64,7 @@ if (global.sworks_flag[0] == 0)
             break;
         
         case 7:
-            cutscene_npc_action_sprite(3194, 245, 0.25, true, 0);
+            cutscene_npc_action_sprite(obj_flowey_npc, spr_floweyleave, 0.25, true, 0);
             break;
         
         case 8:
@@ -100,7 +100,7 @@ if (global.sworks_flag[1] == 3)
             break;
         
         case 4:
-            cutscene_change_room(152, 655, 170, 0.05);
+            cutscene_change_room(rm_steamworks_05d, 655, 170, 0.05);
             break;
     }
 }

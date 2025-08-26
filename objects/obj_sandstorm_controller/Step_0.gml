@@ -1,7 +1,5 @@
-var y_goal, x_goal, in_safezone, sandstorm_sound, fadein_time;
-
-y_goal = storm_y_start;
-x_goal = storm_x_start;
+var y_goal = storm_y_start;
+var x_goal = storm_x_start;
 storm_alpha = 0.4;
 
 if (storm_x_pos < 320)
@@ -24,6 +22,8 @@ else
 
 if (storm_active == true)
 {
+    var in_safezone;
+    
     with (obj_pl)
     {
         if (place_meeting(x, y, obj_sandstorm_safezone) && other.sandstorm_hit == false)
@@ -66,8 +66,8 @@ if (storm_active == true)
     
     if (!audio_is_playing(snd_sandstorm))
     {
-        sandstorm_sound = audio_play_sound(snd_sandstorm, 1, 1);
-        fadein_time = 1000;
+        var sandstorm_sound = audio_play_sound(snd_sandstorm, 1, 1);
+        var fadein_time = 1000;
         
         if (!in_safezone)
             fadein_time = 500;
@@ -97,7 +97,7 @@ if (storm_active == true)
             storm_delay_current = storm_delay;
             storm_distance = 0;
             sandstorm_hit = false;
-            scr_audio_fade_out(262, 1000);
+            scr_audio_fade_out(snd_sandstorm, 1000);
         }
     }
     else if (storm_duration_current > 0)
@@ -108,7 +108,7 @@ if (storm_active == true)
     {
         storm_active = false;
         storm_duration_current = storm_duration;
-        scr_audio_fade_out(262, 1000);
+        scr_audio_fade_out(snd_sandstorm, 1000);
     }
 }
 else if (storm_alpha_current > 0)

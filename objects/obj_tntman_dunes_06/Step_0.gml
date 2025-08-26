@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I'm not up to anything#  suspicious, okay?";
                 message[1] = "* There is no treasure behind#  this wall, okay?";
                 message[2] = "* Don't rat me out, okay?";
@@ -24,7 +24,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* This is my TNT, okay?";
                 message[1] = "* I didn't steal it from my#  brother at the mines, okay?";
                 message[2] = "* This X was here before I#  arrived, okay?";
@@ -37,9 +37,9 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I'm just waiting out the storm,#  okay?";
-                message[1] = "* Get off my case...";
+                message[1] = "* Get off my case......";
                 message[2] = "* please.";
             }
             

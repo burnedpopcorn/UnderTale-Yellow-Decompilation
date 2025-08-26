@@ -1,9 +1,7 @@
-var battle_box, bubble;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
@@ -267,7 +265,7 @@ switch (scene)
         break;
     
     case 30:
-        battle_box = 3154;
+        battle_box = obj_dialogue_box_battle_transformation_any;
         box_overlay_alpha -= 0.1;
         
         if (box_overlay_alpha <= 0)
@@ -397,7 +395,7 @@ switch (scene)
             obj_ceroba_body_pacifist_phase_2.sprite_index = spr_ceroba_p2_defeated_spared;
             obj_ceroba_body_pacifist_phase_2.image_index = 0;
             obj_ceroba_body_pacifist_phase_2.image_speed = 0;
-            bubble = instance_create(440, 74, obj_quote_bubble_battle_yellow_2_reverse);
+            var bubble = instance_create(440, 74, obj_quote_bubble_battle_yellow_2_reverse);
             instance_create_depth(0, 0, -1000, obj_quote_battle_ceroba_outro_spare_4);
             scene++;
         }

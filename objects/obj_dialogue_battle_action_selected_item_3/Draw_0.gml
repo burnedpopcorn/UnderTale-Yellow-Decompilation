@@ -1,6 +1,4 @@
-var item_slot;
-
-item_slot = global.item_slot[3];
+var item_slot = global.item_slot[3];
 draw_set_font(fnt_determination_mono);
 draw_set_color(c_white);
 draw_set_halign(fa_left);

@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 3.20375,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "snd/microsprings_froggits.ogg",
-  "type": 0,
+  "sampleRate": 48000,
+  "soundFile": "microsprings_froggits.ogg",
+  "type": 1,
   "volume": 1.0,
 }

@@ -1,5 +1,3 @@
-var beam;
-
 if (instance_exists(obj_ceroba_transformation_mask))
 {
     x = obj_ceroba_transformation_mask.x;
@@ -10,7 +8,7 @@ spawn_timer--;
 
 if (spawn_timer <= 0)
 {
-    beam = instance_create_depth(x, y, depth, obj_ceroba_transformation_beam);
+    var beam = instance_create_depth(x, y, depth, obj_ceroba_transformation_beam);
     
     with (beam)
     {

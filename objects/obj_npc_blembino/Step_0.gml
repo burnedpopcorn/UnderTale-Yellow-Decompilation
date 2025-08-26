@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* So you're the new kid\t, eh?";
                 message[1] = "* I've heard the townsfolk raving#  about you and all.";
                 message[2] = "* Not to burst your bubble,#  but I could totally go toe#  to toe with you.";
@@ -28,7 +28,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* You see me sitting at this bar?";
                 message[1] = "* Yeah. It's because I'm a cool#  adult, unlike you.";
                 message[2] = "* I can do cool adult things like#  cry and also weep.";
@@ -42,7 +42,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* If you're only talking to#  me to hear my silky smooth#  voice, give it up.";
                 message[1] = "* I won't let you in on my#  secrets.";
             }
@@ -54,7 +54,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Blembino. Remember the name.";
             }
             

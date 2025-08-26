@@ -1,5 +1,3 @@
-var new_offset;
-
 if (live_call())
     return global.live_result;
 
@@ -7,7 +5,7 @@ image_alpha = obj_crayon_minigame.draw_alpha;
 
 if (image_index < (image_number - 1))
 {
-    new_offset = crayon_y_offset;
+    var new_offset = crayon_y_offset;
     
     if (image_index > 4)
         new_offset = crayon_y_offset - ((crayon_y_offset * (image_index - 4)) / (image_number - 4 - 1));

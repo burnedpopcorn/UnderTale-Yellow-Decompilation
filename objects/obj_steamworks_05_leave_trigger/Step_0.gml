@@ -10,7 +10,7 @@ if (scene == 1)
     
     with (msg)
     {
-        sndfnt_array[0] = 108;
+        sndfnt_array[0] = snd_talk_ceroba;
         message[0] = "* Hey Clover, come back here.#  I think I figured it out.";
     }
 }
@@ -20,7 +20,7 @@ else if (scene == 2)
 }
 else if (scene == 3)
 {
-    cutscene_npc_walk_relative(1168, 0, 30, 2, "y", "down");
+    cutscene_npc_walk_relative(obj_player_npc, 0, 30, 2, "y", "down");
 }
 else if (scene == 4)
 {

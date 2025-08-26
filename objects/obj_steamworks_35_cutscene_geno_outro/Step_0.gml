@@ -45,19 +45,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* ...";
             message[1] = "* ...";
             message[2] = "* What... was that?";
             message[3] = "* Clover... what...";
             message[4] = "* Um, okay. No, this is#  fine.";
             message[5] = "* This can be very useful#  against the Ki";
-            prt[0] = 352;
-            prt[1] = 353;
-            prt[2] = 352;
-            prt[3] = 352;
-            prt[4] = 353;
-            prt[5] = 348;
+            prt[0] = flowey_plain;
+            prt[1] = flowey_plains;
+            prt[2] = flowey_plain;
+            prt[3] = flowey_plain;
+            prt[4] = flowey_plains;
+            prt[5] = flowey_nice;
             
             if (message_current == 5)
             {
@@ -70,7 +70,7 @@ switch (scene)
     
     case 6:
         obj_flowey_npc.npc_direction = "left";
-        cutscene_npc_walk(1168, 480, 140, 2, "x", "left");
+        cutscene_npc_walk(obj_player_npc, 480, 140, 2, "x", "left");
         
         if (obj_player_npc.x < 580)
             cutscene_advance(7);
@@ -82,17 +82,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Wait, where are you#  going?";
             message[1] = "* I'm still talking!";
-            prt[0] = 352;
-            prt[1] = 351;
+            prt[0] = flowey_plain;
+            prt[1] = flowey_pissed;
         }
         
         break;
     
     case 8:
-        if (cutscene_npc_action_sprite(3194, 245, 0.2, false))
+        if (cutscene_npc_action_sprite(obj_flowey_npc, spr_floweyleave, 0.2, false))
             instance_destroy(obj_flowey_npc);
         
         break;
@@ -103,7 +103,7 @@ switch (scene)
     
     case 10:
         global.sworks_flag[31] = 4;
-        cutscene_change_room(206, 630, 170, 0.05);
+        cutscene_change_room(rm_steamworks_36, 630, 170, 0.05);
         obj_pl.direction = 180;
         break;
 }

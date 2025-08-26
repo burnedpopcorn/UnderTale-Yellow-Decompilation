@@ -1,4 +1,4 @@
-function background_prefetch(argument0)
+function background_prefetch(arg0)
 {
-    sprite_prefetch(argument0);
+    sprite_prefetch(arg0);
 }

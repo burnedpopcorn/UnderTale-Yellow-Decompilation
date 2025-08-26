@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e1c9ff72-087d-46a5-89b5-dca320e72f84",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7960d26f-b7ec-4151-b2d0-c023f3966007",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"016930fd-8634-4019-b40e-d571d572f1d5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cb10575e-94ad-42e8-a423-bb3d35364f57",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4928ea22-7afd-40c2-8f4e-930f8b0473b1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4ab28ce6-b7ed-46b2-a5cd-06c0f7bf7e2b",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 55,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"60eaf2ce-c8a4-4475-90be-3285f9734b4f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9fd2bc6a-4e4b-4d8f-bd16-bfa1961828eb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e1c9ff72-087d-46a5-89b5-dca320e72f84","path":"sprites/spr_boulders_dark/spr_boulders_dark.yy",},},},"Disabled":false,"id":"9b5d2d9a-95b4-402b-9dd7-81ee0fe1725d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7960d26f-b7ec-4151-b2d0-c023f3966007","path":"sprites/spr_boulders_dark/spr_boulders_dark.yy",},},},"Disabled":false,"id":"21f674f6-bd87-4556-b610-9b231bcd188e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"016930fd-8634-4019-b40e-d571d572f1d5","path":"sprites/spr_boulders_dark/spr_boulders_dark.yy",},},},"Disabled":false,"id":"160d610e-4670-4bfb-b034-c14eee1e0922","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cb10575e-94ad-42e8-a423-bb3d35364f57","path":"sprites/spr_boulders_dark/spr_boulders_dark.yy",},},},"Disabled":false,"id":"3cb810e8-9831-4be4-9255-98c383a2b619","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4928ea22-7afd-40c2-8f4e-930f8b0473b1","path":"sprites/spr_boulders_dark/spr_boulders_dark.yy",},},},"Disabled":false,"id":"4d8ca0e7-b5e1-4345-a953-0d10af7ed9d1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4ab28ce6-b7ed-46b2-a5cd-06c0f7bf7e2b","path":"sprites/spr_boulders_dark/spr_boulders_dark.yy",},},},"Disabled":false,"id":"5b8a6b04-575f-4177-8d30-f3095e38b661","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Dunes",
+    "path": "texturegroups/Dunes",
   },
   "type": 0,
   "VTile": false,

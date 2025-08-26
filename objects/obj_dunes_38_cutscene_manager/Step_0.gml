@@ -107,14 +107,14 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = other.starlo_npc;
             message[0] = "* Hehe, of course.";
             message[1] = "* Old Blackjack doesn't#  like doin' business#  with me.";
             message[2] = "* I often \"borrow\" his#  wares and uh... break or#  lose them.";
-            prt[0] = 412;
-            prt[1] = 407;
-            prt[2] = 412;
+            prt[0] = spr_portrait_starlo_embarassed_smile;
+            prt[1] = spr_portrait_starlo_distracted;
+            prt[2] = spr_portrait_starlo_embarassed_smile;
         }
         
         if (!global.dialogue_open)
@@ -142,14 +142,14 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = other.starlo_npc;
             message[0] = "* Open up, Blackjack!";
             message[1] = "* Don't make me use force!";
             message[2] = "* I make the law so I can#  legally shoot down your#  doors!";
-            prt[0] = 421;
-            prt[1] = 419;
-            prt[2] = 419;
+            prt[0] = spr_portrait_starlo_serious;
+            prt[1] = spr_portrait_starlo_point;
+            prt[2] = spr_portrait_starlo_point;
         }
         
         if (!global.dialogue_open)
@@ -172,30 +172,30 @@ switch (scene)
                 position = 1;
             
             talker[0] = other.blackjack_npc;
-            sndfnt_array[0] = 391;
+            sndfnt_array[0] = snd_talk_default;
             message[0] = "* Get off my property, North#  Star!";
             message[1] = "* I told you I wouldn't even sell#  you a gumball!";
             talker[2] = other.starlo_npc;
-            sndfnt_array[2] = 107;
+            sndfnt_array[2] = snd_talk_starlo;
             message[2] = "* Aw, come on, partner.";
             message[3] = "* I don't even know what#  a \"gumball\" is!";
             message[4] = "* And those last#  transactions were ages#  ago!";
             message[5] = "* I'm a changed monster!";
-            prt[2] = 406;
-            prt[3] = 417;
-            prt[4] = 413;
-            prt[5] = 422;
+            prt[2] = spr_portrait_starlo_disappointed;
+            prt[3] = spr_portrait_starlo_normal;
+            prt[4] = spr_portrait_starlo_flustered;
+            prt[5] = spr_portrait_starlo_smile;
             talker[6] = other.blackjack_npc;
-            sndfnt_array[6] = 391;
+            sndfnt_array[6] = snd_talk_default;
             message[6] = "* You lost one of my premium#  revolvers last week!";
             message[7] = "* Frolicking in your sandstorm#  and whatnot.";
             talker[8] = other.starlo_npc;
             talker[9] = other.starlo_npc;
-            sndfnt_array[8] = 107;
+            sndfnt_array[8] = snd_talk_starlo;
             message[8] = "* Look, I promise this is#  a different scenario,#  Jack.";
             message[9] = "* I won't even step#  inside. You can meet me#  out here.";
-            prt[8] = 407;
-            prt[9] = 421;
+            prt[8] = spr_portrait_starlo_distracted;
+            prt[9] = spr_portrait_starlo_serious;
         }
         
         if (!global.dialogue_open)
@@ -249,10 +249,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = other.starlo_npc;
             message[0] = "* Don't worry, Clover.#  He's comin'.";
-            prt[0] = 417;
+            prt[0] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)
@@ -294,14 +294,14 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt_array[0] = 391;
+            sndfnt_array[0] = snd_talk_default;
             message[0] = "* Make it speedy.";
-            sndfnt_array[1] = 107;
+            sndfnt_array[1] = snd_talk_starlo;
             talker[1] = other.starlo_npc;
             message[1] = "* Of cooourse, sir!";
             message[2] = "* I was just gunna ask#  you to sell a gun to#  this child.";
-            prt[1] = 415;
-            prt[2] = 422;
+            prt[1] = spr_portrait_starlo_hidden;
+            prt[2] = spr_portrait_starlo_smile;
         }
         
         if (!global.dialogue_open)
@@ -356,14 +356,14 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = other.starlo_npc;
             message[0] = "* I worded that poorly,#  hold on!";
             message[1] = "* This ain't a child, you#  see. I was jokin'.";
             message[2] = "* They're just a very#  small, but VERY tough#  monster.";
-            prt[0] = 428;
-            prt[1] = 412;
-            prt[2] = 417;
+            prt[0] = spr_portrait_starlo_sweat;
+            prt[1] = spr_portrait_starlo_embarassed_smile;
+            prt[2] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)
@@ -379,15 +379,15 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt_array[0] = 391;
+            sndfnt_array[0] = snd_talk_default;
             message[0] = "* ...";
-            sndfnt_array[1] = 107;
+            sndfnt_array[1] = snd_talk_starlo;
             talker[1] = other.starlo_npc;
             talker[2] = other.starlo_npc;
             message[1] = "* Sigh...";
             message[2] = "* I'll give ya 400G.";
-            prt[1] = 407;
-            prt[2] = 418;
+            prt[1] = spr_portrait_starlo_distracted;
+            prt[2] = spr_portrait_starlo_plain;
         }
         
         if (!global.dialogue_open)
@@ -443,12 +443,12 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = other.starlo_npc;
             message[0] = "* See? I had it under#  control.";
             message[1] = "* Wait out here, Clover.";
-            prt[0] = 417;
-            prt[1] = 417;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)
@@ -504,7 +504,7 @@ switch (scene)
         if (!scr_timer())
             exit;
         
-        cutscene_sfx_play(59, 1);
+        cutscene_sfx_play(snd_starlo_buys_gun, 1);
         cutscene_advance(22);
         timer = 40;
         break;
@@ -545,12 +545,12 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = other.starlo_npc;
             message[0] = "* Done and done.";
             message[1] = "* Can I get a#  yeehaw?";
-            prt[0] = 417;
-            prt[1] = 424;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_smirk;
         }
         
         if (!global.dialogue_open)
@@ -562,7 +562,7 @@ switch (scene)
         break;
     
     case 24:
-        cutscene_npc_action_sprite(1169, 202, 1/3, true, 0, 232, 4);
+        cutscene_npc_action_sprite(obj_starlo_npc, spr_starlo_pose, 1/3, true, 0, snd_shotstrong, 4);
         break;
     
     case 25:
@@ -573,12 +573,12 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = other.starlo_npc;
             message[0] = "* ...";
             message[1] = "* Right. Movin' along.";
-            prt[0] = 421;
-            prt[1] = 407;
+            prt[0] = spr_portrait_starlo_serious;
+            prt[1] = spr_portrait_starlo_distracted;
             
             if (message_current == 1)
                 obj_starlo_npc.action_sprite = false;
@@ -631,12 +631,12 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt_array[0] = 107;
+            sndfnt_array[0] = snd_talk_starlo;
             talker[0] = other.starlo_npc;
             message[0] = "* Let's see what you got!";
             message[1] = "* Take this trusty#  six-shooter as a gift#  from me.";
-            prt[0] = 419;
-            prt[1] = 422;
+            prt[0] = spr_portrait_starlo_point;
+            prt[1] = spr_portrait_starlo_smile;
         }
         
         if (!global.dialogue_open)
@@ -658,7 +658,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt_array[0] = 391;
+            sndfnt_array[0] = snd_talk_default;
             talker[0] = -4;
             message[0] = "* (You got a Wild Revolver!)";
         }
@@ -737,16 +737,16 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = other.starlo_npc;
             message[0] = "* Ya definitely pass this#  part of trainin'!";
             message[1] = "* I gotta go tell Ceroba#  'bout this.";
             message[2] = "* She's a big doubter when#  it comes to you.";
             message[3] = "* Let's ride on!";
-            prt[0] = 417;
-            prt[1] = 422;
-            prt[2] = 424;
-            prt[3] = 417;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_smile;
+            prt[2] = spr_portrait_starlo_smirk;
+            prt[3] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)

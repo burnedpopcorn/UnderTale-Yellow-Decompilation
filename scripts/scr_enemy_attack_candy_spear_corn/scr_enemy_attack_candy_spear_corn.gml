@@ -1,8 +1,6 @@
 function scr_enemy_attack_candy_spear_corn()
 {
-    var distance;
-    
-    distance = 20;
+    var distance = 20;
     global.attack_counter_max = 25;
     
     if (global.attack_counter == 0)

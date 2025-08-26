@@ -1,4 +1,4 @@
-function sound_isplaying(argument0)
+function sound_isplaying(arg0)
 {
-    return audio_is_playing(argument0);
+    return audio_is_playing(arg0);
 }

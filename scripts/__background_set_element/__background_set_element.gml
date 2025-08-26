@@ -1,49 +1,51 @@
-function __background_set_element(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9, argument10, argument11, argument12, argument13, argument14)
+function __background_set_element(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14)
 {
-    var __bind, __vis, __fore, __back, __x, __y, __htiled, __vtiled, __xscale, __yscale, __stretch, __hspeed, __vspeed, __blend, __alpha, __nearestdepth, __farthestdepth, __depthinc, __fgstring, __bgstring, __colstring, __fglen, __bglen, __layerlist, __layerlistlength, __collayer, __i, __layername, __slotchr, __slot, __currdepth, __depth, __layerdepth, __layerid, __backel, __result;
-    
-    __bind = argument0;
-    __vis = argument1;
-    __fore = argument2;
-    __back = argument3;
-    __x = argument4;
-    __y = argument5;
-    __htiled = argument6;
-    __vtiled = argument7;
-    __xscale = argument8;
-    __yscale = argument9;
-    __stretch = argument10;
-    __hspeed = argument11;
-    __vspeed = argument12;
-    __blend = argument13;
-    __alpha = argument14;
-    __nearestdepth = 1000000000;
-    __farthestdepth = -1000000000;
-    __depthinc = 100;
+    var __bind = arg0;
+    var __vis = arg1;
+    var __fore = arg2;
+    var __back = arg3;
+    var __x = arg4;
+    var __y = arg5;
+    var __htiled = arg6;
+    var __vtiled = arg7;
+    var __xscale = arg8;
+    var __yscale = arg9;
+    var __stretch = arg10;
+    var __hspeed = arg11;
+    var __vspeed = arg12;
+    var __blend = arg13;
+    var __alpha = arg14;
+    var __nearestdepth = 1000000000;
+    var __farthestdepth = -1000000000;
+    var __depthinc = 100;
+    var __result;
     __result[0] = -1;
     __result[1] = -1;
-    __fgstring = "Compatibility_Foreground_";
-    __bgstring = "Compatibility_Background_";
-    __colstring = "Compatibility_Colour";
-    __fglen = string_length(__fgstring);
-    __bglen = string_length(__bgstring);
-    __layerlist = layer_get_all();
-    __layerlistlength = array_length_1d(__layerlist);
-    __collayer = -1;
+    var __fgstring = "Compatibility_Foreground_";
+    var __bgstring = "Compatibility_Background_";
+    var __colstring = "Compatibility_Colour";
+    var __fglen = string_length(__fgstring);
+    var __bglen = string_length(__bgstring);
+    var __layerlist = layer_get_all();
+    var __layerlistlength = array_length_1d(__layerlist);
+    var __collayer = -1;
+    var __slots, __isforeground;
     
-    for (__i = 0; __i < 8; __i++)
+    for (var __i = 0; __i < 8; __i++)
     {
         __slots[__i] = -1;
         __isforeground[__i] = false;
     }
     
-    for (__i = 0; __i < __layerlistlength; __i++)
+    var __slot, __layername;
+    
+    for (var __i = 0; __i < __layerlistlength; __i++)
     {
         __layername = layer_get_name(__layerlist[__i]);
         
         if (string_pos(__fgstring, __layername) > 0)
         {
-            __slotchr = string_char_at(__layername, __fglen + 1);
+            var __slotchr = string_char_at(__layername, __fglen + 1);
             
             if (__slotchr == "")
                 continue;
@@ -54,7 +56,7 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
         }
         else if (string_pos(__bgstring, __layername) > 0)
         {
-            __slotchr = string_char_at(__layername, __bglen + 1);
+            var __slotchr = string_char_at(__layername, __bglen + 1);
             
             if (__slotchr == "")
                 continue;
@@ -70,7 +72,7 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
         }
         else
         {
-            __currdepth = layer_get_depth(__layerlist[__i]);
+            var __currdepth = layer_get_depth(__layerlist[__i]);
             
             if (__currdepth < __nearestdepth)
                 __nearestdepth = __currdepth;
@@ -85,11 +87,11 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
     __farthestdepth = max(__farthestdepth, 2147483600);
     __nearestdepth = min(__nearestdepth, -2147482000);
     
-    for (__i = 0; __i < 8; __i++)
+    for (var __i = 0; __i < 8; __i++)
     {
         if (__slots[__i] != -1)
         {
-            __depth = 0;
+            var __depth = 0;
             
             if (__isforeground[__i] == true)
                 __depth = __nearestdepth - (__i * __depthinc);
@@ -102,6 +104,8 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
     
     if (__collayer != -1)
         layer_depth(__collayer, __farthestdepth);
+    
+    var __layerdepth;
     
     if (__bind == -1)
     {
@@ -119,6 +123,8 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
         __layerdepth = __farthestdepth - __depthinc - (__bind * __depthinc);
     }
     
+    var __layerid;
+    
     if (__bind == -1)
         __layerid = __collayer;
     else
@@ -132,7 +138,7 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
     layer_y(__layerid, __y);
     layer_hspeed(__layerid, __hspeed);
     layer_vspeed(__layerid, __vspeed);
-    __backel = layer_background_create(__layerid, __back);
+    var __backel = layer_background_create(__layerid, __back);
     layer_background_visible(__backel, __vis);
     layer_background_htiled(__backel, __htiled);
     layer_background_vtiled(__backel, __vtiled);

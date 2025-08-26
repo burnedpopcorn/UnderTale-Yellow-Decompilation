@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Hello, darling! How are you#  doin' today?";
                 message[1] = "* It's a lovely day, ain't it?";
                 message[2] = "* Is it always this hot n' humid,#  ya think?";
@@ -46,9 +46,9 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Wait, do you know my nephew?";
-                message[1] = "* Adorable, wears pink gloves..";
+                message[1] = "* Adorable, wears pink gloves....";
                 message[2] = "* You look just like this nice#  little buddy boo who he talked#  about comin' 'round.";
                 message[3] = "* So, tell me, how is my little#  wubby dubby doin'?";
                 message[4] = "* He never writes me anymore!";

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6e13f6d4-dcaa-4286-9e26-2ae72ef7ae3d",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d7fc44ef-c7a4-442a-aa8b-7f208a0863eb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"842b145c-2c56-4cdd-8add-0f5dd5d78a28",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f2bfb29-fab1-4a0b-824a-31cbe3ac9162",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 42,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"350686f3-1e13-42a8-b7c2-0b4c783403d5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cfc7058a-7493-4fe0-ac59-8c51240002a3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6e13f6d4-dcaa-4286-9e26-2ae72ef7ae3d","path":"sprites/spr_attack_the_talk_flower/spr_attack_the_talk_flower.yy",},},},"Disabled":false,"id":"d29f01c0-fed5-47e2-a58f-812862e38e7b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d7fc44ef-c7a4-442a-aa8b-7f208a0863eb","path":"sprites/spr_attack_the_talk_flower/spr_attack_the_talk_flower.yy",},},},"Disabled":false,"id":"a6e0bbe0-6604-40ad-885b-8115f8809869","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"842b145c-2c56-4cdd-8add-0f5dd5d78a28","path":"sprites/spr_attack_the_talk_flower/spr_attack_the_talk_flower.yy",},},},"Disabled":false,"id":"94806303-c22c-4031-a0b3-2a32d59b70a4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3f2bfb29-fab1-4a0b-824a-31cbe3ac9162","path":"sprites/spr_attack_the_talk_flower/spr_attack_the_talk_flower.yy",},},},"Disabled":false,"id":"8bb1729a-3c82-49e3-8535-87c48cd3f6ce","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleHotlandFloweyPhase1",
+    "path": "texturegroups/BattleHotlandFloweyPhase1",
   },
   "type": 0,
   "VTile": false,

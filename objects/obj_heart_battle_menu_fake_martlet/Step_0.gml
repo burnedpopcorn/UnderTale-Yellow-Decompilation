@@ -1,12 +1,10 @@
-var battle_menu_number, battle_enemy_name, enemy_count, game_mode;
-
 if (live_call())
     return global.live_result;
 
-battle_menu_number = global.battle_menu_number;
-battle_enemy_name = global.battle_enemy_name;
-enemy_count = global.enemy_count;
-game_mode = global.game_mode;
+var battle_menu_number = global.battle_menu_number;
+var battle_enemy_name = global.battle_enemy_name;
+var enemy_count = global.enemy_count;
+var game_mode = global.game_mode;
 fade_in = true;
 
 if (fade_in == true && image_alpha < 1)

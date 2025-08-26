@@ -1,5 +1,3 @@
-var turn_speed_inc, i, new_dir, xx, yy, new_seed;
-
 if (live_call())
     return global.live_result;
 
@@ -14,7 +12,7 @@ switch (scene)
         break;
     
     case 1:
-        turn_speed_inc = 0.25;
+        var turn_speed_inc = 0.25;
         
         if (turn_speed < turn_speed_max)
             turn_speed += turn_speed_inc;
@@ -45,12 +43,12 @@ if (launch_noloop == true)
     {
         attack_count -= 1;
         
-        for (i = 0; i < 8; i++)
+        for (var i = 0; i < 8; i++)
         {
-            new_dir = image_angle + (i * 45);
-            xx = x + lengthdir_x(10, new_dir + (turn_speed * 3));
-            yy = y + lengthdir_y(10, new_dir + (turn_speed * 3));
-            new_seed = instance_create_depth(xx, yy, depth + 1, obj_battle_enemy_attack_guardener_seed_small);
+            var new_dir = image_angle + (i * 45);
+            var xx = x + lengthdir_x(10, new_dir + (turn_speed * 3));
+            var yy = y + lengthdir_y(10, new_dir + (turn_speed * 3));
+            var new_seed = instance_create_depth(xx, yy, depth + 1, obj_battle_enemy_attack_guardener_seed_small);
             new_seed.direction = new_dir;
             new_seed.launch_speed = 3.5;
         }

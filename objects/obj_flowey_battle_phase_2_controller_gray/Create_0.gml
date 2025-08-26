@@ -1,14 +1,12 @@
-var intensity_increase, destroyed_petal_number, i;
-
 if (live_call())
     return global.live_result;
 
 scene = 0;
 cutscene_timer = 0;
-intensity_increase = 0.25;
-destroyed_petal_number = 0;
+var intensity_increase = 0.25;
+var destroyed_petal_number = 0;
 
-for (i = 0; i < array_length(obj_flowey_battle_final.petal_alive); i++)
+for (var i = 0; i < array_length(obj_flowey_battle_final.petal_alive); i++)
 {
     if (obj_flowey_battle_final.petal_alive[i] == 0)
         destroyed_petal_number += 1;

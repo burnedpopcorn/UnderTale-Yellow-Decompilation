@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"46ec3ad7-9cc5-4d53-86d4-7eab41f396b6",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a2ecc56d-f292-4d84-af4b-99e41a228b91",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0ca9f531-ee6a-43ed-862e-85abfcbd820b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c865ca54-330c-4887-84b0-7d22012d2e6c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6a78b5ac-bd2f-4cac-8c44-b9ebc3b2e895",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d39788de-7fc6-4a01-ad2a-07a0a85a714e",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 31,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"41532e31-40ec-4de0-b5ec-bab81051fbaf","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"87be98c2-e85a-4dbe-8af5-5ab734de1d31","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"46ec3ad7-9cc5-4d53-86d4-7eab41f396b6","path":"sprites/spr_guardener_gear_piece_small/spr_guardener_gear_piece_small.yy",},},},"Disabled":false,"id":"ac36ecaa-305a-494d-8d7c-57b189d44a75","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a2ecc56d-f292-4d84-af4b-99e41a228b91","path":"sprites/spr_guardener_gear_piece_small/spr_guardener_gear_piece_small.yy",},},},"Disabled":false,"id":"9cda28a9-8f08-4804-80b9-0f02e3565187","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0ca9f531-ee6a-43ed-862e-85abfcbd820b","path":"sprites/spr_guardener_gear_piece_small/spr_guardener_gear_piece_small.yy",},},},"Disabled":false,"id":"2f491603-05ad-43a8-b3b9-8e9cfe7d0675","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c865ca54-330c-4887-84b0-7d22012d2e6c","path":"sprites/spr_guardener_gear_piece_small/spr_guardener_gear_piece_small.yy",},},},"Disabled":false,"id":"42aa8dd2-51a5-4ea3-ba81-dc9ab563dfd5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6a78b5ac-bd2f-4cac-8c44-b9ebc3b2e895","path":"sprites/spr_guardener_gear_piece_small/spr_guardener_gear_piece_small.yy",},},},"Disabled":false,"id":"a1385bcb-becb-49f3-8673-ff39d085c3cd","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d39788de-7fc6-4a01-ad2a-07a0a85a714e","path":"sprites/spr_guardener_gear_piece_small/spr_guardener_gear_piece_small.yy",},},},"Disabled":false,"id":"49a2b851-ce8b-4256-8f69-b41768d38dc6","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

@@ -1,7 +1,7 @@
 image_speed = 1;
 image_xscale = 2;
 image_yscale = 2;
-base_sprite = spr_axis_body;
+base_sprite = 871;
 death_sprite = false;
 death_noloop = false;
 axis_damaged_act = false;

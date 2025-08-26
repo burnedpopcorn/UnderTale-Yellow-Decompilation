@@ -1,8 +1,6 @@
 function scr_save_flowey_snowdin()
 {
-    var current_room, kill_number;
-    
-    current_room = room_get_name(room);
+    var current_room = room_get_name(room);
     global.menu_sprite = spr_savescreen_snowdin;
     current_save_number = 1;
     scr_determine_save_area();
@@ -14,13 +12,13 @@ function scr_save_flowey_snowdin()
     
     with (msg)
     {
-        sndfnt = 96;
-        kill_number = global.kill_number[2];
+        sndfnt = sndfnt_flowey;
+        var kill_number = global.kill_number[2];
         
         if (global.player_can_travel)
         {
             message[0] = "* Let's get going.";
-            prt[0] = 348;
+            prt[0] = flowey_nice;
         }
         else if (global.snowdin_flag[13] != 0)
         {
@@ -33,16 +31,16 @@ function scr_save_flowey_snowdin()
                         message[1] = "* ...";
                         message[2] = "* Let's head to the river#  up ahead.";
                         message[3] = "* We'll soon be outta#  here.";
-                        prt[0] = 348;
-                        prt[1] = 357;
-                        prt[2] = 348;
-                        prt[3] = 347;
+                        prt[0] = flowey_nice;
+                        prt[1] = flowey_worried;
+                        prt[2] = flowey_nice;
+                        prt[3] = flowey_niceside;
                         global.flowey_flag[12]++;
                         break;
                     
                     case 1:
                         message[0] = "* ...";
-                        prt[0] = 353;
+                        prt[0] = flowey_plains;
                         break;
                 }
             }
@@ -59,20 +57,20 @@ function scr_save_flowey_snowdin()
                         message[5] = "* Lucky for us, she#  doesn't seem too put#  together.";
                         message[6] = "* We can ditch her as#  soon as she messes#  something up.";
                         message[7] = "* I'm sure it won't take#  long, haha!";
-                        prt[0] = 348;
-                        prt[1] = 348;
-                        prt[2] = 357;
-                        prt[3] = 348;
-                        prt[4] = 347;
-                        prt[5] = 347;
-                        prt[6] = 349;
-                        prt[7] = 348;
+                        prt[0] = flowey_nice;
+                        prt[1] = flowey_nice;
+                        prt[2] = flowey_worried;
+                        prt[3] = flowey_nice;
+                        prt[4] = flowey_niceside;
+                        prt[5] = flowey_niceside;
+                        prt[6] = flowey_smirk;
+                        prt[7] = flowey_nice;
                         global.flowey_flag[12]++;
                         break;
                     
                     case 1:
                         message[0] = "* Come on, Clover,#  Martlet's waiting for#  us.";
-                        prt[0] = 348;
+                        prt[0] = flowey_nice;
                         break;
                 }
             }
@@ -84,15 +82,15 @@ function scr_save_flowey_snowdin()
                         message[0] = "* Howdy!";
                         message[1] = "* Let's head to the river#  up ahead.";
                         message[2] = "* We'll soon be outta#  here!";
-                        prt[0] = 348;
-                        prt[1] = 348;
-                        prt[2] = 348;
+                        prt[0] = flowey_nice;
+                        prt[1] = flowey_nice;
+                        prt[2] = flowey_nice;
                         global.flowey_flag[12]++;
                         break;
                     
                     case 1:
                         message[0] = "* Howdy!";
-                        prt[0] = 348;
+                        prt[0] = flowey_nice;
                         break;
                 }
             }
@@ -111,9 +109,9 @@ function scr_save_flowey_snowdin()
             message[0] = "* Gee, you sure are#  livin' on the edge.";
             message[1] = "* I guess they did attack#  you first.";
             message[2] = "* Can't get in trouble#  for self defense.";
-            prt[0] = 357;
-            prt[1] = 354;
-            prt[2] = 348;
+            prt[0] = flowey_worried;
+            prt[1] = flowey_worriedside;
+            prt[2] = flowey_nice;
         }
         else if (global.kill_number[2] <= 10 && global.flowey_flag[13] == 1)
         {
@@ -129,9 +127,9 @@ function scr_save_flowey_snowdin()
             message[0] = "* Thought I saw some dust#  lyin' around.";
             message[1] = "* Might've just been snow.";
             message[2] = "* At least, that's what#  everyone else would#  think.";
-            prt[0] = 348;
-            prt[1] = 347;
-            prt[2] = 349;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_niceside;
+            prt[2] = flowey_smirk;
         }
         else if (global.kill_number[2] <= 5 && global.flowey_flag[13] == 2)
         {
@@ -147,9 +145,9 @@ function scr_save_flowey_snowdin()
             message[0] = "* Wow, kid! You mean#  business!";
             message[1] = "* What's that: Fifteen?#  Sixteen?";
             message[2] = "* Very impressive.";
-            prt[0] = 348;
-            prt[1] = 348;
-            prt[2] = 348;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_nice;
+            prt[2] = flowey_nice;
         }
         else if (global.kill_number[2] <= 0 && global.flowey_flag[13] == 3)
         {
@@ -158,11 +156,11 @@ function scr_save_flowey_snowdin()
             message[2] = "* This place went from#  pleasant to eerie real#  quick.";
             message[3] = "* That must've been a new#  record or something.";
             message[4] = "* On the bright side, you#  won't have to pay for#  coffee anymore!";
-            prt[0] = 352;
-            prt[1] = 352;
-            prt[2] = 353;
-            prt[3] = 348;
-            prt[4] = 349;
+            prt[0] = flowey_plain;
+            prt[1] = flowey_plain;
+            prt[2] = flowey_plains;
+            prt[3] = flowey_nice;
+            prt[4] = flowey_smirk;
             global.flowey_flag[13] = 4;
         }
         else if (global.flowey_flag[13] == 4)
@@ -170,16 +168,16 @@ function scr_save_flowey_snowdin()
             message[0] = "* Can't tell if it's the#  temperature or the#  atmosphere but wow.";
             message[1] = "* Sure is cold.";
             message[2] = "* You should get a move#  on.";
-            prt[0] = 352;
-            prt[1] = 352;
-            prt[2] = 352;
+            prt[0] = flowey_plain;
+            prt[1] = flowey_plain;
+            prt[2] = flowey_plain;
         }
         else if (other.current_save_number < global.flowey_save_number)
         {
             message[0] = "* What are you doing back#  here? The exit's the#  other way, silly!";
             message[1] = "* Let's get going.";
-            prt[0] = 352;
-            prt[1] = 348;
+            prt[0] = flowey_plain;
+            prt[1] = flowey_nice;
         }
         else
         {
@@ -195,17 +193,17 @@ function scr_save_flowey_snowdin()
                                 message[1] = "* Due respect to your#  decision making#  process...";
                                 message[2] = "* But would you mind#  hurrying it up?";
                                 message[3] = "* It's cold out here and#  I don't fancy freezing.";
-                                prt[0] = 348;
-                                prt[1] = 353;
-                                prt[2] = 352;
-                                prt[3] = 352;
+                                prt[0] = flowey_nice;
+                                prt[1] = flowey_plains;
+                                prt[2] = flowey_plain;
+                                prt[3] = flowey_plain;
                                 break;
                             
                             case 1:
                                 message[0] = "* Let's move it, kid.";
                                 message[1] = "* There'll be more time#  to think later.";
-                                prt[0] = 352;
-                                prt[1] = 352;
+                                prt[0] = flowey_plain;
+                                prt[1] = flowey_plain;
                                 break;
                         }
                         
@@ -221,12 +219,12 @@ function scr_save_flowey_snowdin()
                             message[3] = "* Come on, you can do it!#  I doubt you'll even#  need a save!";
                             message[4] = "* It's just snow, ice,#  monsters, and possible#  risk of frostbite.";
                             message[5] = "* Nothin' to it, pal! Now#  get out there!";
-                            prt[0] = 348;
-                            prt[1] = 347;
-                            prt[2] = 349;
-                            prt[3] = 348;
-                            prt[4] = 347;
-                            prt[5] = 348;
+                            prt[0] = flowey_nice;
+                            prt[1] = flowey_niceside;
+                            prt[2] = flowey_smirk;
+                            prt[3] = flowey_nice;
+                            prt[4] = flowey_niceside;
+                            prt[5] = flowey_nice;
                             global.flowey_flag[7]++;
                             break;
                         
@@ -234,9 +232,9 @@ function scr_save_flowey_snowdin()
                             message[0] = "* The longer you stand#  around talking to me,";
                             message[1] = "* The higher that risk of#  frostbite gets.";
                             message[2] = "* Now move it!";
-                            prt[0] = 352;
-                            prt[1] = 353;
-                            prt[2] = 351;
+                            prt[0] = flowey_plain;
+                            prt[1] = flowey_plains;
+                            prt[2] = flowey_pissed;
                             break;
                     }
                     
@@ -254,14 +252,14 @@ function scr_save_flowey_snowdin()
                             message[5] = "* That's monsters for ya,#  can never mind their#  own business.";
                             message[6] = "* In any case, you're#  doing great!";
                             message[7] = "* Keep it up, buddy!";
-                            prt[0] = 348;
-                            prt[1] = 348;
-                            prt[2] = 353;
-                            prt[3] = 352;
-                            prt[4] = 348;
-                            prt[5] = 347;
-                            prt[6] = 348;
-                            prt[7] = 348;
+                            prt[0] = flowey_nice;
+                            prt[1] = flowey_nice;
+                            prt[2] = flowey_plains;
+                            prt[3] = flowey_plain;
+                            prt[4] = flowey_nice;
+                            prt[5] = flowey_niceside;
+                            prt[6] = flowey_nice;
+                            prt[7] = flowey_nice;
                             global.flowey_flag[8]++;
                             break;
                         
@@ -269,9 +267,9 @@ function scr_save_flowey_snowdin()
                             message[0] = "* Still doing great, pal.";
                             message[1] = "* I guess you needed#  extra confirmation?";
                             message[2] = "* Don't worry, I meant it#  the first time just as#  much as the second.";
-                            prt[0] = 348;
-                            prt[1] = 347;
-                            prt[2] = 349;
+                            prt[0] = flowey_nice;
+                            prt[1] = flowey_niceside;
+                            prt[2] = flowey_smirk;
                             global.flowey_flag[8]++;
                             break;
                         
@@ -279,9 +277,9 @@ function scr_save_flowey_snowdin()
                             message[0] = "* I appreciate you#  wanting me to compliment#  you a third time.";
                             message[1] = "* But you don't have to#  lean on me so much for#  emotional support.";
                             message[2] = "* You can believe in#  yourself a little too,#  pal.";
-                            prt[0] = 352;
-                            prt[1] = 353;
-                            prt[2] = 348;
+                            prt[0] = flowey_plain;
+                            prt[1] = flowey_plains;
+                            prt[2] = flowey_nice;
                             break;
                     }
                     
@@ -299,22 +297,22 @@ function scr_save_flowey_snowdin()
                             message[5] = "* Hasn't anyone heard of#  personal space?";
                             message[6] = "* Unless someone can mail#  you to ASGORE, I don't#  see why we need 'em.";
                             message[7] = "* Anyway, let's get a#  move on. Time's a#  wastin'.";
-                            prt[0] = 348;
-                            prt[1] = 348;
-                            prt[2] = 347;
-                            prt[3] = 357;
-                            prt[4] = 352;
-                            prt[5] = 353;
-                            prt[6] = 348;
-                            prt[7] = 348;
+                            prt[0] = flowey_nice;
+                            prt[1] = flowey_nice;
+                            prt[2] = flowey_niceside;
+                            prt[3] = flowey_worried;
+                            prt[4] = flowey_plain;
+                            prt[5] = flowey_plains;
+                            prt[6] = flowey_nice;
+                            prt[7] = flowey_nice;
                             global.flowey_flag[9]++;
                             break;
                         
                         case 1:
                             message[0] = "* Whatcha waitin' around#  for?";
                             message[1] = "* You have a job to do.";
-                            prt[0] = 348;
-                            prt[1] = 349;
+                            prt[0] = flowey_nice;
+                            prt[1] = flowey_smirk;
                             global.flowey_flag[9]++;
                             break;
                         
@@ -323,10 +321,10 @@ function scr_save_flowey_snowdin()
                             message[1] = "* Two saves is no better#  than one, kid!";
                             message[2] = "* We got places to see,#  warm places most of#  'em.";
                             message[3] = "* Let's get going!";
-                            prt[0] = 352;
-                            prt[1] = 353;
-                            prt[2] = 348;
-                            prt[3] = 348;
+                            prt[0] = flowey_plain;
+                            prt[1] = flowey_plains;
+                            prt[2] = flowey_nice;
+                            prt[3] = flowey_nice;
                             break;
                     }
                     
@@ -340,18 +338,18 @@ function scr_save_flowey_snowdin()
                             message[1] = "* A perfect place to#  relax and destress.";
                             message[2] = "* Well, not perfect, a#  bit crowded for my#  taste.";
                             message[3] = "* At least that keeps#  things interesting.";
-                            prt[0] = 348;
-                            prt[1] = 347;
-                            prt[2] = 357;
-                            prt[3] = 349;
+                            prt[0] = flowey_nice;
+                            prt[1] = flowey_niceside;
+                            prt[2] = flowey_worried;
+                            prt[3] = flowey_smirk;
                             global.flowey_flag[10]++;
                             break;
                         
                         case 1:
                             message[0] = "* Feel free to slack off#  for a while, kid.";
                             message[1] = "* I'll be here checking#  out the hot springs.";
-                            prt[0] = 347;
-                            prt[1] = 348;
+                            prt[0] = flowey_niceside;
+                            prt[1] = flowey_nice;
                             break;
                     }
                     
@@ -369,12 +367,12 @@ function scr_save_flowey_snowdin()
                                 message[3] = "* Their puzzles sure#  weren't impressive,#  that's for certain.";
                                 message[4] = "* Knowing that, I#  wouldn't worry if you#  run into them.";
                                 message[5] = "* Whatever happens, I#  wish you luck!";
-                                prt[0] = 348;
-                                prt[1] = 348;
-                                prt[2] = 347;
-                                prt[3] = 349;
-                                prt[4] = 3251;
-                                prt[5] = 348;
+                                prt[0] = flowey_nice;
+                                prt[1] = flowey_nice;
+                                prt[2] = flowey_niceside;
+                                prt[3] = flowey_smirk;
+                                prt[4] = flowey_wink;
+                                prt[5] = flowey_nice;
                                 global.flowey_flag[11]++;
                                 break;
                             
@@ -382,15 +380,15 @@ function scr_save_flowey_snowdin()
                                 message[0] = "* Don't tell me you're#  scared of the Royal#  Guard now.";
                                 message[1] = "* You saw that lady,#  right? You'll be fine.";
                                 message[2] = "* Trust me a little, will#  ya?";
-                                prt[0] = 347;
-                                prt[1] = 348;
-                                prt[2] = 3251;
+                                prt[0] = flowey_niceside;
+                                prt[1] = flowey_nice;
+                                prt[2] = flowey_wink;
                                 global.flowey_flag[11]++;
                                 break;
                             
                             case 2:
                                 message[0] = "* Let's do this already!";
-                                prt[0] = 348;
+                                prt[0] = flowey_nice;
                                 break;
                         }
                     }

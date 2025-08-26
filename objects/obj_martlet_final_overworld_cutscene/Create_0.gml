@@ -1,5 +1,3 @@
-var chujin, martlet;
-
 if (live_call())
     return global.live_result;
 
@@ -9,7 +7,7 @@ cutscene_music = 0;
 draw_alpha = 1;
 global.cutscene = true;
 obj_pl.image_alpha = 0;
-chujin = instance_create_depth(277, 149, -100, obj_chujin_npc);
+var chujin = instance_create_depth(277, 149, -100, obj_chujin_npc);
 
 with (chujin)
 {
@@ -24,7 +22,7 @@ with (chujin)
     action_sprite = false;
 }
 
-martlet = instance_create_depth(246, -15, -100, obj_martlet_npc);
+var martlet = instance_create_depth(246, -15, -100, obj_martlet_npc);
 
 with (martlet)
 {

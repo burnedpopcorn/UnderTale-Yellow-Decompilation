@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d850e5de-4b54-4102-98b7-6898f2781f83",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c18ad9d7-d9a4-4066-b8f8-ceae5f53bf3b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b5181757-3158-4449-86db-7efe0db4256a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6e2c1d43-8bcb-4834-a098-381e10c97097",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5dd3c69c-c012-4d5b-97b7-04940c87f4eb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f9ae0f7-0b81-48a1-af39-e70760e8e85e",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 23,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d20c2c3d-b81f-4486-81af-19a0df236a87","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"922205a7-7ac7-4991-b7c3-d1bd392f20ca","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d850e5de-4b54-4102-98b7-6898f2781f83","path":"sprites/spr_battle_flowey_gray_pellet/spr_battle_flowey_gray_pellet.yy",},},},"Disabled":false,"id":"0304dfc5-5ac8-41b4-863c-c3a6f965b85f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c18ad9d7-d9a4-4066-b8f8-ceae5f53bf3b","path":"sprites/spr_battle_flowey_gray_pellet/spr_battle_flowey_gray_pellet.yy",},},},"Disabled":false,"id":"828c2e02-f454-4e12-9f16-765e82457b65","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b5181757-3158-4449-86db-7efe0db4256a","path":"sprites/spr_battle_flowey_gray_pellet/spr_battle_flowey_gray_pellet.yy",},},},"Disabled":false,"id":"7d1dbb85-270c-4576-89db-5e7cb40ecf9e","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6e2c1d43-8bcb-4834-a098-381e10c97097","path":"sprites/spr_battle_flowey_gray_pellet/spr_battle_flowey_gray_pellet.yy",},},},"Disabled":false,"id":"be29b782-21a1-4655-95f0-5f43eb5d6a17","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5dd3c69c-c012-4d5b-97b7-04940c87f4eb","path":"sprites/spr_battle_flowey_gray_pellet/spr_battle_flowey_gray_pellet.yy",},},},"Disabled":false,"id":"86af03ba-33bc-493b-8f32-8f3f3d818d4a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3f9ae0f7-0b81-48a1-af39-e70760e8e85e","path":"sprites/spr_battle_flowey_gray_pellet/spr_battle_flowey_gray_pellet.yy",},},},"Disabled":false,"id":"a4bb5559-ee1c-4c2b-b2a2-aa69d8601c03","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleHotlandFloweyGray",
+    "path": "texturegroups/BattleHotlandFloweyGray",
   },
   "type": 0,
   "VTile": false,

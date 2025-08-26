@@ -1,4 +1,4 @@
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     scene = 1;
     scr_cutscene_start();

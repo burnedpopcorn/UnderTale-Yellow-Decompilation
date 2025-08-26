@@ -1,9 +1,7 @@
-var turns_passed;
-
 text_effect = "twitchy";
 transform = false;
 transforming = false;
-turns_passed = global.turns_passed;
+var turns_passed = global.turns_passed;
 
 if (turns_passed == 0)
 {

@@ -1,8 +1,6 @@
-var enemy_dead, enemy_spared, enemy_mode;
-
-enemy_dead = global.enemy_dead;
-enemy_spared = global.enemy_spared;
-enemy_mode = global.enemy_mode;
+var enemy_dead = global.enemy_dead;
+var enemy_spared = global.enemy_spared;
+var enemy_mode = global.enemy_mode;
 
 if (enemy_dead == true)
 {
@@ -25,7 +23,7 @@ else if (enemy_dead == false && enemy_spared == false)
     switch (enemy_mode)
     {
         default:
-            head_sprite = spr_martlet_head_regular_battle;
+            head_sprite = 126;
     }
 }
 

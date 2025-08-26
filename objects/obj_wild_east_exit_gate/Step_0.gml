@@ -1,4 +1,4 @@
-if (global.dunes_flag[20] < 9 && scr_interact() && keyboard_multicheck_pressed(0))
+if (global.dunes_flag[20] < 9 && scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     scr_text();
     

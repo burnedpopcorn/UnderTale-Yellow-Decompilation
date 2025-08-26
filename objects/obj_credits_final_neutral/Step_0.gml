@@ -1,5 +1,3 @@
-var cutscene_wait_time, fade_out_start_point, timer_relative;
-
 if (live_call())
     return global.live_result;
 
@@ -65,10 +63,10 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_wait_time = room_duration / 30;
+        var cutscene_wait_time = room_duration / 30;
         cutscene_wait(cutscene_wait_time);
         camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]) + lengthdir_x(pan_speed, pan_dir[camera_target_current]), camera_get_view_y(view_camera[0]) + lengthdir_y(pan_speed, pan_dir[camera_target_current]));
-        fade_out_start_point = room_duration - 60;
+        var fade_out_start_point = room_duration - 60;
         
         if (cutscene_timer < fade_out_start_point)
         {
@@ -77,7 +75,7 @@ switch (scene)
         }
         else
         {
-            timer_relative = cutscene_timer - fade_out_start_point;
+            var timer_relative = cutscene_timer - fade_out_start_point;
             draw_alpha = 0.7 + (0.3 * (timer_relative / 60));
         }
         

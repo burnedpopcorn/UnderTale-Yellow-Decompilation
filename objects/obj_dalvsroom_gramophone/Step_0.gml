@@ -1,10 +1,8 @@
-var audio_sound_gain_radio, audio_sound_gain_gramophone, audio_gain;
-
 depth = -y;
-audio_sound_gain_radio = audio_sound_get_gain(obj_radio.current_song);
-audio_sound_gain_gramophone = audio_sound_get_gain(mus_dalventertainer);
+var audio_sound_gain_radio = audio_sound_get_gain(obj_radio.current_song);
+var audio_sound_gain_gramophone = audio_sound_get_gain(mus_dalventertainer);
 
-if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)) && (audio_sound_gain_radio == snd_chem_05_axis_acid_1 || audio_sound_gain_gramophone == snd_chem_05_axis_acid_1))
+if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)) && (audio_sound_gain_radio == 1 || audio_sound_gain_gramophone == 1))
     waiter = 1;
 
 if (global.route != 3)
@@ -18,7 +16,7 @@ if (global.route != 3)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* (It's a gramophone.)";
                 message[1] = "* (It looks pretty old.)";
                 message[2] = "* (Maybe it's a grandmaphone.)";
@@ -54,7 +52,7 @@ if (global.route != 3)
         {
             with (obj_radio)
             {
-                audio_gain = audio_sound_get_gain(current_song);
+                var audio_gain = audio_sound_get_gain(current_song);
                 
                 if (audio_gain == 0)
                 {
@@ -93,7 +91,7 @@ if (global.route != 3)
                     instance_create(0, 0, obj_dialoguebox_dummy);
                 
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* (The record must be damaged or#  broken.)";
                 message[1] = "* (Stop this wretched music?)";
                 
@@ -121,7 +119,7 @@ if (global.route != 3)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* (You turn off the gramophone.)";
                 message[1] = "* (Maybe it's a work in#  progress.)";
                 choice = false;
@@ -134,7 +132,7 @@ if (global.route != 3)
         if (waiter == 3 && !instance_exists(obj_dialogue))
         {
             instance_destroy(obj_dialoguebox_dummy);
-            audio_gain = audio_sound_get_gain(mus_dalventertainer);
+            var audio_gain = audio_sound_get_gain(mus_dalventertainer);
             
             if (audio_gain == 0)
             {
@@ -175,7 +173,7 @@ else
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (An old gramophone.)";
             message[1] = "* (You spare yourself by not#  playing the record on it.)";
         }

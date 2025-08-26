@@ -1,11 +1,9 @@
-var tape_present;
-
 if (live_call())
     return global.live_result;
 
 interact = 0;
 
-if (keyboard_multicheck_pressed(0) && scr_interact() == true)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true)
     interact = 1;
 
 if (ds_map_find_value(global.npc_map, npc_id) != npc_flag)
@@ -13,7 +11,7 @@ if (ds_map_find_value(global.npc_map, npc_id) != npc_flag)
 
 if (interact)
 {
-    tape_present = scr_item_exists_check("Videotape");
+    var tape_present = scr_item_exists_check("Videotape");
     scr_text();
     
     if (!tape_present || global.dunes_flag[43] == 1)
@@ -43,7 +41,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_sfx_play(382, 1);
+        cutscene_sfx_play(snd_undertale_snap, 1);
         break;
     
     case 3:

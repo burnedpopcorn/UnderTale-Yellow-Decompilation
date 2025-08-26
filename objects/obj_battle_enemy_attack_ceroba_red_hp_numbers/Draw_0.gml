@@ -1,11 +1,9 @@
-var _color_current, current_hp_width;
-
-_color_current = make_color_rgb(255, color_number_current, color_number_current);
+var _color_current = make_color_rgb(255, color_number_current, color_number_current);
 draw_set_font(fnt_mars_needs_cunnilingus);
 
 if (player_hp_max_start != global.max_hp_self)
 {
-    current_hp_width = string_width(string_hash_to_newline(string(global.current_hp_self) + " / "));
+    var current_hp_width = string_width(string_hash_to_newline(string(global.current_hp_self) + " / "));
     
     if (global.current_hp_self < 10 && global.current_hp_self > -10)
     {

@@ -1,5 +1,3 @@
-var dir;
-
 if (place_meeting(x, y, obj_pl))
 {
     base_x = obj_pl.x;
@@ -7,7 +5,7 @@ if (place_meeting(x, y, obj_pl))
     slide_speed = 4;
 }
 
-dir = point_direction(base_x, base_y, x, y);
+var dir = point_direction(base_x, base_y, x, y);
 
 if (place_free(x + lengthdir_x(slide_speed, dir), y))
     x += lengthdir_x(slide_speed, dir);

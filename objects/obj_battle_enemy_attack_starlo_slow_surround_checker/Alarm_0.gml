@@ -1,7 +1,5 @@
-var soul, box;
-
-soul = 2980;
-box = 3154;
+var soul = obj_heart_battle_fighting_red;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if (starlo_take_aim_shots_current < starlo_take_aim_shots_max)
 {

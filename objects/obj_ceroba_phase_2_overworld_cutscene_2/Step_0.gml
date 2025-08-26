@@ -49,7 +49,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 626;
+            sndfnt = snd_talk_chujin;
             message[0] = "Our little girl... Kanako... She#  needs to live a happy life,#  unaffected by my endeavors.";
             message[1] = "     That is my final wish.";
         }
@@ -77,7 +77,7 @@ switch (scene)
         break;
     
     case 7:
-        cutscene_npc_action_sprite(159, 860, 1, false);
+        cutscene_npc_action_sprite(obj_kanako_npc, spr_flashback_kanako_wipeeyes, 1, false);
         break;
     
     case 8:
@@ -90,7 +90,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Kanako!?";
             position = 1;
         }
@@ -99,15 +99,15 @@ switch (scene)
     
     case 10:
         instance_destroy(obj_cutscene_ex);
-        cutscene_npc_direction(159, "down");
+        cutscene_npc_direction(obj_kanako_npc, "down");
         break;
     
     case 11:
-        cutscene_npc_set_sprites(1161, 81, 80, 78, 79, 61, 65, 60, 63);
+        cutscene_npc_set_sprites(obj_ceroba_npc, spr_ceroba_up_run, spr_ceroba_right_run, spr_ceroba_down_run, spr_ceroba_left_run, spr_ceroba_up_talk, spr_ceroba_right_talk, spr_ceroba_down_talk, spr_ceroba_left_talk);
         break;
     
     case 12:
-        cutscene_npc_walk(1161, obj_kanako_npc.x, 210, 4, "x", "up");
+        cutscene_npc_walk(obj_ceroba_npc, obj_kanako_npc.x, 210, 4, "x", "up");
         break;
     
     case 13:
@@ -116,8 +116,8 @@ switch (scene)
         with (msg)
         {
             message[0] = "* What are you doing down#  here!?";
-            prt[0] = 381;
-            talker[0] = 1161;
+            prt[0] = spr_portrait_ceroba_nervous;
+            talker[0] = obj_ceroba_npc;
             position = 1;
         }
         
@@ -132,13 +132,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 159;
-            talker[1] = 1161;
-            talker[2] = 159;
-            talker[3] = 1161;
-            talker[4] = 159;
-            talker[6] = 1161;
-            talker[10] = 159;
+            talker[0] = obj_kanako_npc;
+            talker[1] = obj_ceroba_npc;
+            talker[2] = obj_kanako_npc;
+            talker[3] = obj_ceroba_npc;
+            talker[4] = obj_kanako_npc;
+            talker[6] = obj_ceroba_npc;
+            talker[10] = obj_kanako_npc;
             message[0] = "* Is... Is it true?";
             message[1] = "* ...What?";
             message[2] = "* Am I... different?";
@@ -151,18 +151,18 @@ switch (scene)
             message[9] = "* You heard him!";
             message[10] = "* His dream... All these#  books and papers... ";
             message[11] = "* You've been trying to#  finish it, haven't you?";
-            prt[0] = 6;
-            prt[1] = 370;
-            prt[2] = 3268;
-            prt[3] = 3757;
-            prt[4] = 3179;
-            prt[5] = 3268;
-            prt[6] = 381;
-            prt[7] = 3757;
-            prt[8] = 3757;
-            prt[9] = 3757;
-            prt[10] = 3113;
-            prt[11] = 6;
+            prt[0] = spr_portrait_kanako_neutral;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_kanako_sad_1;
+            prt[3] = spr_portrait_ceroba_pensive;
+            prt[4] = spr_portrait_kanako_sad_2;
+            prt[5] = spr_portrait_kanako_sad_1;
+            prt[6] = spr_portrait_ceroba_nervous;
+            prt[7] = spr_portrait_ceroba_pensive;
+            prt[8] = spr_portrait_ceroba_pensive;
+            prt[9] = spr_portrait_ceroba_pensive;
+            prt[10] = spr_portrait_kanako_pensive_2;
+            prt[11] = spr_portrait_kanako_neutral;
             
             if (message_current == 2 && other.cutscene_music == 0)
             {
@@ -197,7 +197,7 @@ switch (scene)
         break;
     
     case 17:
-        cutscene_npc_direction(1161, "left");
+        cutscene_npc_direction(obj_ceroba_npc, "left");
         break;
     
     case 18:
@@ -205,7 +205,7 @@ switch (scene)
         break;
     
     case 19:
-        cutscene_npc_direction(1161, "up");
+        cutscene_npc_direction(obj_ceroba_npc, "up");
         break;
     
     case 20:
@@ -213,27 +213,27 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[4] = 159;
+            talker[0] = obj_ceroba_npc;
+            talker[4] = obj_kanako_npc;
             message[0] = "* With my limited#  abilities... yes.";
             message[1] = "* But it doesn't involve#  you.";
             message[2] = "* I've been looking into#  ways to create the serum#  without a Boss Monster.";
             message[3] = "* I'll... figure it out.#  I have to.";
             message[4] = "* But...";
             message[5] = "* I found this in the#  trash.";
-            prt[0] = 377;
-            prt[1] = 371;
-            prt[2] = 377;
-            prt[3] = 609;
-            prt[4] = 3113;
-            prt[5] = 6;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_alt;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
+            prt[3] = spr_portrait_ceroba_sorrowful;
+            prt[4] = spr_portrait_kanako_pensive_2;
+            prt[5] = spr_portrait_kanako_neutral;
             position = 1;
         }
         
         break;
     
     case 21:
-        cutscene_npc_action_sprite(159, 2777, 1, false);
+        cutscene_npc_action_sprite(obj_kanako_npc, spr_flashback_kanako_pullpaper, 1, false);
         obj_kanako_npc.down_sprite_idle = spr_kanako_talk_paper;
         break;
     
@@ -258,12 +258,12 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 4235519;
-            talker[0] = 1161;
-            talker[1] = 159;
-            talker[2] = 1161;
-            talker[3] = 159;
-            talker[5] = 1161;
+            col_modif[0] = c_orange;
+            talker[0] = obj_ceroba_npc;
+            talker[1] = obj_kanako_npc;
+            talker[2] = obj_ceroba_npc;
+            talker[3] = obj_kanako_npc;
+            talker[5] = obj_ceroba_npc;
             message[0] = "* ! ";
             message[1] = "* You figured it out.#  Last week.";
             message[2] = "* I...";
@@ -272,12 +272,12 @@ switch (scene)
             message[4] = "* I believe I have#  removed any corruption#  it held.\"";
             message_col[4][0] = "  I believe I have#  removed any corruption#  it held.\"";
             message[5] = "* ...Negating the need#  for someone pure of#  heart. Yes.";
-            prt[0] = 381;
-            prt[1] = 1144;
-            prt[2] = 3757;
-            prt[3] = 6;
-            prt[4] = 6;
-            prt[5] = 377;
+            prt[0] = spr_portrait_ceroba_nervous;
+            prt[1] = spr_portrait_kanako_hopeful;
+            prt[2] = spr_portrait_ceroba_pensive;
+            prt[3] = spr_portrait_kanako_neutral;
+            prt[4] = spr_portrait_kanako_neutral;
+            prt[5] = spr_portrait_ceroba_closed_eyes;
             
             switch (message_current)
             {
@@ -296,7 +296,7 @@ switch (scene)
         break;
     
     case 25.4:
-        if (cutscene_npc_action_sprite(159, 2901, 1, false))
+        if (cutscene_npc_action_sprite(obj_kanako_npc, spr_flashback_kanako_hidepaper, 1, false))
             scene = 25.6;
         
         obj_kanako_npc.down_sprite_idle = spr_kanako_down_talk;
@@ -308,12 +308,12 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 159;
-            talker[3] = 1161;
-            talker[5] = 159;
-            talker[8] = 1161;
-            talker[10] = 159;
-            talker[12] = 1161;
+            talker[0] = obj_kanako_npc;
+            talker[3] = obj_ceroba_npc;
+            talker[5] = obj_kanako_npc;
+            talker[8] = obj_ceroba_npc;
+            talker[10] = obj_kanako_npc;
+            talker[12] = obj_ceroba_npc;
             message[0] = "* So you did it!";
             message[1] = "* Daddy's wish could come#  true, right?";
             message[2] = "* We could make him#  smile! Make him proud of#  us!";
@@ -328,20 +328,20 @@ switch (scene)
             message[11] = "* You promised you would#  make his dream come#  true.";
             message[12] = "* I did.";
             message[13] = "* ...";
-            prt[0] = 2849;
-            prt[1] = 1250;
-            prt[2] = 1250;
-            prt[3] = 2987;
-            prt[4] = 2987;
-            prt[5] = 683;
-            prt[6] = 575;
-            prt[7] = 1250;
-            prt[8] = 3757;
-            prt[9] = 609;
-            prt[10] = 3113;
-            prt[11] = 6;
-            prt[12] = 609;
-            prt[13] = 2987;
+            prt[0] = spr_portrait_kanako_happy;
+            prt[1] = spr_portrait_kanako_eyes_closed_happy;
+            prt[2] = spr_portrait_kanako_eyes_closed_happy;
+            prt[3] = spr_portrait_ceroba_mourning;
+            prt[4] = spr_portrait_ceroba_mourning;
+            prt[5] = spr_portrait_kanako_pout;
+            prt[6] = spr_portrait_kanako_shot;
+            prt[7] = spr_portrait_kanako_eyes_closed_happy;
+            prt[8] = spr_portrait_ceroba_pensive;
+            prt[9] = spr_portrait_ceroba_sorrowful;
+            prt[10] = spr_portrait_kanako_pensive_2;
+            prt[11] = spr_portrait_kanako_neutral;
+            prt[12] = spr_portrait_ceroba_sorrowful;
+            prt[13] = spr_portrait_ceroba_mourning;
             
             switch (message_current)
             {
@@ -362,7 +362,7 @@ switch (scene)
     
     case 27:
         scr_radio_restart();
-        cutscene_npc_direction(1161, "up");
+        cutscene_npc_direction(obj_ceroba_npc, "up");
         break;
     
     case 28:
@@ -370,20 +370,20 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[3] = 159;
+            talker[0] = obj_ceroba_npc;
+            talker[3] = obj_kanako_npc;
             message[0] = "* Very well.";
             message[1] = "* But I'll make it quick.";
             message[2] = "* I'll ensure your safety#  throughout the#  procedure, alright?";
             message[3] = "* Mm-hmm!";
             message[4] = "* We'll be the heroes of#  the Underground!";
             message[5] = "* All thanks to you and#  daddy!";
-            prt[0] = 377;
-            prt[1] = 370;
-            prt[2] = 370;
-            prt[3] = 2820;
-            prt[4] = 1250;
-            prt[5] = 2849;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_neutral;
+            prt[3] = waiting_for_shot;
+            prt[4] = spr_portrait_kanako_eyes_closed_happy;
+            prt[5] = spr_portrait_kanako_happy;
             position = 1;
         }
         
@@ -398,11 +398,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Heroes, huh?";
             message[1] = "* That has a nice ring to#  it.";
-            prt[0] = 395;
-            prt[1] = 372;
+            prt[0] = spr_portrait_ceroba_snarky;
+            prt[1] = spr_portrait_ceroba_smile;
             position = 1;
         }
         
@@ -413,7 +413,7 @@ switch (scene)
         break;
     
     case 32:
-        cutscene_npc_direction(1161, "right");
+        cutscene_npc_direction(obj_ceroba_npc, "right");
         break;
     
     case 33:
@@ -421,7 +421,7 @@ switch (scene)
         break;
     
     case 34:
-        cutscene_npc_direction(1161, "up");
+        cutscene_npc_direction(obj_ceroba_npc, "up");
         break;
     
     case 35:
@@ -429,20 +429,20 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Okay, wait here.";
-            prt[0] = 377;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
             position = 1;
         }
         
         break;
     
     case 36:
-        cutscene_npc_set_sprites(1161, 67, 68, 66, 69, 61, 65, 60, 63);
+        cutscene_npc_set_sprites(obj_ceroba_npc, spr_ceroba_up_walk, spr_ceroba_right_walk, spr_ceroba_down_walk, spr_ceroba_left_walk, spr_ceroba_up_talk, spr_ceroba_right_talk, spr_ceroba_down_talk, spr_ceroba_left_talk);
         break;
     
     case 37:
-        cutscene_npc_walk(1161, 186, 159, 3, "y", "right");
+        cutscene_npc_walk(obj_ceroba_npc, 186, 159, 3, "y", "right");
         
         if (obj_ceroba_npc.x > obj_kanako_npc.x)
             obj_kanako_npc.npc_direction = "right";
@@ -454,12 +454,12 @@ switch (scene)
         break;
     
     case 39:
-        cutscene_npc_walk(159, obj_kanako_npc.x, 160, 2, "y", "right");
+        cutscene_npc_walk(obj_kanako_npc, obj_kanako_npc.x, 160, 2, "y", "right");
         cutscene_advance();
         break;
     
     case 40:
-        cutscene_npc_action_sprite(1161, 3389, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_flashback_ceroba_grabsyringe, 1, true, 0);
         
         if (obj_ceroba_npc.image_index >= 39)
         {
@@ -481,27 +481,27 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* You will need to stand#  very still for this.";
             message[1] = "* Close your eyes and I#  will begin the#  fusion-extraction.";
-            prt[0] = 377;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_neutral;
             position = 1;
         }
         
         break;
     
     case 43:
-        cutscene_npc_set_sprites(1161, 67, 68, 66, 3746, 61, 65, 60, 1457);
+        cutscene_npc_set_sprites(obj_ceroba_npc, spr_ceroba_up_walk, spr_ceroba_right_walk, spr_ceroba_down_walk, spr_flashback_ceroba_syringewalk, spr_ceroba_up_talk, spr_ceroba_right_talk, spr_ceroba_down_talk, spr_flashback_ceroba_syringe_talk);
         break;
     
     case 44:
         obj_ceroba_npc.action_sprite = false;
-        cutscene_npc_walk(1161, 160, obj_kanako_npc.y, 2, "x", "left");
+        cutscene_npc_walk(obj_ceroba_npc, 160, obj_kanako_npc.y, 2, "x", "left");
         break;
     
     case 45:
-        cutscene_npc_set_sprites(159, 1760, 3612, 3036, 1855, 2056, 2605, 1608, 2931);
+        cutscene_npc_set_sprites(obj_kanako_npc, spr_kanako_up_walk, spr_kanako_lookingatceroba_walk, spr_kanako_down_walk, spr_kanako_left_walk, spr_kanako_up_talk, spr_kanako_lookingatceroba_talk, spr_kanako_down_talk, spr_kanako_left_talk);
         break;
     
     case 46:
@@ -513,14 +513,14 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[2] = 159;
+            talker[0] = obj_ceroba_npc;
+            talker[2] = obj_kanako_npc;
             message[0] = "* You may feel a pinch or#  two but it'll all be#  over before you know it.";
             message[1] = "* Understood?";
             message[2] = "* Understood!";
-            prt[0] = 370;
-            prt[1] = 370;
-            prt[2] = 1250;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_kanako_eyes_closed_happy;
             position = 1;
         }
         
@@ -531,7 +531,7 @@ switch (scene)
         break;
     
     case 49:
-        cutscene_npc_action_sprite(1161, 3166, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_flashback_ceroba_kneel, 1, true, 0);
         break;
     
     case 50:
@@ -547,12 +547,12 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[1] = 159;
+            talker[0] = obj_ceroba_npc;
+            talker[1] = obj_kanako_npc;
             message[0] = "* You truly believe in#  this, don't you?";
             message[1] = "* Yeah.";
-            prt[0] = 370;
-            prt[1] = 1250;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_kanako_eyes_closed_happy;
             position = 1;
         }
         
@@ -567,12 +567,12 @@ switch (scene)
     case 52:
         obj_kanako_npc.npc_dynamic_depth = false;
         obj_kanako_npc.depth = obj_ceroba_npc.depth - 1;
-        cutscene_npc_walk(159, 157, 160, 2, "y", "right");
+        cutscene_npc_walk(obj_kanako_npc, 157, 160, 2, "y", "right");
         break;
     
     case 53:
         obj_kanako_npc.image_alpha = 0;
-        cutscene_npc_action_sprite(1161, 3186, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_flashback_ceroba_hugako, 1, true, 0);
         break;
     
     case 54:
@@ -584,12 +584,12 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[1] = 159;
+            talker[0] = obj_ceroba_npc;
+            talker[1] = obj_kanako_npc;
             message[0] = "* Love you lots.";
             message[1] = "* Love you more.";
-            prt[0] = 2987;
-            prt[1] = 2849;
+            prt[0] = spr_portrait_ceroba_mourning;
+            prt[1] = spr_portrait_kanako_happy;
             position = 1;
         }
         
@@ -600,7 +600,7 @@ switch (scene)
         break;
     
     case 57:
-        if (cutscene_npc_action_sprite(1161, 3354, 1, true))
+        if (cutscene_npc_action_sprite(obj_ceroba_npc, spr_flashback_ceroba_hugako_2, 1, true))
         {
             obj_ceroba_npc.sprite_index = spr_flashback_ceroba_kneel;
             obj_ceroba_npc.image_index = obj_ceroba_npc.image_number - 1;
@@ -617,7 +617,7 @@ switch (scene)
         break;
     
     case 58:
-        cutscene_npc_walk(159, 142, 158, 2, "x", "right");
+        cutscene_npc_walk(obj_kanako_npc, 142, 158, 2, "x", "right");
         break;
     
     case 59:
@@ -626,7 +626,7 @@ switch (scene)
     
     case 60:
         obj_kanako_npc.image_alpha = 0;
-        cutscene_npc_action_sprite(1161, 457, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_flashback_ceroba_inject, 1, true, 0);
         cutscene_advance();
         break;
     
@@ -728,7 +728,7 @@ switch (scene)
         break;
     
     case 74:
-        if (cutscene_npc_action_sprite(1161, 3012, 1, true, 0))
+        if (cutscene_npc_action_sprite(obj_ceroba_npc, spr_flashback_ceroba_uninject, 1, true, 0))
         {
             obj_kanako_npc.image_alpha = 1;
             obj_ceroba_npc.sprite_index = spr_flashback_ceroba_kneel;
@@ -743,11 +743,11 @@ switch (scene)
     
     case 76:
         obj_ceroba_npc.left_sprite_idle = spr_ceroba_left_talk;
-        cutscene_npc_action_sprite(1161, 3457, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_flashback_ceroba_stand_up, 1, true, 0);
         break;
     
     case 77:
-        cutscene_npc_set_sprites(159, 1760, 3491, 3036, 1855, 2056, 1558, 1608, 2931);
+        cutscene_npc_set_sprites(obj_kanako_npc, spr_kanako_up_walk, spr_kanako_right_walk, spr_kanako_down_walk, spr_kanako_left_walk, spr_kanako_up_talk, spr_kanako_right_talk, spr_kanako_down_talk, spr_kanako_left_talk);
         break;
     
     case 78:
@@ -755,7 +755,7 @@ switch (scene)
         break;
     
     case 79:
-        cutscene_npc_walk(1161, 175, obj_ceroba_npc.y, 0.5, "x", "right");
+        cutscene_npc_walk(obj_ceroba_npc, 175, obj_ceroba_npc.y, 0.5, "x", "right");
         break;
     
     case 80:
@@ -769,7 +769,7 @@ switch (scene)
         break;
     
     case 81:
-        cutscene_sfx_play(411, 1);
+        cutscene_sfx_play(snd_monster_damage_hit, 1);
         break;
     
     case 82:
@@ -808,7 +808,7 @@ switch (scene)
     
     case 86:
         obj_flashback_kanako_soul.sprite_index = spr_flashback_kanako_soul_broken;
-        cutscene_sfx_play(242, 1);
+        cutscene_sfx_play(snd_soul_gameover_hit, 1);
         break;
     
     case 87:
@@ -832,16 +832,16 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* NO!!!";
-            prt[0] = 393;
+            prt[0] = spr_portrait_ceroba_surprised;
             position = 1;
         }
         
         break;
     
     case 90:
-        cutscene_npc_set_sprites(1161, 81, 80, 78, 79, 61, 65, 60, 63);
+        cutscene_npc_set_sprites(obj_ceroba_npc, spr_ceroba_up_run, spr_ceroba_right_run, spr_ceroba_down_run, spr_ceroba_left_run, spr_ceroba_up_talk, spr_ceroba_right_talk, spr_ceroba_down_talk, spr_ceroba_left_talk);
         break;
     
     case 91:
@@ -860,7 +860,7 @@ switch (scene)
     case 92:
         obj_ceroba_npc.x = obj_kanako_npc.x;
         obj_ceroba_npc.y = obj_kanako_npc.y;
-        cutscene_npc_action_sprite(1161, 2956, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_flashback_kanako_falls, 1, true, 0);
         obj_kanako_npc.image_alpha = 0;
         break;
     
@@ -869,7 +869,7 @@ switch (scene)
         break;
     
     case 94:
-        cutscene_npc_set_sprites(1161, 81, 80, 78, 79, 61, 65, 751, 63);
+        cutscene_npc_set_sprites(obj_ceroba_npc, spr_ceroba_up_run, spr_ceroba_right_run, spr_ceroba_down_run, spr_ceroba_left_run, spr_ceroba_up_talk, spr_ceroba_right_talk, spr_flashback_kanako_falls_talk, spr_ceroba_left_talk);
         obj_ceroba_npc.npc_direction = "down";
         obj_ceroba_npc.action_sprite = false;
         break;
@@ -879,19 +879,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* No no no no no no-";
             message[1] = "* Why didn't it work!?";
             message[2] = "* Kanako, wake up.";
             message[3] = "* Wake up right now!";
             message[4] = "* Mommy's here, come on! ";
             message[5] = "* Hey!";
-            prt[0] = 381;
-            prt[1] = 381;
-            prt[2] = 2599;
-            prt[3] = 2599;
-            prt[4] = 2599;
-            prt[5] = 2599;
+            prt[0] = spr_portrait_ceroba_nervous;
+            prt[1] = spr_portrait_ceroba_nervous;
+            prt[2] = spr_portrait_ceroba_wailing;
+            prt[3] = spr_portrait_ceroba_wailing;
+            prt[4] = spr_portrait_ceroba_wailing;
+            prt[5] = spr_portrait_ceroba_wailing;
             position = 1;
         }
         
@@ -909,7 +909,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* What...";
             skippable = false;
             position = 1;
@@ -940,7 +940,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "        What have I done?";
             skippable = false;
             message_timer = 60;

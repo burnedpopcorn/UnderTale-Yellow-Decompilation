@@ -1,7 +1,5 @@
-var special_effect_end_value, player_character, soul_mode;
-
-special_effect_end_value = global.special_effect_end_value;
-player_character = global.player_character;
+var special_effect_end_value = global.special_effect_end_value;
+var player_character = global.player_character;
 
 if (special_effect_end_value != "")
     scr_determine_special_effect_end_enemy(special_effect_end_value);
@@ -13,7 +11,7 @@ switch (player_character)
         break;
     
     default:
-        soul_mode = global.soul_mode;
+        var soul_mode = global.soul_mode;
         
         if (soul_mode == "Red")
         {

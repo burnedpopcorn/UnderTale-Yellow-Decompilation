@@ -1,5 +1,3 @@
-var flDelay;
-
 if (live_call())
     return global.live_result;
 
@@ -9,7 +7,7 @@ if (start_delay > 0)
     exit;
 }
 
-flDelay = flash_delay;
+var flDelay = flash_delay;
 
 if (image_alpha == 0 && no_loop == false)
 {

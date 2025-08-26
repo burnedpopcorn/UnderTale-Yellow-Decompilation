@@ -1,15 +1,13 @@
-function scr_determine_can_display_damage_ui(argument0)
+function scr_determine_can_display_damage_ui(arg0)
 {
-    var game_mode, battle_enemy_name;
-    
     hp_ui_alpha = 1;
     damage_ui_alpha = 1;
     miss_ui_alpha = 1;
     
-    if (argument0 == 1)
+    if (arg0 == 1)
     {
-        game_mode = global.game_mode;
-        battle_enemy_name = global.battle_enemy_name;
+        var game_mode = global.game_mode;
+        var battle_enemy_name = global.battle_enemy_name;
         
         if (global.game_mode == "customs")
         {
@@ -32,10 +30,10 @@ function scr_determine_can_display_damage_ui(argument0)
         }
     }
     
-    if (argument0 == 2)
+    if (arg0 == 2)
     {
-        game_mode = global.game_mode;
-        battle_enemy_name = global.battle_enemy_name_2;
+        var game_mode = global.game_mode;
+        var battle_enemy_name = global.battle_enemy_name_2;
         
         if (global.game_mode == "customs")
         {
@@ -53,10 +51,10 @@ function scr_determine_can_display_damage_ui(argument0)
         }
     }
     
-    if (argument0 == 3)
+    if (arg0 == 3)
     {
-        game_mode = global.game_mode;
-        battle_enemy_name = global.battle_enemy_name_3;
+        var game_mode = global.game_mode;
+        var battle_enemy_name = global.battle_enemy_name_3;
         
         if (global.game_mode == "customs")
         {

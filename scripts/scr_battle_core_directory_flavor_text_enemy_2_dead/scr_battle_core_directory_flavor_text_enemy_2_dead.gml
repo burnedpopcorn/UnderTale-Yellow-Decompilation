@@ -1,16 +1,14 @@
 function scr_battle_core_directory_flavor_text_enemy_2_dead()
 {
-    var battle_enemy_name, enemy_count, enemy_mode, enemy_mode_2, enemy_mode_3, game_mode;
-    
-    battle_enemy_name = global.battle_enemy_name;
-    enemy_count = global.enemy_count;
-    enemy_mode = global.enemy_mode;
-    enemy_mode_2 = global.enemy_mode_2;
+    var battle_enemy_name = global.battle_enemy_name;
+    var enemy_count = global.enemy_count;
+    var enemy_mode = global.enemy_mode;
+    var enemy_mode_2 = global.enemy_mode_2;
     
     if (enemy_count >= 3)
-        enemy_mode_3 = global.enemy_mode_3;
+        var enemy_mode_3 = global.enemy_mode_3;
     
-    game_mode = global.game_mode;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {

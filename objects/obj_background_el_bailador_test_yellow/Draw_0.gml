@@ -1,5 +1,3 @@
-var anim_dj_y_last, for_end, par_y;
-
 for (j = 0; j < 2; j++)
 {
     if (osc_horizontal == true)
@@ -131,7 +129,7 @@ for (i = 0; i < sprite_height; i += pixel_dim)
             animation_disjoint_x = 0;
         }
         
-        anim_dj_y_last = animation_disjoint_y;
+        var anim_dj_y_last = animation_disjoint_y;
         
         if (osc_vertical == true)
         {
@@ -157,6 +155,7 @@ for (i = 0; i < sprite_height; i += pixel_dim)
         animation_disjoint_x = pixel_dim * floor(0.5 + (animation_disjoint_x / pixel_dim));
         animation_disjoint_y = pixel_dim * floor(0.5 + (animation_disjoint_y / pixel_dim));
         event_user(0);
+        var for_end;
         
         if (i == 0)
             for_end = 0;
@@ -170,7 +169,7 @@ for (i = 0; i < sprite_height; i += pixel_dim)
         {
             for (l = 0; l <= 1; l++)
             {
-                par_y = (draw_top + i + (int_s_current_y * animation_disjoint_y)) - (pixel_dim * k);
+                var par_y = (draw_top + i + (int_s_current_y * animation_disjoint_y)) - (pixel_dim * k);
                 image_alpha = ((par_y - alpha_top) + 1) * ((alpha_max - alpha_min) / ((alpha_bottom - alpha_top) + 1));
                 
                 if (image_alpha > alpha_max)

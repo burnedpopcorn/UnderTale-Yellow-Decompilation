@@ -32,7 +32,7 @@ if (waiter == 30)
     
     with (msg)
     {
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         portrait = false;
         message[0] = "* I declare you an honorary#  sentinel of silence.";
         message[1] = "* I trust you to keep peace#  and order hhear.";

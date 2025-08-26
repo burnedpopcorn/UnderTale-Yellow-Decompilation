@@ -1,23 +1,21 @@
-var dbg_soundtest, dbg_up, dbg_down, dbg_right, dbg_left, dbg_conf, dbg_canc, dbg_time, code_string, current_value, inst;
-
 if (live_call())
     return global.live_result;
 
 if (show_timer)
     scr_determine_playtime();
 
-dbg_soundtest = mouse_check_button_pressed(mb_left);
+var dbg_soundtest = mouse_check_button_pressed(mb_left);
 
 if (dbg_soundtest)
     audio_play_sound(snd_monster_damage_death, 1, 0);
 
-dbg_up = keyboard_check_pressed(ord("W"));
-dbg_down = keyboard_check_pressed(ord("S"));
-dbg_right = keyboard_check_pressed(ord("D"));
-dbg_left = keyboard_check_pressed(ord("A"));
-dbg_conf = keyboard_check_pressed(ord("E"));
-dbg_canc = keyboard_check_pressed(ord("Q"));
-dbg_time = keyboard_check_pressed(ord("M"));
+var dbg_up = keyboard_check_pressed(ord("W"));
+var dbg_down = keyboard_check_pressed(ord("S"));
+var dbg_right = keyboard_check_pressed(ord("D"));
+var dbg_left = keyboard_check_pressed(ord("A"));
+var dbg_conf = keyboard_check_pressed(ord("E"));
+var dbg_canc = keyboard_check_pressed(ord("Q"));
+var dbg_time = keyboard_check_pressed(ord("M"));
 
 if (dbg_up && !alarm[0])
     alarm[0] = 5;
@@ -60,7 +58,7 @@ switch (dbg_menu)
         {
             if (dbg_pos == 5)
             {
-                code_string = get_string("Enter code:", "") + "; return 1";
+                var code_string = get_string("Enter code:", "") + "; return 1";
                 show_debug_message("code_string: " + code_string);
                 
                 if (live_execute_string(code_string))
@@ -257,7 +255,7 @@ switch (dbg_menu)
             dbg_menu = 0;
         }
         
-        current_value = ds_map_find_value(cheat_map, dbg_pos);
+        var current_value = ds_map_find_value(cheat_map, dbg_pos);
         
         switch (dbg_pos)
         {
@@ -444,6 +442,6 @@ if (mouse_check_button_pressed(mb_left))
 
 if (mouse_check_button_pressed(mb_right))
 {
-    inst = instance_position(mouse_x, mouse_y, all);
+    var inst = instance_position(mouse_x, mouse_y, all);
     show_debug_message(object_get_name(inst.object_index));
 }

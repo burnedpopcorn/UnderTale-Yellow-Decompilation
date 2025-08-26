@@ -1,5 +1,3 @@
-var enemy_mode, can_attack;
-
 script_execute(scr_controls_text);
 
 if (key_revert_pressed)
@@ -35,8 +33,8 @@ else
         }
         else
         {
-            enemy_mode = global.enemy_mode;
-            can_attack = true;
+            var enemy_mode = global.enemy_mode;
+            var can_attack = true;
             
             if (can_attack == true)
             {

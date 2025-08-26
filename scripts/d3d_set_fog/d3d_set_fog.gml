@@ -1,4 +1,4 @@
-function d3d_set_fog(argument0, argument1, argument2, argument3)
+function d3d_set_fog(arg0, arg1, arg2, arg3)
 {
-    gpu_set_fog(argument0, argument1, argument2, argument3);
+    gpu_set_fog(arg0, arg1, arg2, arg3);
 }

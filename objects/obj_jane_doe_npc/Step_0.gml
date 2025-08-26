@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Whoa!!";
                 message[1] = "* Finally! Another monster!!";
                 message[2] = "* Are you lost as well?";
@@ -40,7 +40,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* There's gotta be something or#  someone behind all this, no?";
                 message[1] = "* Even though monsterkind has#  lived in the Underground for#  decades,";
                 message[2] = "* There's still so much mystery#  to it all.";
@@ -61,7 +61,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Don't worry about sticking#  around if you got places#  to be - I'll be fine!";
                 message[1] = "* Still have plenty of snacks in#  my bag.";
                 message[2] = "* When it's time to go, I'll just#  start walking in one direction.";
@@ -76,7 +76,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Sorry, I'm mulling over the#  case.";
                 message[1] = "* Deep in thought.";
                 message[2] = "* Yep.";

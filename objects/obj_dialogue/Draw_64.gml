@@ -1,9 +1,7 @@
-var xx, portrait_xx, line_sep, prt_animate, portrait_y_disjoint, sprite_name, i, len, j, minishop_box_xx, minishop_box_yy, item_count, spacing, ypos1, y_offset, ypos2, width1, width2, xpos1, xpos2, xpos3, xpos4, soul_offset, soul_x, soul_y;
-
 if (live_call())
     return global.live_result;
 
-if (message_current > (array_length_1d(prt) - 1) || prt[message_current] == 0)
+if (message_current > (array_length_1d(prt) - 1) || prt[message_current] == spr_collisionbox)
     portrait = false;
 else
     portrait = true;
@@ -13,13 +11,13 @@ if (position == 0)
 else
     yy = 5;
 
-xx = 30;
+var xx = 30;
 
 if (portrait == true)
     xx = 88;
 
-portrait_xx = 52;
-line_sep = 18;
+var portrait_xx = 52;
+var line_sep = 18;
 scr_draw_dialogue_box(4.421875, 1.09375, 0.1);
 draw_set_font(dialogue_font);
 draw_set_color(c_white);
@@ -28,13 +26,15 @@ message_actual = string_copy(message[message_current], 0, cutoff);
 
 if (portrait == true)
 {
+    var prt_animate;
+    
     if (cutoff < string_length(message[message_current]) && portrait_can_animate == true)
         prt_animate = -1;
     else
         prt_animate = 0;
     
-    portrait_y_disjoint = yy + (sprite_get_height(prt[message_current]) / 3) + 28;
-    sprite_name = sprite_get_name(prt[message_current]);
+    var portrait_y_disjoint = yy + (sprite_get_height(prt[message_current]) / 3) + 28;
+    var sprite_name = sprite_get_name(prt[message_current]);
     
     if (string_copy(sprite_name, 0, 13) == "spr_dalv_head")
         portrait_y_disjoint += 3;
@@ -45,7 +45,7 @@ if (portrait == true)
     {
         switch (prt[message_current])
         {
-            case 343:
+            case toriel_normal:
                 if (portrait_idle_animated == 0 && irandom(40) == 1)
                 {
                     portrait_idle_animated = 346;
@@ -66,7 +66,7 @@ if (portrait == true)
                 
                 break;
             
-            case 3232:
+            case spr_portrait_ceroba_lostit:
                 if (portrait_idle_animated == 0 && irandom(30) == 1)
                 {
                     portrait_idle_animated = 3182;
@@ -96,9 +96,9 @@ if (color == true)
 {
     if (color_set == false)
     {
-        for (i = 0; i < (array_length_1d(message) - 1); i++)
+        for (var i = 0; i < (array_length_1d(message) - 1); i++)
         {
-            len = array_length_2d(message_col, i);
+            var len = array_length_2d(message_col, i);
             
             if (len == 0)
             {
@@ -106,7 +106,7 @@ if (color == true)
             }
             else if (len > 0)
             {
-                for (j = 0; j < (array_length_1d(col_modif) - 1); j++)
+                for (var j = 0; j < (array_length_1d(col_modif) - 1); j++)
                 {
                     if (j < array_length_2d(message_col, i) && message_col[i][j] == 0)
                         message_col[i][j] = "";
@@ -117,7 +117,7 @@ if (color == true)
         color_set = true;
     }
     
-    for (j = 0; j < array_length_2d(message_col, message_current); j++)
+    for (var j = 0; j < array_length_2d(message_col, message_current); j++)
     {
         message_actual_col[j] = string_copy(message_col[message_current][j], 0, cutoff);
         draw_set_color(col_modif[j]);
@@ -129,14 +129,15 @@ draw_set_color(c_white);
 
 if (dialogue_is_minishop == true)
 {
-    minishop_box_xx = 204;
-    minishop_box_yy = 92;
+    var minishop_box_xx = 204;
+    var minishop_box_yy = 92;
     draw_set_color(c_white);
     draw_rectangle(minishop_box_xx, minishop_box_yy, minishop_box_xx + 100, minishop_box_yy + 53, false);
     draw_set_color(c_black);
     draw_rectangle(minishop_box_xx + 3, minishop_box_yy + 3, (minishop_box_xx + 100) - 3, (minishop_box_yy + 53) - 3, false);
     draw_set_font(fnt_battle);
     draw_set_color(c_white);
+    var item_count;
     
     for (item_count = 1; item_count <= 8; item_count++)
     {
@@ -150,7 +151,7 @@ if (dialogue_is_minishop == true)
 if (choice == false && alpha_fade == false)
     exit;
 
-spacing = 0.25;
+var spacing = 0.25;
 
 if (ch[4] != "")
     spacing = 0.5;
@@ -158,13 +159,15 @@ if (ch[4] != "")
 if (portrait)
     spacing = 0.15;
 
+var ypos1, ypos2;
+
 if (position == 0)
 {
     ypos1 = 190;
     
     if (ch[3] == "")
     {
-        y_offset = max(string_height(ch[1]) - 16, string_height(ch[2]) - 16);
+        var y_offset = max(string_height(ch[1]) - 16, string_height(ch[2]) - 16);
         ypos1 = 210 - y_offset;
     }
     
@@ -176,7 +179,7 @@ else
     
     if (ch[3] == "")
     {
-        y_offset = max(string_height(ch[1]) - 16, string_height(ch[2]) - 16);
+        var y_offset = max(string_height(ch[1]) - 16, string_height(ch[2]) - 16);
         ypos1 = 56 - y_offset;
     }
     
@@ -188,9 +191,9 @@ xx = 160;
 if (ch[4] != "" || ch[2] != "")
     xx = 84;
 
-width1 = string_width(string_hash_to_newline(ch[1])) * 0.5;
-width2 = string_width(string_hash_to_newline(ch[2])) * 0.5;
-xpos1 = xx - width1;
+var width1 = string_width(string_hash_to_newline(ch[1])) * 0.5;
+var width2 = string_width(string_hash_to_newline(ch[2])) * 0.5;
+var xpos1 = xx - width1;
 
 if (portrait == true)
 {
@@ -200,9 +203,9 @@ if (portrait == true)
         xpos1 += 20;
 }
 
-xpos2 = 236 - width2;
-xpos3 = xpos1;
-xpos4 = xpos2;
+var xpos2 = 236 - width2;
+var xpos3 = xpos1;
+var xpos4 = xpos2;
 draw_set_alpha(ch_alpha);
 
 if (cutoff >= string_length(message[message_current]) && global.dialogue_open == true)
@@ -224,10 +227,12 @@ if (cutoff >= string_length(message[message_current]) && global.dialogue_open ==
         draw_text(xpos4, ypos2, string_hash_to_newline(ch[4]));
     
     draw_set_halign(fa_center);
-    soul_offset = 0;
+    var soul_offset = 0;
     
     if (ch[4] != "")
         soul_offset = 0;
+    
+    var soul_x, soul_y;
     
     switch (p)
     {

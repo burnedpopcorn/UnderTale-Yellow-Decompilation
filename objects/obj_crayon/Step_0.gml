@@ -15,7 +15,7 @@ if (pointed_at == true)
         }
     }
     
-    if (keyboard_multicheck_pressed(0) || mouse_check_button_pressed(mb_left))
+    if (keyboard_multicheck_pressed(vk_nokey) || mouse_check_button_pressed(mb_left))
     {
         if (pointed_at == true)
         {

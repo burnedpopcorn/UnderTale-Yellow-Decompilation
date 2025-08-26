@@ -1,11 +1,9 @@
-var roll_speed;
-
 image_alpha += 0.025;
 
 if (image_alpha < 1)
     exit;
 
-roll_speed = 2.5;
+var roll_speed = 2.5;
 image_speed = 0.4;
 
 if ((y < 160 && y > 80) || y > 240)

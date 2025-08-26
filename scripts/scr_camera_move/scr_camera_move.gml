@@ -1,8 +1,8 @@
-function scr_camera_move(argument0, argument1, argument2)
+function scr_camera_move(arg0, arg1, arg2)
 {
     if (!instance_exists(obj_camera))
     {
-        instance_create(__view_get(e__VW.Object, 0).x, __view_get(e__VW.Object, obj_quote_battle_ceroba_outro_4).y, obj_camera);
+        instance_create(__view_get(e__VW.Object, 0).x, __view_get(e__VW.Object, 0).y, obj_camera);
         __view_set(e__VW.Object, 0, obj_camera);
     }
     else
@@ -13,11 +13,11 @@ function scr_camera_move(argument0, argument1, argument2)
     }
     
     obj_camera.move = true;
-    obj_camera.xx = argument0;
-    obj_camera.yy = argument1;
-    obj_camera.spd = argument2;
+    obj_camera.xx = arg0;
+    obj_camera.yy = arg1;
+    obj_camera.spd = arg2;
     
-    if (abs(argument0 - obj_camera.x) <= argument2 && abs(argument1 - obj_camera.y) <= argument2)
+    if (abs(arg0 - obj_camera.x) <= arg2 && abs(arg1 - obj_camera.y) <= arg2)
         return true;
     else
         return false;

@@ -16,12 +16,12 @@ if (scene == 1)
     
     with (msg)
     {
-        sndfnt = 102;
+        sndfnt = snd_talk_martlet;
         
         if (global.snowdin_flag[14] == 2)
         {
             color = true;
-            col_modif[0] = 255;
+            col_modif[0] = c_red;
             ch_msg = 11;
             ch[1] = "Yes";
             ch[2] = "No";
@@ -38,18 +38,18 @@ if (scene == 1)
             message[9] = "* Oftentimes I don't know#  what the \"right\" action#  is until it's too late.";
             message[10] = "* So... I know we just#  met and all...";
             message[11] = "* But will you trust me#  on this?";
-            prt[0] = 324;
-            prt[1] = 328;
-            prt[2] = 338;
-            prt[3] = 328;
-            prt[4] = 317;
-            prt[5] = 320;
-            prt[6] = 320;
-            prt[7] = 322;
-            prt[8] = 329;
-            prt[9] = 317;
-            prt[10] = 321;
-            prt[11] = 328;
+            prt[0] = spr_martlet_head_questioning;
+            prt[1] = spr_martlet_head_regular;
+            prt[2] = spr_martlet_head_wondering;
+            prt[3] = spr_martlet_head_regular;
+            prt[4] = spr_martlet_head_downer;
+            prt[5] = spr_martlet_head_melancholic;
+            prt[6] = spr_martlet_head_melancholic;
+            prt[7] = spr_martlet_head_nervous;
+            prt[8] = spr_martlet_head_sad;
+            prt[9] = spr_martlet_head_downer;
+            prt[10] = spr_martlet_head_moderate;
+            prt[11] = spr_martlet_head_regular;
             
             if (outcome == 1)
                 other.scene = 2;
@@ -66,10 +66,10 @@ if (scene == 1)
             message[1] = "* Can you trust me to get#  you to ASGORE safely?";
             message[2] = "* I swear I can do it!#  I swear I can!";
             message[3] = "* Please?";
-            prt[0] = 317;
-            prt[1] = 321;
-            prt[2] = 313;
-            prt[3] = 320;
+            prt[0] = spr_martlet_head_downer;
+            prt[1] = spr_martlet_head_moderate;
+            prt[2] = spr_martlet_head_determined;
+            prt[3] = spr_martlet_head_melancholic;
             
             if (outcome == 1)
                 other.scene = 2;
@@ -83,7 +83,7 @@ if (scene == 1)
             ch[1] = "Yes";
             ch[2] = "No";
             message[0] = "* Shall we be off then?";
-            prt[0] = 328;
+            prt[0] = spr_martlet_head_regular;
             
             if (outcome == 1)
             {
@@ -122,17 +122,17 @@ else if (scene == 2)
         message[8] = "* And lose all of my#  life's work and#  belongings, but hey,";
         message[9] = "* What's life without a#  little risk?";
         message[10] = "* So shall we be off#  then?";
-        prt[0] = 312;
-        prt[1] = 311;
-        prt[2] = 328;
-        prt[3] = 318;
-        prt[4] = 328;
-        prt[5] = 324;
-        prt[6] = 312;
-        prt[7] = 333;
-        prt[8] = 323;
-        prt[9] = 328;
-        prt[10] = 312;
+        prt[0] = spr_martlet_head_content;
+        prt[1] = spr_martlet_head_confused;
+        prt[2] = spr_martlet_head_regular;
+        prt[3] = spr_martlet_head_happy;
+        prt[4] = spr_martlet_head_regular;
+        prt[5] = spr_martlet_head_questioning;
+        prt[6] = spr_martlet_head_content;
+        prt[7] = spr_martlet_head_surprised;
+        prt[8] = spr_martlet_head_nervous_smile;
+        prt[9] = spr_martlet_head_regular;
+        prt[10] = spr_martlet_head_content;
         
         if (outcome == 1)
         {
@@ -197,11 +197,11 @@ else if (scene == 7)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* Wait, hold on!";
             message[1] = "* I was supposed to be on#  Ava with you!";
-            prt[0] = 333;
-            prt[1] = 333;
+            prt[0] = spr_martlet_head_surprised;
+            prt[1] = spr_martlet_head_surprised;
         }
     }
 }
@@ -246,19 +246,19 @@ else if (scene == 3)
             message[4] = "* If she doesn't get to#  sail free,";
             message[5] = "* I can at least#  give her company a#  while.";
             message[6] = "* Until I find a better#  place for her, ya know?";
-            prt[0] = 317;
-            prt[1] = 329;
-            prt[2] = 320;
-            prt[3] = 320;
-            prt[4] = 320;
-            prt[5] = 328;
-            prt[6] = 328;
+            prt[0] = spr_martlet_head_downer;
+            prt[1] = spr_martlet_head_sad;
+            prt[2] = spr_martlet_head_melancholic;
+            prt[3] = spr_martlet_head_melancholic;
+            prt[4] = spr_martlet_head_melancholic;
+            prt[5] = spr_martlet_head_regular;
+            prt[6] = spr_martlet_head_regular;
             global.snowdin_flag[14] = 3;
         }
         else if (global.snowdin_flag[14] == 3)
         {
             message[0] = "* Oh... Okay...";
-            prt[0] = 317;
+            prt[0] = spr_martlet_head_downer;
         }
         else if (global.snowdin_flag[14] == 4)
         {
@@ -269,13 +269,13 @@ else if (scene == 3)
             message[4] = "* ...Actually, if you#  wouldn't mind,#  don't take, like,";
             message[5] = "* all the#  time in the world.";
             message[6] = "* We want to have time#  left for the journey,#  ya know?";
-            prt[0] = 333;
-            prt[1] = 320;
-            prt[2] = 312;
-            prt[3] = 328;
-            prt[4] = 320;
-            prt[5] = 320;
-            prt[6] = 328;
+            prt[0] = spr_martlet_head_surprised;
+            prt[1] = spr_martlet_head_melancholic;
+            prt[2] = spr_martlet_head_content;
+            prt[3] = spr_martlet_head_regular;
+            prt[4] = spr_martlet_head_melancholic;
+            prt[5] = spr_martlet_head_melancholic;
+            prt[6] = spr_martlet_head_regular;
         }
     }
 }

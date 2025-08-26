@@ -1,6 +1,4 @@
-var shop_name, message_alt_length, message_og_length;
-
-shop_name = global.shop_name;
+var shop_name = global.shop_name;
 
 if (action[message_current] != "Override")
 {
@@ -24,8 +22,8 @@ if (action[message_current] != "Override")
             if (shop_name == "Hotel Shop")
             {
                 message_draw_alt = string_copy(message_alt[message_current], 0, characters);
-                message_alt_length = string_length(message_alt[message_current]);
-                message_og_length = string_length(message[message_current]);
+                var message_alt_length = string_length(message_alt[message_current]);
+                var message_og_length = string_length(message[message_current]);
                 
                 if (message_alt_length > message_og_length)
                     current_char = string_char_at(message_draw_alt, characters);
@@ -53,7 +51,7 @@ if (action[message_current] != "Override")
                 
                 if (shop_name == "Hotel Shop")
                 {
-                    message_alt_length = string_length(message_alt[message_current]);
+                    var message_alt_length = string_length(message_alt[message_current]);
                     
                     if (message_alt_length > message_length)
                         message_length = message_alt_length;

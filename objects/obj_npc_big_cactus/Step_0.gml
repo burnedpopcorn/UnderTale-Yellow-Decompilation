@@ -1,4 +1,4 @@
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     scr_text();
     
@@ -16,11 +16,11 @@ if (scr_interact() && keyboard_multicheck_pressed(0))
     {
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* (We need to stay#  focused.)";
             message[1] = "* (Let's not bother others#  with our problems.)";
-            prt[0] = 321;
-            prt[1] = 338;
+            prt[0] = spr_martlet_head_moderate;
+            prt[1] = spr_martlet_head_wondering;
         }
         
         exit;

@@ -1,10 +1,8 @@
-var battle_box, soul;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-soul = 2980;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var soul = obj_heart_battle_fighting_red;
 
 if (stage == 0)
 {

@@ -1,9 +1,7 @@
-var axis_run_speed;
-
 if (live_call())
     return global.live_result;
 
-axis_run_speed = npc_axis_run_speed;
+var axis_run_speed = npc_axis_run_speed;
 
 switch (scene)
 {
@@ -36,11 +34,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* N0.. .";
             message[1] = "* R- R3TREATING!";
-            prt[0] = 3282;
-            prt[1] = 3282;
+            prt[0] = spr_portrait_axis_damaged;
+            prt[1] = spr_portrait_axis_damaged;
         }
         
         break;

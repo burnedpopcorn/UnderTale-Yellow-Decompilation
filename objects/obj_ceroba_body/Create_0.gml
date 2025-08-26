@@ -1,5 +1,3 @@
-var red_tint;
-
 anim_loop_time = room_speed * 4;
 anim_stretch_current = 1;
 anim_stretch_max = 1.1;
@@ -12,7 +10,7 @@ anim_hand_right_offset = y - obj_ceroba_hand_right.y;
 anim_staff_offset = y - obj_ceroba_staff.y;
 anim_ponytail_offset = obj_ceroba_head.y - obj_ceroba_ponytail.y;
 death_sprite = false;
-red_tint = make_colour_rgb(215, 166, 166);
+var red_tint = make_colour_rgb(215, 166, 166);
 image_blend = red_tint;
 obj_ceroba_head.image_blend = red_tint;
 obj_ceroba_hand_left.image_blend = red_tint;

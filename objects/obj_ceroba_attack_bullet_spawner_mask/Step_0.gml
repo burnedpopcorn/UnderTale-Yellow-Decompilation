@@ -1,5 +1,3 @@
-var i, bullet;
-
 if (live_call())
     return global.live_result;
 
@@ -28,9 +26,9 @@ if (!fade_out)
 }
 else if (image_alpha > 0)
 {
-    for (i = 0; i < ds_list_size(fireball_list); i++)
+    for (var i = 0; i < ds_list_size(fireball_list); i++)
     {
-        bullet = ds_list_find_value(fireball_list, i);
+        var bullet = ds_list_find_value(fireball_list, i);
         bullet.image_alpha = image_alpha;
     }
     
@@ -41,9 +39,9 @@ else
     instance_destroy();
 }
 
-for (i = 0; i < ds_list_size(fireball_list); i++)
+for (var i = 0; i < ds_list_size(fireball_list); i++)
 {
-    bullet = ds_list_find_value(fireball_list, i);
+    var bullet = ds_list_find_value(fireball_list, i);
     bullet.x += hspeed;
 }
 

@@ -1,7 +1,5 @@
 function scr_generate_battle_flower_girls_solo()
 {
-    var base_y, hand_y, head_y, base_x, hand_x, head_x;
-    
     global.battle_enemy_name_1 = "flower girls";
     global.battle_menu_number = 1;
     global.speed_self = 4;
@@ -69,33 +67,33 @@ function scr_generate_battle_flower_girls_solo()
     switch (global.dunes_flag[31])
     {
         case 1:
-            base_y = 220;
-            hand_y = base_y - 57;
-            head_y = hand_y - 22;
+            var base_y = 220;
+            var hand_y = base_y - 57;
+            var head_y = hand_y - 22;
             instance_create(316, hand_y, obj_violetta_hands);
             instance_create(316, head_y, obj_violetta_head);
             instance_create(316, base_y, obj_violetta_body);
             break;
         
         case 2:
-            base_x = 316;
-            base_y = 220;
-            hand_x = base_x - 75;
-            hand_y = base_y - 172;
-            head_x = base_x - 3;
-            head_y = base_y - 66;
+            var base_x = 316;
+            var base_y = 220;
+            var hand_x = base_x - 75;
+            var hand_y = base_y - 172;
+            var head_x = base_x - 3;
+            var head_y = base_y - 66;
             instance_create(hand_x, hand_y, obj_pedla_hands);
             instance_create(head_x, head_y, obj_pedla_head);
             instance_create(316, base_y, obj_pedla_body);
             break;
         
         case 3:
-            base_x = 316;
-            base_y = 220;
-            hand_x = base_x - 78;
-            hand_y = base_y - 95;
-            head_x = base_x - 7;
-            head_y = base_y - 71;
+            var base_x = 316;
+            var base_y = 220;
+            var hand_x = base_x - 78;
+            var hand_y = base_y - 95;
+            var head_x = base_x - 7;
+            var head_y = base_y - 71;
             instance_create(hand_x, hand_y, obj_rosa_hands);
             instance_create(head_x, head_y, obj_rosa_head);
             instance_create(316, base_y, obj_rosa_body);

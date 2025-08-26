@@ -1,5 +1,3 @@
-var number_pad;
-
 switch (scene)
 {
     case 0:
@@ -37,17 +35,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Golly, ain't this#  dandy?\t";
             message[1] = "* Everyone you met just#  abandoned you for their#  own interests.";
             message[2] = "* Those aren't real#  friends, no way.";
             message[3] = "* I'm here for you#  though! Always will be!";
             message[4] = "* Now... let's get outta#  here.";
-            prt[0] = 348;
-            prt[1] = 356;
-            prt[2] = 349;
-            prt[3] = 348;
-            prt[4] = 347;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_sad;
+            prt[2] = flowey_smirk;
+            prt[3] = flowey_nice;
+            prt[4] = flowey_niceside;
         }
         
         break;
@@ -69,13 +67,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* ...";
             message[1] = "* I'm not too sure how to#  open this door.";
             message[2] = "* Hold on.";
-            prt[0] = 352;
-            prt[1] = 357;
-            prt[2] = 357;
+            prt[0] = flowey_plain;
+            prt[1] = flowey_worried;
+            prt[2] = flowey_worried;
             
             if (message_current == 1)
                 other.actor_flowey.npc_direction = "down";
@@ -95,7 +93,7 @@ switch (scene)
         }
         else
         {
-            number_pad = 859;
+            var number_pad = 859;
             
             if (number_pad.image_index >= (number_pad.image_number - 1))
                 cutscene_wait(0.25);
@@ -104,7 +102,7 @@ switch (scene)
         break;
     
     case 12:
-        cutscene_sfx_play(270, 2);
+        cutscene_sfx_play(snd_elevator_start, 2);
         cutscene_advance(13);
         break;
     
@@ -113,7 +111,7 @@ switch (scene)
         break;
     
     case 14:
-        cutscene_action_sprite(1958, 1105, 1/3, true, 0, 631, 0);
+        cutscene_action_sprite(obj_dunes_43_gate, spr_dunes_43_gate, 1/3, true, 0, snd_dunes_43_gate, 0);
         break;
     
     case 15:
@@ -129,13 +127,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* That's one way of#  opening it!";
             message[1] = "* We can finally leave#  this wasteland behind!";
             message[2] = "* See ya later, Clover!";
-            prt[0] = 348;
-            prt[1] = 348;
-            prt[2] = 348;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_nice;
+            prt[2] = flowey_nice;
         }
         
         break;
@@ -167,7 +165,7 @@ switch (scene)
         {
             image_xscale = 3.5;
             image_yscale = 1.25;
-            nextroom = 141;
+            nextroom = rm_steamworks_01;
             xx = 160;
             yy = 520;
         }

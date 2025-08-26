@@ -1,7 +1,5 @@
-var miss_count;
-
 text_effect = "twitchy";
-miss_count = global.miss_count;
+var miss_count = global.miss_count;
 
 if (miss_count == 0)
 {

@@ -25,7 +25,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Not to be rude, but I'd like#  some privacy, yup.";
                 message[1] = "* Some monsters these days have#  no manners, yup yup.";
             }

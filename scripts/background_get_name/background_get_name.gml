@@ -1,4 +1,4 @@
-function background_get_name(argument0)
+function background_get_name(arg0)
 {
-    return sprite_get_name(argument0);
+    return sprite_get_name(arg0);
 }

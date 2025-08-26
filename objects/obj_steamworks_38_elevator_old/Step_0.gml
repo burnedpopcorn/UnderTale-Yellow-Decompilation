@@ -1,5 +1,3 @@
-var check;
-
 if (live_call())
     return global.live_result;
 
@@ -22,7 +20,7 @@ if (global.sworks_flag[39] < 1)
             break;
         
         case 2:
-            cutscene_npc_walk(1168, 176, 132, 3, "y", "down");
+            cutscene_npc_walk(obj_player_npc, 176, 132, 3, "y", "down");
             break;
         
         case 3:
@@ -40,7 +38,7 @@ if (global.sworks_flag[39] < 1)
             break;
         
         case 5:
-            if (cutscene_npc_walk(1161, 148, 133, 3, "y", "right"))
+            if (cutscene_npc_walk(obj_ceroba_npc, 148, 133, 3, "y", "right"))
             {
                 scene = 5.5;
                 obj_player_npc.npc_direction = "left";
@@ -88,9 +86,9 @@ if (global.sworks_flag[39] < 1)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Top floor.";
-                prt[0] = 377;
+                prt[0] = spr_portrait_ceroba_closed_eyes;
                 position = 0;
             }
             
@@ -112,9 +110,9 @@ if (global.sworks_flag[39] < 1)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Get us to the roof! Out#  of here! Whatever!";
-                prt[0] = 368;
+                prt[0] = spr_portrait_ceroba_irked;
                 position = 0;
             }
             
@@ -151,7 +149,7 @@ if (global.sworks_flag[39] < 1)
             if (door_closed_amount < 1)
                 door_closed_amount += 0.05;
             else
-                cutscene_sfx_play(13, 1);
+                cutscene_sfx_play(snd_elevator_door_shut, 1);
             
             break;
         
@@ -170,23 +168,23 @@ if (global.sworks_flag[39] < 1)
             break;
         
         case 18:
-            cutscene_sfx_play(271, 1);
+            cutscene_sfx_play(snd_elevator, 1);
             audio_play_sound(snd_rumble, 1, 1);
             break;
         
         case 19:
-            cutscene_npc_action_sprite(1168, 1109, 0.25, true, 0);
+            cutscene_npc_action_sprite(obj_player_npc, spr_clover_sit_elevator, 0.25, true, 0);
             scene = 19.5;
             break;
         
         case 19.5:
-            if (cutscene_npc_walk(1161, 138, 133, 1, "x", "down"))
+            if (cutscene_npc_walk(obj_ceroba_npc, 138, 133, 1, "x", "down"))
                 scene = 19.7;
             
             break;
         
         case 19.7:
-            if (cutscene_npc_action_sprite(1161, 72, 1, true, 0))
+            if (cutscene_npc_action_sprite(obj_ceroba_npc, spr_ceroba_cool, 1, true, 0))
                 scene = 20;
             
             break;
@@ -200,7 +198,7 @@ if (global.sworks_flag[39] < 1)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 ch_msg = 8;
                 ch[1] = "The 5\nhumans...";
                 ch[2] = "Personal\nmission";
@@ -213,25 +211,25 @@ if (global.sworks_flag[39] < 1)
                 message[6] = "* Why are you here in the#  first place?";
                 message[7] = "* Did you simply trip and#  fall into the#  Underground?";
                 message[8] = "* I'm curious.";
-                prt[0] = 394;
-                prt[1] = 371;
-                prt[2] = 394;
-                prt[3] = 370;
-                prt[4] = 372;
-                prt[5] = 377;
-                prt[6] = 370;
-                prt[7] = 370;
-                prt[8] = 370;
+                prt[0] = spr_portrait_ceroba_disapproving;
+                prt[1] = spr_portrait_ceroba_alt;
+                prt[2] = spr_portrait_ceroba_disapproving;
+                prt[3] = spr_portrait_ceroba_neutral;
+                prt[4] = spr_portrait_ceroba_smile;
+                prt[5] = spr_portrait_ceroba_closed_eyes;
+                prt[6] = spr_portrait_ceroba_neutral;
+                prt[7] = spr_portrait_ceroba_neutral;
+                prt[8] = spr_portrait_ceroba_neutral;
                 message[9] = "* I see...";
                 message[10] = "* You wanted to find out#  what happened to those#  kids.";
                 message[11] = "* ...A noble mission.#  Takes guts.";
                 message[12] = "* I'm... assuming you#  haven't found them yet,#  though.";
                 message[13] = "* ...";
-                prt[9] = 377;
-                prt[10] = 394;
-                prt[11] = 377;
-                prt[12] = 394;
-                prt[13] = 371;
+                prt[9] = spr_portrait_ceroba_closed_eyes;
+                prt[10] = spr_portrait_ceroba_disapproving;
+                prt[11] = spr_portrait_ceroba_closed_eyes;
+                prt[12] = spr_portrait_ceroba_disapproving;
+                prt[13] = spr_portrait_ceroba_alt;
             }
             
             break;
@@ -262,7 +260,7 @@ if (global.sworks_flag[39] < 1)
             break;
         
         case 25:
-            check = false;
+            var check = false;
             
             with (obj_player_npc)
             {
@@ -271,16 +269,16 @@ if (global.sworks_flag[39] < 1)
             }
             
             if (check)
-                cutscene_npc_reset_sprite(1168, "up");
+                cutscene_npc_reset_sprite(obj_player_npc, "up");
             
             break;
         
         case 26:
-            cutscene_npc_reset_sprite(1161, "right");
+            cutscene_npc_reset_sprite(obj_ceroba_npc, "right");
             break;
         
         case 27:
-            cutscene_npc_walk(1161, 148, 133, 2, "x", "up");
+            cutscene_npc_walk(obj_ceroba_npc, 148, 133, 2, "x", "up");
             break;
         
         case 28:
@@ -299,7 +297,7 @@ if (global.sworks_flag[39] < 1)
             break;
         
         case 30:
-            cutscene_sfx_play(572, 1);
+            cutscene_sfx_play(snd_sliding_door_open, 1);
             break;
         
         case 31:
@@ -319,15 +317,15 @@ if (global.sworks_flag[39] < 1)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Well uh... better get#  moving.";
-                prt[0] = 371;
+                prt[0] = spr_portrait_ceroba_alt;
             }
             
             break;
         
         case 34:
-            cutscene_npc_walk(1168, 160, 180, 3, "x", "down");
+            cutscene_npc_walk(obj_player_npc, 160, 180, 3, "x", "down");
             break;
         
         case 35:
@@ -339,7 +337,7 @@ if (global.sworks_flag[39] < 1)
             break;
         
         case 36:
-            cutscene_npc_walk(1161, 160, 180, 3, "x", "down");
+            cutscene_npc_walk(obj_ceroba_npc, 160, 180, 3, "x", "down");
             break;
         
         case 37:
@@ -352,8 +350,8 @@ if (global.sworks_flag[39] < 1)
         
         case 38:
             audio_stop_all();
-            global.party_member = 1171;
-            cutscene_change_room(202, 840, 280, 0.025);
+            global.party_member = obj_ceroba_follower;
+            cutscene_change_room(rm_steamworks_32, 840, 280, 0.025);
             global.sworks_flag[39] = 1;
             break;
     }
@@ -390,7 +388,7 @@ else
             break;
         
         case 2:
-            cutscene_npc_walk(1168, 176, 132, 3, "y", "down");
+            cutscene_npc_walk(obj_player_npc, 176, 132, 3, "y", "down");
             break;
         
         case 3:
@@ -414,7 +412,7 @@ else
             break;
         
         case 5:
-            if (cutscene_npc_walk(1161, 148, 133, 3, "y", "down"))
+            if (cutscene_npc_walk(obj_ceroba_npc, 148, 133, 3, "y", "down"))
                 scene = 6;
             
             break;
@@ -434,7 +432,7 @@ else
             if (door_closed_amount < 1)
                 door_closed_amount += 0.05;
             else
-                cutscene_sfx_play(13, 1);
+                cutscene_sfx_play(snd_elevator_door_shut, 1);
             
             break;
         
@@ -453,7 +451,7 @@ else
             break;
         
         case 11:
-            cutscene_sfx_play(271, 1);
+            cutscene_sfx_play(snd_elevator, 1);
             break;
         
         case 12:
@@ -472,7 +470,7 @@ else
             break;
         
         case 15:
-            cutscene_sfx_play(572, 1);
+            cutscene_sfx_play(snd_sliding_door_open, 1);
             break;
         
         case 16:
@@ -488,12 +486,12 @@ else
             break;
         
         case 18:
-            cutscene_npc_walk(1168, 160, 180, 3, "x", "down");
+            cutscene_npc_walk(obj_player_npc, 160, 180, 3, "x", "down");
             break;
         
         case 19:
             if (global.party_member != -4)
-                cutscene_npc_walk(1161, 160, 180, 3, "x", "down");
+                cutscene_npc_walk(obj_ceroba_npc, 160, 180, 3, "x", "down");
             else
                 cutscene_advance();
             
@@ -503,9 +501,9 @@ else
             audio_stop_all();
             
             if (global.last_room_overworld == "rm_steamworks_32")
-                cutscene_change_room(240, 120, 380, 0.1);
+                cutscene_change_room(rm_steamworks_factory_04, 120, 380, 0.1);
             else
-                cutscene_change_room(202, 840, 280, 0.1);
+                cutscene_change_room(rm_steamworks_32, 840, 280, 0.1);
             
             break;
     }

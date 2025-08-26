@@ -6,4 +6,4 @@ default_y = y;
 disjoint_x = 0;
 disjoint_y = 0;
 can_talk_no_loop = false;
-full_sprite = spr_wildeast_dina_face_shop;
+full_sprite = 1423;

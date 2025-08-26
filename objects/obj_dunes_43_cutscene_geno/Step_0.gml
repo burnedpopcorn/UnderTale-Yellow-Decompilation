@@ -16,7 +16,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_npc_walk(1168, 220, obj_player_npc.y, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 220, obj_player_npc.y, 3, "x", "up");
         break;
     
     case 2:
@@ -45,17 +45,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Howdy!";
             message[1] = "* Regular monsters are#  one thing but...";
             message[2] = "* That fox lady you just#  killed was a piece of#  work, huh?";
             message[3] = "* If you bested her,#  ASGORE doesn't stand a#  chance!";
             message[4] = "* Now...";
-            prt[0] = 348;
-            prt[1] = 348;
-            prt[2] = 347;
-            prt[3] = 348;
-            prt[4] = 347;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_nice;
+            prt[2] = flowey_niceside;
+            prt[3] = flowey_nice;
+            prt[4] = flowey_niceside;
         }
         
         break;
@@ -77,13 +77,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* ...";
             message[1] = "* I'm not too sure how to#  open this door.";
             message[2] = "* Hmm...";
-            prt[0] = 352;
-            prt[1] = 357;
-            prt[2] = 353;
+            prt[0] = flowey_plain;
+            prt[1] = flowey_worried;
+            prt[2] = flowey_plains;
             
             if (message_current == 1)
                 other.actor_flowey.npc_direction = "down";
@@ -101,7 +101,7 @@ switch (scene)
         break;
     
     case 13:
-        cutscene_npc_action_sprite(1168, 3313, 1, false);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pl_up_geno_shoot, 1, false);
         
         if (obj_player_npc.image_index >= 8 && !shoot_noloop)
         {
@@ -122,7 +122,7 @@ switch (scene)
         break;
     
     case 15:
-        cutscene_sfx_play(270, 2);
+        cutscene_sfx_play(snd_elevator_start, 2);
         cutscene_advance();
         break;
     
@@ -131,7 +131,7 @@ switch (scene)
         break;
     
     case 17:
-        cutscene_action_sprite(1958, 1105, 1/3, true, 0, 631, 0);
+        cutscene_action_sprite(obj_dunes_43_gate, spr_dunes_43_gate, 1/3, true, 0, snd_dunes_43_gate, 0);
         break;
     
     case 18:
@@ -147,13 +147,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* ...";
             message[1] = "* Uh, sure... That works.";
             message[2] = "* See you up ahead,#  Clover!";
-            prt[0] = 352;
-            prt[1] = 3640;
-            prt[2] = 347;
+            prt[0] = flowey_plain;
+            prt[1] = spr_flowey_meh;
+            prt[2] = flowey_niceside;
         }
         
         break;
@@ -185,7 +185,7 @@ switch (scene)
         {
             image_xscale = 3.5;
             image_yscale = 1.25;
-            nextroom = 141;
+            nextroom = rm_steamworks_01;
             xx = 160;
             yy = 520;
         }

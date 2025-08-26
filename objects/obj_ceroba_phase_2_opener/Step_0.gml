@@ -1,9 +1,7 @@
-var battle_box, mask, xtarget, ytarget;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
@@ -29,7 +27,7 @@ switch (scene)
         break;
     
     case 4:
-        mask = instance_create_depth(battle_box.bbox_right + 18, battle_box.bbox_top - 18, -100, obj_ceroba_attack_bullet_trail_mask);
+        var mask = instance_create_depth(battle_box.bbox_right + 18, battle_box.bbox_top - 18, -100, obj_ceroba_attack_bullet_trail_mask);
         mask.direction = 270;
         cutscene_advance();
         break;
@@ -39,7 +37,7 @@ switch (scene)
         break;
     
     case 6:
-        mask = instance_create_depth(battle_box.bbox_left - 18, battle_box.bbox_bottom + 18, -100, obj_ceroba_attack_bullet_trail_mask);
+        var mask = instance_create_depth(battle_box.bbox_left - 18, battle_box.bbox_bottom + 18, -100, obj_ceroba_attack_bullet_trail_mask);
         mask.direction = 90;
         cutscene_advance();
         break;
@@ -51,7 +49,7 @@ switch (scene)
         break;
     
     case 8:
-        mask = instance_create_depth(battle_box.bbox_right + 18, battle_box.bbox_bottom + 18, -100, obj_ceroba_attack_bullet_trail_mask);
+        var mask = instance_create_depth(battle_box.bbox_right + 18, battle_box.bbox_bottom + 18, -100, obj_ceroba_attack_bullet_trail_mask);
         mask.direction = 180;
         cutscene_advance();
         break;
@@ -61,7 +59,7 @@ switch (scene)
         break;
     
     case 10:
-        mask = instance_create_depth(battle_box.bbox_left - 18, battle_box.bbox_top - 18, -100, obj_ceroba_attack_bullet_trail_mask);
+        var mask = instance_create_depth(battle_box.bbox_left - 18, battle_box.bbox_top - 18, -100, obj_ceroba_attack_bullet_trail_mask);
         mask.direction = 0;
         cutscene_advance();
         break;
@@ -145,8 +143,8 @@ switch (scene)
     case 19:
         with (obj_heart_battle_fighting_parent)
         {
-            xtarget = battle_box.x;
-            ytarget = battle_box.bbox_bottom - 12;
+            var xtarget = battle_box.x;
+            var ytarget = battle_box.bbox_bottom - 12;
             x = lerp(x, xtarget, 0.3);
             vspeed = 10;
             
@@ -169,8 +167,8 @@ switch (scene)
     case 21:
         with (obj_heart_battle_fighting_parent)
         {
-            xtarget = battle_box.x;
-            ytarget = battle_box.y;
+            var xtarget = battle_box.x;
+            var ytarget = battle_box.y;
             x = lerp(x, xtarget, 0.15);
             y = lerp(y, ytarget, 0.15);
             

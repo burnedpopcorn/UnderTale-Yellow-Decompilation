@@ -17,7 +17,7 @@ switch (scene)
             y_offset = irandom_range(-2, 2);
         }
         
-        if (soul_can_shoot == true && keyboard_multicheck_pressed(0))
+        if (soul_can_shoot == true && keyboard_multicheck_pressed(vk_nokey))
         {
             hint_noloop = true;
             instance_create_depth(x + 0.5, y - 6, depth - 1, obj_heart_yellow_shot);

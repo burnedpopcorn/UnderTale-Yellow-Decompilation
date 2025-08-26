@@ -1,8 +1,6 @@
 function scr_enemy_timer_attacks_martlet_pacifist()
 {
-    var enemy_attack;
-    
-    enemy_attack = global.enemy_attack;
+    var enemy_attack = global.enemy_attack;
     
     if (global.last_text_move_select > -1 && enemy_attack != "Martlet Feather Finale")
     {

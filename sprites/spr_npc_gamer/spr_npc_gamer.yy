@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dafbdf0d-ff2e-4caf-b2b0-a15bfdd05b81",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e82f7ab2-8895-4bd3-ad8e-b0e3c7aa729b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"60909b1a-ca85-4540-8313-58cde56a07df",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"200f7fee-bacf-417f-87b1-e84f990d8f61",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 48,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a37edc42-9a2f-4135-a07d-5f2f33c85554","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a9514a5b-330a-489d-90e0-9fab843e63f7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dafbdf0d-ff2e-4caf-b2b0-a15bfdd05b81","path":"sprites/spr_npc_gamer/spr_npc_gamer.yy",},},},"Disabled":false,"id":"33b13773-9640-4789-9907-b4edf55e7ae4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e82f7ab2-8895-4bd3-ad8e-b0e3c7aa729b","path":"sprites/spr_npc_gamer/spr_npc_gamer.yy",},},},"Disabled":false,"id":"ec32131f-a228-4c99-bec9-355092ec24fc","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"60909b1a-ca85-4540-8313-58cde56a07df","path":"sprites/spr_npc_gamer/spr_npc_gamer.yy",},},},"Disabled":false,"id":"0888cb85-10e2-4386-85a1-d9d0921a7d8c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"200f7fee-bacf-417f-87b1-e84f990d8f61","path":"sprites/spr_npc_gamer/spr_npc_gamer.yy",},},},"Disabled":false,"id":"439b01fd-f1a6-4ed1-a540-6afd1b13e358","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "WildEast",
+    "path": "texturegroups/WildEast",
   },
   "type": 0,
   "VTile": false,

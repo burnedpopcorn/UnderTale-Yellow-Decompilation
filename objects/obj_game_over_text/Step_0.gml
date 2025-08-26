@@ -1,5 +1,3 @@
-var battle_enemy_name;
-
 if (fade_out == true)
 {
     if (image_alpha > 1)
@@ -15,7 +13,7 @@ if (fade_out == true)
     exit;
 }
 
-battle_enemy_name = global.battle_enemy_name;
+var battle_enemy_name = global.battle_enemy_name;
 script_execute(scr_controls_text);
 
 if (key_revert_pressed)

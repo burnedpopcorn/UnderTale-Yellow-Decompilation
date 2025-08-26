@@ -1,8 +1,6 @@
-var battle_box, card_width, card_height;
-
-battle_box = 3154;
-card_width = 41;
-card_height = 61;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var card_width = 41;
+var card_height = 61;
 
 with (instance_create(320, -card_height, obj_attack_ace_cards))
 {

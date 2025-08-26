@@ -1,5 +1,3 @@
-var bubble_type, bubble_x, bubble_y;
-
 script_execute(scr_controls_text);
 
 if (instance_exists(obj_quote_bubble_battle))
@@ -12,9 +10,9 @@ if (instance_exists(obj_quote_bubble_battle))
 
 if (is_array(enemy_talker))
 {
-    bubble_type = 2147;
-    bubble_x = 402;
-    bubble_y = 68;
+    var bubble_type = 2147;
+    var bubble_x = 402;
+    var bubble_y = 68;
     
     switch (enemy_talker[message_current])
     {

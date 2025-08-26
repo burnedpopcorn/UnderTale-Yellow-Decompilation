@@ -1,5 +1,3 @@
-var warning_x, warning_y, warning_vsp;
-
 damage_number = scr_determine_damage_number_enemy("martlet", "void", "void");
 
 if (!instance_exists(obj_martlet_body))
@@ -24,9 +22,9 @@ if (x > 320)
 }
 
 battle_box_bottom = obj_dialogue_box_battle_transformation_any.bbox_bottom - (sprite_get_height(sprite_index) - sprite_get_yoffset(sprite_index));
-warning_x = x;
-warning_y = y;
-warning_vsp = package_vsp;
+var warning_x = x;
+var warning_y = y;
+var warning_vsp = package_vsp;
 
 while (warning_y < battle_box_bottom)
 {

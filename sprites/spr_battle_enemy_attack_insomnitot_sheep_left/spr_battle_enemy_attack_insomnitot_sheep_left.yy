@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c9e94c2b-20e7-480f-a9b7-837cb4401eaf",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8e579dac-c06f-47c3-92aa-352c53a702b1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0ee8c3ca-72fe-4a74-bd88-95dc97d6a3ae",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3307bb9e-5ab7-4384-9391-163476cda5c4",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 13,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e9f40832-d0dd-45f5-8cbd-bd046a073b87","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b92935a9-b714-4ea3-8def-d4fe65b60912","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c9e94c2b-20e7-480f-a9b7-837cb4401eaf","path":"sprites/spr_battle_enemy_attack_insomnitot_sheep_left/spr_battle_enemy_attack_insomnitot_sheep_left.yy",},},},"Disabled":false,"id":"c7fadadc-ddca-4c08-a59f-907766456b88","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8e579dac-c06f-47c3-92aa-352c53a702b1","path":"sprites/spr_battle_enemy_attack_insomnitot_sheep_left/spr_battle_enemy_attack_insomnitot_sheep_left.yy",},},},"Disabled":false,"id":"bb5ce4f0-f57e-4541-bf90-77a6a478a37b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0ee8c3ca-72fe-4a74-bd88-95dc97d6a3ae","path":"sprites/spr_battle_enemy_attack_insomnitot_sheep_left/spr_battle_enemy_attack_insomnitot_sheep_left.yy",},},},"Disabled":false,"id":"ac4a0685-a8ce-4085-9255-f099299ffa06","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3307bb9e-5ab7-4384-9391-163476cda5c4","path":"sprites/spr_battle_enemy_attack_insomnitot_sheep_left/spr_battle_enemy_attack_insomnitot_sheep_left.yy",},},},"Disabled":false,"id":"25ce64b8-9ad7-492d-97ed-c2319bdb02ec","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Snowdin",
+    "path": "texturegroups/Snowdin",
   },
   "type": 0,
   "VTile": false,

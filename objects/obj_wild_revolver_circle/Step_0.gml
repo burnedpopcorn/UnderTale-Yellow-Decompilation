@@ -1,12 +1,11 @@
-var fight_number, enemy_sparing, enemy_vulnerable, current_hp_enemy, attacking_damage_stat_critical, enemy_target_x, enemy_target_y, shot_sound;
-
 if (live_call())
     return global.live_result;
 
 if (can_execute == false)
     exit;
 
-fight_number = global.fight_number;
+var fight_number = global.fight_number;
+var enemy_sparing, enemy_vulnerable, current_hp_enemy, attacking_damage_stat_critical, enemy_target_x, enemy_target_y;
 
 if (fight_number == 1)
 {
@@ -49,16 +48,18 @@ if (outline <= 0 && no_loop == false)
 
 if (key_select)
 {
+    var shot_sound;
+    
     if ((outline < small_circle && ((enemy_sparing == true && enemy_vulnerable == true) || (enemy_vulnerable == true && current_hp_enemy <= attacking_damage_stat_critical))) || outline <= (small_circle * 0.5))
     {
         shot_type = "strong";
-        hit_object = 2913;
+        hit_object = obj_shot_strong;
         shot_sound = audio_play_sound(snd_attackhitperfect, 1, 0);
     }
     else if (outline < small_circle && outline > (small_circle * 0.5))
     {
         shot_type = "medium";
-        hit_object = 2912;
+        hit_object = obj_shot_medium;
         shot_sound = audio_play_sound(snd_attackhit, 1, 0);
     }
     else

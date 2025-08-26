@@ -1,9 +1,7 @@
-var battle_box, spawner;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
@@ -50,7 +48,7 @@ switch (scene)
             
             if (other.spin_speed < 1)
             {
-                spawner = instance_create_depth(x, y, -100, obj_battle_enemy_attack_bullet_spawner);
+                var spawner = instance_create_depth(x, y, -100, obj_battle_enemy_attack_bullet_spawner);
                 spawner.sprite_index = spr_ceroba_attack_bullet_loop;
                 instance_destroy();
                 other.scene = 5;

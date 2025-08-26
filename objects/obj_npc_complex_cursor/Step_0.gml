@@ -1,7 +1,7 @@
 depth = -y;
 interact = 0;
 
-if (keyboard_multicheck_pressed(0) && scr_interact() == true)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true)
 {
     if (global.hotland_flag[1] > 0 && global.party_member != -4)
     {
@@ -9,11 +9,11 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* (We need to stay#  focused.)";
             message[1] = "* (Let's not bother#  others with our#  problems.)";
-            prt[0] = 321;
-            prt[1] = 329;
+            prt[0] = spr_martlet_head_moderate;
+            prt[1] = spr_martlet_head_sad;
         }
     }
     else

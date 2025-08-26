@@ -1,9 +1,7 @@
-var sin_speed;
-
 if (live_call())
     return global.live_result;
 
-sin_speed = 5;
+var sin_speed = 5;
 sin_deg += sin_speed;
 
 if (sin_deg > 360)

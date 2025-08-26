@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e2861d4b-3f1f-4b76-9596-cbfb9641cf94",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e27d9a98-71ed-4b15-a5f2-a61fe3352cf5",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"327d1f25-0230-40fc-8e27-d070022b2d12",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"93f85541-f84e-4d58-95eb-41f42e3227ae",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b126f10d-1a35-44d6-bac6-ee6f93b5e828",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7d92a96d-6990-4daa-bbfe-c3f310a48e4b",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 118,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fd135bf7-6b8a-48ad-9f4a-84df69011e59","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"be62e6a0-e4ca-4cc7-a634-6d456675abd8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e2861d4b-3f1f-4b76-9596-cbfb9641cf94","path":"sprites/spr_axis_body_charge/spr_axis_body_charge.yy",},},},"Disabled":false,"id":"9eac6121-5f4e-4d21-a9d2-d3c44e038e09","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e27d9a98-71ed-4b15-a5f2-a61fe3352cf5","path":"sprites/spr_axis_body_charge/spr_axis_body_charge.yy",},},},"Disabled":false,"id":"d78bcaf6-9ce9-45fa-82e5-2194acde332e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"327d1f25-0230-40fc-8e27-d070022b2d12","path":"sprites/spr_axis_body_charge/spr_axis_body_charge.yy",},},},"Disabled":false,"id":"1358b3b3-cb6a-4f02-9750-93b2263f2634","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"93f85541-f84e-4d58-95eb-41f42e3227ae","path":"sprites/spr_axis_body_charge/spr_axis_body_charge.yy",},},},"Disabled":false,"id":"0d889518-cf79-4de7-940a-b694ce21642d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b126f10d-1a35-44d6-bac6-ee6f93b5e828","path":"sprites/spr_axis_body_charge/spr_axis_body_charge.yy",},},},"Disabled":false,"id":"2af8d4e3-c058-4432-abee-1b4db7591891","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7d92a96d-6990-4daa-bbfe-c3f310a48e4b","path":"sprites/spr_axis_body_charge/spr_axis_body_charge.yy",},},},"Disabled":false,"id":"0ee11b11-7bcb-4e88-9465-d78f5c8260e9","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

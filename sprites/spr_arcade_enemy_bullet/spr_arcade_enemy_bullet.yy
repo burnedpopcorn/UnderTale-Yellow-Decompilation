@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eaf4a96a-a7fe-42e5-a6f4-512e95bae535",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1af17c19-a946-49fb-9c25-b3f6d98d9b6f",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e1b759d3-e9b9-4e01-9259-5bc48426e78d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"49bbf056-af38-4e17-95c8-efd908fa68d2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5e0c3fba-1d01-4f3e-a022-189006c0452a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1b550e0d-ef95-4f34-ac0b-b9c719fe483f",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 5,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7993f2ca-ba6c-41f0-a89b-d74ce6d7adb1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3ca5eb73-7465-43d7-a621-744e3a4c5f9d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"eaf4a96a-a7fe-42e5-a6f4-512e95bae535","path":"sprites/spr_arcade_enemy_bullet/spr_arcade_enemy_bullet.yy",},},},"Disabled":false,"id":"3ffc499e-0a51-4c19-a096-e6490d36ae9f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1af17c19-a946-49fb-9c25-b3f6d98d9b6f","path":"sprites/spr_arcade_enemy_bullet/spr_arcade_enemy_bullet.yy",},},},"Disabled":false,"id":"8457f8b9-5c63-4c05-8fe9-368b164e4bc6","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e1b759d3-e9b9-4e01-9259-5bc48426e78d","path":"sprites/spr_arcade_enemy_bullet/spr_arcade_enemy_bullet.yy",},},},"Disabled":false,"id":"c8c79581-c76c-4d04-be71-8a1454830f52","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"49bbf056-af38-4e17-95c8-efd908fa68d2","path":"sprites/spr_arcade_enemy_bullet/spr_arcade_enemy_bullet.yy",},},},"Disabled":false,"id":"da85a0e9-e747-4fbf-b51c-955035810692","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5e0c3fba-1d01-4f3e-a022-189006c0452a","path":"sprites/spr_arcade_enemy_bullet/spr_arcade_enemy_bullet.yy",},},},"Disabled":false,"id":"8ad007c4-82e0-4142-87bf-26b6dc05808a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1b550e0d-ef95-4f34-ac0b-b9c719fe483f","path":"sprites/spr_arcade_enemy_bullet/spr_arcade_enemy_bullet.yy",},},},"Disabled":false,"id":"e3f36ac2-8b47-4d53-9813-460b7db3d228","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Minigames",
+    "path": "texturegroups/Minigames",
   },
   "type": 0,
   "VTile": false,

@@ -1,9 +1,7 @@
-var x_distance;
-
 if (live_call())
     return global.live_result;
 
-if (keyboard_multicheck_pressed(0) && scr_interact() && scene == 0)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() && scene == 0)
 {
     if (global.party_member != -4)
     {
@@ -11,15 +9,15 @@ if (keyboard_multicheck_pressed(0) && scr_interact() && scene == 0)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Watch it, Clover!";
             message[1] = "* We don't want to alert#  any outsiders.";
             message[2] = "* Especially workers#  under Asgore like the#  UGPS.";
             message[3] = "* Your mail will have to#  wait.";
-            prt[0] = 377;
-            prt[1] = 370;
-            prt[2] = 377;
-            prt[3] = 370;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
+            prt[3] = spr_portrait_ceroba_neutral;
         }
     }
     else if (room == rm_steamworks_24 && global.route == 2 && global.sworks_flag[14] == 1 && global.sworks_flag[15] == 0)
@@ -29,7 +27,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() && scene == 0)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Watch it, Clover!";
             message[1] = "* We don't want to alert any#  outsiders.";
             message[2] = "* Especially workers under#  Asgore like the UGPS.";
@@ -92,7 +90,7 @@ switch (scene)
             exit;
         }
         
-        x_distance = 64;
+        var x_distance = 64;
         instance_create(obj_pl.x + x_distance, camera_get_view_y(view_camera[0]) - 40, obj_mail_whale);
         scene = 0;
         break;

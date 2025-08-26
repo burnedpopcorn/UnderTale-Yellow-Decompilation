@@ -40,11 +40,11 @@ for (i = 0; i <= 1; i++)
     time_increase[i] = 1;
 }
 
-sprite_card_club = spr_background_feisty_four_card_club_ed;
-sprite_card_diamond = spr_background_feisty_four_card_diamond_moray;
-sprite_card_heart = spr_background_feisty_four_card_heart_mooch;
-sprite_card_spade = spr_background_feisty_four_card_spade_ace;
-sprite_suit_club = spr_background_feisty_four_suit_club_ed;
-sprite_suit_diamond = spr_background_feisty_four_suit_diamond_moray;
-sprite_suit_heart = spr_background_feisty_four_suit_heart_mooch;
-sprite_suit_spade = spr_background_feisty_four_suit_spade_ace;
+sprite_card_club = 1649;
+sprite_card_diamond = 3785;
+sprite_card_heart = 199;
+sprite_card_spade = 2781;
+sprite_suit_club = 3167;
+sprite_suit_diamond = 3532;
+sprite_suit_heart = 3300;
+sprite_suit_spade = 8;

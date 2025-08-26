@@ -43,14 +43,14 @@ if (sprite_index == spr_swig_turn_overworld_yellow)
 
 if (global.snowdin_flag[8] == 5)
 {
-    if (keyboard_multicheck_pressed(0) && scr_interact())
+    if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
     {
         scr_text();
         
         with (msg)
         {
             portrait = false;
-            talker[0] = 1435;
+            talker[0] = obj_snowdin_13_swig;
             message[0] = "* Ya best be behavin' out there,#  kid.";
             message[1] = "* Do the Shufflers proud.";
             message[2] = "* If ya don't, you might wind up#  an old, discarded tea bag.";

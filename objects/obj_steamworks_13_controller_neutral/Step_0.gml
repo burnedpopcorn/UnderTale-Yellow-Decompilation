@@ -1,12 +1,10 @@
-var xbound_left, xbound_right, ybound_top, ybound_bottom;
-
 if (live_call())
     return global.live_result;
 
-xbound_left = 50;
-xbound_right = 180;
-ybound_top = 100;
-ybound_bottom = 190;
+var xbound_left = 50;
+var xbound_right = 180;
+var ybound_top = 100;
+var ybound_bottom = 190;
 
 switch (scene)
 {
@@ -113,7 +111,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Howdy!";
             message[1] = "* Glad I was able to catch#  ya in time!";
             message[2] = "* What is this, the third#  tumble you've survived#  on your journey?";
@@ -127,19 +125,19 @@ switch (scene)
             message[10] = "* I could just revive ya#  on the spot!";
             message[11] = "* No amount of gruesome#  deaths could stop ol'#  Clover!";
             message[12] = "* Ain't that neato?";
-            prt[0] = 348;
-            prt[1] = 3251;
-            prt[2] = 347;
-            prt[3] = 349;
-            prt[4] = 3251;
-            prt[5] = 348;
-            prt[6] = 353;
-            prt[7] = 347;
-            prt[8] = 357;
-            prt[9] = 349;
-            prt[10] = 348;
-            prt[11] = 3251;
-            prt[12] = 347;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_wink;
+            prt[2] = flowey_niceside;
+            prt[3] = flowey_smirk;
+            prt[4] = flowey_wink;
+            prt[5] = flowey_nice;
+            prt[6] = flowey_plains;
+            prt[7] = flowey_niceside;
+            prt[8] = flowey_worried;
+            prt[9] = flowey_smirk;
+            prt[10] = flowey_nice;
+            prt[11] = flowey_wink;
+            prt[12] = flowey_niceside;
         }
         
         break;

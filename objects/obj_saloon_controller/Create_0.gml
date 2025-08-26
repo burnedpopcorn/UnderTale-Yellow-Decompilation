@@ -1,5 +1,3 @@
-var ace, starlo, ceroba;
-
 if (global.route == 3)
 {
     instance_destroy(obj_npc_bartender);
@@ -41,12 +39,12 @@ switch (global.dunes_flag[20])
 if (global.route == 1 && global.sworks_flag[0] > 0 && global.dunes_flag[24] == 1 && global.sworks_flag[61] == 0)
 {
     instance_create_depth(201, 128, -128, obj_npc_moray_guitar);
-    ace = instance_create_depth(238, 164, -128, obj_npc_ace_backtrack);
+    var ace = instance_create_depth(238, 164, -128, obj_npc_ace_backtrack);
     ace.npc_direction = "up";
     instance_create_depth(140, 350, -128, obj_npc_mooch_backtrack);
     instance_create_depth(190, 200, -128, obj_npc_ed_backtrack);
-    starlo = instance_create_depth(187, 37, -128, obj_npc_starlo_backtrack);
-    ceroba = instance_create_depth(216, 37, -128, obj_npc_ceroba_backtrack);
+    var starlo = instance_create_depth(187, 37, -128, obj_npc_starlo_backtrack);
+    var ceroba = instance_create_depth(216, 37, -128, obj_npc_ceroba_backtrack);
 }
 else
 {

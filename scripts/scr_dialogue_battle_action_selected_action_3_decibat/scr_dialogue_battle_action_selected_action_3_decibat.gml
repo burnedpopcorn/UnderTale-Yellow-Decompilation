@@ -1,8 +1,6 @@
 function scr_dialogue_battle_action_selected_action_3_decibat()
 {
-    var action_3_selected_count;
-    
-    action_3_selected_count = global.action_3_selected_count;
+    var action_3_selected_count = global.action_3_selected_count;
     
     if (global.enemy_low_hp == true)
     {
@@ -25,7 +23,7 @@ function scr_dialogue_battle_action_selected_action_3_decibat()
     }
     else if (global.enemy_sparing == true)
     {
-        message[0] = "* You move towards Decibat#* He lands happily on your#  shoulder.";
+        message[0] = "* You move towards Decibat.#* He lands happily on your#  shoulder.";
         global.last_action_selected = "Action 3 Sparing";
         global.last_action_selected_2 = "Nothing";
         global.last_action_selected_3 = "Nothing";

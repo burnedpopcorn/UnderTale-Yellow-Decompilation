@@ -1,5 +1,3 @@
-var i;
-
 switch (global.enemy_count)
 {
     case 1:
@@ -44,7 +42,7 @@ switch (global.enemy_count)
 
 if (global.player_exp >= global.player_exp_next[global.player_level])
 {
-    for (i = global.player_level; i <= 20; i += 1)
+    for (var i = global.player_level; i <= 20; i += 1)
     {
         if (global.player_exp >= global.player_exp_next[i])
         {

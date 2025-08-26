@@ -1,5 +1,3 @@
-var cur_hour, cur_minute;
-
 event_inherited();
 
 if (interact)
@@ -14,7 +12,7 @@ if (can_talk == true)
     {
         dialogue_is_minishop = true;
         portrait = false;
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         
         if (other.npc_flag == 0)
         {
@@ -121,8 +119,8 @@ if (fortune == true)
         case 3:
             with (msg)
             {
-                cur_hour = current_hour;
-                cur_minute = current_minute + 2;
+                var cur_hour = current_hour;
+                var cur_minute = current_minute + 2;
                 
                 if (cur_minute >= 60)
                 {

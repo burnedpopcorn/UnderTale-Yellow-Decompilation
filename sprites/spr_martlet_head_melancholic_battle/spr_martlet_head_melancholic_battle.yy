@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cc44abfb-40a2-4db7-808a-d85a6028a575",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0493c07d-1583-4012-bd04-04153e8807e6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"48f949e4-988a-4372-94b2-8785e6431dec",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"91153559-ecb7-436c-899a-09586b558bda",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 68,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e12be882-ccb1-454a-bc6c-f256c1c75d00","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cc161abe-3def-45bb-8dce-bb6f50b791c5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cc44abfb-40a2-4db7-808a-d85a6028a575","path":"sprites/spr_martlet_head_melancholic_battle/spr_martlet_head_melancholic_battle.yy",},},},"Disabled":false,"id":"d10357bd-2ffc-4276-9d37-9794b4f91a03","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0493c07d-1583-4012-bd04-04153e8807e6","path":"sprites/spr_martlet_head_melancholic_battle/spr_martlet_head_melancholic_battle.yy",},},},"Disabled":false,"id":"5f545bcf-450b-4736-8066-6469d6dea031","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"48f949e4-988a-4372-94b2-8785e6431dec","path":"sprites/spr_martlet_head_melancholic_battle/spr_martlet_head_melancholic_battle.yy",},},},"Disabled":false,"id":"0373636f-e328-4385-afe2-eeaf99dae1f7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"91153559-ecb7-436c-899a-09586b558bda","path":"sprites/spr_martlet_head_melancholic_battle/spr_martlet_head_melancholic_battle.yy",},},},"Disabled":false,"id":"3d9b5172-aedc-4943-bb50-f807debde3e7","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "GeneralUse",
+    "path": "texturegroups/GeneralUse",
   },
   "type": 0,
   "VTile": false,

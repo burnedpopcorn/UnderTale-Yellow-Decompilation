@@ -1,19 +1,19 @@
-function cutscene_instance_position(argument0, argument1, argument2, argument3)
+function cutscene_instance_position(arg0, arg1, arg2, arg3)
 {
-    if (argument1 == "x")
+    if (arg1 == "x")
     {
-        if (argument2 == ">")
+        if (arg2 == ">")
         {
-            if (argument0.x >= argument3)
+            if (arg0.x >= arg3)
             {
                 cutscene_advance();
                 return true;
             }
         }
         
-        if (argument2 == "<")
+        if (arg2 == "<")
         {
-            if (argument0.x <= argument3)
+            if (arg0.x <= arg3)
             {
                 cutscene_advance();
                 return true;
@@ -21,20 +21,20 @@ function cutscene_instance_position(argument0, argument1, argument2, argument3)
         }
     }
     
-    if (argument1 == "y")
+    if (arg1 == "y")
     {
-        if (argument2 == ">")
+        if (arg2 == ">")
         {
-            if (argument0.y >= argument3)
+            if (arg0.y >= arg3)
             {
                 cutscene_advance();
                 return true;
             }
         }
         
-        if (argument2 == "<")
+        if (arg2 == "<")
         {
-            if (argument0.y <= argument3)
+            if (arg0.y <= arg3)
             {
                 cutscene_advance();
                 return true;

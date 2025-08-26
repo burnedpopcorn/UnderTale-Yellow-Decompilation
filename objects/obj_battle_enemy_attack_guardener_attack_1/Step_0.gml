@@ -1,6 +1,4 @@
-var box, arm;
-
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
@@ -23,7 +21,7 @@ switch (scene)
         break;
     
     case 4:
-        arm = instance_create_depth(box.bbox_left + 40, box.bbox_bottom + 5, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_arm_half);
+        var arm = instance_create_depth(box.bbox_left + 40, box.bbox_bottom + 5, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_arm_half);
         arm.launch_dir = "up";
         arm.image_angle = 180;
         cutscene_advance();

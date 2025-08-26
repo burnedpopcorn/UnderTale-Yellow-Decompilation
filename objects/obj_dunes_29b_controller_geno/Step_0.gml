@@ -19,7 +19,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* There you are!";
             position = 1;
             skippable = false;
@@ -28,7 +28,7 @@ switch (scene)
             {
                 other.scene++;
                 other.timer = 60;
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 portrait = false;
             }
         }
@@ -51,7 +51,7 @@ switch (scene)
         
         if (!instance_exists(obj_martlet_dunes_32))
         {
-            martlet = instance_create(__view_get(e__VW.XView, obj_quote_battle_ceroba_outro_4) + 320 + 40, obj_pl.y, obj_martlet_dunes_32);
+            martlet = instance_create(__view_get(e__VW.XView, 0) + 320 + 40, obj_pl.y, obj_martlet_dunes_32);
             martlet.actor_speed = 2;
         }
         
@@ -72,7 +72,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* I shouldn't have fled#  like I did...\t";
             message[1] = "* You kept going. Kept#  destroying lives.\t";
@@ -84,16 +84,16 @@ switch (scene)
             message[7] = "* But you don't have the#  context of those#  actions.\t";
             message[8] = "* I know... You want to#  believe the best of#  others.\t";
             message[9] = "* That the fallen humans#  were fully pacifistic#  and didn't initiate       ";
-            prt[0] = 315;
-            prt[1] = 317;
-            prt[2] = 329;
-            prt[3] = 309;
-            prt[4] = 309;
-            prt[5] = 309;
-            prt[6] = 329;
-            prt[7] = 309;
-            prt[8] = 317;
-            prt[9] = 317;
+            prt[0] = spr_martlet_head_disappointed;
+            prt[1] = spr_martlet_head_downer;
+            prt[2] = spr_martlet_head_sad;
+            prt[3] = spr_martlet_head_angry;
+            prt[4] = spr_martlet_head_angry;
+            prt[5] = spr_martlet_head_angry;
+            prt[6] = spr_martlet_head_sad;
+            prt[7] = spr_martlet_head_angry;
+            prt[8] = spr_martlet_head_downer;
+            prt[9] = spr_martlet_head_downer;
             position = 1;
             
             if (message_current == 9)
@@ -115,7 +115,7 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_npc_walk_relative(1168, 10, 0, 0.5, "x", "right");
+        cutscene_npc_walk_relative(obj_player_npc, 10, 0, 0.5, "x", "right");
         break;
     
     case 7:
@@ -124,7 +124,7 @@ switch (scene)
     
     case 8:
         obj_martlet_dunes_32.right_sprite = spr_martlet_left;
-        cutscene_npc_walk_relative(1763, 10, 0, 1, "x", "left");
+        cutscene_npc_walk_relative(obj_martlet_dunes_32, 10, 0, 1, "x", "left");
         break;
     
     case 9:
@@ -136,7 +136,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* T-The Royal Guard are#  searching for you, let#  me make that clear.";
             message[1] = "* You're lucky I'm the#  one who found you. So#  please listen!";
@@ -146,14 +146,14 @@ switch (scene)
             message[5] = "* Somehow, I still have#  hope you can turn it#  around.";
             message[6] = "* I can't apprehend you#  on my own, I already#  tried that...";
             message[7] = "* So please... stop this.#  Us monsters don't#  deserve      ";
-            prt[0] = 322;
-            prt[1] = 309;
-            prt[2] = 338;
-            prt[3] = 338;
-            prt[4] = 317;
-            prt[5] = 329;
-            prt[6] = 315;
-            prt[7] = 317;
+            prt[0] = spr_martlet_head_nervous;
+            prt[1] = spr_martlet_head_angry;
+            prt[2] = spr_martlet_head_wondering;
+            prt[3] = spr_martlet_head_wondering;
+            prt[4] = spr_martlet_head_downer;
+            prt[5] = spr_martlet_head_sad;
+            prt[6] = spr_martlet_head_disappointed;
+            prt[7] = spr_martlet_head_downer;
             position = 1;
             
             if (message_current == 7)
@@ -171,7 +171,7 @@ switch (scene)
         break;
     
     case 11:
-        cutscene_npc_action_sprite(1168, 3295, 1, false);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pl_right_geno_shoot, 1, false);
         
         if (obj_player_npc.image_index >= 5)
         {
@@ -188,7 +188,7 @@ switch (scene)
             exit;
         
         obj_martlet_dunes_32.right_sprite = spr_martlet_left;
-        cutscene_npc_walk_relative(1763, 10, 0, 1, "x", "left");
+        cutscene_npc_walk_relative(obj_martlet_dunes_32, 10, 0, 1, "x", "left");
         break;
     
     case 13:
@@ -200,10 +200,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* W-wait!";
-            prt[0] = 332;
+            prt[0] = spr_martlet_head_spook;
             position = 1;
         }
         
@@ -218,16 +218,16 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             talker[0] = other.martlet;
             message[0] = "* Just listen!\t";
             message[1] = "* I-I didn't want it to#  come to this but...\t";
             message[2] = "* I have to go.\t";
             message[3] = "* You won't get away with#  this, Clover.";
-            prt[0] = 309;
-            prt[1] = 309;
-            prt[2] = 309;
-            prt[3] = 309;
+            prt[0] = spr_martlet_head_angry;
+            prt[1] = spr_martlet_head_angry;
+            prt[2] = spr_martlet_head_angry;
+            prt[3] = spr_martlet_head_angry;
             position = 1;
         }
         

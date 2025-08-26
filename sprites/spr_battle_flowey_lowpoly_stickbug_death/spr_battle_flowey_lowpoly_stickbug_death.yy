@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ebec0b6c-162b-4c1d-8f73-802d3bd7e723",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2bc73425-0662-4f7c-9eaa-8c972d7f05c2",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 265,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"af9a58e1-3b24-4f93-a71b-f39764ad255b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"10b61760-2042-413e-b476-c84155c968c0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -53,8 +53,8 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ebec0b6c-162b-4c1d-8f73-802d3bd7e723","path":"sprites/spr_battle_flowey_lowpoly_stickbug_death/spr_battle_flowey_lowpoly_stickbug_death.yy",},},},"Disabled":false,"id":"732b8bb7-09b7-4457-b21d-e10c89b4cf4b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2bc73425-0662-4f7c-9eaa-8c972d7f05c2","path":"sprites/spr_battle_flowey_lowpoly_stickbug_death/spr_battle_flowey_lowpoly_stickbug_death.yy",},},},"Disabled":false,"id":"cb1eabbc-1ffd-4d0c-8257-d42cbfd013c7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleHotlandFloweyLowpoly",
+    "path": "texturegroups/BattleHotlandFloweyLowpoly",
   },
   "type": 0,
   "VTile": false,

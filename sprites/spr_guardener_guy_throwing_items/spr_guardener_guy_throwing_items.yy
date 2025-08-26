@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ee328185-b799-43b4-bca8-1d5f6792e8c6",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6f5b9f0f-40b1-4935-aca8-f255b3847e98",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3925d06b-ae5a-4b85-bf67-999eb1bda126",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"63d77f79-ab68-4df4-8af3-38587280cd0a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"65ffcc14-8d70-41a1-baf5-f2dce7116d05",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3b82fc4d-4a88-4801-905c-4cd17e67837e",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 41,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5fde9931-089c-4d14-936b-1030fba01c81","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ad998af1-1f82-4d4e-abe0-a72037d7586a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ee328185-b799-43b4-bca8-1d5f6792e8c6","path":"sprites/spr_guardener_guy_throwing_items/spr_guardener_guy_throwing_items.yy",},},},"Disabled":false,"id":"088c6a20-0636-49db-9711-17e73ddec1e3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6f5b9f0f-40b1-4935-aca8-f255b3847e98","path":"sprites/spr_guardener_guy_throwing_items/spr_guardener_guy_throwing_items.yy",},},},"Disabled":false,"id":"58faf003-3016-41ed-9a25-406b7bfef590","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3925d06b-ae5a-4b85-bf67-999eb1bda126","path":"sprites/spr_guardener_guy_throwing_items/spr_guardener_guy_throwing_items.yy",},},},"Disabled":false,"id":"f6361800-e35a-416e-81ab-693c8e0d8fcc","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"63d77f79-ab68-4df4-8af3-38587280cd0a","path":"sprites/spr_guardener_guy_throwing_items/spr_guardener_guy_throwing_items.yy",},},},"Disabled":false,"id":"4bceafef-d2f4-426b-9afc-19a764fbf3c3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"65ffcc14-8d70-41a1-baf5-f2dce7116d05","path":"sprites/spr_guardener_guy_throwing_items/spr_guardener_guy_throwing_items.yy",},},},"Disabled":false,"id":"5cbc9449-e92a-44d2-896b-7c55d249ec26","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3b82fc4d-4a88-4801-905c-4cd17e67837e","path":"sprites/spr_guardener_guy_throwing_items/spr_guardener_guy_throwing_items.yy",},},},"Disabled":false,"id":"1c8e1116-1929-4926-b1ce-06f6e6aec0f9","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

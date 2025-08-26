@@ -1,8 +1,6 @@
-var a, i;
+var a = layer_get_all_elements("Attack Layer");
 
-a = layer_get_all_elements("Attack Layer");
-
-for (i = 0; i < array_length(a); i++)
+for (var i = 0; i < array_length(a); i++)
 {
     if (layer_get_element_type(a[i]) == 8)
         layer_sequence_destroy(a[i]);

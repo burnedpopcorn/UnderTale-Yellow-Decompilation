@@ -10,7 +10,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* I was called over to break#  down this large boulder but...";
                 message[1] = "* Man, it looks real tiring.";
@@ -25,7 +25,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* As I said, this could take a#  while.";
                 message[1] = "* Just the journey to get here#  took all my energy.";

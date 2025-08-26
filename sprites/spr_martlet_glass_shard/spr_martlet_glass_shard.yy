@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0e57bcdb-26ce-46f1-98c0-76a3c9c339d4",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e9c27153-c71d-4610-8239-6fce75b47c2e",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"77b33d28-30ce-4fe0-adde-70c7adea1026",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e6322380-29d6-42c2-8738-675946d2a3cd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1fce7653-1368-4fc8-ab65-de6a6c930388",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f5277c22-1149-49e3-b460-b7f37dbbbc4d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 20,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9b364b21-b20a-4e7c-9127-93c1bfa7d976","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e8b19672-502b-4b09-aeb4-140be79fddb6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0e57bcdb-26ce-46f1-98c0-76a3c9c339d4","path":"sprites/spr_martlet_glass_shard/spr_martlet_glass_shard.yy",},},},"Disabled":false,"id":"ace4d6c0-8109-47fa-80b6-d46b21348665","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e9c27153-c71d-4610-8239-6fce75b47c2e","path":"sprites/spr_martlet_glass_shard/spr_martlet_glass_shard.yy",},},},"Disabled":false,"id":"968466dd-57f5-41b5-ac89-daf1ca404cda","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"77b33d28-30ce-4fe0-adde-70c7adea1026","path":"sprites/spr_martlet_glass_shard/spr_martlet_glass_shard.yy",},},},"Disabled":false,"id":"9559e41e-ab2a-4105-ba84-0d75442f908b","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e6322380-29d6-42c2-8738-675946d2a3cd","path":"sprites/spr_martlet_glass_shard/spr_martlet_glass_shard.yy",},},},"Disabled":false,"id":"319941cb-3678-4dce-88c0-b4b5cf89e4a6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1fce7653-1368-4fc8-ab65-de6a6c930388","path":"sprites/spr_martlet_glass_shard/spr_martlet_glass_shard.yy",},},},"Disabled":false,"id":"ee6877f2-1462-40c5-bb05-ca3c5ca1309c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f5277c22-1149-49e3-b460-b7f37dbbbc4d","path":"sprites/spr_martlet_glass_shard/spr_martlet_glass_shard.yy",},},},"Disabled":false,"id":"5c36f5e6-954e-4d59-a914-479a926aa94d","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleBase",
+    "path": "texturegroups/BattleBase",
   },
   "type": 0,
   "VTile": false,

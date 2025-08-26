@@ -10,7 +10,7 @@ if (interact)
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* Strange.";
             message[1] = "* That wasn't a handsome bridge#  last I looked.";
             message[2] = "* Was it always that way?";
@@ -26,7 +26,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Royal Guards. Thinking they're#  all special.";
                     message[1] = "* They don't have screening#  processes like they used to.";
                     message[2] = "* How do they interview these#  bozos?";
@@ -46,7 +46,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* You can't just hire anyone for#  a position like this.";
                     message[1] = "* What do they do? Advertise for#  free Royal Guard posts in the#  mail?";
                     message[2] = "* Despicable.";

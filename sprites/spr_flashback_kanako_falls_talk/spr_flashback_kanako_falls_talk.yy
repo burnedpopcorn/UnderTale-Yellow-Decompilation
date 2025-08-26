@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3cf16b9-e606-4de1-a398-1d172120a79a",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6211a20a-425b-4f60-b8cd-4ca3717241bf",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"35f85282-eab9-4860-9489-5658c33ba539",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0d5466be-b105-4fd5-8766-f77c90d81d81",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 59,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a6fe98ad-26ff-4447-9c31-910a7e765826","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"56b6c45e-0669-465f-80c5-2cc26cd980bf","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c3cf16b9-e606-4de1-a398-1d172120a79a","path":"sprites/spr_flashback_kanako_falls_talk/spr_flashback_kanako_falls_talk.yy",},},},"Disabled":false,"id":"9adba04e-9cad-49f7-92e5-01ebcfd9cd7d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6211a20a-425b-4f60-b8cd-4ca3717241bf","path":"sprites/spr_flashback_kanako_falls_talk/spr_flashback_kanako_falls_talk.yy",},},},"Disabled":false,"id":"62ea0485-a266-423c-afef-dce64d0a83ba","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"35f85282-eab9-4860-9489-5658c33ba539","path":"sprites/spr_flashback_kanako_falls_talk/spr_flashback_kanako_falls_talk.yy",},},},"Disabled":false,"id":"085d77a5-ff83-4548-adc1-2d5e5397e546","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0d5466be-b105-4fd5-8766-f77c90d81d81","path":"sprites/spr_flashback_kanako_falls_talk/spr_flashback_kanako_falls_talk.yy",},},},"Disabled":false,"id":"34d99f35-9930-4cee-90d1-c9c11e4244d1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "newhome",
+    "path": "texturegroups/newhome",
   },
   "type": 0,
   "VTile": false,

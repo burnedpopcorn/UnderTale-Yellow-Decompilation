@@ -23,7 +23,7 @@ else
     if (global.route == 1 && global.sworks_flag[0] > 0)
         exit;
     
-    if (scr_interact() && keyboard_multicheck_pressed(0) && crowd_animate_interact_noloop == false)
+    if (scr_interact() && keyboard_multicheck_pressed(vk_nokey) && crowd_animate_interact_noloop == false)
     {
         scr_text();
         

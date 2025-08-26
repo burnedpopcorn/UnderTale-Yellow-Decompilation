@@ -1,5 +1,3 @@
-var audio_pos;
-
 if (live_call())
     return global.live_result;
 
@@ -21,9 +19,9 @@ switch (scene)
     
     case 2:
         if (global.party_member == -4)
-            cutscene_npc_walk(1168, 160, 140, 3, "y", "down");
+            cutscene_npc_walk(obj_player_npc, 160, 140, 3, "y", "down");
         else
-            cutscene_npc_walk(1168, 180, 140, 3, "y", "down");
+            cutscene_npc_walk(obj_player_npc, 180, 140, 3, "y", "down");
         
         break;
     
@@ -48,7 +46,7 @@ switch (scene)
         break;
     
     case 5:
-        if (cutscene_npc_walk(1164, 140, 140, 3, "y", "down"))
+        if (cutscene_npc_walk(obj_martlet_npc, 140, 140, 3, "y", "down"))
             scene = 6;
         
         break;
@@ -76,7 +74,7 @@ switch (scene)
         if (door_closed_amount < 1)
             door_closed_amount += 0.05;
         else
-            cutscene_sfx_play(13, 1);
+            cutscene_sfx_play(snd_elevator_door_shut, 1);
         
         break;
     
@@ -94,7 +92,7 @@ switch (scene)
         break;
     
     case 14:
-        audio_pos = audio_sound_get_track_position(elevator_sound);
+        var audio_pos = audio_sound_get_track_position(elevator_sound);
         
         if (audio_pos > 6 && audio_pos < 12)
             audio_sound_set_track_position(elevator_sound, 12);
@@ -105,7 +103,7 @@ switch (scene)
         break;
     
     case 15:
-        cutscene_sfx_play(572, 1);
+        cutscene_sfx_play(snd_sliding_door_open, 1);
         break;
     
     case 16:
@@ -121,12 +119,12 @@ switch (scene)
         break;
     
     case 18:
-        cutscene_npc_walk(1168, 160, 220, 3, "x", "down");
+        cutscene_npc_walk(obj_player_npc, 160, 220, 3, "x", "down");
         break;
     
     case 19:
         if (global.party_member != -4)
-            cutscene_npc_walk(1164, 160, 220, 3, "x", "down");
+            cutscene_npc_walk(obj_martlet_npc, 160, 220, 3, "x", "down");
         else
             cutscene_advance();
         
@@ -134,13 +132,13 @@ switch (scene)
     
     case 20:
         if (global.last_room_overworld == "rm_hotland_complex_1")
-            cutscene_change_room(253, 456, 120, 0.1);
+            cutscene_change_room(rm_newhome_01, 456, 120, 0.1);
         else if (global.last_room_overworld == "rm_newhome_01")
-            cutscene_change_room(217, 380, 220, 0.1);
+            cutscene_change_room(rm_hotland_complex_1, 380, 220, 0.1);
         else if (global.last_room_overworld == "rm_newhome_02b")
-            cutscene_change_room(263, 2000, 138, 0.1);
+            cutscene_change_room(rm_castle_01, 2000, 138, 0.1);
         else if (global.last_room_overworld == "rm_castle_01")
-            cutscene_change_room(257, 260, 100, 0.1);
+            cutscene_change_room(rm_newhome_02b, 260, 100, 0.1);
         
         break;
 }

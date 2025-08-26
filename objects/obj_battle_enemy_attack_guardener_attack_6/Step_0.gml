@@ -1,9 +1,7 @@
-var box, adv, x_target, lerp_amount_new, current_ball, max_shards, shard_spread, i, shard;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
@@ -21,11 +19,11 @@ switch (scene)
     
     case 1:
     case 3:
-        adv = 2;
+        var adv = 2;
         
         with (obj_guardener_guy_a_flintlock)
         {
-            x_target = box.bbox_right + 80;
+            var x_target = box.bbox_right + 80;
             x = lerp(x, x_target, 0.2);
             y = lerp(y, box.y, 0.2);
             
@@ -35,7 +33,7 @@ switch (scene)
         
         with (obj_guardener_guy_b_shield)
         {
-            x_target = box.bbox_left - 40;
+            var x_target = box.bbox_left - 40;
             x = lerp(x, x_target, 0.2);
             y = lerp(y, box.y, 0.2);
             
@@ -49,7 +47,7 @@ switch (scene)
         break;
     
     case 2:
-        lerp_amount_new = 0.1;
+        var lerp_amount_new = 0.1;
         
         if (obj_guardener_guy_a_flintlock.sprite_index != spr_guardener_guy_b_flintlock_shoot)
         {
@@ -89,11 +87,11 @@ switch (scene)
         break;
     
     case 5:
-        adv = 2;
+        var adv = 2;
         
         with (obj_guardener_guy_a_flintlock)
         {
-            x_target = 720;
+            var x_target = 720;
             x = lerp(x, x_target, 0.2);
             
             if (x > (x_target - 40))
@@ -102,7 +100,7 @@ switch (scene)
         
         with (obj_guardener_guy_b_shield)
         {
-            x_target = -40;
+            var x_target = -40;
             x = lerp(x, x_target, 0.2);
             
             if (x < (x_target + 20))
@@ -123,7 +121,7 @@ switch (scene)
 
 if (instance_exists(obj_guardener_guy_b_shield))
 {
-    current_ball = instance_find(obj_battle_enemy_attack_guardener_bullet, 0);
+    var current_ball = instance_find(obj_battle_enemy_attack_guardener_bullet, 0);
     
     if (instance_exists(obj_battle_enemy_attack_guardener_bullet))
         obj_guardener_guy_b_shield.y = lerp(obj_guardener_guy_b_shield.y, current_ball.y + 20, 0.4);
@@ -152,12 +150,12 @@ with (obj_battle_enemy_attack_guardener_bullet)
 {
     if (x < (obj_guardener_guy_b_shield.x + 40))
     {
-        max_shards = 3;
-        shard_spread = 45;
+        var max_shards = 3;
+        var shard_spread = 45;
         
-        for (i = 0; i < max_shards; i++)
+        for (var i = 0; i < max_shards; i++)
         {
-            shard = instance_create_depth(x, y, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_bullet_shard);
+            var shard = instance_create_depth(x, y, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_bullet_shard);
             shard.speed = 4;
             shard.direction = -45 + (i * shard_spread);
         }

@@ -1,6 +1,6 @@
-function scr_item_stats_story(argument0)
+function scr_item_stats_story(arg0)
 {
-    switch (argument0)
+    switch (arg0)
     {
         case "Missing Poster":
             return 0;

@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 21.102688,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/computer_ambience.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "computer_ambience.ogg",
+  "type": 1,
   "volume": 1.0,
 }

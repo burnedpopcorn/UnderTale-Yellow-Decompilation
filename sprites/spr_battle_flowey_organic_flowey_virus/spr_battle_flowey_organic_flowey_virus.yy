@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"76632fd2-6263-462f-8edb-56ab8bdb1d02",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9d9d70a8-8c52-482e-96e0-317bc1fd1b4c",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 95,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a5327dae-b3d8-434f-8ca1-2a42244b8842","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e32e854d-0356-4a4d-a869-95f06e423444","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -53,8 +53,8 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"76632fd2-6263-462f-8edb-56ab8bdb1d02","path":"sprites/spr_battle_flowey_organic_flowey_virus/spr_battle_flowey_organic_flowey_virus.yy",},},},"Disabled":false,"id":"84ea3da4-eff0-4fed-ac78-3d364bd88dce","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9d9d70a8-8c52-482e-96e0-317bc1fd1b4c","path":"sprites/spr_battle_flowey_organic_flowey_virus/spr_battle_flowey_organic_flowey_virus.yy",},},},"Disabled":false,"id":"771805cb-5f8e-4dbc-a9f8-11241737cfc8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleHotlandFloweyOrganic",
+    "path": "texturegroups/BattleHotlandFloweyOrganic",
   },
   "type": 0,
   "VTile": false,

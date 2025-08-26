@@ -1,6 +1,4 @@
-var _color_current;
-
-_color_current = make_color_rgb(255, color_number_current, color_number_current);
+var _color_current = make_color_rgb(255, color_number_current, color_number_current);
 
 if (instance_exists(obj_dialogue_box_battle_transformation_any))
 {

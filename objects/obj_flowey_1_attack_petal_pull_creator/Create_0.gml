@@ -1,9 +1,7 @@
-var box;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 scene = 0;
 cutscene_timer = 0;
 alpha_base = 0;

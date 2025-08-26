@@ -1,11 +1,9 @@
-function joystick_direction(argument0)
+function joystick_direction(arg0)
 {
-    var jid, haxis, vaxis, dir;
-    
-    jid = __joystick_2_gamepad(argument0);
-    haxis = gamepad_axis_value(jid, gp_axislh);
-    vaxis = gamepad_axis_value(jid, gp_axislv);
-    dir = 0;
+    var jid = __joystick_2_gamepad(arg0);
+    var haxis = gamepad_axis_value(jid, gp_axislh);
+    var vaxis = gamepad_axis_value(jid, gp_axislv);
+    var dir = 0;
     
     if (vaxis < -0.3)
         dir = 6;

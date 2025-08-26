@@ -1,5 +1,3 @@
-var sin_value;
-
 if (live_call())
     return global.live_result;
 
@@ -15,7 +13,7 @@ if (sin_degree > 180 && stage == 1)
 if (sin_degree >= 90 && stage == 2)
     stage = 3;
 
-sin_value = degtorad(sin_degree);
+var sin_value = degtorad(sin_degree);
 draw_alpha = 0.4 - (sin(sin_value) * 0.4);
 
 if (box_stage == 0)

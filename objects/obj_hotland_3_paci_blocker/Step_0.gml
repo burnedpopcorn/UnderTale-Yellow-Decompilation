@@ -1,9 +1,7 @@
-var door;
-
 if (live_call())
     return global.live_result;
 
-door = instance_place(x, y, obj_doorway);
+var door = instance_place(x, y, obj_doorway);
 
 if (door != -4)
     instance_destroy(door);

@@ -1,49 +1,47 @@
-function tile_layer_find(argument0, argument1, argument2)
+function tile_layer_find(arg0, arg1, arg2)
 {
-    var __depth, __x, __y, __layers, __numlayers, __i, __els, __numels, __j, __eltype, __tileXscale, __tileYscale, __tileX, __tileY, __tileReg, __tileRight, __tileBottom, __minx, __maxx, __temp, __miny, __maxy;
+    var __depth = arg0;
+    var __x = arg1;
+    var __y = arg2;
+    var __layers = layer_get_all();
+    var __numlayers = array_length_1d(__layers);
     
-    __depth = argument0;
-    __x = argument1;
-    __y = argument2;
-    __layers = layer_get_all();
-    __numlayers = array_length_1d(__layers);
-    
-    for (__i = 0; __i < __numlayers; __i++)
+    for (var __i = 0; __i < __numlayers; __i++)
     {
         if (layer_get_depth(__layers[__i]) != __depth)
             continue;
         
-        __els = layer_get_all_elements(__layers[__i]);
-        __numels = array_length_1d(__els);
+        var __els = layer_get_all_elements(__layers[__i]);
+        var __numels = array_length_1d(__els);
         
-        for (__j = 0; __j < __numels; __j++)
+        for (var __j = 0; __j < __numels; __j++)
         {
-            __eltype = layer_get_element_type(__els[__j]);
+            var __eltype = layer_get_element_type(__els[__j]);
             
             if (__eltype == 7)
             {
-                __tileXscale = layer_tile_get_xscale(__els[__j]);
-                __tileYscale = layer_tile_get_yscale(__els[__j]);
+                var __tileXscale = layer_tile_get_xscale(__els[__j]);
+                var __tileYscale = layer_tile_get_yscale(__els[__j]);
                 
                 if (__tileXscale >= 0 && __tileYscale >= 0)
                 {
-                    __tileX = layer_tile_get_x(__els[__j]);
+                    var __tileX = layer_tile_get_x(__els[__j]);
                     
                     if (__x < __tileX)
                         continue;
                     
-                    __tileY = layer_tile_get_y(__els[__j]);
+                    var __tileY = layer_tile_get_y(__els[__j]);
                     
                     if (__y < __tileY)
                         continue;
                     
-                    __tileReg = layer_tile_get_region(__els[__j]);
-                    __tileRight = __tileX + (__tileXscale * __tileReg[2]);
+                    var __tileReg = layer_tile_get_region(__els[__j]);
+                    var __tileRight = __tileX + (__tileXscale * __tileReg[2]);
                     
                     if (__x >= __tileRight)
                         continue;
                     
-                    __tileBottom = __tileY + (__tileYscale * __tileReg[3]);
+                    var __tileBottom = __tileY + (__tileYscale * __tileReg[3]);
                     
                     if (__y >= __tileBottom)
                         continue;
@@ -52,13 +50,13 @@ function tile_layer_find(argument0, argument1, argument2)
                 }
                 else
                 {
-                    __tileReg = layer_tile_get_region(__els[__j]);
-                    __minx = layer_tile_get_x(__els[__j]);
-                    __maxx = __minx + (__tileXscale * __tileReg[2]);
+                    var __tileReg = layer_tile_get_region(__els[__j]);
+                    var __minx = layer_tile_get_x(__els[__j]);
+                    var __maxx = __minx + (__tileXscale * __tileReg[2]);
                     
                     if (__minx > __maxx)
                     {
-                        __temp = __minx;
+                        var __temp = __minx;
                         __minx = __maxx;
                         __maxx = __temp;
                     }
@@ -71,12 +69,12 @@ function tile_layer_find(argument0, argument1, argument2)
                     }
                     else
                     {
-                        __miny = layer_tile_get_y(__els[__j]);
-                        __maxy = __miny + (__tileYscale * __tileReg[3]);
+                        var __miny = layer_tile_get_y(__els[__j]);
+                        var __maxy = __miny + (__tileYscale * __tileReg[3]);
                         
                         if (__miny > __maxy)
                         {
-                            __temp = __miny;
+                            var __temp = __miny;
                             __miny = __maxy;
                             __maxy = __temp;
                         }

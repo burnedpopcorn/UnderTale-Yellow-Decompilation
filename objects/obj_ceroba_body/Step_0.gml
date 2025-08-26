@@ -1,6 +1,4 @@
-var low_hp_state, anim_loop_time_half, anim_inc_current;
-
-low_hp_state = global.current_hp_enemy < (global.max_hp_enemy * 0.3);
+var low_hp_state = global.current_hp_enemy < (global.max_hp_enemy * 0.3);
 
 if (death_sprite == true && sprite_index != spr_ceroba_murder_death)
 {
@@ -20,8 +18,8 @@ if (global.enemy_dead == true)
 if (sprite_index == spr_ceroba_murder_death)
     exit;
 
-anim_loop_time_half = anim_loop_time / 2;
-anim_inc_current = ((anim_stretch_max - 1) / anim_loop_time_half) * anim_inc_multiplier;
+var anim_loop_time_half = anim_loop_time / 2;
+var anim_inc_current = ((anim_stretch_max - 1) / anim_loop_time_half) * anim_inc_multiplier;
 
 if (anim_stage == 1)
 {

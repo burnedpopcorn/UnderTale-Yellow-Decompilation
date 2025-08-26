@@ -6,7 +6,7 @@ if (global.dunes_flag[35] >= 1)
     {
         image_xscale = 3.5;
         image_yscale = 1.25;
-        nextroom = 141;
+        nextroom = rm_steamworks_01;
         xx = 160;
         yy = 520;
     }

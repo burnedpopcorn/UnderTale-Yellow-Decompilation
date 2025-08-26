@@ -1,7 +1,5 @@
-var battle_enemy_name, game_mode, act_number;
-
-battle_enemy_name = global.battle_enemy_name;
-game_mode = global.game_mode;
+var battle_enemy_name = global.battle_enemy_name;
+var game_mode = global.game_mode;
 script_execute(scr_controls_text);
 
 if (key_revert_pressed)
@@ -43,7 +41,7 @@ else
             }
             else if (game_mode == "yellow")
             {
-                act_number = global.act_number;
+                var act_number = global.act_number;
                 
                 switch (act_number)
                 {

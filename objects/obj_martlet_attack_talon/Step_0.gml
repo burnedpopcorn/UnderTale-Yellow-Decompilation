@@ -1,5 +1,3 @@
-var lerp_speed, xx;
-
 if (live_call())
     return global.live_result;
 
@@ -21,7 +19,7 @@ switch (scene)
 
 if (can_move == true)
 {
-    lerp_speed = 0.25;
+    var lerp_speed = 0.25;
     
     if (image_speed != 0)
     {
@@ -29,7 +27,7 @@ if (can_move == true)
         lerp_speed = 0.75;
     }
     
-    xx = (obj_heart_battle_fighting_parent.x - x_diff) + x_offset;
+    var xx = (obj_heart_battle_fighting_parent.x - x_diff) + x_offset;
     x = lerp(x + irandom_range(-2, 2), xx, lerp_speed);
     y = lerp(y + irandom_range(-2, 2), obj_heart_battle_fighting_parent.y - y_diff, 0.25);
 }

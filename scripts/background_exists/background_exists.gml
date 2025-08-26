@@ -1,4 +1,4 @@
-function background_exists(argument0)
+function background_exists(arg0)
 {
-    return sprite_exists(argument0);
+    return sprite_exists(arg0);
 }

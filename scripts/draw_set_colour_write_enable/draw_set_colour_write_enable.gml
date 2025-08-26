@@ -1,4 +1,4 @@
-function draw_set_colour_write_enable(argument0, argument1, argument2, argument3)
+function draw_set_colour_write_enable(arg0, arg1, arg2, arg3)
 {
-    gpu_set_colorwriteenable(argument0, argument1, argument2, argument3);
+    gpu_set_colorwriteenable(arg0, arg1, arg2, arg3);
 }

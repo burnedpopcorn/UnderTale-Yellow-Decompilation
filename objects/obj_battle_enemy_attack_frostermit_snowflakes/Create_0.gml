@@ -1,5 +1,3 @@
-var random_number;
-
 damage_number = scr_determine_damage_number_enemy("frostermit a", "frostermit b", "frostermit c");
 fall_speed = irandom_range(1, 3);
 x_point = x;
@@ -14,7 +12,7 @@ starting_position_y = y;
 animation_disjoint_x = 0;
 animation_disjoint_y = 0;
 can_move = false;
-random_number = irandom_range(1, 8);
+var random_number = irandom_range(1, 8);
 
 switch (random_number)
 {

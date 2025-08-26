@@ -35,7 +35,7 @@ switch (scene)
                 audio_play_sound(snd_mainmenu_select, 1, 0);
             }
             
-            if (keyboard_multicheck_pressed(0) == true)
+            if (keyboard_multicheck_pressed(vk_nokey) == true)
             {
                 audio_play_sound(snd_confirm, 1, 0);
                 

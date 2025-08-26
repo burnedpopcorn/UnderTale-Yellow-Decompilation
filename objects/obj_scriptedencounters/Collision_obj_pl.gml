@@ -1,9 +1,7 @@
-var i;
-
 instance_create(obj_pl.x - 4, obj_pl.y - 26, obj_exclamation_mark);
 global.battle_enemy_name = enc_name[0];
 
-for (i = 0; i < array_length_1d(enc_name); i++)
+for (var i = 0; i < array_length_1d(enc_name); i++)
     ds_list_add(global.encounter_list, enc_name[i]);
 
 global.current_room_overworld = room_get_name(room);

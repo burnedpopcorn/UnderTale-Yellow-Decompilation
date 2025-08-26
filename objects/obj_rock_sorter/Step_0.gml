@@ -10,5 +10,5 @@ if (obj_pl.x > 690 && obj_pl.y > 260)
 }
 else if (audio_is_playing(snd_machinery))
 {
-    scr_audio_fade_out(257, 300);
+    scr_audio_fade_out(snd_machinery, 300);
 }

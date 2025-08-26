@@ -1,9 +1,7 @@
-var game_mode, shop_name, sell_count, message_alt_length;
-
 depth = -room_height - 164;
-game_mode = global.game_mode;
-shop_name = global.shop_name;
-sell_count = global.sell_count;
+var game_mode = global.game_mode;
+var shop_name = global.shop_name;
+var sell_count = global.sell_count;
 
 if (game_mode == "customs")
 {
@@ -62,7 +60,7 @@ else if (game_mode == "yellow")
             message[1] = "* My dad would ground me if I#  bought items off strangers.";
             message[2] = "* That's what he always told me.";
             message[3] = "* \"Don't buy items off strangers.\"";
-            message[4] = "* Heh heh...";
+            message[4] = "* Heh heh... heh...";
             portrait[0] = 1406;
             portrait[1] = 1407;
             portrait[2] = 1402;
@@ -217,7 +215,7 @@ message_draw_alt = "";
 
 if (shop_name == "Hotel Shop")
 {
-    message_alt_length = string_length(message_alt[message_current]);
+    var message_alt_length = string_length(message_alt[message_current]);
     
     if (message_alt_length > message_length)
         message_length = message_alt_length;

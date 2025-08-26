@@ -21,7 +21,7 @@ if (event_fade_out == true)
     exit;
 }
 
-if (keyboard_multicheck_pressed(0) || keyboard_multicheck_pressed(1))
+if (keyboard_multicheck_pressed(vk_nokey) || keyboard_multicheck_pressed(vk_anykey))
 {
     if (!event_fade_out && !event_fade_in)
     {

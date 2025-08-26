@@ -1,7 +1,7 @@
-var wave;
-
 if (live_call())
     return global.live_result;
+
+var wave;
 
 switch (orange_wave_last)
 {

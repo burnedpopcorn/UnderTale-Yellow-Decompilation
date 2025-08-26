@@ -10,4 +10,4 @@ x_list = ds_list_create();
 y_list = ds_list_create();
 in_box_list = ds_list_create();
 max_points_trail = 10;
-trail_sprite = spr_battle_enemy_attack_insomnitot_star_trail;
+trail_sprite = 2265;

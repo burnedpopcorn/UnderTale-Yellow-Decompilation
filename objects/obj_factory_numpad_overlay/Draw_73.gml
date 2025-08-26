@@ -1,9 +1,7 @@
-var number_alpha;
-
 if (live_call())
     return global.live_result;
 
-number_alpha = 0;
+var number_alpha = 0;
 
 if (instance_exists(obj_factory_03_numpad_number))
     number_alpha = obj_factory_03_numpad_number.image_alpha;

@@ -1,7 +1,5 @@
-var xp, yp;
-
-xp = x;
-yp = y;
+var xp = x;
+var yp = y;
 part_emitter_region(global.ps, global.pe_Effect2, xp - 1, xp + 1, yp - 1, yp + 1, 0, 0);
 part_emitter_burst(global.ps, global.pe_Effect2, global.pt_Effect2, 1);
 part_emitter_region(global.ps, global.pe_glass_particles, xp - 30, xp + 30, yp - 30, yp + 30, 2, 2);

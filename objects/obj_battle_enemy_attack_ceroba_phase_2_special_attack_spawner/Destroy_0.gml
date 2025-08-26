@@ -1,5 +1,3 @@
-var a, i;
-
 if (live_call())
     return global.live_result;
 
@@ -7,9 +5,9 @@ instance_destroy(obj_ceroba_special_attack_fireball);
 instance_destroy(obj_ceroba_special_attack_fireball_spawner_line);
 instance_destroy(obj_ceroba_transform_particles);
 instance_destroy(obj_ceroba_attack_fire_pillar_top_special);
-a = layer_get_all_elements("Attack Layer");
+var a = layer_get_all_elements("Attack Layer");
 
-for (i = 0; i < array_length(a); i++)
+for (var i = 0; i < array_length(a); i++)
 {
     if (layer_get_element_type(a[i]) == 8)
         layer_sequence_destroy(a[i]);

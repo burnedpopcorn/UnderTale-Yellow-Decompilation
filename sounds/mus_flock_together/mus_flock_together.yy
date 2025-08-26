@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 92.036,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/flock_together.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "flock_together.ogg",
+  "type": 1,
   "volume": 1.0,
 }

@@ -1,7 +1,5 @@
-var xx, xx2;
-
-xx = 890;
-xx2 = 1026;
+var xx = 890;
+var xx2 = 1026;
 
 if (room == rm_dunes_12b)
 {

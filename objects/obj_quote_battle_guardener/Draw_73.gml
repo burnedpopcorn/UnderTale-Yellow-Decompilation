@@ -1,5 +1,3 @@
-var x_offset;
-
 if (draw_enabled == false)
     exit;
 
@@ -11,7 +9,7 @@ if (global.enemy_sparing && message_current == 2)
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-x_offset = 21;
+var x_offset = 21;
 
 if (enemy_talker != 0 && enemy_talker[message_current] != 0)
     x_offset = 7;

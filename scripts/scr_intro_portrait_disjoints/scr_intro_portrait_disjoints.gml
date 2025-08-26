@@ -1,8 +1,6 @@
 function scr_intro_portrait_disjoints()
 {
-    var game_mode;
-    
-    game_mode = global.game_mode;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {

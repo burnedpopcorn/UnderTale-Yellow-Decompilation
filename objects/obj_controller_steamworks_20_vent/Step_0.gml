@@ -1,7 +1,7 @@
 switch (scene)
 {
     case 1:
-        cutscene_sfx_play(316, 1);
+        cutscene_sfx_play(snd_footstep1, 1);
         break;
     
     case 2:
@@ -9,7 +9,7 @@ switch (scene)
         break;
     
     case 3:
-        cutscene_sfx_play(317, 1);
+        cutscene_sfx_play(snd_footstep2, 1);
         break;
     
     case 4:
@@ -31,7 +31,7 @@ switch (scene)
         break;
     
     case 7:
-        cutscene_sfx_play(320, 1);
+        cutscene_sfx_play(snd_steamworks_13_vent, 1);
         break;
     
     case 8:

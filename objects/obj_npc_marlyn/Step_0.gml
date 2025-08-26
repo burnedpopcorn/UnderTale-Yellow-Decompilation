@@ -57,7 +57,7 @@ if (is_active == true)
             {
                 talker[0] = other.object_index;
                 message[0] = "* Hold on, I need to think of#  more material.";
-                message[1] = "* In fact I'm getting... a#  little..";
+                message[1] = "* In fact I'm getting... a#  little....";
             }
             
             if (!global.dialogue_open)

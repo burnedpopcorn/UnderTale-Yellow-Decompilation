@@ -1,6 +1,4 @@
-var box;
-
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if (!layer_exists("Attack Layer"))
     layer_create(-999, "Attack Layer");

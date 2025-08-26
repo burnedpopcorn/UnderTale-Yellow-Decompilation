@@ -43,7 +43,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_sfx_play(293, 1);
+        cutscene_sfx_play(snd_rock_break, 1);
         break;
     
     case 6:

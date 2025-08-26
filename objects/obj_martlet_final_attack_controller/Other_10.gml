@@ -1,6 +1,4 @@
-var hp_percentage, random_pos, new_attack;
-
-hp_percentage = global.current_hp_enemy / global.max_hp_enemy;
+var hp_percentage = global.current_hp_enemy / global.max_hp_enemy;
 
 switch (fmartlet_event_lowhp)
 {
@@ -59,7 +57,7 @@ if (ds_list_size(fmartlet_atpool) == 0)
     exit;
 }
 
-random_pos = irandom(ds_list_size(fmartlet_atpool) - 1);
-new_attack = ds_list_find_value(fmartlet_atpool, random_pos);
+var random_pos = irandom(ds_list_size(fmartlet_atpool) - 1);
+var new_attack = ds_list_find_value(fmartlet_atpool, random_pos);
 global.attack_cycle = new_attack;
 ds_list_delete(fmartlet_atpool, random_pos);

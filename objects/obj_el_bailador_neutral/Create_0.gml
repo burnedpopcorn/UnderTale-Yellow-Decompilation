@@ -27,4 +27,4 @@ time_max = time_max_normal;
 time_increase = 1;
 max_rise = 0.025;
 max_rise_ext = 0.02;
-neutral_sprite = spr_el_bailador_neutral;
+neutral_sprite = 1895;

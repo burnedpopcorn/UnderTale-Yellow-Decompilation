@@ -1,7 +1,5 @@
-var box;
-
 draw_on_surface();
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if (warning_draw == true)
 {

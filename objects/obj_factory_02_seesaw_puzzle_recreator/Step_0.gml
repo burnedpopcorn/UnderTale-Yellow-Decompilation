@@ -9,11 +9,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Dammit!";
             message[1] = "* Better try again.";
-            prt[0] = 370;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_neutral;
         }
         
         break;

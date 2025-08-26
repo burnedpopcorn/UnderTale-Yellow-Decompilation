@@ -1,11 +1,9 @@
-var last_action_selected, action_1_selected_count;
-
 text_effect = "twitchy";
-last_action_selected = global.last_action_selected;
+var last_action_selected = global.last_action_selected;
 
 if (last_action_selected == "Action 1 Message 0" || last_action_selected == "Action 1 Message 1")
 {
-    action_1_selected_count = global.action_1_selected_count;
+    var action_1_selected_count = global.action_1_selected_count;
     
     if (action_1_selected_count == 0)
     {
@@ -54,7 +52,7 @@ if (last_action_selected == "Action 1 Message 0" || last_action_selected == "Act
         portrait_hand[8] = 2058;
         message_end = 8;
         global.action_1_important = true;
-        global.action_1_color = 65535;
+        global.action_1_color = c_yellow;
     }
     else if (action_1_selected_count == 2)
     {

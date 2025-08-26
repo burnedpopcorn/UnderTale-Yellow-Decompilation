@@ -1,9 +1,7 @@
-var soul, shockwave;
-
 if (live_call())
     return global.live_result;
 
-soul = 2980;
+var soul = obj_heart_battle_fighting_red;
 
 switch (state)
 {
@@ -61,7 +59,7 @@ switch (state)
                     scene++;
                     audio_play_sound(snd_undertale_impact, 1, 0);
                     scr_screenshake_battle(6, 2);
-                    shockwave = instance_create_depth(x, battle_box.bbox_bottom - 4, -100, obj_battle_enemy_attack_mecha_frog_shockwave);
+                    var shockwave = instance_create_depth(x, battle_box.bbox_bottom - 4, -100, obj_battle_enemy_attack_mecha_frog_shockwave);
                     shockwave.hspeed = image_xscale * shockwave_speed;
                 }
                 
@@ -159,13 +157,13 @@ switch (state)
         break;
 }
 
-function state_switch(argument0)
+function state_switch(arg0)
 {
-    state = argument0;
+    state = arg0;
     scene = 0;
     timer = timer_max;
     
-    if (argument0 == "idle")
+    if (arg0 == "idle")
     {
         with (obj_battle_enemy_attack_mecha_frog_creator)
             hand_reroll = true;

@@ -1,10 +1,9 @@
-var bomb_offset, bomb;
-
 if (live_call())
     return global.live_result;
 
 bomb_side = choose(1, 2, 3, 4);
-bomb_offset = 90;
+var bomb_offset = 90;
+var bomb;
 
 switch (bomb_side)
 {

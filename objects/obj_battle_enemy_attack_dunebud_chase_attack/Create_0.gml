@@ -15,29 +15,29 @@ else
 
 if (critical == true)
 {
-    sprite_rise[0] = spr_dunebud_attack_rise_c_r;
-    sprite_rise[1] = spr_dunebud_attack_rise_c;
-    sprite_sink[0] = spr_dunebud_attack_sink_c_r;
-    sprite_sink[1] = spr_dunebud_attack_sink_c;
-    sprite_move[0] = spr_dunebud_attack_move_c_r;
-    sprite_move[1] = spr_dunebud_attack_move_c;
+    sprite_rise[0] = 1837;
+    sprite_rise[1] = 1825;
+    sprite_sink[0] = 1838;
+    sprite_sink[1] = 1826;
+    sprite_move[0] = 1839;
+    sprite_move[1] = 1827;
 }
 else
 {
-    sprite_rise[0] = spr_dunebud_attack_rise_r;
-    sprite_rise[1] = spr_dunebud_attack_rise;
-    sprite_sink[0] = spr_dunebud_attack_sink_r;
-    sprite_sink[1] = spr_dunebud_attack_sink;
-    sprite_move[0] = spr_dunebud_attack_move_r;
-    sprite_move[1] = spr_dunebud_attack_move;
+    sprite_rise[0] = 1828;
+    sprite_rise[1] = 1815;
+    sprite_sink[0] = 1829;
+    sprite_sink[1] = 1817;
+    sprite_move[0] = 1832;
+    sprite_move[1] = 1818;
 }
 
-sprite_fly_begin[0] = spr_dunebud_attack_fly_begin_r;
-sprite_fly_begin[1] = spr_dunebud_attack_fly_begin;
-sprite_fly[0] = spr_dunebud_attack_fly_r;
-sprite_fly[1] = spr_dunebud_attack_fly;
-sprite_fly_end[0] = spr_dunebud_attack_fly_end_r;
-sprite_fly_end[1] = spr_dunebud_attack_fly_end;
+sprite_fly_begin[0] = 1833;
+sprite_fly_begin[1] = 1819;
+sprite_fly[0] = 1834;
+sprite_fly[1] = 1821;
+sprite_fly_end[0] = 1835;
+sprite_fly_end[1] = 1823;
 sprite_index = sprite_rise[side];
 image_speed_rise = 1/3;
 image_speed_sink = 1/3;

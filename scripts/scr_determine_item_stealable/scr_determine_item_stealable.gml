@@ -1,8 +1,6 @@
 function scr_determine_item_stealable()
 {
-    var selection, i;
-    
-    selection = argument[0];
+    var selection = argument[0];
     
     switch (selection)
     {
@@ -13,7 +11,7 @@ function scr_determine_item_stealable()
             if (ds_list_empty(global.steal_list))
                 return true;
             
-            for (i = 0; i < ds_list_size(global.steal_list); i++)
+            for (var i = 0; i < ds_list_size(global.steal_list); i++)
             {
                 if (ds_list_find_value(global.steal_list, i) == selection)
                     return false;

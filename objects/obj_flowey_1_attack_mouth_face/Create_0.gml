@@ -1,5 +1,3 @@
-var box;
-
 if (live_call())
     return global.live_result;
 
@@ -9,4 +7,4 @@ cutscene_timer = 0;
 pellet_spawn_noloop = false;
 image_speed = 1.2;
 image_index = 12;
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;

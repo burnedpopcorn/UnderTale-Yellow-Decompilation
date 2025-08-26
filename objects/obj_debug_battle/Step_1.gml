@@ -1,5 +1,3 @@
-var key_vert, array_max, key_hor, h, l, selection_enemy, array_min;
-
 script_execute(scr_controls_debug_battle);
 
 if (key_debug)
@@ -56,7 +54,7 @@ if (global.debug_toggle == true)
     
     if (seldepth_main == 0)
     {
-        key_vert = key_down - key_up;
+        var key_vert = key_down - key_up;
         selnum_main += key_vert;
         
         if (selnum_main > selmax_main)
@@ -86,9 +84,9 @@ if (global.debug_toggle == true)
     {
         if (selnum_main == 0)
         {
-            key_vert = key_down - key_up;
+            var key_vert = key_down - key_up;
             selnumh_world += key_vert;
-            array_max = array_length_1d(selnuml_world) - 1;
+            var array_max = array_length_1d(selnuml_world) - 1;
             
             if (selnumh_world > array_max)
                 selnumh_world = 0;
@@ -96,7 +94,7 @@ if (global.debug_toggle == true)
             if (selnumh_world < 0)
                 selnumh_world = array_max;
             
-            key_hor = sign((key_right - key_left) + (key_fast_right - key_fast_left));
+            var key_hor = sign((key_right - key_left) + (key_fast_right - key_fast_left));
             selnuml_world[selnumh_world] += key_hor;
             array_max = array_length_2d(world_room, selnumh_world) - 1;
             
@@ -118,8 +116,8 @@ if (global.debug_toggle == true)
                 
                 with (obj_room_special_holder)
                 {
-                    h = obj_debug_overworld.selnumh_world;
-                    l = obj_debug_overworld.selnuml_world[h];
+                    var h = obj_debug_overworld.selnumh_world;
+                    var l = obj_debug_overworld.selnuml_world[h];
                     player_x = obj_debug_overworld.world_x[h][l];
                     player_y = obj_debug_overworld.world_y[h][l];
                     player_direction = "down";
@@ -128,7 +126,7 @@ if (global.debug_toggle == true)
                 
                 with (obj_frisk)
                 {
-                    instance_create(__view_get(e__VW.XView, 0), __view_get(e__VW.YView, obj_quote_battle_ceroba_outro_4), obj_overworld_room_special_fade_out_screen);
+                    instance_create(__view_get(e__VW.XView, 0), __view_get(e__VW.YView, 0), obj_overworld_room_special_fade_out_screen);
                     moveable = false;
                     event = true;
                 }
@@ -140,9 +138,9 @@ if (global.debug_toggle == true)
         }
         else if (selnum_main == 1)
         {
-            key_vert = key_down - key_up;
+            var key_vert = key_down - key_up;
             selnumh_enemy += key_vert;
-            array_max = array_length_1d(selnuml_enemy) - 1;
+            var array_max = array_length_1d(selnuml_enemy) - 1;
             
             if (selnumh_enemy > array_max)
                 selnumh_enemy = 0;
@@ -150,7 +148,7 @@ if (global.debug_toggle == true)
             if (selnumh_enemy < 0)
                 selnumh_enemy = array_max;
             
-            key_hor = sign((key_right - key_left) + (key_fast_right - key_fast_left));
+            var key_hor = sign((key_right - key_left) + (key_fast_right - key_fast_left));
             selnuml_enemy[selnumh_enemy] += key_hor;
             array_max = array_length_2d(enemy, selnumh_enemy) - 1;
             
@@ -162,7 +160,7 @@ if (global.debug_toggle == true)
             
             if (key_select)
             {
-                selection_enemy = enemy[selnumh_enemy][selnuml_enemy[selnumh_enemy]];
+                var selection_enemy = enemy[selnumh_enemy][selnuml_enemy[selnumh_enemy]];
                 
                 if (selection_enemy == "dalv normal")
                 {
@@ -217,9 +215,9 @@ if (global.debug_toggle == true)
         }
         else if (selnum_main == 2)
         {
-            key_vert = key_down - key_up;
+            var key_vert = key_down - key_up;
             selnumh_shop += key_vert;
-            array_max = array_length_1d(selnuml_shop) - 1;
+            var array_max = array_length_1d(selnuml_shop) - 1;
             
             if (selnumh_shop > array_max)
                 selnumh_shop = 0;
@@ -227,7 +225,7 @@ if (global.debug_toggle == true)
             if (selnumh_shop < 0)
                 selnumh_shop = array_max;
             
-            key_hor = sign((key_right - key_left) + (key_fast_right - key_fast_left));
+            var key_hor = sign((key_right - key_left) + (key_fast_right - key_fast_left));
             selnuml_shop[selnumh_shop] += key_hor;
             array_max = array_length_2d(shop, selnumh_shop) - 1;
             
@@ -248,7 +246,7 @@ if (global.debug_toggle == true)
                         break;
                 }
                 
-                instance_create(__view_get(e__VW.XView, 0), __view_get(e__VW.YView, obj_quote_battle_ceroba_outro_4), obj_overworld_shop_fade_out_screen);
+                instance_create(__view_get(e__VW.XView, 0), __view_get(e__VW.YView, 0), obj_overworld_shop_fade_out_screen);
                 
                 with (obj_frisk)
                 {
@@ -263,9 +261,9 @@ if (global.debug_toggle == true)
         }
         else if (selnum_main == 3)
         {
-            key_vert = key_down - key_up;
+            var key_vert = key_down - key_up;
             selnumh_item += key_vert;
-            array_max = array_length_1d(selnuml_item) - 1;
+            var array_max = array_length_1d(selnuml_item) - 1;
             
             if (selnumh_item > array_max)
                 selnumh_item = 0;
@@ -273,7 +271,7 @@ if (global.debug_toggle == true)
             if (selnumh_item < 0)
                 selnumh_item = array_max;
             
-            key_hor = sign((key_right - key_left) + (key_fast_right - key_fast_left));
+            var key_hor = sign((key_right - key_left) + (key_fast_right - key_fast_left));
             selnuml_item[selnumh_item] += key_hor;
             array_max = array_length_2d(item, selnumh_item) - 1;
             
@@ -300,9 +298,9 @@ if (global.debug_toggle == true)
         }
         else if (selnum_main == 4)
         {
-            key_vert = key_down - key_up;
+            var key_vert = key_down - key_up;
             selnumh_equip += key_vert;
-            array_max = array_length_1d(selnuml_equip) - 1;
+            var array_max = array_length_1d(selnuml_equip) - 1;
             
             if (selnumh_equip > array_max)
                 selnumh_equip = 0;
@@ -310,7 +308,7 @@ if (global.debug_toggle == true)
             if (selnumh_equip < 0)
                 selnumh_equip = array_max;
             
-            key_hor = sign((key_right - key_left) + (key_fast_right - key_fast_left));
+            var key_hor = sign((key_right - key_left) + (key_fast_right - key_fast_left));
             selnuml_equip[selnumh_equip] += key_hor;
             array_max = array_length_2d(item, selnumh_equip + equip_disjoint) - 1;
             
@@ -352,9 +350,9 @@ if (global.debug_toggle == true)
         }
         else if (selnum_main == 5)
         {
-            key_vert = key_down - key_up;
+            var key_vert = key_down - key_up;
             selnumh_stat += key_vert;
-            array_max = array_length_1d(selnuml_stat) - 1;
+            var array_max = array_length_1d(selnuml_stat) - 1;
             
             if (selnumh_stat > array_max)
                 selnumh_stat = 0;
@@ -362,9 +360,9 @@ if (global.debug_toggle == true)
             if (selnumh_stat < 0)
                 selnumh_stat = array_max;
             
-            key_hor = sign((key_right - key_left) + (key_fast_right - key_fast_left));
+            var key_hor = sign((key_right - key_left) + (key_fast_right - key_fast_left));
             selnuml_stat[selnumh_stat] += key_hor;
-            array_min = stat[selnumh_stat][0];
+            var array_min = stat[selnumh_stat][0];
             array_max = stat[selnumh_stat][1];
             
             if (selnuml_stat[selnumh_stat] > array_max)
@@ -375,8 +373,8 @@ if (global.debug_toggle == true)
             
             if (key_select)
             {
-                h = selnumh_stat;
-                l = selnuml_stat[h];
+                var h = selnumh_stat;
+                var l = selnuml_stat[h];
                 
                 if (h == 0)
                 {

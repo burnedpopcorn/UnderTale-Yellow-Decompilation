@@ -1,7 +1,7 @@
-var xx;
-
 if (shufflers_select == true)
 {
+    var xx;
+    
     switch (current_shuffler)
     {
         case 0:

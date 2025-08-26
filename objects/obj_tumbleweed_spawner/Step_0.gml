@@ -1,9 +1,7 @@
-var tumbleweed_time0, tumbleweed_time1, tumbleweed_time2, tumbleweed_time3, i;
-
-tumbleweed_time0 = 46;
-tumbleweed_time1 = 71;
-tumbleweed_time2 = 136;
-tumbleweed_time3 = 136;
+var tumbleweed_time0 = 46;
+var tumbleweed_time1 = 71;
+var tumbleweed_time2 = 136;
+var tumbleweed_time3 = 136;
 
 switch (tumbleweed_spawn[0])
 {
@@ -60,7 +58,7 @@ switch (tumbleweed_spawn[3])
         break;
 }
 
-for (i = 0; i <= 3; i++)
+for (var i = 0; i <= 3; i++)
 {
     if (tumbleweed_spawn[i] > 1)
         tumbleweed_spawn[i] -= 1;
@@ -106,5 +104,5 @@ if (obj_pl.x < 680)
 }
 else if (audio_is_playing(snd_rumble))
 {
-    scr_audio_fade_out(261, 300);
+    scr_audio_fade_out(snd_rumble, 300);
 }

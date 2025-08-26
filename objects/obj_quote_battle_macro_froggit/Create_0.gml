@@ -1,12 +1,10 @@
-var turns_passed, new_message_number;
-
 text_effect = "circle";
 attack = false;
 scene = 0;
 cutscene_timer = 0;
 skippable = true;
 message_adv = false;
-turns_passed = global.turns_passed;
+var turns_passed = global.turns_passed;
 enemy_talker = 0;
 voice_pitch = 0.5;
 
@@ -26,7 +24,7 @@ switch (turns_passed)
         break;
     
     default:
-        new_message_number = irandom_range(1, 8);
+        var new_message_number = irandom_range(1, 8);
         
         switch (new_message_number)
         {
@@ -59,7 +57,7 @@ switch (turns_passed)
                 break;
             
             case 8:
-                message[0] = ". .#(Macro ellipsis.)";
+                message[0] = ". . .#(Macro ellipsis.)";
                 break;
         }
         

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"63ae0891-0ada-4710-91f5-1046431210c8",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2edb3ab5-d413-4640-8e88-8033d2620add",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"95a1e42b-2504-465c-a17b-f9abdf3cb340",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"724fbfb0-6956-476d-bddb-1bca9647a949",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 68,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0caafcf8-7289-45d4-8f28-ea59250f27e8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"30971640-e93a-4619-ba05-273989c9424a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"63ae0891-0ada-4710-91f5-1046431210c8","path":"sprites/spr_martlet_head_happy_battle/spr_martlet_head_happy_battle.yy",},},},"Disabled":false,"id":"9e84a140-a571-4048-a58f-9df17b67e6ee","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2edb3ab5-d413-4640-8e88-8033d2620add","path":"sprites/spr_martlet_head_happy_battle/spr_martlet_head_happy_battle.yy",},},},"Disabled":false,"id":"f4c840ad-c99a-4d12-a612-2bb3f35fe888","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"95a1e42b-2504-465c-a17b-f9abdf3cb340","path":"sprites/spr_martlet_head_happy_battle/spr_martlet_head_happy_battle.yy",},},},"Disabled":false,"id":"3bdb2eb3-d6e3-4094-820e-be04a74871a9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"724fbfb0-6956-476d-bddb-1bca9647a949","path":"sprites/spr_martlet_head_happy_battle/spr_martlet_head_happy_battle.yy",},},},"Disabled":false,"id":"87ac2a97-1a9c-4cbe-a92d-a9be90c579a1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "GeneralUse",
+    "path": "texturegroups/GeneralUse",
   },
   "type": 0,
   "VTile": false,

@@ -1,8 +1,9 @@
 if (bbox_top < (box.bbox_top + 5))
 {
-    for (y += y_speed; bbox_top > (box.bbox_top + 5); y -= 1)
-    {
-    }
+    y += y_speed;
+    
+    while (bbox_top > (box.bbox_top + 5))
+        y -= 1;
     
     if (bbox_top == (box.bbox_top + 5))
     {

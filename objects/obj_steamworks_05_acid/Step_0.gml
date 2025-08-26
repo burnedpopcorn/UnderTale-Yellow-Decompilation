@@ -1,7 +1,7 @@
 if (image_alpha < 1)
     image_alpha += 0.1;
 
-if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
     waiter = 1;
 
 if (waiter > 0)
@@ -11,7 +11,7 @@ if (waiter > 0)
     with (msg)
     {
         portrait = false;
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         message[0] = "* (Take the acid?)";
         
         if (outcome == 1)

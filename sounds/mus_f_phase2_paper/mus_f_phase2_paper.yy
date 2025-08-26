@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 21.170687,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/f_phase2_paper.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "f_phase2_paper.ogg",
+  "type": 1,
   "volume": 1.0,
 }

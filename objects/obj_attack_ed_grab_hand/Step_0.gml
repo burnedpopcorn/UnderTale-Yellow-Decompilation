@@ -1,12 +1,10 @@
-var battle_box, soul, x_target, _anim_ready, new_hitbox;
-
-battle_box = 3154;
-soul = 2979;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var soul = obj_heart_battle_fighting_parent;
 
 switch (attack_state)
 {
     case 1:
-        x_target = battle_box.bbox_right + 30;
+        var x_target = battle_box.bbox_right + 30;
         x = lerp(x, x_target, 0.3);
         
         if (abs(x - x_target) <= 1)
@@ -20,7 +18,7 @@ switch (attack_state)
         break;
     
     case 2:
-        soul = 2979;
+        soul = obj_heart_battle_fighting_parent;
         _y_sin_current += 0.1;
         
         if (_y_sin_current > (2 * pi))
@@ -38,7 +36,7 @@ switch (attack_state)
         break;
     
     case 3:
-        soul = 2979;
+        soul = obj_heart_battle_fighting_parent;
         y = lerp(y, soul.y, 0.25);
         
         if (sprite_index != spr_attack_ed_hand_grab)
@@ -63,7 +61,7 @@ switch (attack_state)
         if (hspeed > -15)
             hspeed -= 3;
         
-        soul = 2979;
+        soul = obj_heart_battle_fighting_parent;
         
         if (place_meeting(x, y, soul) && soul.moveable == true)
         {
@@ -80,7 +78,7 @@ switch (attack_state)
             }
         }
         
-        _anim_ready = false;
+        var _anim_ready = false;
         
         if (sprite_index == spr_attack_ed_hand_grab_3 && image_index >= 6)
         {
@@ -109,7 +107,7 @@ switch (attack_state)
     case 5:
         if (!instance_exists(obj_attack_ed_grab_hand_hurtbox_return) || obj_attack_ed_grab_hand_hurtbox_return.spawner != id)
         {
-            new_hitbox = instance_create(x, y, obj_attack_ed_grab_hand_hurtbox_return);
+            var new_hitbox = instance_create(x, y, obj_attack_ed_grab_hand_hurtbox_return);
             new_hitbox.spawner = id;
         }
         
@@ -140,7 +138,7 @@ switch (attack_state)
         if (hspeed < 12)
             hspeed += 3;
         
-        _anim_ready = false;
+        var _anim_ready = false;
         
         if (x >= (battle_box.x + 30))
         {
@@ -182,7 +180,7 @@ switch (attack_state)
             instance_create(x, y, obj_attack_ed_grab_hand_hurtbox);
         }
         
-        soul = 2979;
+        soul = obj_heart_battle_fighting_parent;
         
         with (soul)
         {

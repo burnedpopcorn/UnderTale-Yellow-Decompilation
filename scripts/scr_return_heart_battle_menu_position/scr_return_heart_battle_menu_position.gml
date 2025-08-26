@@ -1,11 +1,9 @@
 function scr_return_heart_battle_menu_position()
 {
-    var part_1, part_2, part_3, part_4;
-    
-    part_1 = global.battle_menu_number;
-    part_2 = 0;
-    part_3 = 0;
-    part_4 = 0;
+    var part_1 = global.battle_menu_number;
+    var part_2 = 0;
+    var part_3 = 0;
+    var part_4 = 0;
     
     if (part_1 == 1)
     {

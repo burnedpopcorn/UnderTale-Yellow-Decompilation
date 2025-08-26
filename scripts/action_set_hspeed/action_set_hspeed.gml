@@ -1,8 +1,6 @@
-function action_set_hspeed(argument0)
+function action_set_hspeed(arg0)
 {
-    var val;
-    
-    val = argument0;
+    var val = arg0;
     
     if (global.__argument_relative)
         val += hspeed;

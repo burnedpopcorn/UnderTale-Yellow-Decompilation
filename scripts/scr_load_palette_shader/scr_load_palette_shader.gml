@@ -1,7 +1,7 @@
 function scr_load_palette_shader()
 {
     shader_on = false;
-    shader_sprite = spr_final_palette;
+    shader_sprite = 758;
     palette_sampler = sprite_get_texture(shader_sprite, 0);
     u_palette_tex = shader_get_sampler_index(sh_palette_swap, "palette_tex");
     u_palette_index = shader_get_uniform(sh_palette_swap, "palette_index");

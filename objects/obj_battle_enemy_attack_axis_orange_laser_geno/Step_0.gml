@@ -1,3 +1,1 @@
-var battle_box;
-
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;

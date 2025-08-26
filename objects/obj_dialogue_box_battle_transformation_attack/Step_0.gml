@@ -1,13 +1,11 @@
-var sprite_width_multiplier, sprite_height_multiplier;
-
 if (transform_type == "in")
 {
     if (no_loop_transform == false)
     {
         sprite_width_end = sprite_width_destination / sprite_width;
         sprite_height_end = sprite_height_destination / sprite_height;
-        sprite_width_multiplier = abs(image_xscale - sprite_width_end);
-        sprite_height_multiplier = abs(image_yscale - sprite_height_end);
+        var sprite_width_multiplier = abs(image_xscale - sprite_width_end);
+        var sprite_height_multiplier = abs(image_yscale - sprite_height_end);
         
         if (sprite_width_end > image_xscale)
             width_increase_type = 1;
@@ -85,10 +83,10 @@ if (transform_type == "out")
 {
     if (no_loop_transform == false)
     {
-        sprite_width_end = spr_steamworks_21_background;
-        sprite_height_end = spr_steamworks_21_background;
-        sprite_width_multiplier = abs(1 - image_xscale);
-        sprite_height_multiplier = abs(1 - image_yscale);
+        sprite_width_end = 1;
+        sprite_height_end = 1;
+        var sprite_width_multiplier = abs(1 - image_xscale);
+        var sprite_height_multiplier = abs(1 - image_yscale);
         
         if (image_xscale > 1)
             width_increase_type = 1;

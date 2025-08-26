@@ -1,9 +1,7 @@
-var battle_menu_number, battle_enemy_name, enemy_count, game_mode, battle_menu_number_prev, move_number;
-
-battle_menu_number = global.battle_menu_number;
-battle_enemy_name = global.battle_enemy_name;
-enemy_count = global.enemy_count;
-game_mode = global.game_mode;
+var battle_menu_number = global.battle_menu_number;
+var battle_enemy_name = global.battle_enemy_name;
+var enemy_count = global.enemy_count;
+var game_mode = global.game_mode;
 image_blend = c_gray;
 script_execute(scr_controls_battle_main);
 
@@ -183,8 +181,8 @@ if (key_select == 0)
 {
     if (key_right && key_left == 0)
     {
-        battle_menu_number_prev = battle_menu_number;
-        move_number = true;
+        var battle_menu_number_prev = battle_menu_number;
+        var move_number = true;
         
         while (move_number == true)
         {
@@ -205,8 +203,8 @@ if (key_select == 0)
     
     if (key_left && key_right == 0)
     {
-        battle_menu_number_prev = battle_menu_number;
-        move_number = true;
+        var battle_menu_number_prev = battle_menu_number;
+        var move_number = true;
         
         while (move_number == true)
         {

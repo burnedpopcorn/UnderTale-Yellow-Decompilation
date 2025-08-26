@@ -1,7 +1,5 @@
-function tile_exists(argument0)
+function tile_exists(arg0)
 {
-    var __index;
-    
-    __index = argument0;
+    var __index = arg0;
     return layer_tile_exists(__index);
 }

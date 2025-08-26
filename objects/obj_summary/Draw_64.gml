@@ -1,5 +1,3 @@
-var route, fullname, slurpy, enemies_killed, i, funvalue, xx, yy;
-
 if (live_call())
     return global.live_result;
 
@@ -9,7 +7,7 @@ draw_set_alpha(draw_alpha);
 draw_rectangle(0, 0, 640, 480, false);
 draw_set_alpha(1);
 draw_set_halign(fa_left);
-route = "Pacifist";
+var route = "Pacifist";
 
 if (global.route == 1)
     route = "Neutral";
@@ -17,30 +15,30 @@ if (global.route == 1)
 if (global.route == 3)
     route = "Geno";
 
-fullname = "Clover";
+var fullname = "Clover";
 
 if (global.snowdin_flag[15] != 1)
     fullname = "Gun-Hat";
 
-slurpy = "No...";
+var slurpy = "No...";
 
 if (global.snowdin_flag[3] == 2)
     slurpy = "Yes";
 
-enemies_killed = 0;
+var enemies_killed = 0;
 
-for (i = 1; i < array_length_1d(global.kill_number); i++)
+for (var i = 1; i < array_length_1d(global.kill_number); i++)
     enemies_killed += (20 - global.kill_number[i]);
 
-funvalue = string(global.fun_value);
+var funvalue = string(global.fun_value);
 
 if (funvalue == "100")
     funvalue = "420";
 
 draw_set_font(fnt_battle);
 draw_set_color(c_white);
-xx = 20;
-yy = 140;
+var xx = 20;
+var yy = 140;
 draw_text(xx, yy - 20, "ROUTE: " + route);
 draw_text(xx, yy, "FULL NAME: " + fullname);
 draw_text(xx, yy + 20, "PLAYTIME: " + string(playtime));

@@ -1,7 +1,7 @@
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+battle_box = obj_dialogue_box_battle_transformation_any;
 created_spawner = 0;
 old_spawner = 0;
 attack_duration = 0;

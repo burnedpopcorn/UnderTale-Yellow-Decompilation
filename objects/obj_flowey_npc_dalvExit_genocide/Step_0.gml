@@ -9,7 +9,7 @@ if (waiter == 1)
             if (global.route != 3)
             {
                 portrait = true;
-                sndfnt = 96;
+                sndfnt = sndfnt_flowey;
                 message[0] = "* Howdy!\t";
                 message[1] = "* I... get the impression#  you like to roll solo.";
                 message[2] = "* Ya know, with you never#  taking me up on my#  \"save\" offer.";
@@ -18,21 +18,21 @@ if (waiter == 1)
                 message[5] = "* Maybe you have some#  trust issues but...";
                 message[6] = "* You need to get over#  that if you want a#  fighting chance, okay?";
                 message[7] = "* See you up ahead,#  buddy.";
-                prt[0] = 348;
-                prt[1] = 348;
-                prt[2] = 353;
-                prt[3] = 348;
-                prt[4] = 348;
-                prt[5] = 347;
-                prt[6] = 348;
-                prt[7] = 348;
+                prt[0] = flowey_nice;
+                prt[1] = flowey_nice;
+                prt[2] = flowey_plains;
+                prt[3] = flowey_nice;
+                prt[4] = flowey_nice;
+                prt[5] = flowey_niceside;
+                prt[6] = flowey_nice;
+                prt[7] = flowey_nice;
             }
             else
             {
                 portrait = true;
-                sndfnt = 96;
+                sndfnt = sndfnt_flowey;
                 color = true;
-                col_modif[0] = 65535;
+                col_modif[0] = c_yellow;
                 message[0] = "* Howdy!\t";
                 message[1] = "* I'm sure you could've#  smashed those yourself#  but...";
                 message[2] = "* I can be a help to you#  sometimes.";
@@ -48,20 +48,20 @@ if (waiter == 1)
                 message[11] = "* You're heading down a#  dangerous path so...\t";
                 message[12] = "* Don't forget to save,#  alright?";
                 message[13] = "* Alright.";
-                prt[0] = 348;
-                prt[1] = 347;
-                prt[2] = 348;
-                prt[3] = 3640;
-                prt[4] = 347;
-                prt[5] = 353;
-                prt[6] = 352;
-                prt[7] = 348;
-                prt[8] = 348;
-                prt[9] = 347;
-                prt[10] = 348;
-                prt[11] = 347;
-                prt[12] = 348;
-                prt[13] = 348;
+                prt[0] = flowey_nice;
+                prt[1] = flowey_niceside;
+                prt[2] = flowey_nice;
+                prt[3] = spr_flowey_meh;
+                prt[4] = flowey_niceside;
+                prt[5] = flowey_plains;
+                prt[6] = flowey_plain;
+                prt[7] = flowey_nice;
+                prt[8] = flowey_nice;
+                prt[9] = flowey_niceside;
+                prt[10] = flowey_nice;
+                prt[11] = flowey_niceside;
+                prt[12] = flowey_nice;
+                prt[13] = flowey_nice;
             }
         }
     }
@@ -70,7 +70,7 @@ if (waiter == 1)
         with (msg)
         {
             portrait = true;
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "* Howdy!";
             message[1] = "* Were you expecting that?";
             message[2] = "* I'm a little more#  helpful than you may#  have thought.";
@@ -81,16 +81,16 @@ if (waiter == 1)
             message[7] = "* Get ready because we#  have a long journey#  ahead.";
             message[8] = "* This is gonna be so much#  fun!";
             message[9] = "* I'll see you on the#  other side, pal!";
-            prt[0] = 348;
-            prt[1] = 347;
-            prt[2] = 348;
-            prt[3] = 348;
-            prt[4] = 347;
-            prt[5] = 353;
-            prt[6] = 348;
-            prt[7] = 348;
-            prt[8] = 348;
-            prt[9] = 347;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_niceside;
+            prt[2] = flowey_nice;
+            prt[3] = flowey_nice;
+            prt[4] = flowey_niceside;
+            prt[5] = flowey_plains;
+            prt[6] = flowey_nice;
+            prt[7] = flowey_nice;
+            prt[8] = flowey_nice;
+            prt[9] = flowey_niceside;
         }
     }
     
@@ -116,7 +116,7 @@ if (waiter == 4)
     instance_destroy();
 }
 
-if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == 96)
+if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == sndfnt_flowey)
 {
     if (obj_dialogue.cutoff == string_length(obj_dialogue.message[obj_dialogue.message_current]))
     {

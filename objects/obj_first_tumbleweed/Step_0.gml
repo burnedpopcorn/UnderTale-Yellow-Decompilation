@@ -1,5 +1,3 @@
-var rumble, roll_speed;
-
 if (obj_pl.x > 440 && active == 0)
 {
     active = 1;
@@ -8,7 +6,7 @@ if (obj_pl.x > 440 && active == 0)
     
     if (!audio_is_playing(snd_rumble))
     {
-        rumble = audio_play_sound(snd_rumble, 1, 1);
+        var rumble = audio_play_sound(snd_rumble, 1, 1);
         audio_sound_gain(rumble, 0.75, 0);
     }
 }
@@ -20,14 +18,14 @@ if (active == 1)
     if (image_alpha < 1)
         exit;
     
-    scr_audio_fade_out(261, 100);
+    scr_audio_fade_out(snd_rumble, 100);
     active = 2;
     image_speed = 0.3;
 }
 
 if (active == 2)
 {
-    roll_speed = 2.5;
+    var roll_speed = 2.5;
     image_speed = 0.4;
     
     if ((y < 105 && y > 35) || y > 220)

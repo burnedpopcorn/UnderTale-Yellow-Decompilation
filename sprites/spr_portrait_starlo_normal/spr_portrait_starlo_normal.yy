@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"71503293-9bf6-43ff-b0b2-a04a380b04e5",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec09c88b-a34b-4e8f-bf84-010b5f0364dc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8d799258-2f6e-4156-ae3a-c5aefe726986",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"04bf42e2-bbcf-40c9-8e8d-e43f5785a10b",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 122,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a84f27ef-48b7-4080-9940-c6377a22d124","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"341935a1-94b2-422c-9fdf-80b7ad9540ff","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"71503293-9bf6-43ff-b0b2-a04a380b04e5","path":"sprites/spr_portrait_starlo_normal/spr_portrait_starlo_normal.yy",},},},"Disabled":false,"id":"6d24b260-eb77-4692-9c4f-ea21076c492e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ec09c88b-a34b-4e8f-bf84-010b5f0364dc","path":"sprites/spr_portrait_starlo_normal/spr_portrait_starlo_normal.yy",},},},"Disabled":false,"id":"d84115a2-15a6-467e-b66d-edd0115d1bae","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8d799258-2f6e-4156-ae3a-c5aefe726986","path":"sprites/spr_portrait_starlo_normal/spr_portrait_starlo_normal.yy",},},},"Disabled":false,"id":"aa53ace4-522a-46c4-ae3c-5f5e4f0620e2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"04bf42e2-bbcf-40c9-8e8d-e43f5785a10b","path":"sprites/spr_portrait_starlo_normal/spr_portrait_starlo_normal.yy",},},},"Disabled":false,"id":"e641bed8-385f-40c7-bced-034500eb36b5","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "WildEast",
+    "path": "texturegroups/WildEast",
   },
   "type": 0,
   "VTile": false,

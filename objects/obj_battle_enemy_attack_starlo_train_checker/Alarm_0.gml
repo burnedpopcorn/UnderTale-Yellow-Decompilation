@@ -1,7 +1,5 @@
-var box, soul, tracks;
-
-box = 3154;
-soul = 2980;
+var box = obj_dialogue_box_battle_transformation_any;
+var soul = obj_heart_battle_fighting_red;
 
 if ((train_count % 2) == 0)
 {
@@ -9,7 +7,7 @@ if ((train_count % 2) == 0)
 }
 else
 {
-    tracks = instance_create(soul.x, 320, obj_battle_enemy_attack_starlo_train_tracks);
+    var tracks = instance_create(soul.x, 320, obj_battle_enemy_attack_starlo_train_tracks);
     tracks.image_angle = 90;
     tracks.direction = 90;
 }

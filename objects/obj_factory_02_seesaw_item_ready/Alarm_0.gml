@@ -1,6 +1,4 @@
-var new_item;
-
-new_item = instance_create_depth(x, y, depth, obj_factory_02_seesaw_item);
+var new_item = instance_create_depth(x, y, depth, obj_factory_02_seesaw_item);
 
 with (new_item)
 {

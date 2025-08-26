@@ -1,8 +1,6 @@
-var footsteps_enabled;
-
 if (obj_pl.x != obj_pl.xprevious || obj_pl.y != obj_pl.yprevious)
 {
-    footsteps_enabled = true;
+    var footsteps_enabled = true;
     
     if (instance_exists(obj_steamworks_footsteps_collider))
     {
@@ -47,7 +45,7 @@ if (instance_exists(obj_npc_parent))
         if (!variable_instance_exists(id, "footstep_timer_npc"))
             footstep_timer_npc = 0;
         
-        footsteps_enabled = true;
+        var footsteps_enabled = true;
         
         if (instance_exists(obj_steamworks_footsteps_collider))
         {
@@ -85,7 +83,7 @@ if (global.party_member != -4 && instance_exists(global.party_member))
 {
     with (global.party_member)
     {
-        footsteps_enabled = true;
+        var footsteps_enabled = true;
         
         if (instance_exists(obj_steamworks_footsteps_collider))
         {

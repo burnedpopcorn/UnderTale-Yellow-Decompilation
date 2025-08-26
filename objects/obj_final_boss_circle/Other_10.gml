@@ -1,6 +1,5 @@
-var fight_number, enemy_vulnerable_hold, player_weapon_attack_original, player_attack_original;
-
-fight_number = global.fight_number;
+var fight_number = global.fight_number;
+var enemy_vulnerable_hold;
 
 if (fight_number == 1)
     enemy_vulnerable_hold = global.enemy_vulnerable;
@@ -9,8 +8,8 @@ else if (fight_number == 2)
 else if (fight_number == 3)
     enemy_vulnerable_hold = global.enemy_vulnerable_3;
 
-player_weapon_attack_original = global.player_weapon_attack;
-player_attack_original = global.player_attack;
+var player_weapon_attack_original = global.player_weapon_attack;
+var player_attack_original = global.player_attack;
 
 switch (global.player_weapon_modifier)
 {

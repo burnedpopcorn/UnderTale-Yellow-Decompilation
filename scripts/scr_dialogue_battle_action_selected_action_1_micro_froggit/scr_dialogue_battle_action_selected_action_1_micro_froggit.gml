@@ -1,8 +1,6 @@
 function scr_dialogue_battle_action_selected_action_1_micro_froggit()
 {
-    var action_1_selected_count;
-    
-    action_1_selected_count = global.action_1_selected_count;
+    var action_1_selected_count = global.action_1_selected_count;
     
     if (action_1_selected_count == 0)
     {

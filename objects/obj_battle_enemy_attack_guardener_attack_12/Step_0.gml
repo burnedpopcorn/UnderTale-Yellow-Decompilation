@@ -1,9 +1,7 @@
-var box, adv, x_target;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
@@ -19,11 +17,11 @@ switch (scene)
     
     case 1:
     case 3:
-        adv = 1;
+        var adv = 1;
         
         with (obj_guardener_guy_c_gun)
         {
-            x_target = box.bbox_left - 60;
+            var x_target = box.bbox_left - 60;
             x = lerp(x, x_target, 0.2);
             y = lerp(y, box.y + 10, 0.2);
         }

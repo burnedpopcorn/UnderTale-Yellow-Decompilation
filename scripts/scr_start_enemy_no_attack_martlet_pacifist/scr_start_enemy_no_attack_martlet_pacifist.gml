@@ -1,9 +1,7 @@
 function scr_start_enemy_no_attack_martlet_pacifist()
 {
-    var enemy_mode;
-    
     instance_create(380, 74, obj_quote_bubble_battle_yellow_3);
-    enemy_mode = global.enemy_mode;
+    var enemy_mode = global.enemy_mode;
     
     switch (enemy_mode)
     {

@@ -16,7 +16,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_npc_direction(1161, "left");
+        cutscene_npc_direction(obj_ceroba_npc, "left");
         break;
     
     case 3:
@@ -24,13 +24,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* More steam. Fantastic.";
             message[1] = "* One more time, Clover.";
             message[2] = "* You got this.";
-            prt[0] = 382;
-            prt[1] = 377;
-            prt[2] = 370;
+            prt[0] = spr_portrait_ceroba_muttering;
+            prt[1] = spr_portrait_ceroba_closed_eyes;
+            prt[2] = spr_portrait_ceroba_neutral;
         }
         
         break;
@@ -55,11 +55,11 @@ switch (scene)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* I know you're skilled#  enough for this small#  task.";
                 message[1] = "* Go on.";
-                prt[0] = 395;
-                prt[1] = 372;
+                prt[0] = spr_portrait_ceroba_snarky;
+                prt[1] = spr_portrait_ceroba_smile;
             }
         }
         
@@ -74,7 +74,7 @@ switch (scene)
         break;
     
     case 9:
-        cutscene_sfx_play(378, 1);
+        cutscene_sfx_play(snd_success, 1);
         break;
     
     case 10:
@@ -82,7 +82,7 @@ switch (scene)
         break;
     
     case 11:
-        cutscene_npc_walk(1168, 148, 295, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 148, 295, 3, "x", "up");
         break;
     
     case 12:
@@ -113,7 +113,7 @@ switch (scene)
         break;
     
     case 16:
-        cutscene_npc_direction(1168, "right");
+        cutscene_npc_direction(obj_player_npc, "right");
         break;
     
     case 17:
@@ -132,17 +132,17 @@ switch (scene)
         break;
     
     case 19:
-        cutscene_npc_set_sprites(1161, 81, 80, 78, 79, 61, 65, 60, 63);
+        cutscene_npc_set_sprites(obj_ceroba_npc, spr_ceroba_up_run, spr_ceroba_right_run, spr_ceroba_down_run, spr_ceroba_left_run, spr_ceroba_up_talk, spr_ceroba_right_talk, spr_ceroba_down_talk, spr_ceroba_left_talk);
         break;
     
     case 20:
-        cutscene_npc_walk(1161, obj_pl.x + 20, obj_pl.y, 4, "x", "left");
+        cutscene_npc_walk(obj_ceroba_npc, obj_pl.x + 20, obj_pl.y, 4, "x", "left");
         break;
     
     case 21:
         obj_pl.direction = 180;
-        global.party_member = 1171;
-        actor_follower = 1161;
+        global.party_member = obj_ceroba_follower;
+        actor_follower = obj_ceroba_npc;
         cutscene_actor_into_follower();
         break;
     
@@ -156,7 +156,7 @@ switch (scene)
         break;
     
     case 24:
-        cutscene_npc_direction(1168, "down");
+        cutscene_npc_direction(obj_player_npc, "down");
         global.sworks_flag[54] = 2;
         cutscene_end();
         break;

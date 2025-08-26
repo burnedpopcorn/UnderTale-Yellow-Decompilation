@@ -1,9 +1,7 @@
 function scr_enemy_attack_insomnitot_sheep_stars()
 {
-    var distance_factor, random_direction;
-    
-    distance_factor = 24;
-    random_direction = irandom_range(0, 1);
+    var distance_factor = 24;
+    var random_direction = irandom_range(0, 1);
     
     if (random_direction == 0)
     {

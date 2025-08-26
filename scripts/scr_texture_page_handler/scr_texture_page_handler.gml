@@ -1,24 +1,22 @@
 function scr_texture_page_handler()
 {
-    var _assets_load_new_home, _assets_load_ruins, _assets_load_snowdin, _assets_load_dunes, _assets_load_wild_east, _assets_load_steamworks, _assets_load_waterfall, _assets_load_minigames, _assets_load_shop, _assets_load_hotland, _assets_load_mansion, _room_tag, i;
-    
     texture_prefetch("GeneralUse");
     texture_prefetch("MainMenu");
     texture_prefetch("BattleBase");
-    _assets_load_new_home = false;
-    _assets_load_ruins = false;
-    _assets_load_snowdin = false;
-    _assets_load_dunes = false;
-    _assets_load_wild_east = false;
-    _assets_load_steamworks = false;
-    _assets_load_waterfall = false;
-    _assets_load_minigames = false;
-    _assets_load_shop = false;
-    _assets_load_hotland = false;
-    _assets_load_mansion = false;
-    _room_tag = asset_get_tags(room, 3);
+    var _assets_load_new_home = false;
+    var _assets_load_ruins = false;
+    var _assets_load_snowdin = false;
+    var _assets_load_dunes = false;
+    var _assets_load_wild_east = false;
+    var _assets_load_steamworks = false;
+    var _assets_load_waterfall = false;
+    var _assets_load_minigames = false;
+    var _assets_load_shop = false;
+    var _assets_load_hotland = false;
+    var _assets_load_mansion = false;
+    var _room_tag = asset_get_tags(room, 3);
     
-    for (i = 0; i < array_length(_room_tag); i++)
+    for (var i = 0; i < array_length(_room_tag); i++)
     {
         switch (_room_tag[i])
         {

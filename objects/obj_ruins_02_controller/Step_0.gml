@@ -1,7 +1,5 @@
-var actor_toriel, distance_to_clover;
-
-actor_toriel = 1159;
-distance_to_clover = 80;
+var actor_toriel = obj_toriel_npc;
+var distance_to_clover = 80;
 
 with (actor_toriel)
 {

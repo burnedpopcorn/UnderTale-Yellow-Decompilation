@@ -1,8 +1,6 @@
 function scr_dialogue_battle_action_selected_action_2_flower_girls()
 {
-    var action_2_selected_count;
-    
-    action_2_selected_count = global.action_2_selected_count;
+    var action_2_selected_count = global.action_2_selected_count;
     
     switch (global.dunes_flag[31])
     {

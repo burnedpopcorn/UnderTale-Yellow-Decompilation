@@ -8,12 +8,12 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_npc_walk(959, 610, 170, 2, "y", "left");
+        cutscene_npc_walk(obj_asgore_npc, 610, 170, 2, "y", "left");
         cutscene_advance();
         break;
     
     case 2:
-        cutscene_npc_walk(1168, 540, 170, 2, "y", "right");
+        cutscene_npc_walk(obj_player_npc, 540, 170, 2, "y", "right");
         break;
     
     case 3:
@@ -25,17 +25,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 959;
+            talker[0] = obj_asgore_npc;
             message[0] = "* Through this door.";
-            message[1] = "* . .";
-            prt[0] = 3107;
-            prt[1] = 3090;
+            message[1] = "* . . .";
+            prt[0] = spr_portrait_asgore_sadder;
+            prt[1] = spr_portrait_asgore_melancholic;
         }
         
         break;
     
     case 5:
-        cutscene_npc_walk(959, 610, 150, 2, "y", "down");
+        cutscene_npc_walk(obj_asgore_npc, 610, 150, 2, "y", "down");
         cutscene_advance();
         break;
     
@@ -44,7 +44,7 @@ switch (scene)
         break;
     
     case 7:
-        cutscene_npc_walk(1168, obj_asgore_npc.x, obj_player_npc.y, 2, "x", "up");
+        cutscene_npc_walk(obj_player_npc, obj_asgore_npc.x, obj_player_npc.y, 2, "x", "up");
         break;
     
     case 8:
@@ -57,6 +57,6 @@ switch (scene)
         break;
     
     case 10:
-        cutscene_change_room(269, 160, 120, 0.025);
+        cutscene_change_room(rm_castle_barrier, 160, 120, 0.025);
         break;
 }

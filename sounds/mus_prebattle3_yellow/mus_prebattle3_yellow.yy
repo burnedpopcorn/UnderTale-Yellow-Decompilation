@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 77.34712,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/prebattle3_yellow.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "prebattle3_yellow.ogg",
+  "type": 1,
   "volume": 1.0,
 }

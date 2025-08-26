@@ -1,32 +1,32 @@
-var shop_name, other_talker, xx, portrait_xx, prt_animate, portrait_y_disjoint;
-
 if (live_call())
     return global.live_result;
 
-shop_name = global.shop_name;
-other_talker = false;
+var shop_name = global.shop_name;
+var other_talker = false;
 
 if (box_portait[0] != -4 && box_portait[message_current] != -4)
     other_talker = true;
 
-xx = obj_talk_screen_shop.x + 30;
+var xx = obj_talk_screen_shop.x + 30;
 
 if (other_talker)
     xx = obj_talk_screen_shop.x + 88;
 
-portrait_xx = 48;
+var portrait_xx = 48;
 draw_set_font(fnt_main);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 if (other_talker)
 {
+    var prt_animate;
+    
     if (characters < message_length)
         prt_animate = -1;
     else
         prt_animate = 0;
     
-    portrait_y_disjoint = 130 + (sprite_get_height(box_portait[message_current]) / 3) + 28;
+    var portrait_y_disjoint = 130 + (sprite_get_height(box_portait[message_current]) / 3) + 28;
     
     if (box_portait[message_current] != -4)
         draw_sprite_ext(box_portait[message_current], prt_animate, portrait_xx, portrait_y_disjoint, 0.5, 0.5, 0, c_white, 1);

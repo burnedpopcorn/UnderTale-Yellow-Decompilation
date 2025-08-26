@@ -2,7 +2,7 @@ image_speed = 0;
 image_index = 0;
 default_imspd = 1/3;
 can_disappear = false;
-box = 3154;
+box = obj_dialogue_box_battle_transformation_any;
 generator = 2525;
 image_angle = generator.cape_dir;
 

@@ -1,5 +1,3 @@
-var tile, i;
-
 depth = -y;
 image_speed = 0;
 cutscene_timer = 0;
@@ -20,9 +18,9 @@ if (global.sworks_flag[1] >= 4)
     exit;
 }
 
-tile = tile_get_ids_at_depth(1000006);
+var tile = tile_get_ids_at_depth(1000006);
 
-for (i = 0; i < array_length_1d(tile); i++)
+for (var i = 0; i < array_length_1d(tile); i++)
     tile_set_alpha(tile[i], 0);
 
 tile_alpha = 0;

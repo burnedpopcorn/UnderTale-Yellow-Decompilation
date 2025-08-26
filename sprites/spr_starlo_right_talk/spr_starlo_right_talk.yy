@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5a02c33c-73a6-4c1f-8181-10afc8271567",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2192b128-eff9-4fb7-9fe1-38bd3ae21a80",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2c0454b7-f598-4714-a4fb-1cc4fb4a2b3f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5d6641de-6148-4ea8-96ce-efb4134773f9",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 57,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"15de51e5-4b65-4e11-8494-167b1ef8568a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e396c002-c3e8-4cf1-8936-bf9d382068bc","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5a02c33c-73a6-4c1f-8181-10afc8271567","path":"sprites/spr_starlo_right_talk/spr_starlo_right_talk.yy",},},},"Disabled":false,"id":"fc6ebcf9-721a-4399-8b79-03730477301f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2192b128-eff9-4fb7-9fe1-38bd3ae21a80","path":"sprites/spr_starlo_right_talk/spr_starlo_right_talk.yy",},},},"Disabled":false,"id":"e6d0f994-a4cb-4f82-a2d3-a6841fe842ac","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2c0454b7-f598-4714-a4fb-1cc4fb4a2b3f","path":"sprites/spr_starlo_right_talk/spr_starlo_right_talk.yy",},},},"Disabled":false,"id":"23c91e70-c83b-45fa-b282-9b0d6f94176f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5d6641de-6148-4ea8-96ce-efb4134773f9","path":"sprites/spr_starlo_right_talk/spr_starlo_right_talk.yy",},},},"Disabled":false,"id":"4c5cecbb-2595-4ef6-b7f9-034c0bdc6af0","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "WildEast",
+    "path": "texturegroups/WildEast",
   },
   "type": 0,
   "VTile": false,

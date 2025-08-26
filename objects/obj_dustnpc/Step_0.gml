@@ -13,7 +13,7 @@ if (instance_exists(obj_dialogue) && talk == true)
     }
 }
 
-if (((keyboard_multicheck_pressed(0) && scr_interact() == true) || next == true) && talk == 0)
+if (((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) || next == true) && talk == 0)
 {
     scr_text();
     talk = 1;
@@ -24,7 +24,7 @@ if (((keyboard_multicheck_pressed(0) && scr_interact() == true) || next == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Oh, are you hiding from#  Dalv too?";
                 message[1] = "* There isn't much room but#  you're welcome to join me!";
                 message[2] = "* I know lots of games#  to kill time!";
@@ -41,7 +41,7 @@ if (((keyboard_multicheck_pressed(0) && scr_interact() == true) || next == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Thirty-three, thirty-four,#  thirty-five...";
             }
             
@@ -53,7 +53,7 @@ if (((keyboard_multicheck_pressed(0) && scr_interact() == true) || next == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Seventy-eight, seventy-nine...";
             }
             
@@ -65,7 +65,7 @@ if (((keyboard_multicheck_pressed(0) && scr_interact() == true) || next == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* ACHOO!";
                 message[1] = "* Oh dear... I lost#  count...";
                 message[2] = "* I guess you win then!";
@@ -80,7 +80,7 @@ if (((keyboard_multicheck_pressed(0) && scr_interact() == true) || next == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Is it dusty in here#  or is it just me?";
             }
             

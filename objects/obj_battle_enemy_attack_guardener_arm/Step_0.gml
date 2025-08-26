@@ -1,6 +1,4 @@
-var box, smoke;
-
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
@@ -72,7 +70,7 @@ switch (scene)
         audio_play_sound(snd_guardener_arm_land, 1, 0);
         audio_stop_sound(snd_guardener_arm_launched);
         scr_screenshake_battle(6, 1);
-        smoke = instance_create_depth(x, y, depth - 1, obj_battle_enemy_attack_guardener_arm_smoke);
+        var smoke = instance_create_depth(x, y, depth - 1, obj_battle_enemy_attack_guardener_arm_smoke);
         smoke.image_angle = image_angle;
         sprite_index = spr_attack_guardener_arm_land;
         image_index = 0;

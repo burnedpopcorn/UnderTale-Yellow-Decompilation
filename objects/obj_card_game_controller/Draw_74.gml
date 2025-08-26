@@ -1,5 +1,3 @@
-var time_in_seconds, countdown_text;
-
 draw_set_alpha(cardg_draw_alpha);
 draw_sprite(spr_card_game_background, 0, 0, 0);
 draw_sprite(spr_card_game_template, 0, 0, 0);
@@ -12,7 +10,7 @@ draw_set_halign(fa_center);
 
 if (cardg_flash == true)
 {
-    time_in_seconds = cardg_timer / 30;
+    var time_in_seconds = cardg_timer / 30;
     
     if (time_in_seconds < cardg_time_gold)
         draw_set_color(c_yellow);
@@ -27,6 +25,7 @@ draw_text(290, 16, string_hash_to_newline(string((cardg_timer / 30) div 60) + ":
 if (cardg_intro_countdown > 0)
 {
     draw_set_halign(fa_center);
+    var countdown_text;
     
     if (cardg_intro_countdown > 90)
         countdown_text = "3";

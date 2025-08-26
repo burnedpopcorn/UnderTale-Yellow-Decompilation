@@ -1,8 +1,6 @@
 function scr_item_set_unstealable()
 {
-    var selection;
-    
-    selection = argument[0];
+    var selection = argument[0];
     
     switch (selection)
     {

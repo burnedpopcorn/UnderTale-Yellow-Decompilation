@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aa77e380-1514-450a-b5be-d087ee9f0ea2",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7e98541a-2481-4f1c-bb8e-7eefe7ce3eb3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e2c1218a-0b98-4d25-b94f-181534a69639",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6980a0d1-525c-4e20-be54-2b793b066194",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 80,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"acb83341-8a64-41e6-b723-c6363bdb25ca","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f83b9852-8e44-4059-9ddc-9be9ed2606a4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"aa77e380-1514-450a-b5be-d087ee9f0ea2","path":"sprites/spr_dalv_head_dead_happy/spr_dalv_head_dead_happy.yy",},},},"Disabled":false,"id":"1403d073-5819-4d11-bb2c-64708fcce209","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7e98541a-2481-4f1c-bb8e-7eefe7ce3eb3","path":"sprites/spr_dalv_head_dead_happy/spr_dalv_head_dead_happy.yy",},},},"Disabled":false,"id":"420f5a83-8833-45c9-8b6c-86e12539289e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e2c1218a-0b98-4d25-b94f-181534a69639","path":"sprites/spr_dalv_head_dead_happy/spr_dalv_head_dead_happy.yy",},},},"Disabled":false,"id":"f382a63d-38e4-4860-b883-20a1ef23d525","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6980a0d1-525c-4e20-be54-2b793b066194","path":"sprites/spr_dalv_head_dead_happy/spr_dalv_head_dead_happy.yy",},},},"Disabled":false,"id":"79daf32d-b1b3-4790-a224-b68a09937b76","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleRuins",
+    "path": "texturegroups/BattleRuins",
   },
   "type": 0,
   "VTile": false,

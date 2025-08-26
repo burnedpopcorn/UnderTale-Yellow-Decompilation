@@ -1,6 +1,4 @@
-var starlo;
-
-starlo = 1169;
+var starlo = 1169;
 
 if (starlo.interact)
     other.scene++;
@@ -12,10 +10,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = starlo;
             message[0] = "* Are ya ready to begin?";
-            prt[0] = 417;
+            prt[0] = spr_portrait_starlo_normal;
             ch_msg = 0;
             ch[1] = "Yes";
             ch[2] = "No";
@@ -32,17 +30,17 @@ switch (scene)
                 message[8] = "* I wouldn't drag anyone#  off the road and give#  them special treatment.";
                 message[9] = "* You'll hav'ta prove#  yer gunslingin' skills#  to me.";
                 message[10] = "* That bein' said, let's#  go meet up with the#  others!";
-                prt[0] = 417;
-                prt[1] = 417;
-                prt[2] = 415;
-                prt[3] = 422;
-                prt[4] = 417;
-                prt[5] = 419;
-                prt[6] = 419;
-                prt[7] = 417;
-                prt[8] = 417;
-                prt[9] = 417;
-                prt[10] = 417;
+                prt[0] = spr_portrait_starlo_normal;
+                prt[1] = spr_portrait_starlo_normal;
+                prt[2] = spr_portrait_starlo_hidden;
+                prt[3] = spr_portrait_starlo_smile;
+                prt[4] = spr_portrait_starlo_normal;
+                prt[5] = spr_portrait_starlo_point;
+                prt[6] = spr_portrait_starlo_point;
+                prt[7] = spr_portrait_starlo_normal;
+                prt[8] = spr_portrait_starlo_normal;
+                prt[9] = spr_portrait_starlo_normal;
+                prt[10] = spr_portrait_starlo_normal;
                 scr_cutscene_start();
             }
             
@@ -50,8 +48,8 @@ switch (scene)
             {
                 message[1] = "* No rush.";
                 message[2] = "* Make yerself at home.";
-                prt[1] = 417;
-                prt[2] = 417;
+                prt[1] = spr_portrait_starlo_normal;
+                prt[2] = spr_portrait_starlo_normal;
                 other.scene = 0;
             }
         }

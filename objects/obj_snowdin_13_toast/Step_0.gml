@@ -43,13 +43,13 @@ if (sprite_index == spr_toast_turn_away)
 
 if (global.snowdin_flag[8] == 5)
 {
-    if (keyboard_multicheck_pressed(0) && scr_interact())
+    if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
     {
         scr_text();
         
         with (msg)
         {
-            talker[0] = 1437;
+            talker[0] = obj_snowdin_13_toast;
             message[0] = "* You're in the Shufflers#  neighborhood now.";
             message[1] = "* Ya wanna pass through here, ya#  gonna have to get through us.";
             message[2] = "* We got a real hard game for you.";

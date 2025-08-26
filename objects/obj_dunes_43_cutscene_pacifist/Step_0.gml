@@ -1,8 +1,6 @@
-var actor_ceroba, actor_starlo, actor_clover;
-
-actor_ceroba = 1161;
-actor_starlo = 1169;
-actor_clover = 1168;
+var actor_ceroba = obj_ceroba_npc;
+var actor_starlo = 1169;
+var actor_clover = obj_player_npc;
 
 switch (scene)
 {
@@ -29,15 +27,15 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 16711935;
+            col_modif[0] = c_fuchsia;
             talker[0] = actor_starlo;
             message[0] = "* There you are!";
             message[1] = "* I was about to come#  looking for you.";
             message[2] = "* So... The Steamworks.";
             message_col[2][0] = "        The Steamworks ";
-            prt[0] = 417;
-            prt[1] = 417;
-            prt[2] = 421;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_normal;
+            prt[2] = spr_portrait_starlo_serious;
         }
         
         break;
@@ -69,7 +67,7 @@ switch (scene)
         {
             talker[0] = actor_starlo;
             message[0] = "* May I ask why we are#  here?";
-            prt[0] = 421;
+            prt[0] = spr_portrait_starlo_serious;
         }
         
         break;
@@ -83,7 +81,7 @@ switch (scene)
         break;
     
     case 12:
-        cutscene_npc_action_sprite(actor_ceroba, 73, 1/3, true, 0);
+        cutscene_npc_action_sprite(actor_ceroba, spr_ceroba_show_mask, 1/3, true, 0);
         break;
     
     case 13:
@@ -104,15 +102,15 @@ switch (scene)
             message[1] = "* The mask Kanako made#  for you...";
             message_col[1][0] = "           Kanako                  ";
             message[2] = "* Yes.";
-            prt[0] = 370;
-            prt[1] = 420;
-            prt[2] = 377;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_starlo_sad;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
         }
         
         break;
     
     case 15:
-        cutscene_npc_action_sprite_reverse(actor_ceroba, 73, 1/3, false, 0);
+        cutscene_npc_action_sprite_reverse(actor_ceroba, spr_ceroba_show_mask, 1/3, false, 0);
         break;
     
     case 16:
@@ -123,8 +121,8 @@ switch (scene)
             talker[0] = actor_ceroba;
             message[0] = "* You see, Clover, Kanako#  is me and Chujin's only#  child.";
             message[1] = "* You haven't seen her#  around because she...";
-            prt[0] = 370;
-            prt[1] = 394;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_disapproving;
         }
         
         break;
@@ -162,18 +160,18 @@ switch (scene)
             message[9] = "* In my time of despair,#  I sent Kanako with them.";
             message[10] = "* It's been far too#  long and I haven't#  heard anything.";
             message[11] = "* I must travel to the#  Lab to find out where#  my daughter is.";
-            prt[0] = 406;
-            prt[1] = 406;
-            prt[2] = 370;
-            prt[3] = 371;
-            prt[4] = 418;
-            prt[5] = 377;
-            prt[6] = 370;
-            prt[7] = 377;
-            prt[8] = 394;
-            prt[9] = 370;
-            prt[10] = 394;
-            prt[11] = 370;
+            prt[0] = spr_portrait_starlo_disappointed;
+            prt[1] = spr_portrait_starlo_disappointed;
+            prt[2] = spr_portrait_ceroba_neutral;
+            prt[3] = spr_portrait_ceroba_alt;
+            prt[4] = spr_portrait_starlo_plain;
+            prt[5] = spr_portrait_ceroba_closed_eyes;
+            prt[6] = spr_portrait_ceroba_neutral;
+            prt[7] = spr_portrait_ceroba_closed_eyes;
+            prt[8] = spr_portrait_ceroba_disapproving;
+            prt[9] = spr_portrait_ceroba_neutral;
+            prt[10] = spr_portrait_ceroba_disapproving;
+            prt[11] = spr_portrait_ceroba_neutral;
             
             if (message_current == 2)
                 actor_ceroba.npc_direction = "left";
@@ -200,8 +198,8 @@ switch (scene)
             talker[0] = actor_starlo;
             message[0] = "* I'm proud of you,#  Ceroba. Stepping out and#  taking charge.";
             message[1] = "* You've been in a rut#  lately. It was tough#  to watch.";
-            prt[0] = 417;
-            prt[1] = 420;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_sad;
         }
         
         break;
@@ -225,7 +223,7 @@ switch (scene)
         {
             talker[0] = actor_ceroba;
             message[0] = "* ...";
-            prt[0] = 394;
+            prt[0] = spr_portrait_ceroba_disapproving;
         }
         
         break;
@@ -241,7 +239,7 @@ switch (scene)
         {
             talker[0] = actor_starlo;
             message[0] = "* S-so, why travel#  through the Steamworks#  particularly?";
-            prt[0] = 428;
+            prt[0] = spr_portrait_starlo_sweat;
         }
         
         break;
@@ -279,19 +277,19 @@ switch (scene)
             message[10] = "* They've proven to be#  skilled on several#  fronts.";
             message[11] = "* An excellent choice. I#  trust Clover to deliver#  justice out there!";
             message[12] = "* Alright, we've#  discussed enough. Let's#  get moving.";
-            prt[0] = 370;
-            prt[1] = 377;
-            prt[2] = 370;
-            prt[3] = 417;
-            prt[4] = 422;
-            prt[5] = 377;
-            prt[6] = 370;
-            prt[7] = 371;
-            prt[8] = 406;
-            prt[9] = 377;
-            prt[10] = 372;
-            prt[11] = 422;
-            prt[12] = 377;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_closed_eyes;
+            prt[2] = spr_portrait_ceroba_neutral;
+            prt[3] = spr_portrait_starlo_normal;
+            prt[4] = spr_portrait_starlo_smile;
+            prt[5] = spr_portrait_ceroba_closed_eyes;
+            prt[6] = spr_portrait_ceroba_neutral;
+            prt[7] = spr_portrait_ceroba_alt;
+            prt[8] = spr_portrait_starlo_disappointed;
+            prt[9] = spr_portrait_ceroba_closed_eyes;
+            prt[10] = spr_portrait_ceroba_smile;
+            prt[11] = spr_portrait_starlo_smile;
+            prt[12] = spr_portrait_ceroba_closed_eyes;
         }
         
         break;
@@ -309,7 +307,7 @@ switch (scene)
         break;
     
     case 36:
-        cutscene_sfx_play(273, 1);
+        cutscene_sfx_play(snd_dunes_43_code, 1);
         break;
     
     case 37:
@@ -317,7 +315,7 @@ switch (scene)
         break;
     
     case 38:
-        cutscene_sfx_play(270, 2);
+        cutscene_sfx_play(snd_elevator_start, 2);
         cutscene_npc_direction(actor_ceroba, "right");
         cutscene_advance(39);
         break;
@@ -327,7 +325,7 @@ switch (scene)
         break;
     
     case 40:
-        cutscene_action_sprite(1958, 1105, 1/3, true, 0, 631, 0);
+        cutscene_action_sprite(obj_dunes_43_gate, spr_dunes_43_gate, 1/3, true, 0, snd_dunes_43_gate, 0);
         break;
     
     case 41:
@@ -346,8 +344,8 @@ switch (scene)
             talker[0] = actor_ceroba;
             message[0] = "* I'll see you later,#  Starlo.";
             message[1] = "* Whatever happens,#  remember that this is#  for Chujin's legacy.";
-            prt[0] = 377;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_neutral;
         }
         
         break;
@@ -373,7 +371,7 @@ switch (scene)
         break;
     
     case 49:
-        cutscene_npc_set_sprites(actor_starlo, 207, 205, 196, 201, 206, 204, 194, 200);
+        cutscene_npc_set_sprites(actor_starlo, spr_starlo_up_walk, spr_starlo_right_walk, spr_starlo_down_walk, spr_starlo_left_walk, spr_starlo_up_talk, spr_starlo_right_talk, spr_starlo_down_talk, spr_starlo_left_talk);
     
     case 50:
         cutscene_dialogue();
@@ -382,7 +380,7 @@ switch (scene)
         {
             talker[0] = actor_starlo;
             message[0] = "* Oh! Clover! Before you#  go, I forgot to give you#  this.";
-            prt[0] = 404;
+            prt[0] = spr_portrait_starlo_blush;
         }
         
         break;
@@ -392,7 +390,7 @@ switch (scene)
         break;
     
     case 52:
-        cutscene_sfx_play(378, 1);
+        cutscene_sfx_play(snd_success, 1);
         break;
     
     case 53:
@@ -401,20 +399,20 @@ switch (scene)
         with (msg)
         {
             talker[0] = -4;
-            talker[1] = 1169;
-            sndfnt_array[0] = 391;
-            sndfnt_array[1] = 107;
+            talker[1] = obj_starlo_npc;
+            sndfnt_array[0] = snd_talk_default;
+            sndfnt_array[1] = snd_talk_starlo;
             message[0] = "* (You got the Deputy#  Badge!)";
             message[1] = "* Despite a few hiccups,#  our little adventure was#  a blast.";
             message[2] = "* I'll be seein' ya#  around, partner!";
-            prt[1] = 417;
-            prt[2] = 422;
+            prt[1] = spr_portrait_starlo_normal;
+            prt[2] = spr_portrait_starlo_smile;
         }
         
         break;
     
     case 54:
-        cutscene_npc_action_sprite(actor_starlo, 202, 1/3, true, 0, 232, 5);
+        cutscene_npc_action_sprite(actor_starlo, spr_starlo_pose, 1/3, true, 0, snd_shotstrong, 5);
         break;
     
     case 55:
@@ -422,7 +420,7 @@ switch (scene)
         break;
     
     case 56:
-        cutscene_npc_action_sprite(actor_clover, 1106, 1/3, true, 0, 275, 6);
+        cutscene_npc_action_sprite(actor_clover, spr_dunes_43_clover_pose, 1/3, true, 0, snd_achoo, 6);
         break;
     
     case 57:
@@ -434,9 +432,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
+            talker[0] = obj_starlo_npc;
             message[0] = "* I'm so proud!";
-            prt[0] = 413;
+            prt[0] = spr_portrait_starlo_flustered;
         }
         
         break;
@@ -466,7 +464,7 @@ switch (scene)
         break;
     
     case 65:
-        cutscene_change_room(141, 160, 520, 0.015, 45);
+        cutscene_change_room(rm_steamworks_01, 160, 520, 0.015, 45);
         break;
     
     case 66:
@@ -481,7 +479,7 @@ switch (scene)
         break;
     
     case 68:
-        cutscene_sfx_play(270, 1);
+        cutscene_sfx_play(snd_elevator_start, 1);
         break;
     
     case 69:
@@ -504,8 +502,8 @@ switch (scene)
             talker[0] = actor_ceroba;
             message[0] = "* Remember, I'm in#  charge.";
             message[1] = "* Stay close by and we'll#  reach our destination#  soon.";
-            prt[0] = 370;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_neutral;
         }
         
         break;

@@ -1,5 +1,3 @@
-var count;
-
 if (!instance_exists(obj_heart_battle_fighting_parent))
 {
     instance_destroy();
@@ -63,7 +61,7 @@ if (state == 3)
     }
     else
     {
-        count = 0;
+        var count = 0;
         
         with (object_index)
         {

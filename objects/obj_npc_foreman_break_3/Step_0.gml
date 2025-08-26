@@ -17,13 +17,13 @@ if (interact)
                 message[4] = "* My lovely wife, Angie,#  is running the mines#  while I'm away.";
                 message[5] = "* Not sure how efficient#  my boys will be without#  me there, though.";
                 message[6] = "* Ahh, it's a risk worth#  taking.";
-                prt[0] = 362;
-                prt[1] = 359;
-                prt[2] = 361;
-                prt[3] = 362;
-                prt[4] = 359;
-                prt[5] = 361;
-                prt[6] = 359;
+                prt[0] = spr_gilbert_head_blush;
+                prt[1] = spr_gilbert_head;
+                prt[2] = spr_gilbert_head_sweat;
+                prt[3] = spr_gilbert_head_blush;
+                prt[4] = spr_gilbert_head;
+                prt[5] = spr_gilbert_head_sweat;
+                prt[6] = spr_gilbert_head;
             }
             
             npc_flag = 1;
@@ -38,12 +38,12 @@ if (interact)
                 message[3] = "* Said it was for \"role#  play\", whatever that is.";
                 message[4] = "* Seems like it's shifted#  into something very#  different nowadays.";
                 message[5] = "* I guess if my kiddo's#  happy, I can't complain#  too much.";
-                prt[0] = 359;
-                prt[1] = 361;
-                prt[2] = 359;
-                prt[3] = 362;
-                prt[4] = 361;
-                prt[5] = 359;
+                prt[0] = spr_gilbert_head;
+                prt[1] = spr_gilbert_head_sweat;
+                prt[2] = spr_gilbert_head;
+                prt[3] = spr_gilbert_head_blush;
+                prt[4] = spr_gilbert_head_sweat;
+                prt[5] = spr_gilbert_head;
             }
             
             npc_flag = 2;
@@ -54,8 +54,8 @@ if (interact)
             {
                 message[0] = "* The mines are always#  open to visitors if you#  call ahead of time!";
                 message[1] = "* I'd like to see you back#  there soon!";
-                prt[0] = 359;
-                prt[1] = 362;
+                prt[0] = spr_gilbert_head;
+                prt[1] = spr_gilbert_head_blush;
             }
             
             break;

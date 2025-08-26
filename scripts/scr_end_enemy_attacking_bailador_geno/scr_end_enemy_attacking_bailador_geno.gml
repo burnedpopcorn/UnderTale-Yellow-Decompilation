@@ -1,8 +1,6 @@
 function scr_end_enemy_attacking_bailador_geno()
 {
-    var turns_passed;
-    
-    turns_passed = global.turns_passed;
+    var turns_passed = global.turns_passed;
     
     if (turns_passed == 7 && global.route == 3)
     {

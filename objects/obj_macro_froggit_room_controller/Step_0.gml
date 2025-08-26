@@ -59,7 +59,7 @@ switch (scene)
         break;
     
     case 11:
-        cutscene_npc_walk(1168, 156, 160, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 156, 160, 3, "x", "up");
         break;
     
     case 12:
@@ -112,7 +112,7 @@ switch (scene)
         break;
     
     case 19:
-        cutscene_sfx_play(280, 1);
+        cutscene_sfx_play(snd_tinyfroggit, 1);
         break;
     
     case 20:
@@ -137,7 +137,7 @@ switch (scene)
         break;
     
     case 24:
-        cutscene_sfx_play(280, 1);
+        cutscene_sfx_play(snd_tinyfroggit, 1);
         break;
     
     case 25:
@@ -145,7 +145,7 @@ switch (scene)
         break;
     
     case 26:
-        cutscene_sfx_play(280, 1);
+        cutscene_sfx_play(snd_tinyfroggit, 1);
         obj_mfnpcfinal.vspeed = 4;
         break;
     
@@ -196,7 +196,7 @@ switch (scene)
         break;
     
     case 32:
-        cutscene_sfx_play(383, 1);
+        cutscene_sfx_play(snd_undertale_swoosh, 1);
         break;
     
     case 33:

@@ -1,8 +1,6 @@
-function scr_audio_fade_out_battle(argument0)
+function scr_audio_fade_out_battle(arg0)
 {
-    var audio_array_val;
-    
-    audio_array_val = 0;
+    var audio_array_val = 0;
     sound_y[audio_array_val] = mus_apprehension_yellow;
     audio_array_val += 1;
     sound_y[audio_array_val] = mus_dalvbattle_yellow;
@@ -64,6 +62,6 @@ function scr_audio_fade_out_battle(argument0)
     for (i = 0; i < array_length_1d(sound_y); i += 1)
     {
         if (audio_is_playing(sound_y[i]))
-            audio_sound_gain(sound_y[i], 0, argument0);
+            audio_sound_gain(sound_y[i], 0, arg0);
     }
 }

@@ -1,5 +1,3 @@
-var overlay_alpha_default;
-
 if (live_call())
     return global.live_result;
 
@@ -32,10 +30,10 @@ switch (scene)
             message[1] = "   I don't have much time these#   days for a written journal so#   I opted for video.";
             message[2] = "    I have no idea who will view#    these, if anyone, but I see it#    best to document my work.";
             message[3] = " That is all for now. Signing off.";
-            prt[0] = 3563;
-            prt[1] = 908;
-            prt[2] = 908;
-            prt[3] = 3563;
+            prt[0] = spr_chujin_default_idle;
+            prt[1] = spr_chujin_looking_down;
+            prt[2] = spr_chujin_looking_down;
+            prt[3] = spr_chujin_default_idle;
         }
         
         break;
@@ -62,19 +60,19 @@ switch (scene)
             message[10] = " Humankind already won by trapping# us down here yet they keep twisting# the knife!";
             message[11] = "  This cannot continue any longer!";
             message[12] = "   As of today, I'm looking into#   stopping this perpetual injustice#   once and for all.";
-            prt[0] = 3563;
-            prt[1] = 908;
-            prt[2] = 2129;
-            prt[3] = 3392;
-            prt[4] = 629;
-            prt[5] = 629;
-            prt[6] = 2782;
-            prt[7] = 3194;
-            prt[8] = 3414;
-            prt[9] = 2782;
-            prt[10] = 3194;
-            prt[11] = 908;
-            prt[12] = 3563;
+            prt[0] = spr_chujin_default_idle;
+            prt[1] = spr_chujin_looking_down;
+            prt[2] = spr_chujin_look_right;
+            prt[3] = spr_chujin_look_right_finger_down;
+            prt[4] = spr_chujin_look_left;
+            prt[5] = spr_chujin_look_left;
+            prt[6] = spr_chujin_lower_head;
+            prt[7] = spr_chujin_lower_head_lower;
+            prt[8] = spr_chujin_anxious;
+            prt[9] = spr_chujin_lower_head;
+            prt[10] = spr_chujin_lower_head_lower;
+            prt[11] = spr_chujin_looking_down;
+            prt[12] = spr_chujin_default_idle;
         }
         
         break;
@@ -99,17 +97,17 @@ switch (scene)
             message[8] = "  But enough of that... it's in the#  past. ";
             message[9] = "    I must live in the present#    and plan for the future.";
             message[10] = "   Prove I can save monsterkind...#   another way.";
-            prt[0] = 3563;
-            prt[1] = 908;
-            prt[2] = 3392;
-            prt[3] = 3392;
-            prt[4] = 2782;
-            prt[5] = 3194;
-            prt[6] = 629;
-            prt[7] = 3563;
-            prt[8] = 908;
-            prt[9] = 908;
-            prt[10] = 3563;
+            prt[0] = spr_chujin_default_idle;
+            prt[1] = spr_chujin_looking_down;
+            prt[2] = spr_chujin_look_right_finger_down;
+            prt[3] = spr_chujin_look_right_finger_down;
+            prt[4] = spr_chujin_lower_head;
+            prt[5] = spr_chujin_lower_head_lower;
+            prt[6] = spr_chujin_look_left;
+            prt[7] = spr_chujin_default_idle;
+            prt[8] = spr_chujin_looking_down;
+            prt[9] = spr_chujin_looking_down;
+            prt[10] = spr_chujin_default_idle;
         }
         
         break;
@@ -137,20 +135,20 @@ switch (scene)
             message[11] = "   From that, a serum would be#   extracted which could transform#   any average monster.";
             message[12] = "  ...Unfortunately, I have not#  garnered enough proof that said#  serum is possible.";
             message[13] = "     I must conduct more tests.";
-            prt[0] = 908;
-            prt[1] = 3563;
-            prt[2] = 629;
-            prt[3] = 629;
-            prt[4] = 3392;
-            prt[5] = 2129;
-            prt[6] = 908;
-            prt[7] = 908;
-            prt[8] = 3563;
-            prt[9] = 629;
-            prt[10] = 3563;
-            prt[11] = 908;
-            prt[12] = 2129;
-            prt[13] = 629;
+            prt[0] = spr_chujin_looking_down;
+            prt[1] = spr_chujin_default_idle;
+            prt[2] = spr_chujin_look_left;
+            prt[3] = spr_chujin_look_left;
+            prt[4] = spr_chujin_look_right_finger_down;
+            prt[5] = spr_chujin_look_right;
+            prt[6] = spr_chujin_looking_down;
+            prt[7] = spr_chujin_looking_down;
+            prt[8] = spr_chujin_default_idle;
+            prt[9] = spr_chujin_look_left;
+            prt[10] = spr_chujin_default_idle;
+            prt[11] = spr_chujin_looking_down;
+            prt[12] = spr_chujin_look_right;
+            prt[13] = spr_chujin_look_left;
         }
         
         break;
@@ -184,25 +182,25 @@ switch (scene)
             message[16] = "Search for a willing Boss Monster#in the Underground. Someone else...#please.";
             message[17] = "   Our little girl... Kanako...#   She needs to live a happy life,#   unaffected by my endeavors.";
             message[18] = "       That is my final wish.";
-            prt[0] = 1065;
-            prt[1] = 1630;
-            prt[2] = 1065;
-            prt[3] = 1814;
-            prt[4] = 1814;
-            prt[5] = 3708;
-            prt[6] = 1065;
-            prt[7] = 1814;
-            prt[8] = 1065;
-            prt[9] = 1065;
-            prt[10] = 1065;
-            prt[11] = 1814;
-            prt[12] = 1935;
-            prt[13] = 1935;
-            prt[14] = 1935;
-            prt[15] = 3078;
-            prt[16] = 1935;
-            prt[17] = 1065;
-            prt[18] = 1814;
+            prt[0] = spr_chujin_forward_stressed;
+            prt[1] = spr_chujin_anxious_stressed;
+            prt[2] = spr_chujin_forward_stressed;
+            prt[3] = spr_chujin_down_stressed;
+            prt[4] = spr_chujin_down_stressed;
+            prt[5] = spr_chujin_glasses_stressed;
+            prt[6] = spr_chujin_forward_stressed;
+            prt[7] = spr_chujin_down_stressed;
+            prt[8] = spr_chujin_forward_stressed;
+            prt[9] = spr_chujin_forward_stressed;
+            prt[10] = spr_chujin_forward_stressed;
+            prt[11] = spr_chujin_down_stressed;
+            prt[12] = spr_chujin_down_stressed_2;
+            prt[13] = spr_chujin_down_stressed_2;
+            prt[14] = spr_chujin_down_stressed_2;
+            prt[15] = spr_chujin_lower_head_stressed;
+            prt[16] = spr_chujin_down_stressed_2;
+            prt[17] = spr_chujin_forward_stressed;
+            prt[18] = spr_chujin_down_stressed;
         }
         
         break;
@@ -236,7 +234,7 @@ switch (scene)
     
     case 18:
         scr_audio_fade_out(cutscene_music, 1500);
-        scr_audio_fade_out(633, 2500);
+        scr_audio_fade_out(snd_f_noise, 2500);
         cutscene_advance();
         break;
     
@@ -285,7 +283,7 @@ if (scene_change == true)
 if (scene >= 12)
     exit;
 
-overlay_alpha_default = 0.15;
+var overlay_alpha_default = 0.15;
 
 if (irandom(80) == 1)
     static_flicker = true;

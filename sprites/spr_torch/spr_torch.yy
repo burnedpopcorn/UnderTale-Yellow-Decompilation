@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9b05ecbe-0459-44fb-851b-bb502a4f7e22",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dccc07e0-3665-4742-9a76-f907f05b8098",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c35c7715-582f-4533-b8f5-57d34597286f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6a23448e-d90f-44df-a7ba-5bb95ab3074b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a74eca94-6928-40a6-8576-35fde6f5bc7e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"217c281c-3eed-462c-aac6-a33636fde2d5",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 48,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bc3e713a-08da-4f11-a24a-d44fdcc84118","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8fb63b14-6f37-4fa7-b0bd-0fa96d4dd7f2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9b05ecbe-0459-44fb-851b-bb502a4f7e22","path":"sprites/spr_torch/spr_torch.yy",},},},"Disabled":false,"id":"6a41c500-2f95-475a-bcc8-2689ae14bd96","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dccc07e0-3665-4742-9a76-f907f05b8098","path":"sprites/spr_torch/spr_torch.yy",},},},"Disabled":false,"id":"58b509b5-0e16-44e3-bf53-51d3c606aecc","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c35c7715-582f-4533-b8f5-57d34597286f","path":"sprites/spr_torch/spr_torch.yy",},},},"Disabled":false,"id":"b2522ac3-558a-4dc0-99d7-4965b7532728","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6a23448e-d90f-44df-a7ba-5bb95ab3074b","path":"sprites/spr_torch/spr_torch.yy",},},},"Disabled":false,"id":"539144a9-dbfa-4dd4-82fc-ff34e35d1671","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a74eca94-6928-40a6-8576-35fde6f5bc7e","path":"sprites/spr_torch/spr_torch.yy",},},},"Disabled":false,"id":"47753679-fa2e-45c1-a334-7be563865d4d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"217c281c-3eed-462c-aac6-a33636fde2d5","path":"sprites/spr_torch/spr_torch.yy",},},},"Disabled":false,"id":"c7627c30-9c5c-4b7b-a8b3-9029438c313f","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Ruins",
+    "path": "texturegroups/Ruins",
   },
   "type": 0,
   "VTile": false,

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d2900a6f-f8e9-4dcf-a92b-4397b6eeba3d",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4ecb2471-7d0e-4fdb-b404-9657fa91295a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a5c5802b-a3e6-482f-b203-1f1f125cc679",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b3b61a04-2163-4033-8b1f-19c1fa82a681",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 53,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f653d5ec-b62e-44f9-b69f-ea2f70a6ecdd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5c36c797-5154-4441-a427-2eb9dc6aa980","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d2900a6f-f8e9-4dcf-a92b-4397b6eeba3d","path":"sprites/spr_dunes_42_cellar_door/spr_dunes_42_cellar_door.yy",},},},"Disabled":false,"id":"5b147628-051b-4c52-beb4-3149254c1b31","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4ecb2471-7d0e-4fdb-b404-9657fa91295a","path":"sprites/spr_dunes_42_cellar_door/spr_dunes_42_cellar_door.yy",},},},"Disabled":false,"id":"23adeb50-06ae-4716-a02b-e16debf5db03","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a5c5802b-a3e6-482f-b203-1f1f125cc679","path":"sprites/spr_dunes_42_cellar_door/spr_dunes_42_cellar_door.yy",},},},"Disabled":false,"id":"1802b6ef-bfb2-4e1c-81a5-daee46b3f640","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b3b61a04-2163-4033-8b1f-19c1fa82a681","path":"sprites/spr_dunes_42_cellar_door/spr_dunes_42_cellar_door.yy",},},},"Disabled":false,"id":"87acb7cc-aa7d-4914-91b4-d624b2022ed9","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Dunes",
+    "path": "texturegroups/Dunes",
   },
   "type": 0,
   "VTile": false,

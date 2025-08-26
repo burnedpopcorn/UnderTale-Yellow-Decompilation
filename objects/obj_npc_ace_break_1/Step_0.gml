@@ -16,11 +16,11 @@ switch (global.dunes_flag_ext[2])
             message[2] = "* There's a fun card game#  set up in the stable.";
             message[3] = "* My friend runs it while#  I oversee the... profits.";
             message[4] = "* You should try it out.";
-            prt[0] = 439;
-            prt[1] = 437;
-            prt[2] = 436;
-            prt[3] = 435;
-            prt[4] = 436;
+            prt[0] = spr_portrait_ace_hand;
+            prt[1] = spr_portrait_ace_concealed;
+            prt[2] = spr_portrait_ace_smile;
+            prt[3] = spr_portrait_ace_stern;
+            prt[4] = spr_portrait_ace_smile;
         }
         
         global.dunes_flag_ext[2] = 1;
@@ -33,9 +33,9 @@ switch (global.dunes_flag_ext[2])
             message[0] = "* To answer the pressing#  question:";
             message[1] = "* No, I won't take my#  bandana off.";
             message[2] = "* I enjoy being#  mysterious... and#  fashionable.";
-            prt[0] = 437;
-            prt[1] = 439;
-            prt[2] = 436;
+            prt[0] = spr_portrait_ace_concealed;
+            prt[1] = spr_portrait_ace_hand;
+            prt[2] = spr_portrait_ace_smile;
         }
         
         global.dunes_flag_ext[2] = 2;
@@ -46,9 +46,9 @@ switch (global.dunes_flag_ext[2])
         {
             talker[0] = other.object_index;
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* I'd rather be left#  alone.";
-            prt[0] = 437;
+            prt[0] = spr_portrait_ace_concealed;
         }
         
         break;

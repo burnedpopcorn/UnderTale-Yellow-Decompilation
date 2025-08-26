@@ -1,6 +1,4 @@
-var gardener_talknoise;
-
-gardener_talknoise = 111;
+var gardener_talknoise = 111;
 audio_sound_pitch(gardener_talknoise, guardener_pitch);
 
 switch (scene)
@@ -49,9 +47,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* What was that?";
-            prt[0] = 381;
+            prt[0] = spr_portrait_ceroba_nervous;
         }
         
         break;
@@ -143,12 +141,12 @@ switch (scene)
         
         with (msg)
         {
-            col_modif[0] = 255;
+            col_modif[0] = c_red;
             color = true;
             sndfnt_array[0] = gardener_talknoise;
-            sndfnt_array[3] = 108;
+            sndfnt_array[3] = snd_talk_ceroba;
             sndfnt_array[4] = gardener_talknoise;
-            sndfnt_array[9] = 108;
+            sndfnt_array[9] = snd_talk_ceroba;
             sndfnt_array[10] = gardener_talknoise;
             message[0] = "* OH, HE-HELLO THERE.";
             message[1] = "* WAS IT YOU WHO#  DISTURBED THE FLOR#  A? ?";
@@ -162,8 +160,8 @@ switch (scene)
             message[8] = "* LEVEL 10 MEANS - THE#  TERMINATION OF THE TRAMPLER.";
             message[9] = "* Hold on!";
             message[10] = "* FAREWELL.";
-            prt[3] = 381;
-            prt[9] = 381;
+            prt[3] = spr_portrait_ceroba_nervous;
+            prt[9] = spr_portrait_ceroba_nervous;
             position = 0;
             
             switch (message_current)
@@ -219,11 +217,11 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 16711935;
+            col_modif[0] = c_fuchsia;
             sndfnt_array[0] = gardener_talknoise;
-            sndfnt_array[4] = 391;
+            sndfnt_array[4] = snd_talk_default;
             sndfnt_array[5] = gardener_talknoise;
-            sndfnt_array[12] = 391;
+            sndfnt_array[12] = snd_talk_default;
             sndfnt_array[13] = gardener_talknoise;
             message[0] = "* I WAS ABOUT TO DO SOMETHING..#  .";
             message[1] = "* OH YES, I REMEMBER.";
@@ -247,7 +245,7 @@ switch (scene)
         break;
     
     case 26:
-        cutscene_action_sprite(780, 3630, 1, false, 0);
+        cutscene_action_sprite(obj_steamworks_29_gardener_bot, spr_steamworks_29_gardener_bot_look_around, 1, false, 0);
         break;
     
     case 27:
@@ -265,9 +263,9 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 16711935;
+            col_modif[0] = c_fuchsia;
             sndfnt_array[0] = gardener_talknoise;
-            sndfnt_array[5] = 391;
+            sndfnt_array[5] = snd_talk_default;
             sndfnt_array[6] = gardener_talknoise;
             message[0] = "* OH... I HAVE ALLOWED IMMENSE#  OVERGROWTH.";
             message[1] = "* I UNDERSTAND.";
@@ -337,13 +335,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* ...";
             message[1] = "* ...";
             message[2] = "* Let's... keep moving.";
-            prt[0] = 371;
-            prt[1] = 394;
-            prt[2] = 370;
+            prt[0] = spr_portrait_ceroba_alt;
+            prt[1] = spr_portrait_ceroba_disapproving;
+            prt[2] = spr_portrait_ceroba_neutral;
             position = 0;
         }
         
@@ -354,7 +352,7 @@ switch (scene)
         break;
     
     case 38:
-        if (cutscene_npc_walk(1161, obj_pl.x, obj_pl.y + 20, 2, "x", "up"))
+        if (cutscene_npc_walk(obj_ceroba_npc, obj_pl.x, obj_pl.y + 20, 2, "x", "up"))
         {
             cutscene_actor_into_follower();
             cutscene_advance(39);
@@ -380,17 +378,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* ...";
             message[1] = "* Surely...";
             message[2] = "* There had to be some#  other way...";
             message[3] = "* ...";
             message[4] = "* Let's just... keep#  moving.";
-            prt[0] = 371;
-            prt[1] = 370;
-            prt[2] = 370;
-            prt[3] = 394;
-            prt[4] = 371;
+            prt[0] = spr_portrait_ceroba_alt;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_neutral;
+            prt[3] = spr_portrait_ceroba_disapproving;
+            prt[4] = spr_portrait_ceroba_alt;
             
             if (message_current == 1)
             {
@@ -403,7 +401,7 @@ switch (scene)
     
     case 42:
         obj_pl.direction = 90;
-        global.party_member = 1171;
+        global.party_member = obj_ceroba_follower;
         cutscene_actor_into_follower();
         break;
     

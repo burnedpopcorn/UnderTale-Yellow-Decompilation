@@ -1,12 +1,10 @@
-var box;
-
 if (live_call())
     return global.live_result;
 
 excluded_number = 0;
 attack_timer = room_speed * 9;
 alarm[2] = attack_timer;
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 instance_create_depth(box.x - 120, box.bbox_top - 60, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_jandroid_garbage_can);
 obj_battle_enemy_attack_jandroid_garbage_can.spawn_timer_max = 15;
 attack_interval = 50;

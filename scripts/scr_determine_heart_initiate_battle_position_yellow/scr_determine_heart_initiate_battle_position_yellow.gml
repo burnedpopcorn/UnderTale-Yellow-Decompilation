@@ -1,11 +1,9 @@
 function scr_determine_heart_initiate_battle_position_yellow()
 {
-    var battle_enemy_name;
-    
     if (live_call())
         return global.live_result;
     
-    battle_enemy_name = global.battle_enemy_name;
+    var battle_enemy_name = global.battle_enemy_name;
     
     switch (battle_enemy_name)
     {

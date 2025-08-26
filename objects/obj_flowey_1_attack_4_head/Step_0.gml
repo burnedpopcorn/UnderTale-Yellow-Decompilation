@@ -1,10 +1,8 @@
-var box, x_target, bullet_dir_base, spiral_count, spiral_dir_inc, spiral_dir, i, spiral, bullet_count, bullet_dir_inc, bullet_dir, bullet;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
-x_target = box.x + (side * 200);
+var box = obj_dialogue_box_battle_transformation_any;
+var x_target = box.x + (side * 200);
 
 switch (scene)
 {
@@ -62,19 +60,19 @@ switch (scene)
         
         if (spiral_offset <= 0)
         {
-            bullet_dir_base = 0;
+            var bullet_dir_base = 0;
             
             if (side == 1)
                 bullet_dir_base = 180;
             
             spiral_offset = spiral_offset_max;
-            spiral_count = 4;
-            spiral_dir_inc = 11;
-            spiral_dir = -((spiral_count - 1) * 0.5 * spiral_dir_inc);
+            var spiral_count = 4;
+            var spiral_dir_inc = 11;
+            var spiral_dir = -((spiral_count - 1) * 0.5 * spiral_dir_inc);
             
-            for (i = 0; i < spiral_count; i++)
+            for (var i = 0; i < spiral_count; i++)
             {
-                spiral = instance_create_depth(x, y, -100, obj_battle_enemy_attack_flowey_spiral);
+                var spiral = instance_create_depth(x, y, -100, obj_battle_enemy_attack_flowey_spiral);
                 spiral.direction = bullet_dir_base + spiral_dir;
                 spiral.speed = 5;
                 spiral_dir += spiral_dir_inc;
@@ -87,19 +85,19 @@ switch (scene)
         
         if (bullet_offset <= 0)
         {
-            bullet_dir_base = 0;
+            var bullet_dir_base = 0;
             
             if (side == 1)
                 bullet_dir_base = 180;
             
             bullet_offset = bullet_offset_max;
-            bullet_count = 5;
-            bullet_dir_inc = 11;
-            bullet_dir = -((bullet_count - 1) * 0.5 * bullet_dir_inc);
+            var bullet_count = 5;
+            var bullet_dir_inc = 11;
+            var bullet_dir = -((bullet_count - 1) * 0.5 * bullet_dir_inc);
             
-            for (i = 0; i < bullet_count; i++)
+            for (var i = 0; i < bullet_count; i++)
             {
-                bullet = instance_create_depth(x, y, -100, obj_battle_enemy_attack_fpellets_simple);
+                var bullet = instance_create_depth(x, y, -100, obj_battle_enemy_attack_fpellets_simple);
                 bullet.direction = bullet_dir_base + bullet_dir;
                 bullet.speed = 5;
                 bullet_dir += bullet_dir_inc;
@@ -126,7 +124,7 @@ switch (scene)
     case 7:
         if (cutscene_wait(1))
         {
-            bullet_dir = 0;
+            var bullet_dir = 0;
             attack_count--;
             
             if (attack_count < 0)

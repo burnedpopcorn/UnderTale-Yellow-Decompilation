@@ -28,9 +28,9 @@ if (global.snowdin_flag[13] == 0)
             with (msg)
             {
                 prt = false;
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* Oh my goodness! Did you#  get left behind?";
-                prt[0] = 333;
+                prt[0] = spr_martlet_head_surprised;
             }
             
             scene++;
@@ -67,7 +67,7 @@ if (global.snowdin_flag[13] == 0)
             with (msg)
             {
                 prt = false;
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* Might I ask your name?";
                 ch_msg = 0;
                 ch[1] = "Clover";
@@ -77,13 +77,13 @@ if (global.snowdin_flag[13] == 0)
                 message[4] = "* The troublemaker who#  caused all this, ya#  know?";
                 message[5] = "* But I can't just leave#  you to find the others#  alone!";
                 message[6] = "* You're a child! I could#  never do that!";
-                prt[0] = 321;
-                prt[1] = 338;
-                prt[2] = 311;
-                prt[3] = 317;
-                prt[4] = 317;
-                prt[5] = 338;
-                prt[6] = 313;
+                prt[0] = spr_martlet_head_moderate;
+                prt[1] = spr_martlet_head_wondering;
+                prt[2] = spr_martlet_head_confused;
+                prt[3] = spr_martlet_head_downer;
+                prt[4] = spr_martlet_head_downer;
+                prt[5] = spr_martlet_head_wondering;
+                prt[6] = spr_martlet_head_determined;
             }
             
             scene++;
@@ -102,13 +102,13 @@ if (global.snowdin_flag[13] == 0)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* Okay, how 'bout we#  hurry and catch up#  with the others...";
                 message[1] = "* Then I come back and#  no one will ever#  know!";
                 message[2] = "* Ready?";
-                prt[0] = 320;
-                prt[1] = 321;
-                prt[2] = 321;
+                prt[0] = spr_martlet_head_melancholic;
+                prt[1] = spr_martlet_head_moderate;
+                prt[2] = spr_martlet_head_moderate;
             }
             
             if (!global.dialogue_open)
@@ -135,7 +135,7 @@ if (global.snowdin_flag[13] == 3 && global.snowdin_flag[21] == 0)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* I... I have no idea how#  to handle this.";
                 message[1] = "* ...";
                 message[2] = "* ASGORE would know what#  to do.";
@@ -145,15 +145,15 @@ if (global.snowdin_flag[13] == 3 && global.snowdin_flag[21] == 0)
                 message[6] = "* I'll meet up with you#  once you get there.";
                 message[7] = "* In the meantime...#  I have work to#  attend to.";
                 message[8] = "* See you later.";
-                prt[0] = 317;
-                prt[1] = 317;
-                prt[2] = 329;
-                prt[3] = 321;
-                prt[4] = 321;
-                prt[5] = 338;
-                prt[6] = 321;
-                prt[7] = 321;
-                prt[8] = 321;
+                prt[0] = spr_martlet_head_downer;
+                prt[1] = spr_martlet_head_downer;
+                prt[2] = spr_martlet_head_sad;
+                prt[3] = spr_martlet_head_moderate;
+                prt[4] = spr_martlet_head_moderate;
+                prt[5] = spr_martlet_head_wondering;
+                prt[6] = spr_martlet_head_moderate;
+                prt[7] = spr_martlet_head_moderate;
+                prt[8] = spr_martlet_head_moderate;
             }
             
             if (!global.dialogue_open)
@@ -198,7 +198,7 @@ else if (global.snowdin_flag[13] == 3 && global.snowdin_flag[21] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* You're not off the#  hook, Clover.";
                 message[1] = "* Unless you decide right#  now to change your#  ways...";
                 message[2] = "* The Royal Guard will#  find you. ";
@@ -207,14 +207,14 @@ else if (global.snowdin_flag[13] == 3 && global.snowdin_flag[21] == 1)
                 message[5] = "* I don't know what the#  humans taught you but...";
                 message[6] = "* A child your age#  shouldn't be corrupted#  by violence.";
                 message[7] = "* Please... Please choose#  wisely...";
-                prt[0] = 321;
-                prt[1] = 338;
-                prt[2] = 321;
-                prt[3] = 317;
-                prt[4] = 338;
-                prt[5] = 338;
-                prt[6] = 321;
-                prt[7] = 317;
+                prt[0] = spr_martlet_head_moderate;
+                prt[1] = spr_martlet_head_wondering;
+                prt[2] = spr_martlet_head_moderate;
+                prt[3] = spr_martlet_head_downer;
+                prt[4] = spr_martlet_head_wondering;
+                prt[5] = spr_martlet_head_wondering;
+                prt[6] = spr_martlet_head_moderate;
+                prt[7] = spr_martlet_head_downer;
             }
             
             if (!global.dialogue_open)

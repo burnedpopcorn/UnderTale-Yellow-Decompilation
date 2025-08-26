@@ -1,13 +1,11 @@
-var confirm_key, cancel_key, cards_moving, nearest_card;
-
 scr_get_input();
-confirm_key = keyboard_multicheck_pressed(0);
-cancel_key = keyboard_multicheck_pressed(1);
+var confirm_key = keyboard_multicheck_pressed(vk_nokey);
+var cancel_key = keyboard_multicheck_pressed(vk_anykey);
 x += ((global.right_key - global.left_key) * 4);
 y += ((global.down_key - global.up_key) * 4);
 x = clamp(x, 60, 260);
 y = clamp(y, 20, 210);
-cards_moving = false;
+var cards_moving = false;
 
 with (obj_card_game_card)
 {
@@ -31,7 +29,7 @@ else
 
 if (confirm_key && !cards_moving)
 {
-    nearest_card = instance_nearest(x, y, obj_card_game_card);
+    var nearest_card = instance_nearest(x, y, obj_card_game_card);
     
     if (nearest_card.card_is_active == false)
     {

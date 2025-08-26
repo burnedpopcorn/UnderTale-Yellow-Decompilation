@@ -1,7 +1,5 @@
-var mo, stand, xtarget;
-
-mo = 1615;
-stand = 1618;
+var mo = 1615;
+var stand = 1618;
 
 switch (scene)
 {
@@ -19,7 +17,7 @@ switch (scene)
         {
             with (stand)
             {
-                if (scr_interact() && keyboard_multicheck_pressed(0))
+                if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
                     other.scene = 24;
             }
         }
@@ -160,7 +158,7 @@ switch (scene)
     case 8:
         with (mo)
         {
-            xtarget = 160;
+            var xtarget = 160;
             
             if (global.route == 3)
                 xtarget = 200;
@@ -243,7 +241,7 @@ switch (scene)
         if (global.dialogue_open || !scr_timer())
             exit;
         
-        if (obj_dunes_08b_mo.down_sprite != 963)
+        if (obj_dunes_08b_mo.down_sprite != spr_mo_talk_down_dunes)
         {
             obj_dunes_08b_mo.down_sprite_idle = spr_mo_talk_down_dunes;
             scr_music_sudden_stop(164, 10, false);
@@ -272,7 +270,7 @@ switch (scene)
         break;
     
     case 9.2:
-        if (!global.dialogue_open && cutscene_npc_action_sprite(1615, 980, 0.25, false, 0, 303, 2))
+        if (!global.dialogue_open && cutscene_npc_action_sprite(obj_dunes_08b_mo, spr_mo_dunes_snap, 0.25, false, 0, snd_mo_snap, 2))
             scene = 9.3;
         
         break;
@@ -307,7 +305,7 @@ switch (scene)
         break;
     
     case 9.5:
-        if (cutscene_npc_walk(1615, 240, obj_dunes_08b_mo.y, 2, "y", "down", -4, 205, 230))
+        if (cutscene_npc_walk(obj_dunes_08b_mo, 240, obj_dunes_08b_mo.y, 2, "y", "down", -4, 205, 230))
             scene = 23;
         
         break;
@@ -726,14 +724,14 @@ switch (scene)
         {
             message[0] = "* The alphabet must have#  25 letters now, cause I'm#  fresh outta T!";
             message[1] = "* I'm sure we'll meet#  again! Thanks for believin'#  in me!";
-            talker[0] = 1615;
+            talker[0] = obj_dunes_08b_mo;
         }
         
         break;
     
     case 28:
-        scr_audio_fade_out(164, 300);
-        cutscene_npc_action_sprite(1615, 980, 0.25, false, 0, 303, 2);
+        scr_audio_fade_out(mus_gimme_ur_cash_yellow, 300);
+        cutscene_npc_action_sprite(obj_dunes_08b_mo, spr_mo_dunes_snap, 0.25, false, 0, snd_mo_snap, 2);
         break;
     
     case 29:
@@ -754,13 +752,13 @@ switch (scene)
         with (msg)
         {
             message[0] = "* MO, OUT!";
-            talker[0] = 1615;
+            talker[0] = obj_dunes_08b_mo;
         }
         
         break;
     
     case 32:
-        cutscene_npc_walk(1615, -40, 260, 4, "y", "left");
+        cutscene_npc_walk(obj_dunes_08b_mo, -40, 260, 4, "y", "left");
         break;
     
     case 33:
@@ -778,14 +776,14 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
-            talker[0] = 1170;
+            sndfnt = snd_talk_martlet;
+            talker[0] = obj_martlet_follower;
             message[0] = "* That Mo is an odd one.\t";
             message[1] = "* I woulda talked to him#  but I don't know how...#  legal his business is.";
             message[2] = "* Our conversation#  could've turned very#  awkward, very fast.";
-            prt[0] = 321;
-            prt[1] = 324;
-            prt[2] = 321;
+            prt[0] = spr_martlet_head_moderate;
+            prt[1] = spr_martlet_head_questioning;
+            prt[2] = spr_martlet_head_moderate;
         }
         
         break;

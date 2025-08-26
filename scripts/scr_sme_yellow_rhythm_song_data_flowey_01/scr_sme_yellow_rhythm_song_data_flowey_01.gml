@@ -1,12 +1,10 @@
 function scr_sme_yellow_rhythm_song_data_flowey_01()
 {
-    var song_instrumental;
-    
     if (live_call())
         return global.live_result;
     
     can_end_script = true;
-    song_instrumental = true;
+    var song_instrumental = true;
     audio_sound_set_track_position(global.battle_music, 0);
     audio_play = global.battle_music;
     note_1second = 30;

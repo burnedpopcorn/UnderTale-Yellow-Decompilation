@@ -1,5 +1,3 @@
-var dir, xx, yy, spawner, bullet_count, i, bullet, attack, side, angle, new_flowey, _fx_twirl, _params, next_room;
-
 if (live_call())
     return global.live_result;
 
@@ -13,7 +11,7 @@ if (room == rm_battle_flowey)
     obj_heart_battle_fighting_parent.depth = -501;
 }
 
-flowey_face_sprite = spr_attack_flowey_intermission_face;
+flowey_face_sprite = 2602;
 
 if (global.flowey_battle_1_phase == 1)
 {
@@ -23,9 +21,9 @@ if (global.flowey_battle_1_phase == 1)
         case 3:
         case 5:
         case 7:
-            dir = irandom_range(0, 359);
-            xx = obj_heart_battle_fighting_parent.x + lengthdir_x(110, dir);
-            yy = obj_heart_battle_fighting_parent.y + lengthdir_y(110, dir);
+            var dir = irandom_range(0, 359);
+            var xx = obj_heart_battle_fighting_parent.x + lengthdir_x(110, dir);
+            var yy = obj_heart_battle_fighting_parent.y + lengthdir_y(110, dir);
             instance_create_depth(xx, yy, depth - 1, obj_glowey_1_attack_eye);
             scene++;
             break;
@@ -38,7 +36,7 @@ if (global.flowey_battle_1_phase == 1)
             break;
         
         case 8:
-            spawner = instance_create_depth(0, 100, -9999, obj_flowey_1_attack_10_flower_spawner);
+            var spawner = instance_create_depth(0, 100, -9999, obj_flowey_1_attack_10_flower_spawner);
             spawner.hspeed = 5;
             scene++;
             break;
@@ -78,12 +76,12 @@ else if (global.flowey_battle_1_phase == 2)
     switch (scene)
     {
         case 0:
-            bullet_count = room_height / 60;
-            xx = -60;
+            var bullet_count = room_height / 60;
+            var xx = -60;
             
-            for (i = 0; i < bullet_count; i++)
+            for (var i = 0; i < bullet_count; i++)
             {
-                bullet = instance_create_depth(xx, 30 + (i * 60), -700, obj_flowey_1_attack_flower_lanes);
+                var bullet = instance_create_depth(xx, 30 + (i * 60), -700, obj_flowey_1_attack_flower_lanes);
                 
                 if (xx > 320)
                 {
@@ -105,12 +103,12 @@ else if (global.flowey_battle_1_phase == 2)
             break;
         
         case 2:
-            bullet_count = room_width / 60;
-            yy = -60;
+            var bullet_count = room_width / 60;
+            var yy = -60;
             
-            for (i = 0; i < bullet_count; i++)
+            for (var i = 0; i < bullet_count; i++)
             {
-                bullet = instance_create_depth(30 + (60 * i), yy, -700, obj_flowey_1_attack_flower_lanes);
+                var bullet = instance_create_depth(30 + (60 * i), yy, -700, obj_flowey_1_attack_flower_lanes);
                 
                 if (yy > 320)
                 {
@@ -132,7 +130,7 @@ else if (global.flowey_battle_1_phase == 2)
             break;
         
         case 4:
-            attack = instance_create_depth(room_width + 40, 30, -700, obj_battle_enemy_attack_flower_jump_side);
+            var attack = instance_create_depth(room_width + 40, 30, -700, obj_battle_enemy_attack_flower_jump_side);
             attack.hspeed = -8;
             scene++;
             break;
@@ -142,7 +140,7 @@ else if (global.flowey_battle_1_phase == 2)
             break;
         
         case 6:
-            attack = instance_create_depth(-40, 45, -700, obj_battle_enemy_attack_flower_jump_side);
+            var attack = instance_create_depth(-40, 45, -700, obj_battle_enemy_attack_flower_jump_side);
             attack.hspeed = 8;
             scene++;
             break;
@@ -155,8 +153,9 @@ else if (global.flowey_battle_1_phase == 2)
         case 10:
         case 12:
         case 14:
-            side = choose(1, 2, 3);
-            angle = 0;
+            var side = choose(1, 2, 3);
+            var angle = 0;
+            var xx, yy;
             
             switch (side)
             {
@@ -179,7 +178,7 @@ else if (global.flowey_battle_1_phase == 2)
                     break;
             }
             
-            new_flowey = instance_create_depth(xx, yy, -700, obj_flowey_1_attack_10_flower);
+            var new_flowey = instance_create_depth(xx, yy, -700, obj_flowey_1_attack_10_flower);
             new_flowey.image_angle = angle - 90;
             scene++;
             break;
@@ -210,7 +209,7 @@ else if (global.flowey_battle_1_phase == 3)
         
         case 1:
             _bullet_count--;
-            attack = instance_create_depth(irandom_range(80, 560), -45, -700, obj_battle_enemy_attack_flower_jump_side);
+            var attack = instance_create_depth(irandom_range(80, 560), -45, -700, obj_battle_enemy_attack_flower_jump_side);
             attack.hspeed = irandom_range(-2, 2);
             attack.alarm[0] += irandom_range(-10, 10);
             scene++;
@@ -229,7 +228,7 @@ else if (global.flowey_battle_1_phase == 3)
             break;
         
         case 4:
-            spawner = instance_create_depth(320, -50, -9999, obj_flowey_1_attack_10_flower_spawner);
+            var spawner = instance_create_depth(320, -50, -9999, obj_flowey_1_attack_10_flower_spawner);
             spawner.vspeed = 5;
             scene++;
             break;
@@ -245,9 +244,9 @@ else if (global.flowey_battle_1_phase == 3)
         
         case 7:
             _bullet_count--;
-            dir = irandom_range(0, 359);
-            xx = obj_heart_battle_fighting_parent.x + lengthdir_x(110, dir);
-            yy = obj_heart_battle_fighting_parent.y + lengthdir_y(110, dir);
+            var dir = irandom_range(0, 359);
+            var xx = obj_heart_battle_fighting_parent.x + lengthdir_x(110, dir);
+            var yy = obj_heart_battle_fighting_parent.y + lengthdir_y(110, dir);
             instance_create_depth(xx, yy, depth - 1, obj_glowey_1_attack_eye);
             scene++;
             break;
@@ -269,7 +268,7 @@ else if (global.flowey_battle_1_phase == 3)
             break;
         
         case 11:
-            spawner = instance_create_depth(room_width, 100, -9999, obj_flowey_1_attack_10_flower_spawner);
+            var spawner = instance_create_depth(room_width, 100, -9999, obj_flowey_1_attack_10_flower_spawner);
             spawner.hspeed = -5;
             scene++;
         
@@ -293,8 +292,8 @@ if (can_transition == true)
         case 0:
             scene = -1;
             layer_set_visible("twirl_", true);
-            _fx_twirl = layer_get_fx("twirl_");
-            _params = fx_get_parameters(_fx_twirl);
+            var _fx_twirl = layer_get_fx("twirl_");
+            var _params = fx_get_parameters(_fx_twirl);
             _params.g_DistortAngle = [distort_current];
             fx_set_parameters(_fx_twirl, _params);
             distort_current += 7;
@@ -307,7 +306,7 @@ if (can_transition == true)
                 {
                     persistent = true;
                     ds_list_shuffle(global.flowey_room_list);
-                    next_room = ds_list_find_value(global.flowey_room_list, 0);
+                    var next_room = ds_list_find_value(global.flowey_room_list, 0);
                     ds_list_delete(global.flowey_room_list, 0);
                     room = next_room;
                     

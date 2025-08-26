@@ -1,12 +1,8 @@
-var fight_number, enemy_sparing, enemy_vulnerable, current_hp_enemy, attacking_damage_stat_critical, enemy_target_x, enemy_target_y, shot_sound;
-
 if (live_call())
     return global.live_result;
 
 function shoot_fail()
 {
-    var shot_sound;
-    
     if (!shoot_miss)
     {
         gun_spin = false;
@@ -17,7 +13,7 @@ function shoot_fail()
         if (shot_add == 0)
             button_pressed = false;
         
-        shot_sound = audio_play_sound(snd_fail, 1, 0);
+        var shot_sound = audio_play_sound(snd_fail, 1, 0);
         shrink[circle_current] = false;
         shrink_speed = 0;
         alarm[0] = 20;
@@ -32,7 +28,8 @@ if (execute_create == true)
     if (can_execute == false)
         exit;
     
-    fight_number = global.fight_number;
+    var fight_number = global.fight_number;
+    var enemy_sparing, enemy_vulnerable, current_hp_enemy, attacking_damage_stat_critical, enemy_target_x, enemy_target_y;
     
     if (fight_number == 1)
     {
@@ -77,6 +74,8 @@ if (execute_create == true)
     
     if (key_select)
     {
+        var shot_sound;
+        
         if (outline[circle_current] > small_circle)
         {
             shoot_fail();
@@ -90,9 +89,9 @@ if (execute_create == true)
             shot_add += 3;
             
             if (circle_current == final_circle)
-                hit_object = 2916;
+                hit_object = obj_shot_strong_fake;
             else
-                hit_object = 2916;
+                hit_object = obj_shot_strong_fake;
             
             shot_sound = audio_play_sound(snd_attackhitperfect, 1, 0);
         }
@@ -104,15 +103,15 @@ if (execute_create == true)
             shot_add += 2;
             
             if (circle_current == final_circle)
-                hit_object = 2915;
+                hit_object = obj_shot_medium_fake;
             else
-                hit_object = 2915;
+                hit_object = obj_shot_medium_fake;
             
             shot_sound = audio_play_sound(snd_attackhit, 1, 0);
         }
         
         audio_sound_pitch(shot_sound, 1 + (obj_wild_revolver_battle_outline.target_current * 0.08));
-        instance_create(enemy_target_x + irandom_range(-50, 50), enemy_target_y + irandom_range(-50, obj_hotel_shop_props), hit_object);
+        instance_create(enemy_target_x + irandom_range(-50, 50), enemy_target_y + irandom_range(-50, 50), hit_object);
         shrink[circle_current] = false;
         button_pressed = true;
         button_pressed_main = true;

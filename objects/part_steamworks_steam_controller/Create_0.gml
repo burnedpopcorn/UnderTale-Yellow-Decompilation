@@ -7,7 +7,7 @@ part_system_depth(part_smokesys_front, -room_height);
 part_smoke = part_type_create();
 part_type_sprite(part_smoke, 665, 0, 1, 0);
 part_type_size(part_smoke, 0.25, 0.25, 0.02, 0);
-part_type_colour2(part_smoke, c_white, c_white);
+part_type_colour2(part_smoke, 16777215, 16777215);
 part_type_alpha2(part_smoke, 1, 0);
 part_type_speed(part_smoke, 1, 1, -0.001, 0);
 part_type_direction(part_smoke, 90, 90, 0, 3);

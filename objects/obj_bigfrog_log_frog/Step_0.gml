@@ -1,9 +1,7 @@
-var battle_box;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 if (spawner_log != -4 && instance_exists(spawner_log))
     x = spawner_log.x + x_offset;

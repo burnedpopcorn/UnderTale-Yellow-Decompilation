@@ -1,6 +1,7 @@
-for (dj_suit_x += dj_speed_x; dj_suit_x >= max_dj_suit_x; dj_suit_x -= max_dj_suit_x)
-{
-}
+dj_suit_x += dj_speed_x;
+
+while (dj_suit_x >= max_dj_suit_x)
+    dj_suit_x -= max_dj_suit_x;
 
 for (i = 0; i <= 1; i++)
 {

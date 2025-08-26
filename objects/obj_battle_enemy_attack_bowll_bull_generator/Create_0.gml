@@ -1,6 +1,4 @@
-var increment_i, c_sub, c_disjoint;
-
-box = 3154;
+box = obj_dialogue_box_battle_transformation_any;
 c_total = 8;
 c_distance = 5;
 c_sectors = 4;
@@ -22,7 +20,7 @@ for (i = 0; i < c_total; i++)
     
     if (i > 0)
     {
-        increment_i = true;
+        var increment_i = true;
         
         while (increment_i == true)
         {
@@ -54,8 +52,8 @@ for (i = 0; i < c_total; i++)
         c_value -= c_sectors;
     }
     
-    c_sub = c_value - 1;
-    c_disjoint = 20 + (c_spacing * c_value) + (c_width * c_sub);
+    var c_sub = c_value - 1;
+    var c_disjoint = 20 + (c_spacing * c_value) + (c_width * c_sub);
     
     switch (c_direction)
     {

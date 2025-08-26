@@ -52,7 +52,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Bro, what's your damage?";
                     message[1] = "* Can't a monster cool off every#  now and then?";
                     message[2] = "* You're such a killjoy, bro.";
@@ -65,7 +65,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Sorry, I guess.";
                     message[1] = "* I get cranky when I don't get#  my fan time.";
                     message[2] = "* I like, found it here so I#  decided to put it to use.";
@@ -78,7 +78,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* I should move to Waterfall,#  bro.";
                     message[1] = "* Much cooler.";
                 }

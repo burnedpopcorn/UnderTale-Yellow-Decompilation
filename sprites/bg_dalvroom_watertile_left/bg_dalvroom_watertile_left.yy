@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9fb97d1c-0afe-49fb-ac8e-48aaa55cb24e",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"85d87d3f-ebb3-43b3-b2dc-9e66fb0785df",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4ba7e334-0ec9-4897-87aa-f058f545ee63",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"91554599-5c63-452c-8a8e-4370b37a7d0e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d6b9f247-89d0-4a8e-b5ce-f5e66a5ebd2f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff5be433-41f9-4e67-9000-b7c9d5a375fa",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 20,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7c61cf1e-e781-4ea8-99ca-bd4ab0b48a02","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9f8ea85c-cc4d-4756-a3e9-ff53b898d467","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9fb97d1c-0afe-49fb-ac8e-48aaa55cb24e","path":"sprites/bg_dalvroom_watertile_left/bg_dalvroom_watertile_left.yy",},},},"Disabled":false,"id":"de1f76a7-82cb-40d9-8c2d-6d82b4265121","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"85d87d3f-ebb3-43b3-b2dc-9e66fb0785df","path":"sprites/bg_dalvroom_watertile_left/bg_dalvroom_watertile_left.yy",},},},"Disabled":false,"id":"41d2a24d-d0e0-4b9c-a156-5f2b3fb60cc8","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4ba7e334-0ec9-4897-87aa-f058f545ee63","path":"sprites/bg_dalvroom_watertile_left/bg_dalvroom_watertile_left.yy",},},},"Disabled":false,"id":"5efeebac-5063-4d14-b86a-f2e678cb0d40","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"91554599-5c63-452c-8a8e-4370b37a7d0e","path":"sprites/bg_dalvroom_watertile_left/bg_dalvroom_watertile_left.yy",},},},"Disabled":false,"id":"5af66645-ee4d-43d8-afc7-d483468b477a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d6b9f247-89d0-4a8e-b5ce-f5e66a5ebd2f","path":"sprites/bg_dalvroom_watertile_left/bg_dalvroom_watertile_left.yy",},},},"Disabled":false,"id":"71165667-f2c5-4477-8045-1f80684a864d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ff5be433-41f9-4e67-9000-b7c9d5a375fa","path":"sprites/bg_dalvroom_watertile_left/bg_dalvroom_watertile_left.yy",},},},"Disabled":false,"id":"c4a44fe9-f7d7-4b91-b83b-9f4eea28d7ea","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Ruins",
+    "path": "texturegroups/Ruins",
   },
   "type": 0,
   "VTile": false,

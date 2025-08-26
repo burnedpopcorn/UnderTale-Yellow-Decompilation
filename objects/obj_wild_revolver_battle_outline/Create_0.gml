@@ -1,12 +1,10 @@
-var player_weapon, player_weapon_modifier;
-
 if (live_call())
     return global.live_result;
 
 with (other)
 {
-    player_weapon = global.player_weapon;
-    player_weapon_modifier = global.player_weapon_modifier;
+    var player_weapon = global.player_weapon;
+    var player_weapon_modifier = global.player_weapon_modifier;
     
     switch (player_weapon)
     {

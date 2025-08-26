@@ -1,5 +1,3 @@
-var xp, yp;
-
 if (live_call())
     return global.live_result;
 
@@ -31,8 +29,8 @@ if (damaged_stage == 0)
         audio_play_sound(snd_monster_damage_hit_critical, 1, 0);
         damaged_stage = 1;
         hit_shake = 4;
-        xp = x;
-        yp = y;
+        var xp = x;
+        var yp = y;
         part_emitter_region(armr_ps, armr_pe_effect_1, xp - 1, xp + 1, yp - 1, yp + 1, 0, 0);
         part_emitter_burst(armr_ps, armr_pe_effect_1, armr_pt_effect_1, 3);
     }

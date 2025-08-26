@@ -1,5 +1,3 @@
-var current_turn;
-
 text_effect = "twitchy";
 attack = false;
 scene = 0;
@@ -7,7 +5,7 @@ cutscene_timer = 0;
 skippable = true;
 message_adv = false;
 global.action_1_selected_count = 0;
-current_turn = global.special_action_count;
+var current_turn = global.special_action_count;
 enemy_talker = 0;
 
 switch (current_turn)
@@ -36,7 +34,7 @@ switch (current_turn)
         break;
     
     case 3:
-        message[0] = "AZ_a_D?f#F .";
+        message[0] = "AZ_a_D?f#F . .";
         message[1] = "I A-AM ST_ARTING#TO REGRET GIVING#YOU THAT LID.";
         message[2] = "COULD YOU PLEASE#DROP IT?";
         message[3] = "JUST KICK IT#INTO THE FIERY#PIT BELOW US.#SIMPLE.";
@@ -77,7 +75,7 @@ switch (current_turn)
             instance_create_depth(0, 0, -9999, obj_axis_neutral_ending_cutscene);
         
         message[0] = "ZzzzzBBZzzzz#AooaaaA- _- .  .";
-        message[1] = "* . .";
+        message[1] = "* . . .";
         message[2] = "AH.";
         message[3] = "WHAT DID YOU#DO TO ME?";
         message[4] = "I DON'T FEEL AN#UTTER MURDEROUS#RAGE ANYMORE.";

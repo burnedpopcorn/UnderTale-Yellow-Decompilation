@@ -1,6 +1,4 @@
-var box;
-
-box = 3112;
+var box = obj_dialogue_box_battle;
 depth = box.depth + 2;
 layer_create(depth + 1, "sequence_layer");
 sequence_idle = layer_sequence_create("sequence_layer", x, y, 22);

@@ -18,13 +18,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
-            message[0] = "* . .";
+            talker[0] = obj_axis_npc;
+            message[0] = "* . . .";
             message[1] = "* YOu.. . ARE LeTTING ME#  GO?";
             message[2] = "* UH. WEIRD DeCISION.";
-            prt[0] = 3282;
-            prt[1] = 3282;
-            prt[2] = 3282;
+            prt[0] = spr_portrait_axis_damaged;
+            prt[1] = spr_portrait_axis_damaged;
+            prt[2] = spr_portrait_axis_damaged;
         }
         
         break;
@@ -34,7 +34,7 @@ switch (scene)
         break;
     
     case 3:
-        cutscene_npc_walk(1166, 760, obj_pl.y, 2, "x", "right", 1031);
+        cutscene_npc_walk(obj_axis_npc, 760, obj_pl.y, 2, "x", "right", 1031);
         
         if (obj_axis_npc.x > (obj_pl.x + 3))
             obj_pl.direction = 0;
@@ -46,7 +46,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_npc_direction(1166, "left");
+        cutscene_npc_direction(obj_axis_npc, "left");
         break;
     
     case 6:
@@ -54,19 +54,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* JuST SO YOU KNoW.. .";
             message[1] = "* Y0U STILL [freaking]#  SUCK.";
             message[2] = "* FEEL FREE TO TRIP aND#  FALL TO YOuR DEATH ON#  THE WaY OUT.";
-            prt[0] = 3282;
-            prt[1] = 3282;
-            prt[2] = 3282;
+            prt[0] = spr_portrait_axis_damaged;
+            prt[1] = spr_portrait_axis_damaged;
+            prt[2] = spr_portrait_axis_damaged;
         }
         
         break;
     
     case 7:
-        cutscene_npc_walk(1166, 880, 140, 5, "x", "left");
+        cutscene_npc_walk(obj_axis_npc, 880, 140, 5, "x", "left");
         break;
     
     case 8:

@@ -1,6 +1,4 @@
-var i;
-
-for (i = 0; i < total_number; i++)
+for (var i = 0; i < total_number; i++)
 {
     piece_x[i] += piece_hsp[i];
     piece_y[i] += piece_vsp[i];

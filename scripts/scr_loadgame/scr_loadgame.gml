@@ -1,12 +1,10 @@
 function scr_loadgame()
 {
-    var LoadedRoom, _party_member, i, ds_factory_code_2, ds_list_string, ds_list_encounters, ds_list_steal, ds_list_fasttravel, ds_map_string, ds_talk_map_string, j, controller;
-    
     if (file_exists("Save.sav"))
     {
         scr_initialize();
         ini_open("Save.sav");
-        LoadedRoom = ini_read_string("Save1", "room", "rm_ruins00");
+        var LoadedRoom = ini_read_string("Save1", "room", "rm_ruins00");
         obj_pl.x = ini_read_real("Save1", "pX", 320);
         obj_pl.y = ini_read_real("Save1", "pY", 320);
         obj_pl.direction = ini_read_real("Save1", "dir", 0);
@@ -35,7 +33,7 @@ function scr_loadgame()
         global.player_can_run = ini_read_real("Save1", "playerCanRun", 1);
         global.saved_datetime = date_current_datetime();
         global.elapsed_seconds = ini_read_real("Playtime", "Seconds", 0);
-        _party_member = ini_read_string("Save1", "Follower", "noone");
+        var _party_member = ini_read_string("Save1", "Follower", "noone");
         
         if (_party_member == "noone")
             global.party_member = -4;
@@ -45,31 +43,31 @@ function scr_loadgame()
         global.player_has_satchel = ini_read_real("Save1", "Satchel", 0);
         global.player_can_travel = ini_read_real("Save1", "FTravel", 0);
         
-        for (i = 0; i < array_length_1d(global.ruins_flag); i++)
+        for (var i = 0; i < array_length_1d(global.ruins_flag); i++)
             global.ruins_flag[i] = ini_read_real("RuinsFlags", string(i), false);
         
-        for (i = 0; i < array_length_1d(global.flag); i++)
+        for (var i = 0; i < array_length_1d(global.flag); i++)
             global.flag[i] = ini_read_real("Flags", string(i), false);
         
-        for (i = 0; i < array_length_1d(global.snowdin_flag); i++)
+        for (var i = 0; i < array_length_1d(global.snowdin_flag); i++)
             global.snowdin_flag[i] = ini_read_real("SnowdinFlags", string(i), false);
         
-        for (i = 0; i < array_length_1d(global.dunes_flag); i++)
+        for (var i = 0; i < array_length_1d(global.dunes_flag); i++)
             global.dunes_flag[i] = ini_read_real("DunesFlags", string(i), false);
         
-        for (i = 0; i < array_length_1d(global.dunes_flag_ext); i++)
+        for (var i = 0; i < array_length_1d(global.dunes_flag_ext); i++)
             global.dunes_flag_ext[i] = ini_read_real("DunesFlagsExt", string(i), false);
         
-        for (i = 0; i < array_length_1d(global.sworks_flag); i++)
+        for (var i = 0; i < array_length_1d(global.sworks_flag); i++)
             global.sworks_flag[i] = ini_read_real("SworksFlags", string(i), false);
         
         global.factory_code = ini_read_string("SworksFlags", "code", "0000");
         global.factory_code_3 = ini_read_string("SworksFlags", "code3", "0000");
-        ds_factory_code_2 = ini_read_string("SworksFlags", "code2", "");
+        var ds_factory_code_2 = ini_read_string("SworksFlags", "code2", "");
         ds_list_read(global.factory_code_2, ds_factory_code_2);
         global.sworks_robot_count = ini_read_real("SworksFlags", "RbCount", 0);
         
-        for (i = 0; i < global.sworks_robot_count; i++)
+        for (var i = 0; i < global.sworks_robot_count; i++)
         {
             global.sworks_robot_sprite[i] = ini_read_real("RbSprite", string(i), 0);
             global.sworks_robot_x[i] = ini_read_real("RbX", string(i), 0);
@@ -81,25 +79,25 @@ function scr_loadgame()
         
         ds_grid_read(global.sworks_id_grid, ini_read_string("SworksFlags", "sworks_id", ""));
         
-        for (i = 0; i < array_length_1d(global.item_stock); i++)
+        for (var i = 0; i < array_length_1d(global.item_stock); i++)
             global.item_stock[i] = ini_read_real("ItemStock", string(i), false);
         
-        for (i = 0; i < array_length_1d(global.hotland_flag); i++)
+        for (var i = 0; i < array_length_1d(global.hotland_flag); i++)
             global.hotland_flag[i] = ini_read_real("HotlandFlags", string(i), false);
         
-        for (i = 0; i < array_length_1d(global.flowey_flag); i++)
+        for (var i = 0; i < array_length_1d(global.flowey_flag); i++)
             global.flowey_flag[i] = ini_read_real("FloweyFlags", string(i), false);
         
         global.flowey_save_number = ini_read_real("FloweyFlags", "savenumber", 0);
         global.save_count = ini_read_real("FloweyFlags", "savecount", 1);
         
-        for (i = 0; i < array_length_1d(global.extra_flag); i++)
+        for (var i = 0; i < array_length_1d(global.extra_flag); i++)
             global.extra_flag[i] = ini_read_real("ExtraFlags", string(i), false);
         
-        for (i = 0; i < array_length_1d(global.mail_flag); i++)
+        for (var i = 0; i < array_length_1d(global.mail_flag); i++)
             global.mail_flag[i] = ini_read_real("MailFlags", string(i), false);
         
-        for (i = 0; i < array_length_1d(global.mail_flag); i++)
+        for (var i = 0; i < array_length_1d(global.mail_flag); i++)
             global.mail_flag[i] = ini_read_real("MailFlags", string(i), false);
         
         global.mail_count = ini_read_real("Mail", "1", 0);
@@ -107,13 +105,13 @@ function scr_loadgame()
         global.tinypuzzle = ini_read_real("Misc", "01", 5);
         deaths = ini_read_real("Misc", "Deaths", false);
         
-        for (i = 0; i < array_length(global.fun_event); i++)
+        for (var i = 0; i < array_length(global.fun_event); i++)
             global.fun_event[i] = ini_read_real("Fun Events", string(i), 0);
         
-        for (i = 1; i <= 8; i++)
+        for (var i = 1; i <= 8; i++)
             global.item_slot[i] = ini_read_string("Items", "0" + string(i - 1), "Nothing");
         
-        ds_list_string = ini_read_string("DBox", 0, "0");
+        var ds_list_string = ini_read_string("DBox", 0, "0");
         ds_list_read(global.box_slot_list, ds_list_string);
         ds_list_string = ini_read_string("Mail", 0, "0");
         ds_list_read(global.mail_list, ds_list_string);
@@ -121,15 +119,15 @@ function scr_loadgame()
         ds_list_read(global.mail_list_read, ds_list_string);
         ds_list_string = ini_read_string("MailUnclaimed", 0, "0");
         ds_list_read(global.mail_unclaimed_list, ds_list_string);
-        ds_list_encounters = ini_read_string("Encounters", 0, "0");
+        var ds_list_encounters = ini_read_string("Encounters", 0, "0");
         ds_list_read(global.encounter_list, ds_list_encounters);
-        ds_list_steal = ini_read_string("Steal", 0, "0");
+        var ds_list_steal = ini_read_string("Steal", 0, "0");
         ds_list_read(global.steal_list, ds_list_steal);
-        ds_list_fasttravel = ini_read_string("FastTravel", 0, "0");
+        var ds_list_fasttravel = ini_read_string("FastTravel", 0, "0");
         ds_list_read(global.fast_travel_list, ds_list_fasttravel);
-        ds_map_string = ini_read_string("NPCs", "0", "0");
+        var ds_map_string = ini_read_string("NPCs", "0", "0");
         ds_map_read(global.npc_map, ds_map_string);
-        ds_talk_map_string = ini_read_string("Talks", "0", "0");
+        var ds_talk_map_string = ini_read_string("Talks", "0", "0");
         ds_map_read(global.talk_map, ds_map_string);
         global.interaction_count_wardrobe = ini_read_real("Misc2", "00", 0);
         global.interaction_count_broom = ini_read_real("Misc2", "01", 0);
@@ -144,14 +142,14 @@ function scr_loadgame()
         deathText = ini_read_real("Misc2", "10", 0);
         global.route = ini_read_real("Route", "00", 2);
         
-        for (i = 1; i < array_length_1d(global.geno_complete); i++)
+        for (var i = 1; i < array_length_1d(global.geno_complete); i++)
             global.geno_complete[i] = ini_read_real("GenoComplete", i, 0);
         
-        for (i = 1; i < array_length_1d(global.kill_number); i++)
+        for (var i = 1; i < array_length_1d(global.kill_number); i++)
         {
             global.kill_number[i] = ini_read_real("Kills", i, 20);
             
-            for (j = 0; j < array_length_2d(global.kill_area, i); j++)
+            for (var j = 0; j < array_length_2d(global.kill_area, i); j++)
                 global.kill_area[i][j] = ini_read_real("Kill Area", string(i) + string(j), 5);
         }
         
@@ -170,7 +168,7 @@ function scr_loadgame()
             obj_flowey_rooftop_big.persistent = true;
             obj_flowey_rooftop_big.image_xscale_base *= 2;
             obj_flowey_rooftop_big.image_yscale_base *= 2;
-            controller = instance_create_depth(0, 0, -9999, obj_flowey_world_controller);
+            var controller = instance_create_depth(0, 0, -9999, obj_flowey_world_controller);
             controller.scene = 95;
             instance_create(0, 0, obj_battle_fade_in_screen);
             obj_battle_fade_in_screen.persistent = true;

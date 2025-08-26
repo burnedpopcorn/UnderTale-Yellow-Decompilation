@@ -1,10 +1,8 @@
-function scr_verlet_guardener_wind(argument0)
+function scr_verlet_guardener_wind(arg0)
 {
-    var i, p;
-    
-    for (i = 0; i < array_length(argument0); i++)
+    for (var i = 0; i < array_length(arg0); i++)
     {
-        p = array_get(argument0, i);
+        var p = array_get(arg0, i);
         
         if (!array_get(p, 4))
         {

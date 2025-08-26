@@ -1,7 +1,5 @@
-var counter_timer_max, player_soul;
-
-counter_timer_max = 0;
-player_soul = 2979;
+var counter_timer_max = 0;
+var player_soul = 2980;
 
 switch (counter_current)
 {

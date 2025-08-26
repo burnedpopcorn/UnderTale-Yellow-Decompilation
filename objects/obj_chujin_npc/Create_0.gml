@@ -16,4 +16,4 @@ axis_override = "nothing";
 end_direction = "down";
 walk_collider = -4;
 npc_direction = "down";
-npc_voice_sfx = 626;
+npc_voice_sfx = snd_talk_chujin;

@@ -1,5 +1,3 @@
-var dirnew;
-
 if (image_alpha < 0.99)
 {
     image_alpha = lerp(image_alpha, 1, 0.15);
@@ -41,7 +39,7 @@ if (attack_stage == 3)
     if (swing_speed > swing_speed_max)
         swing_speed = swing_speed_max;
     
-    dirnew = direction + swing_speed;
+    var dirnew = direction + swing_speed;
     
     if (dirnew >= 360)
         swing_speed_max += 1;

@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -8,7 +6,7 @@ if (ds_map_find_value(event_data, "event_type") == "sprite event")
     switch (ds_map_find_value(event_data, "message"))
     {
         case "spike_spawn":
-            for (i = 0; i < 10; i++)
+            for (var i = 0; i < 10; i++)
             {
                 if (weakpoint_position == i)
                 {

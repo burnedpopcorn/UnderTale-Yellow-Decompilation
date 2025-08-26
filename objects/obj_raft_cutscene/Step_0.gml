@@ -1,4 +1,4 @@
-var scroll_speed_current, num, i, tile, tile_y, tile_x, tile_width, tile_shift, diff_x, martlet;
+var scroll_speed_current;
 
 if (room == rm_waterfall_og)
 {
@@ -9,14 +9,15 @@ if (room == rm_waterfall_og)
     }
     
     scroll_speed_current = ceil(scroll_speed);
-    num = tile_get_count();
+    var num = tile_get_count();
     
-    for (i = 0; i < num; i++)
+    for (var i = 0; i < num; i++)
     {
-        tile = tile_get_id(i);
-        tile_y = tile_get_y(tile);
-        tile_x = tile_get_x(tile);
-        tile_width = tile_get_width(tile);
+        var tile = tile_get_id(i);
+        var tile_y = tile_get_y(tile);
+        var tile_x = tile_get_x(tile);
+        var tile_width = tile_get_width(tile);
+        var tile_shift;
         
         switch (tile_get_depth(tile))
         {
@@ -38,7 +39,7 @@ if (room == rm_waterfall_og)
         
         if (tile_x <= -480)
         {
-            diff_x = abs(tile_x) - 480;
+            var diff_x = abs(tile_x) - 480;
             tile_set_position(tile, ((room_width - 480) + tile_shift) - diff_x, tile_y);
         }
     }
@@ -49,7 +50,7 @@ if (instance_exists(obj_duck))
 
 if (global.snowdin_flag[13] == 1)
 {
-    martlet = 1570;
+    var martlet = 1570;
     
     switch (scene)
     {
@@ -103,9 +104,9 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* So, hi!";
-                prt[0] = 312;
+                prt[0] = spr_martlet_head_content;
             }
             
             if (global.dialogue_open == false)
@@ -124,13 +125,13 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* So I was thinking.";
                 message[1] = "* If Ava doesn't have#  sails,";
                 message[2] = "* Does this still count as#  sailing?";
-                prt[0] = 328;
-                prt[1] = 338;
-                prt[2] = 324;
+                prt[0] = spr_martlet_head_regular;
+                prt[1] = spr_martlet_head_wondering;
+                prt[2] = spr_martlet_head_questioning;
             }
             
             if (!global.dialogue_open)
@@ -149,17 +150,17 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* Pretty smooth ride,#  yeah?    ";
                 message[1] = "* My woodworking skills#  aren't too shabby!    ";
                 message[2] = "* I suppose I should#  thank my mentor.    ";
                 message[3] = "* Older fella by the name#  of Chujin. Taught me#  everything!";
                 message[4] = "* He... Well... Nevermind.";
-                prt[0] = 312;
-                prt[1] = 331;
-                prt[2] = 321;
-                prt[3] = 328;
-                prt[4] = 329;
+                prt[0] = spr_martlet_head_content;
+                prt[1] = spr_martlet_head_smirk;
+                prt[2] = spr_martlet_head_moderate;
+                prt[3] = spr_martlet_head_regular;
+                prt[4] = spr_martlet_head_sad;
             }
             
             if (!global.dialogue_open)
@@ -178,23 +179,23 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 ch_msg = 2;
                 ch[1] = "Yes";
                 ch[2] = "No";
                 message[0] = "* Hey, so would you mind#  answering a few#  questions for me?";
                 message[1] = "* It's nothing big, it's#  just a little quality#  assurance questionnaire.";
                 message[2] = "* Will you try it?";
-                prt[0] = 328;
-                prt[1] = 328;
-                prt[2] = 312;
+                prt[0] = spr_martlet_head_regular;
+                prt[1] = spr_martlet_head_regular;
+                prt[2] = spr_martlet_head_content;
                 
                 if (outcome == 1)
                 {
                     message[3] = "* Great!";
                     message[4] = "* Question one:";
-                    prt[3] = 318;
-                    prt[4] = 328;
+                    prt[3] = spr_martlet_head_happy;
+                    prt[4] = spr_martlet_head_regular;
                 }
                 
                 if (outcome == 2)
@@ -205,12 +206,12 @@ if (global.snowdin_flag[13] == 1)
                     message[6] = "* Look, I'll even fill it#  out for you!";
                     message[7] = "* You won't even notice#  I'm doing it, it'll#  be fun!";
                     message[8] = "* Okay, question one:";
-                    prt[3] = 320;
-                    prt[4] = 320;
-                    prt[5] = 338;
-                    prt[6] = 328;
-                    prt[7] = 328;
-                    prt[8] = 312;
+                    prt[3] = spr_martlet_head_melancholic;
+                    prt[4] = spr_martlet_head_melancholic;
+                    prt[5] = spr_martlet_head_wondering;
+                    prt[6] = spr_martlet_head_regular;
+                    prt[7] = spr_martlet_head_regular;
+                    prt[8] = spr_martlet_head_content;
                 }
             }
             
@@ -246,13 +247,13 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* On a scale from 1-3...";
                 message[1] = "* How would you rate your#  encounter with the#  Royal Guard?";
                 message[2] = "* Please answer honestly!";
-                prt[0] = 328;
-                prt[1] = 328;
-                prt[2] = 328;
+                prt[0] = spr_martlet_head_regular;
+                prt[1] = spr_martlet_head_regular;
+                prt[2] = spr_martlet_head_regular;
                 ch_msg = 2;
                 ch[1] = "1";
                 ch[2] = "2";
@@ -265,10 +266,10 @@ if (global.snowdin_flag[13] == 1)
                     message[4] = "* Well, maybe it wasn't#  really as bad as you#  think it was!";
                     message[5] = "* It's one of those \"bad#  in the moment but a good#  laugh later\" things!";
                     message[6] = "* Let's keep going, maybe#  you'll change your mind!";
-                    prt[3] = 333;
-                    prt[4] = 338;
-                    prt[5] = 321;
-                    prt[6] = 328;
+                    prt[3] = spr_martlet_head_surprised;
+                    prt[4] = spr_martlet_head_wondering;
+                    prt[5] = spr_martlet_head_moderate;
+                    prt[6] = spr_martlet_head_regular;
                 }
                 
                 if (outcome == 2)
@@ -278,11 +279,11 @@ if (global.snowdin_flag[13] == 1)
                     message[5] = "* Ya know, just in#  general.";
                     message[6] = "* ...";
                     message[7] = "* Where were we?";
-                    prt[3] = 321;
-                    prt[4] = 338;
-                    prt[5] = 321;
-                    prt[6] = 321;
-                    prt[7] = 328;
+                    prt[3] = spr_martlet_head_moderate;
+                    prt[4] = spr_martlet_head_wondering;
+                    prt[5] = spr_martlet_head_moderate;
+                    prt[6] = spr_martlet_head_moderate;
+                    prt[7] = spr_martlet_head_regular;
                 }
                 
                 if (outcome == 3)
@@ -294,13 +295,13 @@ if (global.snowdin_flag[13] == 1)
                     message[7] = "* I have to tell#  absolutely everyone!";
                     message[8] = "* Okay, sorry, got#  carried away.";
                     message[9] = "* Let's keep going!";
-                    prt[3] = 333;
-                    prt[4] = 318;
-                    prt[5] = 312;
-                    prt[6] = 312;
-                    prt[7] = 312;
-                    prt[8] = 318;
-                    prt[9] = 328;
+                    prt[3] = spr_martlet_head_surprised;
+                    prt[4] = spr_martlet_head_happy;
+                    prt[5] = spr_martlet_head_content;
+                    prt[6] = spr_martlet_head_content;
+                    prt[7] = spr_martlet_head_content;
+                    prt[8] = spr_martlet_head_happy;
+                    prt[9] = spr_martlet_head_regular;
                 }
             }
             
@@ -314,13 +315,13 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* Question two:";
                 message[1] = "* On a scale from 1-2,#  how would you rate...";
                 message[2] = "* ...the puzzles deployed#  in Snowdin.";
-                prt[0] = 328;
-                prt[1] = 328;
-                prt[2] = 328;
+                prt[0] = spr_martlet_head_regular;
+                prt[1] = spr_martlet_head_regular;
+                prt[2] = spr_martlet_head_regular;
                 ch_msg = 2;
                 ch[1] = "1";
                 ch[2] = "2";
@@ -333,18 +334,18 @@ if (global.snowdin_flag[13] == 1)
                     message[6] = "* How am I supposed to#  make a quality puzzle#  without materials!";
                     message[7] = "* I mean... the concepts#  were good at least...#  right?";
                     message[8] = "* You know what, let's#  just move on.";
-                    prt[3] = 324;
-                    prt[4] = 323;
-                    prt[5] = 313;
-                    prt[6] = 315;
-                    prt[7] = 329;
-                    prt[8] = 328;
+                    prt[3] = spr_martlet_head_questioning;
+                    prt[4] = spr_martlet_head_nervous_smile;
+                    prt[5] = spr_martlet_head_determined;
+                    prt[6] = spr_martlet_head_disappointed;
+                    prt[7] = spr_martlet_head_sad;
+                    prt[8] = spr_martlet_head_regular;
                 }
                 
                 if (outcome == 2)
                 {
                     color = true;
-                    col_modif[0] = 4235519;
+                    col_modif[0] = c_orange;
                     message[3] = "* Really!";
                     message[4] = "* Thanks, I made them#  myself!";
                     message[5] = "* There's a reason I was#  assigned to work under#  the Royal Scientist!";
@@ -352,12 +353,12 @@ if (global.snowdin_flag[13] == 1)
                     message[6] = "* I mean, it's because I#  got last choice of#  station, but still!";
                     message[7] = "* You pick up a few#  things guardin' all#  that science stuff!";
                     message[8] = "* Anyway, back on topic!";
-                    prt[3] = 333;
-                    prt[4] = 312;
-                    prt[5] = 318;
-                    prt[6] = 323;
-                    prt[7] = 312;
-                    prt[8] = 328;
+                    prt[3] = spr_martlet_head_surprised;
+                    prt[4] = spr_martlet_head_content;
+                    prt[5] = spr_martlet_head_happy;
+                    prt[6] = spr_martlet_head_nervous_smile;
+                    prt[7] = spr_martlet_head_content;
+                    prt[8] = spr_martlet_head_regular;
                 }
             }
             
@@ -371,7 +372,7 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* Question three:";
                 message[1] = "* On a scale 1-4, how#  would you rate the#  au-di-tory ambi-an-#";
                 message[2] = "* What does that mean?";
@@ -380,14 +381,14 @@ if (global.snowdin_flag[13] == 1)
                 message[5] = "* I'll just put you#  down as dead center#  for the rest.";
                 message[6] = "* That sound good? Yeah#  that works.";
                 message[7] = "* Just a 2 there... and a#  3... and a 2.15 here...#  and 23, and we're done!";
-                prt[0] = 328;
-                prt[1] = 311;
-                prt[2] = 324;
-                prt[3] = 311;
-                prt[4] = 320;
-                prt[5] = 328;
-                prt[6] = 328;
-                prt[7] = 312;
+                prt[0] = spr_martlet_head_regular;
+                prt[1] = spr_martlet_head_confused;
+                prt[2] = spr_martlet_head_questioning;
+                prt[3] = spr_martlet_head_confused;
+                prt[4] = spr_martlet_head_melancholic;
+                prt[5] = spr_martlet_head_regular;
+                prt[6] = spr_martlet_head_regular;
+                prt[7] = spr_martlet_head_content;
             }
             
             if (!global.dialogue_open)
@@ -422,13 +423,13 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* Oh, one more thing.";
                 message[1] = "* I'm gonna need your#  name for legal purposes.";
                 message[2] = "* You know how it gets.";
-                prt[0] = 321;
-                prt[1] = 320;
-                prt[2] = 320;
+                prt[0] = spr_martlet_head_moderate;
+                prt[1] = spr_martlet_head_melancholic;
+                prt[2] = spr_martlet_head_melancholic;
                 ch_msg = 2;
                 ch[1] = "It's Clover";
                 
@@ -441,13 +442,13 @@ if (global.snowdin_flag[13] == 1)
                     message[7] = "* Oh, well there's a#  little one, but not too#  many leaks!";
                     message[8] = "* We can just sit back,#  and relax and-hey...";
                     message[9] = "* Do you hear an abnormal#  amount of running water?";
-                    prt[3] = 312;
-                    prt[4] = 328;
-                    prt[5] = 318;
-                    prt[6] = 318;
-                    prt[7] = 320;
-                    prt[8] = 328;
-                    prt[9] = 311;
+                    prt[3] = spr_martlet_head_content;
+                    prt[4] = spr_martlet_head_regular;
+                    prt[5] = spr_martlet_head_happy;
+                    prt[6] = spr_martlet_head_happy;
+                    prt[7] = spr_martlet_head_melancholic;
+                    prt[8] = spr_martlet_head_regular;
+                    prt[9] = spr_martlet_head_confused;
                 }
             }
             
@@ -475,13 +476,13 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* Well, we are in#  Waterfall...";
                 message[1] = "* Is it just me or is the#  river getting faster?";
                 message[2] = "* Well, if anything it#  helps u-";
-                prt[0] = 320;
-                prt[1] = 335;
-                prt[2] = 320;
+                prt[0] = spr_martlet_head_melancholic;
+                prt[1] = spr_martlet_head_suspiciouser;
+                prt[2] = spr_martlet_head_melancholic;
                 
                 if (message_current == 2)
                 {
@@ -531,9 +532,9 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* UH OH!";
-                prt[0] = 333;
+                prt[0] = spr_martlet_head_surprised;
                 skippable = false;
                 message_timer = 30;
             }
@@ -619,13 +620,13 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* UM...";
                 message[1] = "* I might not have been#  down this route before!";
                 message[2] = "* Hold on to something!";
-                prt[0] = 323;
-                prt[1] = 323;
-                prt[2] = 333;
+                prt[0] = spr_martlet_head_nervous_smile;
+                prt[1] = spr_martlet_head_nervous_smile;
+                prt[2] = spr_martlet_head_surprised;
                 skippable = false;
                 message_timer = 16;
             }
@@ -687,15 +688,15 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* Hey look it's Hotland!";
                 message[1] = "* This is our stop!";
                 message[2] = "* WAIT!";
                 message[3] = "* WE HAVE TO DOCK HERE,#  SLOW DOWN!!";
-                prt[0] = 328;
-                prt[1] = 328;
-                prt[2] = 333;
-                prt[3] = 333;
+                prt[0] = spr_martlet_head_regular;
+                prt[1] = spr_martlet_head_regular;
+                prt[2] = spr_martlet_head_surprised;
+                prt[3] = spr_martlet_head_surprised;
                 skippable = false;
                 message_timer = 20;
             }
@@ -752,9 +753,9 @@ if (global.snowdin_flag[13] == 1)
             
             with (msg)
             {
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 message[0] = "* OHNO-OHNO-OHNO-OHNO-OHNO";
-                prt[0] = 330;
+                prt[0] = spr_martlet_head_shocked;
                 skippable = false;
                 message_timer = 10;
             }

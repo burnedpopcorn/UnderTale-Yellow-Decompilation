@@ -18,13 +18,13 @@ switch (npc_flag)
             message[4] = "* Sorry for all those#  hurtful things I said.";
             message[5] = "* My temper gets the best#  of me sometimes...";
             message[6] = "* Trying to work on it.";
-            prt[0] = 451;
-            prt[1] = 452;
-            prt[2] = 454;
-            prt[3] = 451;
-            prt[4] = 454;
-            prt[5] = 452;
-            prt[6] = 451;
+            prt[0] = spr_portrait_ed_normal;
+            prt[1] = spr_portrait_ed_smile;
+            prt[2] = spr_portrait_ed_mutter;
+            prt[3] = spr_portrait_ed_normal;
+            prt[4] = spr_portrait_ed_mutter;
+            prt[5] = spr_portrait_ed_smile;
+            prt[6] = spr_portrait_ed_normal;
         }
         
         npc_flag = 1;
@@ -40,12 +40,12 @@ switch (npc_flag)
             message[3] = "* Still, I do enjoy the#  instrument.\t";
             message[4] = "* Maybe someone could#  build a guitar big#  enough for me?";
             message[5] = "* One day, kid. One day.";
-            prt[0] = 452;
-            prt[1] = 453;
-            prt[2] = 454;
-            prt[3] = 452;
-            prt[4] = 451;
-            prt[5] = 451;
+            prt[0] = spr_portrait_ed_smile;
+            prt[1] = spr_portrait_ed_mad;
+            prt[2] = spr_portrait_ed_mutter;
+            prt[3] = spr_portrait_ed_smile;
+            prt[4] = spr_portrait_ed_normal;
+            prt[5] = spr_portrait_ed_normal;
         }
         
         npc_flag = 2;
@@ -57,8 +57,8 @@ switch (npc_flag)
             talker[0] = other.object_index;
             message[0] = "* Ya know... I guess you#  do make a pretty good#  deputy.\t";
             message[1] = "* Good luck, wherever you#  go next.";
-            prt[0] = 454;
-            prt[1] = 451;
+            prt[0] = spr_portrait_ed_mutter;
+            prt[1] = spr_portrait_ed_normal;
         }
         
         break;

@@ -1,5 +1,3 @@
-var xx, yy, spawn_corner, spawn_direction, spawn_direction_1, spawn_direction_2;
-
 if (live_call())
     return global.live_result;
 
@@ -11,10 +9,11 @@ if (attack_stop == true)
     exit;
 }
 
-xx = 0;
-yy = 0;
-spawn_corner = irandom_range(1, 4);
-spawn_direction = 0;
+var xx = 0;
+var yy = 0;
+var spawn_corner = irandom_range(1, 4);
+var spawn_direction = 0;
+var spawn_direction_1, spawn_direction_2;
 
 switch (spawn_corner)
 {

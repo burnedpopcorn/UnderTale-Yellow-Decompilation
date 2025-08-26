@@ -12,7 +12,7 @@ CAVE_TRANSITION = false;
 HOTLAND_TRANSITION = false;
 LAVA_TRANSITION = false;
 transition_x = 320;
-sprite_ava_death = spr_ava_breaks;
+sprite_ava_death = 903;
 audio_play_sound(mus_ambient_river, 1, 1);
 audio_play_sound(snd_rapids, 1, 1);
 audio_sound_gain(snd_rapids, 0.6, 0);

@@ -1,11 +1,9 @@
 function scr_enemy_timer_attacks_feisty_five()
 {
-    var enemy_attack;
-    
     if (!instance_exists(obj_attack_cycler_feisty_five))
         instance_create(0, 0, obj_attack_cycler_feisty_five);
     
-    enemy_attack = global.enemy_attack;
+    var enemy_attack = global.enemy_attack;
     
     if (instance_exists(obj_dialogue_box_battle_transformation_any) && obj_heart_battle_fighting_parent.moveable == true)
     {

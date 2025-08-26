@@ -1,13 +1,11 @@
-var sprite_width_multiplier, sprite_height_multiplier;
-
 image_xscale = obj_dialogue_box_battle_transformation_any.image_xscale;
 image_yscale = obj_dialogue_box_battle_transformation_any.image_yscale;
 x = obj_dialogue_box_battle_transformation_any.x;
 y = obj_dialogue_box_battle_transformation_any.y;
-sprite_width_end = spr_steamworks_21_background;
-sprite_height_end = spr_steamworks_21_background;
-sprite_width_multiplier = abs(1 - image_xscale);
-sprite_height_multiplier = abs(1 - image_yscale);
+sprite_width_end = 1;
+sprite_height_end = 1;
+var sprite_width_multiplier = abs(1 - image_xscale);
+var sprite_height_multiplier = abs(1 - image_yscale);
 
 if (image_xscale > 1)
     width_increase_type = 1;

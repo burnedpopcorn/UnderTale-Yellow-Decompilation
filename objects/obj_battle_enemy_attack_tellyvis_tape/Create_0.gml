@@ -1,14 +1,12 @@
-var dbox, spawn_position, half_width, half_height, loop_prevention;
-
-dbox = 3154;
+var dbox = 3155;
 damage_number = scr_determine_damage_number_enemy("tellyvis a", "void", "void");
 flying_speed = 10;
 grav_speed = 0;
 depth = obj_heart_battle_fighting_parent.depth - 1;
-spawn_position = irandom_range(1, 4);
-half_width = sprite_width * 0.5;
-half_height = sprite_height * 0.5;
-loop_prevention = 0;
+var spawn_position = irandom_range(1, 4);
+var half_width = sprite_width * 0.5;
+var half_height = sprite_height * 0.5;
+var loop_prevention = 0;
 
 do
 {

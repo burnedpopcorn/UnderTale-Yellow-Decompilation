@@ -1,10 +1,8 @@
-var battle_box;
-
 if (live_call())
     return global.live_result;
 
 damage_number = scr_determine_damage_number_enemy("ceroba", "void", "void");
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 target_x = obj_heart_battle_fighting_parent.x;
 target_y = obj_heart_battle_fighting_parent.y;
 turn_rate = 0.06;

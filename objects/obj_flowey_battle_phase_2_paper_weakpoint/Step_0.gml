@@ -1,5 +1,3 @@
-var old_pos;
-
 event_inherited();
 
 if (hp_self <= 0)
@@ -52,7 +50,7 @@ if (path_position > 0.5)
         {
             if (path_position > 0.9)
             {
-                old_pos = other.path_position;
+                var old_pos = other.path_position;
                 other.path_position = path_position;
                 path_position = old_pos;
             }

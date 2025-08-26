@@ -1,5 +1,3 @@
-var i, game_mode, battle_enemy_name;
-
 if (instance_exists(obj_dialogue_battle_flee))
 {
     switch (global.enemy_count)
@@ -58,7 +56,7 @@ if (instance_exists(obj_dialogue_battle_flee))
     
     if (global.player_exp >= global.player_exp_next[global.player_level])
     {
-        for (i = global.player_level; i <= 20; i += 1)
+        for (var i = global.player_level; i <= 20; i += 1)
         {
             if (global.player_exp >= global.player_exp_next[i])
             {
@@ -75,11 +73,11 @@ if (instance_exists(obj_dialogue_battle_flee))
     }
 }
 
-game_mode = global.game_mode;
+var game_mode = global.game_mode;
 
 if (game_mode == "customs")
 {
-    battle_enemy_name = global.battle_enemy_name;
+    var battle_enemy_name = global.battle_enemy_name;
     
     if (battle_enemy_name == "craniex")
     {

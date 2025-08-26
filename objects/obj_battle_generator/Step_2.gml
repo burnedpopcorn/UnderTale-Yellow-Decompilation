@@ -1,9 +1,7 @@
-var enemy_count;
-
 if (global.current_hp_self < 0)
     global.current_hp_self = 0;
 
-enemy_count = global.enemy_count;
+var enemy_count = global.enemy_count;
 
 if (global.current_hp_enemy < 0)
 {

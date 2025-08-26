@@ -1,7 +1,5 @@
-var snow_geno, animate;
-
 event_inherited();
-snow_geno = false;
+var snow_geno = false;
 
 if (global.kill_number[2] <= 0)
     snow_geno = true;
@@ -12,7 +10,7 @@ if (!instance_exists(obj_dialogue))
     talk = 0;
 }
 
-animate = obj_rodney_hotland.animate;
+var animate = obj_rodney_hotland.animate;
 
 if (animate == 0)
 {

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"55afc911-e9f0-4690-8191-f00413e62664",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4195beff-2c16-4f83-bdff-fb9fe33369d3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"20959f0d-ba22-4f37-ad91-cdba471035b6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"83ec2ec5-9049-4af8-abba-6769ea1a80e9",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 122,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ea2a85ed-a4aa-40fc-adbe-4d9a99124b8a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"720ecbf4-42c9-4fa3-bb46-ae1bf883d12f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"55afc911-e9f0-4690-8191-f00413e62664","path":"sprites/spr_portrait_starlo_hurt/spr_portrait_starlo_hurt.yy",},},},"Disabled":false,"id":"de788631-e67d-4a9f-91e4-6f06007feff8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4195beff-2c16-4f83-bdff-fb9fe33369d3","path":"sprites/spr_portrait_starlo_hurt/spr_portrait_starlo_hurt.yy",},},},"Disabled":false,"id":"e2a63b6d-2fe3-4411-9255-80fa9bef9768","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"20959f0d-ba22-4f37-ad91-cdba471035b6","path":"sprites/spr_portrait_starlo_hurt/spr_portrait_starlo_hurt.yy",},},},"Disabled":false,"id":"20ca074e-e273-4d70-b88a-9046cb79bb9e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"83ec2ec5-9049-4af8-abba-6769ea1a80e9","path":"sprites/spr_portrait_starlo_hurt/spr_portrait_starlo_hurt.yy",},},},"Disabled":false,"id":"cfc523dd-87a5-49c8-b066-010433e14231","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "WildEast",
+    "path": "texturegroups/WildEast",
   },
   "type": 0,
   "VTile": false,

@@ -1,10 +1,8 @@
-var bullet_number, xx, i;
-
 counter_current = 0;
 counter_max = 300;
-bullet_number = 8;
-xx = (obj_dialogue_box_battle_transformation_any.bbox_right - obj_dialogue_box_battle_transformation_any.bbox_left) / bullet_number;
-i = 0.5;
+var bullet_number = 8;
+var xx = (obj_dialogue_box_battle_transformation_any.bbox_right - obj_dialogue_box_battle_transformation_any.bbox_left) / bullet_number;
+var i = 0.5;
 
 while (i < bullet_number)
 {

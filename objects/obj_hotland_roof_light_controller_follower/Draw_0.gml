@@ -1,41 +1,39 @@
-var martlet_sprite;
-
 if (instance_exists(obj_martlet_follower))
 {
-    martlet_sprite = spr_collisionbox;
+    var martlet_sprite = 0;
     
     switch (obj_martlet_follower.sprite_index)
     {
         case spr_martlet_up:
-            martlet_sprite = spr_martlet_up_roof;
+            martlet_sprite = 3617;
             break;
         
         case spr_martlet_up_talk:
-            martlet_sprite = spr_martlet_up_talk_roof;
+            martlet_sprite = 2324;
             break;
         
         case spr_martlet_down:
-            martlet_sprite = spr_martlet_down_roof;
+            martlet_sprite = 2486;
             break;
         
         case spr_martlet_down_talk:
-            martlet_sprite = spr_martlet_down_talk_roof;
+            martlet_sprite = 3564;
             break;
         
         case spr_martlet_left:
-            martlet_sprite = spr_martlet_left_roof;
+            martlet_sprite = 3622;
             break;
         
         case spr_martlet_left_talk:
-            martlet_sprite = spr_martlet_left_talk_roof;
+            martlet_sprite = 1469;
             break;
         
         case spr_martlet_right:
-            martlet_sprite = spr_martlet_right_roof;
+            martlet_sprite = 3143;
             break;
         
         case spr_martlet_right_talk:
-            martlet_sprite = spr_martlet_right_talk_roof;
+            martlet_sprite = 3294;
             break;
     }
     

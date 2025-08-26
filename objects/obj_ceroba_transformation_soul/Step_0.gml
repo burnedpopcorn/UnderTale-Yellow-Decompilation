@@ -1,5 +1,3 @@
-var ready_sound, pitch_original;
-
 if (live_call())
     return global.live_result;
 
@@ -20,7 +18,7 @@ if (is_charging)
     }
     else if (!is_charged)
     {
-        ready_sound = audio_play_sound(snd_undertale_flash, 1, 0);
+        var ready_sound = audio_play_sound(snd_undertale_flash, 1, 0);
         audio_sound_gain(ready_sound, 0.5, 0);
         is_charged = true;
         sprite_index = spr_heart_yellow_ready;
@@ -33,7 +31,7 @@ else
     audio_stop_sound(charge_sound);
 }
 
-if ((can_shoot && keyboard_multicheck_pressed(0)) || auto_shoot)
+if ((can_shoot && keyboard_multicheck_pressed(vk_nokey)) || auto_shoot)
 {
     alarm[0] = -1;
     draw_hint = false;
@@ -61,7 +59,7 @@ if ((can_shoot && keyboard_multicheck_pressed(0)) || auto_shoot)
 
 if (audio_is_playing(charge_sound))
 {
-    pitch_original = audio_sound_get_pitch(charge_sound);
+    var pitch_original = audio_sound_get_pitch(charge_sound);
     
     if (pitch_original < 0.99)
         audio_sound_pitch(charge_sound, 1 - (0.5 * charge_percentage));

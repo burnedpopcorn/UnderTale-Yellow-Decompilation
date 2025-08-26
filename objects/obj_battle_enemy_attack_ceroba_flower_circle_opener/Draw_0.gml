@@ -1,12 +1,10 @@
-var battle_box, hint_scale;
-
 if (live_call())
     return global.live_result;
 
 if (hint_draw == true)
 {
-    battle_box = 3154;
-    hint_scale = 1.5 + (sin(current_time / 100) * 0.5);
+    var battle_box = obj_dialogue_box_battle_transformation_any;
+    var hint_scale = 1.5 + (sin(current_time / 100) * 0.5);
     draw_set_font(fnt_battle);
     draw_set_color(c_white);
     draw_set_halign(fa_center);

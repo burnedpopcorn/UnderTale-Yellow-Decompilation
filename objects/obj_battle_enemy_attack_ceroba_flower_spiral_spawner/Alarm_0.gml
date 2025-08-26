@@ -1,8 +1,6 @@
-var i, bullet;
-
-for (i = 0; i < bullet_number; i++)
+for (var i = 0; i < bullet_number; i++)
 {
-    bullet = instance_create(x, y, obj_battle_enemy_attack_ceroba_flower_spiral_bullet);
+    var bullet = instance_create(x, y, obj_battle_enemy_attack_ceroba_flower_spiral_bullet);
     bullet.attack_dir = (i + 1) * (360 / bullet_number);
     bullet.creator = id;
     

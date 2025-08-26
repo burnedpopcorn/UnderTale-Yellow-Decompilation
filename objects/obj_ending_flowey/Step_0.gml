@@ -21,7 +21,7 @@ if (instance_exists(obj_dialogue_flowey_ending))
         is_talking = false;
     }
     
-    if (obj_dialogue_flowey_ending.prt[obj_dialogue_flowey_ending.message_current] != 0)
+    if (obj_dialogue_flowey_ending.prt[obj_dialogue_flowey_ending.message_current] != spr_collisionbox)
         sprite_index = obj_dialogue_flowey_ending.prt[obj_dialogue_flowey_ending.message_current];
     
     if (sprite_index == -4)

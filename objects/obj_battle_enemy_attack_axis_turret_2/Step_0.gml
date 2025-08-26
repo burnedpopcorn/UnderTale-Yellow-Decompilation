@@ -1,9 +1,7 @@
-var battle_box, bullet, base_speed, variation;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 if (destroy_self)
 {
@@ -22,7 +20,7 @@ switch (scene)
     case 0:
         image_speed = 1;
         audio_play_sound(snd_arc_shoot, 1, 0);
-        bullet = instance_create_depth(x + lengthdir_x(speed * 2, direction), y + lengthdir_y(speed * 2, direction), -100, obj_battle_enemy_attack_axis_turret_bullet);
+        var bullet = instance_create_depth(x + lengthdir_x(speed * 2, direction), y + lengthdir_y(speed * 2, direction), -100, obj_battle_enemy_attack_axis_turret_bullet);
         bullet.direction = image_angle;
         bullet.image_angle = bullet.direction;
         bullet.speed = 8;
@@ -37,8 +35,8 @@ switch (scene)
         break;
 }
 
-base_speed = 5;
-variation = choose(1, 2);
+var base_speed = 5;
+var variation = choose(1, 2);
 
 switch (side)
 {

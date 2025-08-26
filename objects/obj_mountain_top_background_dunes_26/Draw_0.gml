@@ -1,6 +1,4 @@
-var i, mountain_offset;
-
-i = 0;
+var i = 0;
 
 while (i <= room_width)
 {
@@ -9,7 +7,7 @@ while (i <= room_width)
 }
 
 draw_background(2503, (__view_get(e__VW.XView, 0) + 180) / 1.05, 106);
-mountain_offset = -400;
+var mountain_offset = -400;
 i = mountain_offset;
 
 while (i <= room_width)

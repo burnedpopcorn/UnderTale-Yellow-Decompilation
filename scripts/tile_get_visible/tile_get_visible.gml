@@ -1,7 +1,5 @@
-function tile_get_visible(argument0)
+function tile_get_visible(arg0)
 {
-    var __index;
-    
-    __index = argument0;
+    var __index = arg0;
     return layer_tile_get_visible(__index);
 }

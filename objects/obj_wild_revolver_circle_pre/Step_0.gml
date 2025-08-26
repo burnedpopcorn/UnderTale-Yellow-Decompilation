@@ -1,9 +1,8 @@
-var fight_number, enemy_sparing, enemy_vulnerable, current_hp_enemy, attacking_damage_stat_critical, enemy_target_x, enemy_target_y, shot_sound, dj_a, dj_b, dj_c;
-
 if (live_call())
     return global.live_result;
 
-fight_number = global.fight_number;
+var fight_number = global.fight_number;
+var enemy_sparing, enemy_vulnerable, current_hp_enemy, attacking_damage_stat_critical, enemy_target_x, enemy_target_y;
 
 if (fight_number == 1)
 {
@@ -46,17 +45,19 @@ if (outline <= 0 && no_loop == false)
 
 if (key_select)
 {
+    var shot_sound;
+    
     if ((outline < small_circle && ((enemy_sparing == true && enemy_vulnerable == true) || (enemy_vulnerable == true && current_hp_enemy <= attacking_damage_stat_critical))) || outline <= (small_circle * 0.5))
     {
         shot_type = "strong";
-        hit_object = 2916;
+        hit_object = obj_shot_strong_fake;
         shot_add = 3;
         shot_sound = audio_play_sound(snd_attackhitperfect, 1, 0);
     }
     else if (outline < small_circle && outline > (small_circle * 0.5))
     {
         shot_type = "medium";
-        hit_object = 2915;
+        hit_object = obj_shot_medium_fake;
         shot_add = 2;
         shot_sound = audio_play_sound(snd_attackhit, 1, 0);
     }
@@ -72,9 +73,9 @@ if (key_select)
     
     audio_sound_pitch(shot_sound, 1 + (obj_wild_revolver_battle_outline.target_current * 0.08));
     audio_sound_gain(shot_sound, 10, 0);
-    dj_a = obj_wild_revolver_battle_outline.target_current;
-    dj_b = dj_a - 1;
-    dj_c = dj_order[dj_b];
+    var dj_a = obj_wild_revolver_battle_outline.target_current;
+    var dj_b = dj_a - 1;
+    var dj_c = dj_order[dj_b];
     instance_create(enemy_target_x + disjoint_x[dj_c], enemy_target_y + disjoint_y[dj_c], hit_object);
     shrink = false;
     button_pressed = true;

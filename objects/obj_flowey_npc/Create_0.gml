@@ -15,4 +15,4 @@ actor_speed = 3;
 axis_override = "nothing";
 end_direction = "left";
 walk_collider = -4;
-npc_voice_sfx = 96;
+npc_voice_sfx = sndfnt_flowey;

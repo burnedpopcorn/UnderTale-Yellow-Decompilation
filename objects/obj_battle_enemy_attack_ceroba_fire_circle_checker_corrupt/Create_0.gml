@@ -3,4 +3,4 @@ counter_max = 6;
 counter_circle_number = 0;
 alarm[0] = 10;
 flowey_sprite_original = obj_battle_flowey_body_1.base_sprite;
-obj_battle_flowey_body_1.base_sprite = spr_corrupted_ceroba;
+obj_battle_flowey_body_1.base_sprite = 2697;

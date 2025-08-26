@@ -1,8 +1,7 @@
-var battle_box, spawn_dir, spr_width, spawn_x, spawn_y, ball;
-
-battle_box = 3154;
-spawn_dir = irandom_range(0, 359);
-spr_width = sprite_get_width(spr_battle_enemy_attack_axis_ball);
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var spawn_dir = irandom_range(0, 359);
+var spr_width = sprite_get_width(spr_battle_enemy_attack_axis_ball);
+var spawn_x;
 
 if (current_side == "left")
 {
@@ -15,8 +14,8 @@ else
     current_side = "left";
 }
 
-spawn_y = battle_box.bbox_top - 80;
-ball = instance_create_depth(spawn_x, spawn_y, -100, obj_battle_enemy_attack_axis_energy_ball_boss);
+var spawn_y = battle_box.bbox_top - 80;
+var ball = instance_create_depth(spawn_x, spawn_y, -100, obj_battle_enemy_attack_axis_energy_ball_boss);
 ball.direction = 270;
 ball.speed = 4;
 

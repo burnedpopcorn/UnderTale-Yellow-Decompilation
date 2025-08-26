@@ -18,15 +18,15 @@ if (global.route == 1 && global.sworks_flag[61] == 0)
                     with (msg)
                     {
                         color = true;
-                        col_modif[0] = 16711935;
+                        col_modif[0] = c_fuchsia;
                         message[0] = "* WHO GOES THERE???";
                         message[1] = "* IT IS NOT YOU BECAUSE I#  GO THERE.";
                         message[2] = "* SCANNING_";
                         message_col[2][0] = "* SCANNING_";
-                        prt[0] = 473;
-                        prt[1] = 473;
-                        sndfnt_array[0] = 111;
-                        sndfnt_array[2] = 391;
+                        prt[0] = spr_portrait_axis_normal;
+                        prt[1] = spr_portrait_axis_normal;
+                        sndfnt_array[0] = snd_talk_axis;
+                        sndfnt_array[2] = snd_talk_default;
                     }
                     
                     obj_axis_npc.npc_direction_hold = "nothing";
@@ -35,7 +35,7 @@ if (global.route == 1 && global.sworks_flag[61] == 0)
                 case 1:
                     with (msg)
                     {
-                        talker[0] = 1166;
+                        talker[0] = obj_axis_npc;
                         message[0] = "* YES, I HAD TO SCAN YOU#  TO REMEMBER.";
                         message[1] = "* IT IS STANDARD#  PROCEDURE AFTER A#  RECHARGE.";
                         message[2] = "* AH, THE PRECIOUS#  MEMORIES ARE FLOODING#  BACK.";
@@ -44,14 +44,14 @@ if (global.route == 1 && global.sworks_flag[61] == 0)
                         message[5] = "* WHAT? THAT IS A THING I#  SAY NOW.";
                         message[6] = "* SOUS-BORG TAUGHT ME.";
                         message[7] = "* IT MEANS \"LET'S MAKE AN#  OMELETTE.\"";
-                        prt[0] = 473;
-                        prt[1] = 473;
-                        prt[2] = 473;
-                        prt[3] = 473;
-                        prt[4] = 473;
-                        prt[5] = 473;
-                        prt[6] = 473;
-                        prt[7] = 473;
+                        prt[0] = spr_portrait_axis_normal;
+                        prt[1] = spr_portrait_axis_normal;
+                        prt[2] = spr_portrait_axis_normal;
+                        prt[3] = spr_portrait_axis_normal;
+                        prt[4] = spr_portrait_axis_normal;
+                        prt[5] = spr_portrait_axis_normal;
+                        prt[6] = spr_portrait_axis_normal;
+                        prt[7] = spr_portrait_axis_normal;
                     }
                     
                     scene = 0;
@@ -61,7 +61,7 @@ if (global.route == 1 && global.sworks_flag[61] == 0)
                 case 2:
                     with (msg)
                     {
-                        talker[0] = 1166;
+                        talker[0] = obj_axis_npc;
                         message[0] = "* SAY, WHERE DOES A BOT#  FIND A HAT LIKE YOURS?";
                         message[1] = "* I WOULD ROCK A CAP LIKE#  THAT.";
                         message[2] = "* MIGHT TURN SOME HEADS,#  YOU KNOW?";
@@ -70,14 +70,14 @@ if (global.route == 1 && global.sworks_flag[61] == 0)
                         message[5] = "* I CAN FEEL MY FACE#  TURNING BRIGHT GRAY.";
                         message[6] = "* YOU KNOW WHAT?#  NEVERMIND.";
                         message[7] = "* IT IS BETWEEN ME AND MY#  E-DIARY.";
-                        prt[0] = 473;
-                        prt[1] = 473;
-                        prt[2] = 473;
-                        prt[3] = 473;
-                        prt[4] = 473;
-                        prt[5] = 473;
-                        prt[6] = 473;
-                        prt[7] = 473;
+                        prt[0] = spr_portrait_axis_normal;
+                        prt[1] = spr_portrait_axis_normal;
+                        prt[2] = spr_portrait_axis_normal;
+                        prt[3] = spr_portrait_axis_normal;
+                        prt[4] = spr_portrait_axis_normal;
+                        prt[5] = spr_portrait_axis_normal;
+                        prt[6] = spr_portrait_axis_normal;
+                        prt[7] = spr_portrait_axis_normal;
                     }
                     
                     scene = 0;
@@ -87,15 +87,15 @@ if (global.route == 1 && global.sworks_flag[61] == 0)
                 case 3:
                     with (msg)
                     {
-                        talker[0] = 1166;
+                        talker[0] = obj_axis_npc;
                         message[0] = "* HAVE FUN IN THE#  STEAMWORKS, HUMAN.";
                         message[1] = "* IF YOU PLAN TO TAKE A#  SWIM IN THE BOILING#  LAKE, BRING FLOATIES.";
                         message[2] = "* THE LIFEGUARD WAS#  RECENTLY PROMOTED TO A#  DEATHGUARD.";
                         message[3] = "* TRAGIC. LMAO.";
-                        prt[0] = 473;
-                        prt[1] = 473;
-                        prt[2] = 473;
-                        prt[3] = 473;
+                        prt[0] = spr_portrait_axis_normal;
+                        prt[1] = spr_portrait_axis_normal;
+                        prt[2] = spr_portrait_axis_normal;
+                        prt[3] = spr_portrait_axis_normal;
                     }
                     
                     scene = 0;
@@ -113,7 +113,7 @@ if (global.route == 1 && global.sworks_flag[61] == 0)
             with (obj_pl)
                 scr_axis_clover_scan();
             
-            cutscene_sfx_play(271, 1);
+            cutscene_sfx_play(snd_elevator, 1);
             audio_sound_pitch(snd_elevator, 2);
             break;
         
@@ -126,11 +126,11 @@ if (global.route == 1 && global.sworks_flag[61] == 0)
             
             with (msg)
             {
-                talker[0] = 1166;
+                talker[0] = obj_axis_npc;
                 message[0] = "* AH, HELLO \"HATTED#  HUMAN.\"";
                 message[1] = "* HOPE YOU ARE WELL THIS#  FINE EVENING.";
-                prt[0] = 473;
-                prt[1] = 473;
+                prt[0] = spr_portrait_axis_normal;
+                prt[1] = spr_portrait_axis_normal;
             }
             
             break;
@@ -152,7 +152,7 @@ else if ((global.route == 2 || global.sworks_flag[61] == 1) && scene == 1)
         case 0:
             with (msg)
             {
-                talker[0] = 1166;
+                talker[0] = obj_axis_npc;
                 message[0] = "* HELLO, HUMAN.";
                 message[1] = "* YOU CAUGHT ME ON A DATE#  WITH THE LOVELY.";
                 message[2] = "* TURNS OUT I DID NOT#  HAVE TO RECHARGE.";
@@ -160,13 +160,13 @@ else if ((global.route == 2 || global.sworks_flag[61] == 1) && scene == 1)
                 message[4] = "* STILL, I DID SPEND SOME#  TIME IN MY LOCKER.";
                 message[5] = "* WHY?";
                 message[6] = "* SEVEN MINUTES IN#  HEAVEN.";
-                prt[0] = 473;
-                prt[1] = 473;
-                prt[2] = 473;
-                prt[3] = 473;
-                prt[4] = 473;
-                prt[5] = 473;
-                prt[6] = 473;
+                prt[0] = spr_portrait_axis_normal;
+                prt[1] = spr_portrait_axis_normal;
+                prt[2] = spr_portrait_axis_normal;
+                prt[3] = spr_portrait_axis_normal;
+                prt[4] = spr_portrait_axis_normal;
+                prt[5] = spr_portrait_axis_normal;
+                prt[6] = spr_portrait_axis_normal;
             }
             
             npc_flag += 1;
@@ -175,7 +175,7 @@ else if ((global.route == 2 || global.sworks_flag[61] == 1) && scene == 1)
         case 1:
             with (msg)
             {
-                talker[0] = 1166;
+                talker[0] = obj_axis_npc;
                 message[0] = "* HOW INFORMAL OF ME.";
                 message[1] = "* I DID NOT INTRODUCE YOU#  TO MY SPOUSE.";
                 message[2] = "* THIS IS DAISY. ";
@@ -185,15 +185,15 @@ else if ((global.route == 2 || global.sworks_flag[61] == 1) && scene == 1)
                 message[6] = "* FOR ONE, IT HAS COLOR.";
                 message[7] = "* FOR TWO, IT DOES NOT#  SMELL OF BLEACH.";
                 message[8] = "* JUST LIKE MY SPOUSE.";
-                prt[0] = 473;
-                prt[1] = 473;
-                prt[2] = 473;
-                prt[3] = 473;
-                prt[4] = 473;
-                prt[5] = 473;
-                prt[6] = 473;
-                prt[7] = 473;
-                prt[8] = 473;
+                prt[0] = spr_portrait_axis_normal;
+                prt[1] = spr_portrait_axis_normal;
+                prt[2] = spr_portrait_axis_normal;
+                prt[3] = spr_portrait_axis_normal;
+                prt[4] = spr_portrait_axis_normal;
+                prt[5] = spr_portrait_axis_normal;
+                prt[6] = spr_portrait_axis_normal;
+                prt[7] = spr_portrait_axis_normal;
+                prt[8] = spr_portrait_axis_normal;
             }
             
             npc_flag += 1;
@@ -202,7 +202,7 @@ else if ((global.route == 2 || global.sworks_flag[61] == 1) && scene == 1)
         case 2:
             with (msg)
             {
-                talker[0] = 1166;
+                talker[0] = obj_axis_npc;
                 message[0] = "* SOONER OR LATER...";
                 message[1] = "* I SUPPOSE WE WILL HAVE#  TO ESTABLISH OUR NEW#  SOCIETY.";
                 message[2] = "* THAT WILL BE TRICKY.";
@@ -210,13 +210,13 @@ else if ((global.route == 2 || global.sworks_flag[61] == 1) && scene == 1)
                 message[4] = "* I TRIED TO PLAY IT OUT.#  YOU KNOW, LOOK AT THE#  PROS AND CONS.";
                 message[5] = "* BUT SADLY, I DO NOT SEE#  THE OTHER BOTS JIVING#  WITH IT.";
                 message[6] = "* HATE TO CRUSH MR.#  SCREEN'S DREAMS, BUT IT#  IS WHAT IT IS.";
-                prt[0] = 473;
-                prt[1] = 473;
-                prt[2] = 473;
-                prt[3] = 473;
-                prt[4] = 473;
-                prt[5] = 473;
-                prt[6] = 473;
+                prt[0] = spr_portrait_axis_normal;
+                prt[1] = spr_portrait_axis_normal;
+                prt[2] = spr_portrait_axis_normal;
+                prt[3] = spr_portrait_axis_normal;
+                prt[4] = spr_portrait_axis_normal;
+                prt[5] = spr_portrait_axis_normal;
+                prt[6] = spr_portrait_axis_normal;
             }
             
             npc_flag += 1;
@@ -226,10 +226,10 @@ else if ((global.route == 2 || global.sworks_flag[61] == 1) && scene == 1)
             with (msg)
             {
                 color = true;
-                col_modif[0] = 16711935;
-                sndfnt_array[0] = 111;
-                sndfnt_array[10] = 391;
-                sndfnt_array[13] = 111;
+                col_modif[0] = c_fuchsia;
+                sndfnt_array[0] = snd_talk_axis;
+                sndfnt_array[10] = snd_talk_default;
+                sndfnt_array[13] = snd_talk_axis;
                 message[0] = "* SAY, WHERE DID THE TALL#  LADY GO?";
                 message[1] = "* DID YOU NOT HAVE#  BUSINESS IN HOTLAND?";
                 message[2] = "* OH NO.";
@@ -242,28 +242,28 @@ else if ((global.route == 2 || global.sworks_flag[61] == 1) && scene == 1)
                 message[9] = "* YOU GOT ME SLIPPING#  INTO THE ANXIETY ZONE.";
                 message[10] = "* *BEEP BEEP*";
                 message[11] = "* ANXIETY ZONE REACHED_";
-                message[12] = "* SEARCHING FOR RATIONAL_";
+                message[12] = "* SEARCHING FOR RATIONALE_";
                 message_col[10][0] = "* *BEEP BEEP*";
                 message_col[11][0] = "* ANXIETY ZONE REACHED_";
-                message_col[12][0] = "* SEARCHING FOR RATIONAL_";
+                message_col[12][0] = "* SEARCHING FOR RATIONALE_";
                 message[13] = "* OH, I KNOW.";
                 message[14] = "* I WILL INSTALL A#  TRACKER IN MY CHILD.";
                 message[15] = "* GENIUS. ";
                 message[16] = "* I JUST SOLVED 90% OF#  PARENTAL PROBLEMS.";
-                prt[0] = 473;
-                prt[1] = 473;
-                prt[2] = 473;
-                prt[3] = 473;
-                prt[4] = 473;
-                prt[5] = 473;
-                prt[6] = 473;
-                prt[7] = 473;
-                prt[8] = 473;
-                prt[9] = 473;
-                prt[13] = 473;
-                prt[14] = 473;
-                prt[15] = 473;
-                prt[16] = 473;
+                prt[0] = spr_portrait_axis_normal;
+                prt[1] = spr_portrait_axis_normal;
+                prt[2] = spr_portrait_axis_normal;
+                prt[3] = spr_portrait_axis_normal;
+                prt[4] = spr_portrait_axis_normal;
+                prt[5] = spr_portrait_axis_normal;
+                prt[6] = spr_portrait_axis_normal;
+                prt[7] = spr_portrait_axis_normal;
+                prt[8] = spr_portrait_axis_normal;
+                prt[9] = spr_portrait_axis_normal;
+                prt[13] = spr_portrait_axis_normal;
+                prt[14] = spr_portrait_axis_normal;
+                prt[15] = spr_portrait_axis_normal;
+                prt[16] = spr_portrait_axis_normal;
             }
             
             npc_flag += 1;
@@ -272,13 +272,13 @@ else if ((global.route == 2 || global.sworks_flag[61] == 1) && scene == 1)
         case 4:
             with (msg)
             {
-                talker[0] = 1166;
+                talker[0] = obj_axis_npc;
                 message[0] = "* THAT IS ALL THE#  \"CATCHING UP\" I HAD#  PLANNED.";
                 message[1] = "* HOPE YOUR LIFE TURNS#  OUT AS SICK AS MINE.";
                 message[2] = "* GOODBYE, HUMAN.";
-                prt[0] = 473;
-                prt[1] = 473;
-                prt[2] = 473;
+                prt[0] = spr_portrait_axis_normal;
+                prt[1] = spr_portrait_axis_normal;
+                prt[2] = spr_portrait_axis_normal;
             }
             
             break;

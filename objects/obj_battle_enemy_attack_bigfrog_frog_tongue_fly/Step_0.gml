@@ -1,9 +1,7 @@
-var collider;
-
 if (live_call())
     return global.live_result;
 
-collider = instance_place(x, y, obj_battle_enemy_attack_bigfrog_frog_tongue_tip);
+var collider = instance_place(x, y, obj_battle_enemy_attack_bigfrog_frog_tongue_tip);
 
 if (is_caught == false && collider != -4)
 {

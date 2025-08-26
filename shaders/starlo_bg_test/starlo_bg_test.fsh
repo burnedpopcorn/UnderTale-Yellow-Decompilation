@@ -3,14 +3,10 @@
 //
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
-
 uniform float freq;
 uniform float time;
 uniform float amp;
-
 float test = v_vTexcoord.x;
-
-
 void main()
 {
 	test = v_vTexcoord.x + sin(v_vTexcoord.y * freq + time) * amp;

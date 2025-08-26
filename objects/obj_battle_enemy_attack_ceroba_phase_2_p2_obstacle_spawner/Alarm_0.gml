@@ -1,18 +1,16 @@
-var battle_box, side, xx, xx2, xx3, yy, obstacle1, obstacle2, obstacle3, obstacle_speed;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-side = choose(1, 2, 3);
-xx = battle_box.bbox_left + 16;
-xx2 = battle_box.bbox_right - 16;
-xx3 = battle_box.x;
-yy = battle_box.bbox_top - 16;
-obstacle1 = 248;
-obstacle2 = 248;
-obstacle3 = 248;
-obstacle_speed = 5;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var side = choose(1, 2, 3);
+var xx = battle_box.bbox_left + 16;
+var xx2 = battle_box.bbox_right - 16;
+var xx3 = battle_box.x;
+var yy = battle_box.bbox_top - 16;
+var obstacle1 = 248;
+var obstacle2 = 248;
+var obstacle3 = 248;
+var obstacle_speed = 5;
 
 if (global.hotland_flag[2] == 3)
     obstacle_speed = 6;
@@ -20,15 +18,15 @@ if (global.hotland_flag[2] == 3)
 switch (side)
 {
     case 1:
-        obstacle1 = 3120;
+        obstacle1 = 3121;
         break;
     
     case 2:
-        obstacle2 = 3120;
+        obstacle2 = 3121;
         break;
     
     case 3:
-        obstacle3 = 3120;
+        obstacle3 = 3121;
         break;
 }
 

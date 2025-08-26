@@ -1,5 +1,3 @@
-var current_world_value;
-
 xs = 1;
 ys = 1;
 sizex = 1;
@@ -13,11 +11,11 @@ statBox = false;
 p1 = true;
 p2 = false;
 roomname = "Dark Ruins - Hallway";
-color2 = c_white;
+color2 = 16777215;
 done = false;
 ready = false;
 scr_determine_save_area();
-current_world_value = scr_determine_world_value_yellow();
+var current_world_value = scr_determine_world_value_yellow();
 
 switch (current_world_value)
 {

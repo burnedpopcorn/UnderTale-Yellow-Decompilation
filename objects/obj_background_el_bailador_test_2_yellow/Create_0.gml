@@ -1,5 +1,3 @@
-var xscale_min_dec, xscale_min_val;
-
 pixel_dim = 2;
 x = 320;
 y = 0;
@@ -7,8 +5,8 @@ default_x = x;
 default_y = y;
 draw_left = bbox_left;
 draw_top = bbox_top;
-xscale_min_dec = 64;
-xscale_min_val = sprite_width - (2 * xscale_min_dec);
+var xscale_min_dec = 64;
+var xscale_min_val = sprite_width - (2 * xscale_min_dec);
 xscale_min = xscale_min_val / sprite_width;
 darkness_max = 0.7;
 angle_default = 0;

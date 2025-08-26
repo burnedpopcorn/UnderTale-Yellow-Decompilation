@@ -1,8 +1,6 @@
-var rephil, toast, swig;
-
-rephil = 1434;
-toast = 1437;
-swig = 1435;
+var rephil = 1434;
+var toast = 1437;
+var swig = 1435;
 
 if (global.geno_complete[2] || global.player_can_travel || global.snowdin_flag[8] == 6)
 {

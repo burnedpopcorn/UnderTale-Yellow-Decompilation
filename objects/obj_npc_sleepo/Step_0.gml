@@ -1,4 +1,4 @@
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     if (!audio_is_playing(snd_snore) && !snoring_cutscene)
     {

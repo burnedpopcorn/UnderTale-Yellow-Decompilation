@@ -12,7 +12,7 @@ global.up_pressed = 0;
 global.right_pressed = 0;
 global.button1 = gp_face1;
 global.button2 = gp_face2;
-global.button3 = 32772;
+global.button3 = gp_face4;
 global.using_gamepad = false;
 ini_open("Controls.sav");
 global.button1 = ini_read_real("Controls", "Z", 32769);

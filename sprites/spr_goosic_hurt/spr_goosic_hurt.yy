@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8a532a3a-f460-4130-aa13-d5c144e22fbb",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e25bd37e-ba8d-4119-b108-66d7f8222adb",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1d3d1782-afc7-4e5f-82ed-0cefd45481ca",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2c2c7550-a489-4ecc-ac48-7953415e38b3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e62c1797-b0c5-4448-bcf1-58ebc319fb4b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ca75a790-f8af-43c3-82ea-edf2610f04a4",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 102,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c717b059-c587-4796-93bc-316ad25f7b54","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a67c9400-577a-4020-8da4-1b3ece3117ff","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8a532a3a-f460-4130-aa13-d5c144e22fbb","path":"sprites/spr_goosic_hurt/spr_goosic_hurt.yy",},},},"Disabled":false,"id":"2edac96f-0192-450f-b601-b6212ad335bd","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e25bd37e-ba8d-4119-b108-66d7f8222adb","path":"sprites/spr_goosic_hurt/spr_goosic_hurt.yy",},},},"Disabled":false,"id":"34acb034-b391-47a7-a916-e5899b89aa7b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1d3d1782-afc7-4e5f-82ed-0cefd45481ca","path":"sprites/spr_goosic_hurt/spr_goosic_hurt.yy",},},},"Disabled":false,"id":"f6131f7b-5505-4158-bd78-066fd3b64d33","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2c2c7550-a489-4ecc-ac48-7953415e38b3","path":"sprites/spr_goosic_hurt/spr_goosic_hurt.yy",},},},"Disabled":false,"id":"a550b1c0-00a2-47ca-ac3e-a2fd5401fc2a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e62c1797-b0c5-4448-bcf1-58ebc319fb4b","path":"sprites/spr_goosic_hurt/spr_goosic_hurt.yy",},},},"Disabled":false,"id":"3f4e159d-acd8-4d34-95bb-1bb1c348db56","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ca75a790-f8af-43c3-82ea-edf2610f04a4","path":"sprites/spr_goosic_hurt/spr_goosic_hurt.yy",},},},"Disabled":false,"id":"e5e90270-f360-4e4b-b698-a1c566f99e73","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

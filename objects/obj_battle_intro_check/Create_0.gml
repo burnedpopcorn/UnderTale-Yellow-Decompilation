@@ -1,6 +1,4 @@
-var battle_enemy_name;
-
-battle_enemy_name = global.battle_enemy_name;
+var battle_enemy_name = global.battle_enemy_name;
 
 if (global.game_mode == "customs")
 {

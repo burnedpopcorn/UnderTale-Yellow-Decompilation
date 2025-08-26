@@ -26,8 +26,8 @@ switch (scene)
         {
             with (obj_dialogue_flowey_ending)
             {
-                sndfnt = 96;
-                talker[0] = 2628;
+                sndfnt = sndfnt_flowey;
+                talker[0] = obj_ending_flowey;
                 message[0] = "Sigh...";
                 message[1] = "Can't say I didn't see#that coming.";
                 message[2] = "Still, my hopes were#high.";
@@ -46,24 +46,24 @@ switch (scene)
                 message[15] = "...";
                 message[16] = "I need some time to#think it over.";
                 message[17] = "This isn't the end.";
-                prt[0] = 1939;
-                prt[1] = 1936;
-                prt[2] = 1934;
-                prt[3] = 1939;
-                prt[4] = 1939;
-                prt[5] = 1938;
-                prt[6] = 1939;
-                prt[7] = 1939;
-                prt[8] = 1939;
-                prt[9] = 1934;
-                prt[10] = 1934;
-                prt[11] = 1936;
-                prt[12] = 1939;
-                prt[13] = 1939;
-                prt[14] = 1938;
-                prt[15] = 1939;
-                prt[16] = 1939;
-                prt[17] = 1934;
+                prt[0] = spr_flowey_plain_side;
+                prt[1] = spr_flowey_nice_side;
+                prt[2] = spr_flowey_nice;
+                prt[3] = spr_flowey_plain_side;
+                prt[4] = spr_flowey_plain_side;
+                prt[5] = spr_flowey_plain;
+                prt[6] = spr_flowey_plain_side;
+                prt[7] = spr_flowey_plain_side;
+                prt[8] = spr_flowey_plain_side;
+                prt[9] = spr_flowey_nice;
+                prt[10] = spr_flowey_nice;
+                prt[11] = spr_flowey_nice_side;
+                prt[12] = spr_flowey_plain_side;
+                prt[13] = spr_flowey_plain_side;
+                prt[14] = spr_flowey_plain;
+                prt[15] = spr_flowey_plain_side;
+                prt[16] = spr_flowey_plain_side;
+                prt[17] = spr_flowey_nice;
             }
         }
         

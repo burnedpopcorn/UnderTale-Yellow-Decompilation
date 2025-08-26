@@ -16,7 +16,7 @@ if (fade_out == true)
 
 event_inherited();
 
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     switch (obj_pl.direction)
     {

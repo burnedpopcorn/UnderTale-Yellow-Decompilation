@@ -1,10 +1,8 @@
-var box_width;
-
 if (live_call())
     return global.live_result;
 
 damage_number = scr_determine_damage_number_enemy("goosic a", "goosic b", "void");
-box_width = obj_dialogue_box_battle_transformation_any.sprite_width - 6;
+var box_width = obj_dialogue_box_battle_transformation_any.sprite_width - 6;
 eq_bar_number = 5;
 eq_bar_gap = 2;
 eq_bar_width = (box_width / eq_bar_number) - (eq_bar_gap * 2);

@@ -1,5 +1,3 @@
-var i;
-
 if (obj_pl.yprevious != obj_pl.y || obj_pl.xprevious != obj_pl.x)
 {
     npc_move_current += 1;
@@ -36,7 +34,7 @@ if (npc_move_current >= npc_move_delay_max)
     can_animate = true;
     image_speed = 0.2;
     
-    for (i = 0; i < npc_move_delay_max; i++)
+    for (var i = 0; i < npc_move_delay_max; i++)
     {
         x_new[i] = x_new[i + 1];
         y_new[i] = y_new[i + 1];

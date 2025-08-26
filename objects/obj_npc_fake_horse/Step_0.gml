@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Neigh!! Neigh!!!";
                 message[1] = "* Neigh I say!";
                 message[2] = "* For I am a horse, each and#  every day!";
@@ -26,7 +26,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Sorry, I only had time to write#  one jingle.";
                 message[1] = "* It took me all night.";
                 message[2] = "* Maybe I'll think of another#  soon.";
@@ -42,7 +42,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* NeeeiGH!!!!";
             }
             

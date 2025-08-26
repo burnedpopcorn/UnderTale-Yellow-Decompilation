@@ -1,12 +1,10 @@
-var death_sound, arc_hsp, arc_vsp, arc_spd, x_min, x_max, y_min, y_max, shoot_cooldown, bul1, bul2, yy, xx, shot_big, ready_sound, pitch_original, ghost;
-
 scr_get_input();
 
 if (obj_arcade_controller.arcade_lives <= 0)
 {
     if (sprite_index != spr_arcade_mew_dies)
     {
-        death_sound = choose(464, 465, 467, 468);
+        var death_sound = choose(464, 465, 467, 468);
         audio_play_sound(death_sound, 1, 0);
         sprite_index = spr_arcade_mew_dies;
         audio_stop_sound(snd_chargeshot_charge);
@@ -30,14 +28,14 @@ if (obj_arcade_controller.arcade_lives <= 0)
     exit;
 }
 
-arc_hsp = 0;
-arc_vsp = 0;
-arc_spd = 4;
-x_min = 90;
-x_max = 225;
-y_min = 65;
-y_max = 185;
-shoot_cooldown = 15;
+var arc_hsp = 0;
+var arc_vsp = 0;
+var arc_spd = 4;
+var x_min = 90;
+var x_max = 225;
+var y_min = 65;
+var y_max = 185;
+var shoot_cooldown = 15;
 
 if (global.left_key)
     arc_hsp = -arc_spd;
@@ -51,12 +49,12 @@ if (global.up_key)
 if (global.down_key)
     arc_vsp = arc_spd;
 
-if (keyboard_multicheck(0) && arc_can_shoot && !arc_hurt)
+if (keyboard_multicheck(vk_nokey) && arc_can_shoot && !arc_hurt)
 {
     if (arc_upgrade == "Shotgun")
     {
-        bul1 = instance_create(x - 2, y - 24, obj_arcade_bullet);
-        bul2 = instance_create(x + 2, y - 24, obj_arcade_bullet);
+        var bul1 = instance_create(x - 2, y - 24, obj_arcade_bullet);
+        var bul2 = instance_create(x + 2, y - 24, obj_arcade_bullet);
         bul1.bul_hsp = 3;
         bul2.bul_hsp = -3;
     }
@@ -80,13 +78,13 @@ if (!arc_can_shoot)
 
 charge_percentage = charge_time / charge_time_max;
 
-if (keyboard_multicheck(0) && !is_charging && sprite_index != spr_heart_yellow_down)
+if (keyboard_multicheck(vk_nokey) && !is_charging && sprite_index != spr_heart_yellow_down)
 {
     if (!alarm[2])
         alarm[2] = 5;
 }
 
-if (keyboard_multicheck_released(0))
+if (keyboard_multicheck_released(vk_nokey))
 {
     alarm[2] = -1;
     
@@ -97,8 +95,8 @@ if (keyboard_multicheck_released(0))
         
         if (is_charged == true)
         {
-            yy = y - 21;
-            xx = x - 2;
+            var yy = y - 21;
+            var xx = x - 2;
             
             if (image_angle == 90 || image_angle == 270)
             {
@@ -106,7 +104,7 @@ if (keyboard_multicheck_released(0))
                 xx = x;
             }
             
-            shot_big = instance_create_depth(xx, yy, -10000, obj_arcade_bullet_big);
+            var shot_big = instance_create_depth(xx, yy, -10000, obj_arcade_bullet_big);
             shot_big.direction = image_angle + 90;
             shot_big.image_angle = image_angle;
             is_charged = false;
@@ -129,7 +127,7 @@ if (is_charging)
     }
     else if (!is_charged)
     {
-        ready_sound = audio_play_sound(snd_undertale_flash, 1, 0);
+        var ready_sound = audio_play_sound(snd_undertale_flash, 1, 0);
         audio_sound_gain(ready_sound, 0.5, 0);
         instance_create_depth(x, y, depth - 1, obj_arcade_charged);
         charged_overlay_alpha = 1;
@@ -145,7 +143,7 @@ else
 
 if (audio_is_playing(charge_sound))
 {
-    pitch_original = audio_sound_get_pitch(charge_sound);
+    var pitch_original = audio_sound_get_pitch(charge_sound);
     
     if (pitch_original < 0.99)
         audio_sound_pitch(charge_sound, 1 - (0.5 * charge_percentage));
@@ -158,7 +156,7 @@ if (charged_overlay_alpha > 0)
 
 if (is_dashing)
 {
-    ghost = instance_create_depth(x, y, depth, obj_dash_ghost);
+    var ghost = instance_create_depth(x, y, depth, obj_dash_ghost);
     ghost.sprite_index = sprite_index;
     ghost.image_speed = 0;
     arc_hsp = move_x_dash * dash_speed;
@@ -175,14 +173,14 @@ else
 
 if ((abs(arc_hsp) + abs(arc_hsp)) == 0)
 {
-    if (keyboard_multicheck_pressed(1))
+    if (keyboard_multicheck_pressed(vk_anykey))
         dash_buffered = true;
     
-    if (keyboard_multicheck_released(1) && dash_buffered == true)
+    if (keyboard_multicheck_released(vk_anykey) && dash_buffered == true)
         dash_buffered = false;
 }
 
-if ((keyboard_multicheck_pressed(1) || dash_buffered) && can_dash == true && (abs(arc_hsp) + abs(arc_vsp)) != 0)
+if ((keyboard_multicheck_pressed(vk_anykey) || dash_buffered) && can_dash == true && (abs(arc_hsp) + abs(arc_vsp)) != 0)
 {
     audio_play_sound(snd_yellow_soul_dash, 1, 0);
     dash_overlay = 1.1;
@@ -206,7 +204,7 @@ if (!can_dash && !is_dashing)
     }
 }
 
-if (keyboard_multicheck_released(1) && is_dashing)
+if (keyboard_multicheck_released(vk_anykey) && is_dashing)
     is_dashing = false;
 
 if (arc_hsp > 0)

@@ -1,4 +1,4 @@
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     if (scr_interact() == true)
     {
@@ -17,7 +17,7 @@ if (keyboard_multicheck_pressed(0))
         {
             if (global.party_member != -4 || (global.route == 2 && room == rm_steamworks_23) || room == rm_steamworks_macro_froggit_room)
             {
-                instance_create(__view_get(e__VW.XView, 0) + 160, __view_get(e__VW.YView, obj_quote_battle_ceroba_outro_4) + 120, obj_savebox);
+                instance_create(__view_get(e__VW.XView, 0) + 160, __view_get(e__VW.YView, 0) + 120, obj_savebox);
                 audio_play_sound(snd_mainmenu_select, 1, 0);
             }
             else
@@ -41,7 +41,7 @@ if (spawn_save_box == true)
     if (!instance_exists(obj_dialogue))
     {
         scr_determine_save_area();
-        instance_create(__view_get(e__VW.XView, 0) + 160, __view_get(e__VW.YView, obj_quote_battle_ceroba_outro_4) + 120, obj_savebox);
+        instance_create(__view_get(e__VW.XView, 0) + 160, __view_get(e__VW.YView, 0) + 120, obj_savebox);
         audio_play_sound(snd_mainmenu_select, 1, 0);
         spawn_save_box = false;
     }

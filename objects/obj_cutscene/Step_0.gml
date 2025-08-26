@@ -1,6 +1,4 @@
-var actor_starlo;
-
-actor_starlo = 1169;
+var actor_starlo = 1169;
 
 switch (scene)
 {
@@ -34,11 +32,11 @@ switch (scene)
             message[1] = "* I'm a fake test Starlo.";
             message[2] = "* But I won't leave#  it this way!";
             message[3] = "* (It doesn't have to be this way.)";
-            prt[0] = 406;
-            prt[1] = 426;
-            prt[2] = 422;
-            sndfnt_array[0] = 107;
-            sndfnt_array[3] = 391;
+            prt[0] = spr_portrait_starlo_disappointed;
+            prt[1] = spr_portrait_starlo_surprised;
+            prt[2] = spr_portrait_starlo_smile;
+            sndfnt_array[0] = snd_talk_starlo;
+            sndfnt_array[3] = snd_talk_default;
             talker[0] = actor_starlo;
             talker[3] = -4;
         }
@@ -71,8 +69,8 @@ switch (scene)
         with (msg)
         {
             message[0] = "* A";
-            prt[0] = 417;
-            sndfnt_array[0] = 107;
+            prt[0] = spr_portrait_starlo_normal;
+            sndfnt_array[0] = snd_talk_starlo;
             talker[0] = actor_starlo;
         }
         

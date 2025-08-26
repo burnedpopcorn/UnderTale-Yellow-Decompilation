@@ -1,5 +1,3 @@
-var enemy_mode;
-
 script_execute(scr_controls_text);
 
 if (key_revert_pressed)
@@ -35,7 +33,7 @@ else
         }
         else
         {
-            enemy_mode = global.enemy_mode;
+            var enemy_mode = global.enemy_mode;
             
             with (obj_dialogue_box_battle_transformation_any)
                 event_user(0);

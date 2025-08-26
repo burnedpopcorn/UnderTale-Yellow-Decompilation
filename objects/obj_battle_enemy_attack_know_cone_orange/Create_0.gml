@@ -1,17 +1,16 @@
-var move_factor, random_speed;
-
 damage_number = scr_determine_damage_number_enemy("know cone a", "know cone b", "know cone c");
 image_speed = 0;
 image_index = 0;
 image_angle = 0;
 image_alpha = 0;
+var move_factor;
 
 if (y < obj_dialogue_box_battle_transformation_any.y)
     move_factor = 1;
 else
     move_factor = -1;
 
-random_speed = irandom_range(2, 4);
+var random_speed = irandom_range(2, 4);
 y_speed = random_speed * move_factor;
 starting_position_x = x;
 starting_position_y = y;

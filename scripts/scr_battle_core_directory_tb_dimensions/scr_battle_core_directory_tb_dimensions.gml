@@ -1,13 +1,11 @@
 function scr_battle_core_directory_tb_dimensions()
 {
-    var battle_enemy_name, enemy_attack, game_mode;
-    
     if (live_call())
         return global.live_result;
     
-    battle_enemy_name = global.battle_enemy_name;
-    enemy_attack = global.enemy_attack;
-    game_mode = global.game_mode;
+    var battle_enemy_name = global.battle_enemy_name;
+    var enemy_attack = global.enemy_attack;
+    var game_mode = global.game_mode;
     
     if (game_mode == "yellow")
     {
@@ -23,8 +21,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_up_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 127;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -38,8 +36,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -50,8 +48,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalv_npc_boards_pacifist;
-                    sprite_height_destination = spr_dalvmask;
+                    sprite_width_destination = 90;
+                    sprite_height_destination = 102;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -65,8 +63,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_up_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 127;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -77,8 +75,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_up_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 127;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -89,8 +87,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -101,8 +99,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalv_npc_boards_pacifist;
-                    sprite_height_destination = spr_dalvmask;
+                    sprite_width_destination = 90;
+                    sprite_height_destination = 102;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -116,8 +114,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -131,8 +129,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -143,8 +141,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalv_npc_boards_pacifist;
-                    sprite_height_destination = spr_dalvmask;
+                    sprite_width_destination = 90;
+                    sprite_height_destination = 102;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -158,8 +156,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -173,8 +171,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_enemy_attack_axis_ball_red;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 244;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -186,8 +184,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -198,8 +196,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalv_npc_boards_pacifist;
-                    sprite_height_destination = spr_dalvmask;
+                    sprite_width_destination = 90;
+                    sprite_height_destination = 102;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -213,8 +211,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -228,8 +226,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -240,8 +238,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_enemy_attack_axis_ball_red;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 244;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -255,8 +253,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -267,8 +265,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_enemy_attack_axis_ball_red;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 244;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -279,8 +277,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -291,8 +289,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_starlo_goggles_down_talk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 218;
                     disjoint_x = 0;
                     disjoint_y = -39;
                 }
@@ -306,8 +304,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -318,8 +316,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -333,8 +331,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalvleftt;
-                    sprite_height_destination = spr_portrait_asgore_surprised;
+                    sprite_width_destination = 100;
+                    sprite_height_destination = 64;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -345,8 +343,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -357,8 +355,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalvleftt;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 100;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -372,8 +370,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -384,8 +382,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ceroba_staff;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 77;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -399,8 +397,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ceroba_staff;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 77;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -411,8 +409,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalvleftt;
-                    sprite_height_destination = spr_portrait_asgore_surprised;
+                    sprite_width_destination = 100;
+                    sprite_height_destination = 64;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -423,8 +421,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -438,8 +436,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -450,8 +448,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalvright;
-                    sprite_height_destination = spr_dalvright;
+                    sprite_width_destination = 95;
+                    sprite_height_destination = 95;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -462,8 +460,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalvleftt;
-                    sprite_height_destination = spr_pl_left_snowdin;
+                    sprite_width_destination = 100;
+                    sprite_height_destination = 42;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -477,8 +475,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -489,8 +487,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalvright;
-                    sprite_height_destination = spr_dalvright;
+                    sprite_width_destination = 95;
+                    sprite_height_destination = 95;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -501,8 +499,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalvleftt;
-                    sprite_height_destination = spr_pl_left_snowdin;
+                    sprite_width_destination = 100;
+                    sprite_height_destination = 42;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -513,8 +511,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ceroba_staff;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 77;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -528,8 +526,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = toriel_standingu;
-                    sprite_height_destination = spr_ace_down_talk;
+                    sprite_width_destination = 300;
+                    sprite_height_destination = 130;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -540,8 +538,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = -10;
                 }
@@ -552,8 +550,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = toriel_standingu;
-                    sprite_height_destination = spr_ace_tied_down;
+                    sprite_width_destination = 300;
+                    sprite_height_destination = 136;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -567,8 +565,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -579,8 +577,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_floweyleave_wildeast;
-                    sprite_height_destination = spr_battle_flowey_gray_dust;
+                    sprite_width_destination = 256;
+                    sprite_height_destination = 180;
                     disjoint_x = 0;
                     disjoint_y = -80;
                 }
@@ -591,8 +589,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_goggles_right_talk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 220;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -603,8 +601,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_left_talk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 200;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -615,8 +613,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = toriel_standingu;
-                    sprite_height_destination = spr_ceroba_right_run;
+                    sprite_width_destination = 300;
+                    sprite_height_destination = 80;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -630,8 +628,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -642,8 +640,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -654,8 +652,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_goggles_right_talk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 220;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -666,8 +664,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_flowey_gray_dust;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 180;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -681,8 +679,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = flowey_left;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 250;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -693,8 +691,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = flowey_left;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 250;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -705,8 +703,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_flowey_wildeast_down;
-                    sprite_height_destination = spr_battle_flowey_gray_dust;
+                    sprite_width_destination = 260;
+                    sprite_height_destination = 180;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -717,8 +715,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_left_talk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 200;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -732,8 +730,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -744,8 +742,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_flowey_gray_dust;
-                    sprite_height_destination = spr_battle_flowey_gray_dust;
+                    sprite_width_destination = 180;
+                    sprite_height_destination = 180;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -756,8 +754,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -771,8 +769,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -783,8 +781,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_battle_flowey_gray_dust;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 180;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -798,8 +796,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 124;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -810,8 +808,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_left_walk;
-                    sprite_height_destination = spr_ed_left_walk;
+                    sprite_width_destination = 139;
+                    sprite_height_destination = 139;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -822,8 +820,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_jandroid_body_top_hurt;
-                    sprite_height_destination = spr_jandroid_body_top_hurt;
+                    sprite_width_destination = 157;
+                    sprite_height_destination = 157;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -834,8 +832,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_express;
-                    sprite_height_destination = spr_starlo_goggles_shoot;
+                    sprite_width_destination = 158;
+                    sprite_height_destination = 221;
                     disjoint_x = 0;
                     disjoint_y = -41;
                 }
@@ -849,8 +847,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_flowey_gray_dust;
-                    sprite_height_destination = spr_battle_flowey_gray_dust;
+                    sprite_width_destination = 180;
+                    sprite_height_destination = 180;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -861,8 +859,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -876,8 +874,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_express;
-                    sprite_height_destination = spr_starlo_goggles_shoot;
+                    sprite_width_destination = 158;
+                    sprite_height_destination = 221;
                     disjoint_x = 0;
                     disjoint_y = -41;
                 }
@@ -888,8 +886,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_express;
-                    sprite_height_destination = spr_starlo_goggles_shoot;
+                    sprite_width_destination = 158;
+                    sprite_height_destination = 221;
                     disjoint_x = 0;
                     disjoint_y = -41;
                 }
@@ -903,8 +901,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_left_talk;
-                    sprite_height_destination = spr_martlet_head_regular_battle;
+                    sprite_width_destination = 200;
+                    sprite_height_destination = 126;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -913,8 +911,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_flowey_gray_dust;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 180;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -923,8 +921,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -933,8 +931,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -948,8 +946,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ace_down_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 120;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -958,8 +956,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_down_walk;
-                    sprite_height_destination = spr_ace_down_walk;
+                    sprite_width_destination = 120;
+                    sprite_height_destination = 120;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -968,8 +966,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -978,8 +976,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_goggles_left_walk;
-                    sprite_height_destination = spr_starlo_goggles_left_walk;
+                    sprite_width_destination = 210;
+                    sprite_height_destination = 210;
                     disjoint_x = 0;
                     disjoint_y = -60;
                 }
@@ -988,8 +986,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1003,8 +1001,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_down_walk;
-                    sprite_height_destination = spr_starlo_goggles_left_walk;
+                    sprite_width_destination = 120;
+                    sprite_height_destination = 210;
                     disjoint_x = 0;
                     disjoint_y = -60;
                     image_xscale = (sprite_width_destination / sprite_width) * image_xscale_default;
@@ -1021,8 +1019,8 @@ function scr_battle_core_directory_tb_dimensions()
             
             with (obj_dialogue_box_battle_transformation_any_out)
             {
-                sprite_width_destination = spr_starlo_left_talk;
-                sprite_height_destination = spr_dalvleftt;
+                sprite_width_destination = 200;
+                sprite_height_destination = 100;
                 disjoint_x = 0;
                 disjoint_y = 0;
             }
@@ -1033,8 +1031,8 @@ function scr_battle_core_directory_tb_dimensions()
             
             with (obj_dialogue_box_battle_transformation_any_out)
             {
-                sprite_width_destination = spr_starlo_left_talk;
-                sprite_height_destination = spr_ed_right_walk;
+                sprite_width_destination = 200;
+                sprite_height_destination = 140;
                 disjoint_x = 0;
                 disjoint_y = 0;
             }
@@ -1045,8 +1043,8 @@ function scr_battle_core_directory_tb_dimensions()
             
             with (obj_dialogue_box_battle_transformation_any_out)
             {
-                sprite_width_destination = spr_starlo_goggles_left_walk;
-                sprite_height_destination = spr_ed_right_walk_clover;
+                sprite_width_destination = 210;
+                sprite_height_destination = 152;
                 disjoint_x = 0;
                 disjoint_y = -60;
             }
@@ -1057,8 +1055,8 @@ function scr_battle_core_directory_tb_dimensions()
             
             with (obj_dialogue_box_battle_transformation_any_out)
             {
-                sprite_width_destination = spr_ace_down_walk;
-                sprite_height_destination = spr_ed_right_walk;
+                sprite_width_destination = 120;
+                sprite_height_destination = 140;
                 disjoint_x = 0;
                 disjoint_y = 0;
             }
@@ -1069,8 +1067,8 @@ function scr_battle_core_directory_tb_dimensions()
             
             with (obj_dialogue_box_battle_transformation_any_out)
             {
-                sprite_width_destination = spr_dalvleftt;
-                sprite_height_destination = spr_ed_right_walk;
+                sprite_width_destination = 100;
+                sprite_height_destination = 140;
                 disjoint_x = 0;
                 disjoint_y = 0;
             }
@@ -1081,8 +1079,8 @@ function scr_battle_core_directory_tb_dimensions()
             
             with (obj_dialogue_box_battle_transformation_any_out)
             {
-                sprite_width_destination = spr_ceroba_right_run;
-                sprite_height_destination = spr_ceroba_right_run;
+                sprite_width_destination = 80;
+                sprite_height_destination = 80;
                 disjoint_x = 0;
                 disjoint_y = -20;
             }
@@ -1093,8 +1091,8 @@ function scr_battle_core_directory_tb_dimensions()
             
             with (obj_dialogue_box_battle_transformation_any_out)
             {
-                sprite_width_destination = spr_ed_asleep;
-                sprite_height_destination = spr_dalvleftt;
+                sprite_width_destination = 160;
+                sprite_height_destination = 100;
                 disjoint_x = 0;
                 disjoint_y = -40;
             }
@@ -1105,8 +1103,8 @@ function scr_battle_core_directory_tb_dimensions()
             
             with (obj_dialogue_box_battle_transformation_any_out)
             {
-                sprite_width_destination = spr_ace_down_walk;
-                sprite_height_destination = spr_battle_flowey_gray_dust;
+                sprite_width_destination = 120;
+                sprite_height_destination = 180;
                 disjoint_x = 0;
                 disjoint_y = -40;
             }
@@ -1117,8 +1115,8 @@ function scr_battle_core_directory_tb_dimensions()
             
             with (obj_dialogue_box_battle_transformation_any_out)
             {
-                sprite_width_destination = spr_ceroba_fall;
-                sprite_height_destination = spr_ed_right_walk;
+                sprite_width_destination = 76;
+                sprite_height_destination = 140;
                 disjoint_x = 0;
                 disjoint_y = -20;
             }
@@ -1131,8 +1129,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_battle_flowey_gray_dust;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 180;
                     disjoint_x = 0;
                     disjoint_y = -60;
                     image_xscale = (sprite_width_destination / sprite_width) * image_xscale_default;
@@ -1151,8 +1149,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = 0;
                     image_xscale = (sprite_width_destination / sprite_width) * image_xscale_default;
@@ -1171,8 +1169,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_dalvleftt;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 100;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1181,8 +1179,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalv_npc_boards_pacifist;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 90;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = -10;
                 }
@@ -1191,8 +1189,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_attack_ace_card_3;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 110;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = -10;
                 }
@@ -1206,8 +1204,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -1216,8 +1214,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1226,8 +1224,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1241,8 +1239,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ace_down_walk;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 120;
                     disjoint_x = 0;
                     disjoint_y = -10;
                 }
@@ -1251,8 +1249,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = -10;
                 }
@@ -1261,8 +1259,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = -10;
                 }
@@ -1276,8 +1274,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_steamworks_22_tables;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 148;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1286,8 +1284,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_steamworks_22_tables;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 148;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -1296,8 +1294,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1306,8 +1304,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = -60;
                 }
@@ -1321,8 +1319,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1333,8 +1331,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalv_npc_boards_pacifist;
-                    sprite_height_destination = spr_ed_left_walk_clover;
+                    sprite_width_destination = 90;
+                    sprite_height_destination = 150;
                     disjoint_x = 0;
                     disjoint_y = -30;
                 }
@@ -1346,8 +1344,8 @@ function scr_battle_core_directory_tb_dimensions()
             
             with (obj_dialogue_box_battle_transformation_any_out)
             {
-                sprite_width_destination = spr_ed_right_walk;
-                sprite_height_destination = spr_ed_right_walk;
+                sprite_width_destination = 140;
+                sprite_height_destination = 140;
                 disjoint_x = 0;
                 disjoint_y = 0;
             }
@@ -1360,8 +1358,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_moray_pose;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 170;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1370,8 +1368,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1380,8 +1378,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_moray_pose;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 170;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1390,8 +1388,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_battle_flowey_gray_dust;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 180;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -1400,8 +1398,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_flowey_gray_dust;
-                    sprite_height_destination = spr_battle_flowey_gray_dust;
+                    sprite_width_destination = 180;
+                    sprite_height_destination = 180;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -1410,8 +1408,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_left_walk_clover;
-                    sprite_height_destination = spr_ed_left_walk_clover;
+                    sprite_width_destination = 150;
+                    sprite_height_destination = 150;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -1420,8 +1418,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_right_talk;
-                    sprite_height_destination = spr_ace_right_talk;
+                    sprite_width_destination = 132;
+                    sprite_height_destination = 132;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -1430,8 +1428,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_down_walk;
-                    sprite_height_destination = spr_moray_right_talk;
+                    sprite_width_destination = 120;
+                    sprite_height_destination = 164;
                     disjoint_x = 0;
                     disjoint_y = -30;
                 }
@@ -1440,8 +1438,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_goggles_right_talk;
-                    sprite_height_destination = spr_starlo_goggles_right_talk;
+                    sprite_width_destination = 220;
+                    sprite_height_destination = 220;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1450,8 +1448,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalvleftt;
-                    sprite_height_destination = spr_dalvleftt;
+                    sprite_width_destination = 100;
+                    sprite_height_destination = 100;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1460,8 +1458,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1470,8 +1468,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_flowey_gray_dust;
-                    sprite_height_destination = spr_battle_flowey_gray_dust;
+                    sprite_width_destination = 180;
+                    sprite_height_destination = 180;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1480,8 +1478,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalvleftt;
-                    sprite_height_destination = spr_dalvleftt;
+                    sprite_width_destination = 100;
+                    sprite_height_destination = 100;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1490,8 +1488,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_down_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 120;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1505,8 +1503,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1515,8 +1513,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = -20;
                     
@@ -1528,8 +1526,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ceroba_down_talk;
-                    sprite_height_destination = spr_ceroba_down_talk;
+                    sprite_width_destination = 60;
+                    sprite_height_destination = 60;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1538,8 +1536,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_down_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 120;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1553,8 +1551,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1563,8 +1561,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_flowey_gray_dust;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 180;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1573,8 +1571,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_flowey_gray_dust;
-                    sprite_height_destination = spr_ace_down_walk;
+                    sprite_width_destination = 180;
+                    sprite_height_destination = 120;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1583,8 +1581,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_martlet_down_run;
-                    sprite_height_destination = spr_ace_down_walk;
+                    sprite_width_destination = 280;
+                    sprite_height_destination = 120;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1593,8 +1591,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_flowey_wildeast_down;
-                    sprite_height_destination = spr_ace_down_walk;
+                    sprite_width_destination = 260;
+                    sprite_height_destination = 120;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -1603,8 +1601,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_goggles_right_talk;
-                    sprite_height_destination = spr_dalvleftt;
+                    sprite_width_destination = 220;
+                    sprite_height_destination = 100;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -1613,8 +1611,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_left_talk;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 200;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -1623,8 +1621,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_flowey_wildeast_down;
-                    sprite_height_destination = spr_ace_down_talk;
+                    sprite_width_destination = 260;
+                    sprite_height_destination = 130;
                     disjoint_x = 0;
                     disjoint_y = -30;
                 }
@@ -1633,8 +1631,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_flowey_gray_dust;
-                    sprite_height_destination = spr_starlo_left_talk;
+                    sprite_width_destination = 180;
+                    sprite_height_destination = 200;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1643,8 +1641,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_martlet_down_run;
-                    sprite_height_destination = spr_starlo_left_talk;
+                    sprite_width_destination = 280;
+                    sprite_height_destination = 200;
                     disjoint_x = 0;
                     disjoint_y = -50;
                 }
@@ -1653,8 +1651,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1668,8 +1666,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_portrait_kanako_shot;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 575;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1679,8 +1677,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1689,8 +1687,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1699,8 +1697,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_battle_flowey_gray_dust;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 180;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1709,8 +1707,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -1719,8 +1717,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_down_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 120;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1729,8 +1727,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_portrait_kanako_shot;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 575;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1739,8 +1737,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_down_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 120;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1754,8 +1752,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = 0;
                     image_xscale = (sprite_width_destination / sprite_width) * image_xscale_default;
@@ -1770,8 +1768,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalv_npc_boards_pacifist;
-                    sprite_height_destination = spr_dalv_npc_boards_pacifist;
+                    sprite_width_destination = 90;
+                    sprite_height_destination = 90;
                     disjoint_x = 0;
                     disjoint_y = -50;
                 }
@@ -1780,8 +1778,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1790,8 +1788,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = -80;
                 }
@@ -1800,8 +1798,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = -50;
                 }
@@ -1810,8 +1808,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = -60;
                 }
@@ -1820,8 +1818,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_goggles_right_talk;
-                    sprite_height_destination = spr_dalvleftt;
+                    sprite_width_destination = 220;
+                    sprite_height_destination = 100;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -1830,8 +1828,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1840,8 +1838,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1850,8 +1848,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalv_npc_boards_pacifist;
-                    sprite_height_destination = spr_attack_ace_card_3;
+                    sprite_width_destination = 90;
+                    sprite_height_destination = 110;
                     disjoint_x = 0;
                     disjoint_y = -60;
                 }
@@ -1860,8 +1858,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_steamworks_29_gardener_bot_leave;
-                    sprite_height_destination = spr_mail_whale_basket_empty_yellow;
+                    sprite_width_destination = 640;
+                    sprite_height_destination = 480;
                     disjoint_x = 0;
                     disjoint_y = -80;
                 }
@@ -1870,8 +1868,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_enemy_attack_axis_ball_red;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 244;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1880,8 +1878,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_express;
-                    sprite_height_destination = spr_starlo_goggles_shoot;
+                    sprite_width_destination = 158;
+                    sprite_height_destination = 221;
                     disjoint_x = 0;
                     disjoint_y = -41;
                 }
@@ -1890,8 +1888,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1900,8 +1898,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_battle_flowey_gray_dust;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 180;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -1910,8 +1908,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1920,8 +1918,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1930,8 +1928,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1956,8 +1954,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1966,8 +1964,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_down_talk;
-                    sprite_height_destination = spr_ace_down_walk;
+                    sprite_width_destination = 130;
+                    sprite_height_destination = 120;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1976,8 +1974,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ace_down_walk;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 120;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -1986,8 +1984,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -1996,8 +1994,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -2006,8 +2004,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_pose;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 128;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -2016,8 +2014,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ceroba_down_talk;
-                    sprite_height_destination = spr_pl_run_right_snowdin;
+                    sprite_width_destination = 60;
+                    sprite_height_destination = 40;
                     disjoint_x = 0;
                     disjoint_y = 30;
                 }
@@ -2026,8 +2024,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_dalvleftt;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 100;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = -30;
                 }
@@ -2036,8 +2034,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_clover_geno_unsummon;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 75;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = -30;
                 }
@@ -2046,8 +2044,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_asleep;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 160;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -2056,8 +2054,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_clover_geno_summon;
-                    sprite_height_destination = spr_ace_pose;
+                    sprite_width_destination = 190;
+                    sprite_height_destination = 128;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -2066,8 +2064,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = toriel_standingu;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 300;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -2076,8 +2074,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_sad_down_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 240;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -2086,8 +2084,8 @@ function scr_battle_core_directory_tb_dimensions()
             {
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -2101,8 +2099,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_left_walk_clover;
-                    sprite_height_destination = spr_starlo_left_talk;
+                    sprite_width_destination = 150;
+                    sprite_height_destination = 200;
                     disjoint_x = 0;
                     disjoint_y = -30;
                 }
@@ -2113,8 +2111,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = cdalv_down;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 82;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -2125,8 +2123,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_starlo_left_talk;
-                    sprite_height_destination = spr_battle_flowey_gray_dust;
+                    sprite_width_destination = 200;
+                    sprite_height_destination = 180;
                     disjoint_x = 0;
                     disjoint_y = -30;
                 }
@@ -2137,8 +2135,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = -30;
                 }
@@ -2149,8 +2147,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = -40;
                 }
@@ -2161,8 +2159,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_battle_flowey_gray_dust;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 180;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -2173,8 +2171,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = dalv_upt;
-                    sprite_height_destination = spr_ed_asleep;
+                    sprite_width_destination = 106;
+                    sprite_height_destination = 160;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -2185,8 +2183,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ace_down_walk;
-                    sprite_height_destination = spr_ace_down_walk;
+                    sprite_width_destination = 120;
+                    sprite_height_destination = 120;
                     disjoint_x = 0;
                     disjoint_y = 20;
                 }
@@ -2197,8 +2195,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = dalv_upt;
-                    sprite_height_destination = dalv_upt;
+                    sprite_width_destination = 106;
+                    sprite_height_destination = 106;
                     disjoint_x = 0;
                     disjoint_y = -20;
                 }
@@ -2209,8 +2207,8 @@ function scr_battle_core_directory_tb_dimensions()
                 
                 with (obj_dialogue_box_battle_transformation_any_out)
                 {
-                    sprite_width_destination = spr_ed_right_walk;
-                    sprite_height_destination = spr_ed_right_walk;
+                    sprite_width_destination = 140;
+                    sprite_height_destination = 140;
                     disjoint_x = 0;
                     disjoint_y = 0;
                 }
@@ -2222,8 +2220,8 @@ function scr_battle_core_directory_tb_dimensions()
             
             with (obj_dialogue_box_battle_transformation_any_out)
             {
-                sprite_width_destination = spr_starlo_left_talk;
-                sprite_height_destination = spr_martlet_down_run;
+                sprite_width_destination = 200;
+                sprite_height_destination = 280;
                 disjoint_x = 0;
                 disjoint_y = 0;
                 image_xscale = (sprite_width_destination / sprite_width) * image_xscale_default;

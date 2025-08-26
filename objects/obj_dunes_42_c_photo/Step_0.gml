@@ -1,6 +1,6 @@
 if (scene == 0)
 {
-    if (keyboard_multicheck_pressed(0) && scr_interact())
+    if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
     {
         drawing_poster = 1;
         scene = 1;
@@ -28,7 +28,7 @@ else if (scene == 1)
         if (draw_alpha < 1)
             draw_alpha += 0.2;
         
-        if (keyboard_multicheck_pressed(0) || keyboard_multicheck_pressed(1))
+        if (keyboard_multicheck_pressed(vk_nokey) || keyboard_multicheck_pressed(vk_anykey))
         {
             drawing_poster = 2;
             audio_play_sound(snd_fail, 1, 0);

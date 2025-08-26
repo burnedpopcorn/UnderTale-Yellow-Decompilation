@@ -1,8 +1,6 @@
-var pellets;
-
 if (global.sworks_flag[29] == 2)
 {
-    pellets = instance_create_depth(370, 124, 0, obj_steamworks_34_pellets);
+    var pellets = instance_create_depth(370, 124, 0, obj_steamworks_34_pellets);
     pellets.image_index = pellets.image_number - 1;
 }
 

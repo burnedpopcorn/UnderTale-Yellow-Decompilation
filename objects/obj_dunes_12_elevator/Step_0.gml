@@ -1,8 +1,6 @@
-var newsprite, newmessage, newsound;
-
 if (global.dunes_flag[4] < 2)
 {
-    if (keyboard_multicheck_pressed(0) && scr_interact())
+    if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
     {
         if (global.dunes_flag[4] == 0)
         {
@@ -76,26 +74,28 @@ if (global.dunes_flag[4] < 2)
     
     if (!global.dialogue_open && elevator_solution != "none")
     {
+        var newsprite, newsound, newmessage;
+        
         switch (elevator_solution)
         {
             case "Pickaxe":
-                newsprite = spr_dunes_13_elevator_pick;
+                newsprite = 1014;
                 newmessage = "* (The pickaxe broke.)";
-                newsound = snd_elevator_pickaxe;
+                newsound = 251;
                 break;
             
             case "Flint & Steel":
-                newsprite = spr_dunes_13_elevator_burn;
+                newsprite = 1013;
                 newmessage = "* (The flint crumbled away and#  the buckle melted.)";
-                newsound = snd_elevator_burn;
+                newsound = 249;
                 scr_item_remove("Flint");
                 scr_item_remove("Steel Buckle");
                 break;
             
             case "Matches":
-                newsprite = spr_dunes_13_elevator_burn;
+                newsprite = 1013;
                 newmessage = "* (The whole box of matches#  caught fire and burnt up.)";
-                newsound = snd_elevator_burn;
+                newsound = 249;
                 break;
         }
         
@@ -135,7 +135,7 @@ if (global.dunes_flag[4] < 2)
 }
 else
 {
-    if (keyboard_multicheck_pressed(0) && scr_interact() && image_speed == 0)
+    if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() && image_speed == 0)
     {
         if (image_speed == 0)
         {

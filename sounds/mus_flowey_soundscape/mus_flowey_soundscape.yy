@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 19.214687,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/flowey_soundscape.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "flowey_soundscape.ogg",
+  "type": 1,
   "volume": 1.0,
 }

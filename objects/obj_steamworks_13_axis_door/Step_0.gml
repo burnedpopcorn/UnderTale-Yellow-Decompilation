@@ -26,11 +26,11 @@ if (global.sworks_flag[6] == 0)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Hold on! That's far too#  easy of an escape.";
                 message[1] = "* Don't be reckless,#  we'll find another way#  out.";
-                prt[0] = 381;
-                prt[1] = 377;
+                prt[0] = spr_portrait_ceroba_nervous;
+                prt[1] = spr_portrait_ceroba_closed_eyes;
             }
             
             break;
@@ -45,7 +45,7 @@ if (global.sworks_flag[6] == 0)
             break;
         
         case 4:
-            cutscene_npc_walk_relative(1168, 0, 40, 3, "y", "down");
+            cutscene_npc_walk_relative(obj_player_npc, 0, 40, 3, "y", "down");
             break;
         
         case 5:
@@ -67,7 +67,7 @@ if (global.sworks_flag[6] == 0)
             if (place_meeting(x, y, obj_pl))
             {
                 scr_cutscene_start();
-                cutscene_change_room(161, 160, 280, 0.1);
+                cutscene_change_room(rm_steamworks_13b, 160, 280, 0.1);
             }
             
             break;
@@ -97,9 +97,9 @@ if (global.sworks_flag[6] == 1)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Wow, he caught you.#  Shocker.";
-                prt[0] = 384;
+                prt[0] = spr_portrait_ceroba_unamused;
             }
             
             break;
@@ -117,7 +117,7 @@ if (global.sworks_flag[6] == 2)
     if (place_meeting(x, y, obj_pl))
     {
         scr_cutscene_start();
-        cutscene_change_room(161, 160, 280, 0.1);
+        cutscene_change_room(rm_steamworks_13b, 160, 280, 0.1);
     }
 }
 
@@ -144,11 +144,11 @@ if (global.sworks_flag[6] == 3)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* What are you trying to#  accomplish?";
                 message[1] = "* Come on, stick to the#  plan!";
-                prt[0] = 366;
-                prt[1] = 368;
+                prt[0] = spr_portrait_ceroba_angry;
+                prt[1] = spr_portrait_ceroba_irked;
             }
             
             break;
@@ -166,7 +166,7 @@ if (global.sworks_flag[6] == 4)
     switch (scene)
     {
         case 0:
-            if (scr_interact() && keyboard_multicheck_pressed(0))
+            if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             {
                 scr_cutscene_start();
                 cutscene_advance();
@@ -175,7 +175,7 @@ if (global.sworks_flag[6] == 4)
             break;
         
         case 1:
-            cutscene_sfx_play(364, 1);
+            cutscene_sfx_play(snd_fail, 1);
             break;
         
         case 2:
@@ -205,7 +205,7 @@ if (global.sworks_flag[6] == 4)
             break;
         
         case 6:
-            cutscene_npc_walk_relative(1168, 0, 40, 3, "y", "down");
+            cutscene_npc_walk_relative(obj_player_npc, 0, 40, 3, "y", "down");
             break;
         
         case 7:

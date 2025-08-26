@@ -1,7 +1,7 @@
 switch (scene)
 {
     case 0:
-        if (keyboard_multicheck_pressed(0) && scr_interact() && obj_pl.direction == 90)
+        if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() && obj_pl.direction == 90)
             cutscene_advance();
         
         break;

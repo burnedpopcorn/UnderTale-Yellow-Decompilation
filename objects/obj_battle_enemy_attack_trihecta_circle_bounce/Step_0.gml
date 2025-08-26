@@ -1,5 +1,3 @@
-var random_pitch;
-
 x += x_speed;
 
 if (x_speed > 0)
@@ -28,7 +26,7 @@ else if (bounce_sound_can_check == true)
 
 if (bounce_sound_execute == true)
 {
-    random_pitch = irandom_range(-1, 1);
+    var random_pitch = irandom_range(-1, 1);
     audio_play_sound(snd_trihecta_small_ball_bounce, 20, 0);
     audio_sound_pitch(snd_trihecta_small_ball_bounce, 1 + (random_pitch * 0.3));
     bounce_sound_execute = false;

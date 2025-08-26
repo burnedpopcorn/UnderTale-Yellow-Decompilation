@@ -1,5 +1,3 @@
-var target_x;
-
 if (live_call())
     return global.live_result;
 
@@ -25,11 +23,11 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Of course!";
             message[1] = "* Hey Axis!";
-            prt[0] = 372;
-            prt[1] = 374;
+            prt[0] = spr_portrait_ceroba_smile;
+            prt[1] = spr_portrait_ceroba_smile_alt;
         }
         
         if (!global.dialogue_open)
@@ -61,9 +59,9 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* How do you feel about#  second dates?";
-            prt[0] = 374;
+            prt[0] = spr_portrait_ceroba_smile_alt;
         }
         
         if (!global.dialogue_open)
@@ -92,11 +90,11 @@ switch (scene)
         break;
     
     case 9:
-        cutscene_sfx_play(309, 1);
+        cutscene_sfx_play(snd_slide_whistle, 1);
         break;
     
     case 10:
-        target_x = 40;
+        var target_x = 40;
         obj_robot_build_finished_robot.x = lerp(obj_robot_build_finished_robot.x, target_x, 0.15);
         
         if (abs(obj_robot_build_finished_robot.x - target_x) < 0.1)
@@ -143,9 +141,9 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Uh oh!";
-            prt[0] = 381;
+            prt[0] = spr_portrait_ceroba_nervous;
         }
         
         if (!global.dialogue_open)
@@ -202,9 +200,9 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Holy...";
-            prt[0] = 393;
+            prt[0] = spr_portrait_ceroba_surprised;
         }
         
         if (!global.dialogue_open)
@@ -233,11 +231,11 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* OKAY that's enough!";
             message[1] = "* Clover, let's uh...#  let's wrap this up.";
-            prt[0] = 381;
-            prt[1] = 3754;
+            prt[0] = spr_portrait_ceroba_nervous;
+            prt[1] = spr_portrait_ceroba_nervous_smile;
         }
         
         if (!global.dialogue_open)

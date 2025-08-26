@@ -1,5 +1,3 @@
-var i, petal, shake_modifier;
-
 if (live_call())
     return global.live_result;
 
@@ -69,11 +67,11 @@ switch (scene)
         break;
     
     case 4:
-        for (i = 0; i < 6; i++)
+        for (var i = 0; i < 6; i++)
         {
             if (obj_flowey_battle_final.petal_alive[i])
             {
-                petal = instance_create_depth(x, y, depth + 1, obj_flowey_battle_gray_wheel_petals_special);
+                var petal = instance_create_depth(x, y, depth + 1, obj_flowey_battle_gray_wheel_petals_special);
                 petal.sprite_index = petal_sprite_special[i];
                 petal.direction = i * 60;
                 petal.petal_phase_number = i + 1;
@@ -88,7 +86,7 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_sfx_play(49, 1);
+        cutscene_sfx_play(snd_f_whatwouldyoulike, 1);
         break;
     
     case 7:
@@ -98,7 +96,7 @@ switch (scene)
         if (spin_speed < spin_speed_max)
             spin_speed += 0.5;
         
-        shake_modifier = spin_speed / spin_speed_max;
+        var shake_modifier = spin_speed / spin_speed_max;
         x = xstart;
         y = ystart;
         x += (choose(-1, 1) * shake_modifier);
@@ -125,7 +123,7 @@ switch (scene)
         with (obj_flowey_battle_gray_wheel_petals_special)
             direction += other.spin_speed;
         
-        shake_modifier = spin_speed / spin_speed_max;
+        var shake_modifier = spin_speed / spin_speed_max;
         x = xstart;
         y = ystart;
         x += (choose(-1, 1) * shake_modifier);

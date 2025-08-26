@@ -1,5 +1,3 @@
-var i, ring;
-
 if (live_call())
     return global.live_result;
 
@@ -8,9 +6,9 @@ if (ds_map_find_value(event_data, "event_type") == "sprite event" && layer_insta
     switch (ds_map_find_value(event_data, "message"))
     {
         case "ceroba_bell_debris":
-            for (i = 0; i < 2; i++)
+            for (var i = 0; i < 2; i++)
             {
-                ring = instance_create_depth(x, y, -100, choose(obj_attack_ceroba_bell_ring_blue, obj_attack_ceroba_bell_ring_orange));
+                var ring = instance_create_depth(x, y, -100, choose(obj_attack_ceroba_bell_ring_blue, obj_attack_ceroba_bell_ring_orange));
                 ring.attack_delay = i * 15;
             }
             

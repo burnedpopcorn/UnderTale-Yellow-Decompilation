@@ -1,11 +1,9 @@
-var wdirection, ribbon_1, ribbon_2;
-
 scene = 0;
 cutscene_timer = 0;
-wdirection = choose(-1, 1);
-ribbon_1 = instance_create_depth(x - 40, y + 15, depth + 1, obj_verlet_rope_generator);
+var wdirection = choose(-1, 1);
+var ribbon_1 = instance_create_depth(x - 40, y + 15, depth + 1, obj_verlet_rope_generator);
 ribbon_1.wind_direction = wdirection;
-ribbon_2 = instance_create_depth(x + 40, y + 15, depth + 1, obj_verlet_rope_generator);
+var ribbon_2 = instance_create_depth(x + 40, y + 15, depth + 1, obj_verlet_rope_generator);
 ribbon_2.wind_direction = wdirection;
 bullet_hit_points = 16;
 bullet_hit_draw_timer = 0;

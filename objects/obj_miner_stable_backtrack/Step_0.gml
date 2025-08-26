@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Can you believe I'm STILL#  mining?\t";
                 message[1] = "* I'm just THAT committed to my#  job!!\t";
                 message[2] = "* ...\t";
@@ -25,7 +25,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I am confined to these brown#  walls forever!!!!!";
             }
             

@@ -1,7 +1,5 @@
-var player_gold, sell_shop_screen_number;
-
-player_gold = global.player_gold;
-sell_shop_screen_number = global.sell_shop_screen_number;
+var player_gold = global.player_gold;
+var sell_shop_screen_number = global.sell_shop_screen_number;
 script_execute(scr_controls_shop_sell);
 
 if (key_select)

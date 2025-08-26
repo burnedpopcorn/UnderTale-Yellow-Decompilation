@@ -1,6 +1,4 @@
-var flash_speed;
-
-flash_speed = 0.00125;
+var flash_speed = 0.00125;
 
 if (alpha_trend == 1)
 {

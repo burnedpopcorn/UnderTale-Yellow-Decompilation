@@ -28,7 +28,7 @@ function scr_dialogue_battle_action_selected_action_2_guardener()
                 break;
             
             case 4:
-                message[0] = "* You use rational in hopes of#  de-escalating the situation.#  Offense level lowered!";
+                message[0] = "* You use rationale in hopes of#  de-escalating the situation.#  Offense level lowered!";
                 break;
         }
         

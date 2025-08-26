@@ -1,12 +1,12 @@
-var failure, i, current_card;
-
 if (instance_number(obj_card_game_card) <= 0)
     exit;
 
-failure = true;
+var failure = true;
 
-for (i = 0; i < instance_number(obj_card_game_card); i++)
+for (var i = 0; i < instance_number(obj_card_game_card); i++)
 {
+    var current_card;
+    
     with (obj_card_game_card)
     {
         if (card_is_active)

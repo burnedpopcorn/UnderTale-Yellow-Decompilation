@@ -1,8 +1,6 @@
-var main_shop_screen_number, buy_shop_screen_number, player_character;
-
 depth = -room_height - 164;
-main_shop_screen_number = global.main_shop_screen_number;
-buy_shop_screen_number = global.buy_shop_screen_number;
+var main_shop_screen_number = global.main_shop_screen_number;
+var buy_shop_screen_number = global.buy_shop_screen_number;
 item_max_count = 1;
 
 if (main_shop_screen_number == 1)
@@ -50,7 +48,7 @@ else if (buy_shop_screen_number == 5)
     y = obj_main_screen_shop.y + 99;
 }
 
-player_character = global.player_character;
+var player_character = global.player_character;
 
 switch (player_character)
 {

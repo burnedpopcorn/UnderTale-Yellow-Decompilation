@@ -1,12 +1,10 @@
-var soul, dir_clamp;
-
 if (live_call())
     return global.live_result;
 
-soul = 2980;
+var soul = obj_heart_battle_fighting_red;
 image_index = 1;
 direction = point_direction(x, y, soul.x, soul.y);
-dir_clamp = 15;
+var dir_clamp = 15;
 
 if (image_xscale == 1)
     direction = clamp(direction, 90 + dir_clamp, 180 - dir_clamp);

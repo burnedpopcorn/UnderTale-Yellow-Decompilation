@@ -1,5 +1,3 @@
-var all_approached, cymbal_sound;
-
 if (live_call())
     return global.live_result;
 
@@ -24,7 +22,7 @@ switch (scene)
         break;
     
     case 3:
-        all_approached = true;
+        var all_approached = true;
         
         with (obj_barrier_soul)
         {
@@ -127,8 +125,8 @@ switch (scene)
         break;
     
     case 13:
-        cutscene_screen_fade_out(c_white, 0.01);
-        cymbal_sound = audio_play_sound(mus_cymbal, 1, 0);
+        cutscene_screen_fade_out(16777215, 0.01);
+        var cymbal_sound = audio_play_sound(mus_cymbal, 1, 0);
         audio_sound_set_track_position(cymbal_sound, 1);
         cutscene_advance();
         break;

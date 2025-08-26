@@ -1,5 +1,7 @@
 function __init_d3d()
 {
+	gml_pragma("global", @'__init_d3d()');
+	
     global.__d3d = false;
     global.__d3dDepth = 0;
     global.__d3dCamera = camera_create();

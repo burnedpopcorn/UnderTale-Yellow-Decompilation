@@ -1,4 +1,4 @@
-if (scr_interact() && obj_pl.direction == 90 && keyboard_multicheck_pressed(0) && !global.cutscene)
+if (scr_interact() && obj_pl.direction == 90 && keyboard_multicheck_pressed(vk_nokey) && !global.cutscene)
 {
     scr_cutscene_start();
     audio_play_sound(snd_paperfall, 1, 0);

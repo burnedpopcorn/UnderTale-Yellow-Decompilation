@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -13,7 +11,7 @@ if (global.dialogue_open == false)
 
 if (letter_array == -1)
 {
-    for (i = 1; i <= string_length(message[message_current]); i++)
+    for (var i = 1; i <= string_length(message[message_current]); i++)
     {
         letter_array[i] = string_char_at(message[message_current], i);
         

@@ -1,9 +1,7 @@
-var soul;
-
 if (live_call())
     return global.live_result;
 
-soul = 1279;
+var soul = obj_heart_battle_fighting_yellow_final;
 
 with (obj_flowey_battle_phase_2_green_petal)
 {

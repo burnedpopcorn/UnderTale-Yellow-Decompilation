@@ -1,5 +1,3 @@
-var execute_change;
-
 if (image_alpha < 1 && started == false)
 {
     image_alpha += 0.05;
@@ -44,7 +42,7 @@ if (started == true)
 if (instance_exists(obj_dialogue_box_battle_transformation_any) && started == true)
 {
     hsp = x_speed;
-    execute_change = false;
+    var execute_change = false;
     
     if (sign(hsp) == -1 && (bbox_left + hsp) <= (obj_dialogue_box_battle_transformation_any.bbox_left + 4))
     {

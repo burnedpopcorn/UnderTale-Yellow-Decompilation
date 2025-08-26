@@ -1,7 +1,7 @@
 function __global_object_depths()
 {
-    var len, i, objID;
-    
+	gml_pragma("global", @'__global_object_depths()');
+	
     global.__objectDepths[0] = -999999;
     global.__objectDepths[1] = 0;
     global.__objectDepths[2] = 0;
@@ -3382,12 +3382,12 @@ function __global_object_depths()
     global.__objectNames[1687] = "obj_gmlive";
     global.__objectNames[1688] = "obj_blank_init";
     global.__objectNames[1689] = "obj_final_roundup";
-    len = array_length_1d(global.__objectDepths);
+    var len = array_length_1d(global.__objectDepths);
     global.__objectID2Depth = [];
     
-    for (i = 0; i < len; i++)
+    for (var i = 0; i < len; i++)
     {
-        objID = asset_get_index(global.__objectNames[i]);
+        var objID = asset_get_index(global.__objectNames[i]);
         
         if (objID >= 0)
             global.__objectID2Depth[objID] = global.__objectDepths[i];

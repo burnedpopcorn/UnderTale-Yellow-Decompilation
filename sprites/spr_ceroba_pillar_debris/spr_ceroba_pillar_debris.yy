@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"155d0b29-6483-401c-bf61-327b7555d132",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"09dc6d24-3f0c-4d3d-a27d-5216d4514c91",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"775b697a-20b1-4e91-91d8-a5bf14a1ec71",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fcd1d170-81d5-4354-aca4-99f77d3e2e74",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"15f70c52-b236-417f-ad4d-312326e49f05",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"395c677d-e753-4268-9ef7-1119e3ee32f8",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 30,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"873cc423-6a07-409e-8477-5f0fca10a3fc","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a7159255-ada8-4874-9cb0-c9aaee5ffafe","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"155d0b29-6483-401c-bf61-327b7555d132","path":"sprites/spr_ceroba_pillar_debris/spr_ceroba_pillar_debris.yy",},},},"Disabled":false,"id":"748cbdbe-f456-488a-9f03-12f3724efeeb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"09dc6d24-3f0c-4d3d-a27d-5216d4514c91","path":"sprites/spr_ceroba_pillar_debris/spr_ceroba_pillar_debris.yy",},},},"Disabled":false,"id":"37daac8b-53df-4b7a-97e6-c0ba18b64b9e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"775b697a-20b1-4e91-91d8-a5bf14a1ec71","path":"sprites/spr_ceroba_pillar_debris/spr_ceroba_pillar_debris.yy",},},},"Disabled":false,"id":"f76598ab-42fc-4a67-acc7-cbc5b6484be5","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fcd1d170-81d5-4354-aca4-99f77d3e2e74","path":"sprites/spr_ceroba_pillar_debris/spr_ceroba_pillar_debris.yy",},},},"Disabled":false,"id":"ed90ce03-653b-4e77-853d-ab5b79817f66","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"15f70c52-b236-417f-ad4d-312326e49f05","path":"sprites/spr_ceroba_pillar_debris/spr_ceroba_pillar_debris.yy",},},},"Disabled":false,"id":"cc1962ab-db9d-49eb-ac4a-ff64a8c97fdd","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"395c677d-e753-4268-9ef7-1119e3ee32f8","path":"sprites/spr_ceroba_pillar_debris/spr_ceroba_pillar_debris.yy",},},},"Disabled":false,"id":"5249ff38-d693-462c-93e8-39489206650c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Battlenewhome",
+    "path": "texturegroups/Battlenewhome",
   },
   "type": 0,
   "VTile": false,

@@ -19,11 +19,11 @@ switch (global.dunes_flag_ext[3])
             message[2] = "* I guess we can chalk it#  up to him havin' his#  plate full.";
             message[3] = "* I am surprised he#  got'cha such fancy#  upgrades.";
             message[4] = "* We didn't get that kinda#  stuff when we first#  joined.";
-            prt[0] = 451;
-            prt[1] = 453;
-            prt[2] = 451;
-            prt[3] = 451;
-            prt[4] = 454;
+            prt[0] = spr_portrait_ed_normal;
+            prt[1] = spr_portrait_ed_mad;
+            prt[2] = spr_portrait_ed_normal;
+            prt[3] = spr_portrait_ed_normal;
+            prt[4] = spr_portrait_ed_mutter;
         }
         
         global.dunes_flag_ext[3] += 1;
@@ -35,8 +35,8 @@ switch (global.dunes_flag_ext[3])
             talker[0] = other.object_index;
             message[0] = "* No more shoppin' sprees,#  Clover!";
             message[1] = "* Next mission is sure to#  put you to the test!";
-            prt[0] = 451;
-            prt[1] = 452;
+            prt[0] = spr_portrait_ed_normal;
+            prt[1] = spr_portrait_ed_smile;
         }
         
         break;

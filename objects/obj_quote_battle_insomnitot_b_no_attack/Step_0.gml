@@ -1,5 +1,3 @@
-var battle_enemy_name;
-
 script_execute(scr_controls_text);
 
 if (key_revert_pressed)
@@ -49,7 +47,7 @@ else
         }
         else
         {
-            battle_enemy_name = global.battle_enemy_name;
+            var battle_enemy_name = global.battle_enemy_name;
             
             if (battle_enemy_name == "insomnitot duo")
                 script_execute(scr_insomnitot_duo_no_attack);

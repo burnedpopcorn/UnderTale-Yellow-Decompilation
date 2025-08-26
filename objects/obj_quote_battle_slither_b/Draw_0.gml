@@ -1,15 +1,13 @@
-var battle_enemy_name, target_bubble;
-
 draw_set_font(fnt_dotumche);
 draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-battle_enemy_name = global.battle_enemy_name;
+var battle_enemy_name = global.battle_enemy_name;
 
 if (!instance_exists(obj_quote_bubble_battle))
     exit;
 
-target_bubble = 2141;
+var target_bubble = 2141;
 
 if (spawner != -4 && instance_exists(spawner))
     target_bubble = spawner;

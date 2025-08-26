@@ -1,7 +1,7 @@
 switch (scene)
 {
     case 0:
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
         {
             image_speed = 1;
             scr_cutscene_start();
@@ -30,7 +30,7 @@ switch (scene)
         break;
     
     case 4:
-        cutscene_npc_walk(1168, 170, 120, 2, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 170, 120, 2, "x", "up");
         
         if (obj_pl.y < 130)
             player_fade_out = true;
@@ -38,7 +38,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_change_room(208, 160, 220, 0.1);
+        cutscene_change_room(rm_steamworks_38, 160, 220, 0.1);
         break;
 }
 

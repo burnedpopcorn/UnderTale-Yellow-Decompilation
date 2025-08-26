@@ -1,4 +1,4 @@
-if (scr_interact() && keyboard_multicheck_pressed(0) && !interacted_with)
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey) && !interacted_with)
 {
     scene = 0;
     interacted_with = true;
@@ -42,7 +42,7 @@ if (interacted_with)
         
         with (msg)
         {
-            sndfnt_array[0] = 102;
+            sndfnt_array[0] = snd_talk_martlet;
             message[0] = "* Entry 3.";
             message[1] = "* So far, living on my own has#  been BORING.";
             message[2] = "* I don't know what to do with#  myself most of the time.";
@@ -52,7 +52,7 @@ if (interacted_with)
             message[6] = "* Maybe I'll ask him to teach me#  how to... ";
             message[7] = "* I don't know, nail planks of#  wood to houses? ";
             message[8] = "* It would be a start. UvU#";
-            sndfnt_array[9] = 391;
+            sndfnt_array[9] = snd_talk_default;
             message[9] = "* (Continue?)";
             ch_msg = 9;
             ch[1] = "Yes";
@@ -86,8 +86,8 @@ if (interacted_with)
         
         with (msg)
         {
-            sndfnt_array[0] = 391;
-            sndfnt_array[1] = 102;
+            sndfnt_array[0] = snd_talk_default;
+            sndfnt_array[1] = snd_talk_martlet;
             message[0] = "* (You flip through a few#  pages.)";
             message[1] = "* Entry 8.";
             message[2] = "* I think this \"tinkering\" thing#  is for me.";
@@ -97,7 +97,7 @@ if (interacted_with)
             message[6] = "* Sounds boring, but I'm working#  toward carving a buncha them...";
             message[7] = "* ...to build one of those#  \"wooden tower\" games.";
             message[8] = "* Chujin thought it would be a#  good beginner project! ^v^";
-            sndfnt_array[9] = 391;
+            sndfnt_array[9] = snd_talk_default;
             message[9] = "* (Continue?)";
             ch_msg = 9;
             ch[1] = "Yes";
@@ -131,8 +131,8 @@ if (interacted_with)
         
         with (msg)
         {
-            sndfnt_array[0] = 391;
-            sndfnt_array[1] = 102;
+            sndfnt_array[0] = snd_talk_default;
+            sndfnt_array[1] = snd_talk_martlet;
             message[0] = "* (You flip through a few more#  pages.)";
             message[1] = "* Entry 19.";
             message[2] = "* I had a conversation with Mr.#  Chujin last night.";
@@ -150,7 +150,7 @@ if (interacted_with)
             message[14] = "* Sounds like he wants to leave#  a lasting legacy or something.";
             message[15] = "* Guy's got big aspirations,#  that's for sure. ";
             message[16] = "* Caaan't relate. =v=#";
-            sndfnt_array[17] = 391;
+            sndfnt_array[17] = snd_talk_default;
             message[17] = "* (Continue?)";
             ch_msg = 17;
             ch[1] = "Yes";
@@ -184,8 +184,8 @@ if (interacted_with)
         
         with (msg)
         {
-            sndfnt_array[0] = 391;
-            sndfnt_array[1] = 102;
+            sndfnt_array[0] = snd_talk_default;
+            sndfnt_array[1] = snd_talk_martlet;
             message[0] = "* (You flip through a few more#  pages.)";
             message[1] = "* Entry 27.";
             message[2] = "* Welp, I couldn't procrastinate#  any longer.";
@@ -202,7 +202,7 @@ if (interacted_with)
             message[13] = "* On the bright side, I can#  stave off my newfound paranoia,";
             message[14] = "* Because I was assigned boring#  Lab duty.";
             message[15] = "* Stand outside the Lab doors#  and keep watch. Fuuuuuuun. TvT#";
-            sndfnt_array[16] = 391;
+            sndfnt_array[16] = snd_talk_default;
             message[16] = "* (The following entry is ripped#  out.)";
         }
         

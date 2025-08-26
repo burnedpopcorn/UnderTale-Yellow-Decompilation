@@ -1,6 +1,4 @@
-var box;
-
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 with (obj_heart_battle_fighting_red)
     y = box.y + 40;

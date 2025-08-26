@@ -58,7 +58,7 @@ switch (scene)
                 image_speed = 0;
                 other.scene++;
                 other.timer = 60;
-                scr_audio_fade_out(163, 500);
+                scr_audio_fade_out(mus_birdsofafeather, 500);
             }
         }
         

@@ -4,7 +4,7 @@ if (live_call())
 steam_active = false;
 steam_interval = 0;
 steam_delay = 0;
-steam_sound = snd_puzzle_icemelt;
+steam_sound = 289;
 steam_sound_played = false;
 draw_alpha = 0;
 draw_overlay = false;

@@ -1,5 +1,3 @@
-var heart, target_dir;
-
 switch (attack_state)
 {
     case 1:
@@ -16,8 +14,8 @@ switch (attack_state)
         break;
     
     case 2:
-        heart = obj_heart_battle_fighting_red;
-        target_dir = point_direction(x, y, heart.x, heart.y);
+        var heart = obj_heart_battle_fighting_red;
+        var target_dir = point_direction(x, y, heart.x, heart.y);
         
         if (y < heart.y)
         {

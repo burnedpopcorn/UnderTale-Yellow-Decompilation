@@ -1,8 +1,6 @@
-var player_character, soul_mode;
-
 image_speed = 0;
 image_index = 0;
-player_character = global.player_character;
+var player_character = global.player_character;
 
 switch (player_character)
 {
@@ -11,7 +9,7 @@ switch (player_character)
         break;
     
     default:
-        soul_mode = global.soul_mode;
+        var soul_mode = global.soul_mode;
         
         if (soul_mode == "Red")
         {

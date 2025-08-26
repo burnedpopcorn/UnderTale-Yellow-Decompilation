@@ -1,8 +1,6 @@
-var player_weapon, player_weapon_modifier, shoot_sound;
-
-player_weapon = global.player_weapon;
-player_weapon_modifier = global.player_weapon_modifier;
-shoot_sound = snd_ceroba_staff_lock;
+var player_weapon = global.player_weapon;
+var player_weapon_modifier = global.player_weapon_modifier;
+var shoot_sound = 0;
 
 switch (player_weapon)
 {

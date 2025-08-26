@@ -1,5 +1,3 @@
-var hsc_x_temp, hsc_y_temp, hsc_max;
-
 if (!instance_exists(obj_heart_battle_fighting_parent))
 {
     instance_destroy();
@@ -8,9 +6,9 @@ if (!instance_exists(obj_heart_battle_fighting_parent))
 
 if (state == 2 && obj_heart_battle_fighting_parent.vulnerable == true && !place_meeting(xprevious, yprevious, obj_heart_hitbox_parent))
 {
-    hsc_x_temp = x;
-    hsc_y_temp = y;
-    hsc_max = 4;
+    var hsc_x_temp = x;
+    var hsc_y_temp = y;
+    var hsc_max = 4;
     
     for (i = 0; i < hsc_max; i++)
     {

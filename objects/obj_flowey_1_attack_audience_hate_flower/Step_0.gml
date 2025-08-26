@@ -1,9 +1,7 @@
-var box;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if (image_alpha < 1)
     image_alpha += 0.2;

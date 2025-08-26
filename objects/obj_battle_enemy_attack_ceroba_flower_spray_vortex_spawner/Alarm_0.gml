@@ -1,8 +1,6 @@
-var i, bullet, spin_side_old;
-
-for (i = 0; i < bullet_number; i++)
+for (var i = 0; i < bullet_number; i++)
 {
-    bullet = instance_create(x, y, obj_battle_enemy_attack_ceroba_flower_spray_vortex_bullet);
+    var bullet = instance_create(x, y, obj_battle_enemy_attack_ceroba_flower_spray_vortex_bullet);
     bullet.attack_dir = direction + ((i + 1) * (360 / bullet_number));
     bullet.creator = id;
     
@@ -26,7 +24,7 @@ spin_side_delay += 1;
 
 if (spin_side_delay == 10)
 {
-    spin_side_old = spin_side;
+    var spin_side_old = spin_side;
     spin_side = choose(-1, 1);
     
     if (spin_side != spin_side_old)

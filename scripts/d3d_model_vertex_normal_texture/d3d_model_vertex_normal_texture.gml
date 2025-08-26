@@ -1,4 +1,4 @@
-function d3d_model_vertex_normal_texture(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8)
+function d3d_model_vertex_normal_texture(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
 {
-    __d3d_model_add_vertex(argument0, argument1, argument2, argument3, argument4, argument5, argument6, 65536, argument7, argument8);
+    __d3d_model_add_vertex(arg0, arg1, arg2, arg3, arg4, arg5, arg6, 65536, arg7, arg8);
 }

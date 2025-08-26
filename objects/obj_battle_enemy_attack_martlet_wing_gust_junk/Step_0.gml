@@ -1,5 +1,3 @@
-var fs_temp;
-
 if (state == 0)
 {
     if (image_alpha < 1)
@@ -37,7 +35,7 @@ if (state == 1)
     if (fall_speed < fall_speed_max)
         fall_speed += 1;
     
-    fs_temp = fall_speed;
+    var fs_temp = fall_speed;
     
     if ((bbox_bottom + fs_temp) >= (obj_dialogue_box_battle_transformation_any.bbox_bottom - 4))
     {

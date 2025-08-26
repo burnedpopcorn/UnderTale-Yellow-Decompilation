@@ -1,5 +1,3 @@
-var fall_speed, i;
-
 switch (scene)
 {
     case 0:
@@ -33,7 +31,7 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_sfx_play(270, 0.8);
+        cutscene_sfx_play(snd_elevator_start, 0.8);
         break;
     
     case 7:
@@ -49,7 +47,7 @@ switch (scene)
         break;
     
     case 10:
-        cutscene_npc_walk(1166, 190, obj_pl.y, 4, "y", "right", false);
+        cutscene_npc_walk(obj_axis_npc, 190, obj_pl.y, 4, "y", "right", false);
         break;
     
     case 11:
@@ -58,13 +56,13 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 16711935;
-            talker[0] = 1166;
+            col_modif[0] = c_fuchsia;
+            talker[0] = obj_axis_npc;
             message[0] = "* AXIS MODEL 014 READY TO#  GUARD AND PROTECT.";
             message_col[0][0] = "  AXIS                                        ";
             message[1] = "* INTRUDERS SPOTTED.#  STEAMWORKS: EASTERN#  BRANCH.";
-            prt[0] = 473;
-            prt[1] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
         }
         
         break;
@@ -82,7 +80,7 @@ switch (scene)
         break;
     
     case 13:
-        cutscene_npc_walk(1161, obj_pl.x - 30, obj_pl.y, 4, "y", "left");
+        cutscene_npc_walk(obj_ceroba_npc, obj_pl.x - 30, obj_pl.y, 4, "y", "left");
         break;
     
     case 14:
@@ -90,15 +88,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[1] = 1166;
-            talker[2] = 1161;
-            talker[3] = 1166;
-            talker[4] = 1161;
-            talker[6] = 1166;
-            talker[10] = 1161;
-            talker[13] = 1166;
-            talker[18] = 1161;
+            talker[0] = obj_ceroba_npc;
+            talker[1] = obj_axis_npc;
+            talker[2] = obj_ceroba_npc;
+            talker[3] = obj_axis_npc;
+            talker[4] = obj_ceroba_npc;
+            talker[6] = obj_axis_npc;
+            talker[10] = obj_ceroba_npc;
+            talker[13] = obj_axis_npc;
+            talker[18] = obj_ceroba_npc;
             message[0] = "* Wait! Who are you!?";
             message[1] = "* AXIS MODEL 014 READY TO#  GUARD AND PROTECT.";
             message[2] = "* You just said that.";
@@ -119,32 +117,32 @@ switch (scene)
             message[17] = "* I WILL NOW TRAP YOU IN#  A COLD, DARK ROOM, FOR#  WHICH YOU MIGHT PERISH.";
             message[18] = "* My husband, Chujin,#  used to work here! I#  have permission!";
             message[19] = "* Don't make me hurt you.";
-            prt[0] = 388;
-            prt[1] = 473;
-            prt[2] = 382;
-            prt[3] = 473;
-            prt[4] = 394;
-            prt[5] = 371;
-            prt[6] = 473;
-            prt[7] = 473;
-            prt[8] = 473;
-            prt[9] = 473;
-            prt[10] = 381;
-            prt[11] = 381;
-            prt[12] = 3754;
-            prt[13] = 473;
-            prt[14] = 473;
-            prt[15] = 473;
-            prt[16] = 473;
-            prt[17] = 473;
-            prt[18] = 371;
-            prt[19] = 394;
+            prt[0] = spr_portrait_ceroba_confounded;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_ceroba_muttering;
+            prt[3] = spr_portrait_axis_normal;
+            prt[4] = spr_portrait_ceroba_disapproving;
+            prt[5] = spr_portrait_ceroba_alt;
+            prt[6] = spr_portrait_axis_normal;
+            prt[7] = spr_portrait_axis_normal;
+            prt[8] = spr_portrait_axis_normal;
+            prt[9] = spr_portrait_axis_normal;
+            prt[10] = spr_portrait_ceroba_nervous;
+            prt[11] = spr_portrait_ceroba_nervous;
+            prt[12] = spr_portrait_ceroba_nervous_smile;
+            prt[13] = spr_portrait_axis_normal;
+            prt[14] = spr_portrait_axis_normal;
+            prt[15] = spr_portrait_axis_normal;
+            prt[16] = spr_portrait_axis_normal;
+            prt[17] = spr_portrait_axis_normal;
+            prt[18] = spr_portrait_ceroba_alt;
+            prt[19] = spr_portrait_ceroba_disapproving;
         }
         
         break;
     
     case 15:
-        cutscene_npc_action_sprite(1161, 77, 1/3, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_ceroba_staff, 1/3, true, 0);
         break;
     
     case 16:
@@ -173,12 +171,12 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
-            talker[1] = 1161;
+            talker[0] = obj_axis_npc;
+            talker[1] = obj_ceroba_npc;
             message[0] = "* CHUJIN? MY CREATOR?";
             message[1] = "* Huh?";
-            prt[0] = 473;
-            prt[1] = 393;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_ceroba_surprised;
         }
         
         if (msg.message_current == 1)
@@ -187,7 +185,7 @@ switch (scene)
         break;
     
     case 22:
-        cutscene_npc_direction(1166, "down");
+        cutscene_npc_direction(obj_axis_npc, "down");
         break;
     
     case 23:
@@ -195,7 +193,7 @@ switch (scene)
         break;
     
     case 24:
-        cutscene_npc_direction(1166, "left");
+        cutscene_npc_direction(obj_axis_npc, "left");
         break;
     
     case 25:
@@ -203,7 +201,7 @@ switch (scene)
         break;
     
     case 26:
-        cutscene_npc_direction(1166, "up");
+        cutscene_npc_direction(obj_axis_npc, "up");
         break;
     
     case 27:
@@ -211,7 +209,7 @@ switch (scene)
         break;
     
     case 28:
-        cutscene_npc_direction(1166, "right");
+        cutscene_npc_direction(obj_axis_npc, "right");
         break;
     
     case 29:
@@ -223,17 +221,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* SORRY, I DO NOT SEE HIM#  PRESENT.";
             message[1] = "* GOODBYE.";
-            prt[0] = 473;
-            prt[1] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
         }
         
         break;
     
     case 31:
-        cutscene_sfx_play(293, 1);
+        cutscene_sfx_play(snd_rock_break, 1);
         break;
     
     case 32:
@@ -249,15 +247,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* WAIT!";
-            prt[0] = 381;
+            prt[0] = spr_portrait_ceroba_nervous;
         }
         
         break;
     
     case 35:
-        cutscene_sfx_play(401, 1);
+        cutscene_sfx_play(snd_decibatfall, 1);
         break;
     
     case 36:
@@ -288,9 +286,9 @@ switch (scene)
             image_angle -= 1;
         }
         
-        fall_speed = 10;
+        var fall_speed = 10;
         
-        for (i = 1000002; i >= 999998; i--)
+        for (var i = 1000002; i >= 999998; i--)
             tile_layer_shift(i, 0, -fall_speed);
         
         layer_y("ts_steamworks", layer_get_y("ts_steamworks") - fall_speed);
@@ -323,7 +321,7 @@ switch (scene)
         break;
     
     case 39:
-        cutscene_sfx_play(384, 0.8);
+        cutscene_sfx_play(snd_undertale_thud, 0.8);
         break;
     
     case 40:
@@ -331,7 +329,7 @@ switch (scene)
         break;
     
     case 41:
-        cutscene_sfx_play(263, 0.3);
+        cutscene_sfx_play(snd_toy_squeak, 0.3);
         break;
     
     case 42:
@@ -339,6 +337,6 @@ switch (scene)
         break;
     
     case 43:
-        cutscene_change_room(160, 135, 150, 0.025);
+        cutscene_change_room(rm_steamworks_13, 135, 150, 0.025);
         break;
 }

@@ -13,7 +13,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Yo, exciting news.";
                     message[1] = "* I just built myself a new#  computer and guess what?";
                     message[2] = "* You can play GAMES on it!";
@@ -27,11 +27,11 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* There's these videos on#  Undernet of monsters playing#  Love Blaster.";
                     message[1] = "* I'll tell ya what, they're#  playing it all wrong!";
                     message[2] = "* You're supposed to GRAB the#  powerups, not avoid them!!";
-                    message[3] = "* Also, Mew mew doesn't \"shoot#  bullets\", she spreads joy";
+                    message[3] = "* Also, Mew mew doesn't \"shoot#  bullets\", she spreads joy.";
                     message[4] = "* It's so obvious they haven't#  studied the deep lore like I#  have.";
                 }
                 
@@ -42,7 +42,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* You should come over#  sometime.";
                     message[1] = "* We could play a co-op game!";
                 }
@@ -58,7 +58,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Yo, exciting news.";
                     message[1] = "* I just built myself a new#  computer and guess what?";
                     message[2] = "* You can play GAMES on it!";
@@ -74,7 +74,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Forget about the game stuff.";
                     message[1] = "* I'm more of a single-player#  type anyway.";
                 }

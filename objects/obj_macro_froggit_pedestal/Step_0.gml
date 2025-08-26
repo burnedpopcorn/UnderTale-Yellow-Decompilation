@@ -1,8 +1,6 @@
-var correct_item;
-
 if (global.sworks_flag[pedestal_flag] == 0)
 {
-    if (scr_interact() && keyboard_multicheck_pressed(0))
+    if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
     {
         scr_text();
         
@@ -30,7 +28,7 @@ if (global.sworks_flag[pedestal_flag] == 0)
         pedestal_menu_open = 2;
     }
     
-    correct_item = false;
+    var correct_item = false;
     
     if (global.item_used_overworld != undefined && pedestal_menu_open == 2)
     {

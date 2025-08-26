@@ -1,8 +1,8 @@
-function scr_item_remove(argument0)
+function scr_item_remove(arg0)
 {
     for (i = 1; i <= 8; i += 1)
     {
-        if (global.item_slot[i] == argument0)
+        if (global.item_slot[i] == arg0)
         {
             while (i < 8)
             {

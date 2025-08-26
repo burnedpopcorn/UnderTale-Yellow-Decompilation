@@ -1,9 +1,7 @@
-var random_snowflake, snowflake_xpos;
-
 if (instance_number(obj_background_boss_battle_2_snowflake_parent_yellow) < snowflake_max)
 {
-    random_snowflake = irandom_range(1, 4);
-    snowflake_xpos = irandom_range(0, 639);
+    var random_snowflake = irandom_range(1, 4);
+    var snowflake_xpos = irandom_range(0, 639);
     
     switch (random_snowflake)
     {

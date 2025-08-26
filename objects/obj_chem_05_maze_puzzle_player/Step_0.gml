@@ -1,5 +1,3 @@
-var victory;
-
 if (can_move == true)
 {
     speed = max_speed;
@@ -30,7 +28,7 @@ if (place_meeting(x, y, obj_chem_05_maze_wall))
     obj_chem_05_maze_puzzle.puzzle_game_over = true;
 }
 
-victory = obj_chem_05_maze_puzzle.puzzle_game_victory;
+var victory = obj_chem_05_maze_puzzle.puzzle_game_victory;
 
 if (place_meeting(x, y, obj_chem_05_maze_puzzle_goal) && !victory)
 {

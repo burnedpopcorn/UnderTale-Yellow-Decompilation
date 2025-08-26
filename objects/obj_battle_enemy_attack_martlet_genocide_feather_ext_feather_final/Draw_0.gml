@@ -1,6 +1,4 @@
-var j;
-
-j = 2;
+var j = 2;
 i = ds_list_size(x_list) - 1;
 
 while (i >= 0)

@@ -1,7 +1,5 @@
-function scr_audio_stop_sound(argument0)
+function scr_audio_stop_sound(arg0)
 {
-    var audio_gain;
-    
     audio_array_val = 0;
     sound_y[audio_array_val] = mus_apprehension_yellow;
     audio_array_val += 1;
@@ -67,9 +65,9 @@ function scr_audio_stop_sound(argument0)
     
     for (i = 0; i < array_length_1d(sound_y); i += 1)
     {
-        audio_gain = audio_sound_get_gain(sound_y[i]);
+        var audio_gain = audio_sound_get_gain(sound_y[i]);
         
-        if (audio_gain <= argument0)
+        if (audio_gain <= arg0)
             audio_stop_sound(sound_y[i]);
     }
 }

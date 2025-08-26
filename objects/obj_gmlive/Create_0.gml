@@ -1,8 +1,6 @@
-var first;
-
 if (instance_number(obj_gmlive) > 1)
 {
-    first = instance_find(obj_gmlive, 0);
+    var first = instance_find(obj_gmlive, 0);
     
     if (id != first)
     {

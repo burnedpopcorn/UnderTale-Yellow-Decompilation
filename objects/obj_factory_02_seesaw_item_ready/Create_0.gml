@@ -1,11 +1,9 @@
-var item_type_last, item_type_repeat_count, item_type_repeat_count_max;
-
 if (live_call())
     return global.live_result;
 
-item_type_last = obj_factory_02_seesaw_puzzle.conveyor_item_type_last;
-item_type_repeat_count = obj_factory_02_seesaw_puzzle.conveyor_item_type_repeat_count;
-item_type_repeat_count_max = obj_factory_02_seesaw_puzzle.conveyor_item_type_repeat_count_max;
+var item_type_last = obj_factory_02_seesaw_puzzle.conveyor_item_type_last;
+var item_type_repeat_count = obj_factory_02_seesaw_puzzle.conveyor_item_type_repeat_count;
+var item_type_repeat_count_max = obj_factory_02_seesaw_puzzle.conveyor_item_type_repeat_count_max;
 destroy_self = false;
 item_type = choose("blue", "red");
 

@@ -1,9 +1,7 @@
-var soul;
-
 if (live_call())
     return global.live_result;
 
-soul = 2979;
+var soul = obj_heart_battle_fighting_parent;
 
 if (image_alpha < 1 && fade_in == true)
     image_alpha += 0.2;

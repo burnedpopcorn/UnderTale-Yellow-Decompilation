@@ -5,7 +5,7 @@ with (other)
         if (waiter == 0)
             sprite_index = spr_wardrobe;
         
-        if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+        if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
             waiter = 1;
         
         if (waiter > 0)
@@ -25,7 +25,7 @@ with (other)
                             instance_create(0, 0, obj_dialoguebox_dummy);
                         
                         portrait = false;
-                        sndfnt = 99;
+                        sndfnt = sndfnt_default;
                         message[0] = "* (It's an intimidating looking#  wardrobe.)";
                         message[1] = "* (Open it?)";
                         
@@ -58,9 +58,9 @@ with (other)
                     else
                     {
                         portrait = true;
-                        sndfnt = 100;
+                        sndfnt = sndfnt_dalv;
                         message[0] = "* ...";
-                        prt[0] = 1755;
+                        prt[0] = spr_dalv_head_regular;
                         obj_wardrobe.waiter = 2;
                     }
                 }
@@ -90,11 +90,11 @@ with (other)
                 
                 with (msg)
                 {
-                    sndfnt = 100;
+                    sndfnt = sndfnt_dalv;
                     message[0] = "* Hey. um. Would you#  mind giving Pops his#  space?";
                     message[1] = "* He likes the dark...";
-                    prt[0] = 1763;
-                    prt[1] = 1763;
+                    prt[0] = spr_dalv_head_sad;
+                    prt[1] = spr_dalv_head_sad;
                 }
                 
                 waiter++;
@@ -107,7 +107,7 @@ with (other)
                 
                 with (msg)
                 {
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* (You wave goodbye to Pops#  before closing the door#  again.)";
                     portrait = false;
                 }
@@ -135,7 +135,7 @@ with (other)
         if (waiter == 0)
             sprite_index = spr_wardrobe;
         
-        if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+        if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
             waiter = 1;
         
         if (waiter == 1)
@@ -145,7 +145,7 @@ with (other)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* (It's an intimidating looking#  wardrobe.)";
                 message[1] = "* (Open it?)";
                 
@@ -184,7 +184,7 @@ with (other)
         if (waiter == 0)
             sprite_index = spr_wardrobe;
         
-        if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+        if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
             waiter = 1;
         
         if (waiter == 1)
@@ -197,7 +197,7 @@ with (other)
                 if (global.interaction_count_wardrobe == 0)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* (It's a tacky looking black#  wardrobe.)";
                     message[1] = "* (You open it.)";
                     message[2] = "* (There is a balloon floating#  slowly inside.)";
@@ -208,7 +208,7 @@ with (other)
                 else
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* (You should respect the dead.)";
                     obj_wardrobe.sprite_index = spr_wardrodeflate;
                     obj_wardrobe.image_speed = 0;
@@ -243,7 +243,7 @@ with (other)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* (You now sound funny.)";
                 message[1] = "* ...";
                 message[2] = "* (You no longer sound funny.)";

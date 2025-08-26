@@ -38,18 +38,16 @@ switch (attack_tick)
 
 attack_tick += 1;
 
-function martlet_wing_spawn(argument0)
+function martlet_wing_spawn(arg0)
 {
-    var battle_box, xx, yy, xscale, yscale, angle, wing;
+    var battle_box = obj_dialogue_box_battle_transformation_any;
+    var xx = 0;
+    var yy = 0;
+    var xscale = 1;
+    var yscale = 1;
+    var angle = 0;
     
-    battle_box = 3154;
-    xx = 0;
-    yy = 0;
-    xscale = 1;
-    yscale = 1;
-    angle = 0;
-    
-    switch (argument0)
+    switch (arg0)
     {
         case 0:
             xx = battle_box.bbox_left + 4;
@@ -63,7 +61,7 @@ function martlet_wing_spawn(argument0)
             break;
     }
     
-    wing = instance_create_depth(xx, yy, -50, obj_fmartlet_wings);
+    var wing = instance_create_depth(xx, yy, -50, obj_fmartlet_wings);
     
     with (wing)
     {

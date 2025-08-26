@@ -1,9 +1,7 @@
 function scr_late_audio_enemy_encounter()
 {
-    var game_mode, battle_enemy_name;
-    
-    game_mode = global.game_mode;
-    battle_enemy_name = global.battle_enemy_name;
+    var game_mode = global.game_mode;
+    var battle_enemy_name = global.battle_enemy_name;
     
     if (game_mode == "customs")
     {

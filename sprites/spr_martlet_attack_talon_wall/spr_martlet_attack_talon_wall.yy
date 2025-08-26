@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"efa92cad-6ecc-42ce-8885-971110bf934a",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"af2233fb-9756-4867-9b9e-843d32823a54",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9cd6ea59-e382-4010-bd19-2d84b866d01d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8a45b8eb-d5a7-4d03-9803-7e212d2f3d43",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"080ffa7b-2f1c-453a-8b4e-90b09fd58a35",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0a597363-fd85-4e9c-abcf-023d13dde0ca",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 3,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1c1063a9-70b1-4b42-b465-70801e795a4f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"49dad6a3-dcc1-4a8f-b295-32a2602339d5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 1,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"efa92cad-6ecc-42ce-8885-971110bf934a","path":"sprites/spr_martlet_attack_talon_wall/spr_martlet_attack_talon_wall.yy",},},},"Disabled":false,"id":"960b69d5-2f32-46a6-87e2-d41b802ba773","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"af2233fb-9756-4867-9b9e-843d32823a54","path":"sprites/spr_martlet_attack_talon_wall/spr_martlet_attack_talon_wall.yy",},},},"Disabled":false,"id":"ae7826ea-f8ba-4885-8311-fa0736c33773","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9cd6ea59-e382-4010-bd19-2d84b866d01d","path":"sprites/spr_martlet_attack_talon_wall/spr_martlet_attack_talon_wall.yy",},},},"Disabled":false,"id":"833347af-4309-40fb-8b5d-4b075801260a","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8a45b8eb-d5a7-4d03-9803-7e212d2f3d43","path":"sprites/spr_martlet_attack_talon_wall/spr_martlet_attack_talon_wall.yy",},},},"Disabled":false,"id":"0ba3c4d8-4330-419c-b948-721789eecfb2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"080ffa7b-2f1c-453a-8b4e-90b09fd58a35","path":"sprites/spr_martlet_attack_talon_wall/spr_martlet_attack_talon_wall.yy",},},},"Disabled":false,"id":"073d51a2-729c-46c3-b9ff-836888ec09f3","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0a597363-fd85-4e9c-abcf-023d13dde0ca","path":"sprites/spr_martlet_attack_talon_wall/spr_martlet_attack_talon_wall.yy",},},},"Disabled":false,"id":"7b002912-f744-41b2-98db-38e05ed11faf","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleHotlandMartlet",
+    "path": "texturegroups/BattleHotlandMartlet",
   },
   "type": 0,
   "VTile": false,

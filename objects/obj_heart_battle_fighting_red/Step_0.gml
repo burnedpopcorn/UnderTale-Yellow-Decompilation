@@ -1,5 +1,3 @@
-var can_trail;
-
 script_execute(scr_controls_battle_heart_red);
 x_previous = x;
 y_previous = y;
@@ -71,7 +69,7 @@ if (instance_exists(obj_heart_battle_effect_glow))
 
 if (moveable == true && global.current_sp_self > 0)
 {
-    can_trail = false;
+    var can_trail = false;
     trail_cc_current += 1;
     
     if (trail_cc_current >= trail_cc_max)

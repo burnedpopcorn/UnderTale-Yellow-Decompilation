@@ -1,7 +1,5 @@
-var battle_enemy_name;
-
 global.current_room = room_get_name(room);
-battle_enemy_name = global.battle_enemy_name;
+var battle_enemy_name = global.battle_enemy_name;
 global.battle_phase_step = 0;
 global.special_effect_end_value = "";
 script_execute(scr_battle_core_directory_generation);
@@ -33,11 +31,11 @@ global.timer_attacks_counter_2 = 0;
 global.timer_attacks_switch = false;
 global.attack_end_text = false;
 global.anti_amplitude_ASGORE_flash_2 = 0;
-global.anti_amplitude_asriel_battle_sound_3 = snd_ceroba_staff_lock;
-global.anti_amplitude_asriel_battle_sound_4 = snd_ceroba_staff_lock;
+global.anti_amplitude_asriel_battle_sound_3 = 0;
+global.anti_amplitude_asriel_battle_sound_4 = 0;
 global.anti_amplitude_battle_item_eat_starfait = 0;
 global.anti_amplitude_monster_encounter = 0;
-global.anti_amplitude_omegaflowey_battle_sound_17 = snd_ceroba_staff_lock;
+global.anti_amplitude_omegaflowey_battle_sound_17 = 0;
 global.anti_amplitude_sans_battle_gasterblaster_charge = 0;
 global.anti_amplitude_sans_battle_pound = 0;
 global.anti_amplitude_soul_mettaton_hit_2 = 0;

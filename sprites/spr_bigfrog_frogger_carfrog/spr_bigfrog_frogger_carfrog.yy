@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8504bd77-f012-4bac-a51b-48015b083d1b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d0aa13a2-15cb-4f31-8d8f-daabe8f236ad",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"938e6581-74e1-4725-9d16-db3af971d651",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6b972b24-ce34-47bd-852a-d68119f59f7d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 26,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cefb8230-6353-46db-90c6-15a9101367e9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e929dc79-f69f-48ee-ad50-5fa26c9dab54","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8504bd77-f012-4bac-a51b-48015b083d1b","path":"sprites/spr_bigfrog_frogger_carfrog/spr_bigfrog_frogger_carfrog.yy",},},},"Disabled":false,"id":"febf4693-85b3-4131-a92b-757ea8089d2a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d0aa13a2-15cb-4f31-8d8f-daabe8f236ad","path":"sprites/spr_bigfrog_frogger_carfrog/spr_bigfrog_frogger_carfrog.yy",},},},"Disabled":false,"id":"146d241f-5240-435c-bd71-8e4b49d03523","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"938e6581-74e1-4725-9d16-db3af971d651","path":"sprites/spr_bigfrog_frogger_carfrog/spr_bigfrog_frogger_carfrog.yy",},},},"Disabled":false,"id":"631c430f-cf3d-4630-870d-8cddb627a69d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6b972b24-ce34-47bd-852a-d68119f59f7d","path":"sprites/spr_bigfrog_frogger_carfrog/spr_bigfrog_frogger_carfrog.yy",},},},"Disabled":false,"id":"3e74239f-3258-40bd-bb81-04b525c57ef7","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

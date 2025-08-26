@@ -33,11 +33,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Well done, Clover! That#  stuff might just melt#  the lock!";
             message[1] = "* Make sure to be extra#  careful handling it!";
-            prt[0] = 348;
-            prt[1] = 357;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_worried;
         }
         
         break;
@@ -47,7 +47,7 @@ switch (scene)
         break;
     
     case 5:
-        if (cutscene_npc_action_sprite_reverse(3194, 242, 0.15, true, 0))
+        if (cutscene_npc_action_sprite_reverse(obj_flowey_npc, spr_floweyrise, 0.15, true, 0))
         {
             global.sworks_flag[25] = 4;
             instance_destroy(obj_flowey_npc);

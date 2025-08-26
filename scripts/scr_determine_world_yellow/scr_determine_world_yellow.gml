@@ -1,8 +1,6 @@
 function scr_determine_world_yellow()
 {
-    var current_world_value;
-    
-    current_world_value = global.player_world_value;
+    var current_world_value = global.player_world_value;
     
     switch (current_world_value)
     {

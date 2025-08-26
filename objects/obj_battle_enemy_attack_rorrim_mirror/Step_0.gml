@@ -1,5 +1,3 @@
-var random_sound;
-
 if (instance_exists(obj_heart_battle_fighting_parent))
 {
     if (image_alpha < 1 && can_move == false)
@@ -31,7 +29,7 @@ if (instance_exists(obj_heart_battle_fighting_parent))
             instance_create(x, y, obj_battle_enemy_attack_rorrim_mirror_shard);
             instance_create(x, y, obj_battle_enemy_attack_rorrim_mirror_shard);
             instance_create(x, y, obj_battle_enemy_attack_rorrim_mirror_shard);
-            random_sound = irandom_range(0, 2);
+            var random_sound = irandom_range(0, 2);
             
             switch (random_sound)
             {

@@ -1,8 +1,6 @@
 function scr_battle_core_directory_action_1_selected_event()
 {
-    var event_check, enemy_count, act_number;
-    
-    event_check = false;
+    var event_check = false;
     
     if (game_mode == "customs")
     {
@@ -139,7 +137,7 @@ function scr_battle_core_directory_action_1_selected_event()
         {
             if (global.action_1_selected_count < 3)
             {
-                enemy_count = global.enemy_count;
+                var enemy_count = global.enemy_count;
                 
                 if (enemy_count == 3)
                 {
@@ -764,7 +762,7 @@ function scr_battle_core_directory_action_1_selected_event()
     
     if (event_check == true)
     {
-        act_number = global.act_number;
+        var act_number = global.act_number;
         
         switch (act_number)
         {

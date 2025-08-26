@@ -1,4 +1,4 @@
-function sound_exists(argument0)
+function sound_exists(arg0)
 {
-    return audio_exists(argument0);
+    return audio_exists(arg0);
 }

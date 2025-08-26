@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2627e900-da54-4ef2-a9f6-5c8a8835ad17",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"129d42b7-cdaa-43a5-9cf3-40b7dfd5fefd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f4e64be4-3311-4ca3-aee8-b8d02da808dc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d19eaa56-bdfc-46a7-bba7-183f46415442",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 68,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"611a4aa0-c9c7-44ec-ba40-9c8119ca0689","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"15112c60-0061-47c1-aecc-f34295e3dd9e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2627e900-da54-4ef2-a9f6-5c8a8835ad17","path":"sprites/spr_martlet_head_spook_battle/spr_martlet_head_spook_battle.yy",},},},"Disabled":false,"id":"6771592d-7034-4156-b633-76f11e1003d6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"129d42b7-cdaa-43a5-9cf3-40b7dfd5fefd","path":"sprites/spr_martlet_head_spook_battle/spr_martlet_head_spook_battle.yy",},},},"Disabled":false,"id":"263601cf-e558-4a58-ac05-ef4f6c70a710","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f4e64be4-3311-4ca3-aee8-b8d02da808dc","path":"sprites/spr_martlet_head_spook_battle/spr_martlet_head_spook_battle.yy",},},},"Disabled":false,"id":"084fc96d-eca8-4111-84dd-991c92e01db8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d19eaa56-bdfc-46a7-bba7-183f46415442","path":"sprites/spr_martlet_head_spook_battle/spr_martlet_head_spook_battle.yy",},},},"Disabled":false,"id":"da35732f-d747-4fce-8fe4-14f5bf1d9659","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "GeneralUse",
+    "path": "texturegroups/GeneralUse",
   },
   "type": 0,
   "VTile": false,

@@ -1,11 +1,9 @@
-var actor_martlet;
-
 event_inherited();
 
 if (live_call())
     return global.live_result;
 
-actor_martlet = object_index;
+var actor_martlet = object_index;
 
 if (global.dunes_flag_ext[4] == 0)
 {
@@ -32,10 +30,10 @@ if (global.dunes_flag_ext[4] == 0)
                 message[1] = "* I knew I could count on#  you!";
                 message[2] = "* So, me getting out of#  here...";
                 message[3] = "* Any luck?";
-                prt[0] = 333;
-                prt[1] = 318;
-                prt[2] = 320;
-                prt[3] = 320;
+                prt[0] = spr_martlet_head_surprised;
+                prt[1] = spr_martlet_head_happy;
+                prt[2] = spr_martlet_head_melancholic;
+                prt[3] = spr_martlet_head_melancholic;
                 ch_msg = 3;
                 ch[1] = "Soon";
                 ch[2] = "No, sorry";
@@ -45,9 +43,9 @@ if (global.dunes_flag_ext[4] == 0)
                     message[4] = "* Let's hope!";
                     message[5] = "* Thanks for being#  positive. This is super#  ridiculous.";
                     message[6] = "* Anyway...";
-                    prt[4] = 317;
-                    prt[5] = 320;
-                    prt[6] = 321;
+                    prt[4] = spr_martlet_head_downer;
+                    prt[5] = spr_martlet_head_melancholic;
+                    prt[6] = spr_martlet_head_moderate;
                 }
                 
                 if (outcome == 2)
@@ -55,9 +53,9 @@ if (global.dunes_flag_ext[4] == 0)
                     message[4] = "* It's OK. I knew it would#  be difficult.";
                     message[5] = "* This is infuriating.";
                     message[6] = "* Anyway...";
-                    prt[4] = 317;
-                    prt[5] = 315;
-                    prt[6] = 321;
+                    prt[4] = spr_martlet_head_downer;
+                    prt[5] = spr_martlet_head_disappointed;
+                    prt[6] = spr_martlet_head_moderate;
                 }
             }
             
@@ -84,14 +82,14 @@ else if (scene > 0)
                 talker[0] = actor_martlet;
                 message[0] = "* I've been wondering how#  this situation will#  affect my job.";
                 message[1] = "* Oh, that's right! I#  still have my handbook!";
-                prt[0] = 317;
-                prt[1] = 333;
+                prt[0] = spr_martlet_head_downer;
+                prt[1] = spr_martlet_head_surprised;
             }
             
             break;
         
         case 2:
-            cutscene_npc_action_sprite(object_index, 874, 0.3, true, 0);
+            cutscene_npc_action_sprite(object_index, spr_martlet_book, 0.3, true, 0);
             break;
         
         case 3:
@@ -107,19 +105,19 @@ else if (scene > 0)
                 message[4] = "* Failure to do so...\"";
                 message[5] = "* ...";
                 message[6] = "* Oh...";
-                prt[0] = 334;
-                prt[1] = 324;
-                prt[2] = 324;
-                prt[3] = 323;
-                prt[4] = 330;
-                prt[5] = 330;
-                prt[6] = 332;
+                prt[0] = spr_martlet_head_suspicious;
+                prt[1] = spr_martlet_head_questioning;
+                prt[2] = spr_martlet_head_questioning;
+                prt[3] = spr_martlet_head_nervous_smile;
+                prt[4] = spr_martlet_head_shocked;
+                prt[5] = spr_martlet_head_shocked;
+                prt[6] = spr_martlet_head_spook;
             }
             
             break;
         
         case 4:
-            cutscene_npc_action_sprite_reverse(object_index, 874, 0.3, false);
+            cutscene_npc_action_sprite_reverse(object_index, spr_martlet_book, 0.3, false);
             break;
         
         case 5:
@@ -129,7 +127,7 @@ else if (scene > 0)
             {
                 talker[0] = actor_martlet;
                 message[0] = "* Let's just say the#  book wasn't very#  helpful.";
-                prt[0] = 323;
+                prt[0] = spr_martlet_head_nervous_smile;
             }
             
             break;
@@ -164,7 +162,7 @@ if (waiter == 1)
                 message[4] = "* Knowing that, I don't#  think force will do much#  good.";
                 message[5] = "* There's gotta be a#  level-headed monster#  around here.";
                 message[6] = "* One that knows this is#  unjust and will free me.";
-                message[7] = "* When that time comes#  I'll...";
+                message[7] = "* When that time comes#  I'll... I'll...";
                 message[8] = "* Who am I kidding? I#  couldn't press charges#  or ANYTHING!";
                 message[9] = "* I talk big but we're#  cornered.";
                 message[10] = "* ASGORE or another guard#  finding out about you#  would be the end.";
@@ -174,23 +172,23 @@ if (waiter == 1)
                 message[14] = "* I don't know... just#  play it cool for now. ";
                 message[15] = "* I'll be here... ";
                 message[16] = "* Ugh. What a day.";
-                prt[0] = 308;
-                prt[1] = 308;
-                prt[2] = 317;
-                prt[3] = 329;
-                prt[4] = 317;
-                prt[5] = 317;
-                prt[6] = 321;
-                prt[7] = 309;
-                prt[8] = 329;
-                prt[9] = 317;
-                prt[10] = 317;
-                prt[11] = 329;
-                prt[12] = 338;
-                prt[13] = 321;
-                prt[14] = 338;
-                prt[15] = 321;
-                prt[16] = 336;
+                prt[0] = spr_martlet_head_angrier;
+                prt[1] = spr_martlet_head_angrier;
+                prt[2] = spr_martlet_head_downer;
+                prt[3] = spr_martlet_head_sad;
+                prt[4] = spr_martlet_head_downer;
+                prt[5] = spr_martlet_head_downer;
+                prt[6] = spr_martlet_head_moderate;
+                prt[7] = spr_martlet_head_angry;
+                prt[8] = spr_martlet_head_sad;
+                prt[9] = spr_martlet_head_downer;
+                prt[10] = spr_martlet_head_downer;
+                prt[11] = spr_martlet_head_sad;
+                prt[12] = spr_martlet_head_wondering;
+                prt[13] = spr_martlet_head_moderate;
+                prt[14] = spr_martlet_head_wondering;
+                prt[15] = spr_martlet_head_moderate;
+                prt[16] = spr_martlet_head_unamused;
             }
             
             npc_flag = 1;
@@ -203,7 +201,7 @@ if (waiter == 1)
             {
                 talker[0] = actor_martlet;
                 message[0] = "* We'll make it through#  this, Clover. I know it!";
-                prt[0] = 320;
+                prt[0] = spr_martlet_head_melancholic;
             }
         }
     }
@@ -231,17 +229,17 @@ if (waiter == 1)
                 message[8] = "* I tried to talk to them#  when I first arrived but#  got no answers.";
                 message[9] = "* So now not only am I in#  jail, I have no cellmate#  to talk to.";
                 message[10] = "* All in all, this day is#  going fantastic for me.";
-                prt[0] = 336;
-                prt[1] = 338;
-                prt[2] = 336;
-                prt[3] = 318;
-                prt[4] = 317;
-                prt[5] = 321;
-                prt[6] = 324;
-                prt[7] = 321;
-                prt[8] = 321;
-                prt[9] = 329;
-                prt[10] = 336;
+                prt[0] = spr_martlet_head_unamused;
+                prt[1] = spr_martlet_head_wondering;
+                prt[2] = spr_martlet_head_unamused;
+                prt[3] = spr_martlet_head_happy;
+                prt[4] = spr_martlet_head_downer;
+                prt[5] = spr_martlet_head_moderate;
+                prt[6] = spr_martlet_head_questioning;
+                prt[7] = spr_martlet_head_moderate;
+                prt[8] = spr_martlet_head_moderate;
+                prt[9] = spr_martlet_head_sad;
+                prt[10] = spr_martlet_head_unamused;
             }
             
             npc_flag = 3;
@@ -257,10 +255,10 @@ if (waiter == 1)
                 message[1] = "* (So far they seem nice,#  so I'm gonna roll with#  it.)";
                 message[2] = "* Ahem! No thanks, Clover,#  I have food!";
                 message[3] = "* ...";
-                prt[0] = 321;
-                prt[1] = 328;
-                prt[2] = 312;
-                prt[3] = 337;
+                prt[0] = spr_martlet_head_moderate;
+                prt[1] = spr_martlet_head_regular;
+                prt[2] = spr_martlet_head_content;
+                prt[3] = spr_martlet_head_wink;
             }
             
             npc_flag = 4;
@@ -274,8 +272,8 @@ if (waiter == 1)
                 talker[0] = actor_martlet;
                 message[0] = "* Give me enough time and#  I'll think of a fourth#  molten rock puzzle!";
                 message[1] = "* At this rate, half of#  Snowdin will be molten#  rock puzzles!";
-                prt[0] = 313;
-                prt[1] = 313;
+                prt[0] = spr_martlet_head_determined;
+                prt[1] = spr_martlet_head_determined;
             }
         }
     }
@@ -300,9 +298,9 @@ if (waiter == 1)
                 message[0] = "* On the bright side,";
                 message[1] = "* I now have some#  not-so-light reading#  material!";
                 message[2] = "* Gotta get cracking!";
-                prt[0] = 328;
-                prt[1] = 312;
-                prt[2] = 328;
+                prt[0] = spr_martlet_head_regular;
+                prt[1] = spr_martlet_head_content;
+                prt[2] = spr_martlet_head_regular;
             }
             
             npc_flag = 7;
@@ -315,7 +313,7 @@ if (waiter == 1)
             {
                 talker[0] = actor_martlet;
                 message[0] = "* Keep at it, Clover,#  cause I'm not going#  anywhere.";
-                prt[0] = 317;
+                prt[0] = spr_martlet_head_downer;
             }
         }
     }
@@ -343,17 +341,17 @@ if (waiter == 1)
                 message[8] = "* I really need to get out#  soon, at this rate I'll#  start talking to myself.";
                 message[9] = "* ...";
                 message[10] = "* More than usual, anyway.";
-                prt[0] = 321;
-                prt[1] = 318;
-                prt[2] = 320;
-                prt[3] = 333;
-                prt[4] = 322;
-                prt[5] = 338;
-                prt[6] = 323;
-                prt[7] = 333;
-                prt[8] = 336;
-                prt[9] = 338;
-                prt[10] = 320;
+                prt[0] = spr_martlet_head_moderate;
+                prt[1] = spr_martlet_head_happy;
+                prt[2] = spr_martlet_head_melancholic;
+                prt[3] = spr_martlet_head_surprised;
+                prt[4] = spr_martlet_head_nervous;
+                prt[5] = spr_martlet_head_wondering;
+                prt[6] = spr_martlet_head_nervous_smile;
+                prt[7] = spr_martlet_head_surprised;
+                prt[8] = spr_martlet_head_unamused;
+                prt[9] = spr_martlet_head_wondering;
+                prt[10] = spr_martlet_head_melancholic;
             }
             
             npc_flag = 9;
@@ -367,8 +365,8 @@ if (waiter == 1)
                 talker[0] = actor_martlet;
                 message[0] = "* You've gotta hurry#  Clover, please!";
                 message[1] = "* At this rate, I'm gonna#  have to start eating#  moss off the walls!";
-                prt[0] = 329;
-                prt[1] = 322;
+                prt[0] = spr_martlet_head_sad;
+                prt[1] = spr_martlet_head_nervous;
             }
         }
     }
@@ -392,13 +390,13 @@ if (waiter == 1)
                 message[4] = "* You've gained his trust#  so maybe you could sort#  out the situation?";
                 message[5] = "* ...";
                 message[6] = "* And uh... We still#  need him to let me out#  of here... of course...";
-                prt[0] = 322;
-                prt[1] = 329;
-                prt[2] = 329;
-                prt[3] = 317;
-                prt[4] = 320;
-                prt[5] = 329;
-                prt[6] = 320;
+                prt[0] = spr_martlet_head_nervous;
+                prt[1] = spr_martlet_head_sad;
+                prt[2] = spr_martlet_head_sad;
+                prt[3] = spr_martlet_head_downer;
+                prt[4] = spr_martlet_head_melancholic;
+                prt[5] = spr_martlet_head_sad;
+                prt[6] = spr_martlet_head_melancholic;
             }
             
             npc_flag = 11;
@@ -412,8 +410,8 @@ if (waiter == 1)
                 talker[0] = actor_martlet;
                 message[0] = "* You can do this Clover!";
                 message[1] = "* If you could convince#  this bird-brain, you can#  get through to him!";
-                prt[0] = 313;
-                prt[1] = 313;
+                prt[0] = spr_martlet_head_determined;
+                prt[1] = spr_martlet_head_determined;
             }
         }
     }

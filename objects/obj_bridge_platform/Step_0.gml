@@ -1,5 +1,3 @@
-var index;
-
 with (other)
 {
     if (global.snowdin_flag[11] == 1)
@@ -19,7 +17,7 @@ with (other)
         exit;
     }
     
-    index = floor(image_index);
+    var index = floor(image_index);
     
     if (place_meeting(x, y, obj_pl) && fall == false)
     {

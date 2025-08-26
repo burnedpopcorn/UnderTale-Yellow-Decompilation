@@ -23,4 +23,4 @@ charge_time_max = 30;
 is_charged = false;
 is_charging = false;
 charged_overlay_alpha = 0;
-charge_sound = snd_ceroba_staff_lock;
+charge_sound = 0;

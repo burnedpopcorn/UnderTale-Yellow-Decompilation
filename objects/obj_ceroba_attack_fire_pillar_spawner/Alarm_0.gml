@@ -1,13 +1,11 @@
-var battle_box, xx;
-
 if (live_call())
     return global.live_result;
 
 if (attack_stop)
     exit;
 
-battle_box = 3154;
-xx = 0;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var xx = 0;
 
 switch (spawn_pos)
 {

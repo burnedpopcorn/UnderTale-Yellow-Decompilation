@@ -1,5 +1,3 @@
-var direction_real, shoot_sound, can_trail;
-
 if (live_call())
     return global.live_result;
 
@@ -19,7 +17,7 @@ if (state == 0)
     else
         state++;
     
-    direction_real = direction + target_angle;
+    var direction_real = direction + target_angle;
     image_angle = direction_real;
 }
 else if (state == 1)
@@ -36,7 +34,7 @@ else if (state == 1)
     {
         if (can_play_sound)
         {
-            shoot_sound = audio_play_sound(snd_mart_feather_atk3, 20, 0);
+            var shoot_sound = audio_play_sound(snd_mart_feather_atk3, 20, 0);
             audio_sound_set_track_position(shoot_sound, 0.65);
         }
         
@@ -45,7 +43,7 @@ else if (state == 1)
 }
 else if (state == 2)
 {
-    can_trail = false;
+    var can_trail = false;
     trail_cc_current += 1;
     
     if (trail_cc_current >= trail_cc_max)

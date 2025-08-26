@@ -1,13 +1,11 @@
-var xx, xx2, yy2;
-
 draw_set_alpha(1 - alpha);
 draw_set_color(c_black);
 draw_rectangle(0, 0, 640, 480, false);
 draw_set_alpha(1);
 display_set_gui_size(640, 480);
-xx = room_width / 2;
-xx2 = 370;
-yy2 = yy + 320;
+var xx = room_width / 2;
+var xx2 = 370;
+var yy2 = yy + 320;
 draw_set_alpha(alpha);
 draw_sprite(spr_logo_undertale, 1, 320, yy);
 draw_sprite(logo_yellow, 1, 320, yy + 52);

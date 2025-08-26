@@ -1,7 +1,7 @@
 switch (scene)
 {
     case 0:
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             cutscene_advance();
         
         break;
@@ -12,7 +12,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_sfx_play(379, 1);
+        cutscene_sfx_play(snd_switch, 1);
         break;
     
     case 3:
@@ -30,7 +30,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_sfx_play(384, 1);
+        cutscene_sfx_play(snd_undertale_thud, 1);
         break;
     
     case 6:

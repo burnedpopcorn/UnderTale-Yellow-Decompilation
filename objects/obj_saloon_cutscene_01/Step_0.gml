@@ -1,8 +1,6 @@
-var starlo, ed, ceroba;
-
-starlo = 1169;
-ed = 1162;
-ceroba = 1929;
+var starlo = 1169;
+var ed = 1162;
+var ceroba = 1929;
 
 if (floor(starlo.y) >= 165)
 {
@@ -93,14 +91,14 @@ switch (scene)
         with (msg)
         {
             skippable = false;
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             position = 0;
             message[0] = "* Barkeep! ";
             message[1] = "* Growlers of icewater#  for the house on the#  Sheriff!";
             message[2] = "* I have an announcement#  to make!";
-            prt[0] = 417;
-            prt[1] = 417;
-            prt[2] = 422;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_normal;
+            prt[2] = spr_portrait_starlo_smile;
             other.message_timer -= 1;
             
             if (other.message_timer < 0)
@@ -269,10 +267,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = starlo;
             message[0] = "* This 'lil' feller 'ere#  is Clover.";
-            prt[0] = 417;
+            prt[0] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)
@@ -295,12 +293,12 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             talker[0] = ceroba;
             message[0] = "* Hey, Star.";
             message[1] = "* What the hell are you#  doing bringing a human#  in here?";
-            prt[0] = 370;
-            prt[1] = 394;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_disapproving;
         }
         
         if (!global.dialogue_open)
@@ -316,17 +314,17 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             position = 0;
             talker[0] = starlo;
             message[0] = "* (Ceroba shush!)";
             message[1] = "* Now I know what ye're#  all thinkin'.";
             message[2] = "* But trust me, Clover#  here ain't no greenhorn!";
             message[3] = "* They know what they're#  doin'. Just look at that#  hat!";
-            prt[0] = 412;
-            prt[1] = 419;
-            prt[2] = 417;
-            prt[3] = 417;
+            prt[0] = spr_portrait_starlo_embarassed_smile;
+            prt[1] = spr_portrait_starlo_point;
+            prt[2] = spr_portrait_starlo_normal;
+            prt[3] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)
@@ -351,13 +349,13 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             position = 1;
             talker[0] = ceroba;
             message[0] = "* Actually, this could be#  fun.";
             message[1] = "* Dina! Hit me!";
-            prt[0] = 395;
-            prt[1] = 372;
+            prt[0] = spr_portrait_ceroba_snarky;
+            prt[1] = spr_portrait_ceroba_smile;
         }
         
         if (!global.dialogue_open)
@@ -385,13 +383,13 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             position = 0;
             talker[0] = starlo;
             message[0] = "* Alright, no more#  hecklin' from the crowd!";
             message[1] = "* Ahem.";
-            prt[0] = 419;
-            prt[1] = 415;
+            prt[0] = spr_portrait_starlo_point;
+            prt[1] = spr_portrait_starlo_hidden;
         }
         
         if (!global.dialogue_open)
@@ -414,13 +412,13 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             position = 0;
             talker[0] = starlo;
             message[0] = "* Ladies and#  gentlemonsters, as#  Ceroba said...";
             message[1] = "* Clover is a HUMAN.";
-            prt[0] = 421;
-            prt[1] = 419;
+            prt[0] = spr_portrait_starlo_serious;
+            prt[1] = spr_portrait_starlo_point;
         }
         
         if (!global.dialogue_open)
@@ -461,17 +459,17 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             position = 0;
             talker[0] = starlo;
             message[0] = "* I know, excitin' stuff.#  A real honor!";
             message[1] = "* Now, I would let Clover#  tell y'all all about#  their life...";
             message[2] = "* But I've been#  studyin' up.";
             message[3] = "* I'm a bit of a human#  expert if ya didn't#  know.";
-            prt[0] = 417;
-            prt[1] = 419;
-            prt[2] = 415;
-            prt[3] = 412;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_point;
+            prt[2] = spr_portrait_starlo_hidden;
+            prt[3] = spr_portrait_starlo_embarassed_smile;
         }
         
         if (!global.dialogue_open)
@@ -484,11 +482,11 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             position = 1;
             talker[0] = ceroba;
             message[0] = "* Oh great, here we go.";
-            prt[0] = 377;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
         }
         
         if (!global.dialogue_open)
@@ -501,13 +499,13 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             position = 0;
             talker[0] = starlo;
             message[0] = "* Here we go indeed!";
             message[1] = "* Did ya know that humans#  use monsters fer#  transportation?";
-            prt[0] = 422;
-            prt[1] = 419;
+            prt[0] = spr_portrait_starlo_smile;
+            prt[1] = spr_portrait_starlo_point;
         }
         
         if (!global.dialogue_open)
@@ -549,15 +547,15 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = starlo;
             position = 0;
             message[0] = "* It's true!";
             message[1] = "* Large, four-legged#  monsters!";
             message[2] = "* They put a seat on the#  top of 'em and#  everythin'!";
-            prt[0] = 424;
-            prt[1] = 417;
-            prt[2] = 417;
+            prt[0] = spr_portrait_starlo_smirk;
+            prt[1] = spr_portrait_starlo_normal;
+            prt[2] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)
@@ -570,11 +568,11 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             position = 1;
             talker[0] = ceroba;
             message[0] = "* They're called \"horses\",#  Star.";
-            prt[0] = 382;
+            prt[0] = spr_portrait_ceroba_muttering;
         }
         
         if (!global.dialogue_open)
@@ -587,11 +585,11 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             position = 0;
             talker[0] = starlo;
             message[0] = "* Ah, so you know one of#  'em personally? That's#  quite impressive!";
-            prt[0] = 426;
+            prt[0] = spr_portrait_starlo_surprised;
         }
         
         if (!global.dialogue_open)
@@ -604,11 +602,11 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             position = 1;
             talker[0] = ceroba;
             message[0] = "* ...";
-            prt[0] = 384;
+            prt[0] = spr_portrait_ceroba_unamused;
         }
         
         if (!global.dialogue_open)
@@ -621,15 +619,15 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             position = 0;
             talker[0] = starlo;
             message[0] = "* Did ya also know that#  humans are FIREPROOF?";
             message[1] = "* When they're feelin'#  accomplished,";
             message[2] = "* They ride monsters#  STRAIGHT into a huge,#  fiery sphere!";
-            prt[0] = 424;
-            prt[1] = 421;
-            prt[2] = 419;
+            prt[0] = spr_portrait_starlo_smirk;
+            prt[1] = spr_portrait_starlo_serious;
+            prt[2] = spr_portrait_starlo_point;
         }
         
         if (!global.dialogue_open)
@@ -648,15 +646,15 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             position = 1;
             talker[0] = ceroba;
             message[0] = "* So the \"monsters\" burn,#  right?";
             message[1] = "* Most monsters aren't#  fireproof.";
             message[2] = "* Star, are you saying my#  friend Horses was killed#  by a fiery sphere?";
-            prt[0] = 370;
-            prt[1] = 377;
-            prt[2] = 393;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_closed_eyes;
+            prt[2] = spr_portrait_ceroba_surprised;
         }
         
         if (!global.dialogue_open)
@@ -669,15 +667,15 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             position = 0;
             talker[0] = starlo;
             message[0] = "* No! Um, well... I'm not#  quite sure.";
             message[1] = "* I'll ask Clover!";
             message[2] = "* Do the monsters die?";
-            prt[0] = 428;
-            prt[1] = 417;
-            prt[2] = 407;
+            prt[0] = spr_portrait_starlo_sweat;
+            prt[1] = spr_portrait_starlo_normal;
+            prt[2] = spr_portrait_starlo_distracted;
             ch_msg = 2;
             ch[1] = "Yes?";
             ch[2] = "No?";
@@ -686,22 +684,22 @@ switch (scene)
             {
                 message[3] = "* Then I regret sharin'#  that fact.";
                 message[4] = "* Pretend I never said#  nothin'.";
-                prt[3] = 428;
-                prt[4] = 412;
+                prt[3] = spr_portrait_starlo_sweat;
+                prt[4] = spr_portrait_starlo_embarassed_smile;
             }
             
             if (outcome == 2)
             {
                 message[3] = "* See?";
                 message[4] = "* Everyone's fireproof!";
-                prt[3] = 422;
-                prt[4] = 424;
+                prt[3] = spr_portrait_starlo_smile;
+                prt[4] = spr_portrait_starlo_smirk;
             }
             
             message[5] = "* Anyways...";
             message[6] = "* Did ya know tha-";
-            prt[5] = 417;
-            prt[6] = 419;
+            prt[5] = spr_portrait_starlo_normal;
+            prt[6] = spr_portrait_starlo_point;
         }
         
         if (!global.dialogue_open)
@@ -714,13 +712,13 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             position = 1;
             talker[0] = ceroba;
             message[0] = "* Look, Star, you don't#  need to keep this up.";
             message[1] = "* ...Because it's all#  true. Every word.";
-            prt[0] = 377;
-            prt[1] = 395;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_snarky;
         }
         
         if (!global.dialogue_open)
@@ -733,13 +731,13 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             position = 0;
             talker[0] = starlo;
             message[0] = "* Ha! I knew it!";
             message[1] = "* I'm pretty darn good#  aren't I?";
-            prt[0] = 417;
-            prt[1] = 424;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_smirk;
         }
         
         if (!global.dialogue_open)
@@ -782,15 +780,15 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             position = 0;
             talker[0] = starlo;
             message[0] = "* Haha.";
             message[1] = "* Well I reckon we're done#  here.";
             message[2] = "* Y'all can go back to yer#  daily lives fer now!";
-            prt[0] = 413;
-            prt[1] = 417;
-            prt[2] = 417;
+            prt[0] = spr_portrait_starlo_flustered;
+            prt[1] = spr_portrait_starlo_normal;
+            prt[2] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)
@@ -812,7 +810,7 @@ switch (scene)
             ceroba.image_index = 0;
             timer = 30;
             scene++;
-            scr_audio_fade_out(173, 1500);
+            scr_audio_fade_out(mus_a_new_partner, 1500);
         }
         
         break;
@@ -848,7 +846,7 @@ switch (scene)
                 ceroba.image_alpha = 0;
                 other.timer = 30;
                 other.scene++;
-                scr_audio_fade_out(173, 1000);
+                scr_audio_fade_out(mus_a_new_partner, 1000);
             }
         }
         
@@ -863,7 +861,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             position = 0;
             talker[0] = starlo;
             message[0] = "* As for you, Clover, it's#  'bout time you see what#  this town has to offer!";
@@ -872,12 +870,12 @@ switch (scene)
             message[3] = "* Take yer time explorin',#  talk to the townsfolk,#  and enjoy yerself.";
             message[4] = "* I'll be waitin' here#  for ya.";
             message[5] = "* Give me a shout when#  ye're ready to start#  trainin'!";
-            prt[0] = 417;
-            prt[1] = 407;
-            prt[2] = 417;
-            prt[3] = 417;
-            prt[4] = 417;
-            prt[5] = 417;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_distracted;
+            prt[2] = spr_portrait_starlo_normal;
+            prt[3] = spr_portrait_starlo_normal;
+            prt[4] = spr_portrait_starlo_normal;
+            prt[5] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)

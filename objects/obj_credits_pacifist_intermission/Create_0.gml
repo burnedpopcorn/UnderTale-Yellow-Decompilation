@@ -1,5 +1,3 @@
-var actor_martlet;
-
 if (live_call())
     return global.live_result;
 
@@ -14,7 +12,7 @@ end_card_alpha = 1;
 the_end_text_alpha = 0;
 hat_card_alpha = 0;
 draw_alpha_white = 0;
-actor_martlet = instance_create_depth(130, 130, 0, obj_martlet_npc);
+var actor_martlet = instance_create_depth(130, 130, 0, obj_martlet_npc);
 actor_martlet.action_sprite = true;
 actor_martlet.sprite_index = spr_credits_intermission_martlet_adjust;
 actor_martlet.image_speed = 1;
@@ -28,7 +26,7 @@ credits_entry_one[2] = "Sunsetbyplane";
 credits_entry_one[3] = "LeopardBunny";
 credits_entry_one[4] = "Evan Smith";
 credits_entry_one[5] = "Saltydkdan";
-credits_entry_one[6] = "Bubble-tea-dreams";
+credits_entry_one[6] = "Bubbled-tea-dreams";
 credits_entry_one[7] = "Sr. Pelo";
 credits_entry_one[8] = "Frigadae";
 credits_entry_one[9] = "TheKameru";
@@ -82,7 +80,7 @@ credits_entry_two[20] = "Fatz";
 credits_entry_two[21] = "Norin";
 credits_entry_two[22] = "LegitimateNoodle";
 credits_entry_two[23] = "Shayy";
-credits_entry_two[24] = "Rynogg";
+credits_entry_two[24] = "VyletBunni";
 credits_entry_two[25] = "Easynam";
 credits_entry_two[26] = "Nightmargin";
 credits_entry_two[27] = "YellowAfterlife";

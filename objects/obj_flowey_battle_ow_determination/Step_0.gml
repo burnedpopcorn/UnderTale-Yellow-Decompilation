@@ -1,9 +1,7 @@
-var cymbal;
-
 if (live_call())
     return global.live_result;
 
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     fade_out = true;
     scr_cutscene_start();
@@ -13,7 +11,7 @@ if (scr_interact() && keyboard_multicheck_pressed(0))
     if (global.current_hp_self < global.max_hp_self)
         global.current_hp_self = global.max_hp_self;
     
-    cymbal = audio_play_sound(113, 1, 0, 0, 3);
+    var cymbal = audio_play_sound(113, 1, 0, 0, 3);
     audio_sound_gain(cymbal, 1, 500);
 }
 

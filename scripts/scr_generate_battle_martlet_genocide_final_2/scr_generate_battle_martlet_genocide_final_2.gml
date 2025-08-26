@@ -1,7 +1,5 @@
 function scr_generate_battle_martlet_genocide_final_2()
 {
-    var martlet_body;
-    
     if (live_call())
         return global.live_result;
     
@@ -65,7 +63,7 @@ function scr_generate_battle_martlet_genocide_final_2()
     audio_extend = false;
     global.sound_carry_battle = false;
     global.mettaton_voice_count = 1;
-    martlet_body = instance_create_depth(340, 130, 100, obj_martlet_final_2_base);
+    var martlet_body = instance_create_depth(340, 130, 100, obj_martlet_final_2_base);
     
     with (martlet_body)
     {

@@ -1,9 +1,7 @@
 function scr_determine_important_cutscene_attacking()
 {
-    var game_mode, battle_enemy_name, enemy_mode;
-    
-    game_mode = global.game_mode;
-    battle_enemy_name = global.battle_enemy_name;
+    var game_mode = global.game_mode;
+    var battle_enemy_name = global.battle_enemy_name;
     
     if (global.game_mode == "customs")
     {
@@ -17,7 +15,7 @@ function scr_determine_important_cutscene_attacking()
                 break;
             
             case "martlet pacifist":
-                enemy_mode = global.enemy_mode;
+                var enemy_mode = global.enemy_mode;
                 
                 switch (enemy_mode)
                 {
@@ -34,7 +32,7 @@ function scr_determine_important_cutscene_attacking()
                 break;
             
             case "martlet genocide":
-                enemy_mode = global.enemy_mode;
+                var enemy_mode = global.enemy_mode;
                 
                 switch (enemy_mode)
                 {

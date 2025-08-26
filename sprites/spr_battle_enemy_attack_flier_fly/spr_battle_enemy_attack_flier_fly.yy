@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b70fac6-f609-417a-b1e8-c8a251a0d846",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0072c8f1-64bf-4c3d-b91d-186b404ba6d0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"89fb8680-5227-4e82-992a-bca8e62d5c47",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"650a84c7-594d-40bb-b486-ace97c8e4b8e",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 12,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a6e7d0cb-4f0b-4bff-9c44-61c65b8b0152","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e215a4d9-4ce2-43ee-8781-5428cde267d6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b70fac6-f609-417a-b1e8-c8a251a0d846","path":"sprites/spr_battle_enemy_attack_flier_fly/spr_battle_enemy_attack_flier_fly.yy",},},},"Disabled":false,"id":"721ed6e2-4edb-4c26-924e-a13476797faa","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0072c8f1-64bf-4c3d-b91d-186b404ba6d0","path":"sprites/spr_battle_enemy_attack_flier_fly/spr_battle_enemy_attack_flier_fly.yy",},},},"Disabled":false,"id":"e4f76ae1-6fd9-4855-91c6-570c85ff5065","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"89fb8680-5227-4e82-992a-bca8e62d5c47","path":"sprites/spr_battle_enemy_attack_flier_fly/spr_battle_enemy_attack_flier_fly.yy",},},},"Disabled":false,"id":"79b1770f-bec2-4ec0-b9d1-34009745c646","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"650a84c7-594d-40bb-b486-ace97c8e4b8e","path":"sprites/spr_battle_enemy_attack_flier_fly/spr_battle_enemy_attack_flier_fly.yy",},},},"Disabled":false,"id":"e9d09088-48c8-476d-9251-895901d7209e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleRuins",
+    "path": "texturegroups/BattleRuins",
   },
   "type": 0,
   "VTile": false,

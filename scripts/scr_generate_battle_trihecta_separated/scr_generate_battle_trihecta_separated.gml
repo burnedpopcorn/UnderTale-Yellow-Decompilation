@@ -1,8 +1,6 @@
 function scr_generate_battle_trihecta_separated()
 {
-    var battle_phase_step, new_current_hp;
-    
-    battle_phase_step = global.battle_phase_step;
+    var battle_phase_step = global.battle_phase_step;
     global.battle_enemy_name_1 = "tri";
     global.battle_enemy_name_2 = "hec";
     global.battle_enemy_name_3 = "ta";
@@ -24,7 +22,7 @@ function scr_generate_battle_trihecta_separated()
         global.hurt_self = false;
     }
     
-    new_current_hp = max(1, floor(global.current_hp_enemy / 3));
+    var new_current_hp = max(1, floor(global.current_hp_enemy / 3));
     global.current_hp_enemy = 60;
     global.current_hp_enemy_2 = 60;
     global.current_hp_enemy_3 = 60;
@@ -102,13 +100,13 @@ function scr_generate_battle_trihecta_separated()
     global.action_3_important_3 = false;
     global.action_1_color = c_white;
     global.action_1_color_2 = c_white;
-    global.action_1_color_3 = c_white;
+    global.action_1_color_3 = 16777215;
     global.action_2_color = c_white;
     global.action_2_color_2 = c_white;
-    global.action_2_color_3 = c_white;
+    global.action_2_color_3 = 16777215;
     global.action_3_color = c_white;
     global.action_3_color_2 = c_white;
-    global.action_3_color_3 = c_white;
+    global.action_3_color_3 = 16777215;
     global.action_amount = 1;
     global.action_amount_2 = 1;
     global.action_amount_3 = 1;

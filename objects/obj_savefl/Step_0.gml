@@ -1,8 +1,6 @@
-var current_world_value;
-
 depth = -y;
 
-if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == 96)
+if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == sndfnt_flowey)
 {
     if (obj_dialogue.cutoff == string_length(obj_dialogue.message[obj_dialogue.message_current]))
     {
@@ -45,9 +43,9 @@ if (waiter == 1)
         
         with (msg)
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "* Welcome back!";
-            prt[0] = 348;
+            prt[0] = flowey_nice;
         }
         
         if (!global.dialogue_open)
@@ -65,7 +63,7 @@ if (waiter == 1)
     }
     else
     {
-        current_world_value = scr_determine_world_value_yellow();
+        var current_world_value = scr_determine_world_value_yellow();
         
         switch (current_world_value)
         {
@@ -96,7 +94,7 @@ if (waiter == 1)
 
 if (!instance_exists(obj_dialogue) && waiter == 2)
 {
-    box = instance_create(__view_get(e__VW.XView, 0) + 160, __view_get(e__VW.YView, obj_quote_battle_ceroba_outro_4) + 120, obj_savebox);
+    box = instance_create(__view_get(e__VW.XView, 0) + 160, __view_get(e__VW.YView, 0) + 120, obj_savebox);
     audio_play_sound(snd_mainmenu_select, 1, 0);
     waiter = 3;
 }

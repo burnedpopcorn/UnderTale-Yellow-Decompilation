@@ -1,9 +1,7 @@
 function scr_dialogue_battle_action_selected_action_1_frostermit_a()
 {
-    var action_1_selected_count, enemy_mode;
-    
-    action_1_selected_count = global.action_1_selected_count;
-    enemy_mode = global.enemy_mode;
+    var action_1_selected_count = global.action_1_selected_count;
+    var enemy_mode = global.enemy_mode;
     
     if (enemy_mode == 0)
     {

@@ -1,9 +1,7 @@
-var narrator, i;
-
 switch (scene)
 {
     case 0:
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
         {
             if (global.route == 3)
             {
@@ -11,7 +9,7 @@ switch (scene)
                 {
                     if (!instance_exists(obj_dialogue_narrator))
                     {
-                        narrator = instance_create_depth(0, 0, -100, obj_dialogue_narrator);
+                        var narrator = instance_create_depth(0, 0, -100, obj_dialogue_narrator);
                         
                         with (narrator)
                             message[0] = "* (Not of interest.)";
@@ -43,7 +41,7 @@ switch (scene)
             }
             else
             {
-                for (i = 0; i < array_length(other.message); i++)
+                for (var i = 0; i < array_length(other.message); i++)
                     message[i] = other.message[i];
             }
         }

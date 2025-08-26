@@ -34,7 +34,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 
                 if (global.geno_complete[2] == false)
                 {
@@ -55,7 +55,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 
                 if (global.geno_complete[2] == false)
                 {
@@ -80,7 +80,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 
                 if (global.geno_complete[2] == false)
                 {

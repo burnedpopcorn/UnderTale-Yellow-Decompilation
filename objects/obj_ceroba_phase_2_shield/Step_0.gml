@@ -1,9 +1,7 @@
-var shield_health, fill_percentage_inc, collider_id, execute_destroy, default_alpha;
-
 if (live_call())
     return global.live_result;
 
-shield_health = 80;
+var shield_health = 80;
 
 switch (global.hotland_flag[2])
 {
@@ -29,8 +27,8 @@ switch (scene)
             exit;
         }
         
-        fill_percentage_inc = 1 / shield_health;
-        collider_id = instance_place(x, y, obj_heart_yellow_shot);
+        var fill_percentage_inc = 1 / shield_health;
+        var collider_id = instance_place(x, y, obj_heart_yellow_shot);
         
         if (collider_id != -4)
         {
@@ -150,7 +148,7 @@ switch (scene)
         break;
     
     case 9:
-        execute_destroy = true;
+        var execute_destroy = true;
         
         with (obj_ceroba_phase_2_bell)
         {
@@ -173,7 +171,7 @@ switch (scene)
         break;
 }
 
-default_alpha = 0;
+var default_alpha = 0;
 
 if (global.enemy_attacking == true && global.enemy_attack != "Ceroba Special Attack")
     default_alpha = 0.25;

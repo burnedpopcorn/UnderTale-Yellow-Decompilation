@@ -4,18 +4,14 @@
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 varying vec2 v_vPosition;
-
 uniform float time;
 uniform vec4 uvs;
 uniform sampler2D distort_texture;
-
 const float distort_str = .008;
-
 float map(float value, float min1, float max1, float min2, float max2){
 	float percentage = (value - min1) / (max1 - min1);
 	return percentage * (max2 - min2) + min2;
 }
-
 void main()
 {
 	//vectors, previously uniforms
@@ -31,9 +27,7 @@ void main()
 	vec2 distort;
 	distort.x = texture2D(distort_texture, fract(v_vPosition/distort_size.x + vec2(time * distort_speed.x, time * distort_speed.y))).x;
 	distort.y = texture2D(distort_texture, fract(v_vPosition/distort_size.y + vec2(time * distort_speed.z, time * distort_speed.w))).y;
-
 	funny += distort*distort_str;
-
 	//scroll
 	funny = mod((funny+time*scroll_speed), uv_size);		
 	

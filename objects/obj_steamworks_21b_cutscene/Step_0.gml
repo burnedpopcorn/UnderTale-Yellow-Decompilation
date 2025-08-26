@@ -9,7 +9,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             
             if (global.sworks_flag[12] == 0)
             {
@@ -17,15 +17,15 @@ switch (scene)
                 {
                     message[0] = "* STAY HERE WHILE I GET#  THE TALL LADY.";
                     message[1] = "* DO NOT TOUCH ANYTHING.";
-                    prt[0] = 473;
-                    prt[1] = 473;
+                    prt[0] = spr_portrait_axis_normal;
+                    prt[1] = spr_portrait_axis_normal;
                 }
                 else
                 {
                     message[0] = "* STAY HERE, I MUST GO#  BACK ON PATROL.";
                     message[1] = "* DO NOT TOUCH ANYTHING.";
-                    prt[0] = 473;
-                    prt[1] = 473;
+                    prt[0] = spr_portrait_axis_normal;
+                    prt[1] = spr_portrait_axis_normal;
                 }
             }
             else
@@ -33,9 +33,9 @@ switch (scene)
                 message[0] = "* DO YOU HAVE THE ABILITY#  TO COOPERATE?";
                 message[1] = "* OR ARE YOU TOYING WITH#  ME ON PURPOSE?";
                 message[2] = "* EITHER WAY, I AM#  STARTING TO [really]#  HATE YOU.";
-                prt[0] = 473;
-                prt[1] = 473;
-                prt[2] = 473;
+                prt[0] = spr_portrait_axis_normal;
+                prt[1] = spr_portrait_axis_normal;
+                prt[2] = spr_portrait_axis_normal;
             }
         }
         
@@ -46,7 +46,7 @@ switch (scene)
         break;
     
     case 3:
-        cutscene_npc_walk(1166, 160, 345, 3, "y", "down");
+        cutscene_npc_walk(obj_axis_npc, 160, 345, 3, "y", "down");
         break;
     
     case 4:
@@ -66,7 +66,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_sfx_play(384, 1);
+        cutscene_sfx_play(snd_undertale_thud, 1);
         break;
     
     case 6:

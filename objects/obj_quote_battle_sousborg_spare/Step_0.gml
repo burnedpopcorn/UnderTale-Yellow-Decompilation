@@ -1,7 +1,5 @@
-var message_adv, target_y;
-
 script_execute(scr_controls_text);
-message_adv = false;
+var message_adv = false;
 
 if (egg_eat == true)
 {
@@ -9,7 +7,7 @@ if (egg_eat == true)
     {
         with (obj_sousborg_perfectly_edible_egg)
         {
-            target_y = obj_sousborg_body_a.y - 85;
+            var target_y = obj_sousborg_body_a.y - 85;
             image_angle += 15;
             image_xscale = abs(y - target_y) / abs(ystart - target_y);
             image_yscale = image_xscale;

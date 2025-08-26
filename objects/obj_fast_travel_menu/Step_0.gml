@@ -1,9 +1,7 @@
-var item_number;
-
 if (live_call())
     return global.live_result;
 
-item_number = ds_list_size(global.fast_travel_list) - 1;
+var item_number = ds_list_size(global.fast_travel_list) - 1;
 
 if (global.down_keyp)
 {
@@ -72,7 +70,7 @@ switch (point_selected)
         break;
 }
 
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     if (global.fast_travel_newroom == room)
     {
@@ -85,7 +83,7 @@ if (keyboard_multicheck_pressed(0))
     instance_destroy();
 }
 
-if (keyboard_multicheck_pressed(1))
+if (keyboard_multicheck_pressed(vk_anykey))
 {
     global.fast_travel_point = "None";
     audio_play_sound(snd_fail, 1, 0);

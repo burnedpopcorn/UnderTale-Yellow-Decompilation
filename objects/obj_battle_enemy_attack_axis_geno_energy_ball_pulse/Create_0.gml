@@ -1,11 +1,9 @@
-var battle_box, heart;
-
 if (live_call())
     return global.live_result;
 
 damage_number = scr_determine_damage_number_enemy("axis", "void", "void");
-battle_box = 3154;
-heart = obj_heart_battle_fighting_parent;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var heart = obj_heart_battle_fighting_parent;
 image_index = 0;
 image_alpha = 0;
 image_speed_base = 3;

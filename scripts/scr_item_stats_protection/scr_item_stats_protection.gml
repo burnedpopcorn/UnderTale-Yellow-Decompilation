@@ -1,6 +1,6 @@
-function scr_item_stats_protection(argument0)
+function scr_item_stats_protection(arg0)
 {
-    switch (argument0)
+    switch (arg0)
     {
         case "G. Pear":
             return 2;

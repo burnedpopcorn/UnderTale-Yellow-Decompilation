@@ -1,5 +1,3 @@
-var sprite_name, mask_asset;
-
 if (live_call())
     return global.live_result;
 
@@ -13,13 +11,13 @@ if (!surface_exists(wing_surf))
 
 surface_set_target(wing_surf);
 draw_clear_alpha(c_black, 0);
-sprite_name = sprite_get_name(sprite_index) + "_mask";
-mask_asset = asset_get_index(sprite_name);
+var sprite_name = sprite_get_name(sprite_index) + "_mask";
+var mask_asset = asset_get_index(sprite_name);
 
 if (mask_asset != -1)
 {
     draw_sprite_ext(mask_asset, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
-    draw_set_blend_mode_ext(7, bm_inv_dest_alpha);
+    draw_set_blend_mode_ext(bm_dest_alpha, bm_inv_dest_alpha);
     draw_sprite_tiled(space_test, 0, 0, 0);
     draw_set_blend_mode(bm_normal);
 }

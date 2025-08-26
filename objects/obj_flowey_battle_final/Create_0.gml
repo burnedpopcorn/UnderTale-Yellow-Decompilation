@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -28,13 +26,13 @@ image_speed = 0;
 switch_timer = 25;
 stage_switch = -1;
 stage_current = 0;
-sprite_flowey[0] = spr_battle_flowey_gray_idle;
-sprite_flowey[1] = spr_battle_flowey_mechanical_idle;
-sprite_flowey[2] = spr_battle_flowey_lowpoly_flowey;
-sprite_flowey[3] = spr_battle_flowey_paper_flowey;
-sprite_flowey[4] = spr_battle_flowey_clay_flowey;
-sprite_flowey[5] = spr_battle_flowey_organic_flowey;
-sprite_flowey[6] = spr_battle_flowey_yarn_flowey;
+sprite_flowey[0] = 2807;
+sprite_flowey[1] = 3141;
+sprite_flowey[2] = 2974;
+sprite_flowey[3] = 3398;
+sprite_flowey[4] = 2242;
+sprite_flowey[5] = 2792;
+sprite_flowey[6] = 3586;
 music_flowey[0] = 171;
 music_flowey[1] = 585;
 music_flowey[2] = 637;
@@ -46,7 +44,7 @@ controller_flowey[0] = 56;
 controller_flowey[1] = 659;
 controller_flowey[2] = 707;
 controller_flowey[3] = 1709;
-controller_flowey[4] = 2938;
+controller_flowey[4] = 2939;
 controller_flowey[5] = 986;
 controller_flowey[6] = 446;
 petal_alive = [1, 1, 1, 1, 1, 1];
@@ -64,7 +62,7 @@ if (global.flowey_phase_2_noloop == true)
     {
         ini_open("tempsave.sav");
         
-        for (i = 0; i < array_length(petal_alive); i++)
+        for (var i = 0; i < array_length(petal_alive); i++)
             petal_alive[i] = ini_read_real("petal", string(i), 1);
         
         petal_count = ini_read_real("petal", "count", 6);

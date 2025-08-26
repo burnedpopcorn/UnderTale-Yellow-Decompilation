@@ -13,7 +13,7 @@ if (instance_exists(obj_dialogue) && talk == true)
     }
 }
 
-if (keyboard_multicheck_pressed(0) && scr_interact() == true)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true)
 {
     scr_text();
     talk = true;
@@ -24,7 +24,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* This new \"not hiding\" thing#  will take some getting used#  to. ";
                 message[1] = "* I wonder what kind of#  adventures I can go on#  now.";
             }
@@ -36,7 +36,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I could go out and solve#  the secrets of the entire#  Underground!";
                 message[1] = "* Meet every monster, brave#  every danger, see everything#  I can!";
                 message[2] = "* Maybe I'll even find#  a way back to the Surface!#* You never know!";
@@ -50,7 +50,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* You might wanna get a#  new hat. That one is#  looking a bit worn.";
             }
             

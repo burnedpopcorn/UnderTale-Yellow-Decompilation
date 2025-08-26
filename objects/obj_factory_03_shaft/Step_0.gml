@@ -51,30 +51,30 @@ switch (scene)
             {
                 position = 1;
                 ch_msg = 2;
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Ow...";
                 message[1] = "* I am so tired of this#  \"falling\" thing. ";
                 message[2] = "* How about you?";
-                prt[0] = 384;
-                prt[1] = 377;
-                prt[2] = 370;
+                prt[0] = spr_portrait_ceroba_unamused;
+                prt[1] = spr_portrait_ceroba_closed_eyes;
+                prt[2] = spr_portrait_ceroba_neutral;
                 ch[1] = "So\ntired...";
                 ch[2] = "Again!";
                 
                 if (outcome == 1)
                 {
                     message[3] = "* Like, can't gravity#  screw off every now and#  then? Seriously.";
-                    prt[3] = 377;
+                    prt[3] = spr_portrait_ceroba_closed_eyes;
                 }
                 
                 if (outcome == 2)
                 {
                     message[3] = "* Again??? You didn't#  hit your head just#  now, did you?";
-                    prt[3] = 381;
+                    prt[3] = spr_portrait_ceroba_nervous;
                 }
                 
                 message[4] = "* Sigh...";
-                prt[4] = 370;
+                prt[4] = spr_portrait_ceroba_neutral;
             }
         }
         else
@@ -82,16 +82,16 @@ switch (scene)
             with (msg)
             {
                 position = 1;
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Ugh...";
-                prt[0] = 370;
+                prt[0] = spr_portrait_ceroba_neutral;
             }
         }
         
         break;
     
     case 4:
-        cutscene_npc_reset_sprite(1161, "down");
+        cutscene_npc_reset_sprite(obj_ceroba_npc, "down");
         audio_play_sound(snd_playerjump, 1, 0);
         
         with (obj_ceroba_npc)
@@ -117,9 +117,9 @@ switch (scene)
             with (msg)
             {
                 position = 1;
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Come on, get up. We can#  do this.";
-                prt[0] = 370;
+                prt[0] = spr_portrait_ceroba_neutral;
             }
         }
         else
@@ -127,16 +127,16 @@ switch (scene)
             with (msg)
             {
                 position = 1;
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Gotta try again.";
-                prt[0] = 370;
+                prt[0] = spr_portrait_ceroba_neutral;
             }
         }
         
         break;
     
     case 7:
-        cutscene_npc_reset_sprite(1168, "down");
+        cutscene_npc_reset_sprite(obj_player_npc, "down");
         audio_play_sound(snd_playerjump, 1, 0);
         
         with (obj_player_npc)

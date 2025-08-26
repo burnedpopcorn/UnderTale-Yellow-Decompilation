@@ -1,13 +1,11 @@
-var i;
-
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     is_talking = true;
     scr_text();
     
     with (msg)
     {
-        i = array_length_1d(other.self_message) - 1;
+        var i = array_length_1d(other.self_message) - 1;
         
         while (i >= 0)
         {

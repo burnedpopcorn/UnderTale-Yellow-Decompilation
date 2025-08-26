@@ -39,7 +39,7 @@ else
             with (obj_sme_yellow_rhythm_generator)
             {
                 instance_create(obj_el_bailador_neutral.x, obj_el_bailador_neutral.y, obj_battle_enemy_attack_el_bailador_dance);
-                audio_restore = 0;
+                audio_restore = snd_ceroba_staff_lock;
                 scr_sme_yellow_rhythm_song_data_danza(511, other.finale_chart[0], other.finale_chart[1], 1.2, [521, 518, 515]);
                 note_sarray[array_length(note_sarray) - 1] = 523;
                 

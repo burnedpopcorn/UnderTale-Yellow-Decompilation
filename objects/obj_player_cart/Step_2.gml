@@ -1,7 +1,7 @@
 palette_index = obj_pl.palette_index;
 shader_on = obj_pl.shader_on;
 
-if (keyboard_multicheck_pressed(0) && scr_interact() && waiter == 0)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() && waiter == 0)
     waiter = 1;
 
 if (waiter == 1)
@@ -10,7 +10,7 @@ if (waiter == 1)
     
     with (msg)
     {
-        sndfnt_array[0] = 391;
+        sndfnt_array[0] = snd_talk_default;
         message[0] = "* (An empty cart sits#  on the rails.)";
         message[1] = "* (Hop in?)";
         ch_msg = 1;
@@ -22,8 +22,8 @@ if (waiter == 1)
             if (global.party_member != -4)
             {
                 message[2] = "* You takin' a ride? No#  worries! I'll catch up!";
-                prt[2] = 328;
-                sndfnt_array[2] = 102;
+                prt[2] = spr_martlet_head_regular;
+                sndfnt_array[2] = snd_talk_martlet;
             }
             
             other.waiter = 2;

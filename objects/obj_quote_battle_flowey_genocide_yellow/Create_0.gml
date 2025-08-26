@@ -1,6 +1,4 @@
-var current_world_value;
-
-current_world_value = script_execute(scr_determine_world_value_yellow);
+var current_world_value = script_execute(scr_determine_world_value_yellow);
 
 if (current_world_value == 1)
 {

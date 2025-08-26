@@ -2,7 +2,7 @@ if (live_call())
     return global.live_result;
 
 damage_number = scr_determine_damage_number_enemy("macro froggit", "void", "void");
-battle_box = 3154;
+battle_box = obj_dialogue_box_battle_transformation_any;
 attack_counter = 0;
 y_actual = y;
 y_offset = 5;

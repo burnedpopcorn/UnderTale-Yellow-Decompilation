@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e60a8ab2-2f06-42ee-bc49-b9951ec48987",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6c6e32d4-41f6-4dc8-a680-9c6eb73c78e2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ade4e15c-1545-4883-be19-541cdd8e22e0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c7366658-fa23-4cbb-8a23-adf035fc9b8f",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 7,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1048959c-9f68-4cfd-9da9-860c9b220cbb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6602a405-699b-4fd1-ab3b-2301ab617a12","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e60a8ab2-2f06-42ee-bc49-b9951ec48987","path":"sprites/spr_arcade_heart/spr_arcade_heart.yy",},},},"Disabled":false,"id":"90a037f9-f708-4413-aa01-7778bc71bda6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6c6e32d4-41f6-4dc8-a680-9c6eb73c78e2","path":"sprites/spr_arcade_heart/spr_arcade_heart.yy",},},},"Disabled":false,"id":"a56b1622-3abc-42b1-8c63-4f32053eeb27","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ade4e15c-1545-4883-be19-541cdd8e22e0","path":"sprites/spr_arcade_heart/spr_arcade_heart.yy",},},},"Disabled":false,"id":"21feb39f-8fba-484b-bf9a-b5bb08300f6f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c7366658-fa23-4cbb-8a23-adf035fc9b8f","path":"sprites/spr_arcade_heart/spr_arcade_heart.yy",},},},"Disabled":false,"id":"b2551c84-8607-4fd6-a4f1-9ff48acffaf1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Minigames",
+    "path": "texturegroups/Minigames",
   },
   "type": 0,
   "VTile": false,

@@ -6,8 +6,8 @@ if (!instance_exists(obj_heart_battle_fighting_parent))
 
 if (attack_direction == -1)
 {
-    run_sprite = spr_battle_enemy_attack_insomnitot_sheep_left;
-    jump_sprite = spr_battle_enemy_attack_insomnitot_sheep_jump_left;
+    run_sprite = 2256;
+    jump_sprite = 2259;
     
     if (no_loop_sprite_assign == false)
     {

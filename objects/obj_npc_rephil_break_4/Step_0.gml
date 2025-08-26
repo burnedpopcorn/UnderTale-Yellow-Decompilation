@@ -1,7 +1,5 @@
-var rephil_col, i;
-
 event_inherited();
-rephil_col = make_color_rgb(211, 231, 221);
+var rephil_col = make_color_rgb(211, 231, 221);
 depth = -room_height;
 
 if (interact)
@@ -65,7 +63,7 @@ if (waiter > 0)
                 message[4] = "* Make sure we're being properly#  represented, ya' know?";
                 message[5] = "* Ya' ain't gettin' respect like#  us by lazin' around, kid.";
                 
-                for (i = 0; i < array_length(message); i++)
+                for (var i = 0; i < array_length(message); i++)
                     message_col[i][0] = message[i];
             }
             
@@ -81,7 +79,7 @@ if (waiter > 0)
                 message[1] = "* A fancy lil' fella. Wears a#  nice suit 'n a stubby hat. ";
                 message[2] = "* We've got some matters to#  discuss with 'em.";
                 
-                for (i = 0; i < array_length(message); i++)
+                for (var i = 0; i < array_length(message); i++)
                     message_col[i][0] = message[i];
             }
             
@@ -96,7 +94,7 @@ if (waiter > 0)
                 message[0] = "* This town 'ere's pretty nice.#  Though, I'm not fond of#  the local gang.";
                 message[1] = "* They think they're the hot#  stuff but they've got nothin'#  on The Shufflers!";
                 
-                for (i = 0; i < array_length(message); i++)
+                for (var i = 0; i < array_length(message); i++)
                     message_col[i][0] = message[i];
             }
             

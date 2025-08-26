@@ -7,7 +7,7 @@ if (global.sworks_flag[20] == 1)
 {
     instance_create(195, 365, obj_ceroba_npc);
     obj_ceroba_npc.npc_direction = "up";
-    actor_follower = 1161;
+    actor_follower = obj_ceroba_npc;
     obj_pl.x = 170;
     obj_pl.y = 365;
     obj_pl.direction = 90;
@@ -26,7 +26,7 @@ else if (global.sworks_flag[20] >= 2)
     {
         instance_create(195, 360, obj_ceroba_npc);
         obj_ceroba_npc.npc_direction = "up";
-        actor_follower = 1161;
+        actor_follower = obj_ceroba_npc;
         obj_pl.x = 170;
         obj_pl.y = 360;
         obj_pl.direction = 90;

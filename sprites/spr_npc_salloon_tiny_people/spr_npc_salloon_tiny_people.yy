@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dc9eb2dc-b442-4617-9830-4b191ebae919",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"15ede39b-d7a2-406a-94a4-47c29e1104a0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"95a1eebf-5609-4711-aa2d-f10f23567357",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7b599ea8-11d0-4b3a-a154-8ef55574d073",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 18,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"618b7b99-e109-46bf-b525-491a9c2d8e91","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"00ca8568-1f55-458d-99b1-e9a9432aa278","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dc9eb2dc-b442-4617-9830-4b191ebae919","path":"sprites/spr_npc_salloon_tiny_people/spr_npc_salloon_tiny_people.yy",},},},"Disabled":false,"id":"c9624eeb-266a-495e-9206-e8c627140bf7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"15ede39b-d7a2-406a-94a4-47c29e1104a0","path":"sprites/spr_npc_salloon_tiny_people/spr_npc_salloon_tiny_people.yy",},},},"Disabled":false,"id":"553d2b72-adf7-48fb-a60a-40788fb8e4d6","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"95a1eebf-5609-4711-aa2d-f10f23567357","path":"sprites/spr_npc_salloon_tiny_people/spr_npc_salloon_tiny_people.yy",},},},"Disabled":false,"id":"17d8e8cc-bd99-48dc-aa06-27a7d5c4568a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7b599ea8-11d0-4b3a-a154-8ef55574d073","path":"sprites/spr_npc_salloon_tiny_people/spr_npc_salloon_tiny_people.yy",},},},"Disabled":false,"id":"8cbbc7ff-9b55-4f6b-b49f-ace04c2cd511","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "WildEast",
+    "path": "texturegroups/WildEast",
   },
   "type": 0,
   "VTile": false,

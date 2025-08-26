@@ -1,9 +1,7 @@
-var shadow_index, break_sound, screenshake, i;
-
 if (shadow_id == -4)
     shadow_id = instance_create(x, y_target + (sprite_height / 2), obj_dunes_boulders_shadow);
 
-shadow_index = 1 - ((y - y_target) / (y_target - 300 - y_target));
+var shadow_index = 1 - ((y - y_target) / (y_target - 300 - y_target));
 shadow_id.image_xscale = shadow_index;
 shadow_id.image_yscale = shadow_index;
 y += fall_speed;
@@ -14,12 +12,12 @@ if (y > y_target)
 {
     if (point_in_rectangle(x, y, __view_get(e__VW.XView, 0), __view_get(e__VW.YView, 0), __view_get(e__VW.XView, 0) + __view_get(e__VW.WView, 0), __view_get(e__VW.YView, 0) + __view_get(e__VW.HView, 0)))
     {
-        break_sound = audio_play_sound(snd_rock_break, 1, 0);
+        var break_sound = audio_play_sound(snd_rock_break, 1, 0);
         audio_sound_gain(break_sound, 0.7, 0);
         
         if (!instance_exists(obj_screenshake_player))
         {
-            screenshake = instance_create(obj_pl.x, obj_pl.y, obj_screenshake_player);
+            var screenshake = instance_create(obj_pl.x, obj_pl.y, obj_screenshake_player);
             
             with (screenshake)
             {
@@ -32,7 +30,7 @@ if (y > y_target)
             obj_screenshake_player.alarm[0] = 10;
         }
         
-        for (i = 4; i >= 0; i--)
+        for (var i = 4; i >= 0; i--)
             instance_create(x, y, obj_dunes_small_boulders);
     }
     

@@ -10,7 +10,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Brrr! Sure is chilly out here!";
                 message[1] = "* Nothing a smile can't#  persevere through, though!";
@@ -23,7 +23,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* I'm waiting for my siblings to#  find their way out!";
                 message[1] = "* We're all going to migrate to#  a warmer environment!";
@@ -37,7 +37,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Before you leave us, you#  should try hugging someone!";
                 message[1] = "* You never know how effective#  it may be!";
@@ -51,7 +51,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* So cold! So cold!";
             }

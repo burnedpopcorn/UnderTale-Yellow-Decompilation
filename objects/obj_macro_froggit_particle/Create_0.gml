@@ -1,5 +1,3 @@
-var xp, yp;
-
 global.ps = part_system_create();
 part_system_depth(global.ps, depth);
 global.pt_Filling = part_type_create();
@@ -19,15 +17,15 @@ part_type_shape(global.pt_Border, 2);
 part_type_size(global.pt_Border, 0, 0, 0.2, 0);
 part_type_scale(global.pt_Border, 1, 1);
 part_type_orientation(global.pt_Border, 45, 45, 0, 0, 0);
-part_type_color3(global.pt_Border, c_white, c_white, c_white);
+part_type_color3(global.pt_Border, 16777215, 16777215, 16777215);
 part_type_alpha3(global.pt_Border, 1, 1, 0);
 part_type_blend(global.pt_Border, 0);
 part_type_life(global.pt_Border, 80, 80);
 part_type_speed(global.pt_Border, 0, 0, 0, 0);
 part_type_direction(global.pt_Border, 0, 360, 0, 0);
 part_type_gravity(global.pt_Border, 0, 0);
-xp = 320;
-yp = 110;
+var xp = 320;
+var yp = 110;
 global.pe_Border = part_emitter_create(global.ps);
 part_emitter_region(global.ps, global.pe_Border, xp - 1, xp + 1, yp - 1, yp + 1, 0, 0);
 global.pe_Filling = part_emitter_create(global.ps);

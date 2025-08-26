@@ -1,6 +1,4 @@
-var battle_box;
-
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 if (!instance_exists(obj_heart_battle_fighting_parent))
 {

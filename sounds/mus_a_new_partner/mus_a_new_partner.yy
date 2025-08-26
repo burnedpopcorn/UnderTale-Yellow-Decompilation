@@ -16,8 +16,8 @@
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus_a_new_partner.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "a_new_partner.ogg",
+  "type": 1,
   "volume": 1.0,
 }

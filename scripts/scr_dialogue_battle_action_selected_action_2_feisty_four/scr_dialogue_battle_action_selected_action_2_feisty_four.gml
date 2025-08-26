@@ -1,8 +1,6 @@
 function scr_dialogue_battle_action_selected_action_2_feisty_four()
 {
-    var random_message, act_number;
-    
-    random_message = irandom_range(1, 3);
+    var random_message = irandom_range(1, 3);
     
     if (random_message == 1)
         message[0] = "* You point at the#  Hospital frantically.#* They don't notice.";
@@ -13,7 +11,7 @@ function scr_dialogue_battle_action_selected_action_2_feisty_four()
     if (random_message == 3)
         message[0] = "* You fire your gun at the bell.#* You hear a nice ring.";
     
-    act_number = global.act_number;
+    var act_number = global.act_number;
     
     switch (act_number)
     {

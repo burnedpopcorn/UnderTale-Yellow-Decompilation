@@ -1,5 +1,3 @@
-var pellets;
-
 if (global.route != 3 || !global.geno_complete[3])
 {
     instance_destroy();
@@ -8,7 +6,7 @@ if (global.route != 3 || !global.geno_complete[3])
 
 if (global.dunes_flag[51] == 1)
 {
-    pellets = instance_create_depth(148, 41, 0, obj_steamworks_34_pellets);
+    var pellets = instance_create_depth(148, 41, 0, obj_steamworks_34_pellets);
     pellets.image_index = pellets.image_number - 1;
     instance_destroy();
 }

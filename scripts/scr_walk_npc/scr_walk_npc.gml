@@ -1,16 +1,14 @@
-function scr_walk_npc(argument0, argument1, argument2, argument3, argument4, argument5, argument6)
+function scr_walk_npc(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
 {
-    var destination_x, destination_y, axis_override, result;
-    
     is_walking = true;
-    actor_speed = argument2;
+    actor_speed = arg2;
     condition_1 = false;
     
     if (no_loop_destination == false)
     {
-        destination_x = abs(x - argument0);
-        destination_y = abs(y - argument1);
-        axis_override = argument4;
+        var destination_x = abs(x - arg0);
+        var destination_y = abs(y - arg1);
+        var axis_override = arg4;
         
         if (axis_override == "x" || axis_override == "y")
         {
@@ -18,7 +16,7 @@ function scr_walk_npc(argument0, argument1, argument2, argument3, argument4, arg
         }
         else
         {
-            result = sign(destination_x - destination_y);
+            var result = sign(destination_x - destination_y);
             
             switch (result)
             {
@@ -35,18 +33,18 @@ function scr_walk_npc(argument0, argument1, argument2, argument3, argument4, arg
             }
         }
         
-        actor_speed_x = sign(argument0 - x) * actor_speed;
-        actor_speed_y = sign(argument1 - y) * actor_speed;
+        actor_speed_x = sign(arg0 - x) * actor_speed;
+        actor_speed_y = sign(arg1 - y) * actor_speed;
         no_loop_destination = true;
     }
     
-    if (x == argument0 && y == argument1)
+    if (x == arg0 && y == arg1)
     {
         no_loop_destination = false;
         npc_walking = false;
         
-        if (argument5 != "nothing")
-            npc_direction = argument5;
+        if (arg5 != "nothing")
+            npc_direction = arg5;
         
         image_speed = 0;
         image_index = 0;
@@ -59,13 +57,13 @@ function scr_walk_npc(argument0, argument1, argument2, argument3, argument4, arg
             x_previous = x;
             x += actor_speed_x;
             
-            if (abs(argument0 - x) < actor_speed && place_free(argument0, y) && !place_meeting(argument0, y, argument6))
-                x = argument0;
+            if (abs(arg0 - x) < actor_speed && place_free(arg0, y) && !place_meeting(arg0, y, arg6))
+                x = arg0;
             
-            if (place_free(x, y) && !place_meeting(x, y, argument6) && x_previous != argument0)
+            if (place_free(x, y) && !place_meeting(x, y, arg6) && x_previous != arg0)
             {
                 npc_walking = true;
-                image_speed = argument3;
+                image_speed = arg3;
                 
                 if (actor_speed_x == -actor_speed)
                     npc_direction = "left";
@@ -73,28 +71,28 @@ function scr_walk_npc(argument0, argument1, argument2, argument3, argument4, arg
                     npc_direction = "right";
             }
             
-            if (!place_free(x, y) || place_meeting(x, y, argument6) || x_previous == argument0)
+            if (!place_free(x, y) || place_meeting(x, y, arg6) || x_previous == arg0)
             {
                 x = x_previous;
                 walk_axis = "y";
                 exit;
             }
             
-            actor_speed_y = sign(argument1 - y) * actor_speed;
+            actor_speed_y = sign(arg1 - y) * actor_speed;
             i = x + actor_speed_x;
             j = y;
             
-            if (abs(argument0 - i) < actor_speed)
-                i = argument0;
+            if (abs(arg0 - i) < actor_speed)
+                i = arg0;
             
-            while (j != argument1)
+            while (j != arg1)
             {
                 j += actor_speed_y;
                 
-                if (abs(argument1 - j) < actor_speed)
-                    j = argument1;
+                if (abs(arg1 - j) < actor_speed)
+                    j = arg1;
                 
-                if (!place_free(i, j) || place_meeting(i, j, argument6))
+                if (!place_free(i, j) || place_meeting(i, j, arg6))
                 {
                     condition_1 = true;
                     break;
@@ -103,26 +101,26 @@ function scr_walk_npc(argument0, argument1, argument2, argument3, argument4, arg
             
             if (condition_1 == true)
             {
-                while (i != argument0)
+                while (i != arg0)
                 {
                     i += actor_speed_x;
                     j = y;
                     
-                    if (abs(argument0 - i) < actor_speed)
-                        i = argument0;
+                    if (abs(arg0 - i) < actor_speed)
+                        i = arg0;
                     
-                    while (j != argument1)
+                    while (j != arg1)
                     {
                         j += actor_speed_y;
                         
-                        if (abs(argument1 - j) < actor_speed)
-                            j = argument1;
+                        if (abs(arg1 - j) < actor_speed)
+                            j = arg1;
                         
-                        if (i == argument0 && j == argument1)
+                        if (i == arg0 && j == arg1)
                             exit;
-                        else if (!place_free(i, j) || place_meeting(i, j, argument6))
+                        else if (!place_free(i, j) || place_meeting(i, j, arg6))
                             break;
-                        else if (j == argument1)
+                        else if (j == arg1)
                             exit;
                     }
                 }
@@ -137,13 +135,13 @@ function scr_walk_npc(argument0, argument1, argument2, argument3, argument4, arg
             y_previous = y;
             y += actor_speed_y;
             
-            if (abs(argument1 - y) < actor_speed && place_free(x, argument1) && !place_meeting(x, argument1, argument6))
-                y = argument1;
+            if (abs(arg1 - y) < actor_speed && place_free(x, arg1) && !place_meeting(x, arg1, arg6))
+                y = arg1;
             
-            if (place_free(x, y) && !place_meeting(x, y, argument6) && y_previous != argument1)
+            if (place_free(x, y) && !place_meeting(x, y, arg6) && y_previous != arg1)
             {
                 npc_walking = true;
-                image_speed = argument3;
+                image_speed = arg3;
                 
                 if (actor_speed_y == -actor_speed)
                     npc_direction = "up";
@@ -151,28 +149,28 @@ function scr_walk_npc(argument0, argument1, argument2, argument3, argument4, arg
                     npc_direction = "down";
             }
             
-            if (!place_free(x, y) || place_meeting(x, y, argument6) || y_previous == argument1)
+            if (!place_free(x, y) || place_meeting(x, y, arg6) || y_previous == arg1)
             {
                 y = y_previous;
                 walk_axis = "x";
                 exit;
             }
             
-            actor_speed_x = sign(argument0 - x) * actor_speed;
+            actor_speed_x = sign(arg0 - x) * actor_speed;
             i = x;
             j = y + actor_speed_y;
             
-            if (abs(argument1 - j) < actor_speed)
-                j = argument1;
+            if (abs(arg1 - j) < actor_speed)
+                j = arg1;
             
-            while (i != argument0)
+            while (i != arg0)
             {
                 i += actor_speed_x;
                 
-                if (abs(argument0 - i) < actor_speed)
-                    i = argument0;
+                if (abs(arg0 - i) < actor_speed)
+                    i = arg0;
                 
-                if (!place_free(i, j) || place_meeting(i, j, argument6))
+                if (!place_free(i, j) || place_meeting(i, j, arg6))
                 {
                     condition_1 = true;
                     break;
@@ -181,26 +179,26 @@ function scr_walk_npc(argument0, argument1, argument2, argument3, argument4, arg
             
             if (condition_1 == true)
             {
-                while (j != argument1)
+                while (j != arg1)
                 {
                     i = x;
                     j += actor_speed_y;
                     
-                    if (abs(argument1 - j) < actor_speed)
-                        j = argument1;
+                    if (abs(arg1 - j) < actor_speed)
+                        j = arg1;
                     
-                    while (i != argument0)
+                    while (i != arg0)
                     {
                         i += actor_speed_x;
                         
-                        if (abs(argument0 - i) < actor_speed)
-                            i = argument0;
+                        if (abs(arg0 - i) < actor_speed)
+                            i = arg0;
                         
-                        if (i == argument0 && j == argument1)
+                        if (i == arg0 && j == arg1)
                             exit;
-                        else if (!place_free(i, j) || place_meeting(i, j, argument6))
+                        else if (!place_free(i, j) || place_meeting(i, j, arg6))
                             break;
-                        else if (i == argument0)
+                        else if (i == arg0)
                             exit;
                     }
                 }
@@ -212,14 +210,14 @@ function scr_walk_npc(argument0, argument1, argument2, argument3, argument4, arg
             break;
     }
     
-    if (x == argument0 && y == argument1)
+    if (x == arg0 && y == arg1)
     {
         no_loop_destination = false;
         npc_walking = false;
         is_walking = false;
         
-        if (argument5 != "nothing")
-            npc_direction = argument5;
+        if (arg5 != "nothing")
+            npc_direction = arg5;
         
         image_speed = 0;
         image_index = 0;

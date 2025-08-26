@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b62eb3a6-ce6c-48fb-9d74-53ea475d51bb",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ac8b7235-84ba-4083-81bb-c46c252a087f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1285dcdf-4e76-4c5e-9765-834e75e4ff20",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a01685d6-79c1-4b54-8ab3-2ca045a0a7f8",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 106,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"757101a4-b53b-4439-a894-d29c756c5eab","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"479365ff-09ca-450b-a498-fed4d84cb36b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b62eb3a6-ce6c-48fb-9d74-53ea475d51bb","path":"sprites/spr_portrait_fchujin_bruh/spr_portrait_fchujin_bruh.yy",},},},"Disabled":false,"id":"4142683c-9b18-484f-9a18-123836c3601c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ac8b7235-84ba-4083-81bb-c46c252a087f","path":"sprites/spr_portrait_fchujin_bruh/spr_portrait_fchujin_bruh.yy",},},},"Disabled":false,"id":"836ef835-eeed-40d8-bed1-8dfde14dd1d3","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1285dcdf-4e76-4c5e-9765-834e75e4ff20","path":"sprites/spr_portrait_fchujin_bruh/spr_portrait_fchujin_bruh.yy",},},},"Disabled":false,"id":"cd6480c8-0820-4112-ac72-7b81beae4a0a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a01685d6-79c1-4b54-8ab3-2ca045a0a7f8","path":"sprites/spr_portrait_fchujin_bruh/spr_portrait_fchujin_bruh.yy",},},},"Disabled":false,"id":"f84ffac6-a92b-4006-bb3e-b7640966ee89","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Mansion",
+    "path": "texturegroups/Mansion",
   },
   "type": 0,
   "VTile": false,

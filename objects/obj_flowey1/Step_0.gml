@@ -17,10 +17,10 @@ if (obj_pl.state == scr_frozen_state && waiter == 2)
         with (msg)
         {
             position = 0;
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             color = true;
-            col_modif[0] = 65535;
-            col_modif[1] = 255;
+            col_modif[0] = c_yellow;
+            col_modif[1] = c_red;
             message[0] = "* Howdy!";
             message[1] = "* I'm FLOWEY. ";
             message_col[1][0] = "      FLOWEY  ";
@@ -37,19 +37,19 @@ if (obj_pl.state == scr_frozen_state && waiter == 2)
             message[10] = "* Also...";
             message[11] = "* If you ever run into#  trouble, I can SAVE for#  you!";
             message[12] = "* Just come look for#  these things and I'll be#  there!";
-            prt[0] = 348;
-            prt[1] = 348;
-            prt[2] = 348;
-            prt[3] = 347;
-            prt[4] = 348;
-            prt[5] = 348;
-            prt[6] = 347;
-            prt[7] = 348;
-            prt[8] = 348;
-            prt[9] = 348;
-            prt[10] = 347;
-            prt[11] = 348;
-            prt[12] = 348;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_nice;
+            prt[2] = flowey_nice;
+            prt[3] = flowey_niceside;
+            prt[4] = flowey_nice;
+            prt[5] = flowey_nice;
+            prt[6] = flowey_niceside;
+            prt[7] = flowey_nice;
+            prt[8] = flowey_nice;
+            prt[9] = flowey_nice;
+            prt[10] = flowey_niceside;
+            prt[11] = flowey_nice;
+            prt[12] = flowey_nice;
             other.waiter = 1;
             global.flag[24] = 1;
         }
@@ -59,10 +59,10 @@ if (obj_pl.state == scr_frozen_state && waiter == 2)
         with (msg)
         {
             position = 0;
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             color = true;
-            col_modif[0] = 65535;
-            col_modif[1] = 255;
+            col_modif[0] = c_yellow;
+            col_modif[1] = c_red;
             message[0] = "* Howdy!";
             message[1] = "* I'm FLOWEY. ";
             message_col[1][0] = "      FLOWEY  ";
@@ -74,16 +74,16 @@ if (obj_pl.state == scr_frozen_state && waiter == 2)
             message[6] = "* She didn't?";
             message[7] = "* I guess little old me#  will have to do then.";
             message[8] = "* Do you want me to teach#  ya?";
-            prt[0] = 348;
-            prt[1] = 348;
-            prt[2] = 348;
-            prt[3] = 347;
-            prt[4] = 357;
-            prt[5] = 347;
-            prt[6] = 348;
-            prt[7] = 3251;
-            prt[8] = 348;
-            col_modif[0] = 65535;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_nice;
+            prt[2] = flowey_nice;
+            prt[3] = flowey_niceside;
+            prt[4] = flowey_worried;
+            prt[5] = flowey_niceside;
+            prt[6] = flowey_nice;
+            prt[7] = flowey_wink;
+            prt[8] = flowey_nice;
+            col_modif[0] = c_yellow;
             ch_msg = 8;
             ch[1] = "Yes";
             ch[2] = "No";
@@ -111,19 +111,19 @@ if (obj_pl.state == scr_frozen_state && waiter == 2)
                 message[19] = "* That means if anything#  bad happens, I can make#  it unhappen!";
                 message[20] = "* So if you ever need to#  save, come look for me!";
                 message[21] = "* I'll leave these little#  things around for you.";
-                prt[9] = 353;
-                prt[10] = 348;
-                prt[11] = 347;
-                prt[12] = 348;
-                prt[13] = 353;
-                prt[14] = 352;
-                prt[15] = 348;
-                prt[16] = 348;
-                prt[17] = 347;
-                prt[18] = 348;
-                prt[19] = 348;
-                prt[20] = 348;
-                prt[21] = 347;
+                prt[9] = flowey_plains;
+                prt[10] = flowey_nice;
+                prt[11] = flowey_niceside;
+                prt[12] = flowey_nice;
+                prt[13] = flowey_plains;
+                prt[14] = flowey_plain;
+                prt[15] = flowey_nice;
+                prt[16] = flowey_nice;
+                prt[17] = flowey_niceside;
+                prt[18] = flowey_nice;
+                prt[19] = flowey_nice;
+                prt[20] = flowey_nice;
+                prt[21] = flowey_niceside;
                 other.waiter = 1;
                 global.flag[24] = 1;
             }
@@ -135,19 +135,19 @@ if (obj_pl.state == scr_frozen_state && waiter == 2)
         {
             position = 0;
             color = true;
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "* Howdy!#* I'm FLOWEY. #* FLOWEY the FLOWER!";
             message[1] = "* Hmm... #* You look confused!";
             message[2] = "* Toriel ought to have #  taught you how things #  work around here!";
             message[3] = "* She didn't?";
             message[4] = "* I guess little old me #  will have to do then.#* Ready? Here we go!";
             message_col[0][0] = "        #      FLOWEY  #  FLOWEY     FLOWER ";
-            col_modif[0] = 65535;
-            prt[0] = 348;
-            prt[1] = 357;
-            prt[2] = 347;
-            prt[3] = 352;
-            prt[4] = 348;
+            col_modif[0] = c_yellow;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_worried;
+            prt[2] = flowey_niceside;
+            prt[3] = flowey_plain;
+            prt[4] = flowey_nice;
         }
         
         waiter = 3;
@@ -177,15 +177,15 @@ if ((global.flag[24] == 1 && room == rm_darkruins_03) && waiter == 0)
     with (msg)
     {
         position = 0;
-        sndfnt = 96;
+        sndfnt = sndfnt_flowey;
         message[0] = "* You probably want to go#  home, don'tcha?#";
         message[1] = "* Well you've got a long #  journey ahead!";
         message[2] = "* If you ever need to save,#  come look for me!";
         message[3] = "* I'll leave these little #  things around for you.";
-        prt[0] = 347;
-        prt[1] = 348;
-        prt[2] = 348;
-        prt[3] = 348;
+        prt[0] = flowey_niceside;
+        prt[1] = flowey_nice;
+        prt[2] = flowey_nice;
+        prt[3] = flowey_nice;
     }
     
     waiter = 1;
@@ -212,11 +212,11 @@ if ((global.flag[24] == 2 && room == rm_darkruins_03) && waiter == 1 && !instanc
             with (msg)
             {
                 position = 0;
-                sndfnt = 96;
+                sndfnt = sndfnt_flowey;
                 message[0] = "* Well, I suppose that's#  that.";
                 message[1] = "* Go get 'em, buddy!";
-                prt[0] = 347;
-                prt[1] = 348;
+                prt[0] = flowey_niceside;
+                prt[1] = flowey_nice;
             }
         }
         else if (global.meta_flowey_introduction_count == 1)
@@ -224,11 +224,11 @@ if ((global.flag[24] == 2 && room == rm_darkruins_03) && waiter == 1 && !instanc
             with (msg)
             {
                 position = 0;
-                sndfnt = 96;
+                sndfnt = sndfnt_flowey;
                 message[0] = "* Well, that pretty much#  covers it!";
                 message[1] = "* Good luck, pal!";
-                prt[0] = 348;
-                prt[1] = 3251;
+                prt[0] = flowey_nice;
+                prt[1] = flowey_wink;
             }
         }
         else if (global.meta_flowey_introduction_count == 0)
@@ -236,9 +236,9 @@ if ((global.flag[24] == 2 && room == rm_darkruins_03) && waiter == 1 && !instanc
             with (msg)
             {
                 position = 0;
-                sndfnt = 96;
+                sndfnt = sndfnt_flowey;
                 color = true;
-                col_modif[0] = 255;
+                col_modif[0] = c_red;
                 message[0] = "* That way it's easy to #  find me!";
                 message[1] = "* If you see one don't #  hesitate to call me! ";
                 message[2] = "* And then I'll save #  for you. Like I just #  saved for you now!";
@@ -255,21 +255,21 @@ if ((global.flag[24] == 2 && room == rm_darkruins_03) && waiter == 1 && !instanc
                 message[13] = "* And some of the #  monsters in this#  place...";
                 message[14] = "* I hear they don't #  like visitors.#  So good luck!";
                 message_col[5][0] = "                     #            ASGORE   ";
-                prt[0] = 348;
-                prt[1] = 348;
-                prt[2] = 347;
-                prt[3] = 354;
-                prt[4] = 357;
-                prt[5] = 352;
-                prt[6] = 352;
-                prt[7] = 353;
-                prt[8] = 356;
-                prt[9] = 352;
-                prt[10] = 348;
-                prt[11] = 348;
-                prt[12] = 357;
-                prt[13] = 354;
-                prt[14] = 357;
+                prt[0] = flowey_nice;
+                prt[1] = flowey_nice;
+                prt[2] = flowey_niceside;
+                prt[3] = flowey_worriedside;
+                prt[4] = flowey_worried;
+                prt[5] = flowey_plain;
+                prt[6] = flowey_plain;
+                prt[7] = flowey_plains;
+                prt[8] = flowey_sad;
+                prt[9] = flowey_plain;
+                prt[10] = flowey_nice;
+                prt[11] = flowey_nice;
+                prt[12] = flowey_worried;
+                prt[13] = flowey_worriedside;
+                prt[14] = flowey_worried;
             }
         }
         
@@ -292,7 +292,7 @@ if ((!instance_exists(obj_dialogue) && waiter == 3) && global.flag[24] == 2)
     waiter = 4;
 }
 
-if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == 96)
+if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == sndfnt_flowey)
 {
     if (obj_dialogue.cutoff == string_length(obj_dialogue.message[obj_dialogue.message_current]))
     {

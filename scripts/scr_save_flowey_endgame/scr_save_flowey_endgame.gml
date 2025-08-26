@@ -1,8 +1,6 @@
 function scr_save_flowey_endgame()
 {
-    var current_room, death_count;
-    
-    current_room = room_get_name(room);
+    var current_room = room_get_name(room);
     current_save_number = 1;
     scr_determine_save_area();
     
@@ -13,7 +11,7 @@ function scr_save_flowey_endgame()
     
     with (msg)
     {
-        sndfnt = 96;
+        sndfnt = sndfnt_flowey;
         
         switch (current_room)
         {
@@ -23,7 +21,7 @@ function scr_save_flowey_endgame()
                     switch (global.flowey_flag[36])
                     {
                         case 0:
-                            death_count = global.death_count_total;
+                            var death_count = global.death_count_total;
                             message[0] = "* ...";
                             message[1] = "* Oh-Howdy!";
                             message[2] = "* We're nearing the#  Castle now.";
@@ -31,13 +29,13 @@ function scr_save_flowey_endgame()
                             message[4] = "* For kicks and giggles,#  why don't we tally up#  your death total?";
                             message[5] = "* Drum roll please!";
                             message[6] = "* Badabadabadabadaba...";
-                            prt[0] = 353;
-                            prt[1] = 348;
-                            prt[2] = 348;
-                            prt[3] = 347;
-                            prt[4] = 3251;
-                            prt[5] = 348;
-                            prt[6] = 348;
+                            prt[0] = flowey_plains;
+                            prt[1] = flowey_nice;
+                            prt[2] = flowey_nice;
+                            prt[3] = flowey_niceside;
+                            prt[4] = flowey_wink;
+                            prt[5] = flowey_nice;
+                            prt[6] = flowey_nice;
                             
                             if (global.save_count > 0)
                             {
@@ -46,7 +44,7 @@ function scr_save_flowey_endgame()
                                 if (death_count == 1)
                                     message[7] = "* You died " + string(death_count) + " time!";
                                 
-                                prt[7] = 348;
+                                prt[7] = flowey_nice;
                                 
                                 if (death_count >= 1)
                                 {
@@ -54,10 +52,10 @@ function scr_save_flowey_endgame()
                                     message[9] = "* If I wasn't here to#  help, this all would've#  been a disaster!";
                                     message[10] = "* Maybe jumping down a#  chasm gung-ho wasn't the#  brightest idea...";
                                     message[11] = "* But hey, all's well#  that ends well!";
-                                    prt[8] = 348;
-                                    prt[9] = 3251;
-                                    prt[10] = 347;
-                                    prt[11] = 348;
+                                    prt[8] = flowey_nice;
+                                    prt[9] = flowey_wink;
+                                    prt[10] = flowey_niceside;
+                                    prt[11] = flowey_nice;
                                     global.flowey_flag[36] = 1;
                                 }
                                 else
@@ -68,12 +66,12 @@ function scr_save_flowey_endgame()
                                     message[11] = "* Geez...";
                                     message[12] = "* I offered my services#  for a reason.";
                                     message[13] = "* I mean come on! Die a#  little!";
-                                    prt[8] = 353;
-                                    prt[9] = 352;
-                                    prt[10] = 356;
-                                    prt[11] = 354;
-                                    prt[12] = 357;
-                                    prt[13] = 349;
+                                    prt[8] = flowey_plains;
+                                    prt[9] = flowey_plain;
+                                    prt[10] = flowey_sad;
+                                    prt[11] = flowey_worriedside;
+                                    prt[12] = flowey_worried;
+                                    prt[13] = flowey_smirk;
                                     global.flowey_flag[36] = 2;
                                 }
                             }
@@ -88,15 +86,15 @@ function scr_save_flowey_endgame()
                                 message[13] = "* Save, don't save, your#  choice.";
                                 message[14] = "* Just remember that I#  was always here for you.";
                                 message[15] = "* Like a good friend#  should be.";
-                                prt[7] = 3640;
-                                prt[8] = 353;
-                                prt[9] = 352;
-                                prt[10] = 348;
-                                prt[11] = 352;
-                                prt[12] = 353;
-                                prt[13] = 352;
-                                prt[14] = 352;
-                                prt[15] = 347;
+                                prt[7] = spr_flowey_meh;
+                                prt[8] = flowey_plains;
+                                prt[9] = flowey_plain;
+                                prt[10] = flowey_nice;
+                                prt[11] = flowey_plain;
+                                prt[12] = flowey_plains;
+                                prt[13] = flowey_plain;
+                                prt[14] = flowey_plain;
+                                prt[15] = flowey_niceside;
                                 global.flowey_flag[36] = 2;
                             }
                             
@@ -108,19 +106,19 @@ function scr_save_flowey_endgame()
                             message[2] = "* Knowing what could've#  been keeps you humble!";
                             message[3] = "* Grateful for everyone#  who helped you get where#  you are!";
                             message[4] = "* At least that's my#  \"flowosophy.\"";
-                            prt[0] = 348;
-                            prt[1] = 347;
-                            prt[2] = 3251;
-                            prt[3] = 348;
-                            prt[4] = 349;
+                            prt[0] = flowey_nice;
+                            prt[1] = flowey_niceside;
+                            prt[2] = flowey_wink;
+                            prt[3] = flowey_nice;
+                            prt[4] = flowey_smirk;
                             global.flowey_flag[36]++;
                             break;
                         
                         case 2:
                             message[0] = "* We got places to be,#  pal!";
                             message[1] = "* Chop chop!";
-                            prt[0] = 348;
-                            prt[1] = 347;
+                            prt[0] = flowey_nice;
+                            prt[1] = flowey_niceside;
                             break;
                     }
                     
@@ -134,32 +132,32 @@ function scr_save_flowey_endgame()
                         case 0:
                             message[0] = "* Well.";
                             message[1] = "* Word sure gets around.";
-                            message[2] = "* This is what'cha get#  when you toss out#  “subtlety.”";
+                            message[2] = "* This is what'cha get#  when you toss out#  subtlety.";
                             message[3] = "* Waging war without a#  care for#  repercussions...";
                             message[4] = "* I tried to warn you but#  it's too late now.";
                             message[5] = "* Sigh...";
                             message[6] = "* Play it cool from here#  on out, will you?";
-                            prt[0] = 352;
-                            prt[1] = 353;
-                            prt[2] = 353;
-                            prt[3] = 352;
-                            prt[4] = 353;
-                            prt[5] = 352;
-                            prt[6] = 352;
+                            prt[0] = flowey_plain;
+                            prt[1] = flowey_plains;
+                            prt[2] = flowey_plains;
+                            prt[3] = flowey_plain;
+                            prt[4] = flowey_plains;
+                            prt[5] = flowey_plain;
+                            prt[6] = flowey_plain;
                             global.flowey_flag[36] = 1;
                             break;
                         
                         case 1:
                             message[0] = "* We need to reach the#  Castle.";
                             message[1] = "* The King awaits...";
-                            prt[0] = 353;
-                            prt[1] = 348;
+                            prt[0] = flowey_plains;
+                            prt[1] = flowey_nice;
                             global.flowey_flag[36]++;
                             break;
                         
                         case 2:
                             message[0] = "* ...";
-                            prt[0] = 353;
+                            prt[0] = flowey_plains;
                             break;
                     }
                     
@@ -176,17 +174,17 @@ function scr_save_flowey_endgame()
                         message[0] = "* Quite the turn of#  events, huh?";
                         message[1] = "* Well good thing I'm on#  the winning side, haha!";
                         message[2] = "* I bet you'll handle#  Ceroba like it's#  nothing!";
-                        prt[0] = 348;
-                        prt[1] = 347;
-                        prt[2] = 348;
+                        prt[0] = flowey_nice;
+                        prt[1] = flowey_niceside;
+                        prt[2] = flowey_nice;
                         global.flowey_flag[38] += 1;
                         break;
                     
                     case 1:
                         message[0] = "* Best be heading to#  Hotland!";
                         message[1] = "* Who knows how long ya#  got?";
-                        prt[0] = 347;
-                        prt[1] = 348;
+                        prt[0] = flowey_niceside;
+                        prt[1] = flowey_nice;
                         global.flowey_flag[38] += 1;
                         break;
                     
@@ -194,9 +192,9 @@ function scr_save_flowey_endgame()
                         message[0] = "* You know that elevator#  at the end of the#  Steamworks?";
                         message[1] = "* I believe it's your#  ticket!";
                         message[2] = "* Let's deal with that#  backstabber already!";
-                        prt[0] = 348;
-                        prt[1] = 3251;
-                        prt[2] = 348;
+                        prt[0] = flowey_nice;
+                        prt[1] = flowey_wink;
+                        prt[2] = flowey_nice;
                         break;
                 }
                 

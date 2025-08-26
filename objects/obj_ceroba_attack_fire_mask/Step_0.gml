@@ -1,17 +1,15 @@
-var spawn_delay, start_delay, fire_count, fire_distance, moving_time, pause_time, i, xx, yy;
-
 if (live_call())
     return global.live_result;
 
 if (instance_exists(obj_battle_enemy_attack_ceroba_phase_2_mask) && obj_battle_enemy_attack_ceroba_phase_2_mask.attack_stop == true)
     scene = 8;
 
-spawn_delay = 0;
-start_delay = 0.5;
-fire_count = 7;
-fire_distance = 60;
-moving_time = 1;
-pause_time = 0.75;
+var spawn_delay = 0;
+var start_delay = 0.5;
+var fire_count = 7;
+var fire_distance = 60;
+var moving_time = 1;
+var pause_time = 0.75;
 
 if (global.hotland_flag[2] == 2)
 {
@@ -55,12 +53,12 @@ switch (scene)
         break;
     
     case 2:
-        i = 0;
+        var i = 0;
         
         while (i < 360)
         {
-            xx = x + lengthdir_x(fire_distance, i);
-            yy = y + lengthdir_y(fire_distance, i);
+            var xx = x + lengthdir_x(fire_distance, i);
+            var yy = y + lengthdir_y(fire_distance, i);
             fireball_array[fireball_current] = instance_create_depth(xx, yy, -100, obj_ceroba_attack_fireball);
             fireball_array[fireball_current].alarm[0] = 1 + (fireball_current * 3);
             
@@ -76,7 +74,7 @@ switch (scene)
         break;
     
     case 3:
-        for (i = 0; i < array_length(fireball_array); i++)
+        for (var i = 0; i < array_length(fireball_array); i++)
         {
             if (instance_exists(fireball_array[i]))
             {
@@ -121,7 +119,7 @@ switch (scene)
     case 8:
         image_alpha -= 0.2;
         
-        for (i = 0; i < array_length(fireball_array); i++)
+        for (var i = 0; i < array_length(fireball_array); i++)
         {
             if (instance_exists(fireball_array[i]))
                 fireball_array[i].image_alpha = image_alpha;
@@ -138,12 +136,12 @@ switch (scene)
 
 if (scene >= 4)
 {
-    for (i = 0; i < array_length(fireball_array); i++)
+    for (var i = 0; i < array_length(fireball_array); i++)
     {
         if (instance_exists(fireball_array[i]))
         {
-            xx = x + lengthdir_x(fire_distance, fireball_dir[i] + dir_offset);
-            yy = y + lengthdir_y(fire_distance, fireball_dir[i] + dir_offset);
+            var xx = x + lengthdir_x(fire_distance, fireball_dir[i] + dir_offset);
+            var yy = y + lengthdir_y(fire_distance, fireball_dir[i] + dir_offset);
             fireball_array[i].x = xx;
             fireball_array[i].y = yy;
         }

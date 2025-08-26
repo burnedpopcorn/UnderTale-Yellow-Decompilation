@@ -1,10 +1,12 @@
-var actor_starlo, actor_ceroba;
+var actor_starlo;
 
 if (instance_exists(obj_starlo_npc))
     actor_starlo = 1169;
 
+var actor_ceroba;
+
 if (instance_exists(obj_ceroba_npc))
-    actor_ceroba = 1161;
+    actor_ceroba = obj_ceroba_npc;
 
 switch (scene)
 {
@@ -54,14 +56,14 @@ switch (scene)
             message[5] = "* I'm trying my best to#  honor her memory.";
             message[6] = "* Aren't distractions#  what's best for all#  of that?";
             message[7] = "* ?";
-            prt[0] = 416;
-            prt[1] = 416;
-            prt[2] = 416;
-            prt[3] = 416;
-            prt[4] = 416;
-            prt[5] = 416;
-            prt[6] = 416;
-            prt[7] = 418;
+            prt[0] = spr_portrait_starlo_hurt;
+            prt[1] = spr_portrait_starlo_hurt;
+            prt[2] = spr_portrait_starlo_hurt;
+            prt[3] = spr_portrait_starlo_hurt;
+            prt[4] = spr_portrait_starlo_hurt;
+            prt[5] = spr_portrait_starlo_hurt;
+            prt[6] = spr_portrait_starlo_hurt;
+            prt[7] = spr_portrait_starlo_plain;
         }
         
         break;
@@ -118,24 +120,24 @@ switch (scene)
             message[15] = "* I'm sure... I'm sure#  everyone would come back#  if I did the same.";
             message[16] = "* I'd be revered not only#  in the Wild East but the#  entire Underground!!";
             message[17] = "* I'd...";
-            prt[0] = 416;
-            prt[1] = 416;
-            prt[2] = 418;
-            prt[3] = 416;
-            prt[4] = 418;
-            prt[5] = 421;
-            prt[6] = 421;
-            prt[7] = 418;
-            prt[8] = 416;
-            prt[9] = 416;
-            prt[10] = 421;
-            prt[11] = 421;
-            prt[12] = 418;
-            prt[13] = 418;
-            prt[14] = 418;
-            prt[15] = 421;
-            prt[16] = 417;
-            prt[17] = 418;
+            prt[0] = spr_portrait_starlo_hurt;
+            prt[1] = spr_portrait_starlo_hurt;
+            prt[2] = spr_portrait_starlo_plain;
+            prt[3] = spr_portrait_starlo_hurt;
+            prt[4] = spr_portrait_starlo_plain;
+            prt[5] = spr_portrait_starlo_serious;
+            prt[6] = spr_portrait_starlo_serious;
+            prt[7] = spr_portrait_starlo_plain;
+            prt[8] = spr_portrait_starlo_hurt;
+            prt[9] = spr_portrait_starlo_hurt;
+            prt[10] = spr_portrait_starlo_serious;
+            prt[11] = spr_portrait_starlo_serious;
+            prt[12] = spr_portrait_starlo_plain;
+            prt[13] = spr_portrait_starlo_plain;
+            prt[14] = spr_portrait_starlo_plain;
+            prt[15] = spr_portrait_starlo_serious;
+            prt[16] = spr_portrait_starlo_normal;
+            prt[17] = spr_portrait_starlo_plain;
         }
         
         break;
@@ -157,7 +159,7 @@ switch (scene)
             position = 0;
             talker[0] = actor_starlo;
             message[0] = "* ...";
-            prt[0] = 416;
+            prt[0] = spr_portrait_starlo_hurt;
         }
         
         break;
@@ -183,18 +185,18 @@ switch (scene)
             message[3] = "* Don't... Don't make this#  difficult for me.";
             message[4] = "* Just hold...";
             message[5] = "* STILL!";
-            prt[0] = 416;
-            prt[1] = 421;
-            prt[2] = 421;
-            prt[3] = 418;
-            prt[4] = 416;
-            prt[5] = 421;
+            prt[0] = spr_portrait_starlo_hurt;
+            prt[1] = spr_portrait_starlo_serious;
+            prt[2] = spr_portrait_starlo_serious;
+            prt[3] = spr_portrait_starlo_plain;
+            prt[4] = spr_portrait_starlo_hurt;
+            prt[5] = spr_portrait_starlo_serious;
         }
         
         break;
     
     case 15:
-        cutscene_npc_action_sprite(actor_starlo, 1275, 1/3, true, 0);
+        cutscene_npc_action_sprite(actor_starlo, spr_starlo_whip, 1/3, true, 0);
         break;
     
     case 16:
@@ -214,8 +216,8 @@ switch (scene)
             talker[0] = actor_ceroba;
             message[0] = "* Who have you become?";
             message[1] = "* Because this sure as#  hell isn't the Starlo#  I grew up with!";
-            prt[0] = 370;
-            prt[1] = 394;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_disapproving;
         }
         
         break;
@@ -246,9 +248,9 @@ switch (scene)
             message[0] = "* Ceroba...";
             message[1] = "* Now's not a good time#  for this.";
             message[2] = "* Don't kick me while#  I'm down, please.";
-            prt[0] = 421;
-            prt[1] = 416;
-            prt[2] = 416;
+            prt[0] = spr_portrait_starlo_serious;
+            prt[1] = spr_portrait_starlo_hurt;
+            prt[2] = spr_portrait_starlo_hurt;
             
             if (message_current == 1)
                 actor_starlo.npc_direction = "up";
@@ -273,35 +275,35 @@ switch (scene)
             message[2] = "* None of us hate you.#  The REAL you.";
             message[3] = "* We adore you!";
             message[4] = "* What we hate is this#  false, reckless persona#  you've created.";
-            prt[0] = 394;
-            prt[1] = 370;
-            prt[2] = 370;
-            prt[3] = 372;
-            prt[4] = 394;
+            prt[0] = spr_portrait_ceroba_disapproving;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_neutral;
+            prt[3] = spr_portrait_ceroba_smile;
+            prt[4] = spr_portrait_ceroba_disapproving;
             talker[5] = actor_starlo;
             message[5] = "* ...";
-            prt[5] = 406;
+            prt[5] = spr_portrait_starlo_disappointed;
             talker[6] = actor_ceroba;
             message[6] = "* I have my own baggage.#  We all do.";
             message[7] = "* I don't even know if I#  have room to say this#  but...";
             message[8] = "* Bring him back.";
             message[9] = "* Bring back the#  innocent farmer I once#  knew.";
-            prt[6] = 377;
-            prt[7] = 371;
-            prt[8] = 370;
-            prt[9] = 394;
+            prt[6] = spr_portrait_ceroba_closed_eyes;
+            prt[7] = spr_portrait_ceroba_alt;
+            prt[8] = spr_portrait_ceroba_neutral;
+            prt[9] = spr_portrait_ceroba_disapproving;
             talker[10] = actor_starlo;
             message[10] = "* I just... wanted to be#  appreciated. Revered by#  all.";
             message[11] = "* I was trying to provide#  a slice of the Surface#  where we have none.";
-            prt[10] = 406;
-            prt[11] = 406;
+            prt[10] = spr_portrait_starlo_disappointed;
+            prt[11] = spr_portrait_starlo_disappointed;
             talker[12] = actor_ceroba;
             message[12] = "* There's nothing wrong#  with that.";
             message[13] = "* I'm not even telling#  you to quit running the#  town.";
             message[14] = "* Just don't let this#  identity consume you.#  It isn't healthy.";
-            prt[12] = 370;
-            prt[13] = 370;
-            prt[14] = 394;
+            prt[12] = spr_portrait_ceroba_neutral;
+            prt[13] = spr_portrait_ceroba_neutral;
+            prt[14] = spr_portrait_ceroba_disapproving;
         }
         
         break;
@@ -318,7 +320,7 @@ switch (scene)
             position = 0;
             talker[0] = actor_starlo;
             message[0] = "* ...";
-            prt[0] = 416;
+            prt[0] = spr_portrait_starlo_hurt;
         }
         
         break;
@@ -354,20 +356,20 @@ switch (scene)
             message[1] = "* Clover, I'm terribly#  sorry for attacking#  you.";
             message[2] = "* I do value your#  friendship and the time#  we've spent together.";
             message[3] = "* You have every right#  to make fun but...";
-            prt[0] = 406;
-            prt[1] = 406;
-            prt[2] = 418;
-            prt[3] = 416;
+            prt[0] = spr_portrait_starlo_disappointed;
+            prt[1] = spr_portrait_starlo_disappointed;
+            prt[2] = spr_portrait_starlo_plain;
+            prt[3] = spr_portrait_starlo_hurt;
         }
         
         break;
     
     case 34:
-        cutscene_npc_action_sprite(actor_starlo, 1276, 0.25, true, 0);
+        cutscene_npc_action_sprite(actor_starlo, spr_starlo_hat, 0.25, true, 0);
         break;
     
     case 35:
-        cutscene_npc_set_sprites(actor_starlo, 207, 205, 196, 201, 206, 204, 1277, 200);
+        cutscene_npc_set_sprites(actor_starlo, spr_starlo_up_walk, spr_starlo_right_walk, spr_starlo_down_walk, spr_starlo_left_walk, spr_starlo_up_talk, spr_starlo_right_talk, spr_starlo_down_talk_hat, spr_starlo_left_talk);
         break;
     
     case 36:
@@ -387,15 +389,15 @@ switch (scene)
             talker[0] = actor_starlo;
             message[0] = "* This is who I really#  am.";
             message[1] = "* I'm not a real#  sheriff... just some#  nobody farmer.";
-            prt[0] = 432;
-            prt[1] = 432;
+            prt[0] = spr_portrait_starlo_nohat_sad;
+            prt[1] = spr_portrait_starlo_nohat_sad;
             talker[2] = actor_ceroba;
             message[2] = "* Don't say that, Star.";
             message[3] = "* You may not be a real#  sheriff but...";
             message[4] = "* You're the best#  sheriff I've ever#  known!";
-            prt[2] = 370;
-            prt[3] = 377;
-            prt[4] = 395;
+            prt[2] = spr_portrait_ceroba_neutral;
+            prt[3] = spr_portrait_ceroba_closed_eyes;
+            prt[4] = spr_portrait_ceroba_snarky;
         }
         
         break;
@@ -413,20 +415,20 @@ switch (scene)
             talker[0] = actor_starlo;
             message[0] = "* Yeah...";
             message[1] = "* I suppose I am KINDA#  cool.";
-            prt[0] = 429;
-            prt[1] = 433;
+            prt[0] = spr_portrait_starlo_nohat_happy;
+            prt[1] = spr_portrait_starlo_nohat_smile;
             talker[2] = actor_ceroba;
             message[2] = "* Darn right!";
-            prt[2] = 395;
+            prt[2] = spr_portrait_ceroba_snarky;
             talker[3] = actor_starlo;
             message[3] = "* But...";
-            prt[3] = 431;
+            prt[3] = spr_portrait_starlo_nohat_normal;
         }
         
         break;
     
     case 41:
-        cutscene_npc_action_sprite(actor_starlo, actor_starlo.up_sprite, 0.2, true, 0.2, 281, 0);
+        cutscene_npc_action_sprite(actor_starlo, actor_starlo.up_sprite, 0.2, true, 0.2, snd_tarpdrop, 0);
         break;
     
     case 42:
@@ -434,7 +436,7 @@ switch (scene)
         break;
     
     case 43:
-        cutscene_npc_set_sprites(actor_starlo, 207, 237, 240, 236, 206, 235, 230, 232);
+        cutscene_npc_set_sprites(actor_starlo, spr_starlo_up_walk, spr_starlo_sad_right_walk, spr_starlo_sad_down_walk, spr_starlo_sad_left_walk, spr_starlo_up_talk, spr_starlo_sad_right_talk, spr_starlo_sad_down_talk, spr_starlo_sad_left_talk);
         break;
     
     case 44:
@@ -448,22 +450,22 @@ switch (scene)
             position = 0;
             talker[0] = actor_starlo;
             message[0] = "* This whole show wasn't#  only for some personal#  power trip.";
-            prt[0] = 421;
+            prt[0] = spr_portrait_starlo_serious;
             talker[1] = actor_ceroba;
             message[1] = "* Hm?";
-            prt[1] = 370;
+            prt[1] = spr_portrait_ceroba_neutral;
             talker[2] = actor_starlo;
             message[2] = "* I also did it to...#  cheer you up.";
             message[3] = "* You might've wanted#  the old me but I also#  wanted the old you.";
             message[4] = "* Because of...";
             message[5] = "* ...Kanako...";
-            prt[2] = 418;
-            prt[3] = 418;
-            prt[4] = 416;
-            prt[5] = 406;
+            prt[2] = spr_portrait_starlo_plain;
+            prt[3] = spr_portrait_starlo_plain;
+            prt[4] = spr_portrait_starlo_hurt;
+            prt[5] = spr_portrait_starlo_disappointed;
             talker[6] = actor_ceroba;
             message[6] = "* ...";
-            prt[6] = 393;
+            prt[6] = spr_portrait_ceroba_surprised;
         }
         
         break;
@@ -490,12 +492,12 @@ switch (scene)
             message[0] = "* I... Um... Appreciate#  that, Star.";
             message[1] = "* I...";
             message[2] = "* I believe I have#  business to take care#  of relating to her...";
-            prt[0] = 394;
-            prt[1] = 371;
-            prt[2] = 370;
+            prt[0] = spr_portrait_ceroba_disapproving;
+            prt[1] = spr_portrait_ceroba_alt;
+            prt[2] = spr_portrait_ceroba_neutral;
             talker[3] = actor_starlo;
             message[3] = "* What do you mean?";
-            prt[3] = 421;
+            prt[3] = spr_portrait_starlo_serious;
             talker[4] = actor_ceroba;
             message[4] = "* I must tell you#  something.";
             message[5] = "* I suppose Clover#  should know as well.";
@@ -504,19 +506,19 @@ switch (scene)
             message[8] = "* ...";
             message[9] = "* Let's go to the old#  Steamworks gate.";
             message[10] = "* We'll speak there.";
-            prt[4] = 394;
-            prt[5] = 394;
-            prt[6] = 370;
-            prt[7] = 371;
-            prt[8] = 377;
-            prt[9] = 370;
-            prt[10] = 370;
+            prt[4] = spr_portrait_ceroba_disapproving;
+            prt[5] = spr_portrait_ceroba_disapproving;
+            prt[6] = spr_portrait_ceroba_neutral;
+            prt[7] = spr_portrait_ceroba_alt;
+            prt[8] = spr_portrait_ceroba_closed_eyes;
+            prt[9] = spr_portrait_ceroba_neutral;
+            prt[10] = spr_portrait_ceroba_neutral;
             talker[11] = actor_starlo;
             message[11] = "* Ceroba...";
-            prt[11] = 406;
+            prt[11] = spr_portrait_starlo_disappointed;
             talker[12] = actor_ceroba;
             message[12] = "* Come on.";
-            prt[12] = 394;
+            prt[12] = spr_portrait_ceroba_disapproving;
             
             if (message_current == 2)
                 actor_ceroba.npc_direction = "up";
@@ -549,8 +551,8 @@ switch (scene)
             talker[0] = actor_starlo;
             message[0] = "* I guess you're really#  part of the team now,#  Clover.";
             message[1] = "* You heard her.";
-            prt[0] = 421;
-            prt[1] = 417;
+            prt[0] = spr_portrait_starlo_serious;
+            prt[1] = spr_portrait_starlo_normal;
         }
         
         actor_starlo.npc_direction = "down";
@@ -573,9 +575,9 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* Clover! Clover!";
-            prt[0] = 318;
+            prt[0] = spr_martlet_head_happy;
         }
         
         break;
@@ -589,7 +591,7 @@ switch (scene)
         break;
     
     case 60:
-        cutscene_npc_walk(1164, 160, 220, 3, "x", "up");
+        cutscene_npc_walk(obj_martlet_npc, 160, 220, 3, "x", "up");
         break;
     
     case 61:
@@ -597,7 +599,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* So I have good news#  and bad news.";
             message[1] = "* I'll start with the#  good:";
             message[2] = "* Turns out, the wife of#  that old friend I told#  you about is here!";
@@ -619,33 +621,33 @@ switch (scene)
             message[18] = "* She told me she would#  accompany you on the#  journey to Hotland.";
             message[19] = "* So hey, it all works#  out!";
             message[20] = "* Again, I'm so-so-so-SO#  sorry about this but#  I'll cya later!";
-            prt[0] = 321;
-            prt[1] = 312;
-            prt[2] = 318;
-            prt[3] = 312;
-            prt[4] = 320;
-            prt[5] = 328;
-            prt[6] = 337;
-            prt[7] = 338;
-            prt[8] = 317;
-            prt[9] = 320;
-            prt[10] = 333;
-            prt[11] = 321;
-            prt[12] = 329;
-            prt[13] = 321;
-            prt[14] = 321;
-            prt[15] = 323;
-            prt[16] = 321;
-            prt[17] = 328;
-            prt[18] = 328;
-            prt[19] = 312;
-            prt[20] = 323;
+            prt[0] = spr_martlet_head_moderate;
+            prt[1] = spr_martlet_head_content;
+            prt[2] = spr_martlet_head_happy;
+            prt[3] = spr_martlet_head_content;
+            prt[4] = spr_martlet_head_melancholic;
+            prt[5] = spr_martlet_head_regular;
+            prt[6] = spr_martlet_head_wink;
+            prt[7] = spr_martlet_head_wondering;
+            prt[8] = spr_martlet_head_downer;
+            prt[9] = spr_martlet_head_melancholic;
+            prt[10] = spr_martlet_head_surprised;
+            prt[11] = spr_martlet_head_moderate;
+            prt[12] = spr_martlet_head_sad;
+            prt[13] = spr_martlet_head_moderate;
+            prt[14] = spr_martlet_head_moderate;
+            prt[15] = spr_martlet_head_nervous_smile;
+            prt[16] = spr_martlet_head_moderate;
+            prt[17] = spr_martlet_head_regular;
+            prt[18] = spr_martlet_head_regular;
+            prt[19] = spr_martlet_head_content;
+            prt[20] = spr_martlet_head_nervous_smile;
         }
         
         break;
     
     case 62:
-        cutscene_npc_walk(1164, obj_martlet_npc.x, __view_get(e__VW.YView, 0) + __view_get(e__VW.WView, 0) + 50, 4, "x", "down");
+        cutscene_npc_walk(obj_martlet_npc, obj_martlet_npc.x, __view_get(e__VW.YView, 0) + __view_get(e__VW.WView, 0) + 50, 4, "x", "down");
         break;
     
     case 63:

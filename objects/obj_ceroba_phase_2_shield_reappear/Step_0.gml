@@ -1,9 +1,7 @@
-var ceroba_image_index;
-
 if (live_call())
     return global.live_result;
 
-ceroba_image_index = obj_ceroba_body_pacifist_phase_2.image_index;
+var ceroba_image_index = obj_ceroba_body_pacifist_phase_2.image_index;
 
 switch (scene)
 {

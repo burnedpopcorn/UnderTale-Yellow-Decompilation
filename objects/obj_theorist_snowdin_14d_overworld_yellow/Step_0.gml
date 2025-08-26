@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* There is a torch on one side...";
                 message[1] = "* But not on the other...";
                 message[2] = "* The feng shui of this place is#  terrible.";
@@ -24,7 +24,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Wait...";
                 message[1] = "* WHAT IF THERE IS A DEEPER#  MEANING TO IT?";
                 message[2] = "* THE TORCH IS A METAPHOR FOR THE#  INCOMPLETE NATURE OF LIFE.";
@@ -38,7 +38,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* HNNNNGGGGHHHHH";
             }
             

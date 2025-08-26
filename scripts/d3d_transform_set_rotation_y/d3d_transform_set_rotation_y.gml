@@ -1,10 +1,8 @@
-function d3d_transform_set_rotation_y(argument0)
+function d3d_transform_set_rotation_y(arg0)
 {
-    var c, s, m;
-    
-    c = dcos(argument0);
-    s = dsin(argument0);
-    m = matrix_build_identity();
+    var c = dcos(arg0);
+    var s = dsin(arg0);
+    var m = matrix_build_identity();
     m[0] = c;
     m[2] = s;
     m[8] = -s;

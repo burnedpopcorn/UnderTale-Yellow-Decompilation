@@ -1,7 +1,7 @@
 if ((room == rm_darkruins_06 && global.flag[2] == true) || (room == rm_darkruins_10 && global.flag06 == true))
     exit;
 
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     if (scr_interact() == true && obj_pl.direction == 90 && image_index == 0)
     {

@@ -1,5 +1,3 @@
-var new_message, i, new_letter, new_pos;
-
 if (live_call())
     return global.live_result;
 
@@ -25,12 +23,12 @@ randomize_counter--;
 
 if (randomize_counter <= 0)
 {
-    new_message = message_original;
+    var new_message = message_original;
     
-    for (i = 0; i < 2; i++)
+    for (var i = 0; i < 2; i++)
     {
-        new_letter = chr(irandom_range(97, 122));
-        new_pos = irandom_range(0, string_length(message[0]) - 1);
+        var new_letter = chr(irandom_range(97, 122));
+        var new_pos = irandom_range(0, string_length(message[0]) - 1);
         new_message = string_delete(new_message, new_pos, 1);
         new_message = string_insert(new_letter, new_message, new_pos);
     }

@@ -1,2 +1,2 @@
 event_inherited();
-editor_sprite = spr_robot_bow;
+editor_sprite = 1515;

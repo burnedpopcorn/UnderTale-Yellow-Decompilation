@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"90908cf0-ff36-4bb4-8a4d-7859cc28ae7c",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"379cdf4e-538e-436a-a03f-9416629a8c02",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"08bd26ff-0579-4704-811c-27170deee71e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3b998606-1ea1-4346-b5f0-cc10e2725889",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2ca3bc53-a22c-4647-a125-955598558c95",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f2b65989-1317-458d-a098-260f7f80e024",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 30,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5bed6298-f70d-49ef-b5e3-c698339c46f9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c40b76d7-7c29-426a-adb0-bfe622002776","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"90908cf0-ff36-4bb4-8a4d-7859cc28ae7c","path":"sprites/spr_ceroba_attack_bell_fragments/spr_ceroba_attack_bell_fragments.yy",},},},"Disabled":false,"id":"d1c9a17c-622e-44b5-bdd8-970e7fcacc1e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"379cdf4e-538e-436a-a03f-9416629a8c02","path":"sprites/spr_ceroba_attack_bell_fragments/spr_ceroba_attack_bell_fragments.yy",},},},"Disabled":false,"id":"0e49e25e-e3b3-4a11-997b-5d739965eae3","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"08bd26ff-0579-4704-811c-27170deee71e","path":"sprites/spr_ceroba_attack_bell_fragments/spr_ceroba_attack_bell_fragments.yy",},},},"Disabled":false,"id":"9001884d-40c9-4cc1-a92f-fca20f26efbd","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3b998606-1ea1-4346-b5f0-cc10e2725889","path":"sprites/spr_ceroba_attack_bell_fragments/spr_ceroba_attack_bell_fragments.yy",},},},"Disabled":false,"id":"cfd7d0e1-aea9-4a33-bf03-81f9552487c6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2ca3bc53-a22c-4647-a125-955598558c95","path":"sprites/spr_ceroba_attack_bell_fragments/spr_ceroba_attack_bell_fragments.yy",},},},"Disabled":false,"id":"23a1cd9f-26f0-449c-8165-75119da41899","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f2b65989-1317-458d-a098-260f7f80e024","path":"sprites/spr_ceroba_attack_bell_fragments/spr_ceroba_attack_bell_fragments.yy",},},},"Disabled":false,"id":"faa576e4-a359-41a5-b267-0f171d95b3b6","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Battlenewhome",
+    "path": "texturegroups/Battlenewhome",
   },
   "type": 0,
   "VTile": false,

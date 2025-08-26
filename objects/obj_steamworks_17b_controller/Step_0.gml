@@ -20,7 +20,7 @@ switch (scene)
         break;
     
     case 3:
-        cutscene_change_room(165, 690, 280, 0.1);
+        cutscene_change_room(rm_steamworks_17, 690, 280, 0.1);
         break;
     
     case 4:
@@ -60,7 +60,7 @@ switch (scene)
         break;
     
     case 9:
-        cutscene_change_room(279, 180, 140, 0.1);
+        cutscene_change_room(rm_steamworks_17b, 180, 140, 0.1);
         break;
     
     case 10:

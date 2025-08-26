@@ -1,5 +1,3 @@
-var i, mouse_xx, mouse_yy, stick_radius, dgn;
-
 touch_current = 0;
 phn_down = false;
 phn_left = false;
@@ -10,10 +8,10 @@ phn_leftp = false;
 phn_upp = false;
 phn_rightp = false;
 
-for (i = 0; i < 4; i++)
+for (var i = 0; i < 4; i++)
 {
-    mouse_xx = device_mouse_x_to_gui(i);
-    mouse_yy = device_mouse_y_to_gui(i);
+    var mouse_xx = device_mouse_x_to_gui(i);
+    var mouse_yy = device_mouse_y_to_gui(i);
     a_pressed = point_in_circle(mouse_xx, mouse_yy, mobile_a_xx, mobile_a_yy, button_radius) && device_mouse_check_button(i, mb_any);
     
     if (a_pressed && !noloop_a)
@@ -32,10 +30,10 @@ for (i = 0; i < 4; i++)
         break;
 }
 
-for (i = 0; i < 4; i++)
+for (var i = 0; i < 4; i++)
 {
-    mouse_xx = device_mouse_x_to_gui(i);
-    mouse_yy = device_mouse_y_to_gui(i);
+    var mouse_xx = device_mouse_x_to_gui(i);
+    var mouse_yy = device_mouse_y_to_gui(i);
     b_pressed = point_in_circle(mouse_xx, mouse_yy, mobile_b_xx, mobile_b_yy, button_radius) && device_mouse_check_button(i, mb_any);
     
     if (b_pressed && !noloop_b)
@@ -54,10 +52,10 @@ for (i = 0; i < 4; i++)
         break;
 }
 
-for (i = 0; i < 4; i++)
+for (var i = 0; i < 4; i++)
 {
-    mouse_xx = device_mouse_x_to_gui(i);
-    mouse_yy = device_mouse_y_to_gui(i);
+    var mouse_xx = device_mouse_x_to_gui(i);
+    var mouse_yy = device_mouse_y_to_gui(i);
     y_pressed = point_in_circle(mouse_xx, mouse_yy, mobile_a_xx, mobile_y_yy, button_radius) && device_mouse_check_button(i, mb_any);
     
     if (y_pressed && !noloop_y)
@@ -76,12 +74,12 @@ for (i = 0; i < 4; i++)
         break;
 }
 
-stick_radius = sprite_get_width(spr_andrd_stick_base) * button_scale;
+var stick_radius = sprite_get_width(spr_andrd_stick_base) * button_scale;
 
-for (i = 0; i < 4; i++)
+for (var i = 0; i < 4; i++)
 {
-    mouse_xx = device_mouse_x_to_gui(i);
-    mouse_yy = device_mouse_y_to_gui(i);
+    var mouse_xx = device_mouse_x_to_gui(i);
+    var mouse_yy = device_mouse_y_to_gui(i);
     
     if (mouse_xx <= 0 && device_mouse_check_button(i, mb_any) && stick_movement_active == false)
     {
@@ -107,7 +105,7 @@ for (i = 0; i < 4; i++)
         
         if (mobile_stick_distance > (global.gamepad_deadzone * stick_radius))
         {
-            dgn = 20;
+            var dgn = 20;
             
             if (mobile_stick_dir >= (45 - dgn) && mobile_stick_dir < (135 + dgn))
             {

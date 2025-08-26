@@ -1,5 +1,3 @@
-var i;
-
 up_sprite = spr_rals_up;
 right_sprite = spr_rals_right;
 down_sprite = spr_rals_down;
@@ -13,7 +11,7 @@ npc_move_delay_max = 10;
 npc_move_current = 0;
 last_player_dir = obj_pl.direction;
 
-for (i = npc_move_delay_max; i > 0; i--)
+for (var i = npc_move_delay_max; i > 0; i--)
 {
     x_new[i] = -1;
     y_new[i] = -1;

@@ -1,9 +1,7 @@
-var battle_box, target_distance, fireball;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 scr_enemy_attack_bullet_hit();
 
 if (bullet_destroy_self)
@@ -26,7 +24,7 @@ switch (scene)
         if (speed < target_speed)
             speed += 1;
         
-        target_distance = battle_box.sprite_height;
+        var target_distance = battle_box.sprite_height;
         
         if (direction == 0 || direction == 180)
             target_distance = battle_box.sprite_width;
@@ -36,7 +34,7 @@ switch (scene)
         if (dist_travelled >= (target_distance / bullet_count))
         {
             dist_travelled = 0;
-            fireball = instance_create_depth(x, y, depth + 1, obj_ceroba_attack_bullet_trail_fireball);
+            var fireball = instance_create_depth(x, y, depth + 1, obj_ceroba_attack_bullet_trail_fireball);
             fireball.alarm[0] = 30;
         }
         

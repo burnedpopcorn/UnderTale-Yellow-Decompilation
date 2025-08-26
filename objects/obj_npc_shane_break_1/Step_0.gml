@@ -11,7 +11,7 @@ if (interact)
         case 0:
             with (msg)
             {
-                message[0] = "* Gragbh... Blaffm...#  Clfmph...\t";
+                message[0] = "* Gragbh... Blaffm.....#  Clfmph......\t";
                 message[1] = "* (Howdy human!)";
             }
             
@@ -21,9 +21,9 @@ if (interact)
         case 1:
             with (msg)
             {
-                message[0] = "* Fribb... Jiblem... ";
+                message[0] = "* Fribb... Jiblem..... ";
                 message[1] = "* Hick...";
-                message[2] = "* Blpshm...";
+                message[2] = "* Blpshm......";
                 message[3] = "* (Give me a drink, bartender!)";
             }
             

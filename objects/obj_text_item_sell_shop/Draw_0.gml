@@ -1,5 +1,3 @@
-var item_price, item_name;
-
 draw_set_font(fnt_battle);
 draw_set_color(c_white);
 draw_set_halign(fa_left);
@@ -15,8 +13,8 @@ for (i = 1; i < array_length_1d(global.item_slot); i += 1)
         break;
     }
     
-    item_price = scr_determine_sell_price_shop(global.item_slot[i]);
-    item_name = string(global.item_slot[i]);
+    var item_price = scr_determine_sell_price_shop(global.item_slot[i]);
+    var item_name = string(global.item_slot[i]);
     
     if (item_name == "Dihydrogen Monoxide")
         item_name = "H2O";

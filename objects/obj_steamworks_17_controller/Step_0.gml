@@ -21,7 +21,7 @@ if (global.route == 2)
             break;
         
         case 3:
-            cutscene_npc_walk(1168, 1300, 520, 3, "x", "left");
+            cutscene_npc_walk(obj_player_npc, 1300, 520, 3, "x", "left");
             scene++;
             break;
         
@@ -42,9 +42,9 @@ if (global.route == 2)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Ugh, it's a dead end.";
-                prt[0] = 368;
+                prt[0] = spr_portrait_ceroba_irked;
             }
             
             break;
@@ -58,7 +58,7 @@ if (global.route == 2)
             break;
         
         case 10:
-            cutscene_npc_direction(1168, "down");
+            cutscene_npc_direction(obj_player_npc, "down");
             break;
         
         case 11:
@@ -66,9 +66,9 @@ if (global.route == 2)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* It looks like we're#  gonna have to-";
-                prt[0] = 394;
+                prt[0] = spr_portrait_ceroba_disapproving;
                 skippable = false;
                 
                 if (cutoff == string_length(message[message_current]))
@@ -85,11 +85,11 @@ if (global.route == 2)
             break;
         
         case 13:
-            cutscene_npc_direction(1168, "left");
+            cutscene_npc_direction(obj_player_npc, "left");
             break;
         
         case 14:
-            cutscene_sfx_play(325, 1);
+            cutscene_sfx_play(snd_manta_startup, 1);
             break;
         
         case 15:
@@ -157,11 +157,11 @@ if (global.route == 2)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* This bot doesn't seem#  malicious. That's new.";
                 message[1] = "* I say we give it a go.";
-                prt[0] = 393;
-                prt[1] = 370;
+                prt[0] = spr_portrait_ceroba_surprised;
+                prt[1] = spr_portrait_ceroba_neutral;
             }
             
             break;
@@ -221,7 +221,7 @@ else if (global.route == 1)
             break;
         
         case 2:
-            cutscene_npc_walk(1168, 1300, 520, 3, "x", "left");
+            cutscene_npc_walk(obj_player_npc, 1300, 520, 3, "x", "left");
             scene++;
             break;
         
@@ -234,7 +234,7 @@ else if (global.route == 1)
             break;
         
         case 5:
-            cutscene_sfx_play(325, 1);
+            cutscene_sfx_play(snd_manta_startup, 1);
             break;
         
         case 6:
@@ -311,7 +311,7 @@ else if (global.route == 3)
             break;
         
         case 2:
-            cutscene_npc_walk(1168, 1300, 520, 3, "x", "left");
+            cutscene_npc_walk(obj_player_npc, 1300, 520, 3, "x", "left");
             scene++;
             break;
         
@@ -324,7 +324,7 @@ else if (global.route == 3)
             break;
         
         case 5:
-            cutscene_sfx_play(325, 1);
+            cutscene_sfx_play(snd_manta_startup, 1);
             break;
         
         case 6:

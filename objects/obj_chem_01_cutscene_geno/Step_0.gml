@@ -30,7 +30,7 @@ switch (scene)
     
     case 5:
         instance_destroy(obj_cutscene_ex);
-        cutscene_npc_direction(1166, "down");
+        cutscene_npc_direction(obj_axis_npc, "down");
         break;
     
     case 6:
@@ -38,7 +38,7 @@ switch (scene)
         break;
     
     case 7:
-        cutscene_npc_walk(1166, 148, 120, 4, "x", "up");
+        cutscene_npc_walk(obj_axis_npc, 148, 120, 4, "x", "up");
         break;
     
     case 8:
@@ -52,7 +52,7 @@ switch (scene)
         break;
     
     case 10:
-        cutscene_npc_walk(1166, 120, 100, 4, "x", "up");
+        cutscene_npc_walk(obj_axis_npc, 120, 100, 4, "x", "up");
         break;
     
     case 11:

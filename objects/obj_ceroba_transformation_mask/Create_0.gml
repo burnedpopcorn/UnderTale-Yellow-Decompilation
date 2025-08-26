@@ -28,7 +28,7 @@ part_type_shape(mask_pt_effect_1, 0);
 part_type_size(mask_pt_effect_1, 1, 1, 0, 0);
 part_type_scale(mask_pt_effect_1, 3, 3);
 part_type_orientation(mask_pt_effect_1, 0, 359, 0, 0, 0);
-part_type_color3(mask_pt_effect_1, c_white, c_white, c_white);
+part_type_color3(mask_pt_effect_1, 16777215, 16777215, 16777215);
 part_type_alpha3(mask_pt_effect_1, 1, 1, 0);
 part_type_blend(mask_pt_effect_1, 0);
 part_type_life(mask_pt_effect_1, 15, 15);

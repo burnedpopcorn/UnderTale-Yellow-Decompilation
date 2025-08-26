@@ -1,5 +1,3 @@
-var dmg, hp_self_last;
-
 if (live_call())
     return global.live_result;
 
@@ -7,7 +5,7 @@ with (obj_heart_battle_fighting_parent)
 {
     if (!variable_instance_exists(id, "collider_id") || collider_id != other)
     {
-        dmg = global.current_hp_self * 0.5;
+        var dmg = global.current_hp_self * 0.5;
         
         if (global.current_hp_self > 1)
             dmg = floor(dmg);
@@ -29,7 +27,7 @@ with (obj_heart_battle_fighting_parent)
         else
         {
             damage = 0;
-            hp_self_last = global.current_hp_self;
+            var hp_self_last = global.current_hp_self;
             global.current_hp_self /= 10;
             
             if (global.current_hp_self > 0)

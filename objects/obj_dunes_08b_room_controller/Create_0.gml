@@ -1,5 +1,3 @@
-var mo;
-
 scene = 0;
 timer = 0;
 cutscene_timer = 0;
@@ -18,7 +16,7 @@ if (global.route == 3)
 
 if (global.dunes_flag[3] == 1)
 {
-    mo = instance_create(205, 230, obj_dunes_08b_mo);
+    var mo = instance_create(205, 230, obj_dunes_08b_mo);
     instance_create(200, 240, obj_dunes_08b_stand);
     instance_destroy(obj_dunes_08b_dispenser);
     

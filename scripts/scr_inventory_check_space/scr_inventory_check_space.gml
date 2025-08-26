@@ -1,8 +1,6 @@
 function scr_inventory_check_space()
 {
-    var i;
-    
-    for (i = 1; i <= 8; i++)
+    for (var i = 1; i <= 8; i++)
     {
         if (global.item_slot[i] == "Nothing")
         {

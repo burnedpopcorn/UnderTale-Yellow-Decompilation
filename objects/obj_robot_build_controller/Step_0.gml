@@ -1,5 +1,3 @@
-var x_origin, y_origin, i, confirm_key, cancel_key, cursor_x, cursor_y, robot_item_number;
-
 if (live_call())
     return global.live_result;
 
@@ -10,9 +8,9 @@ if (destroy_self == true)
     if (draw_alpha == 0)
     {
         global.sworks_robot_count = instance_number(obj_robot_build_item);
-        x_origin = 60;
-        y_origin = 140;
-        i = 0;
+        var x_origin = 60;
+        var y_origin = 140;
+        var i = 0;
         
         with (obj_robot_build_item)
         {
@@ -37,10 +35,10 @@ if (global.dialogue_open)
     exit;
 
 draw_alpha = lerp(draw_alpha, 1, 0.2);
-confirm_key = keyboard_multicheck_pressed(0);
-cancel_key = keyboard_multicheck_pressed(1);
-cursor_x = obj_robot_build_cursor.x;
-cursor_y = obj_robot_build_cursor.y;
+var confirm_key = keyboard_multicheck_pressed(vk_nokey);
+var cancel_key = keyboard_multicheck_pressed(vk_anykey);
+var cursor_x = obj_robot_build_cursor.x;
+var cursor_y = obj_robot_build_cursor.y;
 
 if (point_in_rectangle(cursor_x, cursor_y, 360, 20, 470, 150))
     robot_item_selected = 0;
@@ -64,7 +62,7 @@ if (confirm_key)
 {
     if (robot_item_selected != -1)
     {
-        robot_item_number = instance_number(obj_robot_build_item);
+        var robot_item_number = instance_number(obj_robot_build_item);
         
         if (robot_item_number >= item_number_max)
         {
@@ -106,7 +104,7 @@ if (confirm_key)
 if (robot_item_selected != -1)
     robot_item_scale[robot_item_selected] = lerp(robot_item_scale[robot_item_selected], 1.3, 0.15);
 
-for (i = 0; i < array_length_1d(robot_item_scale); i++)
+for (var i = 0; i < array_length_1d(robot_item_scale); i++)
 {
     if (i != robot_item_selected)
         robot_item_scale[i] = lerp(robot_item_scale[i], 1, 0.25);

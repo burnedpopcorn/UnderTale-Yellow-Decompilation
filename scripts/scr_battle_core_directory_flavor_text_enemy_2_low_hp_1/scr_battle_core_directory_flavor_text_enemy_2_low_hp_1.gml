@@ -1,10 +1,8 @@
 function scr_battle_core_directory_flavor_text_enemy_2_low_hp_1()
 {
-    var battle_enemy_name, enemy_mode_2, game_mode;
-    
-    battle_enemy_name = global.battle_enemy_name;
-    enemy_mode_2 = global.enemy_mode_2;
-    game_mode = global.game_mode;
+    var battle_enemy_name = global.battle_enemy_name;
+    var enemy_mode_2 = global.enemy_mode_2;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {

@@ -95,7 +95,7 @@ if (execute_normal == true)
                 }
                 else if (random_number == 1)
                 {
-                    message[0] = "I'm not so#sure about#that..";
+                    message[0] = "I'm not so#sure about#that....";
                     message_end = 0;
                 }
                 else if (random_number == 2)

@@ -1,6 +1,5 @@
-var smoke_y_disjoint, smoke_x_disjoint;
-
-smoke_y_disjoint = irandom_range(smoke_y_diff_min, smoke_y_diff_max);
+var smoke_y_disjoint = irandom_range(smoke_y_diff_min, smoke_y_diff_max);
+var smoke_x_disjoint;
 
 if (smoke_direction == -1)
     smoke_x_disjoint = -1;

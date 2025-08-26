@@ -1,4 +1,4 @@
-function d3d_light_enable(argument0, argument1)
+function d3d_light_enable(arg0, arg1)
 {
-    draw_light_enable(argument0, argument1);
+    draw_light_enable(arg0, arg1);
 }

@@ -1,12 +1,10 @@
-var i, layer_width, j;
-
 if (live_call())
     return global.live_result;
 
-for (i = 0; i < array_length(parallax_layer); i++)
+for (var i = 0; i < array_length(parallax_layer); i++)
 {
-    layer_width = sprite_get_width(parallax_layer[i]);
-    j = -3 * layer_width;
+    var layer_width = sprite_get_width(parallax_layer[i]);
+    var j = -3 * layer_width;
     
     while (j < (6 * layer_width))
     {

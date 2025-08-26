@@ -1,4 +1,4 @@
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     if (scr_interact() == true)
     {
@@ -10,7 +10,7 @@ if (keyboard_multicheck_pressed(0))
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
             }
             
             msg.message[0] = id.message;

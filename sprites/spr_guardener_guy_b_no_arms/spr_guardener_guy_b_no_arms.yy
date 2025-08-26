@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"db9b46af-2fdb-4cfc-a4a9-34f24b988e93",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"24e46865-a02c-40bf-be54-196ed8b2df77",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"65e347e1-115a-4bcd-ab0e-250ffab36c29",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"39564bb1-ff8e-4418-b188-7af6f4f18daf",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5364958a-e249-4515-ae26-a916e53b91f0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4f361f20-06ff-420a-ba13-fe03e9f67136",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 114,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"87bf24d9-53cf-47ef-9082-170f67a3a08a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d4bf9afd-f478-4d24-8952-172a3ac36836","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"db9b46af-2fdb-4cfc-a4a9-34f24b988e93","path":"sprites/spr_guardener_guy_b_no_arms/spr_guardener_guy_b_no_arms.yy",},},},"Disabled":false,"id":"9d992ac9-fc48-4a2f-bd61-ac2b7771f13c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"24e46865-a02c-40bf-be54-196ed8b2df77","path":"sprites/spr_guardener_guy_b_no_arms/spr_guardener_guy_b_no_arms.yy",},},},"Disabled":false,"id":"896c0714-8cdb-4643-8a9d-14e45923462f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"65e347e1-115a-4bcd-ab0e-250ffab36c29","path":"sprites/spr_guardener_guy_b_no_arms/spr_guardener_guy_b_no_arms.yy",},},},"Disabled":false,"id":"d3ea9972-9568-4b05-b008-117ca92704a8","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"39564bb1-ff8e-4418-b188-7af6f4f18daf","path":"sprites/spr_guardener_guy_b_no_arms/spr_guardener_guy_b_no_arms.yy",},},},"Disabled":false,"id":"47cd4e86-2b46-4468-b068-12bb3ad08bb2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5364958a-e249-4515-ae26-a916e53b91f0","path":"sprites/spr_guardener_guy_b_no_arms/spr_guardener_guy_b_no_arms.yy",},},},"Disabled":false,"id":"545701ea-e51f-4031-83cb-a11ff0b3a628","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4f361f20-06ff-420a-ba13-fe03e9f67136","path":"sprites/spr_guardener_guy_b_no_arms/spr_guardener_guy_b_no_arms.yy",},},},"Disabled":false,"id":"2e15d304-aafb-41f3-9149-b08d96c0ecdc","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

@@ -16,12 +16,12 @@ if (interact)
                 message[3] = "* He immediately#  apologized so... I#  forgave him.\t";
                 message[4] = "* How could I say no to#  his overwhelming charm?\t";
                 message[5] = "* I'm only monster.";
-                prt[0] = 359;
-                prt[1] = 359;
-                prt[2] = 359;
-                prt[3] = 361;
-                prt[4] = 362;
-                prt[5] = 359;
+                prt[0] = spr_gilbert_head;
+                prt[1] = spr_gilbert_head;
+                prt[2] = spr_gilbert_head;
+                prt[3] = spr_gilbert_head_sweat;
+                prt[4] = spr_gilbert_head_blush;
+                prt[5] = spr_gilbert_head;
             }
             
             npc_flag++;
@@ -39,12 +39,12 @@ if (interact)
                 message[3] = "* He immediately#  apologized so... I#  forgave him.\t";
                 message[4] = "* How could I say no to#  his overwhelming charm?\t";
                 message[5] = "* I'm only monster.";
-                prt[0] = 359;
-                prt[1] = 359;
-                prt[2] = 359;
-                prt[3] = 361;
-                prt[4] = 362;
-                prt[5] = 359;
+                prt[0] = spr_gilbert_head;
+                prt[1] = spr_gilbert_head;
+                prt[2] = spr_gilbert_head;
+                prt[3] = spr_gilbert_head_sweat;
+                prt[4] = spr_gilbert_head_blush;
+                prt[5] = spr_gilbert_head;
             }
             
             npc_flag++;
@@ -56,13 +56,13 @@ if (interact)
             
             with (msg)
             {
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* As my old man used to#  say: mine on, kid!\t";
                 message[1] = "* ...\t";
                 message[2] = "* Okay, he uh... he never#  said that. I said that.#  Just now.";
-                prt[0] = 359;
-                prt[1] = 361;
-                prt[2] = 362;
+                prt[0] = spr_gilbert_head;
+                prt[1] = spr_gilbert_head_sweat;
+                prt[2] = spr_gilbert_head_blush;
             }
             
             break;

@@ -20,8 +20,8 @@ if (can_talk)
                     {
                         message[0] = "* Welcome to the Mining#  Co. Mines! (I wasn't#  expecting visitors...)";
                         message[1] = "* If you have an inquiry,#  please take it up with#  my assistant.";
-                        prt[0] = 359;
-                        prt[1] = 359;
+                        prt[0] = spr_gilbert_head;
+                        prt[1] = spr_gilbert_head;
                     }
                     
                     if (!global.dialogue_open)
@@ -42,10 +42,10 @@ if (can_talk)
                         message[1] = "* Sent everyone home for#  now.";
                         message[2] = "* Waiting to see if it#  was a false alarm or#  not.";
                         message[3] = "* Sure hope everything's#  okay...";
-                        prt[0] = 359;
-                        prt[1] = 359;
-                        prt[2] = 359;
-                        prt[3] = 359;
+                        prt[0] = spr_gilbert_head;
+                        prt[1] = spr_gilbert_head;
+                        prt[2] = spr_gilbert_head;
+                        prt[3] = spr_gilbert_head;
                     }
                     
                     npc_flag++;
@@ -64,8 +64,8 @@ if (can_talk)
                 {
                     message[0] = "* Gilbert, please. We've#  been married 27 years.";
                     message[1] = "* You can handle the#  questions yourself.";
-                    prt[0] = 365;
-                    prt[1] = 363;
+                    prt[0] = spr_angie_head_unamused;
+                    prt[1] = spr_angie_head;
                 }
                 
                 if (!global.dialogue_open)
@@ -90,14 +90,14 @@ if (can_talk)
                     message[5] = "* I'm gonna investigate#  it soon!";
                     message[6] = "* No need to worry,#  everything is fine!";
                     message[7] = "* So... what is it?";
-                    prt[0] = 361;
-                    prt[1] = 359;
-                    prt[2] = 359;
-                    prt[3] = 359;
-                    prt[4] = 359;
-                    prt[5] = 359;
-                    prt[6] = 359;
-                    prt[7] = 361;
+                    prt[0] = spr_gilbert_head_sweat;
+                    prt[1] = spr_gilbert_head;
+                    prt[2] = spr_gilbert_head;
+                    prt[3] = spr_gilbert_head;
+                    prt[4] = spr_gilbert_head;
+                    prt[5] = spr_gilbert_head;
+                    prt[6] = spr_gilbert_head;
+                    prt[7] = spr_gilbert_head_sweat;
                     
                     if (outcome == 1)
                     {
@@ -113,12 +113,12 @@ if (can_talk)
                         message[11] = "* Turns out marble walls#  and gold tiling adds up#  quick.";
                         message[12] = "* We ran out.";
                         message[13] = "* Gorgeous baseboard job,#  though. Totally worth#  it.";
-                        prt[8] = 361;
-                        prt[9] = 359;
-                        prt[10] = 359;
-                        prt[11] = 359;
-                        prt[12] = 361;
-                        prt[13] = 362;
+                        prt[8] = spr_gilbert_head_sweat;
+                        prt[9] = spr_gilbert_head;
+                        prt[10] = spr_gilbert_head;
+                        prt[11] = spr_gilbert_head;
+                        prt[12] = spr_gilbert_head_sweat;
+                        prt[13] = spr_gilbert_head_blush;
                         other.npc_flag = 1;
                         other.can_talk = false;
                         global.cutscene = false;
@@ -148,19 +148,19 @@ if (can_talk)
                     message[2] = "* They deserve a good#  slap on the wrist, that#  they do!";
                     message[3] = "* One more mistake and I#  might put them in the#  timeout corner!";
                     message[4] = "* I'll uh... send Angie#  down to confront them.";
-                    prt[0] = 361;
-                    prt[1] = 359;
-                    prt[2] = 359;
-                    prt[3] = 359;
-                    prt[4] = 361;
+                    prt[0] = spr_gilbert_head_sweat;
+                    prt[1] = spr_gilbert_head;
+                    prt[2] = spr_gilbert_head;
+                    prt[3] = spr_gilbert_head;
+                    prt[4] = spr_gilbert_head_sweat;
                     message[5] = "* You won't fire them#  will you?";
-                    prt[5] = 363;
+                    prt[5] = spr_angie_head;
                     message[6] = "* Of course not!";
                     message[7] = "* The only monster I ever#  fired was the health#  inspector.";
                     message[8] = "* Fired him before he#  arrived.";
-                    prt[6] = 361;
-                    prt[7] = 359;
-                    prt[8] = 359;
+                    prt[6] = spr_gilbert_head_sweat;
+                    prt[7] = spr_gilbert_head;
+                    prt[8] = spr_gilbert_head;
                     
                     if (message_current == 8)
                     {
@@ -182,26 +182,26 @@ if (can_talk)
             {
                 if (global.geno_complete[2] == false)
                 {
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* I take great pride in#  these mines.";
                     message[1] = "* Been supervising them#  for around thirty years!";
                     message[2] = "* Here every single day.";
                     message[3] = "* I did take a week off#  when my kiddo was born.";
                     message[4] = "* But was right back at#  it when the time came.";
                     message[5] = "* Strangely, the progress#  report for that week#  was above average.";
-                    prt[0] = 361;
-                    prt[1] = 359;
-                    prt[2] = 359;
-                    prt[3] = 359;
-                    prt[4] = 361;
-                    prt[5] = 361;
+                    prt[0] = spr_gilbert_head_sweat;
+                    prt[1] = spr_gilbert_head;
+                    prt[2] = spr_gilbert_head;
+                    prt[3] = spr_gilbert_head;
+                    prt[4] = spr_gilbert_head_sweat;
+                    prt[5] = spr_gilbert_head_sweat;
                 }
                 else
                 {
                     message[0] = "* Haven't had an#  emergency like this#  since the old cave in.";
                     message[1] = "* Abandoned a good#  facility that day.";
-                    prt[0] = 359;
-                    prt[1] = 359;
+                    prt[0] = spr_gilbert_head;
+                    prt[1] = spr_gilbert_head;
                 }
             }
             
@@ -215,21 +215,21 @@ if (can_talk)
             
             with (msg)
             {
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 
                 if (global.geno_complete[2] == false)
                 {
                     message[0] = "* If you ever see my kid# out there,";
                     message[1] = "* Tell 'em that their#  old man misses 'em!";
-                    prt[0] = 359;
-                    prt[1] = 362;
+                    prt[0] = spr_gilbert_head;
+                    prt[1] = spr_gilbert_head_blush;
                 }
                 else
                 {
                     message[0] = "* If you're leaving, stay#  safe out there.";
                     message[1] = "* But I wouldn't#  recommend roaming around#  right now.";
-                    prt[0] = 359;
-                    prt[1] = 359;
+                    prt[0] = spr_gilbert_head;
+                    prt[1] = spr_gilbert_head;
                 }
             }
             

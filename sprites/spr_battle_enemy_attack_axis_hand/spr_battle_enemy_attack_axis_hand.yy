@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"627b7666-d5e3-4b0a-a33f-e06b08bdebd9",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d752d1f8-84dc-4370-8531-d9fef4deaab6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fc121944-1e31-4fd7-909c-8e5da0424a93",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a591dda4-da0b-4d3b-987e-b1caffc554b1",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 50,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f4bd253f-4f69-4305-ac23-0dae3cab90a1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6566e870-3af3-4c15-b8e5-7bf3f35309ed","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"627b7666-d5e3-4b0a-a33f-e06b08bdebd9","path":"sprites/spr_battle_enemy_attack_axis_hand/spr_battle_enemy_attack_axis_hand.yy",},},},"Disabled":false,"id":"4c385bca-3219-4ad7-9d7e-ef7b92f029ee","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d752d1f8-84dc-4370-8531-d9fef4deaab6","path":"sprites/spr_battle_enemy_attack_axis_hand/spr_battle_enemy_attack_axis_hand.yy",},},},"Disabled":false,"id":"1c4b6242-939d-480e-a0ed-6034e68722b4","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fc121944-1e31-4fd7-909c-8e5da0424a93","path":"sprites/spr_battle_enemy_attack_axis_hand/spr_battle_enemy_attack_axis_hand.yy",},},},"Disabled":false,"id":"5d3d27fc-bbd5-4ae1-b96f-f46bee23b8b0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a591dda4-da0b-4d3b-987e-b1caffc554b1","path":"sprites/spr_battle_enemy_attack_axis_hand/spr_battle_enemy_attack_axis_hand.yy",},},},"Disabled":false,"id":"42347b31-ab20-4989-83ac-bd93d65f10df","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

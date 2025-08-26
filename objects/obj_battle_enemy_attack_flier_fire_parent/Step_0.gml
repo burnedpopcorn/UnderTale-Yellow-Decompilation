@@ -14,7 +14,7 @@ if (instance_exists(obj_dialogue_box_battle_transformation_any) && no_loop_switc
     if (y >= (obj_dialogue_box_battle_transformation_any.y - 4) && y <= (obj_dialogue_box_battle_transformation_any.y + 4))
     {
         starting_position_y = y;
-        max_rise_y /= 2;
+        max_rise_y = max_rise_y / 2;
         time_elapsed_y = 0;
         time_increase_y *= 2;
         no_loop_switch_y = true;

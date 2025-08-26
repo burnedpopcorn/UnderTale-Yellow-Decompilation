@@ -1,5 +1,3 @@
-var string_hours, string_minutes, string_seconds, i;
-
 if (live_call())
     return global.live_result;
 
@@ -7,9 +5,9 @@ scene = 0;
 cutscene_timer = 0;
 draw_alpha = 1;
 obj_pl.image_alpha = 0;
-string_hours = string(global.elapsed_seconds div 3600);
-string_minutes = string((global.elapsed_seconds div 60) % 60);
-string_seconds = string(global.elapsed_seconds % 60);
+var string_hours = string(global.elapsed_seconds div 3600);
+var string_minutes = string((global.elapsed_seconds div 60) % 60);
+var string_seconds = string(global.elapsed_seconds % 60);
 
 if (real(string_hours) < 10)
     string_hours = "0" + string_hours;
@@ -37,7 +35,7 @@ if (global.sworks_flag[31] == 3)
 
 killed_bosses = "";
 
-for (i = 0; i < ds_list_size(boss_list); i++)
+for (var i = 0; i < ds_list_size(boss_list); i++)
 {
     if (i != 0)
         killed_bosses = string_insert(", ", killed_bosses, string_length(killed_bosses) - 1);

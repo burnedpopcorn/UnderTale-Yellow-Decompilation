@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c1e2acd7-9f32-433a-944b-9903c2605549",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"05a9d7d8-8e37-4a70-814f-b0afb82e017b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"722814ff-1b44-4865-bf7d-850ef4117300",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"25182096-79d6-49f5-8005-bbc91d4160c6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f39f322f-8c96-4423-8c5d-61da6e8075d8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"19acf0c3-5928-4f98-b5f7-1175c3dbd212",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 91,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cb30f163-b953-4eef-b046-0ff2810cc09d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"652de5e3-6083-4eda-ae51-87250e603d9f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c1e2acd7-9f32-433a-944b-9903c2605549","path":"sprites/spr_guardener_guy_gun/spr_guardener_guy_gun.yy",},},},"Disabled":false,"id":"77cd9475-0603-4e7c-a42c-b966b547f46e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"05a9d7d8-8e37-4a70-814f-b0afb82e017b","path":"sprites/spr_guardener_guy_gun/spr_guardener_guy_gun.yy",},},},"Disabled":false,"id":"de886c1c-ff70-4bac-8f77-b6a4996d7765","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"722814ff-1b44-4865-bf7d-850ef4117300","path":"sprites/spr_guardener_guy_gun/spr_guardener_guy_gun.yy",},},},"Disabled":false,"id":"942a0b6d-262a-4694-9c52-c855121295a8","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"25182096-79d6-49f5-8005-bbc91d4160c6","path":"sprites/spr_guardener_guy_gun/spr_guardener_guy_gun.yy",},},},"Disabled":false,"id":"d65dfe42-cd14-4303-8e82-97fb7b4b256e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f39f322f-8c96-4423-8c5d-61da6e8075d8","path":"sprites/spr_guardener_guy_gun/spr_guardener_guy_gun.yy",},},},"Disabled":false,"id":"e8f5631c-1b68-4951-a913-9b6a7f59b041","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"19acf0c3-5928-4f98-b5f7-1175c3dbd212","path":"sprites/spr_guardener_guy_gun/spr_guardener_guy_gun.yy",},},},"Disabled":false,"id":"7bfa8830-cd28-42de-9f8b-62709eebdaa0","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

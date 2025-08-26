@@ -1,14 +1,14 @@
-function scr_change_room(argument0, argument1, argument2)
+function scr_change_room(arg0, arg1, arg2)
 {
     if (!instance_exists(obj_transition))
     {
         trn = instance_create(x, y, obj_transition);
-        trn.newRoom = argument0;
+        trn.newRoom = arg0;
         
         if (instance_exists(obj_pl))
         {
-            trn.xx = argument1;
-            trn.yy = argument2;
+            trn.xx = arg1;
+            trn.yy = arg2;
         }
     }
 }

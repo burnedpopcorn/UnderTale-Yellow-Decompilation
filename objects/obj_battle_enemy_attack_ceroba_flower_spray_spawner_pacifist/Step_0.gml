@@ -1,5 +1,3 @@
-var xx, yy;
-
 if (live_call())
     return global.live_result;
 
@@ -25,8 +23,8 @@ if (image_alpha < 1)
     exit;
 }
 
-xx = x;
-yy = y;
+var xx = x;
+var yy = y;
 
 if (can_move)
 {

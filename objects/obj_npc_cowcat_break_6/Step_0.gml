@@ -13,7 +13,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Howdy, Deputy!";
                     message[1] = "* You are the deputy, right?";
                     message[2] = "* I heard the squad got real#  peeved off after learning#  that.";
@@ -27,7 +27,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Nyahaha!";
                 }
                 
@@ -43,7 +43,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Howdy, Deputy.\t";
                     message[1] = "* I'm real worried! Worried#  sick!\t";
                     message[2] = "* No one can find the Sheriff!#  Nyo one at all!\t";
@@ -57,7 +57,7 @@ if (interact)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Nyohoho.";
                 }
                 

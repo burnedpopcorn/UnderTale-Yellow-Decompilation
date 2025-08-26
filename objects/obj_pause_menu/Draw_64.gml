@@ -1,15 +1,13 @@
-var xx, yy, bbox_yscale, bbox_yoffset, bbox_yscale_multiplier, i, level_up_treshhold, drawn_ammo, n, mail_name;
-
 if (live_call())
     return global.live_result;
 
-xx = 52;
-yy = 52;
+var xx = 52;
+var yy = 52;
 draw_sprite_ext(spr_dialoguebox, 1, xx, yy, 1.1, 0.85, image_angle, c_white, image_alpha);
 draw_sprite_ext(spr_dialoguebox, 0, xx, yy, 1, 0.75, image_angle, image_blend, image_alpha);
-bbox_yscale = 1.25;
-bbox_yoffset = 70;
-bbox_yscale_multiplier = selection_max - 3;
+var bbox_yscale = 1.25;
+var bbox_yoffset = 70;
+var bbox_yscale_multiplier = selection_max - 3;
 bbox_yscale += (0.3 * bbox_yscale_multiplier);
 bbox_yoffset += (9.6 * bbox_yscale_multiplier);
 draw_sprite_ext(spr_dialoguebox, 1, xx, yy + bbox_yoffset, 1.1, bbox_yscale, image_angle, c_white, image_alpha);
@@ -48,7 +46,7 @@ if (!inventory_open && !stats_open && !mail_open)
     }
 }
 
-for (i = 1; i <= selection_max; i++)
+for (var i = 1; i <= selection_max; i++)
 {
     draw_set_color(c_white);
     
@@ -70,11 +68,11 @@ if (stats_open == true)
     draw_text(xx + 57.2, yy + 35, string_hash_to_newline("AT " + string(global.player_attack) + "(" + string(global.player_weapon_modifier_attack) + ")"));
     draw_text(xx + 57.2, yy + 50, string_hash_to_newline("DF " + string(global.player_defense) + "(" + string(global.player_armor_modifier_defense + global.player_armor_defense) + ")"));
     draw_text(xx + 130, yy + 35, string_hash_to_newline("EXP " + string(global.player_exp)));
-    level_up_treshhold = global.player_exp_next[global.player_level] - global.player_exp;
+    var level_up_treshhold = global.player_exp_next[global.player_level] - global.player_exp;
     draw_text(xx + 130, yy + 50, string_hash_to_newline("NEXT " + string(level_up_treshhold)));
     draw_text(xx + 57.2, yy + 70, string_hash_to_newline("WEAPON: " + global.player_weapon));
     draw_text(xx + 57.2, yy + 85, string_hash_to_newline("ARMOR: " + global.player_armor));
-    drawn_ammo = global.player_weapon_modifier;
+    var drawn_ammo = global.player_weapon_modifier;
     
     if (drawn_ammo == "Friendliness Pellets")
         drawn_ammo = "F. Pellets";
@@ -91,7 +89,7 @@ if (inventory_open)
     draw_set_colour(c_white);
     draw_set_font(fnt_battle);
     
-    for (n = 1; n <= 8; n++)
+    for (var n = 1; n <= 8; n++)
     {
         if (global.item_slot[n] != "Nothing")
         {
@@ -136,10 +134,10 @@ if (mail_open)
     draw_sprite_ext(spr_dialoguebox, 0, xx + 125, yy + 56, 2.5, 2.5, image_angle, c_white, image_alpha);
     draw_set_font(fnt_battle);
     
-    for (n = 0; n < mail_display_count; n++)
+    for (var n = 0; n < mail_display_count; n++)
     {
         draw_set_color(c_white);
-        mail_name = ds_list_find_value(global.mail_list, n + mail_offset);
+        var mail_name = ds_list_find_value(global.mail_list, n + mail_offset);
         
         if (ds_list_find_index(global.mail_list_read, mail_name) != -1)
             draw_set_color(c_gray);

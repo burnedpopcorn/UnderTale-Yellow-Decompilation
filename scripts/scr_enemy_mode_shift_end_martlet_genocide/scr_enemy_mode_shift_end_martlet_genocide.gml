@@ -1,9 +1,7 @@
 function scr_enemy_mode_shift_end_martlet_genocide()
 {
-    var reset_counters, enemy_mode, enemy_mode_gen_preprevious, enemy_mode_gen_current;
-    
-    reset_counters = false;
-    enemy_mode = global.enemy_mode;
+    var reset_counters = false;
+    var enemy_mode = global.enemy_mode;
     
     switch (enemy_mode)
     {
@@ -19,8 +17,8 @@ function scr_enemy_mode_shift_end_martlet_genocide()
     }
     
     enemy_mode = global.enemy_mode;
-    enemy_mode_gen_preprevious = global.enemy_mode_gen_previous;
-    enemy_mode_gen_current = global.enemy_mode_gen;
+    var enemy_mode_gen_preprevious = global.enemy_mode_gen_previous;
+    var enemy_mode_gen_current = global.enemy_mode_gen;
     
     switch (enemy_mode)
     {

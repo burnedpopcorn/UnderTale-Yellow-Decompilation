@@ -1,4 +1,4 @@
-box = 3154;
+box = obj_dialogue_box_battle_transformation_any;
 image_speed = 0;
 image_index = global.id_store.image_index;
 image_alpha = 1;

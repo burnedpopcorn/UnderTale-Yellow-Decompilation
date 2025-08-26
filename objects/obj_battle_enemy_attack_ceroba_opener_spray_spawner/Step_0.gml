@@ -1,5 +1,3 @@
-var xx, yy;
-
 if (attack_spray_state == 1)
 {
     x += lengthdir_x(5, point_direction(x, y, obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y));
@@ -29,7 +27,7 @@ if (attack_spray_state == 2)
     instance_destroy();
     
     with (instance_create(x, y, obj_battle_enemy_attack_ceroba_opener_explosion))
-        ring_object = 2725;
+        ring_object = 2726;
     
     exit;
 }
@@ -44,6 +42,8 @@ if (image_xscale > 1)
 
 if (image_yscale > 1)
     image_yscale -= 0.05;
+
+var xx, yy;
 
 switch (current_position)
 {

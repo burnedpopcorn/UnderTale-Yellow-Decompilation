@@ -1,5 +1,3 @@
-var time_elapsed_fall, angle_diff, can_trail;
-
 if (live_call())
     return global.live_result;
 
@@ -31,7 +29,7 @@ if (state == 0)
             sign_modifier = -sign_modifier;
         }
         
-        time_elapsed_fall = time_elapsed + time_elapsed_increase_fall;
+        var time_elapsed_fall = time_elapsed + time_elapsed_increase_fall;
         
         if (time_elapsed_fall > time_max)
         {
@@ -62,7 +60,7 @@ else if (state == 1)
     if (image_angle != angle_destination)
         image_angle += (spin_speed * spin_direction);
     
-    angle_diff = angle_difference(image_angle, angle_destination);
+    var angle_diff = angle_difference(image_angle, angle_destination);
     
     if ((angle_diff * spin_direction) < 0)
         image_angle = angle_destination;
@@ -76,7 +74,7 @@ else if (state == 1)
 }
 else if (state == 2)
 {
-    can_trail = false;
+    var can_trail = false;
     trail_cc_current += 1;
     
     if (trail_cc_current >= trail_cc_max)

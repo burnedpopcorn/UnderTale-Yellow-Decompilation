@@ -1,5 +1,3 @@
-var xx, yy;
-
 script_execute(scr_controls_text);
 
 if (key_revert_pressed)
@@ -35,8 +33,8 @@ else
         }
         else
         {
-            xx = obj_starlo_boss_body.x;
-            yy = obj_starlo_boss_body.y;
+            var xx = obj_starlo_boss_body.x;
+            var yy = obj_starlo_boss_body.y;
             obj_starlo_boss_body.set_outro_sprite = true;
             
             with (obj_quote_bubble_battle)

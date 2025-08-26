@@ -1,12 +1,11 @@
 function scr_enemy_attack_trihecta_circle_stack()
 {
-    var green, random_pos, random_side, x_side;
-    
     if (!instance_exists(obj_battle_enemy_attack_trihecta_circle_stack_lead))
     {
-        green = 0;
-        random_pos = irandom_range(0, 2);
-        random_side = irandom_range(0, 1);
+        var green = 0;
+        var random_pos = irandom_range(0, 2);
+        var random_side = irandom_range(0, 1);
+        var x_side;
         
         if (random_side == 0)
             x_side = obj_dialogue_box_battle_transformation_any.bbox_left + 5 + 21;

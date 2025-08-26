@@ -18,7 +18,7 @@ else if (scene == 1)
         if (draw_alpha < 1)
             draw_alpha += 0.2;
         
-        if (keyboard_multicheck_pressed(0) || keyboard_multicheck_pressed(1))
+        if (keyboard_multicheck_pressed(vk_nokey) || keyboard_multicheck_pressed(vk_anykey))
         {
             drawing_poster = 2;
             audio_play_sound(snd_fail, 1, 0);
@@ -50,13 +50,13 @@ else if (scene == 2)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* I can't stand looking#  at that...";
             message[1] = "* It's...";
             message[2] = "* ...Let's just move on.";
-            prt[0] = 329;
-            prt[1] = 329;
-            prt[2] = 317;
+            prt[0] = spr_martlet_head_sad;
+            prt[1] = spr_martlet_head_sad;
+            prt[2] = spr_martlet_head_downer;
         }
         
         npc_flag = 1;

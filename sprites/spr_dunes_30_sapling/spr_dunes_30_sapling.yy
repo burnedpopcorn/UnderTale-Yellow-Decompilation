@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1588522f-fb5a-44b1-bf76-21399f3c888b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"23bb6f40-0229-4c56-8e3a-ac101ee537f2",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9191306c-6456-498f-b021-3b11b6b10781",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"65bc822d-7fbc-496c-8739-a305c694c9a3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5f71e473-b3b3-4b45-9c7d-e66d1a571e44",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a43960ef-27ee-4e95-9d2d-adf3beb4f904",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 29,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5b054a8d-d2d3-46ba-8fae-2d7170eb8099","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"62f3b806-2718-4ca3-b1cd-8fcf768f6b7d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1588522f-fb5a-44b1-bf76-21399f3c888b","path":"sprites/spr_dunes_30_sapling/spr_dunes_30_sapling.yy",},},},"Disabled":false,"id":"e6ebe7e0-ed63-48ef-9ad3-9badf4ef247b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"23bb6f40-0229-4c56-8e3a-ac101ee537f2","path":"sprites/spr_dunes_30_sapling/spr_dunes_30_sapling.yy",},},},"Disabled":false,"id":"264c6a7f-81c0-4fea-8a96-3aae94bc62b2","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9191306c-6456-498f-b021-3b11b6b10781","path":"sprites/spr_dunes_30_sapling/spr_dunes_30_sapling.yy",},},},"Disabled":false,"id":"971ad5a8-2841-4a82-a1b5-19d4d1b085ac","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"65bc822d-7fbc-496c-8739-a305c694c9a3","path":"sprites/spr_dunes_30_sapling/spr_dunes_30_sapling.yy",},},},"Disabled":false,"id":"cc54a841-56a2-4079-9b57-7056663b11c5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5f71e473-b3b3-4b45-9c7d-e66d1a571e44","path":"sprites/spr_dunes_30_sapling/spr_dunes_30_sapling.yy",},},},"Disabled":false,"id":"6dc2239a-5aea-4c60-bece-02063c63eec1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a43960ef-27ee-4e95-9d2d-adf3beb4f904","path":"sprites/spr_dunes_30_sapling/spr_dunes_30_sapling.yy",},},},"Disabled":false,"id":"f10d9bb7-a48f-4915-9711-828a448a571f","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Dunes",
+    "path": "texturegroups/Dunes",
   },
   "type": 0,
   "VTile": false,

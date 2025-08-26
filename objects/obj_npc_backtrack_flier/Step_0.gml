@@ -21,7 +21,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* I basically helped Dalv move#  out all by myself.";
                 message[1] = "* Soon as the exit to Snowdin#  was open, the others bolted.";
@@ -36,7 +36,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Don't mean to bring the mood#  down but uh...";
                 message[1] = "* The beach house I was eyeing?";
@@ -54,7 +54,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Heh, I do dabble in economics#  if you were wondering.";
                 message[1] = "* Been hitting the market HARD#  lately.";
@@ -69,7 +69,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Life is genuinely good right#  now.";
                 message[1] = "* Nowhere to go but up!";

@@ -80,13 +80,13 @@ function scr_generate_battle_flier_trio()
     global.action_3_important_3 = false;
     global.action_1_color = c_white;
     global.action_1_color_2 = c_white;
-    global.action_1_color_3 = c_white;
+    global.action_1_color_3 = 16777215;
     global.action_2_color = c_white;
     global.action_2_color_2 = c_white;
-    global.action_2_color_3 = c_white;
+    global.action_2_color_3 = 16777215;
     global.action_3_color = c_white;
     global.action_3_color_2 = c_white;
-    global.action_3_color_3 = c_white;
+    global.action_3_color_3 = 16777215;
     global.action_amount = 3;
     global.action_amount_2 = 3;
     global.action_amount_3 = 3;

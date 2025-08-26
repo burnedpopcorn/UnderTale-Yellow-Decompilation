@@ -1,5 +1,3 @@
-var time_in_seconds;
-
 with (obj_card_game_card)
     instance_destroy();
 
@@ -12,7 +10,7 @@ if (cardg_failure == true)
 }
 else
 {
-    time_in_seconds = floor(cardg_timer / 30);
+    var time_in_seconds = floor(cardg_timer / 30);
     
     if (time_in_seconds < cardg_time_gold)
         obj_npc_cardguy.card_game_result = 3;

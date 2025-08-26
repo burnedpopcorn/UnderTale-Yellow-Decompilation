@@ -1,6 +1,4 @@
-var dbox;
-
-dbox = 3154;
+var dbox = 3155;
 attack_number = 7;
 attack_interval = 25;
 alarm[0] = 15;

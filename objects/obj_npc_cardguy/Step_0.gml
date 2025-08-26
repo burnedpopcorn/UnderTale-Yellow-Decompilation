@@ -178,7 +178,7 @@ if (interact_hold == true)
                 other.interact_hold = false;
                 other.scene = 0;
                 global.cutscene = false;
-                scr_audio_fade_out(485, 500);
+                scr_audio_fade_out(mus_card_game, 500);
                 
                 if (instance_exists(obj_barn_dynamic_music))
                     audio_sound_gain(mus_the_wild_east_barn, 1, 800);
@@ -199,7 +199,7 @@ if (interact_hold == true)
         
         if (audio_is_playing(mus_card_game))
         {
-            scr_audio_fade_out(485, 500);
+            scr_audio_fade_out(mus_card_game, 500);
             
             if (instance_exists(obj_barn_dynamic_music))
                 audio_sound_gain(mus_the_wild_east_barn, 1, 800);

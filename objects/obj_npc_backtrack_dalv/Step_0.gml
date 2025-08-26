@@ -13,7 +13,7 @@ if (waiter == 1)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 434;
+                sndfnt = snd_talk_dalv;
                 talker[0] = other;
                 ch_msg = 4;
                 ch[1] = "Housing";
@@ -23,11 +23,11 @@ if (waiter == 1)
                 message[2] = "* You sort of caught me#  in the middle of moving,";
                 message[3] = "* But I don't mind taking#  a break to chat!";
                 message[4] = "* What's on your mind?";
-                prt[0] = 1761;
-                prt[1] = 1773;
-                prt[2] = 1769;
-                prt[3] = 1773;
-                prt[4] = 1769;
+                prt[0] = spr_dalv_head_happy;
+                prt[1] = spr_dalv_head_content_2;
+                prt[2] = spr_dalv_head_content;
+                prt[3] = spr_dalv_head_content_2;
+                prt[4] = spr_dalv_head_content;
                 
                 if (outcome == 1)
                 {
@@ -39,14 +39,14 @@ if (waiter == 1)
                     message[10] = "* I'm sure he'll get over#  it.";
                     message[11] = "* He has a tendency to#  get a big head from time#  to time.";
                     message[12] = "* We're working on it...";
-                    prt[5] = 1769;
-                    prt[6] = 1761;
-                    prt[7] = 1765;
-                    prt[8] = 1769;
-                    prt[9] = 1780;
-                    prt[10] = 1769;
-                    prt[11] = 1776;
-                    prt[12] = 1755;
+                    prt[5] = spr_dalv_head_content;
+                    prt[6] = spr_dalv_head_happy;
+                    prt[7] = spr_dalv_head_confused;
+                    prt[8] = spr_dalv_head_content;
+                    prt[9] = spr_dalv_head_sad_side;
+                    prt[10] = spr_dalv_head_content;
+                    prt[11] = spr_dalv_head_moderate;
+                    prt[12] = spr_dalv_head_regular;
                     other.waiter = 0;
                     other.npc_flag += 1;
                 }
@@ -56,17 +56,17 @@ if (waiter == 1)
                     message[5] = "* Um, well, I haven't#  made a concrete plan#  yet.";
                     message[6] = "* Taking things one step#  at a time.";
                     message[7] = "* If you remember, I#  tossed some ideas around#  before you left my home.";
-                    message[8] = "* Gotta say, the concert#  idea in particular is#  temping!";
+                    message[8] = "* Gotta say, the concert#  idea in particular is#  tempting!";
                     message[9] = "* ...If I can work up the#  courage to go through#  with such a thing.";
                     message[10] = "* Maybe I'll brush up on#  my organ skills in the#  meantime?";
                     message[11] = "* Practice makes perfect!";
-                    prt[5] = 1765;
-                    prt[6] = 1773;
-                    prt[7] = 1769;
-                    prt[8] = 1761;
-                    prt[9] = 1780;
-                    prt[10] = 1769;
-                    prt[11] = 1773;
+                    prt[5] = spr_dalv_head_confused;
+                    prt[6] = spr_dalv_head_content_2;
+                    prt[7] = spr_dalv_head_content;
+                    prt[8] = spr_dalv_head_happy;
+                    prt[9] = spr_dalv_head_sad_side;
+                    prt[10] = spr_dalv_head_content;
+                    prt[11] = spr_dalv_head_content_2;
                     other.waiter = 0;
                     other.npc_flag += 1;
                 }
@@ -78,7 +78,7 @@ if (waiter == 1)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 434;
+                sndfnt = snd_talk_dalv;
                 talker[0] = other;
                 message[0] = "* I hadn't thought of it#  until now but...";
                 message[1] = "* We might have a crisis#  on our hands.";
@@ -90,16 +90,16 @@ if (waiter == 1)
                 message[7] = "* Hmm... ";
                 message[8] = "* I will be mulling over#  this for some time.";
                 message[9] = "* Don't mind me.";
-                prt[0] = 1763;
-                prt[1] = 1780;
-                prt[2] = 1759;
-                prt[3] = 1759;
-                prt[4] = 1780;
-                prt[5] = 1776;
-                prt[6] = 1755;
-                prt[7] = 1780;
-                prt[8] = 1755;
-                prt[9] = 1776;
+                prt[0] = spr_dalv_head_sad;
+                prt[1] = spr_dalv_head_sad_side;
+                prt[2] = spr_dalv_head_sleepy;
+                prt[3] = spr_dalv_head_sleepy;
+                prt[4] = spr_dalv_head_sad_side;
+                prt[5] = spr_dalv_head_moderate;
+                prt[6] = spr_dalv_head_regular;
+                prt[7] = spr_dalv_head_sad_side;
+                prt[8] = spr_dalv_head_regular;
+                prt[9] = spr_dalv_head_moderate;
             }
             
             waiter = 0;
@@ -110,7 +110,7 @@ if (waiter == 1)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 434;
+                sndfnt = snd_talk_dalv;
                 talker[0] = other;
                 message[0] = "* So, have you been#  journeying through the#  Underground?";
                 message[1] = "* Your bravery is#  inspiring!";
@@ -121,15 +121,15 @@ if (waiter == 1)
                 message[6] = "* There are some pretty#  scary encounters to be#  had out there.";
                 message[7] = "* I'm nothing compared to#  them...";
                 message[8] = "* So please stay safe!";
-                prt[0] = 1773;
-                prt[1] = 1769;
-                prt[2] = 1769;
-                prt[3] = 1780;
-                prt[4] = 1776;
-                prt[5] = 1773;
-                prt[6] = 1776;
-                prt[7] = 1780;
-                prt[8] = 1773;
+                prt[0] = spr_dalv_head_content_2;
+                prt[1] = spr_dalv_head_content;
+                prt[2] = spr_dalv_head_content;
+                prt[3] = spr_dalv_head_sad_side;
+                prt[4] = spr_dalv_head_moderate;
+                prt[5] = spr_dalv_head_content_2;
+                prt[6] = spr_dalv_head_moderate;
+                prt[7] = spr_dalv_head_sad_side;
+                prt[8] = spr_dalv_head_content_2;
             }
             
             waiter = 0;
@@ -140,16 +140,16 @@ if (waiter == 1)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 434;
+                sndfnt = snd_talk_dalv;
                 talker[0] = other;
                 message[0] = "* You know, I find it#  strange.";
                 message[1] = "* We only met mere hours#  ago but for some#  reason...";
                 message[2] = "* It feels like I've#  known you for years.";
                 message[3] = "* Time is truly the#  puzzle we will never#  solve.";
-                prt[0] = 1765;
-                prt[1] = 1776;
-                prt[2] = 1769;
-                prt[3] = 1773;
+                prt[0] = spr_dalv_head_confused;
+                prt[1] = spr_dalv_head_moderate;
+                prt[2] = spr_dalv_head_content;
+                prt[3] = spr_dalv_head_content_2;
             }
             
             waiter = 0;
@@ -160,14 +160,14 @@ if (waiter == 1)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 434;
+                sndfnt = snd_talk_dalv;
                 talker[0] = other;
                 message[0] = "* Well, I better get back#  to it.";
                 message[1] = "* I wish you all the luck#  in the world, Clover!";
                 message[2] = "* Go do for others what#  you did for me!";
-                prt[0] = 1769;
-                prt[1] = 1773;
-                prt[2] = 1769;
+                prt[0] = spr_dalv_head_content;
+                prt[1] = spr_dalv_head_content_2;
+                prt[2] = spr_dalv_head_content;
             }
             
             waiter = 0;

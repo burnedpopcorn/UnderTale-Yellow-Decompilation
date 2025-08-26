@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"77add600-42b3-4f25-bbb5-c9a523c0b399",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ee7875b4-d12d-493c-bd0d-1879f81c8b6c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2332fdac-6dc0-4398-b480-e8942b8d5b95",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9540b712-eb06-4b93-859b-fa73b46fb94f",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"38dd16a6-46b3-4729-88ff-6d9d96e44a1c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6b78190d-070f-4b56-9ea0-858a2b14189a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"77add600-42b3-4f25-bbb5-c9a523c0b399","path":"sprites/spr_martlet_head_nervous_smile/spr_martlet_head_nervous_smile.yy",},},},"Disabled":false,"id":"9745a8fb-1a3b-4fde-a3f8-94ec844dc47c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ee7875b4-d12d-493c-bd0d-1879f81c8b6c","path":"sprites/spr_martlet_head_nervous_smile/spr_martlet_head_nervous_smile.yy",},},},"Disabled":false,"id":"00e6e67c-b318-442b-994e-4c2a1e8449d8","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2332fdac-6dc0-4398-b480-e8942b8d5b95","path":"sprites/spr_martlet_head_nervous_smile/spr_martlet_head_nervous_smile.yy",},},},"Disabled":false,"id":"b92037b6-00c2-4db1-b879-6d55326444b2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9540b712-eb06-4b93-859b-fa73b46fb94f","path":"sprites/spr_martlet_head_nervous_smile/spr_martlet_head_nervous_smile.yy",},},},"Disabled":false,"id":"091577b7-02ff-4779-ab36-563f5533c35b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "GeneralUse",
+    "path": "texturegroups/GeneralUse",
   },
   "type": 0,
   "VTile": false,

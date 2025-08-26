@@ -1,15 +1,13 @@
-function background_create_gradient(argument0, argument1, argument2, argument3, argument4)
+function background_create_gradient(arg0, arg1, arg2, arg3, arg4)
 {
-    var __w, __h, __col1, __col2, __kind, __halfw, __halfh, __CompTempSurf, __sprid;
-    
-    __w = argument0;
-    __h = argument1;
-    __col1 = argument2;
-    __col2 = argument3;
-    __kind = argument4;
-    __halfw = __w / 2;
-    __halfh = __h / 2;
-    __CompTempSurf = surface_create(__w, __h);
+    var __w = arg0;
+    var __h = arg1;
+    var __col1 = arg2;
+    var __col2 = arg3;
+    var __kind = arg4;
+    var __halfw = __w / 2;
+    var __halfh = __h / 2;
+    var __CompTempSurf = surface_create(__w, __h);
     
     if (surface_exists(__CompTempSurf))
     {
@@ -71,7 +69,7 @@ function background_create_gradient(argument0, argument1, argument2, argument3, 
         }
         
         surface_reset_target();
-        __sprid = sprite_create_from_surface(__CompTempSurf, 0, 0, __w, __h, false, false, 0, 0);
+        var __sprid = sprite_create_from_surface(__CompTempSurf, 0, 0, __w, __h, false, false, 0, 0);
         surface_free(__CompTempSurf);
         return __sprid;
     }

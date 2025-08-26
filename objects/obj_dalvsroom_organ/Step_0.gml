@@ -1,6 +1,6 @@
 if (global.route != 3)
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
         waiter = 1;
     
     if (waiter == 1)
@@ -10,7 +10,7 @@ if (global.route != 3)
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (It's an organ.)";
             message[1] = "* (The musical kind.)";
         }
@@ -29,7 +29,7 @@ if (global.route != 3)
 }
 else
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
         waiter = 1;
     
     if (waiter == 1)
@@ -39,7 +39,7 @@ else
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (An organ.)";
             message[1] = "* (It seems horribly out of#  tune.)";
         }

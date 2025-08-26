@@ -1,9 +1,7 @@
-var battle_enemy_name, game_mode;
-
 if (obj_dialogue_box_battle.image_alpha > 0)
 {
-    battle_enemy_name = global.battle_enemy_name;
-    game_mode = global.game_mode;
+    var battle_enemy_name = global.battle_enemy_name;
+    var game_mode = global.game_mode;
     script_execute(scr_controls_text);
     
     if (key_revert_pressed)

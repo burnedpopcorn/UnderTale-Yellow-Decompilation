@@ -17,4 +17,4 @@ soul_y_offset = 0;
 obj_heart_battle_fighting_parent.image_alpha = 0;
 draw_alpha = 0;
 global.hit_self = false;
-scr_audio_fade_out(545, 5000);
+scr_audio_fade_out(mus_some_point_of_no_return, 5000);

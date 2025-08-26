@@ -1,9 +1,7 @@
 function scr_dialogue_battle_action_selected_action_2_axis()
 {
-    var random_message;
-    
     message[0] = "* AXIS ACTION MESSAGE 2";
-    random_message = irandom_range(0, 2);
+    var random_message = irandom_range(0, 2);
     
     switch (random_message)
     {

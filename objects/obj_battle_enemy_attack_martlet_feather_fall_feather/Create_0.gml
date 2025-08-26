@@ -1,5 +1,3 @@
-var random_number;
-
 damage_number = scr_determine_damage_number_enemy("martlet", "void", "void");
 state = 0;
 fall_speed = irandom_range(3, 5);
@@ -15,6 +13,7 @@ animation_disjoint_x = 0;
 animation_disjoint_y = 0;
 can_move = false;
 explosion_angle = 0;
+var random_number;
 
 if (!instance_exists(obj_martlet_body))
 {

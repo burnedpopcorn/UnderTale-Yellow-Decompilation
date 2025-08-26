@@ -1,5 +1,5 @@
 event_inherited();
-npc_voice_sfx = 102;
+npc_voice_sfx = snd_talk_martlet;
 up_sprite_idle = spr_martlet_up_talk;
 right_sprite_idle = spr_martlet_right_talk;
 down_sprite_idle = spr_martlet_down_talk;

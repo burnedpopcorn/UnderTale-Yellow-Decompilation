@@ -1,10 +1,8 @@
 function scr_enemy_attack_insomnitot_sheep()
 {
-    var distance_factor, random_direction, random_spawn;
-    
-    distance_factor = 24;
-    random_direction = irandom_range(0, 1);
-    random_spawn = irandom_range(0, 4);
+    var distance_factor = 24;
+    var random_direction = irandom_range(0, 1);
+    var random_spawn = irandom_range(0, 4);
     
     if (random_direction == 0)
     {

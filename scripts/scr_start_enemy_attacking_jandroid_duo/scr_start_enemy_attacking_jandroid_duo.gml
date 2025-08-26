@@ -1,15 +1,13 @@
 function scr_start_enemy_attacking_jandroid_duo()
 {
-    var battle_menu_number, fight_number, act_number, enemy_dead, enemy_dead_2, enemy_spared, enemy_spared_2, random_number;
-    
     instance_create(319, 320, obj_dialogue_box_battle_transformation_any);
-    battle_menu_number = global.battle_menu_number;
-    fight_number = global.fight_number;
-    act_number = global.act_number;
-    enemy_dead = global.enemy_dead;
-    enemy_dead_2 = global.enemy_dead_2;
-    enemy_spared = global.enemy_spared;
-    enemy_spared_2 = global.enemy_spared_2;
+    var battle_menu_number = global.battle_menu_number;
+    var fight_number = global.fight_number;
+    var act_number = global.act_number;
+    var enemy_dead = global.enemy_dead;
+    var enemy_dead_2 = global.enemy_dead_2;
+    var enemy_spared = global.enemy_spared;
+    var enemy_spared_2 = global.enemy_spared_2;
     end_loop = false;
     
     if (battle_menu_number == 1)
@@ -62,7 +60,7 @@ function scr_start_enemy_attacking_jandroid_duo()
     }
     else
     {
-        random_number = irandom_range(1, 2);
+        var random_number = irandom_range(1, 2);
         
         while (end_loop == false)
         {

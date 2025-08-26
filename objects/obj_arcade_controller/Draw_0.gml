@@ -1,10 +1,8 @@
-var lives_x, lives_y;
-
 draw_set_color(c_white);
 draw_set_font(fnt_arcade);
 draw_text_transformed(85, 50, string_hash_to_newline(arcade_score), 0.5, 0.5, 0);
-lives_x = 210;
-lives_y = 58;
+var lives_x = 210;
+var lives_y = 58;
 
 if (arcade_lives > 0)
     draw_sprite(spr_arcade_health, 0, lives_x + 14, lives_y);

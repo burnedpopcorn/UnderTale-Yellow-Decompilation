@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6ae90ed9-7c76-4547-adec-c4d13cc18599",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8f9af814-8dd4-47a7-9d4b-efd3d5c958bb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2ef1998f-cc59-493a-97a4-35a2dedaa81e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2c41c036-d81f-4651-9cfd-59aea1a87e94",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 49,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2a465869-9c89-4232-8a71-e8008f422f20","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7baf8673-fe8e-432f-a633-e549b13c7d04","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6ae90ed9-7c76-4547-adec-c4d13cc18599","path":"sprites/spr_adventure_male_yelllow/spr_adventure_male_yelllow.yy",},},},"Disabled":false,"id":"4fa7cadf-dbd8-44b3-a175-cfc2b73f21d3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8f9af814-8dd4-47a7-9d4b-efd3d5c958bb","path":"sprites/spr_adventure_male_yelllow/spr_adventure_male_yelllow.yy",},},},"Disabled":false,"id":"2504f339-aec7-48de-9833-b76f606cfa86","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2ef1998f-cc59-493a-97a4-35a2dedaa81e","path":"sprites/spr_adventure_male_yelllow/spr_adventure_male_yelllow.yy",},},},"Disabled":false,"id":"3b34c8be-b188-4613-b012-3ba3ad2aefe8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2c41c036-d81f-4651-9cfd-59aea1a87e94","path":"sprites/spr_adventure_male_yelllow/spr_adventure_male_yelllow.yy",},},},"Disabled":false,"id":"04faf53b-51f8-4fb0-b2f6-6f5ea15e4183","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Snowdin",
+    "path": "texturegroups/Snowdin",
   },
   "type": 0,
   "VTile": false,

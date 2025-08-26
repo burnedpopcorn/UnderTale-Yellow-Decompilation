@@ -2,7 +2,7 @@ if (live_call())
     return global.live_result;
 
 open_sprite = spr_container_open;
-submerge_sprite = spr_container_submerge;
+submerge_sprite = 3275;
 soul_color = c_white;
 
 if (!instance_exists(obj_barrier_container_surface))

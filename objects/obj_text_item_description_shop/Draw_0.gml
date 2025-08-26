@@ -1,6 +1,4 @@
-var buy_shop_screen_number, game_mode, item_value, equip_value, draw_value, draw_string;
-
-buy_shop_screen_number = global.buy_shop_screen_number;
+var buy_shop_screen_number = global.buy_shop_screen_number;
 
 if (buy_shop_screen_number < 5)
     shop_item = global.shop_item[buy_shop_screen_number];
@@ -12,7 +10,7 @@ draw_set_valign(fa_top);
 
 if (buy_shop_screen_number < 5)
 {
-    game_mode = global.game_mode;
+    var game_mode = global.game_mode;
     
     if (game_mode == "yellow")
     {
@@ -39,14 +37,14 @@ if (buy_shop_screen_number < 5)
         }
         else if (shop_item == "Honeydew Pin")
         {
-            item_value = 6;
-            equip_value = script_execute(scr_determine_armor_modifier_defense);
-            draw_value = item_value - equip_value;
+            var item_value = 6;
+            var equip_value = script_execute(scr_determine_armor_modifier_defense);
+            var draw_value = item_value - equip_value;
             
             if (draw_value >= 0)
-                draw_string = "+" + string(draw_value);
+                var draw_string = "+" + string(draw_value);
             else
-                draw_string = string(draw_value);
+                var draw_string = string(draw_value);
             
             if (global.route == 3)
                 draw_text(obj_item_description_screen_shop.x + item_draw_disjoint_x, obj_item_description_screen_shop.y + item_draw_disjoint_y, string_hash_to_newline("Acce: 4DF"));
@@ -191,7 +189,7 @@ if (buy_shop_screen_number < 5)
             if (global.route == 3)
                 draw_text(obj_item_description_screen_shop.x + item_draw_disjoint_x, obj_item_description_screen_shop.y + item_draw_disjoint_y, string_hash_to_newline("Acce: 10DF"));
             else
-                draw_text(obj_item_description_screen_shop.x + item_draw_disjoint_x, obj_item_description_screen_shop.y + item_draw_disjoint_y, string_hash_to_newline("Acce: 10DF#Represent the#Underground!."));
+                draw_text(obj_item_description_screen_shop.x + item_draw_disjoint_x, obj_item_description_screen_shop.y + item_draw_disjoint_y, string_hash_to_newline("Acce: 10DF#Represent the#Underground!"));
         }
     }
 }

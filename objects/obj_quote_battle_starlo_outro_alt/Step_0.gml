@@ -34,7 +34,7 @@ else
         else
         {
             instance_destroy(obj_quote_bubble_battle_yellow_3);
-            obj_starlo_boss_head.head_sprite = spr_starlo_boss_head_crying;
+            obj_starlo_boss_head.head_sprite = 2126;
             
             if (!alarm[0])
                 alarm[0] = 15;

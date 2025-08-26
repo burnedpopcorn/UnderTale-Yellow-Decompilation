@@ -1,5 +1,3 @@
-var act_number;
-
 script_execute(scr_controls_text);
 
 if (key_revert_pressed)
@@ -35,7 +33,7 @@ else
         }
         else
         {
-            act_number = global.act_number;
+            var act_number = global.act_number;
             
             switch (act_number)
             {

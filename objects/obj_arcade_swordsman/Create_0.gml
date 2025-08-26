@@ -1,7 +1,7 @@
 event_inherited();
-arc_sprite_attack = spr_arcade_swordsman_attack;
-arc_sprite_normal = spr_arcade_swordsman;
-arc_sprite_spared = spr_arcade_swordsman_spared;
+arc_sprite_attack = 504;
+arc_sprite_normal = 503;
+arc_sprite_spared = 507;
 arc_enemy_hp = 30;
 arc_enemy_score = 80;
 y_destination = 100;

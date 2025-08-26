@@ -1,11 +1,10 @@
-var fight_number, enemy_sparing, enemy_vulnerable, current_hp_enemy, attacking_damage_stat_critical, enemy_target_x, enemy_target_y, missed_shot, enemy_target_x_offset, enemy_target_y_offset;
-
 if (live_call())
     return global.live_result;
 
 if (execute_create == true)
 {
-    fight_number = global.fight_number;
+    var fight_number = global.fight_number;
+    var enemy_sparing, enemy_vulnerable, current_hp_enemy, attacking_damage_stat_critical, enemy_target_x, enemy_target_y;
     
     if (fight_number == 1)
     {
@@ -47,7 +46,7 @@ if (execute_create == true)
             audio_play_sound(snd_fail, 1, 0);
             shrink_speed = 0;
             circle_current = final_circle + 1;
-            missed_shot = true;
+            var missed_shot = true;
             alarm[0] = 10;
             no_loop = true;
         }
@@ -55,9 +54,9 @@ if (execute_create == true)
     
     if (key_select && circle_current <= final_circle)
     {
-        missed_shot = false;
-        enemy_target_x_offset = 0;
-        enemy_target_y_offset = 0;
+        var missed_shot = false;
+        var enemy_target_x_offset = 0;
+        var enemy_target_y_offset = 0;
         
         switch (global.player_weapon_modifier)
         {
@@ -92,9 +91,9 @@ if (execute_create == true)
             shot_total += 3;
             
             if (circle_current == final_circle)
-                hit_object = 2913;
+                hit_object = obj_shot_strong;
             else
-                hit_object = 2916;
+                hit_object = obj_shot_strong_fake;
         }
         else if (outline[circle_current] <= (small_circle * 0.6) && outline[circle_current] > (small_circle * 0.25))
         {
@@ -103,9 +102,9 @@ if (execute_create == true)
             shot_total += 2;
             
             if (circle_current == final_circle)
-                hit_object = 2912;
+                hit_object = obj_shot_medium;
             else
-                hit_object = 2915;
+                hit_object = obj_shot_medium_fake;
         }
         else if (outline[circle_current] < small_circle && outline[circle_current] > (small_circle * 0.6))
         {
@@ -114,9 +113,9 @@ if (execute_create == true)
             shot_total += 1;
             
             if (circle_current == final_circle)
-                hit_object = 2911;
+                hit_object = obj_shot_weak;
             else
-                hit_object = 2914;
+                hit_object = obj_shot_weak_fake;
         }
         
         if (missed_shot == false)

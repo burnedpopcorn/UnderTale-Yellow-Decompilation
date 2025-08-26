@@ -113,7 +113,7 @@ function scr_text_choices()
         if (ch[2] != "" && (global.right_keyp || global.down_keyp || global.up_keyp || global.left_keyp))
             audio_play_sound(snd_mainmenu_select, 1, 0);
         
-        if (keyboard_multicheck_pressed(0))
+        if (keyboard_multicheck_pressed(vk_nokey))
         {
             if (variable_instance_exists(id, "alpha_fade") && alpha_fade == true)
             {

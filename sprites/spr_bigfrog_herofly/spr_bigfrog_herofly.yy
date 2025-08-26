@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"945f6ea5-7b8d-4218-b664-97d229a03d72",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"082c408a-2af4-43fb-9886-f2116fce40cd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"28cc64a7-03fd-475e-bfa1-fa26fe46d3a4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec67e765-1182-4a5e-82eb-b0a148695839",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 37,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"57506c0a-2cbd-4147-ac6a-86965e3703b2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3b2e24fc-2af5-468b-a5f8-2ad738994bf6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"945f6ea5-7b8d-4218-b664-97d229a03d72","path":"sprites/spr_bigfrog_herofly/spr_bigfrog_herofly.yy",},},},"Disabled":false,"id":"23ad1e58-9a8e-406c-8371-3659a731deff","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"082c408a-2af4-43fb-9886-f2116fce40cd","path":"sprites/spr_bigfrog_herofly/spr_bigfrog_herofly.yy",},},},"Disabled":false,"id":"9cdf6fff-33f2-4cc3-9c09-5dcd276b9fe7","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"28cc64a7-03fd-475e-bfa1-fa26fe46d3a4","path":"sprites/spr_bigfrog_herofly/spr_bigfrog_herofly.yy",},},},"Disabled":false,"id":"1f0808bb-1a2b-41fe-ba7b-b9d7d3c351df","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ec67e765-1182-4a5e-82eb-b0a148695839","path":"sprites/spr_bigfrog_herofly/spr_bigfrog_herofly.yy",},},},"Disabled":false,"id":"913b9f61-70be-4b81-8c8d-0e47c2680a0f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

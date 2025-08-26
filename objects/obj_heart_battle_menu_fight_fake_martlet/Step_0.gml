@@ -1,19 +1,17 @@
-var enemy_count, enemy_dead, enemy_spared, enemy_dead_2, enemy_spared_2, enemy_dead_3, enemy_spared_3;
-
-enemy_count = global.enemy_count;
-enemy_dead = global.enemy_dead;
-enemy_spared = global.enemy_spared;
+var enemy_count = global.enemy_count;
+var enemy_dead = global.enemy_dead;
+var enemy_spared = global.enemy_spared;
 
 if (enemy_count >= 2)
 {
-    enemy_dead_2 = global.enemy_dead_2;
-    enemy_spared_2 = global.enemy_spared_2;
+    var enemy_dead_2 = global.enemy_dead_2;
+    var enemy_spared_2 = global.enemy_spared_2;
 }
 
 if (enemy_count >= 3)
 {
-    enemy_dead_3 = global.enemy_dead_3;
-    enemy_spared_3 = global.enemy_spared_3;
+    var enemy_dead_3 = global.enemy_dead_3;
+    var enemy_spared_3 = global.enemy_spared_3;
 }
 
 if (key_select_simulate)

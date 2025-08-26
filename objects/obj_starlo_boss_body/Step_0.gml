@@ -1,5 +1,3 @@
-var anim_loop_time_half, anim_inc_current, attack_start;
-
 if (global.current_hp_enemy <= 0)
 {
     if (!death_sprite)
@@ -47,8 +45,8 @@ if (global.enemy_dead == true)
 
 if (sprite_index != spr_starlo_body_dead)
 {
-    anim_loop_time_half = anim_loop_time / 2;
-    anim_inc_current = ((anim_stretch_max - 1) / anim_loop_time_half) * anim_inc_multiplier;
+    var anim_loop_time_half = anim_loop_time / 2;
+    var anim_inc_current = ((anim_stretch_max - 1) / anim_loop_time_half) * anim_inc_multiplier;
     
     if (anim_stage == 1)
     {
@@ -88,6 +86,8 @@ if (sprite_index != spr_starlo_body_dead)
     }
     else if (global.turns_passed == 9 || global.turns_passed == 10)
     {
+        var attack_start;
+        
         if (instance_exists(obj_heart_battle_fighting_parent) && obj_heart_battle_fighting_parent.moveable == true)
             attack_start = true;
         else

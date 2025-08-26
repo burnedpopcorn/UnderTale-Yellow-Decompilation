@@ -28,11 +28,11 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* This is only getting#  worse!";
             message[1] = "* Don't stop your efforts#  to free us!";
-            prt[0] = 381;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_nervous;
+            prt[1] = spr_portrait_ceroba_neutral;
         }
         
         if (!global.dialogue_open)

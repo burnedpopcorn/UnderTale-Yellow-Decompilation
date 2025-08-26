@@ -10,7 +10,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* I got to go back.";
                 message[1] = "* I want to go back to the#  Ruins.";
@@ -26,7 +26,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* In the Ruins, I could power up#  freely.";
                 message[1] = "* No one minded me screaming#  down those purple halls.";
@@ -42,7 +42,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* Sorry for the attitude.";
                 message[1] = "* The main character trait of my#  current power tier is \"easily#  pissed.\"";
@@ -56,7 +56,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* I bet some anime would help me#  unwind.";
                 message[1] = "* There's this one show you#  should totally check out.";
@@ -71,7 +71,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* We can talk more later.";
                 message[1] = "* Right now, I gotta figure out#  where to begin my next arc.";

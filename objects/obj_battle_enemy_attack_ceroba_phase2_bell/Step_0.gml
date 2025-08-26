@@ -1,5 +1,3 @@
-var battle_box;
-
 if (live_call())
     return global.live_result;
 
@@ -25,7 +23,7 @@ else
     fall_delay--;
 }
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 if (bullet_destroy_self && destroy_self < 1)
 {

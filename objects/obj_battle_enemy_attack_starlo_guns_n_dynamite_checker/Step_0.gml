@@ -1,17 +1,15 @@
-var counter_timer_max, player_soul, box, gun_top_y, gun_mid_y, gun_bot_y, gun_left_x, gun_right_x, dynamite_left_x, dynamite_mid_x, dynamite_right_x, dynamite_y;
-
-counter_timer_max = 0;
-player_soul = 2979;
-box = 3154;
-gun_top_y = box.y - 25;
-gun_mid_y = box.y;
-gun_bot_y = box.y + 25;
-gun_left_x = box.bbox_left - 60;
-gun_right_x = box.bbox_right + 60;
-dynamite_left_x = box.bbox_left + 40;
-dynamite_mid_x = box.x;
-dynamite_right_x = box.bbox_right - 40;
-dynamite_y = box.bbox_top - 20;
+var counter_timer_max = 0;
+var player_soul = 2980;
+var box = obj_dialogue_box_battle_transformation_any;
+var gun_top_y = box.y - 25;
+var gun_mid_y = box.y;
+var gun_bot_y = box.y + 25;
+var gun_left_x = box.bbox_left - 60;
+var gun_right_x = box.bbox_right + 60;
+var dynamite_left_x = box.bbox_left + 40;
+var dynamite_mid_x = box.x;
+var dynamite_right_x = box.bbox_right - 40;
+var dynamite_y = box.bbox_top - 20;
 
 switch (counter_current)
 {

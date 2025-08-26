@@ -1,9 +1,7 @@
 function scr_dialogue_battle_action_selected_action_1_martlet_genocide()
 {
-    var enemy_mode, action_1_selected_count;
-    
-    enemy_mode = global.enemy_mode;
-    action_1_selected_count = global.action_1_selected_count;
+    var enemy_mode = global.enemy_mode;
+    var action_1_selected_count = global.action_1_selected_count;
     
     if (enemy_mode == 3)
     {

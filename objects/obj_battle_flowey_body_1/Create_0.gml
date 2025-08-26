@@ -4,7 +4,7 @@ if (live_call())
 image_speed = 1;
 enemy_dead = false;
 enemy_spared = false;
-base_sprite = spr_flowey_nice;
+base_sprite = 1934;
 base_alpha = 1;
 base_alpha_new = 0;
 alt_alpha = 0;

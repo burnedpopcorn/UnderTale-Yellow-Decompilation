@@ -1,8 +1,6 @@
 function scr_intro_talk_speeds()
 {
-    var game_mode;
-    
-    game_mode = global.game_mode;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {

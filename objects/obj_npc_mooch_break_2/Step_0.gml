@@ -19,11 +19,11 @@ switch (global.dunes_flag_ext[0])
             message[2] = "* It's a good way to#  recharge for future#  servings of justice!";
             message[3] = "* Now that I think about#  it, nap time should be#  after this next mission.";
             message[4] = "* Hope you join us!";
-            prt[0] = 455;
-            prt[1] = 458;
-            prt[2] = 462;
-            prt[3] = 455;
-            prt[4] = 462;
+            prt[0] = spr_portrait_mooch_normal;
+            prt[1] = spr_portrait_mooch_happy;
+            prt[2] = spr_portrait_mooch_smile;
+            prt[3] = spr_portrait_mooch_normal;
+            prt[4] = spr_portrait_mooch_smile;
         }
         
         global.dunes_flag_ext[0] += 1;
@@ -39,12 +39,12 @@ switch (global.dunes_flag_ext[0])
             message[3] = "* Oh... You didn't say#  anything.";
             message[4] = "* ...";
             message[5] = "* This conversation didn't#  happen, got that?";
-            prt[0] = 455;
-            prt[1] = 460;
-            prt[2] = 460;
-            prt[3] = 456;
-            prt[4] = 455;
-            prt[5] = 455;
+            prt[0] = spr_portrait_mooch_normal;
+            prt[1] = spr_portrait_mooch_nervous;
+            prt[2] = spr_portrait_mooch_nervous;
+            prt[3] = spr_portrait_mooch_surprised;
+            prt[4] = spr_portrait_mooch_normal;
+            prt[5] = spr_portrait_mooch_normal;
         }
         
         global.dunes_flag_ext[0] += 1;
@@ -56,8 +56,8 @@ switch (global.dunes_flag_ext[0])
             talker[0] = other.object_index;
             message[0] = "* Naps naps naps!";
             message[1] = "* Gotta love 'em!";
-            prt[0] = 458;
-            prt[1] = 462;
+            prt[0] = spr_portrait_mooch_happy;
+            prt[1] = spr_portrait_mooch_smile;
         }
         
         break;

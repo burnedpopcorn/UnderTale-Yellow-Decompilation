@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8d2c268a-8f39-49c4-8497-6eb653fd951b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"48f5ff19-9a6a-46a3-b8ce-ad6e078b4dcb",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"73e7f2c4-b3f1-48a5-9a11-e37025d00e26",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d1d6a2c3-6ca7-437d-a139-6b3da38b1111",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eb51d8c9-45dc-4041-8b14-7738be93ce84",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3af43df1-5bb1-4a42-98a1-3ad91d3a5687",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 20,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d50a3961-52af-4b0a-ba26-0737719c0300","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f8df2dff-4cbf-45e8-93e3-7499e921224b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8d2c268a-8f39-49c4-8497-6eb653fd951b","path":"sprites/spr_battle_enemy_attack_sir_slither_clay_piece/spr_battle_enemy_attack_sir_slither_clay_piece.yy",},},},"Disabled":false,"id":"aae0d08f-122a-4759-a78d-87ed7f32993b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"48f5ff19-9a6a-46a3-b8ce-ad6e078b4dcb","path":"sprites/spr_battle_enemy_attack_sir_slither_clay_piece/spr_battle_enemy_attack_sir_slither_clay_piece.yy",},},},"Disabled":false,"id":"d79f916a-fdf9-4dab-8c31-d07081b9a9df","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"73e7f2c4-b3f1-48a5-9a11-e37025d00e26","path":"sprites/spr_battle_enemy_attack_sir_slither_clay_piece/spr_battle_enemy_attack_sir_slither_clay_piece.yy",},},},"Disabled":false,"id":"cb09835c-31e1-4a7c-a86c-f9570d31208b","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d1d6a2c3-6ca7-437d-a139-6b3da38b1111","path":"sprites/spr_battle_enemy_attack_sir_slither_clay_piece/spr_battle_enemy_attack_sir_slither_clay_piece.yy",},},},"Disabled":false,"id":"e0f55853-f6d1-42b8-afbd-9d144852e7e9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"eb51d8c9-45dc-4041-8b14-7738be93ce84","path":"sprites/spr_battle_enemy_attack_sir_slither_clay_piece/spr_battle_enemy_attack_sir_slither_clay_piece.yy",},},},"Disabled":false,"id":"5f2de8c0-7b10-486d-a3f8-2f7779dbc476","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3af43df1-5bb1-4a42-98a1-3ad91d3a5687","path":"sprites/spr_battle_enemy_attack_sir_slither_clay_piece/spr_battle_enemy_attack_sir_slither_clay_piece.yy",},},},"Disabled":false,"id":"81813f45-614f-4859-8d84-e97619a1d7d2","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleDunes",
+    "path": "texturegroups/BattleDunes",
   },
   "type": 0,
   "VTile": false,

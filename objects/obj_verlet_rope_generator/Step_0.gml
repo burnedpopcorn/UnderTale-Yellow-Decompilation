@@ -1,5 +1,3 @@
-var i, wind_inc, col, p, damage;
-
 if (live_call())
     return global.live_result;
 
@@ -8,12 +6,12 @@ if (instance_exists(obj_verlet_rope_generator))
 
 scr_verlet_updatepoints(points, p_friction, p_gravity);
 
-for (i = 0; i < precision; i++)
+for (var i = 0; i < precision; i++)
     scr_verlet_updatesticks(sticks);
 
 if (can_move)
 {
-    wind_inc = 0.003;
+    var wind_inc = 0.003;
     wind_power = clamp(wind_power + (wind_inc * wind_direction), -wind_power_max, wind_power_max);
     
     if (wind_direction_change_countdown > 0)
@@ -36,15 +34,15 @@ if (can_move)
         wind_direction *= -1;
     }
     
-    for (i = 0; i < r_segments; i++)
+    for (var i = 0; i < r_segments; i++)
         points[i][0] += (i * (wind_power + sway));
 }
 
-col = false;
+var col = false;
 
-for (i = 0; i < array_length(points); i++)
+for (var i = 0; i < array_length(points); i++)
 {
-    p = points[i];
+    var p = points[i];
     
     if (!p[4])
     {
@@ -55,7 +53,7 @@ for (i = 0; i < array_length(points); i++)
 
 if (col == true && obj_heart_battle_fighting_parent.vulnerable == true && obj_heart_battle_fighting_parent.is_dashing == false)
 {
-    damage = (global.enemy_attack_stat - global.player_armor_defense - global.player_armor_modifier_defense - global.player_defense) + 10;
+    var damage = (global.enemy_attack_stat - global.player_armor_defense - global.player_armor_modifier_defense - global.player_defense) + 10;
     
     with (obj_heart_battle_fighting_parent)
     {
@@ -63,7 +61,7 @@ if (col == true && obj_heart_battle_fighting_parent.vulnerable == true && obj_he
         {
             instance_create(x, y, obj_heart_battle_effect_expand);
             
-            for (i = 0; i < 5; i++)
+            for (var i = 0; i < 5; i++)
                 instance_create(x, y, obj_heart_battle_effect_shard);
             
             global.current_pp_self -= 1;

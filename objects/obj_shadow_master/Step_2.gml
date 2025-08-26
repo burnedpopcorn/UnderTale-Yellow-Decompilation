@@ -1,10 +1,8 @@
-var drawer_object, j, i, inst, object_found, repeat_check, shadow_drawer;
-
 if (live_call())
     return global.live_result;
 
 inst_number = instance_number(-3);
-drawer_object = 829;
+var drawer_object = 829;
 
 switch (object_index)
 {
@@ -29,13 +27,13 @@ if (instance_exists(obj_camera))
 if (inst_number != inst_number_last)
 {
     inst_number_last = inst_number;
-    j = 0;
+    var j = 0;
     
-    for (i = 0; i < instance_number(-3); i += 1)
+    for (var i = 0; i < instance_number(-3); i += 1)
     {
-        inst = instance_find(-3, i);
-        object_found = false;
-        repeat_check = false;
+        var inst = instance_find(-3, i);
+        var object_found = false;
+        var repeat_check = false;
         
         with (drawer_object)
         {
@@ -45,6 +43,8 @@ if (inst_number != inst_number_last)
         
         if (repeat_check)
             continue;
+        
+        var shadow_drawer;
         
         switch (inst.object_index)
         {
@@ -90,7 +90,7 @@ if (inst_number != inst_number_last)
 if (instance_exists(obj_savefl) && save_flowey_noloop == false)
 {
     shadow_actor = 1192;
-    shadow_drawer = instance_create_depth(obj_savefl.x, obj_savefl.y, obj_savefl.depth, drawer_object);
+    var shadow_drawer = instance_create_depth(obj_savefl.x, obj_savefl.y, obj_savefl.depth, drawer_object);
     save_flowey_noloop = true;
 }
 

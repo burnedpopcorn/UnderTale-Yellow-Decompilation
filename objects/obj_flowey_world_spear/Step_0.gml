@@ -1,5 +1,3 @@
-var release_speed;
-
 if (image_alpha < 1)
     image_alpha += 0.2;
 
@@ -17,7 +15,7 @@ switch (scene)
         break;
     
     case 1:
-        release_speed = speed_max;
+        var release_speed = speed_max;
         speed = lerp(speed, release_speed, 0.5);
         break;
 }

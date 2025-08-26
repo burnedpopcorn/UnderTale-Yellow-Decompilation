@@ -1,9 +1,7 @@
-var heart;
-
 if (live_call())
     return global.live_result;
 
-heart = obj_heart_battle_fighting_parent;
+var heart = obj_heart_battle_fighting_parent;
 instance_create(x, y, obj_battle_enemy_attack_martlet_genocide_feather_ext_explosion);
 alarm[0] = 3;
 feather_radius = 15;

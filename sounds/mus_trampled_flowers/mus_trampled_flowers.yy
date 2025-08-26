@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 104.20247,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/trampled_flowers.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "trampled_flowers.ogg",
+  "type": 1,
   "volume": 1.0,
 }

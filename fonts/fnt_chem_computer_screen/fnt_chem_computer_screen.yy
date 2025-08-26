@@ -122,14 +122,16 @@
     "path": "folders/Fonts.yy",
   },
   "pointRounding": 0,
-  "ranges": [],
+  "ranges": [
+    {"lower":127,"upper":9646,},
+  ],
   "regenerateBitmap": false,
   "sampleText": "abcdef ABCDEF\n0123456789 .,<>\"'&!?\nthe quick brown fox jumps over the lazy dog\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\nDefault character: ▯ (9647)",
-  "size": 0.0,
+  "size": 8.0,
   "styleName": "Regular",
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Steamworks",
+    "path": "texturegroups/Steamworks",
   },
-  "TTFName": "",
+  "TTFName": null,
 }

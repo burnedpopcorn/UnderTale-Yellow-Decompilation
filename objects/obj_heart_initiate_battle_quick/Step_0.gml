@@ -1,6 +1,4 @@
-var flDelay;
-
-flDelay = flash_delay;
+var flDelay = flash_delay;
 
 if (image_alpha == 0 && no_loop == false)
 {

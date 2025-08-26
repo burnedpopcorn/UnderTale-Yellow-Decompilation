@@ -1,6 +1,4 @@
-var enemy_mode;
-
-enemy_mode = global.enemy_mode;
+var enemy_mode = global.enemy_mode;
 
 if (enemy_mode == 0)
     sprite_index = spr_frostermit_smashed;

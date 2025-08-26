@@ -1,8 +1,6 @@
 function scr_determine_low_hp_enemy_sparing()
 {
-    var enemy_count;
-    
-    enemy_count = global.enemy_count;
+    var enemy_count = global.enemy_count;
     
     if (enemy_count >= 1)
     {

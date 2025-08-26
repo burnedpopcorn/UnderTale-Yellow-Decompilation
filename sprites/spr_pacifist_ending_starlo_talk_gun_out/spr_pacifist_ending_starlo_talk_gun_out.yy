@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ad55b035-20ad-4db9-8b44-c314c206b009",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2e79b367-5b4a-4fd0-8f62-34c9dba87e28",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9dbd2c24-2634-4ea7-86a0-33266a290089",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"52aa3d14-0f4a-474c-9a04-4f24829e4953",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 126,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a11d48c4-e02e-451c-bc4c-7c33fa0050f0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"10e409c2-04ad-43cd-b746-fe53512a7e94","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ad55b035-20ad-4db9-8b44-c314c206b009","path":"sprites/spr_pacifist_ending_starlo_talk_gun_out/spr_pacifist_ending_starlo_talk_gun_out.yy",},},},"Disabled":false,"id":"5cefcf28-545b-43e9-9e05-f3549171248b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2e79b367-5b4a-4fd0-8f62-34c9dba87e28","path":"sprites/spr_pacifist_ending_starlo_talk_gun_out/spr_pacifist_ending_starlo_talk_gun_out.yy",},},},"Disabled":false,"id":"9592c4d1-acb4-4ea4-a9f7-4f7309f5bd7a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9dbd2c24-2634-4ea7-86a0-33266a290089","path":"sprites/spr_pacifist_ending_starlo_talk_gun_out/spr_pacifist_ending_starlo_talk_gun_out.yy",},},},"Disabled":false,"id":"45eac602-2d39-4ee7-b1d4-d6bd52184356","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"52aa3d14-0f4a-474c-9a04-4f24829e4953","path":"sprites/spr_pacifist_ending_starlo_talk_gun_out/spr_pacifist_ending_starlo_talk_gun_out.yy",},},},"Disabled":false,"id":"e641bd32-9a7c-439d-9db1-2ff180d9d8ba","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "newhome",
+    "path": "texturegroups/newhome",
   },
   "type": 0,
   "VTile": false,

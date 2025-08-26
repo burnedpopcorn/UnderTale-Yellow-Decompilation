@@ -16,13 +16,13 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "ts_steamworks_tileset_sprite",
-    "path": "sprites/ts_steamworks_tileset_sprite/ts_steamworks_tileset_sprite.yy",
+    "name": "_decompiled_ts_steamworks_tileset",
+    "path": "sprites/_decompiled_ts_steamworks_tileset/_decompiled_ts_steamworks_tileset.yy",
   },
   "spriteNoExport": true,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Steamworks",
+    "path": "texturegroups/Steamworks",
   },
   "tile_count": 1496,
   "tileAnimation": {
@@ -6366,9 +6366,9 @@
   ],
   "tileAnimationSpeed": 5.0,
   "tileHeight": 20,
-  "tilehsep": 4,
-  "tilevsep": 4,
+  "tilehsep": 0,
+  "tilevsep": 0,
   "tileWidth": 20,
-  "tilexoff": 2,
-  "tileyoff": 2,
+  "tilexoff": 0,
+  "tileyoff": 0,
 }

@@ -1,13 +1,11 @@
-var string_hours, string_minutes, string_seconds, playtime, xx, yy, i, current_value, rt;
-
 if (live_call())
     return global.live_result;
 
 if (show_timer)
 {
-    string_hours = string(global.elapsed_seconds div 3600);
-    string_minutes = string((global.elapsed_seconds div 60) % 60);
-    string_seconds = string(global.elapsed_seconds % 60);
+    var string_hours = string(global.elapsed_seconds div 3600);
+    var string_minutes = string((global.elapsed_seconds div 60) % 60);
+    var string_seconds = string(global.elapsed_seconds % 60);
     
     if (real(string_hours) < 10)
         string_hours = "0" + string_hours;
@@ -18,7 +16,7 @@ if (show_timer)
     if (real(string_seconds) < 10)
         string_seconds = "0" + string_seconds;
     
-    playtime = string_hash_to_newline(string_hours + ":" + string_minutes + ":" + string_seconds);
+    var playtime = string_hash_to_newline(string_hours + ":" + string_minutes + ":" + string_seconds);
     draw_set_color(c_white);
     draw_text(280, 10, playtime);
     exit;
@@ -31,8 +29,8 @@ display_set_gui_size(640, 480);
 draw_set_halign(fa_left);
 draw_set_color(c_white);
 draw_set_font(fnt_stats);
-xx = 8;
-yy = 8;
+var xx = 8;
+var yy = 8;
 draw_set_color(c_white);
 draw_text(xx + 180, yy, string_hash_to_newline("WASD - Nagivate#Q - Back#E - Confirm"));
 
@@ -45,7 +43,7 @@ draw_set_color(c_white);
 
 if (dbg_menu == 0)
 {
-    for (i = 1; i <= 5; i++)
+    for (var i = 1; i <= 5; i++)
     {
         draw_set_color(c_white);
         
@@ -79,7 +77,7 @@ if (dbg_menu == 0)
 
 if (dbg_menu == 1)
 {
-    for (i = 0; i <= dbg_room_count; i++)
+    for (var i = 0; i <= dbg_room_count; i++)
     {
         yy = -dbg_pos * 8;
         draw_set_color(c_white);
@@ -93,7 +91,7 @@ if (dbg_menu == 1)
 
 if (dbg_menu == 2)
 {
-    for (i = 1; i <= 4; i++)
+    for (var i = 1; i <= 4; i++)
     {
         draw_set_color(c_white);
         
@@ -127,15 +125,15 @@ if (dbg_menu == 2)
 
 if (dbg_menu == 3)
 {
-    for (i = 0; i < ds_map_size(cheat_map); i++)
+    for (var i = 0; i < ds_map_size(cheat_map); i++)
     {
-        current_value = ds_map_find_value(cheat_map, i);
+        var current_value = ds_map_find_value(cheat_map, i);
         draw_set_color(c_white);
         
         if (dbg_pos == i)
             draw_set_color(c_yellow);
         
-        rt = "neutral";
+        var rt = "neutral";
         
         switch (i)
         {

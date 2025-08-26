@@ -1,8 +1,6 @@
-var greenfrog;
-
 if (is_green)
 {
-    greenfrog = instance_create_depth(x, y, depth - 1, obj_battle_enemy_attack_space_green_frog);
+    var greenfrog = instance_create_depth(x, y, depth - 1, obj_battle_enemy_attack_space_green_frog);
     
     with (greenfrog)
     {

@@ -1,5 +1,3 @@
-var enemy_dead, enemy_spared, enemy_sparing;
-
 if (global.current_hp_enemy_draw <= 0 && damage_disjoint_x == 0)
 {
     if (!global.enemy_dead)
@@ -27,9 +25,9 @@ if (global.enemy_dead == true && !instance_exists(obj_quote_battle_guardener_dea
     exit;
 }
 
-enemy_dead = global.enemy_dead;
-enemy_spared = global.enemy_spared;
-enemy_sparing = global.enemy_sparing;
+var enemy_dead = global.enemy_dead;
+var enemy_spared = global.enemy_spared;
+var enemy_sparing = global.enemy_sparing;
 
 if (enemy_dead == false && enemy_spared == false)
     image_alpha = global.image_alpha_enemy_attacking;

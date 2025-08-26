@@ -1,5 +1,3 @@
-var mooch_smack_x_target, mooch_smack_x_dist, mooch_smack_x_multi;
-
 if (image_index >= index_trigger_bg && trigger_bg == false)
 {
     event_user(0);
@@ -17,8 +15,8 @@ if (obj_enemy_controller_feisty_four.vanish_type == "Mooch Smack")
 
 if (mooch_smack_approach == true && image_index <= 14)
 {
-    mooch_smack_x_target = 318;
-    mooch_smack_x_dist = mooch_smack_x_start - mooch_smack_x_target;
-    mooch_smack_x_multi = (image_index - 9) / 5;
+    var mooch_smack_x_target = 318;
+    var mooch_smack_x_dist = mooch_smack_x_start - mooch_smack_x_target;
+    var mooch_smack_x_multi = (image_index - 9) / 5;
     x = mooch_smack_x_start - (mooch_smack_x_dist * mooch_smack_x_multi);
 }

@@ -20,11 +20,11 @@ if (interact)
                 message[2] = "* Oh, wait, am I being a#  bad influence?";
                 message[3] = "* Right, uhhhh...";
                 message[4] = "* Vegetables! Education!#  The stock market!#  OoooOOOooo!!";
-                prt[0] = 460;
-                prt[1] = 460;
-                prt[2] = 456;
-                prt[3] = 455;
-                prt[4] = 458;
+                prt[0] = spr_portrait_mooch_nervous;
+                prt[1] = spr_portrait_mooch_nervous;
+                prt[2] = spr_portrait_mooch_surprised;
+                prt[3] = spr_portrait_mooch_normal;
+                prt[4] = spr_portrait_mooch_happy;
             }
             
             npc_flag = 2;
@@ -36,8 +36,8 @@ if (interact)
                 talker[0] = other.object_index;
                 message[0] = "* While I'm sad you're#  leaving us, I know#  you'll do great things.";
                 message[1] = "* Give 'em heck, Clover!";
-                prt[0] = 455;
-                prt[1] = 458;
+                prt[0] = spr_portrait_mooch_normal;
+                prt[1] = spr_portrait_mooch_happy;
             }
             
             break;
@@ -59,13 +59,13 @@ if (waiter == 1)
         message[4] = "* With two small bodies,#  we could steal SO much#  sh-";
         message[5] = "* Uh...\t";
         message[6] = "* ...I should probably#  stop saying the quiet#  part out loud, heh!";
-        prt[0] = 458;
-        prt[1] = 455;
-        prt[2] = 462;
-        prt[3] = 455;
-        prt[4] = 463;
-        prt[5] = 456;
-        prt[6] = 462;
+        prt[0] = spr_portrait_mooch_happy;
+        prt[1] = spr_portrait_mooch_normal;
+        prt[2] = spr_portrait_mooch_smile;
+        prt[3] = spr_portrait_mooch_normal;
+        prt[4] = spr_portrait_mooch_smirk;
+        prt[5] = spr_portrait_mooch_surprised;
+        prt[6] = spr_portrait_mooch_smile;
         
         if (message_current == 4)
         {

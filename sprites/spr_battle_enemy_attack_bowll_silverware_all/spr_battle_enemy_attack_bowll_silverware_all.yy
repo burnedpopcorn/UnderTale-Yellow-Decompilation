@@ -13,19 +13,19 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"435a3e59-a364-4f83-a295-bfec02873ccd",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0eebba17-987e-4d3a-af41-5f5eebbe815d",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7b712db5-16a7-40ce-8795-b66adf646713",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"415504b0-39af-45d9-8672-30b82883e28d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c89fec44-bafc-4e43-8586-df1df5c0e8be",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"75e9c3e5-88f0-4c9a-a121-cac70fd7629f",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 17,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6dabc1c5-e2e9-4396-bb3f-d544cfc28d8f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"34f4eb62-f88c-47d0-a94a-95a283b14a55","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 3,
+  "origin": 9,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"435a3e59-a364-4f83-a295-bfec02873ccd","path":"sprites/spr_battle_enemy_attack_bowll_silverware_all/spr_battle_enemy_attack_bowll_silverware_all.yy",},},},"Disabled":false,"id":"9c96cca8-2d63-44ce-bb31-2a8b26a4235e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0eebba17-987e-4d3a-af41-5f5eebbe815d","path":"sprites/spr_battle_enemy_attack_bowll_silverware_all/spr_battle_enemy_attack_bowll_silverware_all.yy",},},},"Disabled":false,"id":"f7eae56a-6340-422e-b3a5-08b54945c9f3","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7b712db5-16a7-40ce-8795-b66adf646713","path":"sprites/spr_battle_enemy_attack_bowll_silverware_all/spr_battle_enemy_attack_bowll_silverware_all.yy",},},},"Disabled":false,"id":"e661cbff-c371-4015-a38a-9e18381c9e9d","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"415504b0-39af-45d9-8672-30b82883e28d","path":"sprites/spr_battle_enemy_attack_bowll_silverware_all/spr_battle_enemy_attack_bowll_silverware_all.yy",},},},"Disabled":false,"id":"cfb79d78-47eb-4efd-a290-75f573b9a141","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c89fec44-bafc-4e43-8586-df1df5c0e8be","path":"sprites/spr_battle_enemy_attack_bowll_silverware_all/spr_battle_enemy_attack_bowll_silverware_all.yy",},},},"Disabled":false,"id":"d3356097-2b6b-4480-aec0-2fb97b8de64b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"75e9c3e5-88f0-4c9a-a121-cac70fd7629f","path":"sprites/spr_battle_enemy_attack_bowll_silverware_all/spr_battle_enemy_attack_bowll_silverware_all.yy",},},},"Disabled":false,"id":"58a840b6-b2a4-480d-bc23-9072073b5dbc","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleDunes",
+    "path": "texturegroups/BattleDunes",
   },
   "type": 0,
   "VTile": false,

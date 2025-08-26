@@ -1,9 +1,7 @@
-var j;
-
 if (live_call())
     return global.live_result;
 
-j = 2;
+var j = 2;
 i = ds_list_size(x_list) - 1;
 
 while (i >= 0)

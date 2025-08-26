@@ -1,5 +1,3 @@
-var last_action_selected, enemy_hit, hit_count;
-
 text_effect = "twitchy";
 end_fight = false;
 last_text_move_select = global.last_text_move_select;
@@ -14,15 +12,15 @@ if (last_text_move_select < 0)
 }
 else
 {
-    last_action_selected = global.last_action_selected;
+    var last_action_selected = global.last_action_selected;
     
     if (last_action_selected == "Fight")
     {
-        enemy_hit = global.enemy_hit;
+        var enemy_hit = global.enemy_hit;
         
         if (enemy_hit == true)
         {
-            hit_count = global.hit_count;
+            var hit_count = global.hit_count;
             
             if (hit_count == 1)
             {

@@ -1,5 +1,3 @@
-var _play_sound, xdist, xx, ydist, yy, grid_size, grid_squared, start_point_x, start_point_y, excluded_count, a, new_number, current_spawn, can_play_sound, j, i, new_x, new_y, new_vine, col_vine, damage;
-
 if (live_call())
     return global.live_result;
 
@@ -9,14 +7,15 @@ if (overlay_alpha > 0)
 if (spawn_vines == true)
 {
     gui_fade_out = false;
-    _play_sound = true;
+    var _play_sound = true;
     attack_offset--;
     
     if (attack_offset <= 0)
     {
         attack_offset = attack_offset_max + attack_delay;
         audio_play_sound(snd_undertale_appear, 1, 0);
-        xdist = irandom_range(20, 60);
+        var xdist = irandom_range(20, 60);
+        var xx;
         
         do
         {
@@ -25,7 +24,8 @@ if (spawn_vines == true)
         }
         until (place_free(xx, obj_pl.y + 15) || x_dist <= 0);
         
-        ydist = irandom_range(20, 60);
+        var ydist = irandom_range(20, 60);
+        var yy;
         
         do
         {
@@ -36,16 +36,18 @@ if (spawn_vines == true)
         
         xx = floor(xx / 20) * 20;
         yy = floor(yy / 20) * 20;
-        grid_size = 5;
-        grid_squared = grid_size * grid_size;
-        start_point_x = xx - (grid_size * 20 * 0.5);
-        start_point_y = yy - (grid_size * 20 * 0.5);
+        var grid_size = 5;
+        var grid_squared = grid_size * grid_size;
+        var start_point_x = xx - (grid_size * 20 * 0.5);
+        var start_point_y = yy - (grid_size * 20 * 0.5);
         show_debug_message(start_point_x);
-        excluded_count = irandom_range(floor(grid_squared * 0.35), floor(grid_squared * 0.75));
+        var excluded_count = irandom_range(floor(grid_squared * 0.35), floor(grid_squared * 0.75));
         exclude_list = ds_list_create();
         
-        for (a = 0; a < excluded_count; a++)
+        for (var a = 0; a < excluded_count; a++)
         {
+            var new_number;
+            
             do
                 new_number = irandom_range(0, grid_size * grid_size);
             until (ds_list_find_index(exclude_list, new_number) == -1);
@@ -53,19 +55,19 @@ if (spawn_vines == true)
             ds_list_add(exclude_list, new_number);
         }
         
-        current_spawn = 0;
-        can_play_sound = true;
+        var current_spawn = 0;
+        var can_play_sound = true;
         
-        for (j = 0; j < grid_size; j++)
+        for (var j = 0; j < grid_size; j++)
         {
-            for (i = 0; i < grid_size; i++)
+            for (var i = 0; i < grid_size; i++)
             {
-                new_x = start_point_x + (i * 20);
-                new_y = start_point_y + (j * 20);
+                var new_x = start_point_x + (i * 20);
+                var new_y = start_point_y + (j * 20);
                 
                 if (ds_list_find_index(exclude_list, current_spawn) == -1 && !instance_position(new_x, new_y, obj_wall))
                 {
-                    new_vine = instance_create_depth(new_x, new_y, 0, obj_flowey_battle_ow_vine_warning);
+                    var new_vine = instance_create_depth(new_x, new_y, 0, obj_flowey_battle_ow_vine_warning);
                     new_vine.play_sound = can_play_sound;
                     new_vine.alarm[0] = attack_delay;
                     can_play_sound = false;
@@ -81,7 +83,7 @@ if (spawn_vines == true)
     
     with (obj_pl)
     {
-        col_vine = instance_place(x, y, obj_flowey_battle_ow_vine);
+        var col_vine = instance_place(x, y, obj_flowey_battle_ow_vine);
         
         if (col_vine != -4 && col_vine.image_alpha >= 0.5 && other.player_vulnerable)
         {
@@ -101,7 +103,7 @@ else
     gui_fade_out = true;
 }
 
-damage = (global.enemy_attack_stat - global.player_armor_defense - global.player_armor_modifier_defense - global.player_defense) + 10;
+var damage = (global.enemy_attack_stat - global.player_armor_defense - global.player_armor_modifier_defense - global.player_defense) + 10;
 
 if (player_hurt == true)
 {

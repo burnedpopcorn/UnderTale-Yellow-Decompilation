@@ -1,13 +1,11 @@
-var main_shop_screen_number, sell_shop_screen_number, inventory_max, i;
-
 if (live_call())
     return global.live_result;
 
-main_shop_screen_number = global.main_shop_screen_number;
-sell_shop_screen_number = global.sell_shop_screen_number;
-inventory_max = 0;
+var main_shop_screen_number = global.main_shop_screen_number;
+var sell_shop_screen_number = global.sell_shop_screen_number;
+var inventory_max = 0;
 
-for (i = 1; i <= 8; i++)
+for (var i = 1; i <= 8; i++)
 {
     if (global.item_slot[i] == "Nothing")
         break;

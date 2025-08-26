@@ -1,5 +1,3 @@
-var box;
-
 if (live_call())
     return global.live_result;
 
@@ -7,7 +5,7 @@ if (vspeed > vspeed_max)
     vspeed = vspeed_max;
 
 image_angle += (image_angle_inc * 5);
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if (y > (box.bbox_bottom + 6) && vspeed > 0)
 {

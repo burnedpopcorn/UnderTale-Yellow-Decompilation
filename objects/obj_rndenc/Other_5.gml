@@ -1,6 +1,4 @@
-var specific_encounter, pos;
-
-specific_encounter = "null";
+var specific_encounter = "null";
 
 switch (room)
 {
@@ -15,6 +13,6 @@ switch (room)
 
 if (specific_encounter != "null")
 {
-    pos = ds_list_find_index(global.encounter_list, specific_encounter);
+    var pos = ds_list_find_index(global.encounter_list, specific_encounter);
     ds_list_delete(global.encounter_list, pos);
 }

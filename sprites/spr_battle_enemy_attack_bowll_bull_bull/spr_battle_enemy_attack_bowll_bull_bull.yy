@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"613255ad-7166-4f82-ae12-d18e95940b84",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2ef8ee41-6641-4663-b752-e617e396709a",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"40488d7d-c0f3-46da-b2cd-4a6d6122fa0c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2c3eafe3-cd58-465e-88e1-2d400595f8df",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e9086cb8-c4b4-4901-a58a-78af3af043fa",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cd1d32c5-17e9-4f39-af36-240015fa2ef9",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 27,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c67b7bc1-e2e4-47f5-8cd2-02fa51d325df","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4fb8f8ac-34e6-4d15-9884-02e8a44a1230","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"613255ad-7166-4f82-ae12-d18e95940b84","path":"sprites/spr_battle_enemy_attack_bowll_bull_bull/spr_battle_enemy_attack_bowll_bull_bull.yy",},},},"Disabled":false,"id":"54be7c4c-6c0f-4ce5-aa59-8b3247e8b34f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2ef8ee41-6641-4663-b752-e617e396709a","path":"sprites/spr_battle_enemy_attack_bowll_bull_bull/spr_battle_enemy_attack_bowll_bull_bull.yy",},},},"Disabled":false,"id":"3d711a7d-f3ca-4eb7-a2c6-2e2e44725344","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"40488d7d-c0f3-46da-b2cd-4a6d6122fa0c","path":"sprites/spr_battle_enemy_attack_bowll_bull_bull/spr_battle_enemy_attack_bowll_bull_bull.yy",},},},"Disabled":false,"id":"b6ed00c4-b041-485a-8641-2f327a6e0ecf","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2c3eafe3-cd58-465e-88e1-2d400595f8df","path":"sprites/spr_battle_enemy_attack_bowll_bull_bull/spr_battle_enemy_attack_bowll_bull_bull.yy",},},},"Disabled":false,"id":"dc5e58e3-d2bd-4c41-b400-3ca4c1ff6cdf","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e9086cb8-c4b4-4901-a58a-78af3af043fa","path":"sprites/spr_battle_enemy_attack_bowll_bull_bull/spr_battle_enemy_attack_bowll_bull_bull.yy",},},},"Disabled":false,"id":"afe7856b-b9b0-4bdd-bdac-5c5a87fb004a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cd1d32c5-17e9-4f39-af36-240015fa2ef9","path":"sprites/spr_battle_enemy_attack_bowll_bull_bull/spr_battle_enemy_attack_bowll_bull_bull.yy",},},},"Disabled":false,"id":"545b4302-1c24-4d7f-8ddd-1a2986b046d5","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleDunes",
+    "path": "texturegroups/BattleDunes",
   },
   "type": 0,
   "VTile": false,

@@ -1,5 +1,3 @@
-var v, h, i;
-
 surf_screen_copy = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
 surf_screen_noloop = false;
 h_number = 10;
@@ -8,10 +6,10 @@ total_number = h_number * v_number;
 h_width = 320 / h_number;
 v_height = 240 / v_number;
 timer = 100;
-v = 0;
-h = 0;
+var v = 0;
+var h = 0;
 
-for (i = 0; i < total_number; i++)
+for (var i = 0; i < total_number; i++)
 {
     if (h > (h_number - 1))
     {

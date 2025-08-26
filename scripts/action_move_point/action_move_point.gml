@@ -1,9 +1,7 @@
-function action_move_point(argument0, argument1, argument2)
+function action_move_point(arg0, arg1, arg2)
 {
-    var xx, yy;
-    
-    xx = argument0;
-    yy = argument1;
+    var xx = arg0;
+    var yy = arg1;
     
     if (global.__argument_relative)
     {
@@ -11,5 +9,5 @@ function action_move_point(argument0, argument1, argument2)
         yy += y;
     }
     
-    move_towards_point(xx, yy, argument2);
+    move_towards_point(xx, yy, arg2);
 }

@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 0.8620408,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "snd/clover_jump_dunes.ogg",
+  "soundFile": "clover_jump_dunes.ogg",
   "type": 0,
   "volume": 1.0,
 }

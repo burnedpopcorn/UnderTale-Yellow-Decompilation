@@ -3,11 +3,11 @@ if (!instance_exists(obj_dialogue_axis_hindered))
 
 with (msg)
 {
-    sndfnt = 111;
+    sndfnt = snd_talk_axis;
     message[0] = "* HA. FOUND YOU.";
     message[1] = "* AWAY YOU GO.";
-    prt[0] = 473;
-    prt[1] = 473;
+    prt[0] = spr_portrait_axis_normal;
+    prt[1] = spr_portrait_axis_normal;
 }
 
 fade_out = true;

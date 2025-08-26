@@ -6,7 +6,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_npc_walk(1161, 555, obj_pl.y, 3, "x", "right");
+        cutscene_npc_walk(obj_ceroba_npc, 555, obj_pl.y, 3, "x", "right");
         scene = 2;
         break;
     
@@ -15,7 +15,7 @@ switch (scene)
         break;
     
     case 3:
-        cutscene_npc_walk(1168, 580, obj_pl.y, 3, "x", "left");
+        cutscene_npc_walk(obj_player_npc, 580, obj_pl.y, 3, "x", "left");
         break;
     
     case 4:
@@ -23,25 +23,25 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* I gotta say, that was#  pretty entertaining!";
             message[1] = "* Glad we could bypass#  Axis without destroying#  him.";
             message[2] = "* Turns out you're a#  pretty damn good leader,#  Clover!";
             message[3] = "* I don't know why I#  doubted-";
             message[4] = "* ...";
             message[5] = "* Right.";
-            prt[0] = 372;
-            prt[1] = 374;
-            prt[2] = 395;
-            prt[3] = 372;
-            prt[4] = 394;
-            prt[5] = 371;
+            prt[0] = spr_portrait_ceroba_smile;
+            prt[1] = spr_portrait_ceroba_smile_alt;
+            prt[2] = spr_portrait_ceroba_snarky;
+            prt[3] = spr_portrait_ceroba_smile;
+            prt[4] = spr_portrait_ceroba_disapproving;
+            prt[5] = spr_portrait_ceroba_alt;
         }
         
         break;
     
     case 5:
-        cutscene_npc_direction(1161, "left");
+        cutscene_npc_direction(obj_ceroba_npc, "left");
         break;
     
     case 6:
@@ -53,13 +53,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* ...";
             message[1] = "* I see our exit up ahead.";
             message[2] = "* We're close.";
-            prt[0] = 394;
-            prt[1] = 371;
-            prt[2] = 370;
+            prt[0] = spr_portrait_ceroba_disapproving;
+            prt[1] = spr_portrait_ceroba_alt;
+            prt[2] = spr_portrait_ceroba_neutral;
             
             if (message_current == 2)
                 obj_ceroba_npc.npc_direction = "right";

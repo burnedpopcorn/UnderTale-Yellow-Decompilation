@@ -1,9 +1,7 @@
-var battle_box;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 image_index = arrow_dir / 90;
 
 if (place_meeting(x, y, obj_heart_battle_fighting_parent) && !is_active)

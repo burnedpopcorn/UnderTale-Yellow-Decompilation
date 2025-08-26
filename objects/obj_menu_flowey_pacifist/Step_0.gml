@@ -34,8 +34,8 @@ switch (scene)
         {
             with (obj_dialogue_flowey_ending)
             {
-                sndfnt = 96;
-                talker[0] = 2628;
+                sndfnt = sndfnt_flowey;
+                talker[0] = obj_ending_flowey;
                 message[0] = "Well...";
                 message[1] = "Here we are again. Of#course.";
                 message[2] = "Sigh...";
@@ -53,23 +53,23 @@ switch (scene)
                 message[14] = "If the next human would#have the will to do what#Clover couldn't.";
                 message[15] = "Decisions decisions...";
                 message[16] = "Let me think...";
-                prt[0] = 347;
-                prt[1] = 348;
-                prt[2] = 353;
-                prt[3] = 353;
-                prt[4] = 352;
-                prt[5] = 353;
-                prt[6] = 353;
-                prt[7] = 352;
-                prt[8] = 353;
-                prt[9] = 347;
-                prt[10] = 347;
-                prt[11] = 348;
-                prt[12] = 353;
-                prt[13] = 353;
-                prt[14] = 352;
-                prt[15] = 353;
-                prt[16] = 353;
+                prt[0] = flowey_niceside;
+                prt[1] = flowey_nice;
+                prt[2] = flowey_plains;
+                prt[3] = flowey_plains;
+                prt[4] = flowey_plain;
+                prt[5] = flowey_plains;
+                prt[6] = flowey_plains;
+                prt[7] = flowey_plain;
+                prt[8] = flowey_plains;
+                prt[9] = flowey_niceside;
+                prt[10] = flowey_niceside;
+                prt[11] = flowey_nice;
+                prt[12] = flowey_plains;
+                prt[13] = flowey_plains;
+                prt[14] = flowey_plain;
+                prt[15] = flowey_plains;
+                prt[16] = flowey_plains;
             }
         }
         
@@ -104,7 +104,7 @@ switch (scene)
                 audio_play_sound(snd_mainmenu_select, 1, 0);
             }
             
-            if (keyboard_multicheck_pressed(0) == true)
+            if (keyboard_multicheck_pressed(vk_nokey) == true)
             {
                 audio_play_sound(snd_confirm, 1, 0);
                 

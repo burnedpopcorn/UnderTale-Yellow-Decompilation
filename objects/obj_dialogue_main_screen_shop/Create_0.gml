@@ -1,9 +1,7 @@
-var game_mode, shop_name, main_shop_screen_number, message_alt_length;
-
 depth = -room_height - 164;
-game_mode = global.game_mode;
-shop_name = global.shop_name;
-main_shop_screen_number = global.main_shop_screen_number;
+var game_mode = global.game_mode;
+var shop_name = global.shop_name;
+var main_shop_screen_number = global.main_shop_screen_number;
 
 if (game_mode == "customs")
 {
@@ -106,7 +104,7 @@ message_length = string_length(message[message_current]);
 
 if (shop_name == "Hotel Shop")
 {
-    message_alt_length = string_length(message_alt[message_current]);
+    var message_alt_length = string_length(message_alt[message_current]);
     
     if (message_alt_length > message_length)
         message_length = message_alt_length;

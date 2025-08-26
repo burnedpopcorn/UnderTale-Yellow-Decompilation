@@ -10,7 +10,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* What's out there? What's out#  there??";
                 message[1] = "* No! Follow the path. FOLLOW#  THE PATH.";
@@ -23,7 +23,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* WHO'S PULLING THE STRINGS,#  HUH???";
                 message[1] = "* A WILL AIN'T FREE. LOSS IS#  CERTAIN.";
@@ -36,7 +36,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 talker[0] = other;
                 message[0] = "* hNNNNNNG.";
             }

@@ -1,5 +1,3 @@
-var generator;
-
 if (live_call())
     return global.live_result;
 
@@ -10,8 +8,8 @@ if (global.route == 3 || global.battle_enemy_name == "flowey")
     exit;
 }
 
-generator = 3142;
-box = 3154;
+var generator = 3143;
+box = obj_dialogue_box_battle_transformation_any;
 image_speed = 0;
 
 if (x == generator.dj_note_center_x)

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"87ad9dbb-8d37-4cda-9a26-5db205f5c8cb",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1263ee1d-69d7-42bd-8312-78e5bef76c7f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0bfcc566-320f-423c-876d-a5e06a1bff77",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cfc00f38-a358-478b-aaf2-fca8426f93c8",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 85,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"01b1d885-4b21-4d85-b3ef-e79841066845","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cc881692-15a2-4113-a8e1-301f88661e17","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"87ad9dbb-8d37-4cda-9a26-5db205f5c8cb","path":"sprites/spr_honeydew_bear_nervous_shop/spr_honeydew_bear_nervous_shop.yy",},},},"Disabled":false,"id":"49bf15cc-a8d8-4cc3-bd7e-8872a56603dc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1263ee1d-69d7-42bd-8312-78e5bef76c7f","path":"sprites/spr_honeydew_bear_nervous_shop/spr_honeydew_bear_nervous_shop.yy",},},},"Disabled":false,"id":"971aa3de-b653-4e2f-b82c-faff6ed57d46","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0bfcc566-320f-423c-876d-a5e06a1bff77","path":"sprites/spr_honeydew_bear_nervous_shop/spr_honeydew_bear_nervous_shop.yy",},},},"Disabled":false,"id":"b1ae5c1d-c25d-4157-ac01-888826c50594","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cfc00f38-a358-478b-aaf2-fca8426f93c8","path":"sprites/spr_honeydew_bear_nervous_shop/spr_honeydew_bear_nervous_shop.yy",},},},"Disabled":false,"id":"89f2fd90-0135-4bc4-9fbf-21e5b92ef9d8","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Shops",
+    "path": "texturegroups/Shops",
   },
   "type": 0,
   "VTile": false,

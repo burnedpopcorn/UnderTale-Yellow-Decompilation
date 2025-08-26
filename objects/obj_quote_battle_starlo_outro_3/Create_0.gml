@@ -1,8 +1,6 @@
-var turns_passed;
-
 text_effect = "twitchy";
 attack = false;
-turns_passed = global.turns_passed;
+var turns_passed = global.turns_passed;
 message[0] = "Starlo!";
 message[1] = "Stop this right#now!";
 message_end = 1;

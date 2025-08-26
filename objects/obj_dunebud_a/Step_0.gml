@@ -1,12 +1,10 @@
-var enemy_dead, enemy_spared, can_change;
-
 if (live_call())
     return global.live_result;
 
 if (sinking_away == false)
 {
-    enemy_dead = global.enemy_dead;
-    enemy_spared = global.enemy_spared;
+    var enemy_dead = global.enemy_dead;
+    var enemy_spared = global.enemy_spared;
     event_user(0);
     
     if (enemy_dead == true)
@@ -46,7 +44,7 @@ if (sinking_away == false)
     }
     else if (enemy_dead == false && enemy_spared == false && damage_disjoint_count <= 0)
     {
-        can_change = false;
+        var can_change = false;
         
         if (image_alpha == 0)
         {

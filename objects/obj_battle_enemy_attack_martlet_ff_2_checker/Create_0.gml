@@ -1,5 +1,3 @@
-var random_number;
-
 x_center = obj_dialogue_box_battle_transformation_any.x;
 y_center = obj_dialogue_box_battle_transformation_any.y;
 feather_angle_radius = (obj_dialogue_box_battle_transformation_any.bbox_right - x_center) + 100;
@@ -10,7 +8,7 @@ feather_angle_total_max = 180;
 feather_count = 0;
 feather_create_max = 3;
 no_loop_destroy = false;
-random_number = 2;
+var random_number = 2;
 
 switch (random_number)
 {

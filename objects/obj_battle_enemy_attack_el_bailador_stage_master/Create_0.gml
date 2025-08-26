@@ -1,5 +1,5 @@
 sprite_index = spr_battle_enemy_attack_el_bailador_light_cone_salsa_2;
-background_obj = 2895;
+background_obj = 2896;
 default_x = obj_el_bailador_neutral.x;
 default_y = obj_el_bailador_neutral.y;
 lights_x_diff = 196;

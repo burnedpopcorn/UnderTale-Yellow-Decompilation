@@ -1,10 +1,8 @@
-var box, create_x_dist, wind_direction;
-
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 rand_hmin = box.bbox_top + 25;
 rand_hmax = box.bbox_bottom - 5;
-create_x_dist = 30;
-wind_direction = irandom_range(0, 1);
+var create_x_dist = 30;
+var wind_direction = irandom_range(0, 1);
 
 if (wind_direction == 0)
     create_x = box.bbox_left - create_x_dist;

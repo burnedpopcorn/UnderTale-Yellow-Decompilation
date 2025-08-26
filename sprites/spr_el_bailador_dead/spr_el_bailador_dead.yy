@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e34355f7-a222-4a32-9657-d608dcfb366b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f57da95c-b2e9-456d-acf2-318c974460bb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"879c7fb6-3f6a-44ca-957c-34ff401a2bfa",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dec5dc35-b6a3-4015-8d62-07dd2eca6517",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 184,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b1db626d-852e-4fda-9053-736675b6b23a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1e4ff884-92fd-414a-90e1-363acbf911bc","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e34355f7-a222-4a32-9657-d608dcfb366b","path":"sprites/spr_el_bailador_dead/spr_el_bailador_dead.yy",},},},"Disabled":false,"id":"d2af2cf0-2df9-4f9a-9788-b022db003c77","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f57da95c-b2e9-456d-acf2-318c974460bb","path":"sprites/spr_el_bailador_dead/spr_el_bailador_dead.yy",},},},"Disabled":false,"id":"7504bfb4-14bb-4152-9a6f-8e8fb0ab13e3","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"879c7fb6-3f6a-44ca-957c-34ff401a2bfa","path":"sprites/spr_el_bailador_dead/spr_el_bailador_dead.yy",},},},"Disabled":false,"id":"b45255ac-aa37-4339-8a74-eb082241ee83","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dec5dc35-b6a3-4015-8d62-07dd2eca6517","path":"sprites/spr_el_bailador_dead/spr_el_bailador_dead.yy",},},},"Disabled":false,"id":"9431075e-9d78-4d51-8b1a-86c991c1c294","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleDunes",
+    "path": "texturegroups/BattleDunes",
   },
   "type": 0,
   "VTile": false,

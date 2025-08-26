@@ -1,5 +1,3 @@
-var ransong_new, current_song;
-
 event_inherited();
 
 if (interact && audio_is_playing(song))
@@ -78,7 +76,7 @@ if (waiter == 2 && !instance_exists(obj_dialogue))
             other.bark_song_chance -= 1;
         }
         
-        ransong_new = irandom(2);
+        var ransong_new = irandom(2);
         
         while (ransong_new == other.ransong)
             ransong_new = irandom(2);
@@ -138,7 +136,7 @@ if (waiter == 6 && !instance_exists(obj_dialogue))
 
 if (play_song == 1)
 {
-    current_song = obj_radio.bgm;
+    var current_song = obj_radio.bgm;
     
     if (current_song != song)
     {

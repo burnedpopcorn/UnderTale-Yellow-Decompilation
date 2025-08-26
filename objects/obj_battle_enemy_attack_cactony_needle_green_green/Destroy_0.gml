@@ -1,8 +1,6 @@
-var enemy_count;
-
 if (heart_collided == true)
 {
-    enemy_count = global.enemy_count;
+    var enemy_count = global.enemy_count;
     
     if (global.battle_enemy_name_1 == "cactony a" && global.enemy_low_hp == false && global.enemy_dead == false && global.enemy_spared == false)
     {

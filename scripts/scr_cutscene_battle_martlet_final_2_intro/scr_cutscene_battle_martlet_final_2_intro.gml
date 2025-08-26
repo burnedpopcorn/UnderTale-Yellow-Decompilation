@@ -1,7 +1,5 @@
 function scr_cutscene_battle_martlet_final_2_intro()
 {
-    var flash_sound;
-    
     if (live_call())
         return global.live_result;
     
@@ -76,7 +74,7 @@ function scr_cutscene_battle_martlet_final_2_intro()
         
         case 8:
             audio_play_sound(snd_ceroba_yell, 1, 0);
-            flash_sound = audio_play_sound(snd_undertale_flash, 1, 0);
+            var flash_sound = audio_play_sound(snd_undertale_flash, 1, 0);
             audio_sound_gain(flash_sound, 0.7, 0);
             scr_screenshake_battle_custom(6, 3);
             obj_martlet_final_2_base.martlet_sprites_reset = true;

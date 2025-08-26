@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"56fdc582-aeb2-40dd-821f-6e80f34fbf37",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e2a27a48-1627-4ab5-ab50-f3af59293879",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1185ea36-0ff4-4964-8825-cb5438c49094",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd3949c1-c460-454b-8fa4-a5806a671dfd",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 108,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8f62dcf2-4827-4ab6-aca3-2f7e72f5ed83","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2616dc56-8bdf-441e-a9c5-c94115930be4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"56fdc582-aeb2-40dd-821f-6e80f34fbf37","path":"sprites/spr_portrait_ceroba_nervous_smile/spr_portrait_ceroba_nervous_smile.yy",},},},"Disabled":false,"id":"1f5ac975-aa52-4a8d-ac6e-bf9cdbc1dc94","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e2a27a48-1627-4ab5-ab50-f3af59293879","path":"sprites/spr_portrait_ceroba_nervous_smile/spr_portrait_ceroba_nervous_smile.yy",},},},"Disabled":false,"id":"e9004aaf-ed97-421a-ad1e-527465a826c9","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1185ea36-0ff4-4964-8825-cb5438c49094","path":"sprites/spr_portrait_ceroba_nervous_smile/spr_portrait_ceroba_nervous_smile.yy",},},},"Disabled":false,"id":"e1c896c0-cdd2-4af6-95f0-2346f6c10ba6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fd3949c1-c460-454b-8fa4-a5806a671dfd","path":"sprites/spr_portrait_ceroba_nervous_smile/spr_portrait_ceroba_nervous_smile.yy",},},},"Disabled":false,"id":"d3ca8e27-930c-4d02-90b0-6cf5c8a65b85","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "GeneralUse",
+    "path": "texturegroups/GeneralUse",
   },
   "type": 0,
   "VTile": false,

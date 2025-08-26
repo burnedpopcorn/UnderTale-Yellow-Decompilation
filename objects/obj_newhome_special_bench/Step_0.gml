@@ -11,7 +11,7 @@ if (waiter)
         
         with (msg)
         {
-            sndfnt_array[0] = 391;
+            sndfnt_array[0] = snd_talk_default;
             ch_msg = 1;
             ch[1] = "Yes";
             ch[2] = "No";

@@ -14,7 +14,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_npc_walk(1168, 1140, obj_player_npc.y, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 1140, obj_player_npc.y, 3, "x", "up");
         break;
     
     case 2:
@@ -43,7 +43,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* ...Clover?";
             message[1] = "* Clover!!! It is you!";
             message[2] = "* I can't believe it!";
@@ -60,7 +60,7 @@ switch (scene)
     case 9:
         obj_player_npc.image_alpha = 0;
         
-        if (cutscene_npc_action_sprite(actor_martlet, 1465, 1, false))
+        if (cutscene_npc_action_sprite(actor_martlet, spr_martlet_flowey_hug, 1, false))
             obj_player_npc.image_alpha = 1;
         
         break;
@@ -74,7 +74,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* I was so scared! ";
             message[1] = "* This place...";
             message[2] = "* It's Snowdin right? Sure looks#  like it.";
@@ -90,7 +90,7 @@ switch (scene)
         break;
     
     case 12:
-        cutscene_npc_action_sprite(actor_martlet, 3743, 1, true, 0);
+        cutscene_npc_action_sprite(actor_martlet, spr_martlet_flowey_eye, 1, true, 0);
         break;
     
     case 13:
@@ -98,7 +98,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* I  F O U N D  Y O U . ";
             skippable = false;
             

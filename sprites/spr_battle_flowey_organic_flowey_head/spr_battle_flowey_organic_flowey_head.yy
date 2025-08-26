@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2e507312-ce41-455b-8db9-556976d7806a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a38aa560-9a27-4d33-bdcf-1d4411e2bcae",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 261,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dd30fa42-c0bc-4b32-a698-d39257759915","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"db4e7159-cb2d-400e-9983-76de4874aafe","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -53,8 +53,8 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2e507312-ce41-455b-8db9-556976d7806a","path":"sprites/spr_battle_flowey_organic_flowey_head/spr_battle_flowey_organic_flowey_head.yy",},},},"Disabled":false,"id":"26fbb185-7ea2-4ee9-8a3c-a10ff6f2ea3f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a38aa560-9a27-4d33-bdcf-1d4411e2bcae","path":"sprites/spr_battle_flowey_organic_flowey_head/spr_battle_flowey_organic_flowey_head.yy",},},},"Disabled":false,"id":"0841a1f6-3b06-478c-a65f-6430acceb4e7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleHotlandFloweyOrganic",
+    "path": "texturegroups/BattleHotlandFloweyOrganic",
   },
   "type": 0,
   "VTile": false,

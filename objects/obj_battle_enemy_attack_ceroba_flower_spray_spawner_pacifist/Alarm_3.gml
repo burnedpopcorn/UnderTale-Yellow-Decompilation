@@ -1,10 +1,8 @@
-var bullet;
-
 if (live_call())
     return global.live_result;
 
 audio_play_sound(snd_enemy_bullet_shot, 1, 0);
-bullet = instance_create(x, y, obj_battle_enemy_attack_ceroba_flower_spray_bullet);
+var bullet = instance_create(x, y, obj_battle_enemy_attack_ceroba_flower_spray_bullet);
 bullet.speed = bullet_speed_alt;
 bullet.direction = point_direction(x, y, 320, 320) + bullet_spread_alt;
 

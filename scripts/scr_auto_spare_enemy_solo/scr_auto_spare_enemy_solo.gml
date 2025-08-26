@@ -1,11 +1,11 @@
-function scr_auto_spare_enemy_solo(argument0)
+function scr_auto_spare_enemy_solo(arg0)
 {
     enemy_a_dead = false;
     enemy_a_spared = false;
     enemy_b_dead = false;
     enemy_b_spared = false;
     
-    if (argument0 == 1)
+    if (arg0 == 1)
     {
         global.enemy_sparing = true;
         global.enemy_spared = true;
@@ -22,7 +22,7 @@ function scr_auto_spare_enemy_solo(argument0)
             enemy_b_spared = global.enemy_spared_3;
         }
     }
-    else if (argument0 == 2)
+    else if (arg0 == 2)
     {
         global.enemy_sparing_2 = true;
         global.enemy_spared_2 = true;
@@ -35,7 +35,7 @@ function scr_auto_spare_enemy_solo(argument0)
             enemy_b_spared = global.enemy_spared_3;
         }
     }
-    else if (argument0 == 3)
+    else if (arg0 == 3)
     {
         global.enemy_sparing_3 = true;
         global.enemy_spared_3 = true;

@@ -1,6 +1,6 @@
-function scr_item_stats_weapon(argument0)
+function scr_item_stats_weapon(arg0)
 {
-    switch (argument0)
+    switch (arg0)
     {
         case "Toy Knife":
             return 3;

@@ -14,7 +14,7 @@ if (global.flag[12] == true)
     
     with (dor)
     {
-        nextroom = 32;
+        nextroom = rm_darkruins_16b;
         xx = 160;
         yy = 380;
         image_xscale = 2.5;

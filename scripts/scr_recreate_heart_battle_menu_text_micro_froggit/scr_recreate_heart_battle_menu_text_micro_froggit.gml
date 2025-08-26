@@ -1,12 +1,10 @@
 function scr_recreate_heart_battle_menu_text_micro_froggit()
 {
-    var last_text_move_select, action_1_selected_count, action_2_selected_count, action_3_selected_count, heart_position, random_text_move_select;
-    
-    last_text_move_select = global.last_text_move_select;
-    action_1_selected_count = global.action_1_selected_count;
-    action_2_selected_count = global.action_2_selected_count;
-    action_3_selected_count = global.action_3_selected_count;
-    heart_position = script_execute(scr_return_heart_battle_menu_position);
+    var last_text_move_select = global.last_text_move_select;
+    var action_1_selected_count = global.action_1_selected_count;
+    var action_2_selected_count = global.action_2_selected_count;
+    var action_3_selected_count = global.action_3_selected_count;
+    var heart_position = script_execute(scr_return_heart_battle_menu_position);
     
     if (text_deadlock_1 == true)
     {
@@ -15,65 +13,65 @@ function scr_recreate_heart_battle_menu_text_micro_froggit()
     else if (last_text_move_select == 0)
     {
         instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_intro);
-        text_deadlock_contents_1 = 3004;
+        text_deadlock_contents_1 = spr_audience_joy_sign;
         text_deadlock_1 = true;
     }
     else if (global.enemy_sparing == true)
     {
         instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_sparing);
-        text_deadlock_contents_1 = 3030;
+        text_deadlock_contents_1 = spr_flashback_ceroba_run_worried;
         text_deadlock_1 = true;
     }
     else if (global.battle_menu_number == 1 && global.fight_number == 1 && global.enemy_hurt == true)
     {
         instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_special);
-        text_deadlock_contents_1 = 3009;
+        text_deadlock_contents_1 = spr_fight_yellow_locked;
         text_deadlock_1 = true;
     }
     else if (action_2_selected_count >= 1 && heart_position == "2112")
     {
         instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_action_2);
-        text_deadlock_contents_1 = 3007;
+        text_deadlock_contents_1 = spr_martlet_star_medium;
         text_deadlock_1 = true;
     }
     else
     {
-        random_text_move_select = irandom_range(1, 6);
+        var random_text_move_select = irandom_range(1, 6);
         
         if (random_text_move_select == 1)
         {
             instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_1);
-            text_deadlock_contents_1 = 3020;
+            text_deadlock_contents_1 = spr_sousborg_egg_fire_burn;
             text_deadlock_1 = true;
         }
         else if (random_text_move_select == 2)
         {
             instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_2);
-            text_deadlock_contents_1 = 3021;
+            text_deadlock_contents_1 = spr_sousborg_egg_smoke;
             text_deadlock_1 = true;
         }
         else if (random_text_move_select == 3)
         {
             instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_3);
-            text_deadlock_contents_1 = 3022;
+            text_deadlock_contents_1 = spr_credits_SPROUT_BLOOM;
             text_deadlock_1 = true;
         }
         else if (random_text_move_select == 4)
         {
             instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_4);
-            text_deadlock_contents_1 = 3023;
+            text_deadlock_contents_1 = spr_credits_miner_snake;
             text_deadlock_1 = true;
         }
         else if (random_text_move_select == 5)
         {
             instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_5);
-            text_deadlock_contents_1 = 3024;
+            text_deadlock_contents_1 = spr_sir_slither_neck;
             text_deadlock_1 = true;
         }
         else if (random_text_move_select == 6)
         {
             instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_6);
-            text_deadlock_contents_1 = 3025;
+            text_deadlock_contents_1 = spr_shot_strong_flint;
             text_deadlock_1 = true;
         }
     }

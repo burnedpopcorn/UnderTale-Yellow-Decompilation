@@ -1,6 +1,4 @@
-var battle_box;
-
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 attack_timer = room_speed * 8;
 sword_dist = 100;
 sword_spawn_y = irandom_range(battle_box.bbox_top + 10, battle_box.bbox_bottom - 10);

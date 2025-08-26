@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I would sell you something,#  but I'm on strike. The owner#  needs to better themself.";
                 message[1] = "* That's me. I'm the owner.";
             }
@@ -23,7 +23,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Run along now. I don't see#  myself improving anytime soon.";
             }
             

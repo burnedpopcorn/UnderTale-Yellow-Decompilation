@@ -1,7 +1,5 @@
-var battle_box;
-
 damage_number = scr_determine_damage_number_enemy("mooch", "void", "void");
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 travel_distance = 25;
 direction = point_direction(x, y, battle_box.x, battle_box.y);
 avg_speed = 2.8;

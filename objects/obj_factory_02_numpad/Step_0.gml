@@ -4,7 +4,7 @@ if (live_call())
 switch (scene)
 {
     case 0:
-        if (keyboard_multicheck_pressed(0) && scr_interact())
+        if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
             cutscene_advance();
         
         break;

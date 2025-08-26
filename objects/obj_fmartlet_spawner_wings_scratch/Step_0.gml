@@ -1,25 +1,23 @@
-var battle_box, scratch_instance;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 switch (attack_tick)
 {
     case 30:
-        scratch_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
+        var scratch_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
         scratch_instance.attack_delay = 10;
         break;
     
     case 45:
-        scratch_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
+        var scratch_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
         scratch_instance.image_xscale = -1;
         scratch_instance.attack_delay = 10;
         break;
     
     case 60:
-        scratch_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
+        var scratch_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
         scratch_instance.attack_delay = 70;
         martlet_wing_spawn(0);
         break;
@@ -33,7 +31,7 @@ switch (attack_tick)
         break;
     
     case 170:
-        scratch_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
+        var scratch_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
         scratch_instance.attack_delay = 40;
         scratch_instance.image_xscale = -1;
         scratch_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
@@ -51,18 +49,16 @@ switch (attack_tick)
         break;
 }
 
-function martlet_wing_spawn(argument0)
+function martlet_wing_spawn(arg0)
 {
-    var battle_box, xx, yy, xscale, yscale, angle, wing;
+    var battle_box = obj_dialogue_box_battle_transformation_any;
+    var xx = 0;
+    var yy = 0;
+    var xscale = 1;
+    var yscale = 1;
+    var angle = 0;
     
-    battle_box = 3154;
-    xx = 0;
-    yy = 0;
-    xscale = 1;
-    yscale = 1;
-    angle = 0;
-    
-    switch (argument0)
+    switch (arg0)
     {
         case 0:
             xx = battle_box.bbox_left + 4;
@@ -76,7 +72,7 @@ function martlet_wing_spawn(argument0)
             break;
     }
     
-    wing = instance_create_depth(xx, yy, -50, obj_fmartlet_wings);
+    var wing = instance_create_depth(xx, yy, -50, obj_fmartlet_wings);
     
     with (wing)
     {

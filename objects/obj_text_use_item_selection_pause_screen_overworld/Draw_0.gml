@@ -1,6 +1,4 @@
-var item_slot;
-
-item_slot = global.item_slot[global.item_pause_screen_number];
+var item_slot = global.item_slot[global.item_pause_screen_number];
 draw_set_font(global.font_type_text_0_5x);
 draw_set_color(c_white);
 draw_set_halign(fa_left);

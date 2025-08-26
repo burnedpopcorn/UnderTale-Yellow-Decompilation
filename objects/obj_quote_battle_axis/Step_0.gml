@@ -59,7 +59,7 @@ switch (scene)
             
             with (msg)
             {
-                sndfnt = 391;
+                sndfnt = snd_talk_default;
                 message[0] = "* (You do.)";
             }
             

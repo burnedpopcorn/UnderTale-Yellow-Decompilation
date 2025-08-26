@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ca0190bf-4c18-4083-996b-eee4310b75cc",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"055404bf-85b1-4707-b65a-f96ffabb09af",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0e384e44-0fd6-4b2f-90b0-1f508e718796",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0e1cd481-150d-4291-a8ad-90f56074b128",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 31,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fd1b0780-0d54-4c21-a6fe-dc47a1942bfd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4f2fcdcb-1ccb-4774-9873-4573e8ffea30","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ca0190bf-4c18-4083-996b-eee4310b75cc","path":"sprites/spr_fruitcake/spr_fruitcake.yy",},},},"Disabled":false,"id":"de107004-6744-4a12-9f59-251898eb03f6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"055404bf-85b1-4707-b65a-f96ffabb09af","path":"sprites/spr_fruitcake/spr_fruitcake.yy",},},},"Disabled":false,"id":"9f7b354c-25a6-4f62-9606-b8ea5cb29201","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0e384e44-0fd6-4b2f-90b0-1f508e718796","path":"sprites/spr_fruitcake/spr_fruitcake.yy",},},},"Disabled":false,"id":"8892b718-8989-4230-afdd-c20a5b912135","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0e1cd481-150d-4291-a8ad-90f56074b128","path":"sprites/spr_fruitcake/spr_fruitcake.yy",},},},"Disabled":false,"id":"8387f5c6-6c20-41e5-b791-4490056244f8","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Dunes",
+    "path": "texturegroups/Dunes",
   },
   "type": 0,
   "VTile": false,

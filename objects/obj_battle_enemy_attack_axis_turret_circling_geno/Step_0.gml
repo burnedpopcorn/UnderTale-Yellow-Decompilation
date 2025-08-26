@@ -1,12 +1,10 @@
-var heart, shootsnd, bullet;
-
 if (live_call())
     return global.live_result;
 
 switch (scene)
 {
     case 0:
-        heart = obj_heart_battle_fighting_parent;
+        var heart = obj_heart_battle_fighting_parent;
         attack_target_x = heart.x;
         attack_target_y = heart.y;
         
@@ -53,9 +51,9 @@ switch (scene)
     
     case 1:
         image_speed = 1;
-        shootsnd = audio_play_sound(snd_arc_shoot, 1, 0);
+        var shootsnd = audio_play_sound(snd_arc_shoot, 1, 0);
         audio_sound_gain(shootsnd, 0.3, 0);
-        bullet = instance_create_depth(x, y, depth + 1, obj_battle_enemy_attack_axis_turret_bullet_geno);
+        var bullet = instance_create_depth(x, y, depth + 1, obj_battle_enemy_attack_axis_turret_bullet_geno);
         bullet.direction = image_angle;
         bullet.image_angle = bullet.direction;
         bullet.speed = 11;

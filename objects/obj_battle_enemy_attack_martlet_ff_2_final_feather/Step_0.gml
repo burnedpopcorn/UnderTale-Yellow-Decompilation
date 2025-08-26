@@ -1,5 +1,3 @@
-var can_trail;
-
 if (live_call())
     return global.live_result;
 
@@ -14,7 +12,7 @@ if (image_alpha < 1 && can_fade_in == true)
         can_fade_in = false;
 }
 
-can_trail = false;
+var can_trail = false;
 trail_cc_current += 1;
 
 if (trail_cc_current >= trail_cc_max)

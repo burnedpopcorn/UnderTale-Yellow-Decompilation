@@ -1,5 +1,3 @@
-var target_x, grav, fall_speed_max, battle_box, x_max;
-
 switch (attack_state)
 {
     case 0:
@@ -16,7 +14,7 @@ switch (attack_state)
         break;
     
     case 1:
-        target_x = xstart - 50;
+        var target_x = xstart - 50;
         
         if (x > (target_x + 0.01))
         {
@@ -31,10 +29,10 @@ switch (attack_state)
         break;
     
     case 2:
-        grav = 2;
-        fall_speed_max = 30;
-        battle_box = 3154;
-        x_max = battle_box.bbox_right - 4;
+        var grav = 2;
+        var fall_speed_max = 30;
+        var battle_box = obj_dialogue_box_battle_transformation_any;
+        var x_max = battle_box.bbox_right - 4;
         
         if ((bbox_right + fall_speed_max) >= x_max)
         {

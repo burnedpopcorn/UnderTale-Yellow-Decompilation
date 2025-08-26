@@ -1,4 +1,4 @@
-var action, puppet_talking;
+var action;
 
 if (instance_exists(obj_dialogue_shop_parent))
     action = obj_dialogue_shop_parent.action[obj_dialogue_shop_parent.message_current];
@@ -24,7 +24,7 @@ if (action != "Override")
 {
     if (instance_exists(obj_dialogue_shop_parent))
     {
-        puppet_talking = false;
+        var puppet_talking = false;
         
         if (obj_hotel_shop_puppet.sprite_index == spr_hotel_shop_puppet_talk && obj_hotel_shop_puppet.image_speed > 0)
             puppet_talking = true;

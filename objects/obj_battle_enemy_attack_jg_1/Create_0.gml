@@ -1,9 +1,7 @@
-var box, bucket_spawn;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 speaker_right = instance_create_depth(box.bbox_right + 80, box.bbox_bottom - 6, obj_heart_battle_fighting_red.depth - 1, obj_battle_enemy_attack_goosic_speaker);
 speaker_left = instance_create_depth(box.bbox_left - 80, box.bbox_bottom - 6, obj_heart_battle_fighting_red.depth - 1, obj_battle_enemy_attack_goosic_speaker);
 speaker_left.image_xscale = -1;
@@ -22,6 +20,6 @@ scr_enable_battle_box_surface();
 alarm[0] = 15;
 attack_duration = 15;
 alarm[2] = room_speed * 9;
-bucket_spawn = instance_create_depth(0, 0, -100, obj_battle_enemy_attack_jandroid_slippery_floor_generator);
+var bucket_spawn = instance_create_depth(0, 0, -100, obj_battle_enemy_attack_jandroid_slippery_floor_generator);
 bucket_spawn.attack_interval = 60;
 bucket_spawn.alarm[2] = 0;

@@ -1,9 +1,7 @@
-var enemy_dead, enemy_spared;
-
 if (battle_start == true && flee == false)
 {
-    enemy_dead = global.enemy_dead;
-    enemy_spared = global.enemy_spared;
+    var enemy_dead = global.enemy_dead;
+    var enemy_spared = global.enemy_spared;
     
     if (enemy_dead == false && enemy_spared == false)
         image_alpha = global.image_alpha_enemy_attacking;

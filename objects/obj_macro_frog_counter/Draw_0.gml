@@ -1,10 +1,8 @@
-var xx, yy;
-
 if (live_call())
     return global.live_result;
 
-xx = 580 + draw_x_offset;
-yy = 20 + draw_y_offset;
+var xx = 580 + draw_x_offset;
+var yy = 20 + draw_y_offset;
 draw_sprite_ext(spr_bigfrog_frogger_frog, 0, xx - 9, yy + 10, frog_scale * 2, frog_scale * 2, 0, c_white, 1);
 shader_set(sh_flash);
 draw_sprite_ext(spr_bigfrog_frogger_frog, 0, xx - 9, yy + 10, frog_scale * 2, frog_scale * 2, 0, c_white, frog_overlay_alpha);

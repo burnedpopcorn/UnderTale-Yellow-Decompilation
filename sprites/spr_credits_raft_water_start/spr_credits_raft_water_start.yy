@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e12b9158-d5ec-4c60-8829-eb5127a55427",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f2b465bc-06fa-4101-b387-2240d021c182",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aaaaae35-45be-4e1b-9b0d-9240ca238e14",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7ed91642-3ac3-44c7-b30f-adac89b3564f",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 53,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d04eac5e-6429-476a-b7ed-93fd30225d70","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bfda2bcb-44d8-4377-8f9c-a866dae314b6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e12b9158-d5ec-4c60-8829-eb5127a55427","path":"sprites/spr_credits_raft_water_start/spr_credits_raft_water_start.yy",},},},"Disabled":false,"id":"2396103e-0d18-4957-9fd6-a5dfecdc9365","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f2b465bc-06fa-4101-b387-2240d021c182","path":"sprites/spr_credits_raft_water_start/spr_credits_raft_water_start.yy",},},},"Disabled":false,"id":"3aed7139-70b7-429c-a993-08160d804a47","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"aaaaae35-45be-4e1b-9b0d-9240ca238e14","path":"sprites/spr_credits_raft_water_start/spr_credits_raft_water_start.yy",},},},"Disabled":false,"id":"dd79b3dc-6f4f-4eac-870c-101597211d5d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7ed91642-3ac3-44c7-b30f-adac89b3564f","path":"sprites/spr_credits_raft_water_start/spr_credits_raft_water_start.yy",},},},"Disabled":false,"id":"ed55726f-08ee-43a9-8fed-282ff68042aa","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "newhome",
+    "path": "texturegroups/newhome",
   },
   "type": 0,
   "VTile": false,

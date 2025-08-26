@@ -1,4 +1,4 @@
-if (scr_interact() && keyboard_multicheck_pressed(0) && scene == 0)
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey) && scene == 0)
 {
     scr_cutscene_start();
     scene = 1;
@@ -26,7 +26,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt_array[0] = 391;
+            sndfnt_array[0] = snd_talk_default;
             message[0] = "* (An empty elevator#  shaft lies before you.)";
         }
         

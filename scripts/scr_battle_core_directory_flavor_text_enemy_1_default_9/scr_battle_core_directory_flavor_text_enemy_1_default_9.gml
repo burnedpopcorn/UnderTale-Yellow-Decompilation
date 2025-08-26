@@ -1,10 +1,8 @@
 function scr_battle_core_directory_flavor_text_enemy_1_default_9()
 {
-    var battle_enemy_name, enemy_mode, game_mode, random_number;
-    
-    battle_enemy_name = global.battle_enemy_name;
-    enemy_mode = global.enemy_mode;
-    game_mode = global.game_mode;
+    var battle_enemy_name = global.battle_enemy_name;
+    var enemy_mode = global.enemy_mode;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {
@@ -26,7 +24,7 @@ function scr_battle_core_directory_flavor_text_enemy_1_default_9()
         }
         else if (battle_enemy_name == "axis")
         {
-            random_number = irandom_range(0, 1);
+            var random_number = irandom_range(0, 1);
             
             switch (random_number)
             {

@@ -1,9 +1,7 @@
-var random_text_move_select;
-
 if (live_call())
     return global.live_result;
 
-random_text_move_select = irandom_range(1, 9);
+var random_text_move_select = irandom_range(1, 9);
 script_execute(asset_get_index("scr_battle_core_directory_flavor_text_enemy_1_default_" + string(random_text_move_select)));
 message_current = 0;
 message_end = 0;

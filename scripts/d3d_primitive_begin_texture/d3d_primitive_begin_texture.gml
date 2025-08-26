@@ -1,13 +1,11 @@
-function d3d_primitive_begin_texture(argument0, argument1)
+function d3d_primitive_begin_texture(arg0, arg1)
 {
-    var __uvs;
-    
     if (global.__d3dPrimKind != -1)
         show_debug_message("ERROR : cannot begin a primitive before end called on previous");
     
-    global.__d3dPrimKind = argument0;
-    global.__d3dPrimTex = argument1;
-    __uvs = texture_get_uvs(global.__d3dPrimTex);
+    global.__d3dPrimKind = arg0;
+    global.__d3dPrimTex = arg1;
+    var __uvs = texture_get_uvs(global.__d3dPrimTex);
     global.__d3dPrimTexX = __uvs[0];
     global.__d3dPrimTexY = __uvs[1];
     global.__d3dPrimTexW = __uvs[2] - __uvs[0];

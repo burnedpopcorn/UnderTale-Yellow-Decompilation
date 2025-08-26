@@ -1,6 +1,4 @@
-var actor_ceroba;
-
-actor_ceroba = 1161;
+var actor_ceroba = obj_ceroba_npc;
 
 switch (scene)
 {
@@ -20,8 +18,8 @@ switch (scene)
             talker[0] = actor_ceroba;
             message[0] = "* Keep up, Clover.";
             message[1] = "* We don't have all the#  time in the world.";
-            prt[0] = 394;
-            prt[1] = 377;
+            prt[0] = spr_portrait_ceroba_disapproving;
+            prt[1] = spr_portrait_ceroba_closed_eyes;
         }
         
         break;

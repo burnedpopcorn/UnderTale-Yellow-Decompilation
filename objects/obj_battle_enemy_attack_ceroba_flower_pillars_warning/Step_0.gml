@@ -1,5 +1,3 @@
-var bullet;
-
 switch (image_index)
 {
     case 4:
@@ -11,7 +9,7 @@ switch (image_index)
 
 if (image_index >= (image_number - 1))
 {
-    bullet = instance_create(x + lengthdir_x(128, direction), y + lengthdir_y(128, direction), obj_battle_enemy_attack_ceroba_flower_pillars_bullet_2);
+    var bullet = instance_create(x + lengthdir_x(128, direction), y + lengthdir_y(128, direction), obj_battle_enemy_attack_ceroba_flower_pillars_bullet_2);
     bullet.direction = point_direction(bullet.x, bullet.y, x, y);
     instance_destroy();
 }

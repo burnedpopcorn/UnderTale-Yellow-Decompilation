@@ -1,11 +1,9 @@
-var enemy_mode;
-
 execute_normal = false;
 execute_random = false;
 text_effect = "twitchy";
 text_effect_2 = "twitchy";
 color_count = 0;
-enemy_mode = global.enemy_mode;
+var enemy_mode = global.enemy_mode;
 
 if (enemy_mode == 0)
 {

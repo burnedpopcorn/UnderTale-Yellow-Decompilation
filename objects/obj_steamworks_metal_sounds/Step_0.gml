@@ -1,8 +1,6 @@
-var sound_to_play;
-
-if (irandom(sound_probability) == snd_chem_05_axis_acid_1)
+if (irandom(sound_probability) == 1)
 {
-    sound_to_play = choose(322, 323, 324);
+    var sound_to_play = choose(322, 323, 324);
     
     while (sound_to_play == sound_last)
         sound_to_play = choose(322, 323, 324);

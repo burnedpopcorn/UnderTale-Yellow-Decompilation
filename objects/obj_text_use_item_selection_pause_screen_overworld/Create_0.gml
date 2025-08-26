@@ -1,5 +1,3 @@
-var item_hold;
-
 depth = -room_height - global.depth_overworld_text_normal;
 global.item_use_hold = id;
 item_slot = global.item_slot[global.item_pause_screen_number];
@@ -7,7 +5,7 @@ game_mode = global.game_mode;
 item_category = "nothing";
 item_type = "nothing";
 item_number = 0;
-item_sound = snd_battle_item_eat;
+item_sound = 390;
 con_keep_previous = true;
 con_message_number = 1;
 
@@ -26,7 +24,7 @@ else if (game_mode == "yellow")
 
 if (item_type == "weapon")
 {
-    item_hold = global.player_weapon;
+    var item_hold = global.player_weapon;
     global.player_weapon = global.item_slot[global.item_pause_screen_number];
     global.item_slot[global.item_pause_screen_number] = item_hold;
     global.player_weapon_attack = script_execute(scr_determine_weapon_attack);
@@ -34,7 +32,7 @@ if (item_type == "weapon")
 }
 else if (item_type == "armor")
 {
-    item_hold = global.player_armor;
+    var item_hold = global.player_armor;
     global.player_armor = global.item_slot[global.item_pause_screen_number];
     global.item_slot[global.item_pause_screen_number] = item_hold;
     global.player_armor_defense = script_execute(scr_determine_armor_defense);
@@ -42,7 +40,7 @@ else if (item_type == "armor")
 }
 else if (item_type == "ammo")
 {
-    item_hold = global.player_weapon_modifier;
+    var item_hold = global.player_weapon_modifier;
     global.player_weapon_modifier = global.item_slot[global.item_pause_screen_number];
     global.item_slot[global.item_pause_screen_number] = item_hold;
     global.player_weapon_modifier_attack = script_execute(scr_determine_weapon_modifier_attack);
@@ -50,7 +48,7 @@ else if (item_type == "ammo")
 }
 else if (item_type == "accessory")
 {
-    item_hold = global.player_armor_modifier;
+    var item_hold = global.player_armor_modifier;
     global.player_armor_modifier = global.item_slot[global.item_pause_screen_number];
     global.item_slot[global.item_pause_screen_number] = item_hold;
     global.player_armor_modifier_defense = script_execute(scr_determine_armor_modifier_defense);

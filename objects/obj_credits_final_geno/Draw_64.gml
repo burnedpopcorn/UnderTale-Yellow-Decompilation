@@ -1,15 +1,13 @@
-var x_offset, y_offset, line_counter, line_offset, section_offset, header_offset;
-
 if (live_call())
     return global.live_result;
 
 draw_set_font(fnt_main);
-x_offset = 40;
-y_offset = 40;
-line_counter = 0;
-line_offset = 20;
-section_offset = 30;
-header_offset = 10;
+var x_offset = 40;
+var y_offset = 40;
+var line_counter = 0;
+var line_offset = 20;
+var section_offset = 30;
+var header_offset = 10;
 
 switch (current_slide)
 {
@@ -82,21 +80,19 @@ switch (current_slide)
         break;
 }
 
-function draw_credit_group(argument0, argument1, argument2)
+function draw_credit_group(arg0, arg1, arg2)
 {
-    var i, current_line, x_modif, y_modif, y_modif_height;
-    
     draw_set_halign(fa_left);
     
-    for (i = 0; i < array_length(credits_entry[argument0]); i++)
+    for (var i = 0; i < array_length(credits_entry[arg0]); i++)
     {
-        current_line = (i - 1) div 9;
+        var current_line = (i - 1) div 9;
         draw_set_color(c_white);
-        x_modif = 0 + (current_line * 160);
-        y_modif = (i * 20) - (current_line * 180);
-        y_modif_height = 0;
+        var x_modif = 0 + (current_line * 160);
+        var y_modif = (i * 20) - (current_line * 180);
+        var y_modif_height = 0;
         
-        if (string_height(credits_entry[argument0][0]) > 20 && i > 0)
+        if (string_height(credits_entry[arg0][0]) > 20 && i > 0)
             y_modif_height = 15;
         
         if (i == 0)
@@ -105,7 +101,7 @@ function draw_credit_group(argument0, argument1, argument2)
             x_modif = 0;
         }
         
-        draw_text(argument1 + x_modif, argument2 + y_modif + y_modif_height, credits_entry[argument0][i]);
+        draw_text(arg1 + x_modif, arg2 + y_modif + y_modif_height, credits_entry[arg0][i]);
         draw_set_color(c_white);
     }
 }

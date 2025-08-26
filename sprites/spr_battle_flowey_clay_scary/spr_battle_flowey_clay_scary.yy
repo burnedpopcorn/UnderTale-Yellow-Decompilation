@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"700c4852-13fc-443e-ab63-3e57780a8393",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e40d2517-11c8-493d-afeb-cd37234f6a64",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6de7252b-9c00-481f-b73d-8f65d1715eae",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"308e5b3c-cfd1-44fd-aeee-6994a0df7341",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f5c47af-b465-420d-b41f-92ae87d015f7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"06a0d048-b56e-492a-8ee1-f53df11215ce",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 94,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"574bc742-71d4-4b5e-988f-4aae1a7a75a5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9342ab48-88c6-48e5-bebe-0f62e4a0a240","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"700c4852-13fc-443e-ab63-3e57780a8393","path":"sprites/spr_battle_flowey_clay_scary/spr_battle_flowey_clay_scary.yy",},},},"Disabled":false,"id":"d48edda2-d6cf-4af7-961c-f6d1c596987d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e40d2517-11c8-493d-afeb-cd37234f6a64","path":"sprites/spr_battle_flowey_clay_scary/spr_battle_flowey_clay_scary.yy",},},},"Disabled":false,"id":"9d3fa8f1-621d-4ebf-a02c-44ca5bb57a0b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6de7252b-9c00-481f-b73d-8f65d1715eae","path":"sprites/spr_battle_flowey_clay_scary/spr_battle_flowey_clay_scary.yy",},},},"Disabled":false,"id":"ca6eca3b-7814-46c5-a182-7fa14121a19b","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"308e5b3c-cfd1-44fd-aeee-6994a0df7341","path":"sprites/spr_battle_flowey_clay_scary/spr_battle_flowey_clay_scary.yy",},},},"Disabled":false,"id":"a598775d-6109-41d6-8963-e7cf5c37f0aa","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3f5c47af-b465-420d-b41f-92ae87d015f7","path":"sprites/spr_battle_flowey_clay_scary/spr_battle_flowey_clay_scary.yy",},},},"Disabled":false,"id":"79ec121e-5df8-43ee-bf0a-48b143629ab4","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"06a0d048-b56e-492a-8ee1-f53df11215ce","path":"sprites/spr_battle_flowey_clay_scary/spr_battle_flowey_clay_scary.yy",},},},"Disabled":false,"id":"40865c48-141f-467b-aa6b-ab59c0490991","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleHotlandFloweyClay",
+    "path": "texturegroups/BattleHotlandFloweyClay",
   },
   "type": 0,
   "VTile": false,

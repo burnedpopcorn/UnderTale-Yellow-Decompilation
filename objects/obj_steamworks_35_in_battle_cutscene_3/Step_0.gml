@@ -20,11 +20,11 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* What now? His SOUL#  gauge is pulsing...";
             message[1] = "* You have any ideas?";
-            prt[0] = 371;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_alt;
+            prt[1] = spr_portrait_ceroba_neutral;
         }
         
         if (!global.dialogue_open)

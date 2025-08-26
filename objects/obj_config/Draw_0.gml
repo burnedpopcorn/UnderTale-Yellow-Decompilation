@@ -1,5 +1,3 @@
-var xx, option;
-
 if (live_call())
     return global.live_result;
 
@@ -9,7 +7,7 @@ draw_set_halign(fa_center);
 draw_text(__view_get(e__VW.XView, 0) + 200, __view_get(e__VW.YView, 0) + 13, string_hash_to_newline("GAME CONFIG"));
 draw_set_font(fnt_battle);
 draw_set_halign(fa_left);
-xx = __view_get(e__VW.XView, 0) + 20;
+var xx = __view_get(e__VW.XView, 0) + 20;
 
 if (position == 0)
     draw_set_color(c_yellow);
@@ -60,7 +58,7 @@ if (position == 1)
 draw_text(xx, __view_get(e__VW.YView, 0) + 79, string_hash_to_newline("Joystick Config"));
 draw_set_color(c_white);
 draw_set_color(c_white);
-option = "";
+var option = "";
 
 if (global.option_screenshake_toggle)
     option = "ON";

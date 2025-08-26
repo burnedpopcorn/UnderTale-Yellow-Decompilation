@@ -1,15 +1,13 @@
-function d3d_model_load(argument0, argument1)
+function d3d_model_load(arg0, arg1)
 {
-    var __ind, __fname, __file, __version, __numthings, __currthing, __kind, __i;
-    
-    __ind = argument0;
-    __fname = argument1;
-    __file = file_text_open_read(__fname);
+    var __ind = arg0;
+    var __fname = arg1;
+    var __file = file_text_open_read(__fname);
     
     if (__file == -1)
         return -1;
     
-    __version = file_text_read_real(__file);
+    var __version = file_text_read_real(__file);
     
     if (__version != 100)
     {
@@ -18,15 +16,16 @@ function d3d_model_load(argument0, argument1)
     }
     
     file_text_readln(__file);
-    __numthings = file_text_read_real(__file);
+    var __numthings = file_text_read_real(__file);
     file_text_readln(__file);
     d3d_model_clear(__ind);
     
-    for (__currthing = 0; __currthing < __numthings; __currthing++)
+    for (var __currthing = 0; __currthing < __numthings; __currthing++)
     {
-        __kind = round(file_text_read_real(__file));
+        var __kind = round(file_text_read_real(__file));
+        var __args;
         
-        for (__i = 0; __i < 10; __i++)
+        for (var __i = 0; __i < 10; __i++)
             __args[__i] = file_text_read_real(__file);
         
         file_text_readln(__file);

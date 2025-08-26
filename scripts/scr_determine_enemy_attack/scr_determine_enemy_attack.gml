@@ -1,10 +1,8 @@
 function scr_determine_enemy_attack()
 {
-    var determine_attack_priority, battle_enemy_name, turns_passed, ms_mettaton_transformed;
-    
-    determine_attack_priority = global.determine_attack_priority;
-    battle_enemy_name = global.battle_enemy_name;
-    turns_passed = global.turns_passed;
+    var determine_attack_priority = global.determine_attack_priority;
+    var battle_enemy_name = global.battle_enemy_name;
+    var turns_passed = global.turns_passed;
     
     if (battle_enemy_name == "craniex")
     {
@@ -60,7 +58,7 @@ function scr_determine_enemy_attack()
     
     if (battle_enemy_name == "ms mettaton")
     {
-        ms_mettaton_transformed = global.ms_mettaton_transformed;
+        var ms_mettaton_transformed = global.ms_mettaton_transformed;
         
         if (ms_mettaton_transformed == false && turns_passed > 4)
         {

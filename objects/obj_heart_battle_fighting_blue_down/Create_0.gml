@@ -1,5 +1,3 @@
-var player_character;
-
 walk_speed = global.speed_self;
 image_speed = 0;
 image_index = 0;
@@ -14,7 +12,7 @@ jumpspeed = 8;
 grav = 0.5;
 moveable = false;
 floating = false;
-player_character = global.player_character;
+var player_character = global.player_character;
 
 switch (player_character)
 {

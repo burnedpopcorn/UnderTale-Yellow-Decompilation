@@ -1,5 +1,3 @@
-var MSG_ADVANCE, message_length;
-
 if (global.dialogue_open == false)
 {
     if (instance_exists(obj_pl))
@@ -13,8 +11,8 @@ if (global.dialogue_open == false)
     exit;
 }
 
-MSG_ADVANCE = false;
-message_length = string_length(message[message_current]);
+var MSG_ADVANCE = false;
+var message_length = string_length(message[message_current]);
 
 if (message_reset == true)
 {
@@ -24,7 +22,7 @@ if (message_reset == true)
     exit;
 }
 
-if (keyboard_multicheck_pressed(1) && skippable == true)
+if (keyboard_multicheck_pressed(vk_anykey) && skippable == true)
     cutoff = message_length;
 
 if (cutoff < message_length)
@@ -49,7 +47,7 @@ if (cutoff < message_length)
         }
     }
 }
-else if (keyboard_multicheck_pressed(0) && skippable == true)
+else if (keyboard_multicheck_pressed(vk_nokey) && skippable == true)
 {
     if (choice == false)
         MSG_ADVANCE = true;

@@ -1,8 +1,6 @@
-var counter_timer_max, player_soul, box, gun_top_y, gun_mid_y, gun_bot_y, gun_left_x, gun_right_x, gun_dir, gun_dir_inc, i, xx, yy;
-
-counter_timer_max = 0;
-player_soul = 2979;
-box = 3154;
+var counter_timer_max = 0;
+var player_soul = 2980;
+var box = obj_dialogue_box_battle_transformation_any;
 
 switch (counter_current)
 {
@@ -44,11 +42,11 @@ switch (counter_current)
         break;
     
     case 8:
-        gun_top_y = box.y - 25;
-        gun_mid_y = box.y;
-        gun_bot_y = box.y + 25;
-        gun_left_x = box.bbox_left - 60;
-        gun_right_x = box.bbox_right + 60;
+        var gun_top_y = box.y - 25;
+        var gun_mid_y = box.y;
+        var gun_bot_y = box.y + 25;
+        var gun_left_x = box.bbox_left - 60;
+        var gun_right_x = box.bbox_right + 60;
         instance_create(gun_right_x, gun_top_y, obj_battle_enemy_attack_starlo_guns_horizontal_gun);
         instance_create(gun_left_x, gun_bot_y, obj_battle_enemy_attack_starlo_guns_horizontal_gun);
         instance_create(box.x - 30, box.bbox_top - 60, obj_battle_enemy_attack_starlo_guns_vertical_gun);
@@ -79,13 +77,13 @@ switch (counter_current)
         break;
     
     case 14:
-        gun_dir = 0;
-        gun_dir_inc = 72;
+        var gun_dir = 0;
+        var gun_dir_inc = 72;
         
-        for (i = 0; i < 5; i++)
+        for (var i = 0; i < 5; i++)
         {
-            xx = lengthdir_x(180, gun_dir);
-            yy = lengthdir_y(180, gun_dir);
+            var xx = lengthdir_x(180, gun_dir);
+            var yy = lengthdir_y(180, gun_dir);
             instance_create(320 + xx, 320 + yy, obj_battle_enemy_attack_starlo_finale_gun);
             gun_dir = gun_dir_inc * i;
         }

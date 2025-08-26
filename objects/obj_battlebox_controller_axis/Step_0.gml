@@ -1,5 +1,3 @@
-var battery_level_target;
-
 if (live_call())
     return global.live_result;
 
@@ -35,7 +33,7 @@ else
 if (axis_trash_meter_current < 0.01)
     axis_trash_meter_current = 0;
 
-battery_level_target = 100 * (axis_hit_count_current / axis_hit_count_max);
+var battery_level_target = 100 * (axis_hit_count_current / axis_hit_count_max);
 axis_battery_meter_current = lerp(axis_battery_meter_current, battery_level_target, 0.15);
 
 if (axis_trash_meter_full)

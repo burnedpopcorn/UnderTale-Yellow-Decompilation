@@ -1,10 +1,8 @@
-var enemy_count, enemy_dead, enemy_spared;
-
 if (transformed == false)
 {
-    enemy_count = global.enemy_count;
-    enemy_dead = global.enemy_dead;
-    enemy_spared = global.enemy_spared;
+    var enemy_count = global.enemy_count;
+    var enemy_dead = global.enemy_dead;
+    var enemy_spared = global.enemy_spared;
     
     if (enemy_dead == false && enemy_spared == false)
         image_alpha = global.image_alpha_enemy_attacking;

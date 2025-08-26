@@ -1,9 +1,7 @@
-var heart;
-
 if (live_call())
     return global.live_result;
 
-heart = obj_heart_battle_fighting_parent;
+var heart = obj_heart_battle_fighting_parent;
 
 if (image_alpha <= 1)
     image_alpha += 0.2;

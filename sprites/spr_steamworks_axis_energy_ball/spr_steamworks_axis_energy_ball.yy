@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fdd189c1-4255-4482-aac9-b524dce8c571",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"374b0c0a-ee84-45f1-bf47-004ff4d55957",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fa673b86-10ce-4742-ad68-79c695d263e1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5184c24e-c09e-4838-a80f-f2b690637c92",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1886c59f-e4cd-4efb-b4e4-a73a6c3b12dc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a4da7c38-0941-404d-b0df-a9f82b8fd21f",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 17,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"843e48db-3d44-4df4-a8df-3b9c1dd5153d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d0abc344-f574-47a5-806b-2d8709db2b1c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fdd189c1-4255-4482-aac9-b524dce8c571","path":"sprites/spr_steamworks_axis_energy_ball/spr_steamworks_axis_energy_ball.yy",},},},"Disabled":false,"id":"5608a8bf-b63a-4b28-8438-b98f9fa44339","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"374b0c0a-ee84-45f1-bf47-004ff4d55957","path":"sprites/spr_steamworks_axis_energy_ball/spr_steamworks_axis_energy_ball.yy",},},},"Disabled":false,"id":"2ab19eb5-8948-4a30-b92c-2f46cc4108e3","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fa673b86-10ce-4742-ad68-79c695d263e1","path":"sprites/spr_steamworks_axis_energy_ball/spr_steamworks_axis_energy_ball.yy",},},},"Disabled":false,"id":"4944bd88-7b59-4949-a8ad-51f10410a16c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5184c24e-c09e-4838-a80f-f2b690637c92","path":"sprites/spr_steamworks_axis_energy_ball/spr_steamworks_axis_energy_ball.yy",},},},"Disabled":false,"id":"e54362c2-0386-4f97-9e5d-d4eff6920607","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1886c59f-e4cd-4efb-b4e4-a73a6c3b12dc","path":"sprites/spr_steamworks_axis_energy_ball/spr_steamworks_axis_energy_ball.yy",},},},"Disabled":false,"id":"c68af4c0-57a6-4fc8-bfaa-2ce5b9b230c3","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a4da7c38-0941-404d-b0df-a9f82b8fd21f","path":"sprites/spr_steamworks_axis_energy_ball/spr_steamworks_axis_energy_ball.yy",},},},"Disabled":false,"id":"d21f610b-a067-41c0-9826-fdd708679bbd","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Steamworks",
+    "path": "texturegroups/Steamworks",
   },
   "type": 0,
   "VTile": false,

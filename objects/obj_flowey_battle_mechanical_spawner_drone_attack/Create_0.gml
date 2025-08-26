@@ -6,7 +6,7 @@ side = choose(-1, 1);
 
 if (instance_number(obj_flowey_battle_phase_2_mechanical_drone) == 1)
 {
-    spawner = 2892;
+    spawner = 2893;
     
     if (spawner.x < 320)
         side = -1;

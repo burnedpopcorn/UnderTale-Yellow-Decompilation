@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a1026da1-babf-42de-b2bc-0bf85a1615e7",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"82e90291-4464-443b-8ccc-fec223f39a70",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ca8baa0d-1846-4cdd-a4b9-581d013cb7e9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4abec868-ed4f-48c1-8333-c8302d429587",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 57,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c5891db5-8171-415b-9833-b5a052d43198","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8682eda0-70ca-4184-a8fb-5c607596ca13","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a1026da1-babf-42de-b2bc-0bf85a1615e7","path":"sprites/spr_chujin_headturned_happy/spr_chujin_headturned_happy.yy",},},},"Disabled":false,"id":"9ba7c5bb-25a2-43b8-8162-2a9f520cddab","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"82e90291-4464-443b-8ccc-fec223f39a70","path":"sprites/spr_chujin_headturned_happy/spr_chujin_headturned_happy.yy",},},},"Disabled":false,"id":"7040826d-8f7d-4857-bf79-0a5040a5d0d6","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ca8baa0d-1846-4cdd-a4b9-581d013cb7e9","path":"sprites/spr_chujin_headturned_happy/spr_chujin_headturned_happy.yy",},},},"Disabled":false,"id":"b9a8b017-2bd7-4ecd-8ef5-a440d0bf7f28","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4abec868-ed4f-48c1-8333-c8302d429587","path":"sprites/spr_chujin_headturned_happy/spr_chujin_headturned_happy.yy",},},},"Disabled":false,"id":"96417238-0692-4014-8ced-33a45f235e1d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Hotland",
+    "path": "texturegroups/Hotland",
   },
   "type": 0,
   "VTile": false,

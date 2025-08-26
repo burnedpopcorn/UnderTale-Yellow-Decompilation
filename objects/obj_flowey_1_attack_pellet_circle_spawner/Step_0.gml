@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -15,7 +13,7 @@ else
         instance_destroy();
 }
 
-for (i = 0; i < pellet_count; i++)
+for (var i = 0; i < pellet_count; i++)
 {
     if (instance_exists(pellet[i]))
     {

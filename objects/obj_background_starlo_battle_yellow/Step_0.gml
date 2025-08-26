@@ -1,9 +1,7 @@
-var opacity_target;
-
 if (live_call())
     return global.live_result;
 
-opacity_target = ((1 + sin(current_time / 1000)) * 0.3) + 0.4;
+var opacity_target = ((1 + sin(current_time / 1000)) * 0.3) + 0.4;
 
 if (instance_exists(obj_starlo_dead))
 {

@@ -12,7 +12,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* What are you thinking!?";
             message[1] = "* I know they started the#  fight but we don't know#  the situation!";
             message[2] = "* What if it was a glitch#  in their programming?";
@@ -33,30 +33,30 @@ switch (scene)
                 message[14] = "* We don't know how many#  other robot types are#  out there.";
                 message[45] = "* We'll figure it out in#  due time, I'm sure.";
                 message[16] = "* Just... don't do#  anything stupid.";
-                prt[7] = 371;
-                prt[8] = 371;
-                prt[9] = 370;
-                prt[10] = 371;
-                prt[11] = 377;
-                prt[12] = 377;
-                prt[13] = 371;
-                prt[14] = 370;
-                prt[15] = 370;
-                prt[16] = 368;
+                prt[7] = spr_portrait_ceroba_alt;
+                prt[8] = spr_portrait_ceroba_alt;
+                prt[9] = spr_portrait_ceroba_neutral;
+                prt[10] = spr_portrait_ceroba_alt;
+                prt[11] = spr_portrait_ceroba_closed_eyes;
+                prt[12] = spr_portrait_ceroba_closed_eyes;
+                prt[13] = spr_portrait_ceroba_alt;
+                prt[14] = spr_portrait_ceroba_neutral;
+                prt[15] = spr_portrait_ceroba_neutral;
+                prt[16] = spr_portrait_ceroba_irked;
             }
             else
             {
                 message[7] = "* Just... don't do#  anything stupid.";
-                prt[7] = 368;
+                prt[7] = spr_portrait_ceroba_irked;
             }
             
-            prt[0] = 366;
-            prt[1] = 368;
-            prt[2] = 368;
-            prt[3] = 394;
-            prt[4] = 377;
-            prt[5] = 370;
-            prt[6] = 377;
+            prt[0] = spr_portrait_ceroba_angry;
+            prt[1] = spr_portrait_ceroba_irked;
+            prt[2] = spr_portrait_ceroba_irked;
+            prt[3] = spr_portrait_ceroba_disapproving;
+            prt[4] = spr_portrait_ceroba_closed_eyes;
+            prt[5] = spr_portrait_ceroba_neutral;
+            prt[6] = spr_portrait_ceroba_closed_eyes;
         }
         
         break;

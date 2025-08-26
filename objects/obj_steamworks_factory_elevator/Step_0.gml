@@ -1,5 +1,3 @@
-var flash;
-
 if (live_call())
     return global.live_result;
 
@@ -12,7 +10,7 @@ if (act == 1)
             break;
         
         case 1:
-            cutscene_npc_walk(1168, 160, 120, 3, "x", "down");
+            cutscene_npc_walk(obj_player_npc, 160, 120, 3, "x", "down");
             break;
         
         case 2:
@@ -28,7 +26,7 @@ if (act == 1)
             if (door_closed_amount < 1)
                 door_closed_amount += 0.05;
             else
-                cutscene_sfx_play(13, 1);
+                cutscene_sfx_play(snd_elevator_door_shut, 1);
             
             break;
         
@@ -41,7 +39,7 @@ if (act == 1)
             break;
         
         case 7:
-            cutscene_sfx_play(271, 1);
+            cutscene_sfx_play(snd_elevator, 1);
             audio_sound_pitch(snd_elevator, 1);
             break;
         
@@ -58,7 +56,7 @@ if (act == 1)
             break;
         
         case 11:
-            cutscene_sfx_play(572, 1);
+            cutscene_sfx_play(snd_sliding_door_open, 1);
             break;
         
         case 12:
@@ -74,7 +72,7 @@ if (act == 1)
             break;
         
         case 14:
-            cutscene_npc_walk(1168, 160, 220, 3, "x", "down");
+            cutscene_npc_walk(obj_player_npc, 160, 220, 3, "x", "down");
             break;
         
         case 15:
@@ -85,11 +83,11 @@ if (act == 1)
             switch (asset_get_index(global.last_room_overworld))
             {
                 case 210:
-                    cutscene_change_room(207, 170, 140, 0.1);
+                    cutscene_change_room(rm_steamworks_37, 170, 140, 0.1);
                     break;
                 
                 case 207:
-                    cutscene_change_room(210, 160, 120, 0.1);
+                    cutscene_change_room(rm_hotland_01, 160, 120, 0.1);
                     break;
             }
     }
@@ -109,7 +107,7 @@ if (act == 1)
 }
 else
 {
-    flash = false;
+    var flash = false;
     
     switch (scene)
     {
@@ -118,7 +116,7 @@ else
             break;
         
         case 1:
-            cutscene_npc_walk(1168, 160, 120, 2, "x", "down");
+            cutscene_npc_walk(obj_player_npc, 160, 120, 2, "x", "down");
             break;
         
         case 2:
@@ -165,7 +163,7 @@ else
             if (door_closed_amount < 1)
                 door_closed_amount += 0.05;
             else
-                cutscene_sfx_play(13, 1);
+                cutscene_sfx_play(snd_elevator_door_shut, 1);
             
             break;
         
@@ -178,7 +176,7 @@ else
             break;
         
         case 15:
-            cutscene_sfx_play(590, 1);
+            cutscene_sfx_play(snd_elevator_long, 1);
             break;
         
         case 16:
@@ -199,7 +197,7 @@ else
             break;
         
         case 19:
-            cutscene_sfx_play(572, 1);
+            cutscene_sfx_play(snd_sliding_door_open, 1);
             break;
         
         case 20:
@@ -215,7 +213,7 @@ else
             break;
         
         case 22:
-            cutscene_npc_walk(1168, 160, 220, 2, "x", "down");
+            cutscene_npc_walk(obj_player_npc, 160, 220, 2, "x", "down");
             break;
         
         case 23:
@@ -226,11 +224,11 @@ else
             switch (asset_get_index(global.last_room_overworld))
             {
                 case 210:
-                    cutscene_change_room(207, 170, 140, 0.1);
+                    cutscene_change_room(rm_steamworks_37, 170, 140, 0.1);
                     break;
                 
                 case 207:
-                    cutscene_change_room(210, 160, 120, 0.1);
+                    cutscene_change_room(rm_hotland_01, 160, 120, 0.1);
                     break;
             }
             

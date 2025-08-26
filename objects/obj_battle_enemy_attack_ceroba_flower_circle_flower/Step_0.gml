@@ -1,5 +1,3 @@
-var count;
-
 if (live_call())
     return global.live_result;
 
@@ -43,7 +41,7 @@ if (state == 1 || state == 2)
     }
     else
     {
-        count = 0;
+        var count = 0;
         
         with (object_index)
         {

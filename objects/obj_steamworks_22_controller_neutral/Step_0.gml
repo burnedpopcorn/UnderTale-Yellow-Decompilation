@@ -58,7 +58,7 @@ switch (scene)
         break;
     
     case 9:
-        cutscene_npc_walk(1166, 1690, 90, 3, "y", "down");
+        cutscene_npc_walk(obj_axis_npc, 1690, 90, 3, "y", "down");
         break;
     
     case 10:
@@ -66,9 +66,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* FOUND YOU.";
-            prt[0] = 2916;
+            prt[0] = spr_portrait_axis_shadow;
         }
         
         break;
@@ -105,7 +105,7 @@ switch (scene)
             obj_steamworks_22_axis_throwing.alarm[0] = -1;
             instance_create(obj_pl.x, obj_pl.y, obj_player_npc);
             obj_player_npc.left_sprite = spr_pl_run_left;
-            cutscene_npc_walk(1168, 60, 140, 5, "x", "right", 1161);
+            cutscene_npc_walk(obj_player_npc, 60, 140, 5, "x", "right", 1161);
             cutscene_advance();
         }
         
@@ -131,7 +131,7 @@ switch (scene)
         break;
     
     case 18:
-        cutscene_npc_walk(1166, 240, 140, 4, "x", "left");
+        cutscene_npc_walk(obj_axis_npc, 240, 140, 4, "x", "left");
         break;
     
     case 19:
@@ -143,11 +143,11 @@ switch (scene)
         break;
     
     case 21:
-        cutscene_npc_action_sprite(1166, 2693, 1, true);
+        cutscene_npc_action_sprite(obj_axis_npc, spr_steamworks_22_axis_event_1, 1, true);
         break;
     
     case 22:
-        cutscene_npc_action_sprite(1166, 3312, 1, true, 1);
+        cutscene_npc_action_sprite(obj_axis_npc, spr_steamworks_22_axis_event_loop, 1, true, 1);
         cutscene_advance(23);
         break;
     
@@ -156,13 +156,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* YOU ARE CORNERED,#  HUMAN.";
             message[1] = "* I DID NOT WANT TO HURT#  YOU BUT YOU FORCED MY#  GLOVE.";
             message[2] = "* PREPARE FOR PAIN.";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
         }
         
         break;
@@ -203,7 +203,7 @@ switch (scene)
         break;
     
     case 27:
-        cutscene_npc_action_sprite(1166, 3170, 1, true, 0);
+        cutscene_npc_action_sprite(obj_axis_npc, spr_steamworks_22_axis_event_fall, 1, true, 0);
         break;
     
     case 28:
@@ -215,9 +215,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* OH.";
-            prt[0] = 473;
+            prt[0] = spr_portrait_axis_normal;
         }
         
         break;
@@ -231,25 +231,25 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* THIS IS A PROBLEM.";
             message[1] = "* LOOKS LIKE YOU WIN THIS#  TIME.";
             message[2] = "* I WILL RETURN TO#  CAPTURE YOU SOON.";
             message[3] = "* DO NOT GO ANYWHERE,#  PLEASE.";
-            prt[0] = 3332;
-            prt[1] = 473;
-            prt[2] = 473;
-            prt[3] = 473;
+            prt[0] = spr_portrait_axis_wut;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
+            prt[3] = spr_portrait_axis_normal;
         }
         
         break;
     
     case 32:
-        cutscene_npc_action_sprite(1166, 3571, 1, true, 0, 60, 0);
+        cutscene_npc_action_sprite(obj_axis_npc, spr_steamworks_22_axis_event_flip, 1, true, 0, snd_axis_scrape_away, 0);
         break;
     
     case 33:
-        cutscene_npc_action_sprite(1166, 3319, 1, false, 0);
+        cutscene_npc_action_sprite(obj_axis_npc, spr_steamworks_22_axis_event_leave, 1, false, 0);
         cutscene_advance();
         break;
     

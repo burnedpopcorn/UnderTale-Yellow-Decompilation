@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7b47a8bb-e835-4ad5-b584-e60554b6785e",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8ff4d2a4-2411-439a-8050-e748627e0346",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6cc73cd3-1852-437f-9cea-968c19b5480f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5d5d266d-365b-43f2-8b46-40d024f773f6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3dda1192-68dc-4668-92ff-9059614db657",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"856b765b-bfc1-49aa-939d-4431ad5fc789",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 18,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"62f49df2-9a84-48e7-9657-92aa71f74bcd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e952d72b-c005-41ef-95b9-4f082bc9a611","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7b47a8bb-e835-4ad5-b584-e60554b6785e","path":"sprites/spr_attack_slippery_garbage/spr_attack_slippery_garbage.yy",},},},"Disabled":false,"id":"a3b8d5be-e7e1-4f96-92df-a6ddea4c337f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8ff4d2a4-2411-439a-8050-e748627e0346","path":"sprites/spr_attack_slippery_garbage/spr_attack_slippery_garbage.yy",},},},"Disabled":false,"id":"c7972198-3afc-41e0-8898-cb0d6707b549","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6cc73cd3-1852-437f-9cea-968c19b5480f","path":"sprites/spr_attack_slippery_garbage/spr_attack_slippery_garbage.yy",},},},"Disabled":false,"id":"99d3a950-1f8b-4064-894f-251a103fbfac","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5d5d266d-365b-43f2-8b46-40d024f773f6","path":"sprites/spr_attack_slippery_garbage/spr_attack_slippery_garbage.yy",},},},"Disabled":false,"id":"7592d4f3-211c-4ef8-9fa3-ee277b10e0cb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3dda1192-68dc-4668-92ff-9059614db657","path":"sprites/spr_attack_slippery_garbage/spr_attack_slippery_garbage.yy",},},},"Disabled":false,"id":"82bf2e79-cdb8-489d-9abf-8951207fc532","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"856b765b-bfc1-49aa-939d-4431ad5fc789","path":"sprites/spr_attack_slippery_garbage/spr_attack_slippery_garbage.yy",},},},"Disabled":false,"id":"ed11618d-8957-472e-9930-4f21d4faae24","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

@@ -1,6 +1,4 @@
-var buy_shop_screen_number;
-
-buy_shop_screen_number = global.buy_shop_screen_number;
+var buy_shop_screen_number = global.buy_shop_screen_number;
 draw_set_font(fnt_battle);
 draw_set_color(c_white);
 draw_set_halign(fa_left);

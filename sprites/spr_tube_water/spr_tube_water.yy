@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"98fc50f6-3df0-41ef-9031-c1b0a1c5701f",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"135d649c-16cf-4a9f-b77d-e90a9dd6edf3",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d397d492-7689-4946-aeb8-612d220ed3a4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f1a80987-be15-40fa-a495-12261f7d2841",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8c8cc0c9-ace2-41fa-93f3-622b7552505e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"de3eff0c-3217-44da-8ba6-171ec0de1b8b",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 54,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fd761093-7b07-41e9-ba0a-eae847b47258","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3059a62a-e593-49d7-887e-b6c6f8f092d0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 1,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"98fc50f6-3df0-41ef-9031-c1b0a1c5701f","path":"sprites/spr_tube_water/spr_tube_water.yy",},},},"Disabled":false,"id":"605f81a4-ad06-4dda-91d2-1b7cf2af26f9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"135d649c-16cf-4a9f-b77d-e90a9dd6edf3","path":"sprites/spr_tube_water/spr_tube_water.yy",},},},"Disabled":false,"id":"46976159-bc01-4373-8f59-5386cf80b938","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d397d492-7689-4946-aeb8-612d220ed3a4","path":"sprites/spr_tube_water/spr_tube_water.yy",},},},"Disabled":false,"id":"349489f6-c037-4e54-b85e-258db760ee0c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f1a80987-be15-40fa-a495-12261f7d2841","path":"sprites/spr_tube_water/spr_tube_water.yy",},},},"Disabled":false,"id":"9e19f015-eb37-4b4f-b2e7-a440d9a12024","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8c8cc0c9-ace2-41fa-93f3-622b7552505e","path":"sprites/spr_tube_water/spr_tube_water.yy",},},},"Disabled":false,"id":"9838c2ce-e71f-4926-8942-89530419743f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"de3eff0c-3217-44da-8ba6-171ec0de1b8b","path":"sprites/spr_tube_water/spr_tube_water.yy",},},},"Disabled":false,"id":"72b4709f-cdf6-4e55-84ec-68e26402a4dc","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Waterfall",
+    "path": "texturegroups/Waterfall",
   },
   "type": 0,
   "VTile": false,

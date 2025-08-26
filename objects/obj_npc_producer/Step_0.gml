@@ -1,4 +1,4 @@
-if (keyboard_multicheck_pressed(0) && scr_interact() == true && interact_count == 0)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true && interact_count == 0)
 {
     is_talking = true;
     interact_count = 1;

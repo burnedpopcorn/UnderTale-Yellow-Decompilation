@@ -1,6 +1,6 @@
-key_select = keyboard_multicheck(0);
-key_select_pressed = keyboard_multicheck_pressed(0);
-key_revert_pressed = keyboard_multicheck_pressed(1);
+key_select = keyboard_multicheck(vk_nokey);
+key_select_pressed = keyboard_multicheck_pressed(vk_nokey);
+key_revert_pressed = keyboard_multicheck_pressed(vk_anykey);
 
 if (key_revert_pressed)
 {

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"11adb6c4-19af-4ff0-bc5b-29c8218a58a8",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"75315179-a45b-4201-8cd2-b017d8fe715d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bc76468a-1574-42ad-9816-fd2d6dfe60b7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ddb93bbd-dfb7-46f4-8091-1df55ea65b9d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 106,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"acde27e7-bb16-4f16-b79d-a0a70895ec7b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"075c403c-b256-46c7-959c-8fac6efbb090","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"11adb6c4-19af-4ff0-bc5b-29c8218a58a8","path":"sprites/spr_portrait_chujin_eye_smirk/spr_portrait_chujin_eye_smirk.yy",},},},"Disabled":false,"id":"c6176f58-9df9-4ca2-8ab3-cba02b309e19","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"75315179-a45b-4201-8cd2-b017d8fe715d","path":"sprites/spr_portrait_chujin_eye_smirk/spr_portrait_chujin_eye_smirk.yy",},},},"Disabled":false,"id":"2ca44194-5a53-4058-8792-e39bdc8a207d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bc76468a-1574-42ad-9816-fd2d6dfe60b7","path":"sprites/spr_portrait_chujin_eye_smirk/spr_portrait_chujin_eye_smirk.yy",},},},"Disabled":false,"id":"744b7f4f-aa82-40e3-8128-f91016483d5b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ddb93bbd-dfb7-46f4-8091-1df55ea65b9d","path":"sprites/spr_portrait_chujin_eye_smirk/spr_portrait_chujin_eye_smirk.yy",},},},"Disabled":false,"id":"fa0af040-6fb8-449c-b908-fbeed92a99ee","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Mansion",
+    "path": "texturegroups/Mansion",
   },
   "type": 0,
   "VTile": false,

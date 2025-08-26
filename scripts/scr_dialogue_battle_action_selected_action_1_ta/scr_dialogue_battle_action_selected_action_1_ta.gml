@@ -1,8 +1,6 @@
 function scr_dialogue_battle_action_selected_action_1_ta()
 {
-    var action_1_selected_count_3;
-    
-    action_1_selected_count_3 = global.action_1_selected_count_3;
+    var action_1_selected_count_3 = global.action_1_selected_count_3;
     
     if (global.enemy_low_hp_3 == true)
     {

@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Hehe, haaaiii!!!";
                 message[1] = "* Are you here to bring me home??";
                 message[2] = "* Did Mikey send you??";
@@ -26,7 +26,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* This is just like Mikey!";
                 message[1] = "* Instead of talking face to face#  he sends a little weird guy to#  stare at me!";
             }
@@ -38,7 +38,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Hehe omg!!";
                 message[1] = "* Sorry for calling you weirdddd!";
                 message[2] = "* I tend to bully small children#  when I get moody!";
@@ -52,7 +52,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Mikey never paid any attention#  to me, you know??";
                 message[1] = "* I wanted to teach him a big ol'#  lesson!";
                 message[2] = "* So I'm playing hard to get by#  wandering into the woods and#  maybe dying???";
@@ -66,7 +66,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Standing out here in this#  fridigy climate starts to get #  to you!";
                 message[1] = "* Starts to make you question#  things!!";
                 message[2] = "* Like.. who's Mikey???";
@@ -79,7 +79,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I've never met a Mikey in my#  life!";
                 message[1] = "* Wouldn't it be funny if I did#  tho???";
                 message[2] = "* I'd like, be his gf and he'd#  like, ignore me and I'd like,#  wander into the woods!";
@@ -92,7 +92,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I'm so lost, hehe!";
                 message[1] = "* Woopsyyy!!!";
             }
@@ -104,7 +104,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* You think there's a search#  squad looking for me??";
                 message[1] = "* Omg that would make me feel so#  special!!";
                 message[2] = "* What if they send out a#  helicopter??";
@@ -119,7 +119,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* This is the ninth time you've#  talked to me!";
                 message[1] = "* Fun!!!";
             }
@@ -131,7 +131,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I think we've made fast#  friends, don't you???";
                 message[1] = "* Wait! How fast can you run??";
                 message[2] = "* Because I am a speed demon!!!";
@@ -146,7 +146,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Fun Wanda fact!!";
                 message[1] = "* They don't let me in most#  restaurants anymore.";
             }
@@ -158,7 +158,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Oh shoot!!!";
                 message[1] = "* Did I just name drop??";
                 message[2] = "* Omgggg that's so like me!!";
@@ -171,7 +171,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Hm! Hm!!";
                 message[1] = "* I'm getting a Wanda Signal!!";
                 message[2] = "* ...";
@@ -188,7 +188,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* One...";
                 message[1] = "* Two...";
                 message[2] = "* Three...";

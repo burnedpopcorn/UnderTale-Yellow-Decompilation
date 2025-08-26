@@ -89,9 +89,9 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* Recalibrate the lava#  rock puzzle... Check!";
-            prt[0] = 312;
+            prt[0] = spr_martlet_head_content;
         }
         
         if (!global.dialogue_open)
@@ -121,9 +121,9 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* ...";
-            prt[0] = 333;
+            prt[0] = spr_martlet_head_surprised;
         }
         
         if (!global.dialogue_open)
@@ -174,13 +174,13 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* Well, it should hold#  together for a few uses#  at least.";
             message[1] = "* And that's good enough#  for me!";
             message[2] = "* Next stop, Honeydew#  Resort!";
-            prt[0] = 323;
-            prt[1] = 313;
-            prt[2] = 312;
+            prt[0] = spr_martlet_head_nervous_smile;
+            prt[1] = spr_martlet_head_determined;
+            prt[2] = spr_martlet_head_content;
             
             if (message_current == 1)
                 other.actor_martlet.npc_direction = "down";
@@ -225,7 +225,7 @@ switch (scene)
                 image_speed = 0;
                 other.scene++;
                 other.timer = 15;
-                scr_audio_fade_out(163, 500);
+                scr_audio_fade_out(mus_birdsofafeather, 500);
             }
         }
         

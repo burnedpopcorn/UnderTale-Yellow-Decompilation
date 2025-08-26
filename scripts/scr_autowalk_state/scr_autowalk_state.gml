@@ -1,9 +1,7 @@
 function scr_autowalk_state()
 {
-    var hsp, vsp;
-    
-    hsp = 0;
-    vsp = 0;
+    var hsp = 0;
+    var vsp = 0;
     
     if (autowalk_direction == "right")
     {

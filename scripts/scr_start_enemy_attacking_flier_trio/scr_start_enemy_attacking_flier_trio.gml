@@ -1,17 +1,15 @@
 function scr_start_enemy_attacking_flier_trio()
 {
-    var battle_menu_number, fight_number, act_number, enemy_dead, enemy_dead_2, enemy_dead_3, enemy_spared, enemy_spared_2, enemy_spared_3, random_number, seed_1, seed_2, seed_3;
-    
     instance_create(319, 320, obj_dialogue_box_battle_transformation_any);
-    battle_menu_number = global.battle_menu_number;
-    fight_number = global.fight_number;
-    act_number = global.act_number;
-    enemy_dead = global.enemy_dead;
-    enemy_dead_2 = global.enemy_dead_2;
-    enemy_dead_3 = global.enemy_dead_3;
-    enemy_spared = global.enemy_spared;
-    enemy_spared_2 = global.enemy_spared_2;
-    enemy_spared_3 = global.enemy_spared_3;
+    var battle_menu_number = global.battle_menu_number;
+    var fight_number = global.fight_number;
+    var act_number = global.act_number;
+    var enemy_dead = global.enemy_dead;
+    var enemy_dead_2 = global.enemy_dead_2;
+    var enemy_dead_3 = global.enemy_dead_3;
+    var enemy_spared = global.enemy_spared;
+    var enemy_spared_2 = global.enemy_spared_2;
+    var enemy_spared_3 = global.enemy_spared_3;
     end_loop = false;
     
     if (battle_menu_number == 1)
@@ -26,7 +24,7 @@ function scr_start_enemy_attacking_flier_trio()
             }
             else
             {
-                random_number = irandom_range(1, 2);
+                var random_number = irandom_range(1, 2);
                 
                 if (random_number == 1)
                 {
@@ -70,7 +68,7 @@ function scr_start_enemy_attacking_flier_trio()
             }
             else
             {
-                random_number = irandom_range(1, 2);
+                var random_number = irandom_range(1, 2);
                 
                 if (random_number == 1)
                 {
@@ -114,7 +112,7 @@ function scr_start_enemy_attacking_flier_trio()
             }
             else
             {
-                random_number = irandom_range(1, 2);
+                var random_number = irandom_range(1, 2);
                 
                 if (random_number == 1)
                 {
@@ -172,7 +170,7 @@ function scr_start_enemy_attacking_flier_trio()
     }
     else
     {
-        random_number = irandom_range(1, 3);
+        var random_number = irandom_range(1, 3);
         
         while (end_loop == false)
         {
@@ -202,9 +200,9 @@ function scr_start_enemy_attacking_flier_trio()
             }
             else
             {
-                seed_1 = sign(enemy_dead + enemy_spared);
-                seed_2 = sign(enemy_dead_2 + enemy_spared_2);
-                seed_3 = sign(enemy_dead_3 + enemy_spared_3);
+                var seed_1 = sign(enemy_dead + enemy_spared);
+                var seed_2 = sign(enemy_dead_2 + enemy_spared_2);
+                var seed_3 = sign(enemy_dead_3 + enemy_spared_3);
                 random_number = irandom_range(1 + seed_1, 3 - seed_3);
                 
                 if (random_number == 2 && seed_2 == 1)

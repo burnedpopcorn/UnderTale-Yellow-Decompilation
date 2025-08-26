@@ -5,7 +5,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_sfx_play(383, 1);
+        cutscene_sfx_play(snd_undertale_swoosh, 1);
         break;
     
     case 2:
@@ -13,7 +13,7 @@ switch (scene)
         break;
     
     case 3:
-        cutscene_sfx_play(401, 1);
+        cutscene_sfx_play(snd_decibatfall, 1);
         break;
     
     case 4:
@@ -21,7 +21,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_sfx_play(384, 0.8);
+        cutscene_sfx_play(snd_undertale_thud, 0.8);
         break;
     
     case 6:
@@ -29,7 +29,7 @@ switch (scene)
         break;
     
     case 7:
-        cutscene_sfx_play(263, 0.3);
+        cutscene_sfx_play(snd_toy_squeak, 0.3);
         break;
     
     case 8:

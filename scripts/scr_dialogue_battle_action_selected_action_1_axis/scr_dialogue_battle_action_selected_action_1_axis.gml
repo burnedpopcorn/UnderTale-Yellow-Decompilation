@@ -1,7 +1,5 @@
 function scr_dialogue_battle_action_selected_action_1_axis()
 {
-    var current_turn;
-    
     if (!global.action_1_important)
     {
         message[0] = "* You ready your trusty shield#  for whatever awaits.";
@@ -9,7 +7,7 @@ function scr_dialogue_battle_action_selected_action_1_axis()
     }
     else if (global.route != 2)
     {
-        current_turn = global.action_1_selected_count;
+        var current_turn = global.action_1_selected_count;
         
         switch (current_turn)
         {

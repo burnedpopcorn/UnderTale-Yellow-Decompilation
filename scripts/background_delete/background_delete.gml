@@ -1,4 +1,4 @@
-function background_delete(argument0)
+function background_delete(arg0)
 {
-    sprite_delete(argument0);
+    sprite_delete(arg0);
 }

@@ -1,7 +1,5 @@
-var item_slot, game_mode;
-
-item_slot = global.item_slot[global.item_number_use];
-game_mode = global.game_mode;
+var item_slot = global.item_slot[global.item_number_use];
+var game_mode = global.game_mode;
 
 if (game_mode == "customs")
 {

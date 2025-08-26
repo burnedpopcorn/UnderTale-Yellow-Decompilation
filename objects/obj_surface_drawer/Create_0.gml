@@ -1,6 +1,4 @@
-var box;
-
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 global.attack_surface = -1;
 global.attack_surface_width = box.sprite_width - 8;
 global.attack_surface_height = box.sprite_height - 8;

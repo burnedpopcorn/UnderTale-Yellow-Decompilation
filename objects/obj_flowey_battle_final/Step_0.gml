@@ -1,9 +1,7 @@
-var fun_value_check, song_pos, i, fight_end, camw_old, camh_old, camx_old, camy_old, camw_new, camh_new, camx_new, camy_new;
-
 if (live_call())
     return global.live_result;
 
-fun_value_check = false;
+var fun_value_check = false;
 
 if (global.fun_value >= 70)
     fun_value_check = true;
@@ -13,9 +11,9 @@ if (intro_noloop == false)
     switch (scene)
     {
         case 0:
-            song_pos = audio_sound_get_track_position(intro_song);
+            var song_pos = audio_sound_get_track_position(intro_song);
             
-            for (i = 0; i < array_length(timestamp); i++)
+            for (var i = 0; i < array_length(timestamp); i++)
             {
                 if (i == timestamp_current && song_pos >= timestamp[i])
                 {
@@ -85,7 +83,7 @@ if (intro_noloop == false)
             with (msg)
             {
                 position = 0;
-                sndfnt = 664;
+                sndfnt = sndfnt_flowey_2;
                 message[0] = "* H O W D Y .";
                 message[1] = "* Have fun with your friend back#  there?";
                 message[2] = "* Hahahahaha!!!";
@@ -237,9 +235,9 @@ else
                 break;
             
             case 1:
-                fight_end = true;
+                var fight_end = true;
                 
-                for (i = 0; i < array_length(petal_alive); i++)
+                for (var i = 0; i < array_length(petal_alive); i++)
                 {
                     if (petal_alive[i] == 1)
                     {
@@ -435,13 +433,13 @@ else
                     skippable = false;
                     message_timer = 60;
                     position = 0;
-                    message[0] = "* Y o u . .";
+                    message[0] = "* Y o u . . .";
                     
                     if (global.meta_flowey_fight_count >= 1)
-                        message[0] = "* . . .";
+                        message[0] = "* . . . . . .";
                     
                     if (global.meta_flowey_fight_count >= 3 && fun_value_check)
-                        message[0] = "* ...";
+                        message[0] = "* ......";
                 }
                 
                 break;
@@ -456,10 +454,10 @@ else
                 if (!obj_flowey_gray_eyes.alarm[0])
                     obj_flowey_gray_eyes.alarm[0] = 90;
                 
-                camw_old = camera_get_view_width(view_camera[0]);
-                camh_old = camera_get_view_height(view_camera[0]);
-                camx_old = camera_get_view_x(view_camera[0]);
-                camy_old = camera_get_view_y(view_camera[0]);
+                var camw_old = camera_get_view_width(view_camera[0]);
+                var camh_old = camera_get_view_height(view_camera[0]);
+                var camx_old = camera_get_view_x(view_camera[0]);
+                var camy_old = camera_get_view_y(view_camera[0]);
                 camera_set_view_size(view_camera[0], camw_old - 0.2, camh_old - 0.2);
                 camera_set_view_pos(view_camera[0], camx_old + 0.1, camy_old + 0.05);
                 cutscene_wait(8);
@@ -468,14 +466,14 @@ else
             case 20:
                 obj_flowey_gray_eyes.stare_at_screen = false;
                 obj_flowey_gray_eyes.alarm[0] = false;
-                camw_old = camera_get_view_width(view_camera[0]);
-                camh_old = camera_get_view_height(view_camera[0]);
-                camx_old = camera_get_view_x(view_camera[0]);
-                camy_old = camera_get_view_y(view_camera[0]);
-                camw_new = lerp(camw_old, 640, 0.3);
-                camh_new = lerp(camh_old, 480, 0.3);
-                camx_new = lerp(camx_old, 0, 0.3);
-                camy_new = lerp(camy_old, 0, 0.3);
+                var camw_old = camera_get_view_width(view_camera[0]);
+                var camh_old = camera_get_view_height(view_camera[0]);
+                var camx_old = camera_get_view_x(view_camera[0]);
+                var camy_old = camera_get_view_y(view_camera[0]);
+                var camw_new = lerp(camw_old, 640, 0.3);
+                var camh_new = lerp(camh_old, 480, 0.3);
+                var camx_new = lerp(camx_old, 0, 0.3);
+                var camy_new = lerp(camy_old, 0, 0.3);
                 camera_set_view_size(view_camera[0], camw_new, camh_new);
                 camera_set_view_pos(view_camera[0], camx_new, camy_new);
                 
@@ -496,7 +494,7 @@ else
                 with (msg)
                 {
                     position = 0;
-                    sndfnt = 96;
+                    sndfnt = sndfnt_flowey;
                     
                     if (global.meta_flowey_fight_count == 0)
                     {
@@ -521,7 +519,7 @@ else
                     }
                     
                     if (global.meta_flowey_fight_count == 3 && fun_value_check)
-                        message[0] = "* . . .";
+                        message[0] = "* . . . . . .";
                 }
                 
                 break;
@@ -584,7 +582,7 @@ else
             audio_stop_sound(global.battle_music);
             global.battle_music = audio_play_sound(music_flowey[stage_switch], 1, 1);
             
-            for (i = 0; i < array_length(controller_flowey); i++)
+            for (var i = 0; i < array_length(controller_flowey); i++)
             {
                 if (i != stage_switch && instance_exists(controller_flowey[i]))
                     instance_destroy(controller_flowey[i]);

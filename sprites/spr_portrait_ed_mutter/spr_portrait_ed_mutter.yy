@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"41d17f89-d036-4279-8362-a238da1f8bb9",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5e5c0acd-7d04-4406-9de7-88bc715152c8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5da0ab9c-849e-42c5-a5ea-c5137e80ea57",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"64b4b390-3398-4e36-a26f-ece57b934f37",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 114,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"edbf9460-8e10-49b5-a858-fe72345a4991","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fd270fde-1893-40f3-ad47-9875eb3fc5a9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"41d17f89-d036-4279-8362-a238da1f8bb9","path":"sprites/spr_portrait_ed_mutter/spr_portrait_ed_mutter.yy",},},},"Disabled":false,"id":"56deb688-4a26-4d5f-a354-bd701dfeb3e6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5e5c0acd-7d04-4406-9de7-88bc715152c8","path":"sprites/spr_portrait_ed_mutter/spr_portrait_ed_mutter.yy",},},},"Disabled":false,"id":"9ee38b9f-63f9-4a3a-bea1-07e1cc384c3a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5da0ab9c-849e-42c5-a5ea-c5137e80ea57","path":"sprites/spr_portrait_ed_mutter/spr_portrait_ed_mutter.yy",},},},"Disabled":false,"id":"ce3b3e24-6bd0-4423-be47-bb0b8cb7f3d3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"64b4b390-3398-4e36-a26f-ece57b934f37","path":"sprites/spr_portrait_ed_mutter/spr_portrait_ed_mutter.yy",},},},"Disabled":false,"id":"84950b02-6621-44e7-9bb6-ce75ddc1c69e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "WildEast",
+    "path": "texturegroups/WildEast",
   },
   "type": 0,
   "VTile": false,

@@ -1,5 +1,3 @@
-var death_sound;
-
 if (live_call())
     return global.live_result;
 
@@ -60,7 +58,7 @@ switch (scene)
     case 7:
         obj_asgore_npc.sprite_index = spr_asgore_death;
         obj_asgore_npc.image_speed = 1;
-        death_sound = audio_play_sound(snd_monster_damage_death, 1, 0);
+        var death_sound = audio_play_sound(snd_monster_damage_death, 1, 0);
         audio_sound_pitch(death_sound, 0.65);
         cutscene_advance();
         break;

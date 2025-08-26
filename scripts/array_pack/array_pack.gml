@@ -1,10 +1,8 @@
 function array_pack()
 {
-    var array, i;
+    var array = array_create(argument_count);
     
-    array = array_create(argument_count);
-    
-    for (i = 0; i < argument_count; i++)
+    for (var i = 0; i < argument_count; i++)
         array[i] = argument[i];
     
     return array;

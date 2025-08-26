@@ -1,13 +1,11 @@
 function joystick_process_events()
 {
-    var xaxis, yaxis;
-    
     if (argument_count > 0 && argument[0] > 0)
         exit;
     
     if (joystick_exists(1))
     {
-        xaxis = joystick_xpos(1);
+        var xaxis = joystick_xpos(1);
         
         if (xaxis < -0.3)
             event_perform(ev_mouse, 16);
@@ -15,7 +13,7 @@ function joystick_process_events()
         if (xaxis > 0.3)
             event_perform(ev_mouse, 17);
         
-        yaxis = joystick_ypos(1);
+        var yaxis = joystick_ypos(1);
         
         if (yaxis < -0.3)
             event_perform(ev_mouse, 18);
@@ -50,7 +48,7 @@ function joystick_process_events()
     
     if (joystick_exists(2))
     {
-        xaxis = joystick_xpos(2);
+        var xaxis = joystick_xpos(2);
         
         if (xaxis < -0.3)
             event_perform(ev_mouse, 16);
@@ -58,7 +56,7 @@ function joystick_process_events()
         if (xaxis > 0.3)
             event_perform(ev_mouse, 17);
         
-        yaxis = joystick_ypos(2);
+        var yaxis = joystick_ypos(2);
         
         if (yaxis < -0.3)
             event_perform(ev_mouse, 18);

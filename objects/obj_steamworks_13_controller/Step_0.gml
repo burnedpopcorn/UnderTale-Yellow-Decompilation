@@ -1,9 +1,7 @@
-var xbound_left, xbound_right, ybound_top, ybound_bottom, robot_part_inside_zone, i, new_image_index, max_points;
-
-xbound_left = 50;
-xbound_right = 180;
-ybound_top = 100;
-ybound_bottom = 190;
+var xbound_left = 50;
+var xbound_right = 180;
+var ybound_top = 100;
+var ybound_bottom = 190;
 
 switch (scene)
 {
@@ -20,7 +18,7 @@ switch (scene)
             ch_msg = 16;
             ch[1] = "Yes";
             ch[2] = "No";
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Ouch... Can't say I was#  prepared for that.";
             message[1] = "* I knew my husband was#  an engineer but he never#  told me about that guy.";
             message[2] = "* He'd mention a robotics#  project that could net#  him a promotion but...";
@@ -38,52 +36,52 @@ switch (scene)
             message[14] = "* He doesn't seem too#  bright after all. ";
             message[15] = "* Maybe that's all we#  need to distract him?";
             message[16] = "* What do you think?";
-            prt[0] = 368;
-            prt[1] = 377;
-            prt[2] = 370;
-            prt[3] = 394;
-            prt[4] = 368;
-            prt[5] = 366;
-            prt[6] = 394;
-            prt[7] = 370;
-            prt[8] = 371;
-            prt[9] = 377;
-            prt[10] = 393;
-            prt[11] = 372;
-            prt[12] = 370;
-            prt[13] = 371;
-            prt[14] = 395;
-            prt[15] = 372;
-            prt[16] = 370;
+            prt[0] = spr_portrait_ceroba_irked;
+            prt[1] = spr_portrait_ceroba_closed_eyes;
+            prt[2] = spr_portrait_ceroba_neutral;
+            prt[3] = spr_portrait_ceroba_disapproving;
+            prt[4] = spr_portrait_ceroba_irked;
+            prt[5] = spr_portrait_ceroba_angry;
+            prt[6] = spr_portrait_ceroba_disapproving;
+            prt[7] = spr_portrait_ceroba_neutral;
+            prt[8] = spr_portrait_ceroba_alt;
+            prt[9] = spr_portrait_ceroba_closed_eyes;
+            prt[10] = spr_portrait_ceroba_surprised;
+            prt[11] = spr_portrait_ceroba_smile;
+            prt[12] = spr_portrait_ceroba_neutral;
+            prt[13] = spr_portrait_ceroba_alt;
+            prt[14] = spr_portrait_ceroba_snarky;
+            prt[15] = spr_portrait_ceroba_smile;
+            prt[16] = spr_portrait_ceroba_neutral;
             
             if (outcome == 1)
             {
                 message[17] = "* Great!";
                 message[18] = "* It's the best plan I#  could think of.";
-                prt[17] = 372;
-                prt[18] = 395;
+                prt[17] = spr_portrait_ceroba_smile;
+                prt[18] = spr_portrait_ceroba_snarky;
             }
             
             if (outcome == 2)
             {
                 message[17] = "* You got a better idea?";
                 message[18] = "* It'll be easy, trust#  me.";
-                prt[17] = 368;
-                prt[18] = 370;
+                prt[17] = spr_portrait_ceroba_irked;
+                prt[18] = spr_portrait_ceroba_neutral;
             }
             
             message[19] = "* So... ";
             message[20] = "* We seem to be in some#  sort of storage room.";
             message[21] = "* Look around for parts#  we can use. Shouldn't#  take many.";
-            prt[19] = 377;
-            prt[20] = 370;
-            prt[21] = 370;
+            prt[19] = spr_portrait_ceroba_closed_eyes;
+            prt[20] = spr_portrait_ceroba_neutral;
+            prt[21] = spr_portrait_ceroba_neutral;
         }
         
         break;
     
     case 2:
-        cutscene_npc_walk(1161, 105, 125, 3, "x", "down");
+        cutscene_npc_walk(obj_ceroba_npc, 105, 125, 3, "x", "down");
         break;
     
     case 3:
@@ -100,15 +98,15 @@ switch (scene)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Find anything that looks#  like a makeshift body#  part.";
                 message[1] = "* I don't know, be#  creative.";
-                prt[0] = 370;
-                prt[1] = 377;
+                prt[0] = spr_portrait_ceroba_neutral;
+                prt[1] = spr_portrait_ceroba_closed_eyes;
             }
         }
         
-        robot_part_inside_zone = false;
+        var robot_part_inside_zone = false;
         
         if (robot_part_no_loop == false)
         {
@@ -134,9 +132,9 @@ switch (scene)
                 case 0:
                     with (msg)
                     {
-                        talker[0] = 1161;
+                        talker[0] = obj_ceroba_npc;
                         message[0] = "* You want to use this?";
-                        prt[0] = 370;
+                        prt[0] = spr_portrait_ceroba_neutral;
                         ch_msg = 0;
                         ch[1] = "Positive";
                         ch[2] = "Negative";
@@ -147,9 +145,9 @@ switch (scene)
                 case 1:
                     with (msg)
                     {
-                        talker[0] = 1161;
+                        talker[0] = obj_ceroba_npc;
                         message[0] = "* You think this'll work?";
-                        prt[0] = 370;
+                        prt[0] = spr_portrait_ceroba_neutral;
                         ch_msg = 0;
                         ch[1] = "Certain";
                         ch[2] = "Uncertain";
@@ -160,9 +158,9 @@ switch (scene)
                 case 2:
                     with (msg)
                     {
-                        talker[0] = 1161;
+                        talker[0] = obj_ceroba_npc;
                         message[0] = "* Is this a good pick?";
-                        prt[0] = 370;
+                        prt[0] = spr_portrait_ceroba_neutral;
                         ch_msg = 0;
                         ch[1] = "Definitely";
                         ch[2] = "Definitely\nnot";
@@ -173,9 +171,9 @@ switch (scene)
                 case 3:
                     with (msg)
                     {
-                        talker[0] = 1161;
+                        talker[0] = obj_ceroba_npc;
                         message[0] = "* Is this your final#  choice?";
-                        prt[0] = 370;
+                        prt[0] = spr_portrait_ceroba_neutral;
                         ch_msg = 0;
                         ch[1] = "Yea";
                         ch[2] = "Nay";
@@ -211,7 +209,7 @@ switch (scene)
                 if (outcome == 2)
                 {
                     message[1] = "* Grab something else#  then.";
-                    prt[1] = 368;
+                    prt[1] = spr_portrait_ceroba_irked;
                     other.robot_part_no_loop = true;
                 }
             }
@@ -233,9 +231,9 @@ switch (scene)
             case 1:
                 with (msg)
                 {
-                    talker[0] = 1161;
+                    talker[0] = obj_ceroba_npc;
                     message[0] = "* Okay, we'll need three#  more objects.";
-                    prt[0] = 370;
+                    prt[0] = spr_portrait_ceroba_neutral;
                 }
                 
                 break;
@@ -243,9 +241,9 @@ switch (scene)
             case 2:
                 with (msg)
                 {
-                    talker[0] = 1161;
+                    talker[0] = obj_ceroba_npc;
                     message[0] = "* Alright, two more and#  we can make this thing.";
-                    prt[0] = 370;
+                    prt[0] = spr_portrait_ceroba_neutral;
                 }
                 
                 break;
@@ -253,9 +251,9 @@ switch (scene)
             case 3:
                 with (msg)
                 {
-                    talker[0] = 1161;
+                    talker[0] = obj_ceroba_npc;
                     message[0] = "* One more object should#  do the trick.";
-                    prt[0] = 370;
+                    prt[0] = spr_portrait_ceroba_neutral;
                 }
                 
                 break;
@@ -263,9 +261,9 @@ switch (scene)
             case 4:
                 with (msg)
                 {
-                    talker[0] = 1161;
+                    talker[0] = obj_ceroba_npc;
                     message[0] = "* Okay, let's build a#  robot!";
-                    prt[0] = 372;
+                    prt[0] = spr_portrait_ceroba_smile;
                 }
                 
                 break;
@@ -299,7 +297,7 @@ switch (scene)
         if (!instance_exists(obj_robot_build_controller))
             instance_create(0, 0, obj_robot_build_controller);
         
-        for (i = 0; i < array_length_1d(robot_part); i++)
+        for (var i = 0; i < array_length_1d(robot_part); i++)
             obj_robot_build_controller.robot_item[i] = robot_part[i];
         
         cutscene_advance();
@@ -334,7 +332,7 @@ switch (scene)
                 instance_create(110, 140, obj_steamworks_13_robuild_complete);
                 overworld_robot_sprite[6] = 0;
                 
-                for (i = 0; i < array_length(robot_part); i++)
+                for (var i = 0; i < array_length(robot_part); i++)
                 {
                     switch (robot_part[i])
                     {
@@ -384,10 +382,10 @@ switch (scene)
                     }
                 }
                 
-                new_image_index = 0;
-                max_points = max(overworld_robot_sprite[0], overworld_robot_sprite[1], overworld_robot_sprite[2], overworld_robot_sprite[3], overworld_robot_sprite[4], overworld_robot_sprite[5], overworld_robot_sprite[6]);
+                var new_image_index = 0;
+                var max_points = max(overworld_robot_sprite[0], overworld_robot_sprite[1], overworld_robot_sprite[2], overworld_robot_sprite[3], overworld_robot_sprite[4], overworld_robot_sprite[5], overworld_robot_sprite[6]);
                 
-                for (i = 0; i < array_length(overworld_robot_sprite); i++)
+                for (var i = 0; i < array_length(overworld_robot_sprite); i++)
                 {
                     if (max_points == overworld_robot_sprite[i])
                     {
@@ -418,21 +416,21 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* That takes care of#  that.";
             message[1] = "* You're kinda creative#  when push comes to#  shove.";
             message[2] = "* All due respect to#  Chujin's work but this#  might just fool Axis.";
             message[3] = "* I'll hold onto it for#  you.";
-            prt[0] = 370;
-            prt[1] = 372;
-            prt[2] = 395;
-            prt[3] = 372;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_smile;
+            prt[2] = spr_portrait_ceroba_snarky;
+            prt[3] = spr_portrait_ceroba_smile;
         }
         
         break;
     
     case 12:
-        cutscene_npc_walk(1161, 110, 160, 3, "x", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 110, 160, 3, "x", "up");
         break;
     
     case 13:
@@ -450,11 +448,11 @@ switch (scene)
     case 15:
         obj_ceroba_npc.action_sprite = false;
         instance_destroy(obj_steamworks_13_robuild_complete);
-        cutscene_sfx_play(319, 1);
+        cutscene_sfx_play(snd_steamworks_13_robot, 1);
         break;
     
     case 16:
-        cutscene_npc_direction(1161, "down");
+        cutscene_npc_direction(obj_ceroba_npc, "down");
         break;
     
     case 17:
@@ -466,20 +464,20 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Let's get outta here,#  yeah?";
-            prt[0] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
         }
         
         break;
     
     case 19:
-        cutscene_npc_walk(1161, obj_pl.x - 30, obj_pl.y, 3, "y", "right");
+        cutscene_npc_walk(obj_ceroba_npc, obj_pl.x - 30, obj_pl.y, 3, "y", "right");
         obj_pl.direction = 0;
         break;
     
     case 20:
-        global.party_member = 1171;
+        global.party_member = obj_ceroba_follower;
         
         with (instance_create(obj_ceroba_npc.x, obj_ceroba_npc.y, global.party_member))
             npc_reset = true;

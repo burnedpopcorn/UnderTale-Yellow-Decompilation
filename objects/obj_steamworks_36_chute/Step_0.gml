@@ -1,4 +1,4 @@
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     if (waiter == 0)
     {
@@ -11,15 +11,15 @@ if (waiter == 1)
 {
     scr_text();
     
-    if (global.party_member == 1171)
+    if (global.party_member == obj_ceroba_follower)
     {
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Let's not venture off#  the path.";
             message[1] = "* I've had enough#  Steamworks for today.";
-            prt[0] = 370;
-            prt[1] = 377;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_closed_eyes;
         }
         
         global.cutscene = false;
@@ -59,6 +59,6 @@ if (scene == 1)
 if (scene == 2)
 {
     instance_create(0, 0, obj_steamworks_chute_travel_effect);
-    cutscene_change_room(150, 128, 128, 0.1);
+    cutscene_change_room(rm_steamworks_05b, 128, 128, 0.1);
     global.cutscene = false;
 }

@@ -1,5 +1,3 @@
-var auto_hit_note, can_trail;
-
 if (instance_exists(obj_sme_yellow_rhythm_generator) && !instance_exists(obj_sme_yellow_rhythm_selection) && created_selection == false && moveable == true)
 {
     instance_create(x, obj_dialogue_box_battle_transformation_any.bbox_top + 179, obj_sme_yellow_rhythm_selection);
@@ -38,7 +36,7 @@ if (instance_exists(obj_sme_yellow_rhythm_selection))
         event_user(0);
 }
 
-auto_hit_note = false;
+var auto_hit_note = false;
 
 if (global.option_autorhythm)
 {
@@ -81,7 +79,7 @@ if (instance_exists(obj_heart_battle_effect_glow))
 
 if (moveable == true && global.current_sp_self > 0)
 {
-    can_trail = false;
+    var can_trail = false;
     trail_cc_current += 1;
     
     if (trail_cc_current >= trail_cc_max)

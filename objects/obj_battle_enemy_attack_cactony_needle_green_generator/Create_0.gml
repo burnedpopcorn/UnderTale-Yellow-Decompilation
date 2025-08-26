@@ -1,9 +1,7 @@
-var dbox;
-
 if (live_call())
     return global.live_result;
 
-dbox = 3154;
+var dbox = 3155;
 spacing_h = 46;
 spacing_v = 84;
 start_r_x = dbox.bbox_left + 1;

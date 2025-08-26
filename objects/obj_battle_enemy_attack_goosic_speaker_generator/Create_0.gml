@@ -1,9 +1,7 @@
-var box;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 speaker_right = instance_create_depth(box.bbox_right + 80, box.bbox_bottom - 6, obj_heart_battle_fighting_red.depth - 1, obj_battle_enemy_attack_goosic_speaker);
 speaker_left = instance_create_depth(box.bbox_left - 80, box.bbox_bottom - 6, obj_heart_battle_fighting_red.depth - 1, obj_battle_enemy_attack_goosic_speaker);
 speaker_left.image_xscale = -1;

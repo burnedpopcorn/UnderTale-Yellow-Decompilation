@@ -1,7 +1,5 @@
 function scr_enemy_attack_bullet_hit()
 {
-    var collider_id, collider_object_index;
-    
     if (live_call())
         return global.live_result;
     
@@ -11,11 +9,11 @@ function scr_enemy_attack_bullet_hit()
             bullet_hit_draw_timer -= 1;
     }
     
-    collider_id = instance_place(x, y, obj_heart_yellow_shot);
+    var collider_id = instance_place(x, y, obj_heart_yellow_shot);
     
     if (collider_id != -4)
     {
-        collider_object_index = collider_id.object_index;
+        var collider_object_index = collider_id.object_index;
         instance_create_depth(collider_id.x, collider_id.bbox_top, -999, obj_heart_yellow_shot_destroy);
         
         if (collider_object_index == 690)

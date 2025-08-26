@@ -1,11 +1,9 @@
-var left_platform, right_platform;
-
 if (live_call())
     return global.live_result;
 
-left_platform = instance_create_depth(battle_box.bbox_left - 30, battle_box.bbox_top + 50, -100, obj_battle_enemy_attack_macro_choir_platform);
+var left_platform = instance_create_depth(battle_box.bbox_left - 30, battle_box.bbox_top + 50, -100, obj_battle_enemy_attack_macro_choir_platform);
 left_platform.hspeed = platform_speed;
-right_platform = instance_create_depth(battle_box.bbox_right + 30, battle_box.bbox_top + 120, -110, obj_battle_enemy_attack_macro_choir_platform);
+var right_platform = instance_create_depth(battle_box.bbox_right + 30, battle_box.bbox_top + 120, -110, obj_battle_enemy_attack_macro_choir_platform);
 right_platform.hspeed = -platform_speed;
 max_frogs -= 1;
 

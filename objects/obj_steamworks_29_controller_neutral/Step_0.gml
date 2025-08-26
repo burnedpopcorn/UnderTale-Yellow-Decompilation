@@ -1,6 +1,4 @@
-var gardener_talknoise;
-
-gardener_talknoise = 111;
+var gardener_talknoise = 111;
 audio_sound_pitch(gardener_talknoise, guardener_pitch);
 
 switch (scene)
@@ -118,7 +116,7 @@ switch (scene)
         {
             sndfnt_array[0] = gardener_talknoise;
             color = true;
-            col_modif[0] = 255;
+            col_modif[0] = c_red;
             message[0] = "* OH, HE-HELLO THERE.";
             message[1] = "* WAS IT YOU WHO DISTURBED THE#  FLOR-A? ?";
             message[2] = "* I ASK YOU TO PLEASE HAVE MORE#  _RESPECT.";
@@ -185,11 +183,11 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 16711935;
+            col_modif[0] = c_fuchsia;
             sndfnt_array[0] = gardener_talknoise;
-            sndfnt_array[4] = 391;
+            sndfnt_array[4] = snd_talk_default;
             sndfnt_array[5] = gardener_talknoise;
-            sndfnt_array[12] = 391;
+            sndfnt_array[12] = snd_talk_default;
             sndfnt_array[13] = gardener_talknoise;
             message[0] = "* I WAS ABOUT TO DO SOMETHING..#  .";
             message[1] = "* OH YES, I REMEMBER.";
@@ -213,7 +211,7 @@ switch (scene)
         break;
     
     case 22:
-        cutscene_action_sprite(780, 3630, 1, false, 0);
+        cutscene_action_sprite(obj_steamworks_29_gardener_bot, spr_steamworks_29_gardener_bot_look_around, 1, false, 0);
         break;
     
     case 23:
@@ -231,9 +229,9 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 16711935;
+            col_modif[0] = c_fuchsia;
             sndfnt_array[0] = gardener_talknoise;
-            sndfnt_array[5] = 391;
+            sndfnt_array[5] = snd_talk_default;
             sndfnt_array[6] = gardener_talknoise;
             message[0] = "* OH... I HAVE ALLOWED IMMENSE#  OVERGROWTH.";
             message[1] = "* I UNDERSTAND.";

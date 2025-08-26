@@ -59,7 +59,7 @@ switch (scene)
         obj_martlet_npc.image_speed = 0;
         obj_martlet_npc.image_index = obj_martlet_npc.image_number - 1;
         obj_chujin_npc.down_sprite_idle = spr_flashback_mart_and_chujin_mart_talk_coffee;
-        cutscene_npc_action_sprite(92, 2607, 1, false);
+        cutscene_npc_action_sprite(obj_chujin_npc, spr_flashback_mart_and_chujin_part1, 1, false);
         break;
     
     case 7:
@@ -71,10 +71,10 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 92;
-            obj_chujin_npc.npc_voice_sfx = 102;
+            talker[0] = obj_chujin_npc;
+            obj_chujin_npc.npc_voice_sfx = snd_talk_martlet;
             message[0] = "* One cup of joe for the#  Boss - extra#  caffeinated!";
-            prt[0] = 312;
+            prt[0] = spr_martlet_head_content;
         }
         
         break;
@@ -86,8 +86,8 @@ switch (scene)
     case 10:
         obj_chujin_npc.down_sprite_idle = spr_chujin_lookside;
         
-        if (cutscene_npc_action_sprite(92, 3080, 1, false))
-            obj_chujin_npc.npc_voice_sfx = 626;
+        if (cutscene_npc_action_sprite(obj_chujin_npc, spr_flashback_mart_and_chujin_part2, 1, false))
+            obj_chujin_npc.npc_voice_sfx = snd_talk_chujin;
         
         break;
     
@@ -108,11 +108,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 92;
-            talker[2] = 1164;
-            talker[4] = 92;
-            talker[5] = 1164;
-            talker[6] = 92;
+            talker[0] = obj_chujin_npc;
+            talker[2] = obj_martlet_npc;
+            talker[4] = obj_chujin_npc;
+            talker[5] = obj_martlet_npc;
+            talker[6] = obj_chujin_npc;
             message[0] = "* Is that my title now?";
             message[1] = "* It's not like I pay you#  to help me.";
             message[2] = "* Oh?";
@@ -120,13 +120,13 @@ switch (scene)
             message[4] = "* Martlet...";
             message[5] = "* You really should pay#  that tab soon. The list#  is gettin' long!";
             message[6] = "* ...";
-            prt[0] = 846;
-            prt[1] = 3072;
-            prt[2] = 331;
-            prt[3] = 312;
-            prt[4] = 846;
-            prt[5] = 337;
-            prt[6] = 3072;
+            prt[0] = spr_portrait_fchujin_bruh;
+            prt[1] = spr_portrait_fchujin_talk_smile;
+            prt[2] = spr_martlet_head_smirk;
+            prt[3] = spr_martlet_head_content;
+            prt[4] = spr_portrait_fchujin_bruh;
+            prt[5] = spr_martlet_head_wink;
+            prt[6] = spr_portrait_fchujin_talk_smile;
             
             switch (message_current)
             {
@@ -161,15 +161,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
-            talker[2] = 92;
-            talker[3] = 1164;
-            talker[5] = 92;
-            talker[7] = 1164;
-            talker[8] = 92;
-            talker[9] = 1164;
-            talker[10] = 92;
-            talker[11] = 1164;
+            talker[0] = obj_martlet_npc;
+            talker[2] = obj_chujin_npc;
+            talker[3] = obj_martlet_npc;
+            talker[5] = obj_chujin_npc;
+            talker[7] = obj_martlet_npc;
+            talker[8] = obj_chujin_npc;
+            talker[9] = obj_martlet_npc;
+            talker[10] = obj_chujin_npc;
+            talker[11] = obj_martlet_npc;
             message[0] = "* Oh, I meant to tell#  you...";
             message[1] = "* We'll probably have to#  cut back on our hangouts#  soon.";
             message[2] = "* Hm?";
@@ -182,18 +182,18 @@ switch (scene)
             message[9] = "* I knoooow, I know!";
             message[10] = "* What's the job?";
             message[11] = "* Well I wanted a job#  where I could build#  things so...";
-            prt[0] = 320;
-            prt[1] = 329;
-            prt[2] = 2896;
-            prt[3] = 322;
-            prt[4] = 323;
-            prt[5] = 2896;
-            prt[6] = 2896;
-            prt[7] = 329;
-            prt[8] = 846;
-            prt[9] = 310;
-            prt[10] = 2896;
-            prt[11] = 321;
+            prt[0] = spr_martlet_head_melancholic;
+            prt[1] = spr_martlet_head_sad;
+            prt[2] = spr_portrait_fchujin_happy;
+            prt[3] = spr_martlet_head_nervous;
+            prt[4] = spr_martlet_head_nervous_smile;
+            prt[5] = spr_portrait_fchujin_happy;
+            prt[6] = spr_portrait_fchujin_happy;
+            prt[7] = spr_martlet_head_sad;
+            prt[8] = spr_portrait_fchujin_bruh;
+            prt[9] = spr_martlet_head_confounded;
+            prt[10] = spr_portrait_fchujin_happy;
+            prt[11] = spr_martlet_head_moderate;
             
             switch (message_current)
             {
@@ -264,20 +264,20 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
-            talker[1] = 92;
-            talker[4] = 1164;
-            talker[5] = 92;
-            talker[8] = 1164;
-            talker[11] = 92;
-            talker[15] = 1164;
-            talker[21] = 92;
-            talker[22] = 1164;
-            talker[23] = 92;
-            talker[25] = 1164;
-            talker[27] = 92;
-            talker[28] = 1164;
-            talker[29] = 92;
+            talker[0] = obj_martlet_npc;
+            talker[1] = obj_chujin_npc;
+            talker[4] = obj_martlet_npc;
+            talker[5] = obj_chujin_npc;
+            talker[8] = obj_martlet_npc;
+            talker[11] = obj_chujin_npc;
+            talker[15] = obj_martlet_npc;
+            talker[21] = obj_chujin_npc;
+            talker[22] = obj_martlet_npc;
+            talker[23] = obj_chujin_npc;
+            talker[25] = obj_martlet_npc;
+            talker[27] = obj_chujin_npc;
+            talker[28] = obj_martlet_npc;
+            talker[29] = obj_chujin_npc;
             message[0] = "* I signed up for the#  Royal Guard.";
             message[1] = "* The...";
             message[2] = "* ...";
@@ -314,42 +314,42 @@ switch (scene)
             message[33] = "* ...";
             message[34] = "* Humans are merciless.";
             message[35] = "* Incapable of decency in#  any form.";
-            prt[0] = 328;
-            prt[1] = 3032;
-            prt[2] = 1366;
-            prt[3] = 3396;
-            prt[4] = 333;
-            prt[5] = 2666;
-            prt[6] = 3331;
-            prt[7] = 3396;
-            prt[8] = 324;
-            prt[9] = 320;
-            prt[10] = 312;
-            prt[11] = 2666;
-            prt[12] = 3331;
-            prt[13] = 2666;
-            prt[14] = 3396;
-            prt[15] = 338;
-            prt[16] = 321;
-            prt[17] = 320;
-            prt[18] = 328;
-            prt[19] = 312;
-            prt[20] = 328;
-            prt[21] = 3331;
-            prt[22] = 333;
-            prt[23] = 3396;
-            prt[24] = 2666;
-            prt[25] = 329;
-            prt[26] = 317;
-            prt[27] = 3396;
-            prt[28] = 329;
-            prt[29] = 2666;
-            prt[30] = 2666;
-            prt[31] = 2666;
-            prt[32] = 2666;
-            prt[33] = 3331;
-            prt[34] = 3396;
-            prt[35] = 2666;
+            prt[0] = spr_martlet_head_regular;
+            prt[1] = spr_portrait_fchujin_surprised;
+            prt[2] = spr_portrait_fchujin_surprised_talk;
+            prt[3] = spr_portrait_fchujin_talk_glasses;
+            prt[4] = spr_martlet_head_surprised;
+            prt[5] = spr_portrait_fchujin_talk_serious;
+            prt[6] = spr_portrait_fchujin_serious_down;
+            prt[7] = spr_portrait_fchujin_talk_glasses;
+            prt[8] = spr_martlet_head_questioning;
+            prt[9] = spr_martlet_head_melancholic;
+            prt[10] = spr_martlet_head_content;
+            prt[11] = spr_portrait_fchujin_talk_serious;
+            prt[12] = spr_portrait_fchujin_serious_down;
+            prt[13] = spr_portrait_fchujin_talk_serious;
+            prt[14] = spr_portrait_fchujin_talk_glasses;
+            prt[15] = spr_martlet_head_wondering;
+            prt[16] = spr_martlet_head_moderate;
+            prt[17] = spr_martlet_head_melancholic;
+            prt[18] = spr_martlet_head_regular;
+            prt[19] = spr_martlet_head_content;
+            prt[20] = spr_martlet_head_regular;
+            prt[21] = spr_portrait_fchujin_serious_down;
+            prt[22] = spr_martlet_head_surprised;
+            prt[23] = spr_portrait_fchujin_talk_glasses;
+            prt[24] = spr_portrait_fchujin_talk_serious;
+            prt[25] = spr_martlet_head_sad;
+            prt[26] = spr_martlet_head_downer;
+            prt[27] = spr_portrait_fchujin_talk_glasses;
+            prt[28] = spr_martlet_head_sad;
+            prt[29] = spr_portrait_fchujin_talk_serious;
+            prt[30] = spr_portrait_fchujin_talk_serious;
+            prt[31] = spr_portrait_fchujin_talk_serious;
+            prt[32] = spr_portrait_fchujin_talk_serious;
+            prt[33] = spr_portrait_fchujin_serious_down;
+            prt[34] = spr_portrait_fchujin_talk_glasses;
+            prt[35] = spr_portrait_fchujin_talk_serious;
             
             switch (message_current)
             {
@@ -471,9 +471,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 92;
+            talker[0] = obj_chujin_npc;
             message[0] = "* Believe me.";
-            prt[0] = 3331;
+            prt[0] = spr_portrait_fchujin_serious_down;
         }
         
         break;
@@ -495,10 +495,10 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
-            talker[5] = 92;
-            talker[6] = 1164;
-            talker[7] = 92;
+            talker[0] = obj_martlet_npc;
+            talker[5] = obj_chujin_npc;
+            talker[6] = obj_martlet_npc;
+            talker[7] = obj_chujin_npc;
             message[0] = "* ...";
             message[1] = "* If it makes you feel#  better...";
             message[2] = "* I'm not posted anywhere#  near the hot spots.";
@@ -507,14 +507,14 @@ switch (scene)
             message[5] = "* Guarding the Royal#  Scientist's almighty#  fortress?";
             message[6] = "* Yeah, that's all.";
             message[7] = "* ...#";
-            prt[0] = 317;
-            prt[1] = 329;
-            prt[2] = 320;
-            prt[3] = 329;
-            prt[4] = 320;
-            prt[5] = 3396;
-            prt[6] = 338;
-            prt[7] = 3331;
+            prt[0] = spr_martlet_head_downer;
+            prt[1] = spr_martlet_head_sad;
+            prt[2] = spr_martlet_head_melancholic;
+            prt[3] = spr_martlet_head_sad;
+            prt[4] = spr_martlet_head_melancholic;
+            prt[5] = spr_portrait_fchujin_talk_glasses;
+            prt[6] = spr_martlet_head_wondering;
+            prt[7] = spr_portrait_fchujin_serious_down;
             
             switch (message_current)
             {
@@ -552,14 +552,14 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 92;
-            talker[1] = 1164;
+            talker[0] = obj_chujin_npc;
+            talker[1] = obj_martlet_npc;
             message[0] = "* Why don't we just call#  it a day?";
             message[1] = "* Yeah...";
             message[2] = "* Probably for the#  best...";
-            prt[0] = 2666;
-            prt[1] = 317;
-            prt[2] = 329;
+            prt[0] = spr_portrait_fchujin_talk_serious;
+            prt[1] = spr_martlet_head_downer;
+            prt[2] = spr_martlet_head_sad;
             
             switch (message_current)
             {
@@ -591,6 +591,6 @@ switch (scene)
         break;
     
     case 31:
-        cutscene_change_room(261, 0, 0, 0.1);
+        cutscene_change_room(rm_hotland_lab_entrance, 0, 0, 0.1);
         break;
 }

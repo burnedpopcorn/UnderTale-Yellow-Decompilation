@@ -19,11 +19,9 @@ function seq_pacifist_credits_Moment_8()
 
 function seq_pacifist_credits_Moment_9()
 {
-    var sale_number, i;
+    var sale_number = 0;
     
-    sale_number = 0;
-    
-    for (i = 1; i < array_length(global.extra_flag); i++)
+    for (var i = 1; i < array_length(global.extra_flag); i++)
     {
         if (global.extra_flag[i] == true)
             sale_number += 1;

@@ -1,6 +1,4 @@
-var stamp;
-
-stamp = 1905;
+var stamp = spr_dummy_training_dummy;
 part_smokesys = part_system_create();
 part_smokeEm = part_emitter_create(part_smokesys);
 part_system_depth(part_smokesys, obj_wild_east_stamp.depth);

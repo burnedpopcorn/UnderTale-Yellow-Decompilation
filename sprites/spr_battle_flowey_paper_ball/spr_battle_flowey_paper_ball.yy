@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"85fd12a0-0060-4575-8f33-d49a7f4572b3",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f07006cf-ee94-412c-bdcc-f1d2a335fc09",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fb497087-0fc6-4b16-990a-31492c540e22",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"50eee096-18f2-4713-97cb-65e1b43799cd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"55972b42-ae19-4d7d-8109-01150520e661",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6c6bdab6-fc83-4963-a9de-01b6a54340c4",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 110,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f8db6aad-8570-4bea-a2a2-1290065c9c06","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6a923b35-582b-4c30-82a9-0aa255019459","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"85fd12a0-0060-4575-8f33-d49a7f4572b3","path":"sprites/spr_battle_flowey_paper_ball/spr_battle_flowey_paper_ball.yy",},},},"Disabled":false,"id":"25a18f23-3fad-454e-ae6e-24f130651ca1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f07006cf-ee94-412c-bdcc-f1d2a335fc09","path":"sprites/spr_battle_flowey_paper_ball/spr_battle_flowey_paper_ball.yy",},},},"Disabled":false,"id":"2575b0f8-8a86-4822-9c6f-840078866125","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fb497087-0fc6-4b16-990a-31492c540e22","path":"sprites/spr_battle_flowey_paper_ball/spr_battle_flowey_paper_ball.yy",},},},"Disabled":false,"id":"d4a19b41-115c-487f-a8ae-540151f6dd33","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"50eee096-18f2-4713-97cb-65e1b43799cd","path":"sprites/spr_battle_flowey_paper_ball/spr_battle_flowey_paper_ball.yy",},},},"Disabled":false,"id":"5e4db139-b259-4b85-b587-56dae218d2b6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"55972b42-ae19-4d7d-8109-01150520e661","path":"sprites/spr_battle_flowey_paper_ball/spr_battle_flowey_paper_ball.yy",},},},"Disabled":false,"id":"9f7e1a66-b82f-4530-82f0-4d618f466875","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6c6bdab6-fc83-4963-a9de-01b6a54340c4","path":"sprites/spr_battle_flowey_paper_ball/spr_battle_flowey_paper_ball.yy",},},},"Disabled":false,"id":"3e8954aa-c6d7-4a25-8f44-754ec4e0bd4b","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleHotlandFloweyPaper",
+    "path": "texturegroups/BattleHotlandFloweyPaper",
   },
   "type": 0,
   "VTile": false,

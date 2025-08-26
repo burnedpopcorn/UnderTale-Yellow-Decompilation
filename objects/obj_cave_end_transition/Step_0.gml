@@ -26,7 +26,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             portrait = false;
             message[0] = "* Hello? Clover? Are you okay?";
             message[1] = "* Ohno-ohno-ohno!";

@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"551377dd-1ec2-4a1d-8ab5-2b6cad9e7ede",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5c58e4df-8c63-4d25-bfa4-5ef19852f9f2",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5aff9d40-ccbb-4e79-a60c-8f2c70ca933b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f4b11c06-420b-420a-95b9-954259fe840f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"84a2d623-d3ff-4758-811f-7b1ef8642a18",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"73405863-6889-4bd4-b5a6-47944673bb14",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 40,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"201c75d5-e2ee-4f35-8bf3-95142fba680b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"49a93449-d22b-4b06-a28c-5f10724a9178","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"551377dd-1ec2-4a1d-8ab5-2b6cad9e7ede","path":"sprites/spr_arcade_heart_big/spr_arcade_heart_big.yy",},},},"Disabled":false,"id":"a684597e-1cfa-4c36-933a-8f9e3d9c73e3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5c58e4df-8c63-4d25-bfa4-5ef19852f9f2","path":"sprites/spr_arcade_heart_big/spr_arcade_heart_big.yy",},},},"Disabled":false,"id":"662894bf-5e39-419c-bc83-a818259455c6","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5aff9d40-ccbb-4e79-a60c-8f2c70ca933b","path":"sprites/spr_arcade_heart_big/spr_arcade_heart_big.yy",},},},"Disabled":false,"id":"c61641d3-cc5c-46bb-9338-56171fbb7351","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f4b11c06-420b-420a-95b9-954259fe840f","path":"sprites/spr_arcade_heart_big/spr_arcade_heart_big.yy",},},},"Disabled":false,"id":"17bb3e94-42d1-4feb-9675-c6efc1d90baf","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"84a2d623-d3ff-4758-811f-7b1ef8642a18","path":"sprites/spr_arcade_heart_big/spr_arcade_heart_big.yy",},},},"Disabled":false,"id":"7f861711-fd9e-47e1-998e-71a57091f77c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"73405863-6889-4bd4-b5a6-47944673bb14","path":"sprites/spr_arcade_heart_big/spr_arcade_heart_big.yy",},},},"Disabled":false,"id":"28ca3ccc-05e1-4cea-9557-345f7209fbe8","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Minigames",
+    "path": "texturegroups/Minigames",
   },
   "type": 0,
   "VTile": false,

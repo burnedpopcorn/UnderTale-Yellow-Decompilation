@@ -62,6 +62,7 @@ function scr_init_flags_steamworks()
     global.sworks_flag[59] = 0;
     global.sworks_flag[60] = 0;
     global.sworks_flag[61] = 0;
+    global.sworks_flag[62] = 0;
     global.factory_code = string(irandom_range(1, 9)) + string(irandom_range(1, 9)) + string(irandom_range(1, 9)) + string(irandom_range(1, 9));
     global.factory_code_2 = ds_list_create();
     global.factory_code_3 = string(irandom_range(1, 9)) + string(irandom_range(1, 9)) + string(irandom_range(1, 9)) + string(irandom_range(1, 9));

@@ -11,7 +11,7 @@ if (global.dialogue_open == false)
 message_length = string_length(message[message_current]);
 message_end = array_length(message) - 1;
 
-if (keyboard_multicheck_pressed(1) && skippable == true)
+if (keyboard_multicheck_pressed(vk_anykey) && skippable == true)
 {
     characters = message_length;
     message_draw = string_copy(message[message_current], 0, characters);
@@ -35,7 +35,7 @@ else if (characters >= message_length && increase_message_count == false && keep
 {
     if (skippable == false && !alarm[0])
         alarm[0] = auto_advance_timer;
-    else if (keyboard_multicheck_pressed(0) && skippable == true)
+    else if (keyboard_multicheck_pressed(vk_nokey) && skippable == true)
         increase_message_count = true;
 }
 

@@ -1,10 +1,8 @@
-var target_direction, battle_box, spawn_line_length, spawn_angle, spawn_length_inc, spawn_dist_current, dir_inc, start_dir, tar_dir, i, xx, yy, feather;
-
 if (live_call())
     return global.live_result;
 
-target_direction = 270 + (30 * image_xscale);
-battle_box = 3154;
+var target_direction = 270 + (30 * image_xscale);
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
@@ -53,33 +51,33 @@ if ((y + vspeed) < ystart)
 
 if (spawn_feathers && feather_count > 0)
 {
-    spawn_line_length = 110;
-    spawn_angle = 90 - (70 * image_xscale);
-    spawn_length_inc = spawn_line_length / feather_count;
-    spawn_dist_current = 0;
-    dir_inc = feather_spread / feather_count;
-    start_dir = target_direction - (feather_spread * 0.5);
-    tar_dir = target_direction + (feather_spread * 0.5);
+    var spawn_line_length = 110;
+    var spawn_angle = 90 - (70 * image_xscale);
+    var spawn_length_inc = spawn_line_length / feather_count;
+    var spawn_dist_current = 0;
+    var dir_inc = feather_spread / feather_count;
+    var start_dir = target_direction - (feather_spread * 0.5);
+    var tar_dir = target_direction + (feather_spread * 0.5);
     
     if (image_xscale == 1)
     {
-        for (i = start_dir; i < tar_dir; i += dir_inc)
+        for (var i = start_dir; i < tar_dir; i += dir_inc)
         {
-            xx = lengthdir_x(spawn_dist_current, spawn_angle);
-            yy = lengthdir_y(spawn_dist_current, spawn_angle);
+            var xx = lengthdir_x(spawn_dist_current, spawn_angle);
+            var yy = lengthdir_y(spawn_dist_current, spawn_angle);
             spawn_dist_current += spawn_length_inc;
-            feather = instance_create_depth(x + xx, y + yy, depth + 1, obj_martlet_attack_wing_feather);
+            var feather = instance_create_depth(x + xx, y + yy, depth + 1, obj_martlet_attack_wing_feather);
             feather.direction = i;
         }
     }
     else
     {
-        for (i = tar_dir; i > start_dir; i -= dir_inc)
+        for (var i = tar_dir; i > start_dir; i -= dir_inc)
         {
-            xx = lengthdir_x(spawn_dist_current, spawn_angle);
-            yy = lengthdir_y(spawn_dist_current, spawn_angle);
+            var xx = lengthdir_x(spawn_dist_current, spawn_angle);
+            var yy = lengthdir_y(spawn_dist_current, spawn_angle);
             spawn_dist_current += spawn_length_inc;
-            feather = instance_create_depth(x + xx, y + yy, depth + 1, obj_martlet_attack_wing_feather);
+            var feather = instance_create_depth(x + xx, y + yy, depth + 1, obj_martlet_attack_wing_feather);
             feather.direction = i;
         }
     }

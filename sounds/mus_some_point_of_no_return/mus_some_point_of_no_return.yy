@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 81.26934,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/some_point_of_no_return.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "some_point_of_no_return.ogg",
+  "type": 1,
   "volume": 1.0,
 }

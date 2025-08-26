@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -10,7 +8,7 @@ draw_set_halign(fa_left);
 if (letter_array == -1)
     exit;
 
-for (i = 1; i <= letter_current; i++)
+for (var i = 1; i <= letter_current; i++)
 {
     if (shake == true)
     {

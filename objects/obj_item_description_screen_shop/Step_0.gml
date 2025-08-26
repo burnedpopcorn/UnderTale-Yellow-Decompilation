@@ -1,6 +1,4 @@
-var buy_shop_screen_number;
-
-buy_shop_screen_number = global.buy_shop_screen_number;
+var buy_shop_screen_number = global.buy_shop_screen_number;
 
 if (instance_exists(obj_text_item_buy_shop))
 {

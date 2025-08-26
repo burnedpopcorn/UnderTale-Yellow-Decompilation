@@ -1,5 +1,3 @@
-var len, pointdir, bullet;
-
 if (live_call())
     return global.live_result;
 
@@ -23,9 +21,9 @@ switch (scene)
     
     case 2:
         audio_play_sound(snd_impact_gunshot, 1, 0);
-        len = point_distance(0, 0, 55, -12);
-        pointdir = point_direction(0, 0, 55, -12);
-        bullet = instance_create_depth(x + lengthdir_x(len, image_angle + (pointdir * sign(image_yscale))), y + lengthdir_y(len, image_angle + (pointdir * sign(image_yscale))), depth - 1, obj_flowey_battle_gray_bullet);
+        var len = point_distance(0, 0, 55, -12);
+        var pointdir = point_direction(0, 0, 55, -12);
+        var bullet = instance_create_depth(x + lengthdir_x(len, image_angle + (pointdir * sign(image_yscale))), y + lengthdir_y(len, image_angle + (pointdir * sign(image_yscale))), depth - 1, obj_flowey_battle_gray_bullet);
         bullet.direction = direction;
         bullet.image_angle = direction;
         speed = -24;

@@ -9,7 +9,7 @@ if (variant == 2)
 
 if (variant == 0)
 {
-    if (keyboard_multicheck(0))
+    if (keyboard_multicheck(vk_nokey))
         image_index = 1;
     else
         image_index = 0;
@@ -17,7 +17,7 @@ if (variant == 0)
 
 if (variant == 1)
 {
-    if (keyboard_multicheck(1))
+    if (keyboard_multicheck(vk_anykey))
         image_index = 1;
     else
         image_index = 0;

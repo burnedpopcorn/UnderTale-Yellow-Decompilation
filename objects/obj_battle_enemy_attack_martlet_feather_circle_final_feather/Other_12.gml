@@ -1,5 +1,3 @@
-var target, sound;
-
 if (live_call())
     return global.live_result;
 
@@ -13,10 +11,11 @@ spawner_id.x_store = x_destination;
 spawner_id.y_store = y_destination;
 spawner_id.angle_store = angle_destination;
 global.id_store = id;
-target = instance_create_depth(x_destination, y_destination, -100, obj_battle_enemy_attack_martlet_feather_circle_final_target_1_axis);
+var target = instance_create_depth(x_destination, y_destination, -100, obj_battle_enemy_attack_martlet_feather_circle_final_target_1_axis);
 target.image_angle = angle_destination;
 id_target = global.id_store;
 state = 2;
+var sound;
 
 switch (sprite_index)
 {

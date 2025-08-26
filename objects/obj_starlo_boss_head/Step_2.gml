@@ -1,5 +1,3 @@
-var text_parent;
-
 if (!instance_exists(obj_starlo_boss_body))
 {
     instance_destroy();
@@ -12,10 +10,12 @@ if (obj_starlo_boss_body.damage_disjoint_x != 0)
     exit;
 }
 
+var text_parent;
+
 if (instance_exists(obj_quote_defeat_parent))
-    text_parent = 2961;
+    text_parent = 2962;
 else
-    text_parent = 2782;
+    text_parent = 2783;
 
 if (instance_exists(text_parent) && instance_exists(obj_quote_bubble_battle))
 {

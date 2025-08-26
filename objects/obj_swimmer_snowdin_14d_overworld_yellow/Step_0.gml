@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Swimming is a great full-body#  workout.";
                 message[1] = "* Are you seeing these limbs?#  I've never been so toned!";
                 message[2] = "* On top of that, I've dropped a#  whole goggle size!";
@@ -24,7 +24,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Sorry, can't talk anymore.";
                 message[1] = "* I've got swimming to do.";
                 message[2] = "* Those pounds don't drop#  themselves.";

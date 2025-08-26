@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -21,5 +19,5 @@ attack_counter_max = 4;
 attack_remote_destroy = false;
 instance_list = ds_list_create();
 
-for (i = 0; i < instance_number(-3); i++)
+for (var i = 0; i < instance_number(-3); i++)
     ds_list_add(instance_list, instance_find(-3, i));

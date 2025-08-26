@@ -1,18 +1,16 @@
 function scr_axis_clover_scan()
 {
-    var width, height, x_left, y_top, j;
-    
     if (live_call())
         return global.live_result;
     
-    width = sprite_get_width(sprite_index);
-    height = sprite_get_height(sprite_index);
+    var width = sprite_get_width(sprite_index);
+    var height = sprite_get_height(sprite_index);
     i_inc = width / 20;
     j_inc = 1;
-    x_left = x - sprite_xoffset;
-    y_top = (y + sprite_yoffset) - sprite_height;
+    var x_left = x - sprite_xoffset;
+    var y_top = (y + sprite_yoffset) - sprite_height;
     
-    for (j = 0; j < height; j += j_inc)
+    for (var j = 0; j < height; j += j_inc)
     {
         part = instance_create(x_left, y_top + j, obj_piece_clover_scan);
         

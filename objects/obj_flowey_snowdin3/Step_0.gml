@@ -9,7 +9,7 @@ if (global.route != 3)
         
         with (msg)
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "* Howdy!";
             message[1] = "* Congratulations on being#  rid of those old ruins#  for good!";
             message[2] = "* You couldn't even go#  back if you wanted#  to now!";
@@ -19,15 +19,15 @@ if (global.route != 3)
             message[6] = "* We won't be anywhere#  near your fancy Surface#  air for a while!";
             message[7] = "* Now, let's get moving#  before my petals freeze.";
             message[8] = "* Hop to it, bud!";
-            prt[0] = 348;
-            prt[1] = 357;
-            prt[2] = 347;
-            prt[3] = 352;
-            prt[4] = 348;
-            prt[5] = 348;
-            prt[6] = 348;
-            prt[7] = 348;
-            prt[8] = 348;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_worried;
+            prt[2] = flowey_niceside;
+            prt[3] = flowey_plain;
+            prt[4] = flowey_nice;
+            prt[5] = flowey_nice;
+            prt[6] = flowey_nice;
+            prt[7] = flowey_nice;
+            prt[8] = flowey_nice;
         }
         
         waiter = 2;
@@ -46,13 +46,13 @@ if (global.route != 3)
         
         with (msg)
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "* Actually, what was your#  name again?";
             message[1] = "* It isn't bud.";
             message[2] = "* It's... Gun... hat...?";
-            prt[0] = 348;
-            prt[1] = 352;
-            prt[2] = 348;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_plain;
+            prt[2] = flowey_nice;
             ch_msg = 2;
             ch[1] = "It's\nClover";
             ch[2] = "That's\nRight";
@@ -60,14 +60,14 @@ if (global.route != 3)
             if (outcome == 1 && message_current == 2)
             {
                 message[3] = "* Clover.";
-                prt[3] = 347;
+                prt[3] = flowey_niceside;
                 other.choice = 2;
                 other.waiter = 6;
             }
             else if (outcome == 2 && message_current == 2)
             {
                 message[3] = "* It is?";
-                prt[3] = 352;
+                prt[3] = flowey_plain;
                 other.choice = 1;
                 other.waiter = 6;
             }
@@ -89,24 +89,24 @@ if (global.route != 3)
         {
             if (other.choice == 1)
             {
-                sndfnt = 96;
+                sndfnt = sndfnt_flowey;
                 message[0] = "* Well, Gun-hat.#  Enough talk.";
                 message[1] = "* See ya.";
-                prt[0] = 352;
-                prt[1] = 348;
+                prt[0] = flowey_plain;
+                prt[1] = flowey_nice;
                 global.snowdin_flag[15] = 2;
             }
             else if (other.choice == 2)
             {
-                sndfnt = 96;
+                sndfnt = sndfnt_flowey;
                 message[0] = "* Nice name there.";
                 message[1] = "* I thought I was the#  only flower around here.";
                 message[2] = "* Well then, 'Clover.'#  Let's get a move on.";
                 message[3] = "* I'll see you up ahead,#  hopefully somewhere#  warmer.";
-                prt[0] = 347;
-                prt[1] = 348;
-                prt[2] = 348;
-                prt[3] = 347;
+                prt[0] = flowey_niceside;
+                prt[1] = flowey_nice;
+                prt[2] = flowey_nice;
+                prt[3] = flowey_niceside;
                 global.snowdin_flag[15] = 1;
             }
         }
@@ -122,7 +122,7 @@ else if (global.route == 3)
         
         with (msg)
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "* Howdy!";
             message[1] = "* Enjoying the scenery?";
             message[2] = "* Before you continue, I#  just wanted to let you#  know.";
@@ -136,19 +136,19 @@ else if (global.route == 3)
             message[10] = "* Just remember, killing#  some lonely ruins#  residents was one thing.";
             message[11] = "* But you're outside now#  pal.";
             message[12] = "* There's no erasing#  anymore, so think#  carefully.";
-            prt[0] = 348;
-            prt[1] = 348;
-            prt[2] = 347;
-            prt[3] = 348;
-            prt[4] = 348;
-            prt[5] = 348;
-            prt[6] = 348;
-            prt[7] = 349;
-            prt[8] = 348;
-            prt[9] = 347;
-            prt[10] = 348;
-            prt[11] = 348;
-            prt[12] = 348;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_nice;
+            prt[2] = flowey_niceside;
+            prt[3] = flowey_nice;
+            prt[4] = flowey_nice;
+            prt[5] = flowey_nice;
+            prt[6] = flowey_nice;
+            prt[7] = flowey_smirk;
+            prt[8] = flowey_nice;
+            prt[9] = flowey_niceside;
+            prt[10] = flowey_nice;
+            prt[11] = flowey_nice;
+            prt[12] = flowey_nice;
         }
         
         timer = 30;
@@ -164,11 +164,11 @@ else if (global.route == 3)
         
         with (msg)
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "* Or don't, 'cause that#  sounds boring.";
             message[1] = "* Whatever you pick, I'm#  rootin' for ya, pal!";
-            prt[0] = 349;
-            prt[1] = 348;
+            prt[0] = flowey_smirk;
+            prt[1] = flowey_nice;
         }
         
         if (!global.dialogue_open)
@@ -209,7 +209,7 @@ else if (timer == 0)
     timer = -1;
 }
 
-if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == 96)
+if (instance_exists(obj_dialogue) && obj_dialogue.sndfnt == sndfnt_flowey)
 {
     if (obj_dialogue.cutoff == string_length(obj_dialogue.message[obj_dialogue.message_current]))
     {

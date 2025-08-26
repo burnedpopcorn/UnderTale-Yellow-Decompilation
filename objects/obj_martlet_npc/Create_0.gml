@@ -42,6 +42,6 @@ actor_speed = 3;
 axis_override = "nothing";
 end_direction = "left";
 walk_collider = -4;
-npc_voice_sfx = 102;
+npc_voice_sfx = snd_talk_martlet;
 scr_load_palette_shader(0);
 palette_index = 0;

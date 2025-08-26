@@ -1,9 +1,7 @@
-var axis_run_speed, spawn_arrows, arrow_down, player_is_caught, distance_axis, distance_pl;
-
 if (live_call())
     return global.live_result;
 
-axis_run_speed = npc_axis_run_speed;
+var axis_run_speed = npc_axis_run_speed;
 show_debug_message(scene);
 
 switch (scene)
@@ -117,20 +115,20 @@ switch (scene)
         break;
     
     case 8:
-        spawn_arrows = false;
+        var spawn_arrows = false;
         scr_text();
         
         with (msg)
         {
-            sndfnt_array[0] = 111;
+            sndfnt_array[0] = snd_talk_axis;
             
             if (global.route == 2)
             {
                 message[0] = "* ESCAPED CONVICTS SPOTTED.#  STEAMWORKS:#  OFFICE BRANCH.";
-                prt[0] = 2916;
-                sndfnt_array[1] = 108;
+                prt[0] = spr_portrait_axis_shadow;
+                sndfnt_array[1] = snd_talk_ceroba;
                 message[1] = "* Oh no! Run!";
-                prt[1] = 381;
+                prt[1] = spr_portrait_ceroba_nervous;
                 
                 if (message_current == 1)
                 {
@@ -143,7 +141,7 @@ switch (scene)
             if (global.route == 1)
             {
                 message[0] = "* ESCAPED CONVICT SPOTTED.#  STEAMWORKS:#  OFFICE BRANCH.";
-                prt[0] = 2916;
+                prt[0] = spr_portrait_axis_shadow;
             }
         }
         
@@ -157,7 +155,7 @@ switch (scene)
         {
             instance_create_depth(1952, 96, -100, obj_axis_chase_flashing_arrow);
             instance_create_depth(1856, 96, -100, obj_axis_chase_flashing_arrow);
-            arrow_down = instance_create_depth(1792, 160, -100, obj_axis_chase_flashing_arrow);
+            var arrow_down = instance_create_depth(1792, 160, -100, obj_axis_chase_flashing_arrow);
             arrow_down.image_angle = 0;
         }
         
@@ -217,7 +215,7 @@ switch (scene)
         break;
     
     case 13:
-        cutscene_npc_walk(1168, 210, 700, 4, "y", "up");
+        cutscene_npc_walk(obj_player_npc, 210, 700, 4, "y", "up");
         break;
     
     case 14:
@@ -252,12 +250,12 @@ switch (scene)
     
     case 16:
         if (axis_is_running == false)
-            cutscene_npc_direction(1161, "left");
+            cutscene_npc_direction(obj_ceroba_npc, "left");
         
         break;
     
     case 17:
-        cutscene_npc_direction(1168, "right");
+        cutscene_npc_direction(obj_player_npc, "right");
         break;
     
     case 18:
@@ -265,22 +263,22 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Clover! The lockers!";
             message[1] = "* Follow me!";
-            prt[0] = 370;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_neutral;
         }
         
         break;
     
     case 19:
-        cutscene_npc_walk(1161, 76, 740, 4, "y", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 76, 740, 4, "y", "up");
         cutscene_advance();
         break;
     
     case 20:
-        cutscene_npc_walk(1168, 117, 735, 4, "y", "up");
+        cutscene_npc_walk(obj_player_npc, 117, 735, 4, "y", "up");
         cutscene_advance();
         break;
     
@@ -390,7 +388,7 @@ switch (scene)
         break;
     
     case 28:
-        cutscene_npc_direction(1166, "up");
+        cutscene_npc_direction(obj_axis_npc, "up");
         break;
     
     case 29:
@@ -398,7 +396,7 @@ switch (scene)
         break;
     
     case 30:
-        cutscene_npc_direction(1166, "left");
+        cutscene_npc_direction(obj_axis_npc, "left");
         break;
     
     case 31:
@@ -406,7 +404,7 @@ switch (scene)
         break;
     
     case 32:
-        cutscene_npc_direction(1166, "down");
+        cutscene_npc_direction(obj_axis_npc, "down");
         break;
     
     case 33:
@@ -418,9 +416,9 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 111;
+            sndfnt = snd_talk_axis;
             message[0] = "* HOW.";
-            prt[0] = 473;
+            prt[0] = spr_portrait_axis_normal;
         }
         
         break;
@@ -430,7 +428,7 @@ switch (scene)
         break;
     
     case 36:
-        cutscene_npc_walk(1166, -40, obj_axis_npc.y, 3, "x", "left");
+        cutscene_npc_walk(obj_axis_npc, -40, obj_axis_npc.y, 3, "x", "left");
         break;
     
     case 37:
@@ -500,8 +498,8 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            message[0] = "* Huff...";
+            talker[0] = obj_ceroba_npc;
+            message[0] = "* Huff... Huff...";
             message[1] = "* This guy means#  business!";
             message[2] = "* My husband was one hell#  of an engineer.";
             message[3] = "* I just wonder why he#  kept all this from me?";
@@ -509,21 +507,21 @@ switch (scene)
             message[5] = "* ...";
             message[6] = "* THE ROBOT! I totally#  forgot about our plan!";
             message[7] = "* Ugh, sorry. Next time#  we see Axis, we'll try#  it for sure.";
-            prt[0] = 381;
-            prt[1] = 394;
-            prt[2] = 377;
-            prt[3] = 370;
-            prt[4] = 370;
-            prt[5] = 394;
-            prt[6] = 393;
-            prt[7] = 394;
+            prt[0] = spr_portrait_ceroba_nervous;
+            prt[1] = spr_portrait_ceroba_disapproving;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
+            prt[3] = spr_portrait_ceroba_neutral;
+            prt[4] = spr_portrait_ceroba_neutral;
+            prt[5] = spr_portrait_ceroba_disapproving;
+            prt[6] = spr_portrait_ceroba_surprised;
+            prt[7] = spr_portrait_ceroba_disapproving;
         }
         
         break;
     
     case 43:
         scr_actor_into_follower(1161, 1171);
-        global.party_member = 1171;
+        global.party_member = obj_ceroba_follower;
         cutscene_advance();
         break;
     
@@ -543,26 +541,26 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             
             if (global.sworks_flag[12] == 0)
             {
                 message[0] = "* HALT.";
                 message[1] = "* YOU ARE COMING WITH ME.";
-                prt[0] = 473;
-                prt[1] = 473;
+                prt[0] = spr_portrait_axis_normal;
+                prt[1] = spr_portrait_axis_normal;
             }
             else
             {
                 message[0] = "* ENOUGH RUNNING.";
-                prt[0] = 473;
+                prt[0] = spr_portrait_axis_normal;
             }
         }
         
         break;
     
     case 46:
-        cutscene_change_room(172, 160, 290, 0.05);
+        cutscene_change_room(rm_steamworks_21b, 160, 290, 0.05);
         break;
     
     case 47:
@@ -629,7 +627,7 @@ switch (scene)
         break;
     
     case 52:
-        cutscene_npc_direction(1166, "up");
+        cutscene_npc_direction(obj_axis_npc, "up");
         break;
     
     case 53:
@@ -637,7 +635,7 @@ switch (scene)
         break;
     
     case 54:
-        cutscene_npc_direction(1166, "left");
+        cutscene_npc_direction(obj_axis_npc, "left");
         break;
     
     case 55:
@@ -645,7 +643,7 @@ switch (scene)
         break;
     
     case 56:
-        cutscene_npc_direction(1166, "down");
+        cutscene_npc_direction(obj_axis_npc, "down");
         break;
     
     case 57:
@@ -657,15 +655,15 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 111;
+            sndfnt = snd_talk_axis;
             message[0] = "* HOW.";
-            prt[0] = 473;
+            prt[0] = spr_portrait_axis_normal;
         }
         
         break;
     
     case 59:
-        cutscene_npc_walk(1166, -40, obj_axis_npc.y, 3, "x", "left");
+        cutscene_npc_walk(obj_axis_npc, -40, obj_axis_npc.y, 3, "x", "left");
         break;
     
     case 60:
@@ -723,13 +721,13 @@ if (axis_is_running == true)
             else if (direction == 270)
                 sprite_index = spr_axis_down;
             
-            player_is_caught = false;
+            var player_is_caught = false;
             other.checkpoint_x = path_get_point_x(pt_steamworks_21_axis_chase, other.check_point_current);
             other.checkpoint_y = path_get_point_y(pt_steamworks_21_axis_chase, other.check_point_current);
             other.checkpoint_x_axis = path_get_point_x(pt_steamworks_21_axis_chase, other.check_point_current_axis);
             other.checkpoint_y_axis = path_get_point_y(pt_steamworks_21_axis_chase, other.check_point_current_axis);
-            distance_axis = point_distance(obj_axis_npc.x, obj_axis_npc.y, other.checkpoint_x, other.checkpoint_y);
-            distance_pl = point_distance(obj_pl.x, obj_pl.y, other.checkpoint_x, other.checkpoint_y);
+            var distance_axis = point_distance(obj_axis_npc.x, obj_axis_npc.y, other.checkpoint_x, other.checkpoint_y);
+            var distance_pl = point_distance(obj_pl.x, obj_pl.y, other.checkpoint_x, other.checkpoint_y);
             
             if (distance_pl <= 60)
             {

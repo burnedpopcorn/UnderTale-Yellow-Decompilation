@@ -4,7 +4,7 @@ part_system_depth(part_snowfallsys, -9999);
 part_snowfall = part_type_create();
 part_type_sprite(part_snowfall, 636, 0, 0, 1);
 part_type_size(part_snowfall, 1, 1, 0, 0);
-part_type_colour2(part_snowfall, c_white, c_white);
+part_type_colour2(part_snowfall, 16777215, 16777215);
 part_type_alpha3(part_snowfall, 0.25, 0.95, 0);
 part_type_speed(part_snowfall, 0.3, 1.2, 0, 0);
 part_type_direction(part_snowfall, 250, 290, 0, 0);

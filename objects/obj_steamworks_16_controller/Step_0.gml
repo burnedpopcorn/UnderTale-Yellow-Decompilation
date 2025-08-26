@@ -45,7 +45,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* They're gone.";
             message[1] = "* Sigh... This is so#  confusing...";
             message[2] = "* I thought Axis said he#  was the last of his#  kind?";
@@ -56,16 +56,16 @@ switch (scene)
             message[7] = "* We don't know how many#  other robot types are#  out there.";
             message[8] = "* We'll figure it out in#  due time, I'm sure.";
             message[9] = "* Just... be extremely#  careful.";
-            prt[0] = 394;
-            prt[1] = 394;
-            prt[2] = 370;
-            prt[3] = 393;
-            prt[4] = 370;
-            prt[5] = 395;
-            prt[6] = 370;
-            prt[7] = 370;
-            prt[8] = 377;
-            prt[9] = 394;
+            prt[0] = spr_portrait_ceroba_disapproving;
+            prt[1] = spr_portrait_ceroba_disapproving;
+            prt[2] = spr_portrait_ceroba_neutral;
+            prt[3] = spr_portrait_ceroba_surprised;
+            prt[4] = spr_portrait_ceroba_neutral;
+            prt[5] = spr_portrait_ceroba_snarky;
+            prt[6] = spr_portrait_ceroba_neutral;
+            prt[7] = spr_portrait_ceroba_neutral;
+            prt[8] = spr_portrait_ceroba_closed_eyes;
+            prt[9] = spr_portrait_ceroba_disapproving;
         }
         
         break;

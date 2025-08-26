@@ -1,9 +1,7 @@
-var battle_box;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 scr_enemy_attack_bullet_hit();
 
 if (bullet_destroy_self)

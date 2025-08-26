@@ -1,5 +1,3 @@
-var ytarget, spawn_var;
-
 if (live_call())
     return global.live_result;
 
@@ -63,7 +61,7 @@ switch (scene)
     case 7:
         image_xscale = lerp(image_xscale, 0.9, 0.4);
         image_yscale = lerp(image_yscale, 1.1, 0.4);
-        ytarget = ystart - 30;
+        var ytarget = ystart - 30;
         y = lerp(y, ytarget, 0.4);
         
         if (abs(y - ytarget) < 0.5)
@@ -74,7 +72,8 @@ switch (scene)
     case 8:
         image_xscale = lerp(image_xscale, 1.1, 0.4);
         image_yscale = lerp(image_yscale, 0.9, 0.4);
-        ytarget = ystart + 20;
+        var ytarget = ystart + 20;
+        var spawn_var;
         
         do
             spawn_var = choose(1, 2, 3);

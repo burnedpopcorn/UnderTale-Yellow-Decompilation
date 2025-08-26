@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cd105a3b-50bf-4b78-9b28-b399b4304856",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec9cb78a-1ceb-4d2b-a431-8f3fa76ac8ab",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b1dcbae8-44cc-4240-9cf1-ae03daaeecf0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cab8bebb-c896-4d7c-9b40-f271149de2ba",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 57,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8eadd8af-e21d-4f0f-a112-0108d6679a69","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"332daf45-a44e-46fd-8ddf-ea080c72a056","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cd105a3b-50bf-4b78-9b28-b399b4304856","path":"sprites/spr_credits_intermission_raft_fall/spr_credits_intermission_raft_fall.yy",},},},"Disabled":false,"id":"9cef924a-6417-47e1-8444-050512b73d7d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ec9cb78a-1ceb-4d2b-a431-8f3fa76ac8ab","path":"sprites/spr_credits_intermission_raft_fall/spr_credits_intermission_raft_fall.yy",},},},"Disabled":false,"id":"dfc2f32b-ba39-4e3a-9911-bbc381ddcbae","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b1dcbae8-44cc-4240-9cf1-ae03daaeecf0","path":"sprites/spr_credits_intermission_raft_fall/spr_credits_intermission_raft_fall.yy",},},},"Disabled":false,"id":"e294ce5c-c8db-49ed-9403-ad1f6f491989","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cab8bebb-c896-4d7c-9b40-f271149de2ba","path":"sprites/spr_credits_intermission_raft_fall/spr_credits_intermission_raft_fall.yy",},},},"Disabled":false,"id":"2d2e0386-ad01-4c5c-907d-3e4c7af5ce12","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "newhome",
+    "path": "texturegroups/newhome",
   },
   "type": 0,
   "VTile": false,

@@ -1,6 +1,4 @@
-var current_tube;
-
-for (current_tube = 0; current_tube < 2; current_tube += 1)
+for (var current_tube = 0; current_tube < 2; current_tube += 1)
 {
     lava_tube_x[current_tube] -= lava_tube_speed;
     

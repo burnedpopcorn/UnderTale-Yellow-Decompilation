@@ -24,7 +24,7 @@ switch (scene)
         break;
     
     case 2:
-        if (cutscene_npc_walk(1168, obj_player_npc.x, 250, 3, "y", "down"))
+        if (cutscene_npc_walk(obj_player_npc, obj_player_npc.x, 250, 3, "y", "down"))
         {
             if (global.party_member != -4)
                 scene = 3;
@@ -43,7 +43,7 @@ switch (scene)
         break;
     
     case 4:
-        cutscene_npc_walk(1164, obj_player_npc.x, 230, 3, "y", "down");
+        cutscene_npc_walk(obj_martlet_npc, obj_player_npc.x, 230, 3, "y", "down");
         break;
     
     case 5:
@@ -72,7 +72,7 @@ switch (scene)
 switch (scene)
 {
     case 8:
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
         {
             if (global.hotland_flag[1] < 1 && global.hotland_flag[9] < 3)
             {
@@ -115,7 +115,7 @@ switch (scene)
         break;
     
     case 11:
-        if (cutscene_npc_walk(1168, 378, 200, 3, "x", "down"))
+        if (cutscene_npc_walk(obj_player_npc, 378, 200, 3, "x", "down"))
         {
             if (global.party_member != -4)
                 scene = 12;
@@ -129,7 +129,7 @@ switch (scene)
         break;
     
     case 12:
-        cutscene_npc_walk(1164, 378, 200, 3, "x", "down");
+        cutscene_npc_walk(obj_martlet_npc, 378, 200, 3, "x", "down");
         
         if (obj_martlet_npc.y < 235 && obj_martlet_npc.image_alpha > 0)
             obj_martlet_npc.image_alpha -= 0.2;
@@ -137,7 +137,7 @@ switch (scene)
         break;
     
     case 13:
-        cutscene_change_room(259, 160, 220, 0.1);
+        cutscene_change_room(rm_hotland_elevator, 160, 220, 0.1);
         break;
 }
 

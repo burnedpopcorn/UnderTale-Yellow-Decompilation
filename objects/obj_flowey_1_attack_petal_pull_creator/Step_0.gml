@@ -1,5 +1,3 @@
-var spawner;
-
 if (live_call())
     return global.live_result;
 
@@ -40,7 +38,7 @@ switch (scene)
         
         if (pick_index >= 12)
         {
-            spawner = instance_create_depth(x, y, depth, obj_petal_pull_pollen_spawner);
+            var spawner = instance_create_depth(x, y, depth, obj_petal_pull_pollen_spawner);
             spawner.spawn_x = x - 33;
             spawner.spawn_y = y - 28;
             spawner.spawn_direction = 180;
@@ -87,7 +85,7 @@ switch (scene)
         
         if (pick_index >= 26)
         {
-            spawner = instance_create_depth(x, y, depth, obj_petal_pull_pollen_spawner);
+            var spawner = instance_create_depth(x, y, depth, obj_petal_pull_pollen_spawner);
             spawner.spawn_x = x + 28;
             spawner.spawn_y = y - 28;
             spawner.spawn_direction = 0;

@@ -1,5 +1,3 @@
-var xx, bg_yy, yy, play_time, string_minutes, string_seconds;
-
 if (live_call())
     return global.live_result;
 
@@ -10,13 +8,13 @@ with (other)
     
     if (room == rm_mainmenu)
     {
-        xx = 160;
-        bg_yy = 175;
+        var xx = 160;
+        var bg_yy = 175;
         
         if (route != 3)
             draw_sprite(global.menu_sprite, 0, xx, bg_yy);
         
-        yy = 70;
+        var yy = 70;
         
         if (p[1] == true)
             draw_set_color(c_yellow);
@@ -41,9 +39,9 @@ with (other)
         ini_open("Save.sav");
         draw_text_outline(__view_get(e__VW.XView, 0) + 65, yy - 50, string_hash_to_newline("Clover"));
         draw_text_outline(__view_get(e__VW.XView, 0) + 145, yy - 50, string_hash_to_newline("LV" + string(ini_read_real("Save1", "LV", 1))));
-        play_time = ini_read_real("Playtime", "Seconds", 0);
-        string_minutes = string(play_time div 60);
-        string_seconds = string(play_time % 60);
+        var play_time = ini_read_real("Playtime", "Seconds", 0);
+        var string_minutes = string(play_time div 60);
+        var string_seconds = string(play_time % 60);
         
         if (real(string_minutes) < 10)
             string_minutes = "0" + string_minutes;

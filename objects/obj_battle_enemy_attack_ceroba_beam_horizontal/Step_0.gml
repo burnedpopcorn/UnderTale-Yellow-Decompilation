@@ -1,5 +1,3 @@
-var x_original, x_max;
-
 switch (attack_beam_stage)
 {
     case 0:
@@ -54,8 +52,8 @@ switch (attack_beam_stage)
 if (attack_beam_stage == 0)
     exit;
 
-x_original = 0;
-x_max = room_width;
+var x_original = 0;
+var x_max = room_width;
 
 if (obj_heart_battle_fighting_parent.vulnerable == true && point_in_rectangle(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, x_original, y - (attack_beam_width_current / 2), x_max, y + (attack_beam_width_current / 2)))
 {

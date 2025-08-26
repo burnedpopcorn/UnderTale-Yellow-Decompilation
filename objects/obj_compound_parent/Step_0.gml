@@ -1,19 +1,17 @@
-var robot_item_x_player, robot_item_y_player, nearest_item;
-
 if (live_call())
     return global.live_result;
 
 if (global.sworks_flag[25] == 0 || global.sworks_flag[25] > 1)
     exit;
 
-robot_item_x_player = obj_pl.x;
-robot_item_y_player = obj_pl.y - 9 - (sprite_height - sprite_yoffset);
-nearest_item = 0;
+var robot_item_x_player = obj_pl.x;
+var robot_item_y_player = obj_pl.y - 9 - (sprite_height - sprite_yoffset);
+var nearest_item = 0;
 
 with (obj_pl)
     nearest_item = instance_nearest(x, y, obj_compound_parent);
 
-if (distance_to_point(obj_pl.x, obj_pl.y) < 40 && nearest_item == id && keyboard_multicheck_pressed(0) && obj_pl.state == scr_normal_state)
+if (distance_to_point(obj_pl.x, obj_pl.y) < 40 && nearest_item == id && keyboard_multicheck_pressed(vk_nokey) && obj_pl.state == scr_normal_state)
 {
     if (robot_item_is_carried == false && robot_item_can_pickup == true)
     {
@@ -73,7 +71,7 @@ sprite_set_offset(spr_comp_pepper, 3, -11);
 
 if (robot_item_is_carried == true)
 {
-    if (keyboard_multicheck(1) && obj_pl.state == scr_normal_state)
+    if (keyboard_multicheck(vk_anykey) && obj_pl.state == scr_normal_state)
     {
         audio_play_sound(snd_fail, 1, 0);
         robot_item_is_carried = false;

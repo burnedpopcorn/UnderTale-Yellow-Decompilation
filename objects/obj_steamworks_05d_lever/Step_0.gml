@@ -1,5 +1,3 @@
-var tile, i, snd;
-
 if (live_call())
     return global.live_result;
 
@@ -7,7 +5,7 @@ if (global.sworks_flag[1] >= 4)
 {
     if (global.route != 3 || global.sworks_flag[1] != 4)
     {
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
         {
             scr_text();
             
@@ -24,7 +22,7 @@ if (global.route != 3)
     switch (scene)
     {
         case 0:
-            if (scr_interact() && keyboard_multicheck_pressed(0))
+            if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             {
                 audio_play_sound(snd_switch, 1, 0);
                 image_speed = 1/3;
@@ -46,7 +44,7 @@ if (global.route != 3)
             break;
         
         case 2:
-            cutscene_sfx_play(384, 1);
+            cutscene_sfx_play(snd_undertale_thud, 1);
             break;
         
         case 3:
@@ -85,9 +83,9 @@ if (global.route != 3)
             break;
         
         case 9:
-            tile = tile_get_ids_at_depth(1000006);
+            var tile = tile_get_ids_at_depth(1000006);
             
-            for (i = 0; i < array_length_1d(tile); i++)
+            for (var i = 0; i < array_length_1d(tile); i++)
                 tile_set_alpha(tile[i], tile_alpha);
             
             audio_play_sound(snd_undertale_appear, 1, 0);
@@ -130,7 +128,7 @@ if (global.route != 3)
             break;
         
         case 15:
-            cutscene_change_room(144, 220, 280, 0.025);
+            cutscene_change_room(rm_steamworks_04, 220, 280, 0.025);
             break;
     }
 }
@@ -139,7 +137,7 @@ else
     switch (scene)
     {
         case 0:
-            if (scr_interact() && keyboard_multicheck_pressed(0))
+            if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             {
                 scr_radio_fade(0, 500);
                 scr_cutscene_start();
@@ -167,7 +165,7 @@ else
             break;
         
         case 4:
-            cutscene_sfx_play(603, 1);
+            cutscene_sfx_play(snd_lever_break, 1);
             break;
         
         case 5:
@@ -206,7 +204,7 @@ else
             break;
         
         case 11:
-            tile = tile_get_ids_at_depth(1000006);
+            var tile = tile_get_ids_at_depth(1000006);
             
             if (flicker_count <= 0)
             {
@@ -223,10 +221,10 @@ else
                 flicker_count -= 1;
             }
             
-            for (i = 0; i < array_length_1d(tile); i++)
+            for (var i = 0; i < array_length_1d(tile); i++)
                 tile_set_alpha(tile[i], tile_alpha);
             
-            snd = audio_play_sound(snd_undertale_appear, 1, 0);
+            var snd = audio_play_sound(snd_undertale_appear, 1, 0);
             audio_sound_pitch(snd, random_range(0.9, 1.35));
             break;
         
@@ -247,7 +245,7 @@ else
             break;
         
         case 16:
-            cutscene_change_room(144, 220, 280, 0.025);
+            cutscene_change_room(rm_steamworks_04, 220, 280, 0.025);
             break;
         
         case 17:
@@ -260,7 +258,7 @@ else
             with (msg)
             {
                 color = true;
-                col_modif[0] = 16711935;
+                col_modif[0] = c_fuchsia;
                 message[0] = "* ERROR: COOLANT PRESSURE LOW";
                 message[1] = "* GENERATOR STATUS: UNSTABLE";
                 message_col[0][0] = "* ERROR: COOLANT PRESSURE LOW";
@@ -282,7 +280,7 @@ else
         
         case 21:
             obj_flowey_npc.image_alpha = 1;
-            cutscene_npc_action_sprite(3194, 242, 0.2, false);
+            cutscene_npc_action_sprite(obj_flowey_npc, spr_floweyrise, 0.2, false);
             break;
         
         case 22:
@@ -294,19 +292,19 @@ else
             
             with (msg)
             {
-                talker[0] = 3194;
+                talker[0] = obj_flowey_npc;
                 message[0] = "* Gee, wonder how that#  came to be?";
                 message[1] = "* I think I'm gonna start#  praying for our safety.";
                 message[2] = "* Ya know, in case the#  facility explodes while#  we're knee deep in it.";
-                prt[0] = 353;
-                prt[1] = 352;
-                prt[2] = 351;
+                prt[0] = flowey_plains;
+                prt[1] = flowey_plain;
+                prt[2] = flowey_pissed;
             }
             
             break;
         
         case 24:
-            if (cutscene_npc_action_sprite(3194, 245, 0.2, false))
+            if (cutscene_npc_action_sprite(obj_flowey_npc, spr_floweyleave, 0.2, false))
                 instance_destroy(obj_flowey_npc);
             
             break;

@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -12,7 +10,7 @@ if (letter_array == -1)
 
 draw_set_alpha(draw_alpha);
 
-for (i = 1; i <= letter_current; i++)
+for (var i = 1; i <= letter_current; i++)
 {
     text_x_mod = random_range(-0.5, 0.5);
     text_y_mod = random_range(-0.5, 0.5);

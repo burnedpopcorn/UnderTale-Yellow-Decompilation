@@ -32,7 +32,7 @@ if (waiter == 1)
                     ch[2] = "No";
                 }
                 
-                message[0] = "* (You notice a subtle indention#  in the dirt behind the#  gravestone.)";
+                message[0] = "* (You notice a subtle#  indentation in the dirt#  behind the gravestone.)";
                 message[1] = "* (Inspect further?)";
                 
                 if (outcome == 1)

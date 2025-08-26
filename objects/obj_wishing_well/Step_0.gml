@@ -1,17 +1,15 @@
-var party_member_present_martlet;
-
 if (live_call())
     return global.live_result;
 
-if (keyboard_multicheck_pressed(0) && scr_interact())
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
     object_is_active = true;
 
 if (object_is_active == false)
     exit;
 
-party_member_present_martlet = false;
+var party_member_present_martlet = false;
 
-if (global.party_member == 1170)
+if (global.party_member == obj_martlet_follower)
     party_member_present_martlet = true;
 
 if (global.dunes_flag[18] < 2)
@@ -59,22 +57,22 @@ if (global.dunes_flag[18] < 2)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             ch_msg = 2;
             ch[1] = "Yes";
             ch[2] = "No";
-            talker[0] = 1170;
+            talker[0] = obj_martlet_follower;
             message[0] = "* Well well well, what do#  we have here?";
             message[1] = "* Aw, I left all my G#  at home.";
             message[2] = "* Would you lend me one?";
-            prt[0] = 337;
-            prt[1] = 338;
-            prt[2] = 328;
+            prt[0] = spr_martlet_head_wink;
+            prt[1] = spr_martlet_head_wondering;
+            prt[2] = spr_martlet_head_regular;
             
             if (outcome == 1)
             {
                 message[3] = "* Thank you!!";
-                prt[3] = 318;
+                prt[3] = spr_martlet_head_happy;
                 scr_cutscene_start();
                 other.cutscene_event = 1;
             }
@@ -83,8 +81,8 @@ if (global.dunes_flag[18] < 2)
             {
                 message[3] = "* Oh, alright.";
                 message[4] = "* I knew I shoulda grabbed#  some money before#  leaving Snowdin.";
-                prt[3] = 323;
-                prt[4] = 321;
+                prt[3] = spr_martlet_head_nervous_smile;
+                prt[4] = spr_martlet_head_moderate;
                 other.object_is_active = false;
             }
         }
@@ -162,14 +160,14 @@ if (global.dunes_flag[18] < 2)
             
             with (msg)
             {
-                sndfnt = 102;
-                talker[0] = 1164;
+                sndfnt = snd_talk_martlet;
+                talker[0] = obj_martlet_npc;
                 message[0] = "* Hmmm...";
                 message[1] = "* I wish...";
                 message[2] = "* That Clover will make it#  back home safely!";
-                prt[0] = 338;
-                prt[1] = 321;
-                prt[2] = 313;
+                prt[0] = spr_martlet_head_wondering;
+                prt[1] = spr_martlet_head_moderate;
+                prt[2] = spr_martlet_head_determined;
             }
             
             if (!global.dialogue_open)
@@ -197,10 +195,10 @@ if (global.dunes_flag[18] < 2)
             
             with (msg)
             {
-                sndfnt = 102;
-                talker[0] = 1164;
+                sndfnt = snd_talk_martlet;
+                talker[0] = obj_martlet_npc;
                 message[0] = "* Now you have me, AND a#  wish on your side!";
-                prt[0] = 312;
+                prt[0] = spr_martlet_head_content;
             }
             
             if (obj_pl.x < obj_martlet_npc.x)

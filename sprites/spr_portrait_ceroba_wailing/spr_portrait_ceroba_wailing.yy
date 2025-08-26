@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9ad47cd0-7ef4-49bf-a085-8dceae84d16e",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a228eda4-3e52-4fbc-a289-5a474078ad96",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"32f529e4-9310-490a-a650-3e32fbd43ae8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"73caaea1-f810-4487-bc7c-27f433737f38",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 106,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ad2ea5f3-eb9f-425d-87a2-1bf0e5f0af06","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0b4ebf37-2c9e-4907-9ed4-1ffac41163da","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9ad47cd0-7ef4-49bf-a085-8dceae84d16e","path":"sprites/spr_portrait_ceroba_wailing/spr_portrait_ceroba_wailing.yy",},},},"Disabled":false,"id":"90e44810-78e7-40c8-8cc0-adb615ef4e81","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a228eda4-3e52-4fbc-a289-5a474078ad96","path":"sprites/spr_portrait_ceroba_wailing/spr_portrait_ceroba_wailing.yy",},},},"Disabled":false,"id":"646cdf06-1c98-478f-a271-a979a5b0f1cc","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"32f529e4-9310-490a-a650-3e32fbd43ae8","path":"sprites/spr_portrait_ceroba_wailing/spr_portrait_ceroba_wailing.yy",},},},"Disabled":false,"id":"8cb4c015-9ca5-42d9-aa94-6843f6ac4360","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"73caaea1-f810-4487-bc7c-27f433737f38","path":"sprites/spr_portrait_ceroba_wailing/spr_portrait_ceroba_wailing.yy",},},},"Disabled":false,"id":"1425b5a2-9e63-414a-aca8-659035c90b9a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "GeneralUse",
+    "path": "texturegroups/GeneralUse",
   },
   "type": 0,
   "VTile": false,

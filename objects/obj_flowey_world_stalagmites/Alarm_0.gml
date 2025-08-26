@@ -1,8 +1,6 @@
-var play_sound;
-
 image_speed = 1;
 active = false;
-play_sound = true;
+var play_sound = true;
 
 with (obj_flowey_world_stalagmites)
 {

@@ -1,13 +1,11 @@
 function scr_battle_core_directory_enemy_attack_scripts()
 {
-    var battle_enemy_name, game_mode;
-    
-    battle_enemy_name = global.battle_enemy_name;
-    game_mode = global.game_mode;
+    var battle_enemy_name = global.battle_enemy_name;
+    var game_mode = global.game_mode;
     
     if (instance_exists(obj_heart_battle_fighting_parent))
     {
-        if (global.party_member == 1171)
+        if (global.party_member == obj_ceroba_follower)
         {
             if (battle_ceroba_buff_noloop == false && obj_heart_battle_fighting_parent.moveable == true)
             {

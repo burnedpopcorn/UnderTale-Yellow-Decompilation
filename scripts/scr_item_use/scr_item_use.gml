@@ -1,17 +1,16 @@
-function scr_item_use(argument0, argument1)
+function scr_item_use(arg0, arg1)
 {
-    var item, i, item_type, heal_value, pp_value, sp_value, rp_value, def_value, atk_value, use_msg, msg_number, n;
-    
-    item = argument0;
-    i = argument1;
+    var item = arg0;
+    var i = arg1;
+    var use_msg;
     use_msg[0] = "nothing";
-    item_type = 1;
-    heal_value = 0;
-    pp_value = 0;
-    sp_value = 0;
-    rp_value = 0;
-    def_value = 0;
-    atk_value = 0;
+    var item_type = 1;
+    var heal_value = 0;
+    var pp_value = 0;
+    var sp_value = 0;
+    var rp_value = 0;
+    var def_value = 0;
+    var atk_value = 0;
     
     switch (item)
     {
@@ -205,7 +204,7 @@ function scr_item_use(argument0, argument1)
         case "Fruitcake":
             heal_value = 25;
             item_type = 1;
-            use_msg[0] = "* (You scarf down the Fruitcake.#  The Swealterstones burn your#  throat!)";
+            use_msg[0] = "* (You scarf down the Fruitcake.#  The Swelterstones burn your#  throat!)";
             break;
         
         case "Spider Donut":
@@ -367,7 +366,7 @@ function scr_item_use(argument0, argument1)
             item_type = 2;
             atk_value = 4;
             use_msg[0] = "* (You load the Coffee Beans.)";
-            use_msg[1] = "* (Your gun now smells delightful.)";
+            use_msg[1] = "* (Your gun now smells#  delightful.)";
             break;
         
         case "Super Ammo":
@@ -475,7 +474,7 @@ function scr_item_use(argument0, argument1)
         
         case "Snowdin Map":
             item_type = 0;
-            use_msg[0] = "* (It's accuracy seems#  compromised.)";
+            use_msg[0] = "* (Its accuracy seems#  compromised.)";
             use_msg[1] = "* (You aren't sure how to use#  it.)";
             break;
         
@@ -512,7 +511,7 @@ function scr_item_use(argument0, argument1)
             global.current_sp_self += sp_value;
             global.current_sp_self = clamp(global.current_sp_self, 0, global.max_sp_self);
             
-            if (argument0 == "Sea Tea")
+            if (arg0 == "Sea Tea")
             {
                 global.current_hp_self += 10;
                 global.current_hp_self = clamp(global.current_hp_self, 0, global.max_hp_self);
@@ -533,7 +532,7 @@ function scr_item_use(argument0, argument1)
             
             with (msg)
             {
-                msg_number = array_length_1d(use_msg);
+                var msg_number = array_length_1d(use_msg);
                 
                 if (global.route == 3)
                 {
@@ -609,7 +608,7 @@ function scr_item_use(argument0, argument1)
             
             with (msg)
             {
-                msg_number = array_length_1d(use_msg);
+                var msg_number = array_length_1d(use_msg);
                 
                 for (i = 0; i < msg_number; i++)
                     message[i] = use_msg[i];
@@ -619,7 +618,7 @@ function scr_item_use(argument0, argument1)
     
     if (item_type != 0)
     {
-        for (n = 1; n < 8; n++)
+        for (var n = 1; n < 8; n++)
         {
             if (global.item_slot[n] == "Nothing" && global.item_slot[n + 1] != "Nothing")
             {

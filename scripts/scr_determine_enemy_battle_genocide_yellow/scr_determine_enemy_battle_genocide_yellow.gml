@@ -1,11 +1,9 @@
 function scr_determine_enemy_battle_genocide_yellow()
 {
-    var current_world_value, enemy_count, part_1, part_2;
-    
-    current_world_value = script_execute(scr_determine_world_value_yellow);
-    enemy_count = global.enemy_count;
-    part_1 = 0;
-    part_2 = 0;
+    var current_world_value = script_execute(scr_determine_world_value_yellow);
+    var enemy_count = global.enemy_count;
+    var part_1 = 0;
+    var part_2 = 0;
     
     switch (current_world_value)
     {

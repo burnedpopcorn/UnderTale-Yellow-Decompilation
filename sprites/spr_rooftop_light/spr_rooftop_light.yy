@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cc023c2c-e631-4a22-a9f8-cd4176fd3482",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fb2ab813-5b56-4a05-ab4e-70206ea9e173",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d7416f43-8bca-42cc-ab74-9ea1d18e0e89",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"78e7deda-2ad9-447a-9f22-a54fe2bc6008",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 60,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a2242243-d8d1-4964-b397-5a001844b37b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c297b85c-9a2a-4ad0-bdb2-8be664675ea9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cc023c2c-e631-4a22-a9f8-cd4176fd3482","path":"sprites/spr_rooftop_light/spr_rooftop_light.yy",},},},"Disabled":false,"id":"5f88e57b-ce70-4103-a3af-5bb4da774a96","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fb2ab813-5b56-4a05-ab4e-70206ea9e173","path":"sprites/spr_rooftop_light/spr_rooftop_light.yy",},},},"Disabled":false,"id":"86b063ff-5299-4482-9259-4266151b9ff1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d7416f43-8bca-42cc-ab74-9ea1d18e0e89","path":"sprites/spr_rooftop_light/spr_rooftop_light.yy",},},},"Disabled":false,"id":"c1b06a2d-a6a2-435e-ba9f-9ad962671ff1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"78e7deda-2ad9-447a-9f22-a54fe2bc6008","path":"sprites/spr_rooftop_light/spr_rooftop_light.yy",},},},"Disabled":false,"id":"15a71510-5c58-45c2-9da1-9410bb16921e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Hotland",
+    "path": "texturegroups/Hotland",
   },
   "type": 0,
   "VTile": false,

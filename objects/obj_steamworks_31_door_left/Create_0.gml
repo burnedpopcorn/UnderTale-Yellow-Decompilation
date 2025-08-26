@@ -1,15 +1,13 @@
-var doorway;
-
 image_speed = 0;
 
 if (global.sworks_flag[21] == 1)
 {
     image_index = image_number - 1;
-    doorway = instance_create_depth(120, 300, 300, obj_doorway);
+    var doorway = instance_create_depth(120, 300, 300, obj_doorway);
     
     with (doorway)
     {
-        nextroom = 192;
+        nextroom = rm_steamworks_factory_01;
         xx = 720;
         yy = 470;
         image_xscale = 3;

@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 3.0345626,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/ambient_river.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "ambient_river.ogg",
+  "type": 1,
   "volume": 1.0,
 }

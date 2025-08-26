@@ -1,20 +1,18 @@
-var first_time, demo_check;
-
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     instance_destroy();
     
     with (obj_yellowlogoINTRO)
         instance_destroy();
     
-    first_time = false;
+    var first_time = false;
     
     if (!file_exists("Save.sav"))
         first_time = true;
     
     if (file_exists("Save.sav"))
     {
-        demo_check = false;
+        var demo_check = false;
         ini_open("Save.sav");
         demo_check = ini_key_exists("Save1", "Progress");
         

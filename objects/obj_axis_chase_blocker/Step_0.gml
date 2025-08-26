@@ -1,5 +1,3 @@
-var door;
-
 if (live_call())
     return global.live_result;
 
@@ -9,7 +7,7 @@ if (global.sworks_flag[12] >= 2)
     exit;
 }
 
-door = instance_place(x, y, obj_doorway);
+var door = instance_place(x, y, obj_doorway);
 
 if (door != -4)
     instance_destroy(door);

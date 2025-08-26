@@ -4,7 +4,7 @@ if (!instance_exists(obj_pl))
 if (global.flag[4] == true && image_index == 0)
     swit = true;
 
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     if (scr_interact() == true)
     {

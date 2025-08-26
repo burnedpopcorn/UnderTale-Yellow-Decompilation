@@ -1,5 +1,3 @@
-var x_offset, y_offset;
-
 if (draw_enabled == false)
     exit;
 
@@ -11,8 +9,8 @@ if (global.enemy_sparing && message_current == 2)
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-x_offset = 21;
-y_offset = 9;
+var x_offset = 21;
+var y_offset = 9;
 
 if (global.turns_passed == 0 && message_current == 0)
     y_offset = 25;

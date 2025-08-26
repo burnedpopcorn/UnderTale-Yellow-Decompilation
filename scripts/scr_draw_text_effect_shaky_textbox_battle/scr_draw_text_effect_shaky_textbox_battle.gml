@@ -1,13 +1,11 @@
 function scr_draw_text_effect_shaky_textbox_battle()
 {
-    var shaky_text_intensity, i;
-    
-    shaky_text_intensity = global.shaky_text_intensity;
+    var shaky_text_intensity = global.shaky_text_intensity;
     str_indent = "";
     str_indent_count = 0;
     str_offset = -string_width(string_hash_to_newline(string_copy("A", 1, 1)));
     
-    for (i = 1; i <= characters; i += 1)
+    for (var i = 1; i <= characters; i += 1)
     {
         str_char = string_char_at(message[message_current], i);
         

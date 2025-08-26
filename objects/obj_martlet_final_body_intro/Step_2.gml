@@ -1,6 +1,4 @@
-var text_parent;
-
-text_parent = 285;
+var text_parent = 285;
 
 if (sprite_index != spr_martlet_final_intro_1 && sprite_index != spr_martlet_final_intro_3)
     exit;

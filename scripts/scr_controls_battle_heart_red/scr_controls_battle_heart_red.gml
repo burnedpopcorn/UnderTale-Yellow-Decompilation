@@ -6,8 +6,8 @@ function scr_controls_battle_heart_red()
         key_left = -global.left_key;
         key_down = global.down_key;
         key_up = -global.up_key;
-        key_select = keyboard_multicheck(0);
-        key_revert = keyboard_multicheck(1);
+        key_select = keyboard_multicheck(vk_nokey);
+        key_revert = keyboard_multicheck(vk_anykey);
     }
     else
     {

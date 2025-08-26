@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"68614c31-d79f-4370-b846-a82b3d9a7ced",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c753f43d-5c74-42e8-8036-b9915f7f8c34",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f50fe80b-7fcf-40b1-8b43-c9526b7cfabd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4784debd-a3c5-4649-b59e-3dfc6e78f6df",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9b838ca5-83d9-4a42-8989-acf6398bd76b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6d6fc4f9-7af2-4a89-9c3b-133f418e33f1",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 12,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2ce185ac-dfda-4b2c-bca3-d711f4f135c6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2cc7867f-52cb-414b-a6e3-6e145e388f0d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"68614c31-d79f-4370-b846-a82b3d9a7ced","path":"sprites/spr_falling_boulders_attack_boulder_pieces/spr_falling_boulders_attack_boulder_pieces.yy",},},},"Disabled":false,"id":"d7089f2a-9256-4d12-9ba8-888178a27dc3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c753f43d-5c74-42e8-8036-b9915f7f8c34","path":"sprites/spr_falling_boulders_attack_boulder_pieces/spr_falling_boulders_attack_boulder_pieces.yy",},},},"Disabled":false,"id":"875acd49-c272-4c5c-b3af-d92bb9298999","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f50fe80b-7fcf-40b1-8b43-c9526b7cfabd","path":"sprites/spr_falling_boulders_attack_boulder_pieces/spr_falling_boulders_attack_boulder_pieces.yy",},},},"Disabled":false,"id":"60546c10-7875-4a0c-a67e-47d559ec5ecc","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4784debd-a3c5-4649-b59e-3dfc6e78f6df","path":"sprites/spr_falling_boulders_attack_boulder_pieces/spr_falling_boulders_attack_boulder_pieces.yy",},},},"Disabled":false,"id":"9ca8d8b9-8eb8-4b4c-950e-6c8a73cdc349","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9b838ca5-83d9-4a42-8989-acf6398bd76b","path":"sprites/spr_falling_boulders_attack_boulder_pieces/spr_falling_boulders_attack_boulder_pieces.yy",},},},"Disabled":false,"id":"877e0f0f-f738-45a0-9ba5-c0b1adabb8cc","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6d6fc4f9-7af2-4a89-9c3b-133f418e33f1","path":"sprites/spr_falling_boulders_attack_boulder_pieces/spr_falling_boulders_attack_boulder_pieces.yy",},},},"Disabled":false,"id":"4205e2c0-3c8a-4e7f-840c-c9b56c09f21c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleDunes",
+    "path": "texturegroups/BattleDunes",
   },
   "type": 0,
   "VTile": false,

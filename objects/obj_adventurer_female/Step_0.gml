@@ -1,11 +1,9 @@
-var geno_snowdin;
-
-geno_snowdin = false;
+var geno_snowdin = false;
 
 if (global.geno_complete[2])
     geno_snowdin = true;
 
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     scr_text();
     is_talking = true;
@@ -17,7 +15,7 @@ if (waiter == 1)
     with (msg)
     {
         portrait = false;
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         
         if (global.route == 3 && geno_snowdin == false)
         {

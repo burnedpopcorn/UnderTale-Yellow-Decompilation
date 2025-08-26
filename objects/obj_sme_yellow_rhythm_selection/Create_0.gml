@@ -1,7 +1,5 @@
-var generator;
-
-box = 3154;
-generator = 3142;
+box = obj_dialogue_box_battle_transformation_any;
+var generator = 3143;
 image_speed = 0;
 image_index = 0;
 pos_y = box.bbox_top + 179;

@@ -1,6 +1,4 @@
-var y_diff;
-
-y_diff = 200;
+var y_diff = 200;
 state = 0;
 on_x = x - obj_dummy_training_dummy.x;
 on_y = y - obj_dummy_training_dummy.y;

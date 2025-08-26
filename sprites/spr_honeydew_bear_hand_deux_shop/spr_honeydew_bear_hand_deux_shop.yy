@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8dc5a8e5-a61b-4419-abb8-a35640f7b8e6",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a69815ae-f703-49c9-9246-418ce016159d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b6e84a06-faa5-428b-986f-18a5ac1e6b57",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"74313f1f-9b1a-48a3-8ccb-472713133fa5",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 85,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"78b73057-da99-491a-8ca0-4df5f8aa9ca8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1618d2da-8987-45c2-9fa5-434c31fe0a84","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8dc5a8e5-a61b-4419-abb8-a35640f7b8e6","path":"sprites/spr_honeydew_bear_hand_deux_shop/spr_honeydew_bear_hand_deux_shop.yy",},},},"Disabled":false,"id":"9a929c94-b6a1-4168-8038-07f7382cc3af","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a69815ae-f703-49c9-9246-418ce016159d","path":"sprites/spr_honeydew_bear_hand_deux_shop/spr_honeydew_bear_hand_deux_shop.yy",},},},"Disabled":false,"id":"4e75b135-1c87-48ee-a861-d257e39b0856","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b6e84a06-faa5-428b-986f-18a5ac1e6b57","path":"sprites/spr_honeydew_bear_hand_deux_shop/spr_honeydew_bear_hand_deux_shop.yy",},},},"Disabled":false,"id":"59c3481f-9f29-4d8d-9a9f-d0ac263ac3d1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"74313f1f-9b1a-48a3-8ccb-472713133fa5","path":"sprites/spr_honeydew_bear_hand_deux_shop/spr_honeydew_bear_hand_deux_shop.yy",},},},"Disabled":false,"id":"81854f15-28b2-4f2e-a585-f5af23be1d4e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Shops",
+    "path": "texturegroups/Shops",
   },
   "type": 0,
   "VTile": false,

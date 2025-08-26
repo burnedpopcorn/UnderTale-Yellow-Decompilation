@@ -1,5 +1,3 @@
-var xx, yy;
-
 if (live_call())
     return global.live_result;
 
@@ -14,8 +12,8 @@ if (room == rm_flashback_03)
 }
 
 draw_set_alpha(overlay_alpha);
-xx = camera_get_view_x(view_camera[0]);
-yy = camera_get_view_y(view_camera[0]);
+var xx = camera_get_view_x(view_camera[0]);
+var yy = camera_get_view_y(view_camera[0]);
 draw_set_color(c_black);
 draw_rectangle(xx, yy, xx + 640, yy + 480, false);
 draw_set_alpha(1);

@@ -1,8 +1,6 @@
 function scr_battle_core_directory_action_2_selected_event()
 {
-    var event_check, fog_sound, power_sound, act_number;
-    
-    event_check = false;
+    var event_check = false;
     
     if (game_mode == "customs")
     {
@@ -536,7 +534,7 @@ function scr_battle_core_directory_action_2_selected_event()
                 global.action_2_selected_count += 1;
             
             obj_battle_enemy_effect_slither_fog.target_alpha = 0.5;
-            fog_sound = audio_play_sound(snd_undertale_appear, 1, 0);
+            var fog_sound = audio_play_sound(snd_undertale_appear, 1, 0);
             audio_sound_pitch(fog_sound, 0.5);
             global.enemy_attacking = true;
             instance_destroy();
@@ -551,7 +549,7 @@ function scr_battle_core_directory_action_2_selected_event()
                 global.action_2_selected_count_2 += 1;
             
             obj_battle_enemy_effect_slither_fog.target_alpha = 0.5;
-            fog_sound = audio_play_sound(snd_undertale_appear, 1, 0);
+            var fog_sound = audio_play_sound(snd_undertale_appear, 1, 0);
             audio_sound_pitch(fog_sound, 0.5);
             global.enemy_attacking = true;
             instance_destroy();
@@ -697,7 +695,7 @@ function scr_battle_core_directory_action_2_selected_event()
         {
             if (instance_exists(obj_guardener_meter))
             {
-                power_sound = audio_play_sound(snd_power_down, 1, 0);
+                var power_sound = audio_play_sound(snd_power_down, 1, 0);
                 global.action_2_selected_count += 1;
                 
                 if (global.action_2_selected_count >= 5)
@@ -761,7 +759,7 @@ function scr_battle_core_directory_action_2_selected_event()
     
     if (event_check == true)
     {
-        act_number = global.act_number;
+        var act_number = global.act_number;
         
         switch (act_number)
         {

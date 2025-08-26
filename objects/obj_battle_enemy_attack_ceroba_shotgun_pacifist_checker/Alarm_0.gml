@@ -1,29 +1,29 @@
-var battle_box, battle_box_width, bullet_width, bullet_inc, excl, j, vsp, hsp, i, xx, yy, bullet;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-battle_box_width = battle_box.sprite_width;
-bullet_width = 8;
-bullet_inc = battle_box_width / bullet_width;
-excl = irandom_range(1, (battle_box_width / bullet_inc) - 1);
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var battle_box_width = battle_box.sprite_width;
+var bullet_width = 8;
+var bullet_inc = battle_box_width / bullet_width;
+var excl = irandom_range(1, (battle_box_width / bullet_inc) - 1);
 
 do
     dir = choose("top", "bottom", "left", "right");
 until (dir != dir_last);
 
 dir_last = dir;
-j = 0;
-vsp = 0;
-hsp = 0;
+var j = 0;
+var vsp = 0;
+var hsp = 0;
 
-for (i = 16; i < (battle_box_width - 12); i += bullet_inc)
+for (var i = 16; i < (battle_box_width - 12); i += bullet_inc)
 {
     j += 1;
     
     if (j != excl)
     {
+        var xx, yy;
+        
         switch (dir)
         {
             case "top":
@@ -52,7 +52,7 @@ for (i = 16; i < (battle_box_width - 12); i += bullet_inc)
         }
         
         show_debug_message(dir);
-        bullet = instance_create_depth(xx, yy, -100, obj_battle_enemy_attack_ceroba_flower_bullet_pacifist);
+        var bullet = instance_create_depth(xx, yy, -100, obj_battle_enemy_attack_ceroba_flower_bullet_pacifist);
         bullet.vspeed = vsp;
         bullet.hspeed = hsp;
     }

@@ -1,2 +1,2 @@
 event_inherited();
-editor_sprite = spr_robot_googly_eyes;
+editor_sprite = 1516;

@@ -1,5 +1,3 @@
-var junk_count, junk_dir, sound_type;
-
 if (!instance_exists(obj_heart_battle_fighting_parent))
 {
     instance_destroy();
@@ -36,8 +34,8 @@ if (y > battle_box_bottom)
         angle_sway = choose(1, -1);
         package_vsp = -4;
         fade_out = true;
-        junk_count = irandom_range(3, 4);
-        junk_dir = irandom_range(15, 180 / junk_count);
+        var junk_count = irandom_range(3, 4);
+        var junk_dir = irandom_range(15, 180 / junk_count);
         
         while (junk_count > 0)
         {
@@ -47,7 +45,7 @@ if (y > battle_box_bottom)
             junk_count -= 1;
         }
         
-        sound_type = irandom_range(1, 3);
+        var sound_type = irandom_range(1, 3);
         
         switch (sound_type)
         {

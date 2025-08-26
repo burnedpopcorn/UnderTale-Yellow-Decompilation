@@ -1,7 +1,5 @@
-var dialogue_type;
-
 event_inherited();
-dialogue_type = 1;
+var dialogue_type = 1;
 
 if (global.dunes_flag[4] >= 1)
     dialogue_type = 2;
@@ -27,7 +25,7 @@ else if (dialogue_type == 1 && interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* You a new hire?";
                 message[1] = "* If I were you, I'd turn back#  now.";
                 message[2] = "* I've been workin' this job for#  twelve years and I've about had#  enough.";
@@ -41,7 +39,7 @@ else if (dialogue_type == 1 && interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* If you need work, go talk to#  the Foreman on the third level.";
                 message[1] = "* Not sure you'll get far with#  him, though.";
             }

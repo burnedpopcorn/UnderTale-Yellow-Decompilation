@@ -1,6 +1,4 @@
-var player_character;
-
-player_character = global.player_character;
+var player_character = global.player_character;
 draw_set_font(fnt_hachicro);
 draw_set_color(c_red);
 draw_set_halign(fa_center);

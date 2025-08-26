@@ -1,11 +1,9 @@
-function joystick_check_button(argument0, argument1)
+function joystick_check_button(arg0, arg1)
 {
-    var jid, button;
+    var jid = __joystick_2_gamepad(arg0);
+    var button = 0;
     
-    jid = __joystick_2_gamepad(argument0);
-    button = 0;
-    
-    switch (argument1)
+    switch (arg1)
     {
         case 0:
             button = 32769;
@@ -56,7 +54,7 @@ function joystick_check_button(argument0, argument1)
             break;
         
         default:
-            button = argument1;
+            button = arg1;
             break;
     }
     

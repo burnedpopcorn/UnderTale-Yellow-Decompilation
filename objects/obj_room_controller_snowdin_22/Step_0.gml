@@ -1,10 +1,8 @@
-var martlet, collider;
-
 if (!audio_is_playing(mus_ambient_river))
     audio_play_sound(mus_ambient_river, 20, 1);
 
-martlet = 1545;
-collider = 1041;
+var martlet = 1545;
+var collider = 1041;
 
 with (collider)
 {
@@ -59,19 +57,19 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* Hey there, so here's#  the plan!";
             message[1] = "* I'm sorry, I think that#  I went a little#  overboard but...";
             message[2] = "* I can't help it! This#  is all too exciting!";
             message[3] = "* So, I've been saving#  this for a rainy day.";
             message[4] = "* Ya know, figuratively...#  We don't really have#  those...";
             message[5] = "* Either way! Behold! The#  UG Aviator!";
-            prt[0] = 328;
-            prt[1] = 320;
-            prt[2] = 318;
-            prt[3] = 328;
-            prt[4] = 311;
-            prt[5] = 312;
+            prt[0] = spr_martlet_head_regular;
+            prt[1] = spr_martlet_head_melancholic;
+            prt[2] = spr_martlet_head_happy;
+            prt[3] = spr_martlet_head_regular;
+            prt[4] = spr_martlet_head_confused;
+            prt[5] = spr_martlet_head_content;
         }
         
         scene = 3;
@@ -84,7 +82,7 @@ switch (scene)
         break;
     
     case 4:
-        if (cutscene_npc_walk(1545, 440, obj_martlet_snowdin_22.y, 3, "x", "down", false))
+        if (cutscene_npc_walk(obj_martlet_snowdin_22, 440, obj_martlet_snowdin_22.y, 3, "x", "down", false))
         {
             scene = 5;
             timer = 15;
@@ -114,14 +112,14 @@ switch (scene)
             message[0] = "* (In the water sits an#  old-looking raft with just#  enough room for two passengers.)";
             message[1] = "* Isn't she a beauty?#* Boats are shes, ya know.";
             message[2] = "* I call her Ava for#  short! Isn't that cute?";
-            prt[0] = 0;
-            prt[1] = 318;
-            prt[2] = 312;
+            prt[0] = spr_collisionbox;
+            prt[1] = spr_martlet_head_happy;
+            prt[2] = spr_martlet_head_content;
             
             if (message_current > 0)
             {
                 portrait = true;
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
                 
                 with (martlet)
                     is_talking = true;

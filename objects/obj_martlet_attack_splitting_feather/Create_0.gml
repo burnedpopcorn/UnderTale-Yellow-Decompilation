@@ -1,5 +1,3 @@
-var random_number;
-
 if (live_call())
     return global.live_result;
 
@@ -23,6 +21,7 @@ animation_disjoint_x = 0;
 animation_disjoint_y = 0;
 can_move = false;
 explosion_angle = 0;
+var random_number;
 
 if (!instance_exists(obj_martlet_body))
 {

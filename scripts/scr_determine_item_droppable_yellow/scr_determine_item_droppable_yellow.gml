@@ -1,8 +1,6 @@
-function scr_determine_item_droppable_yellow(argument0)
+function scr_determine_item_droppable_yellow(arg0)
 {
-    var item_slot;
-    
-    item_slot = argument0;
+    var item_slot = arg0;
     
     switch (item_slot)
     {

@@ -1,9 +1,7 @@
-var game_mode, shop_name, buy_shop_screen_number;
-
 depth = -room_height - 164;
-game_mode = global.game_mode;
-shop_name = global.shop_name;
-buy_shop_screen_number = global.buy_shop_screen_number;
+var game_mode = global.game_mode;
+var shop_name = global.shop_name;
+var buy_shop_screen_number = global.buy_shop_screen_number;
 
 if (shop_name == "Honeydew Resort Geno")
 {

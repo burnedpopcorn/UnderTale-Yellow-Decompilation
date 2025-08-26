@@ -1,9 +1,7 @@
-var speed_modifier, strikes;
-
 if (live_call())
     return global.live_result;
 
-speed_modifier = 1 + ((1 - (seesaw_item_number / seesaw_item_number_max)) * 1.5);
+var speed_modifier = 1 + ((1 - (seesaw_item_number / seesaw_item_number_max)) * 1.5);
 
 if (seesaw_puzzle_activate == true)
 {
@@ -59,7 +57,7 @@ if (seesaw_spawn_item && !instance_exists(obj_factory_02_seesaw_item_ready))
     seesaw_spawn_item = false;
 }
 
-strikes = 3 - seesaw_item_number_wrong;
+var strikes = 3 - seesaw_item_number_wrong;
 
 with (obj_factory_02_conveyor_indicator)
 {

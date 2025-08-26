@@ -1,4 +1,4 @@
-box = 3154;
+box = obj_dialogue_box_battle_transformation_any;
 create_count = 0;
 create_max = 8;
 create_alarm = 35;

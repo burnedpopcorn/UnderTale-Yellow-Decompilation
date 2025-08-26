@@ -1,8 +1,6 @@
-var yy, xx, line_sep, ypos1, ypos2;
-
-yy = 40;
-xx = 48;
-line_sep = 18;
+var yy = 40;
+var xx = 48;
+var line_sep = 18;
 draw_set_alpha(draw_alpha);
 draw_sprite(spr_chem_compound_puzzle_overlay, 0, 0, 0);
 draw_set_font(fnt_main);
@@ -13,8 +11,8 @@ draw_text_ext(xx, yy, string_hash_to_newline(message_actual), line_sep, -1);
 
 if (choice == true)
 {
-    ypos1 = 84;
-    ypos2 = 100;
+    var ypos1 = 84;
+    var ypos2 = 100;
     ypos3 = 116;
     ypos4 = 132;
     ypos5 = 148;

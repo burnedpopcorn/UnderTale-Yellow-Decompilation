@@ -1,7 +1,5 @@
-var fcreate_x, fcreate_y;
-
-fcreate_x = x_center + (feather_angle_radius * cos(degtorad(feather_angle_master)));
-fcreate_y = y_center - (feather_angle_radius * sin(degtorad(feather_angle_master)));
+var fcreate_x = x_center + (feather_angle_radius * cos(degtorad(feather_angle_master)));
+var fcreate_y = y_center - (feather_angle_radius * sin(degtorad(feather_angle_master)));
 instance_create(fcreate_x, fcreate_y, obj_battle_enemy_attack_martlet_ff_1_feather);
 id_feather[feather_count] = global.id_store;
 

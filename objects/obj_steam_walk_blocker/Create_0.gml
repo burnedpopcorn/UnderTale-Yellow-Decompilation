@@ -8,5 +8,5 @@ walk_dir = "left";
 scene = 0;
 cutscene_timer = 0;
 message[0] = "* Where are you going?";
-prt[0] = 368;
+prt[0] = spr_portrait_ceroba_irked;
 flag_check = 0;

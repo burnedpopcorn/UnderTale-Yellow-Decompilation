@@ -1,6 +1,6 @@
 if (global.flag[17] == 1)
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && waiter == 0 && !instance_exists(obj_dialogue))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && waiter == 0 && !instance_exists(obj_dialogue))
         waiter = 1;
     
     if (waiter == 1)
@@ -34,24 +34,24 @@ if (global.flag[17] == 1)
                     instance_create(0, 0, obj_dialoguebox_dummy);
                 
                 portrait = true;
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* I don't exactly have a#  huge selection of food.";
                 message[1] = "* I don't get out much... ";
                 message[2] = "* Oh wait!  I have some#  leftovers you can take#  with you.";
                 message[3] = "* I hope you like it! I#  made it for my birthday.";
                 message[4] = "* Sponge Cake is my#  favorite!";
-                prt[0] = 1763;
-                prt[1] = 1780;
-                prt[2] = 1769;
-                prt[3] = 1769;
-                prt[4] = 1773;
+                prt[0] = spr_dalv_head_sad;
+                prt[1] = spr_dalv_head_sad_side;
+                prt[2] = spr_dalv_head_content;
+                prt[3] = spr_dalv_head_content;
+                prt[4] = spr_dalv_head_content_2;
             }
             else
             {
                 portrait = true;
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* ...";
-                prt[0] = 1780;
+                prt[0] = spr_dalv_head_sad_side;
             }
         }
         
@@ -78,7 +78,7 @@ if (global.flag[17] == 1)
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (It's a sponge covered in#  frosting.)";
             message[1] = "* (Take it?)";
             
@@ -119,17 +119,17 @@ if (global.flag[17] == 1)
             if (obj_fridge.response == "yes")
             {
                 talker[0] = -4;
-                sndfnt_array[0] = 391;
-                sndfnt_array[1] = 434;
-                sndfnt_array[2] = 434;
-                sndfnt_array[3] = 434;
+                sndfnt_array[0] = snd_talk_default;
+                sndfnt_array[1] = snd_talk_dalv;
+                sndfnt_array[2] = snd_talk_dalv;
+                sndfnt_array[3] = snd_talk_dalv;
                 message[0] = "* (You got the Sponge Cake!)";
                 message[1] = "* ...";
                 message[2] = "* Sorry I didn't invite#  you, it was last week.";
                 message[3] = "* You can come next year!";
-                prt[1] = 1755;
-                prt[2] = 1763;
-                prt[3] = 1769;
+                prt[1] = spr_dalv_head_regular;
+                prt[2] = spr_dalv_head_sad;
+                prt[3] = spr_dalv_head_content;
                 scr_item("Sponge Cake");
                 
                 with (obj_fridge)
@@ -138,13 +138,13 @@ if (global.flag[17] == 1)
             else if (obj_fridge.response == "no")
             {
                 portrait = true;
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* No?";
                 message[1] = "* Alright then.";
                 message[2] = "* More for me I suppose.";
-                prt[0] = 1755;
-                prt[1] = 1755;
-                prt[2] = 1776;
+                prt[0] = spr_dalv_head_regular;
+                prt[1] = spr_dalv_head_regular;
+                prt[2] = spr_dalv_head_moderate;
                 
                 with (obj_fridge)
                     waiter++;
@@ -175,7 +175,7 @@ if (global.flag[17] == 1)
 }
 else if (global.flag[17] != 1 && global.route != 3)
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
         waiter = 1;
     
     if (waiter == 1)
@@ -185,7 +185,7 @@ else if (global.flag[17] != 1 && global.route != 3)
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (It's a mini fridge.)";
             message[1] = "* (It's mostly empty.)";
             obj_fridge.waiter = 2;
@@ -201,7 +201,7 @@ else if (global.flag[17] != 1 && global.route != 3)
 }
 else if (global.route == 3)
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
         waiter = 1;
     
     if (waiter == 1)
@@ -211,7 +211,7 @@ else if (global.route == 3)
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (A cheap mini fridge.)";
             message[1] = "* (Nothing inside looks remotely#  edible.)";
             obj_fridge.waiter = 2;

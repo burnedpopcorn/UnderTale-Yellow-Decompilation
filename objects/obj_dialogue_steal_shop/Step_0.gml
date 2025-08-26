@@ -1,5 +1,3 @@
-var shop_name;
-
 if (action[message_current] != "Override")
 {
     script_execute(scr_controls_text);
@@ -37,7 +35,7 @@ if (action[message_current] != "Override")
             }
             else
             {
-                shop_name = global.shop_name;
+                var shop_name = global.shop_name;
                 
                 if (shop_name == "Honeydew Resort Geno")
                 {

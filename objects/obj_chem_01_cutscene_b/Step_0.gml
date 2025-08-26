@@ -19,7 +19,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_npc_direction(3194, "up");
+        cutscene_npc_direction(obj_flowey_npc, "up");
         break;
     
     case 3:
@@ -27,11 +27,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Hey! That's a real#  piece of art you made#  there!";
             message[1] = "* Give it a go!";
-            prt[0] = 348;
-            prt[1] = 348;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_nice;
         }
         
         break;
@@ -45,7 +45,7 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_npc_walk(1168, 150, obj_player_npc.y, 2, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 150, obj_player_npc.y, 2, "x", "up");
         break;
     
     case 7:
@@ -67,11 +67,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Wouldja look at that!#  Worked like a charm.";
             message[1] = "* I might have to#  personally commission#  you someday, haha!";
-            prt[0] = 348;
-            prt[1] = 3251;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_wink;
         }
         
         break;
@@ -81,7 +81,7 @@ switch (scene)
         break;
     
     case 12:
-        if (cutscene_npc_action_sprite_reverse(3194, 242, 0.4, true, 0))
+        if (cutscene_npc_action_sprite_reverse(obj_flowey_npc, spr_floweyrise, 0.4, true, 0))
         {
             instance_destroy(105301);
             instance_destroy(105300);

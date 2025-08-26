@@ -1,12 +1,10 @@
-var current_bottle;
-
 if (!instance_exists(obj_battle_enemy_attack_starlo_bottle))
 {
     alarm[1] = 30;
     exit;
 }
 
-current_bottle = irandom_range(0, 2);
+var current_bottle = irandom_range(0, 2);
 
 while (!instance_exists(bottle[current_bottle]))
     current_bottle = irandom_range(0, 2);

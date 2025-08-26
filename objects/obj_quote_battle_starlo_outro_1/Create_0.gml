@@ -1,8 +1,6 @@
-var turns_passed;
-
 text_effect = "twitchy";
 attack = false;
-turns_passed = global.turns_passed;
+var turns_passed = global.turns_passed;
 message[0] = "...";
 message[1] = "One... ";
 message[2] = "I have one left#in my#chamber...";

@@ -1,11 +1,9 @@
-var battle_box, x_target, remnant;
-
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 switch (attack_state)
 {
     case 1:
-        x_target = battle_box.x;
+        var x_target = battle_box.x;
         x = lerp(x, x_target, 0.3);
         
         if (abs(x - x_target) <= 1)
@@ -133,13 +131,13 @@ switch (attack_state)
 
 if (path_speed >= 0.1 || path_speed <= -0.1)
 {
-    remnant = instance_create(x, y, obj_attack_moray_sword_spin_remnant);
+    var remnant = instance_create(x, y, obj_attack_moray_sword_spin_remnant);
     remnant.sprite_index = sprite_index;
     remnant.image_speed = 0;
     remnant.image_index = 0;
 }
 
-if ((sprite_index == spr_attack_moray_sword_blue_start || (sprite_index == sprite_index) == spr_attack_moray_sword_orange_start) && image_index >= (image_number - 1))
+if ((sprite_index == spr_attack_moray_sword_blue_start || (sprite_index == sprite_index) == 3501) && image_index >= (image_number - 1))
 {
     if (sword_color == "blue")
     {

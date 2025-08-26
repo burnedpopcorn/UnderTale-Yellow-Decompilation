@@ -1,15 +1,13 @@
-var narrator, i;
-
 if (live_call())
     return global.live_result;
 
 if (place_meeting(x, y, obj_pl))
 {
-    narrator = instance_create_depth(0, 0, -100, obj_dialogue_narrator);
+    var narrator = instance_create_depth(0, 0, -100, obj_dialogue_narrator);
     
     with (narrator)
     {
-        for (i = 0; i < array_length(other.message); i++)
+        for (var i = 0; i < array_length(other.message); i++)
             message[i] = other.message[i];
         
         draw_set_font(fnt_main);

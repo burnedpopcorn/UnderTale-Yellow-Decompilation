@@ -12,7 +12,7 @@ switch (scene)
         cutscene_audio_fade(obj_radio.current_song, 0, 500, 0.25, false);
     
     case 3:
-        cutscene_sfx_play(233, 1);
+        cutscene_sfx_play(snd_confirm, 1);
         break;
     
     case 4:
@@ -20,7 +20,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_sfx_play(384, 1);
+        cutscene_sfx_play(snd_undertale_thud, 1);
         break;
     
     case 6:
@@ -36,9 +36,9 @@ switch (scene)
         break;
     
     case 9:
-        cutscene_npc_action_sprite(1718, 1037, 0.25, true, 0, 383, 2);
+        cutscene_npc_action_sprite(obj_dunes_26_bailador, spr_dunes_26_bailador_entrance, 0.25, true, 0, snd_undertale_swoosh, 2);
         
-        if (cutscene_sfx_play_at_frame(1718, 8, 424))
+        if (cutscene_sfx_play_at_frame(obj_dunes_26_bailador, 8, snd_mart_impact_2))
             scr_screenshake(10, 3);
         
         break;
@@ -52,7 +52,7 @@ switch (scene)
         break;
     
     case 12:
-        cutscene_npc_reset_sprite(1718, "left");
+        cutscene_npc_reset_sprite(obj_dunes_26_bailador, "left");
         break;
     
     case 13:
@@ -60,7 +60,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1718;
+            talker[0] = obj_dunes_26_bailador;
             
             if (global.route != 3)
             {
@@ -101,7 +101,7 @@ switch (scene)
         break;
     
     case 14:
-        cutscene_sfx_play(384, 1);
+        cutscene_sfx_play(snd_undertale_thud, 1);
         break;
     
     case 15:
@@ -114,7 +114,7 @@ switch (scene)
         break;
     
     case 17:
-        cutscene_sfx_play(380, 1);
+        cutscene_sfx_play(snd_undertale_appear, 1);
         break;
     
     case 18:
@@ -134,7 +134,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1718;
+            talker[0] = obj_dunes_26_bailador;
             message[0] = "* To truly find oneself,#  they must ignite a#  passion within!";
             message[1] = "* Let us duel!";
         }
@@ -160,7 +160,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1718;
+            talker[0] = obj_dunes_26_bailador;
             
             if (global.dunes_flag[52] == 0)
             {
@@ -189,7 +189,7 @@ switch (scene)
         break;
     
     case 26:
-        cutscene_npc_action_sprite(1718, 1039, 0.25, true, 0, 383, 2);
+        cutscene_npc_action_sprite(obj_dunes_26_bailador, spr_dunes_26_bailador_leave, 0.25, true, 0, snd_undertale_swoosh, 2);
         break;
     
     case 27:
@@ -201,7 +201,7 @@ switch (scene)
     
     case 29:
         instance_destroy(obj_dunes_26_spotlight);
-        cutscene_sfx_play(384, 1);
+        cutscene_sfx_play(snd_undertale_thud, 1);
         break;
     
     case 30:

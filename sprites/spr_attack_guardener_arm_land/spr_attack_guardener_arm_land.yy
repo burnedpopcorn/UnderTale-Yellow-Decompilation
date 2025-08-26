@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"de268ffa-6859-49a9-b055-edcdc1dcf348",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"60a5275f-c7cc-4399-9a75-705f26ab7204",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"653a1583-7fc4-474d-b00f-bce63ebb4138",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f30170a5-b6cf-4191-8ae5-77c1bf780590",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cf0e9a5a-ccc8-41f2-bb37-41ef3a393ae3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"edafcdb2-a5ee-4c3b-a505-e20c2bcbc31c",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 283,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8a522c59-a625-449f-8804-083c96d4833d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cb4b1a8c-20a2-43db-8811-c1e851dc574f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"de268ffa-6859-49a9-b055-edcdc1dcf348","path":"sprites/spr_attack_guardener_arm_land/spr_attack_guardener_arm_land.yy",},},},"Disabled":false,"id":"421aa7b5-3265-4af6-b4d2-b84336a4370f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"60a5275f-c7cc-4399-9a75-705f26ab7204","path":"sprites/spr_attack_guardener_arm_land/spr_attack_guardener_arm_land.yy",},},},"Disabled":false,"id":"3d757c82-4620-4039-b50e-5297f66ca1b4","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"653a1583-7fc4-474d-b00f-bce63ebb4138","path":"sprites/spr_attack_guardener_arm_land/spr_attack_guardener_arm_land.yy",},},},"Disabled":false,"id":"e5a20c72-0220-45ad-aecf-904f06d37d13","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f30170a5-b6cf-4191-8ae5-77c1bf780590","path":"sprites/spr_attack_guardener_arm_land/spr_attack_guardener_arm_land.yy",},},},"Disabled":false,"id":"771d8f6c-6866-4d0f-93dc-602bf44c1de5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cf0e9a5a-ccc8-41f2-bb37-41ef3a393ae3","path":"sprites/spr_attack_guardener_arm_land/spr_attack_guardener_arm_land.yy",},},},"Disabled":false,"id":"2646aa7f-8b80-4df8-a985-e63cfe51493b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"edafcdb2-a5ee-4c3b-a505-e20c2bcbc31c","path":"sprites/spr_attack_guardener_arm_land/spr_attack_guardener_arm_land.yy",},},},"Disabled":false,"id":"b22491b0-b02a-4d58-b4f4-fe92ca40bdcf","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

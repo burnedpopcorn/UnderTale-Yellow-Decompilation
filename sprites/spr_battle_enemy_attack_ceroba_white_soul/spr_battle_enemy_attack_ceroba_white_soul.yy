@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"93f223c0-d6ba-44ca-b000-78d62c942845",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9784cda4-dc0b-42f1-8dd3-8c5d1db4a6e7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e89404c9-113c-4d64-965d-f87691b01067",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c6aab0e2-620d-4840-94a0-2419111453ba",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 16,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"38a34639-79db-4e03-a5bd-aeb0b7565471","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"49dbafc7-01d8-488b-a973-c013034e9ba8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"93f223c0-d6ba-44ca-b000-78d62c942845","path":"sprites/spr_battle_enemy_attack_ceroba_white_soul/spr_battle_enemy_attack_ceroba_white_soul.yy",},},},"Disabled":false,"id":"459554bf-2b69-48af-a55a-1838510afcde","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9784cda4-dc0b-42f1-8dd3-8c5d1db4a6e7","path":"sprites/spr_battle_enemy_attack_ceroba_white_soul/spr_battle_enemy_attack_ceroba_white_soul.yy",},},},"Disabled":false,"id":"8888466f-e4fe-4f98-9af7-19135a744e06","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e89404c9-113c-4d64-965d-f87691b01067","path":"sprites/spr_battle_enemy_attack_ceroba_white_soul/spr_battle_enemy_attack_ceroba_white_soul.yy",},},},"Disabled":false,"id":"a8404df5-e989-449f-a56b-c0eed30bb858","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c6aab0e2-620d-4840-94a0-2419111453ba","path":"sprites/spr_battle_enemy_attack_ceroba_white_soul/spr_battle_enemy_attack_ceroba_white_soul.yy",},},},"Disabled":false,"id":"58124c75-c919-468f-92c6-f29fba81915c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleWildEast",
+    "path": "texturegroups/BattleWildEast",
   },
   "type": 0,
   "VTile": false,

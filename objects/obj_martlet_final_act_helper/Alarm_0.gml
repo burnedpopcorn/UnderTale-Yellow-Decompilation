@@ -1,8 +1,8 @@
-var heal_amount;
-
 switch (global.last_action_selected)
 {
     case "Action 2 Message 0":
+        var heal_amount;
+        
         with (obj_dialogue_battle_action_selected_action_2)
         {
             message = 0;

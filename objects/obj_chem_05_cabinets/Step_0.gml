@@ -1,8 +1,6 @@
-var compound;
+var compound = instance_place(x, y, obj_compound_parent);
 
-compound = instance_place(x, y, obj_compound_parent);
-
-if (compound != -4 && compound.visible == true && scr_interact() && keyboard_multicheck_pressed(0))
+if (compound != -4 && compound.visible == true && scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     scr_text();
     

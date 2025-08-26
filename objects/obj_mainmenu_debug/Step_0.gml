@@ -1,5 +1,3 @@
-var i, hold_left, hold_right, room_index_current, world_value;
-
 if (live_call())
     return global.live_result;
 
@@ -28,13 +26,13 @@ if (global.up_keyp)
 switch (menu_selection)
 {
     case 0:
-        if (keyboard_multicheck_pressed(0))
+        if (keyboard_multicheck_pressed(vk_nokey))
             scr_loadgame();
         
         break;
     
     case 1:
-        for (i = 0; i < array_length(route_list); i++)
+        for (var i = 0; i < array_length(route_list); i++)
         {
             if (route_selection == route_list[i])
             {
@@ -76,7 +74,7 @@ switch (menu_selection)
         break;
     
     case 3:
-        for (i = 0; i < array_length(follower_list); i++)
+        for (var i = 0; i < array_length(follower_list); i++)
         {
             if (follower_selection == follower_list[i])
             {
@@ -105,7 +103,7 @@ switch (menu_selection)
         break;
     
     case 4:
-        hold_left = false;
+        var hold_left = false;
         
         if (global.left_key)
         {
@@ -123,7 +121,7 @@ switch (menu_selection)
             hold_left = false;
         }
         
-        hold_right = false;
+        var hold_right = false;
         
         if (global.right_key)
         {
@@ -141,9 +139,9 @@ switch (menu_selection)
             hold_right = false;
         }
         
-        room_index_current = ds_list_find_index(room_list, room_selection);
+        var room_index_current = ds_list_find_index(room_list, room_selection);
         
-        for (i = 0; i < ds_list_size(room_list); i++)
+        for (var i = 0; i < ds_list_size(room_list); i++)
         {
             if (global.left_keyp || hold_left)
             {
@@ -169,9 +167,9 @@ switch (menu_selection)
         break;
     
     case 5:
-        if (keyboard_multicheck_pressed(0))
+        if (keyboard_multicheck_pressed(vk_nokey))
         {
-            world_value = 0;
+            var world_value = 0;
             scr_initialize();
             new_room = asset_get_index(room_selection);
             xx = 320;
@@ -214,7 +212,7 @@ switch (menu_selection)
         break;
     
     case 6:
-        if (keyboard_multicheck_pressed(0))
+        if (keyboard_multicheck_pressed(vk_nokey))
         {
             scr_initialize();
             scene = 0;
@@ -226,7 +224,7 @@ switch (menu_selection)
         break;
     
     case 7:
-        if (keyboard_multicheck_pressed(0))
+        if (keyboard_multicheck_pressed(vk_nokey))
         {
             scr_initialize();
             scene = 0;
@@ -249,7 +247,7 @@ switch (menu_selection)
             global.dunes_flag[40] = 1;
         }
         
-        if (keyboard_multicheck_pressed(1))
+        if (keyboard_multicheck_pressed(vk_anykey))
         {
             scr_initialize();
             scene = 0;
@@ -265,7 +263,7 @@ switch (menu_selection)
         break;
     
     case 8:
-        if (keyboard_multicheck_pressed(0))
+        if (keyboard_multicheck_pressed(vk_nokey))
         {
             scr_initialize();
             scene = 0;

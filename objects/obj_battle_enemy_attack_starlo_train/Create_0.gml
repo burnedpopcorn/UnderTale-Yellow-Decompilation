@@ -1,9 +1,7 @@
-var box;
-
 damage_number = scr_determine_damage_number_enemy("starlo", "void", "void");
 starlo_train_speed = 8;
 alarm[0] = 500 / starlo_train_speed;
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if (y < box.bbox_top)
     direction = 270;

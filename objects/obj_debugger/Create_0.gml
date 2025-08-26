@@ -1,5 +1,3 @@
-var dbg_room_current;
-
 dbg_pos = 1;
 dbg_menu = 0;
 no_encounters = false;
@@ -10,7 +8,7 @@ is_recording = false;
 gif_image = 0;
 room_list = ds_list_create();
 
-for (dbg_room_current = 0; room_exists(dbg_room_current); dbg_room_current += 1)
+for (var dbg_room_current = 0; room_exists(dbg_room_current); dbg_room_current += 1)
     ds_list_add(room_list, room_get_name(dbg_room_current));
 
 ds_list_sort(room_list, true);

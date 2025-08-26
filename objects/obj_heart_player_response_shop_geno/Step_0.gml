@@ -1,7 +1,5 @@
-var player_gold, buy_shop_screen_number, i, selected_item;
-
-player_gold = global.player_gold;
-buy_shop_screen_number = global.buy_shop_screen_number;
+var player_gold = global.player_gold;
+var buy_shop_screen_number = global.buy_shop_screen_number;
 script_execute(scr_controls_shop_response);
 
 if (key_select)
@@ -19,7 +17,7 @@ if (key_select)
             global.player_response = 1;
             global.able_to_buy = 0;
             
-            for (i = 1; i <= 8; i += 1)
+            for (var i = 1; i <= 8; i += 1)
             {
                 if (global.item_slot[i] == "Nothing")
                 {
@@ -31,7 +29,7 @@ if (key_select)
             
             global.item_stock[global.shop_stock[buy_shop_screen_number]] -= 1;
             audio_play_sound(snd_shop_purchase, 20, false);
-            selected_item = global.shop_item[buy_shop_screen_number];
+            var selected_item = global.shop_item[buy_shop_screen_number];
             scr_item_set_unstealable(selected_item);
         }
         

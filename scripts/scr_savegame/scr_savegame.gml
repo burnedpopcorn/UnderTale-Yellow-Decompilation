@@ -1,12 +1,10 @@
 function scr_savegame()
 {
-    var SavedRoom, ds_list_encounters, ds_list_steal, ds_list_fasttravel, inv1, ds_list_string, i, ds_map_string, ds_talk_map_string, j;
-    
     if (file_exists("Save.sav"))
         file_delete("Save.sav");
     
     ini_open("Save.sav");
-    SavedRoom = room_get_name(room);
+    var SavedRoom = room_get_name(room);
     ini_write_string("Save1", "room", SavedRoom);
     ini_write_real("Save1", "pX", obj_pl.x);
     ini_write_real("Save1", "pY", obj_pl.y);
@@ -44,13 +42,13 @@ function scr_savegame()
     ini_write_real("Save1", "FTravel", global.player_can_travel);
     scr_determine_playtime();
     ini_write_real("Playtime", "Seconds", global.elapsed_seconds);
-    ds_list_encounters = ds_list_write(global.encounter_list);
+    var ds_list_encounters = ds_list_write(global.encounter_list);
     ini_write_string("Encounters", "0", ds_list_encounters);
-    ds_list_steal = ds_list_write(global.steal_list);
+    var ds_list_steal = ds_list_write(global.steal_list);
     ini_write_string("Steal", "0", ds_list_steal);
-    ds_list_fasttravel = ds_list_write(global.fast_travel_list);
+    var ds_list_fasttravel = ds_list_write(global.fast_travel_list);
     ini_write_string("FastTravel", "0", ds_list_fasttravel);
-    inv1 = global.item_slot[1];
+    var inv1 = global.item_slot[1];
     ini_write_string("Items", "00", global.item_slot[1]);
     ini_write_string("Items", "01", global.item_slot[2]);
     ini_write_string("Items", "02", global.item_slot[3]);
@@ -59,26 +57,26 @@ function scr_savegame()
     ini_write_string("Items", "05", global.item_slot[6]);
     ini_write_string("Items", "06", global.item_slot[7]);
     ini_write_string("Items", "07", global.item_slot[8]);
-    ds_list_string = ds_list_write(global.box_slot_list);
+    var ds_list_string = ds_list_write(global.box_slot_list);
     ini_write_string("DBox", "0", ds_list_string);
     ini_write_real("Misc", "01", global.tinypuzzle);
     
-    for (i = 0; i < array_length_1d(global.ruins_flag); i++)
+    for (var i = 0; i < array_length_1d(global.ruins_flag); i++)
         ini_write_real("RuinsFlags", string(i), global.ruins_flag[i]);
     
-    for (i = 0; i < array_length_1d(global.flag); i++)
+    for (var i = 0; i < array_length_1d(global.flag); i++)
         ini_write_real("Flags", string(i), global.flag[i]);
     
-    for (i = 0; i < array_length_1d(global.snowdin_flag); i++)
+    for (var i = 0; i < array_length_1d(global.snowdin_flag); i++)
         ini_write_real("SnowdinFlags", string(i), global.snowdin_flag[i]);
     
-    for (i = 0; i < array_length_1d(global.dunes_flag); i++)
+    for (var i = 0; i < array_length_1d(global.dunes_flag); i++)
         ini_write_real("DunesFlags", string(i), global.dunes_flag[i]);
     
-    for (i = 0; i < array_length_1d(global.dunes_flag_ext); i++)
+    for (var i = 0; i < array_length_1d(global.dunes_flag_ext); i++)
         ini_write_real("DunesFlagsExt", string(i), global.dunes_flag_ext[i]);
     
-    for (i = 0; i < array_length_1d(global.sworks_flag); i++)
+    for (var i = 0; i < array_length_1d(global.sworks_flag); i++)
         ini_write_real("SworksFlags", string(i), global.sworks_flag[i]);
     
     ini_write_string("SworksFlags", "code", global.factory_code);
@@ -87,7 +85,7 @@ function scr_savegame()
     ini_write_string("SworksFlags", "code3", global.factory_code_3);
     ini_write_real("SworksFlags", "RbCount", global.sworks_robot_count);
     
-    for (i = 0; i < global.sworks_robot_count; i++)
+    for (var i = 0; i < global.sworks_robot_count; i++)
     {
         ini_write_real("RbSprite", string(i), global.sworks_robot_sprite[i]);
         ini_write_real("RbX", string(i), global.sworks_robot_x[i]);
@@ -99,22 +97,22 @@ function scr_savegame()
     
     ini_write_string("SworksFlags", "sworks_id", ds_grid_write(global.sworks_id_grid));
     
-    for (i = 0; i < array_length_1d(global.item_stock); i++)
+    for (var i = 0; i < array_length_1d(global.item_stock); i++)
         ini_write_real("ItemStock", string(i), global.item_stock[i]);
     
-    for (i = 0; i < array_length_1d(global.hotland_flag); i++)
+    for (var i = 0; i < array_length_1d(global.hotland_flag); i++)
         ini_write_real("HotlandFlags", string(i), global.hotland_flag[i]);
     
-    for (i = 0; i < array_length_1d(global.flowey_flag); i++)
+    for (var i = 0; i < array_length_1d(global.flowey_flag); i++)
         ini_write_real("FloweyFlags", string(i), global.flowey_flag[i]);
     
     ini_write_real("FloweyFlags", "savenumber", global.flowey_save_number);
     ini_write_real("FloweyFlags", "savecount", global.save_count);
     
-    for (i = 0; i < array_length_1d(global.extra_flag); i++)
+    for (var i = 0; i < array_length_1d(global.extra_flag); i++)
         ini_write_real("ExtraFlags", string(i), global.extra_flag[i]);
     
-    for (i = 0; i < array_length_1d(global.mail_flag); i++)
+    for (var i = 0; i < array_length_1d(global.mail_flag); i++)
         ini_write_real("MailFlags", string(i), global.mail_flag[i]);
     
     ds_list_string = ds_list_write(global.mail_list);
@@ -126,12 +124,12 @@ function scr_savegame()
     ini_write_real("Mail", "1", global.mail_count);
     ini_write_real("Mail", "2", global.mail_pinned);
     
-    for (i = 0; i <= 5; i++)
+    for (var i = 0; i <= 5; i++)
         ini_write_real("Misc", string(i + 2), global.sideNpc[i]);
     
-    ds_map_string = ds_map_write(global.npc_map);
+    var ds_map_string = ds_map_write(global.npc_map);
     ini_write_string("NPCs", "0", ds_map_string);
-    ds_talk_map_string = ds_map_write(global.talk_map);
+    var ds_talk_map_string = ds_map_write(global.talk_map);
     ini_write_string("Talks", "0", ds_talk_map_string);
     ini_write_real("Misc2", "00", global.interaction_count_wardrobe);
     ini_write_real("Misc2", "01", global.interaction_count_broom);
@@ -145,21 +143,21 @@ function scr_savegame()
     ini_write_real("Misc2", "09", global.interaction_count_books);
     ini_write_real("Route", "00", global.route);
     
-    for (i = 1; i < array_length_1d(global.geno_complete); i++)
+    for (var i = 1; i < array_length_1d(global.geno_complete); i++)
         ini_write_real("GenoComplete", i, global.geno_complete[i]);
     
-    for (i = 1; i < array_length_1d(global.kill_number); i++)
+    for (var i = 1; i < array_length_1d(global.kill_number); i++)
     {
         ini_write_real("Kills", i, global.kill_number[i]);
         
-        for (j = 0; j < array_length_2d(global.kill_area, i); j++)
+        for (var j = 0; j < array_length_2d(global.kill_area, i); j++)
             ini_write_real("Kill Area", string(i) + string(j), global.kill_area[i][j]);
     }
     
     ini_write_real("Save1", "FUN", global.fun_value);
     global.fun_swig_name = "Swig";
     
-    for (i = 0; i < array_length(global.fun_event); i++)
+    for (var i = 0; i < array_length(global.fun_event); i++)
         ini_write_real("Fun Events", string(i), global.fun_event[i]);
     
     ini_write_string("Save1", "Menu", sprite_get_name(global.menu_sprite));

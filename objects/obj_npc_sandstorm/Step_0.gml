@@ -1,4 +1,4 @@
-if (keyboard_multicheck_pressed(0) && scr_interact())
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
 {
     scr_text();
     is_talking = true;
@@ -9,7 +9,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact())
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I can't standstorm this#  sandstorm.";
             }
             
@@ -19,7 +19,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact())
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I couldn't standstorm that#  sandstorm.";
             }
             

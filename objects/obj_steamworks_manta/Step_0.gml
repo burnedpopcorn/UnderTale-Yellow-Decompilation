@@ -1,12 +1,10 @@
-var check_distance, hor_dir, ver_dir, checkpoint, end_dir, plx, ply, npcx, npcy, dir_prio, follower_arrived, can_move, pl_xx, pl_yy, fl_xx, fl_yy, arrow_size_multiply, new_sprite, i, color_mult;
-
 if (live_call())
     return global.live_result;
 
 switch (manta_state)
 {
     case 0:
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             manta_prompt = true;
         
         if (manta_prompt == true)
@@ -62,10 +60,10 @@ switch (manta_state)
         if (!audio_is_playing(snd_manta_sail))
             audio_play_sound(snd_manta_sail, 1, 0);
         
-        check_distance = 40;
-        hor_dir = (sprite_index == (spr_steamworks_manta_right - sprite_index)) == spr_steamworks_manta_left;
-        ver_dir = (sprite_index == (spr_steamworks_manta_down - sprite_index)) == spr_steamworks_manta_up;
-        checkpoint = collision_line(x, y, x + (hor_dir * check_distance), y + (ver_dir * check_distance), obj_steamworks_manta_checkpoint, false, true);
+        var check_distance = 40;
+        var hor_dir = (sprite_index == (spr_steamworks_manta_right - sprite_index)) == 1344;
+        var ver_dir = (sprite_index == (spr_steamworks_manta_down - sprite_index)) == 1341;
+        var checkpoint = collision_line(x, y, x + (hor_dir * check_distance), y + (ver_dir * check_distance), obj_steamworks_manta_checkpoint, false, true);
         
         if (checkpoint != -4 && checkpoint.active == false)
         {
@@ -103,6 +101,8 @@ switch (manta_state)
             manta_get_on_noloop = true;
         }
         
+        var npcx, npcy, end_dir, plx, ply;
+        
         switch (manta_dir)
         {
             case 0:
@@ -138,12 +138,14 @@ switch (manta_state)
                 break;
         }
         
+        var dir_prio;
+        
         if (abs(obj_player_npc.x - x) > abs(obj_player_npc.y - y))
             dir_prio = "y";
         else
             dir_prio = "x";
         
-        follower_arrived = false;
+        var follower_arrived = false;
         
         if (global.party_member != -4)
         {
@@ -153,7 +155,7 @@ switch (manta_state)
                 follower_arrived = true;
         }
         
-        if (scr_camera_move(x, y, 3) && cutscene_npc_walk(1168, plx, ply, 3, dir_prio, end_dir))
+        if (scr_camera_move(x, y, 3) && cutscene_npc_walk(obj_player_npc, plx, ply, 3, dir_prio, end_dir))
         {
             if (global.party_member != -4 && follower_arrived == false)
                 exit;
@@ -164,7 +166,7 @@ switch (manta_state)
             __view_set(e__VW.Object, 0, id);
         }
         
-        checkpoint = instance_nearest(x, y, obj_steamworks_manta_checkpoint);
+        var checkpoint = instance_nearest(x, y, obj_steamworks_manta_checkpoint);
         
         if (checkpoint != -4)
         {
@@ -188,21 +190,21 @@ switch (manta_state)
             {
                 if (global.route == 2)
                 {
-                    sndfnt_array[0] = 391;
-                    sndfnt_array[1] = 108;
-                    sndfnt_array[2] = 108;
-                    sndfnt_array[3] = 391;
+                    sndfnt_array[0] = snd_talk_default;
+                    sndfnt_array[1] = snd_talk_ceroba;
+                    sndfnt_array[2] = snd_talk_ceroba;
+                    sndfnt_array[3] = snd_talk_default;
                     message[0] = "* You h-ave reached your#  destination-bzzt.";
                     message[1] = "* Thanks for the help.";
                     message[2] = "* Let's keep moving,#  Clover.";
-                    message[3] = "* If you need another#  r-ride, I'll be#  here...bzzt.";
-                    prt[1] = 377;
-                    prt[2] = 370;
+                    message[3] = "* If you need another#  r-ride, I'll be#  here......bzzt.";
+                    prt[1] = spr_portrait_ceroba_closed_eyes;
+                    prt[2] = spr_portrait_ceroba_neutral;
                 }
                 else
                 {
                     message[0] = "* You h-ave reached your#  destination-bzzt.";
-                    message[1] = "* If you need another#  r-ride, I'll be#  here...bzzt.";
+                    message[1] = "* If you need another#  r-ride, I'll be#  here......bzzt.";
                 }
             }
             
@@ -215,7 +217,7 @@ switch (manta_state)
         if (!instance_exists(obj_player_npc))
             instance_create(obj_pl.x, obj_pl.y, obj_player_npc);
         
-        follower_arrived = true;
+        var follower_arrived = true;
         
         if (global.party_member != -4)
         {
@@ -226,7 +228,7 @@ switch (manta_state)
                 follower_arrived = true;
         }
         
-        if (scr_camera_move(dock_x, dock_y, 3) && cutscene_npc_walk(1168, dock_x, dock_y, 3, "x", obj_player_npc.npc_direction) && follower_arrived == true)
+        if (scr_camera_move(dock_x, dock_y, 3) && cutscene_npc_walk(obj_player_npc, dock_x, dock_y, 3, "x", obj_player_npc.npc_direction) && follower_arrived == true)
         {
             manta_state = 0;
             move_in_direction = "none";
@@ -245,11 +247,11 @@ switch (manta_state)
 
 if (move_in_direction != "none" && hspeed_current == 0 && vspeed_current == 0)
 {
-    can_move = false;
-    pl_xx = 0;
-    pl_yy = 0;
-    fl_xx = 0;
-    fl_yy = 0;
+    var can_move = false;
+    var pl_xx = 0;
+    var pl_yy = 0;
+    var fl_xx = 0;
+    var fl_yy = 0;
     
     if (can_dock == move_in_direction)
     {
@@ -374,7 +376,7 @@ if (move_in_direction != "none" && hspeed_current == 0 && vspeed_current == 0)
             with (obj_pl)
                 event_perform(ev_step, ev_step_normal);
             
-            arrow_size_multiply = 1.5;
+            var arrow_size_multiply = 1.5;
             
             if (manta_dir == 0)
                 arrow_size[3] = arrow_size_multiply;
@@ -416,24 +418,24 @@ vspeed = vspeed_current;
 
 if (hspeed_current == 0 && vspeed_current == 0)
 {
-    new_sprite = -1;
+    var new_sprite = -1;
     
     switch (manta_dir)
     {
         case 0:
-            new_sprite = spr_steamworks_manta_right_idle;
+            new_sprite = 1346;
             break;
         
         case 90:
-            new_sprite = spr_steamworks_manta_up_idle;
+            new_sprite = 1345;
             break;
         
         case 180:
-            new_sprite = spr_steamworks_manta_left_idle;
+            new_sprite = 1350;
             break;
         
         case 270:
-            new_sprite = spr_steamworks_manta_down_idle;
+            new_sprite = 1347;
             break;
     }
     
@@ -441,12 +443,12 @@ if (hspeed_current == 0 && vspeed_current == 0)
         sprite_index = new_sprite;
 }
 
-for (i = 0; i < array_length_1d(arrow_size); i++)
+for (var i = 0; i < array_length_1d(arrow_size); i++)
 {
     if (arrow_size[i] > 1)
         arrow_size[i] -= 0.05;
     
-    color_mult = (arrow_size[i] - 1) / 0.5;
+    var color_mult = (arrow_size[i] - 1) / 0.5;
     arrow_color[i] = make_colour_rgb(255, 255, 255 - (color_mult * 255));
 }
 

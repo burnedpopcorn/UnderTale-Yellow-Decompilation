@@ -28,11 +28,11 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Way to go!";
             message[1] = "* I'll do what I can to#  help us escape for good!";
-            prt[0] = 372;
-            prt[1] = 371;
+            prt[0] = spr_portrait_ceroba_smile;
+            prt[1] = spr_portrait_ceroba_alt;
         }
         
         if (!global.dialogue_open)
@@ -47,7 +47,7 @@ switch (scene)
         break;
     
     case 5:
-        global.party_member = 1171;
+        global.party_member = obj_ceroba_follower;
         obj_heart_battle_fighting_parent.image_alpha = 1;
         instance_create(402, 68, obj_quote_bubble_battle_yellow_2);
         instance_create(0, 0, obj_quote_battle_guardener);

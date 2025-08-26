@@ -1,7 +1,5 @@
-var box;
-
 damage_number = scr_determine_damage_number_enemy("flower girls", "void", "void");
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 dir = choose(1, -1);
 
 if (dir == 1)

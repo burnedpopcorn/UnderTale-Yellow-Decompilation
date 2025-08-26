@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1eee914a-a3d0-4ef8-ba76-38740496ac36",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f0af90ff-422d-4cbe-974c-f72002a1f32a",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c259343f-06c0-4d34-825a-ec75d5a224a0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ed74cf2c-4ef8-4389-a1c8-5e4850368cdb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8020b16f-387e-4bde-b5cf-afa0fe98b981",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f69c83b8-34a7-4439-8b4f-14c5eed73e5f",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 15,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"05c92288-52f5-49bd-a752-43fe50057663","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8a23a510-6c79-40f7-bae4-059ff1d9096c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1eee914a-a3d0-4ef8-ba76-38740496ac36","path":"sprites/spr_sousborg_egg_piece/spr_sousborg_egg_piece.yy",},},},"Disabled":false,"id":"cb195aa9-2ea3-4343-813e-5235977334f7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f0af90ff-422d-4cbe-974c-f72002a1f32a","path":"sprites/spr_sousborg_egg_piece/spr_sousborg_egg_piece.yy",},},},"Disabled":false,"id":"d6911eb1-1cae-49b9-9624-062620ab80f9","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c259343f-06c0-4d34-825a-ec75d5a224a0","path":"sprites/spr_sousborg_egg_piece/spr_sousborg_egg_piece.yy",},},},"Disabled":false,"id":"99b6d290-28d6-43dc-add2-a7994f04851a","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ed74cf2c-4ef8-4389-a1c8-5e4850368cdb","path":"sprites/spr_sousborg_egg_piece/spr_sousborg_egg_piece.yy",},},},"Disabled":false,"id":"3caeecc8-1668-4b4b-893c-4eedfd2b478b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8020b16f-387e-4bde-b5cf-afa0fe98b981","path":"sprites/spr_sousborg_egg_piece/spr_sousborg_egg_piece.yy",},},},"Disabled":false,"id":"3b6ce6f7-35e1-424f-b91e-8ddb9b7d064c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f69c83b8-34a7-4439-8b4f-14c5eed73e5f","path":"sprites/spr_sousborg_egg_piece/spr_sousborg_egg_piece.yy",},},},"Disabled":false,"id":"f1635a27-a67b-4647-8386-98764f80010f","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

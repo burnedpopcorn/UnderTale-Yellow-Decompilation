@@ -1,7 +1,5 @@
-var geno_snowdin;
-
 event_inherited();
-geno_snowdin = false;
+var geno_snowdin = false;
 
 if (global.geno_complete[2])
     geno_snowdin = true;
@@ -17,7 +15,7 @@ if (interact)
     with (msg)
     {
         portrait = false;
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         
         if (global.route == 3 || geno_snowdin)
         {
@@ -76,7 +74,7 @@ if (interact)
                     message[3] = "* That can't happen. I can't be#  a bad husband.";
                     message[4] = "* I won't let that happen.";
                     message[5] = "* I won't let my new wife have#  a bad honeymoon.";
-                    message[6] = "* We can't be lost";
+                    message[6] = "* We can't be lost.";
                     other.npc_flag = 4;
                     break;
                 

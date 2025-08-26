@@ -1,7 +1,5 @@
-var random_number;
-
 damage_number = scr_determine_damage_number_enemy("martlet", "void", "void");
-random_number = irandom_range(0, 13);
+var random_number = irandom_range(0, 13);
 
 switch (random_number)
 {

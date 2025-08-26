@@ -1,5 +1,3 @@
-var cam_x, cam_y, cam_x_min, cam_y_min, cam_x_max, cam_y_max;
-
 if (live_call())
     return global.live_result;
 
@@ -19,12 +17,12 @@ else if (point_in_rectangle(obj_pl.x, obj_pl.y, x_min[4], y_min[4], x_max[4], y_
 else if (point_in_rectangle(obj_pl.x, obj_pl.y, x_min[5], y_min[5], x_max[5], y_max[5]))
     current_area = 5;
 
-cam_x = (obj_pl.x - cam_width_half) + x_offset;
-cam_y = (obj_pl.y + 30) - cam_height_half;
-cam_x_min = x_min[current_area] - 60;
-cam_y_min = y_min[current_area] - 35;
-cam_x_max = x_max[current_area] - 120 - 160;
-cam_y_max = y_max[current_area] + 95;
+var cam_x = (obj_pl.x - cam_width_half) + x_offset;
+var cam_y = (obj_pl.y + 30) - cam_height_half;
+var cam_x_min = x_min[current_area] - 60;
+var cam_y_min = y_min[current_area] - 35;
+var cam_x_max = x_max[current_area] - 120 - 160;
+var cam_y_max = y_max[current_area] + 95;
 
 if (current_area == 0)
 {

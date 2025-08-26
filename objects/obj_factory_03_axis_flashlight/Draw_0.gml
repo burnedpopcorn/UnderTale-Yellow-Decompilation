@@ -1,20 +1,18 @@
-var darkness_alpha, view_x, view_y;
-
 if (live_call())
     return global.live_result;
 
 if (active == -1)
     exit;
 
-darkness_alpha = 0.6;
+var darkness_alpha = 0.6;
 
 if (!surface_exists(lighting_surface))
     lighting_surface = surface_create(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
 
 if (surface_exists(lighting_surface))
 {
-    view_x = camera_get_view_x(view_camera[0]);
-    view_y = camera_get_view_y(view_camera[0]);
+    var view_x = camera_get_view_x(view_camera[0]);
+    var view_y = camera_get_view_y(view_camera[0]);
     surface_set_target(lighting_surface);
     draw_set_color(c_black);
     draw_set_alpha(darkness_alpha);

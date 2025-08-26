@@ -1,7 +1,5 @@
-var yy, i, mountain_offset;
-
-yy = (__view_get(e__VW.YView, 0) / 1.2) - 100;
-i = 0;
+var yy = (__view_get(e__VW.YView, 0) / 1.2) - 100;
+var i = 0;
 
 while (i <= room_width)
 {
@@ -17,7 +15,7 @@ while (i <= room_width)
     i += background_get_width(2510);
 }
 
-mountain_offset = -200;
+var mountain_offset = -200;
 i = mountain_offset;
 
 while (i <= room_width)

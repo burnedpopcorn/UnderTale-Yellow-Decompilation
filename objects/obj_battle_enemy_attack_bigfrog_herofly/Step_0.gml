@@ -1,5 +1,3 @@
-var lerp_speed, tar;
-
 if (live_call())
     return global.live_result;
 
@@ -17,7 +15,7 @@ switch (scene)
         break;
     
     case 1:
-        lerp_speed = 0.2;
+        var lerp_speed = 0.2;
         x = lerp(x, x_target, lerp_speed);
         y = lerp(y, y_target, lerp_speed);
         
@@ -35,7 +33,7 @@ switch (scene)
             }
             else
             {
-                tar = instance_create_depth(irandom_range(target_bounds_left, target_bounds_right), irandom_range(y - 40, y + 40), -110, target_object);
+                var tar = instance_create_depth(irandom_range(target_bounds_left, target_bounds_right), irandom_range(y - 40, y + 40), -110, target_object);
                 tar.target_x = tar.x;
                 tar.target_y = tar.y;
                 target_timer = target_timer_max;

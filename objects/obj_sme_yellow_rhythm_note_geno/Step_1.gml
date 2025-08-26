@@ -1,5 +1,3 @@
-var fail_sound;
-
 if (live_call())
     return global.live_result;
 
@@ -26,7 +24,7 @@ y += note_speed;
 
 if (y >= end_boundary)
 {
-    fail_sound = audio_play_sound(snd_fail, 1, 0);
+    var fail_sound = audio_play_sound(snd_fail, 1, 0);
     audio_sound_pitch(fail_sound, random_range(0.8, 1.3));
     note_destroy = true;
     vspeed = -6;

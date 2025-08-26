@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9dbd6f35-61b5-4a66-8a04-8620e6211513",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"90c30ce5-76fa-495e-9d03-6c09d8f88e81",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7799f7c7-16ea-4f96-a9b2-ab1684468ce5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f06e3da9-b687-433d-963f-3749a355580c",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 88,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"79fdc430-d2ec-4d64-9904-001741fee041","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e55cd29e-86c4-4566-9957-6f61948421a5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9dbd6f35-61b5-4a66-8a04-8620e6211513","path":"sprites/flowey_worriedside/flowey_worriedside.yy",},},},"Disabled":false,"id":"40d21083-f63a-4ea6-8731-303689bd7735","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"90c30ce5-76fa-495e-9d03-6c09d8f88e81","path":"sprites/flowey_worriedside/flowey_worriedside.yy",},},},"Disabled":false,"id":"d2109dcf-7dce-4ed5-91d1-f4927c7fcaad","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7799f7c7-16ea-4f96-a9b2-ab1684468ce5","path":"sprites/flowey_worriedside/flowey_worriedside.yy",},},},"Disabled":false,"id":"f1052934-1ed8-49f8-8184-8ae9b28184a0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f06e3da9-b687-433d-963f-3749a355580c","path":"sprites/flowey_worriedside/flowey_worriedside.yy",},},},"Disabled":false,"id":"fcd9d2b2-6cfb-4f11-93bd-3995d253e3cd","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "GeneralUse",
+    "path": "texturegroups/GeneralUse",
   },
   "type": 0,
   "VTile": false,

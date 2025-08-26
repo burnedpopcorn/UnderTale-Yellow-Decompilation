@@ -1,14 +1,12 @@
-var soul, battle_box, right_boundary, left_boundary, top_boundary, bottom_boundary, soul_bbox_right, soul_bbox_left, soul_bbox_top, soul_bbox_bottom;
-
 if (live_call())
     return global.live_result;
 
-soul = 1279;
-battle_box = 3154;
-right_boundary = battle_box.bbox_right - 4;
-left_boundary = battle_box.bbox_left + 4;
-top_boundary = battle_box.bbox_top + 4;
-bottom_boundary = battle_box.bbox_bottom - 4;
+var soul = obj_heart_battle_fighting_yellow_final;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var right_boundary = battle_box.bbox_right - 4;
+var left_boundary = battle_box.bbox_left + 4;
+var top_boundary = battle_box.bbox_top + 4;
+var bottom_boundary = battle_box.bbox_bottom - 4;
 
 if (place_meeting(x, y, soul))
 {
@@ -18,10 +16,10 @@ if (place_meeting(x, y, soul))
     }
     else
     {
-        soul_bbox_right = soul.x + 8;
-        soul_bbox_left = soul.x - 8;
-        soul_bbox_top = soul.y - 8;
-        soul_bbox_bottom = soul.y + 8;
+        var soul_bbox_right = soul.x + 8;
+        var soul_bbox_left = soul.x - 8;
+        var soul_bbox_top = soul.y - 8;
+        var soul_bbox_bottom = soul.y + 8;
         
         if (vspeed != 0)
         {

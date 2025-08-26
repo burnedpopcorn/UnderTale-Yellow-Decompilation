@@ -1,5 +1,3 @@
-var random_number;
-
 if (live_call())
     return global.live_result;
 
@@ -18,7 +16,7 @@ if (instance_exists(obj_fmartlet_spawner_circular_scratch))
     feather_create_max = 3;
 
 no_loop_destroy = false;
-random_number = 2;
+var random_number = 2;
 
 switch (random_number)
 {

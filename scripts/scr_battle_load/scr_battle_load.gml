@@ -1,7 +1,5 @@
 function scr_battle_load()
 {
-    var i, list_string;
-    
     if (file_exists("tempsave.sav"))
     {
         ini_open("tempsave.sav");
@@ -26,7 +24,7 @@ function scr_battle_load()
         if (instance_exists(obj_radio))
             obj_radio.bgm = ini_read_real("Save1", "owms", -4);
         
-        for (i = 1; i <= 8; i++)
+        for (var i = 1; i <= 8; i++)
             global.item_slot[i] = ini_read_string("Items", "0" + string(i - 1), "Nothing");
         
         if (global.battle_enemy_name == "flowey")
@@ -45,7 +43,7 @@ function scr_battle_load()
                 global.flowey_attack_list = ds_list_create();
                 global.flowey_stolen_attack_list = ds_list_create();
                 global.flowey_room_list = ds_list_create();
-                list_string = ini_read_string("Special", "1", "");
+                var list_string = ini_read_string("Special", "1", "");
                 ds_list_read(global.flowey_attack_list, list_string);
                 list_string = ini_read_string("Special", "2", "");
                 ds_list_read(global.flowey_stolen_attack_list, list_string);

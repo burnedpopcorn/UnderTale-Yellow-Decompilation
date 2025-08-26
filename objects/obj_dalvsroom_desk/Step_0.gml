@@ -1,6 +1,6 @@
 if (global.route != 3)
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && waiter == 0 && !instance_exists(obj_dialogue))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && waiter == 0 && !instance_exists(obj_dialogue))
         waiter = 1;
     
     if (waiter == 1)
@@ -13,7 +13,7 @@ if (global.route != 3)
                 instance_create(0, 0, obj_dialoguebox_dummy);
             
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (There is a book of neatly#  written paragraphs on#  the desk.)";
             message[1] = "* (They all appear to be very#  similar.)";
             message[2] = "* (Read one?)";
@@ -47,7 +47,7 @@ if (global.route != 3)
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* Dalv is a loner living in#  the ruins of Home.";
             message[1] = "* He enjoys quiet walks in the#  dark, cleaning, and improving#  songs on his organ.";
             message[2] = "* He wants to share with the#  youth of the Underground...";
@@ -71,7 +71,7 @@ if (global.route != 3)
 }
 else
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
         waiter = 1;
     
     if (waiter == 1)
@@ -81,7 +81,7 @@ else
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (There is a book of neatly#  written paragraphs on the#  desk.)";
             message[1] = "* (They all appear to be very#  similar.)";
         }

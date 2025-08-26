@@ -1,13 +1,11 @@
-var item_1_xx, item_1_yy, item_2_xx, item_2_yy, item_3_xx, item_3_yy, item_4_xx, item_4_yy, player_carrying_item, i;
-
-item_1_xx = 88;
-item_1_yy = 160;
-item_2_xx = 128;
-item_2_yy = 160;
-item_3_xx = 88;
-item_3_yy = 190;
-item_4_xx = 128;
-item_4_yy = 190;
+var item_1_xx = 88;
+var item_1_yy = 160;
+var item_2_xx = 128;
+var item_2_yy = 160;
+var item_3_xx = 88;
+var item_3_yy = 190;
+var item_4_xx = 128;
+var item_4_yy = 190;
 
 switch (scene)
 {
@@ -23,7 +21,7 @@ switch (scene)
             ch_msg = 15;
             ch[1] = "Yes";
             ch[2] = "No";
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Ouch... Can't say I was#  prepared for that.";
             message[1] = "* I knew my husband was#  an engineer but he never#  told me about that guy.";
             message[2] = "* He'd vaguely mention a#  robotics project that#  could net him a#  promotion but...";
@@ -40,37 +38,37 @@ switch (scene)
             message[13] = "* We could use scraps#  lying around to forge a#  companion for him!";
             message[14] = "* He doesn't seem too#  bright after all. Maybe#  that's all we need to#  distract him?";
             message[15] = "* What do you think?";
-            prt[0] = 370;
-            prt[1] = 370;
-            prt[2] = 370;
-            prt[3] = 370;
-            prt[4] = 370;
-            prt[5] = 370;
-            prt[6] = 370;
-            prt[7] = 370;
-            prt[8] = 370;
-            prt[9] = 370;
-            prt[10] = 370;
-            prt[11] = 370;
-            prt[12] = 370;
-            prt[13] = 370;
-            prt[14] = 370;
-            prt[15] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_neutral;
+            prt[3] = spr_portrait_ceroba_neutral;
+            prt[4] = spr_portrait_ceroba_neutral;
+            prt[5] = spr_portrait_ceroba_neutral;
+            prt[6] = spr_portrait_ceroba_neutral;
+            prt[7] = spr_portrait_ceroba_neutral;
+            prt[8] = spr_portrait_ceroba_neutral;
+            prt[9] = spr_portrait_ceroba_neutral;
+            prt[10] = spr_portrait_ceroba_neutral;
+            prt[11] = spr_portrait_ceroba_neutral;
+            prt[12] = spr_portrait_ceroba_neutral;
+            prt[13] = spr_portrait_ceroba_neutral;
+            prt[14] = spr_portrait_ceroba_neutral;
+            prt[15] = spr_portrait_ceroba_neutral;
             
             if (outcome == 1)
             {
                 message[16] = "* Great!";
                 message[17] = "* It's the best plan I#  could think of.";
-                prt[16] = 370;
-                prt[17] = 370;
+                prt[16] = spr_portrait_ceroba_neutral;
+                prt[17] = spr_portrait_ceroba_neutral;
             }
             
             if (outcome == 2)
             {
                 message[16] = "* You got a better idea?";
                 message[17] = "* It'll be easy, trust#  me.";
-                prt[16] = 370;
-                prt[17] = 370;
+                prt[16] = spr_portrait_ceroba_neutral;
+                prt[17] = spr_portrait_ceroba_neutral;
             }
         }
         
@@ -81,19 +79,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* So... ";
             message[1] = "* We seem to be in some#  sort of storage room.";
             message[2] = "* Look around for parts#  we can use. Shouldn't#  take many.";
-            prt[0] = 370;
-            prt[1] = 370;
-            prt[2] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_neutral;
         }
         
         break;
     
     case 3:
-        cutscene_npc_walk(1161, 105, 125, 3, "x", "down");
+        cutscene_npc_walk(obj_ceroba_npc, 105, 125, 3, "x", "down");
         break;
     
     case 4:
@@ -102,7 +100,7 @@ switch (scene)
         break;
     
     case 5:
-        player_carrying_item = false;
+        var player_carrying_item = false;
         
         with (obj_robuild_parent)
         {
@@ -116,9 +114,9 @@ switch (scene)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* You want to use this?";
-                prt[0] = 370;
+                prt[0] = spr_portrait_ceroba_neutral;
                 ch_msg = 0;
                 ch[1] = "Positive";
                 ch[2] = "Negative";
@@ -145,7 +143,7 @@ switch (scene)
                 if (outcome == 2)
                 {
                     message[1] = "* Grab something else#  then.";
-                    prt[1] = 370;
+                    prt[1] = spr_portrait_ceroba_neutral;
                 }
             }
         }
@@ -163,16 +161,16 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Okay, we'll need three#  more objects.";
-            prt[0] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
         }
         
         global.cutscene = false;
         break;
     
     case 7:
-        player_carrying_item = false;
+        var player_carrying_item = false;
         
         with (obj_robuild_parent)
         {
@@ -186,9 +184,9 @@ switch (scene)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* You think this'll work?";
-                prt[0] = 370;
+                prt[0] = spr_portrait_ceroba_neutral;
                 ch_msg = 0;
                 ch[1] = "Certain";
                 ch[2] = "Uncertain";
@@ -215,7 +213,7 @@ switch (scene)
                 if (outcome == 2)
                 {
                     message[1] = "* We don't have time to waste.";
-                    prt[1] = 370;
+                    prt[1] = spr_portrait_ceroba_neutral;
                 }
             }
         }
@@ -233,16 +231,16 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Alright, two more and#  we can make this thing.";
-            prt[0] = 437;
+            prt[0] = spr_portrait_ace_concealed;
         }
         
         global.cutscene = false;
         break;
     
     case 9:
-        player_carrying_item = false;
+        var player_carrying_item = false;
         
         with (obj_robuild_parent)
         {
@@ -256,9 +254,9 @@ switch (scene)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Is this a good pick?";
-                prt[0] = 370;
+                prt[0] = spr_portrait_ceroba_neutral;
                 ch_msg = 0;
                 ch[1] = "Definitely";
                 ch[2] = "Definitely\nnot";
@@ -285,7 +283,7 @@ switch (scene)
                 if (outcome == 2)
                 {
                     message[1] = "* Make up your mind.";
-                    prt[1] = 370;
+                    prt[1] = spr_portrait_ceroba_neutral;
                 }
             }
         }
@@ -303,16 +301,16 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* One more object should#  do the trick.";
-            prt[0] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
         }
         
         global.cutscene = false;
         break;
     
     case 11:
-        player_carrying_item = false;
+        var player_carrying_item = false;
         
         with (obj_robuild_parent)
         {
@@ -326,9 +324,9 @@ switch (scene)
             
             with (msg)
             {
-                talker[0] = 1161;
+                talker[0] = obj_ceroba_npc;
                 message[0] = "* Is this your final#  choice?";
-                prt[0] = 370;
+                prt[0] = spr_portrait_ceroba_neutral;
                 ch_msg = 0;
                 ch[1] = "Yea";
                 ch[2] = "Nay";
@@ -356,7 +354,7 @@ switch (scene)
                 if (outcome == 2)
                 {
                     message[1] = "* Hurry it up then.";
-                    prt[1] = 370;
+                    prt[1] = spr_portrait_ceroba_neutral;
                 }
             }
         }
@@ -374,9 +372,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[1] = "* Okay, let's build a#  robot!";
-            prt[1] = 372;
+            prt[1] = spr_portrait_ceroba_smile;
         }
         
         break;
@@ -392,7 +390,7 @@ switch (scene)
         if (!instance_exists(obj_robot_build_controller))
             instance_create(0, 0, obj_robot_build_controller);
         
-        for (i = 0; i < array_length_1d(robot_part); i++)
+        for (var i = 0; i < array_length_1d(robot_part); i++)
             obj_robot_build_controller.robot_item[i] = robot_part[i];
         
         break;

@@ -1,6 +1,6 @@
-function scr_item_stats_weapon_mod(argument0)
+function scr_item_stats_weapon_mod(arg0)
 {
-    switch (argument0)
+    switch (arg0)
     {
         case "Rubber Ammo":
             return 0;

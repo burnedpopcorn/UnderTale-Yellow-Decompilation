@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"45773fb8-2509-4559-8370-6cc349d15081",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"32a0957c-be2a-4afc-b646-1e41f7faa2b5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d36216ba-ae53-48f2-8e81-3647c852fb28",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"61a3edec-9470-45ad-9efe-a14cae65f115",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 46,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2be5237e-f5f9-463d-b858-676c7642746c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"046fdf30-9d2a-43e5-b7e1-48889cc9815b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"45773fb8-2509-4559-8370-6cc349d15081","path":"sprites/spr_npc_rock_man/spr_npc_rock_man.yy",},},},"Disabled":false,"id":"69375353-8b94-4cfa-8079-532c076850b8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"32a0957c-be2a-4afc-b646-1e41f7faa2b5","path":"sprites/spr_npc_rock_man/spr_npc_rock_man.yy",},},},"Disabled":false,"id":"9b2ecc07-ef2a-4f40-a8be-7b2d29b65b77","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d36216ba-ae53-48f2-8e81-3647c852fb28","path":"sprites/spr_npc_rock_man/spr_npc_rock_man.yy",},},},"Disabled":false,"id":"b5420f11-0e21-4174-9e93-b754d179c042","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"61a3edec-9470-45ad-9efe-a14cae65f115","path":"sprites/spr_npc_rock_man/spr_npc_rock_man.yy",},},},"Disabled":false,"id":"dc8bd048-b867-4ea3-bbf0-ca28f6159a4c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Dunes",
+    "path": "texturegroups/Dunes",
   },
   "type": 0,
   "VTile": false,

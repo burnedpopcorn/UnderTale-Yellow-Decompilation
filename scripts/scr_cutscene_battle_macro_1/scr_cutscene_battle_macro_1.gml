@@ -1,7 +1,5 @@
 function scr_cutscene_battle_macro_1()
 {
-    var cutscene_ex, froggit_jump;
-    
     if (live_call())
         return global.live_result;
     
@@ -14,10 +12,10 @@ function scr_cutscene_battle_macro_1()
         case 1:
             instance_create_depth(320, 110, 100, obj_macro_froggit_body);
             instance_create_depth(320, 122, 99, obj_macro_froggit_head);
-            scr_audio_fade_out(141, 1500);
+            scr_audio_fade_out(mus_funsized_yellow, 1500);
             obj_micro_froggit.can_jump = false;
             audio_play_sound(snd_encounter, 1, 0);
-            cutscene_ex = instance_create_depth(obj_micro_froggit.x, obj_micro_froggit.y - 25, -200, obj_cutscene_ex);
+            var cutscene_ex = instance_create_depth(obj_micro_froggit.x, obj_micro_froggit.y - 25, -200, obj_cutscene_ex);
             cutscene_ex.image_xscale = 2;
             cutscene_ex.image_yscale = 2;
             cutscene_advance();
@@ -43,7 +41,7 @@ function scr_cutscene_battle_macro_1()
             {
                 if (path_position == 0 || floor(path_position) == 1)
                 {
-                    froggit_jump = audio_play_sound(snd_playerjump, 1, 0);
+                    var froggit_jump = audio_play_sound(snd_playerjump, 1, 0);
                     audio_sound_pitch(froggit_jump, 0.5);
                     path_start(pt_micro_froggit_run, 6, path_action_stop, false);
                 }

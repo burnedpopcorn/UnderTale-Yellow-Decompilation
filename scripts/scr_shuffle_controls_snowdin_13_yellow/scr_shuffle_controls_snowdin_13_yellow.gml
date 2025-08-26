@@ -1,10 +1,8 @@
 function scr_shuffle_controls_snowdin_13_yellow()
 {
-    var key_left, key_right, key_select;
-    
-    key_left = global.left_keyp;
-    key_right = global.right_keyp;
-    key_select = keyboard_multicheck_pressed(0);
+    var key_left = global.left_keyp;
+    var key_right = global.right_keyp;
+    var key_select = keyboard_multicheck_pressed(vk_nokey);
     
     if (shufflers_select == true)
     {

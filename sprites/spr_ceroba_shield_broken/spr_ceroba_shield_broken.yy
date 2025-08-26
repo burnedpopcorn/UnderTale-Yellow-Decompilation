@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c69525c0-8637-4950-a8bc-541da8b3b785",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3e6685bb-ca82-49be-920c-1e83072c98cc",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"74e57556-b539-4eed-89f4-56c9b3e701f7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7b449a29-7b95-45f9-8007-00c34d10b6b9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3253b45f-42ff-4be3-86f6-9ce7f2af9584",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d6c4abf8-e2ee-4f05-a029-7e05593c7149",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 93,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d0004773-c8f0-4aad-92ae-3d501fb82619","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a36762a1-922b-4c10-a82a-d8a1c836b34c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c69525c0-8637-4950-a8bc-541da8b3b785","path":"sprites/spr_ceroba_shield_broken/spr_ceroba_shield_broken.yy",},},},"Disabled":false,"id":"e2d5f209-723f-4f61-a4d8-d980097d8f7c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3e6685bb-ca82-49be-920c-1e83072c98cc","path":"sprites/spr_ceroba_shield_broken/spr_ceroba_shield_broken.yy",},},},"Disabled":false,"id":"41f30e23-0844-4bbf-9b7e-da236c50cfbb","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"74e57556-b539-4eed-89f4-56c9b3e701f7","path":"sprites/spr_ceroba_shield_broken/spr_ceroba_shield_broken.yy",},},},"Disabled":false,"id":"dd541b12-1800-43f0-a9aa-c6431e2ad976","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7b449a29-7b95-45f9-8007-00c34d10b6b9","path":"sprites/spr_ceroba_shield_broken/spr_ceroba_shield_broken.yy",},},},"Disabled":false,"id":"69d6873e-d78a-44f2-b34e-62cc00f6a5ae","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3253b45f-42ff-4be3-86f6-9ce7f2af9584","path":"sprites/spr_ceroba_shield_broken/spr_ceroba_shield_broken.yy",},},},"Disabled":false,"id":"dd5a47fa-ce65-423b-b259-e7f673c05f45","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d6c4abf8-e2ee-4f05-a029-7e05593c7149","path":"sprites/spr_ceroba_shield_broken/spr_ceroba_shield_broken.yy",},},},"Disabled":false,"id":"162a1e5c-3bf8-4d68-80f5-5d739d90f791","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Battlenewhome",
+    "path": "texturegroups/Battlenewhome",
   },
   "type": 0,
   "VTile": false,

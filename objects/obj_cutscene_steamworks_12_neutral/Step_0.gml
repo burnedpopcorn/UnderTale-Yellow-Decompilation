@@ -1,5 +1,3 @@
-var fall_speed, i;
-
 switch (scene)
 {
     case 0:
@@ -33,7 +31,7 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_sfx_play(270, 0.8);
+        cutscene_sfx_play(snd_elevator_start, 0.8);
         break;
     
     case 7:
@@ -49,7 +47,7 @@ switch (scene)
         break;
     
     case 10:
-        cutscene_npc_walk(1166, 190, obj_pl.y, 4, "y", "right", false);
+        cutscene_npc_walk(obj_axis_npc, 190, obj_pl.y, 4, "y", "right", false);
         break;
     
     case 11:
@@ -58,8 +56,8 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 16711935;
-            talker[0] = 1166;
+            col_modif[0] = c_fuchsia;
+            talker[0] = obj_axis_npc;
             message[0] = "* AXIS MODEL 014 READY TO#  GUARD AND PROTECT.";
             message_col[0][0] = "  AXIS                                        ";
             message[1] = "* INTRUDER SPOTTED.#  STEAMWORKS: EASTERN#  BRANCH.";
@@ -68,12 +66,12 @@ switch (scene)
             message[4] = "* - UTILIZING MACHINERY#  WITHOUT PERMISSION.";
             message[5] = "* - HUMAN.";
             message[6] = "* HOW TO YOU PLEAD TO#  THESE ACCUSATIONS?";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
-            prt[3] = 473;
-            prt[4] = 473;
-            prt[5] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
+            prt[3] = spr_portrait_axis_normal;
+            prt[4] = spr_portrait_axis_normal;
+            prt[5] = spr_portrait_axis_normal;
             ch_msg = 6;
             ch[1] = "Not guilty";
             ch[2] = "Guilty";
@@ -83,9 +81,9 @@ switch (scene)
                 message[7] = "* PLAYING TOUGH ARE WE?";
                 message[8] = "* THAT IS NO MATTER.";
                 message[9] = "* I WILL SCAN YOUR FACE#  WITH MY LIE DETECTOR.";
-                prt[7] = 473;
-                prt[8] = 473;
-                prt[9] = 473;
+                prt[7] = spr_portrait_axis_normal;
+                prt[8] = spr_portrait_axis_normal;
+                prt[9] = spr_portrait_axis_normal;
                 other.scene = 12;
             }
             
@@ -96,11 +94,11 @@ switch (scene)
                 message[9] = "* YOUR CRIMES WILL BE#  REPORTED TO AN#  AUTHORITY.";
                 message[10] = "* OH WAIT, THAT IS ME.";
                 message[11] = "* ENJOY YOUR ISOLATION,#  HUMAN.";
-                prt[7] = 473;
-                prt[8] = 473;
-                prt[9] = 473;
-                prt[10] = 473;
-                prt[11] = 473;
+                prt[7] = spr_portrait_axis_normal;
+                prt[8] = spr_portrait_axis_normal;
+                prt[9] = spr_portrait_axis_normal;
+                prt[10] = spr_portrait_axis_normal;
+                prt[11] = spr_portrait_axis_normal;
                 other.scene = 15;
             }
         }
@@ -114,7 +112,7 @@ switch (scene)
         with (obj_pl)
             scr_axis_clover_scan();
         
-        cutscene_sfx_play(271, 1);
+        cutscene_sfx_play(snd_elevator, 1);
         audio_sound_pitch(snd_elevator, 2);
         break;
     
@@ -127,15 +125,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* INCREDIBLE.";
             message[1] = "* YOU HAVE THE MOST#  EMOTIONLESS FACE I HAVE#  EVER SEEN.";
             message[2] = "* I WILL JUST HAVE TO GO#  WITH MY NON-EXISTENT GUT#  AND SAY YOU WERE LYING.";
             message[3] = "* ENJOY YOUR ISOLATION,#  HUMAN.";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
-            prt[3] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
+            prt[3] = spr_portrait_axis_normal;
         }
         
         break;
@@ -145,7 +143,7 @@ switch (scene)
             exit;
         
         scr_audio_fade_out(cutscene_music, 300);
-        cutscene_sfx_play(293, 1);
+        cutscene_sfx_play(snd_rock_break, 1);
         break;
     
     case 16:
@@ -157,7 +155,7 @@ switch (scene)
         break;
     
     case 18:
-        cutscene_sfx_play(401, 1);
+        cutscene_sfx_play(snd_decibatfall, 1);
         break;
     
     case 19:
@@ -178,9 +176,9 @@ switch (scene)
             image_angle -= 1;
         }
         
-        fall_speed = 10;
+        var fall_speed = 10;
         
-        for (i = 1000002; i >= 999998; i--)
+        for (var i = 1000002; i >= 999998; i--)
             tile_layer_shift(i, 0, -fall_speed);
         
         layer_y("ts_steamworks", layer_get_y("ts_steamworks") - fall_speed);
@@ -207,7 +205,7 @@ switch (scene)
         break;
     
     case 22:
-        cutscene_sfx_play(263, 0.3);
+        cutscene_sfx_play(snd_toy_squeak, 0.3);
         break;
     
     case 23:
@@ -215,6 +213,6 @@ switch (scene)
         break;
     
     case 24:
-        cutscene_change_room(160, 110, 150, 0.025);
+        cutscene_change_room(rm_steamworks_13, 110, 150, 0.025);
         break;
 }

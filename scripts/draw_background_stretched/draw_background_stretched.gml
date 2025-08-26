@@ -1,4 +1,4 @@
-function draw_background_stretched(argument0, argument1, argument2, argument3, argument4)
+function draw_background_stretched(arg0, arg1, arg2, arg3, arg4)
 {
-    draw_sprite_stretched(argument0, 0, argument1, argument2, argument3, argument4);
+    draw_sprite_stretched(arg0, 0, arg1, arg2, arg3, arg4);
 }

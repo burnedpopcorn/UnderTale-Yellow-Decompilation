@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I entered this cave to find#  treasure but I found these#  fellas instead.\t";
                 message[1] = "* They hopped up to me and#  now... I guess we're buddies?\t";
                 message[2] = "* Is that how that works???\t";
@@ -25,7 +25,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* If there's any treasure#  around, you can have it.\t";
                 message[1] = "* I think these funky frogs are#  all I need now.\t";
                 message[2] = "* Oh, and my brother, I guess.#  He's okay.";
@@ -38,7 +38,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Sometimes, happiness is just a#  couple of pals chilling in a#  cave.\t";
                 message[1] = "* Other times, it's more#  complicated.\t";
                 message[2] = "* Mine is definitely the former#  cause I can't even spell the#  word complicated! ";
@@ -51,7 +51,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* On your way out, say hi to my#  brother for me, eh?";
             }
             

@@ -23,13 +23,13 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Ack!";
             message[1] = "* I'm stuck, Clover!";
             message[2] = "* We need to find a way#  out of this! Fast!";
-            prt[0] = 366;
-            prt[1] = 368;
-            prt[2] = 366;
+            prt[0] = spr_portrait_ceroba_angry;
+            prt[1] = spr_portrait_ceroba_irked;
+            prt[2] = spr_portrait_ceroba_angry;
         }
         
         if (!global.dialogue_open)

@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd96a285-28d7-466e-8332-4dfad644ae1f",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7a5112a8-5733-406c-9bc7-d6e43dd31f02",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"999e44d4-aeba-4767-a8a4-dd1011a00ace",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d33e2b62-516a-467b-8d75-7f40690152d9",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 117,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d181dbb0-092f-46d3-ac86-c96afc9c0fae","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ebcf9dea-7aae-4647-a3c7-73996b1ba706","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fd96a285-28d7-466e-8332-4dfad644ae1f","path":"sprites/spr_hotland_statue/spr_hotland_statue.yy",},},},"Disabled":false,"id":"21d565b6-306d-4678-a1f6-30ccdbba800f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7a5112a8-5733-406c-9bc7-d6e43dd31f02","path":"sprites/spr_hotland_statue/spr_hotland_statue.yy",},},},"Disabled":false,"id":"b5687288-177f-47ad-9912-af52aac16de7","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"999e44d4-aeba-4767-a8a4-dd1011a00ace","path":"sprites/spr_hotland_statue/spr_hotland_statue.yy",},},},"Disabled":false,"id":"9ebb2c62-b2e8-46ed-9b8e-b6ccb8f187f8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d33e2b62-516a-467b-8d75-7f40690152d9","path":"sprites/spr_hotland_statue/spr_hotland_statue.yy",},},},"Disabled":false,"id":"54139c0e-0009-4d4b-947e-072f40b912d1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Hotland",
+    "path": "texturegroups/Hotland",
   },
   "type": 0,
   "VTile": false,

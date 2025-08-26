@@ -1,6 +1,4 @@
-var icecube;
-
-icecube = obj_snowdin_19_icecube;
+var icecube = 1522;
 
 if (shrink == true)
 {

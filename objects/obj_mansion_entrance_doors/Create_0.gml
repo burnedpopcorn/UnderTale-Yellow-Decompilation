@@ -1,4 +1,4 @@
-new_room = 241;
+new_room = rm_mansion_entrance;
 xx = 320;
 yy = 320;
 scene = 0;

@@ -1,5 +1,3 @@
-var pl_die;
-
 if (active == true && !alarm[0])
     alarm[0] = spawn_delay;
 
@@ -12,7 +10,7 @@ if (image_index >= (image_number - 1))
         solid = true;
 }
 
-pl_die = false;
+var pl_die = false;
 
 if (place_meeting(x, y, obj_pl) && can_hit)
 {

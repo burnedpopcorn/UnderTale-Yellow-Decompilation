@@ -1,9 +1,7 @@
-var battle_box, block;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 switch (round(attack_tick))
 {
@@ -86,7 +84,7 @@ switch (round(attack_tick))
         break;
     
     case 200:
-        block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block);
+        var block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block);
         block.direction = 0;
         block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 29, -100, obj_martlet_attack_block);
         block.direction = 0;
@@ -97,7 +95,7 @@ switch (round(attack_tick))
         break;
     
     case 215:
-        block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block_hurt);
+        var block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block_hurt);
         block.direction = 0;
         block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 29, -100, obj_martlet_attack_glass);
         block.direction = 0;
@@ -108,7 +106,7 @@ switch (round(attack_tick))
         break;
     
     case 240:
-        block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block_hurt);
+        var block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block_hurt);
         block.direction = 0;
         block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 29, -100, obj_martlet_attack_block_hurt);
         block.direction = 0;
@@ -119,7 +117,7 @@ switch (round(attack_tick))
         break;
     
     case 265:
-        block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block_hurt);
+        var block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block_hurt);
         block.direction = 0;
         block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 29, -100, obj_martlet_attack_block_hurt);
         block.direction = 0;
@@ -130,7 +128,7 @@ switch (round(attack_tick))
         break;
     
     case 277:
-        block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block_hurt);
+        var block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block_hurt);
         block.direction = 0;
         block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 29, -100, obj_martlet_attack_block_hurt);
         block.direction = 0;
@@ -141,7 +139,7 @@ switch (round(attack_tick))
         break;
     
     case 289:
-        block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block_hurt);
+        var block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block_hurt);
         block.direction = 0;
         block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 29, -100, obj_martlet_attack_glass);
         block.direction = 0;
@@ -152,7 +150,7 @@ switch (round(attack_tick))
         break;
     
     case 301:
-        block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block_hurt);
+        var block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 5, -100, obj_martlet_attack_block_hurt);
         block.direction = 0;
         block = instance_create_depth(battle_box.bbox_left - 24, battle_box.bbox_top + 29, -100, obj_martlet_attack_block);
         block.direction = 0;

@@ -1,8 +1,6 @@
-var game_mode, battle_enemy_name, enemy_missed;
-
-game_mode = global.game_mode;
-battle_enemy_name = global.battle_enemy_name;
-enemy_missed = false;
+var game_mode = global.game_mode;
+var battle_enemy_name = global.battle_enemy_name;
+var enemy_missed = false;
 
 if (instance_exists(obj_text_damage_count))
 {
@@ -48,12 +46,12 @@ if (global.current_hp_enemy == 0)
         {
             case "ceroba genocide":
                 obj_ceroba_body.death_sprite = true;
-                scr_audio_fade_out(206, 500);
+                scr_audio_fade_out(mus_trial_by_fury, 500);
                 break;
             
             case "starlo":
                 obj_starlo_boss_body.death_sprite = true;
-                scr_audio_fade_out(210, 500);
+                scr_audio_fade_out(mus_showdown, 500);
                 break;
             
             case "decibat":
@@ -65,7 +63,7 @@ if (global.current_hp_enemy == 0)
             
             case "axis":
                 obj_axis_body.death_sprite = true;
-                scr_audio_fade_out(40, 500);
+                scr_audio_fade_out(mus_guns_blazing, 500);
                 break;
             
             case "axis genocide":
@@ -73,7 +71,7 @@ if (global.current_hp_enemy == 0)
                 break;
             
             case "guardener":
-                scr_audio_fade_out(37, 500);
+                scr_audio_fade_out(mus_guardener_theme, 500);
                 obj_guardener_body.death_sprite = true;
                 break;
             

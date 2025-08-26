@@ -1,5 +1,3 @@
-var w_scale, h_scale, w_multiplier, h_multiplier, v, h, i;
-
 if (live_call())
     return global.live_result;
 
@@ -18,14 +16,14 @@ else if (!surface_exists(surf_screen_copy))
     exit;
 }
 
-w_scale = surface_get_width(application_surface) / 320;
-h_scale = surface_get_height(application_surface) / 240;
-w_multiplier = 320 / surface_get_width(application_surface);
-h_multiplier = 240 / surface_get_height(application_surface);
-v = 0;
-h = 0;
+var w_scale = surface_get_width(application_surface) / 320;
+var h_scale = surface_get_height(application_surface) / 240;
+var w_multiplier = 320 / surface_get_width(application_surface);
+var h_multiplier = 240 / surface_get_height(application_surface);
+var v = 0;
+var h = 0;
 
-for (i = 0; i < total_number; i++)
+for (var i = 0; i < total_number; i++)
 {
     if (h > (h_number - 1))
     {
@@ -33,6 +31,6 @@ for (i = 0; i < total_number; i++)
         v += 1;
     }
     
-    draw_surface_part_ext(surf_screen_copy, h * (h_width * w_scale), v * (v_height * h_scale), h_width * w_scale, v_height * h_scale, piece_x[i], piece_y[i], w_multiplier, h_multiplier, c_white, 1);
+    draw_surface_part_ext(surf_screen_copy, h * (h_width * w_scale), v * (v_height * h_scale), h_width * w_scale, v_height * h_scale, piece_x[i], piece_y[i], w_multiplier, h_multiplier, 16777215, 1);
     h += 1;
 }

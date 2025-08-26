@@ -1,5 +1,3 @@
-var xx;
-
 if (control_test == false)
 {
     draw_set_color(c_white);
@@ -8,7 +6,7 @@ if (control_test == false)
     draw_text(__view_get(e__VW.XView, 0) + 200, __view_get(e__VW.YView, 0) + 13, string_hash_to_newline("JOYSTICK CONFIG"));
     draw_set_font(fnt_battle);
     draw_set_halign(fa_left);
-    xx = __view_get(e__VW.XView, 0) + 20;
+    var xx = __view_get(e__VW.XView, 0) + 20;
     
     if (p[0] == true)
         draw_set_color(c_yellow);

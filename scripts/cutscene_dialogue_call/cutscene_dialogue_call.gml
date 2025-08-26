@@ -1,7 +1,7 @@
-function cutscene_dialogue_call(argument0)
+function cutscene_dialogue_call(arg0)
 {
     scr_text();
-    script_execute(argument0);
+    script_execute(arg0);
     
     if (!global.dialogue_open)
     {

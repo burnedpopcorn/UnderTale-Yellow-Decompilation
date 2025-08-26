@@ -1,9 +1,7 @@
-var camera;
-
 if (live_call())
     return global.live_result;
 
-camera = view_camera[0];
+var camera = view_camera[0];
 camera_set_view_pos(camera, 0, 0);
 
 if (can_screenshake)

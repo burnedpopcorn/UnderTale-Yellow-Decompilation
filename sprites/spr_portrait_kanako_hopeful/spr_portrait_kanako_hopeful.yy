@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c4db4f6c-3e26-4c31-8353-a2f01914f2e9",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3359419c-3807-4ef6-b733-ff2577e7e951",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"805fca96-180f-4900-9e8d-314bbaa42792",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5b63069c-9625-4a9b-a4e9-51b0831ae331",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 106,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b9f068fc-3fb7-493f-9a9c-7069185c24d7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9fb9b848-69f4-4f27-8d2c-19e52d8b5936","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c4db4f6c-3e26-4c31-8353-a2f01914f2e9","path":"sprites/spr_portrait_kanako_hopeful/spr_portrait_kanako_hopeful.yy",},},},"Disabled":false,"id":"45040b2e-17b2-4847-a18b-a2c81744960d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3359419c-3807-4ef6-b733-ff2577e7e951","path":"sprites/spr_portrait_kanako_hopeful/spr_portrait_kanako_hopeful.yy",},},},"Disabled":false,"id":"1b7e4afe-fb90-492b-a33a-40d1ff61367f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"805fca96-180f-4900-9e8d-314bbaa42792","path":"sprites/spr_portrait_kanako_hopeful/spr_portrait_kanako_hopeful.yy",},},},"Disabled":false,"id":"d02cdf38-958b-4e8f-ab9c-901e188cdf9d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5b63069c-9625-4a9b-a4e9-51b0831ae331","path":"sprites/spr_portrait_kanako_hopeful/spr_portrait_kanako_hopeful.yy",},},},"Disabled":false,"id":"458fb342-e50d-4841-bc5b-198b00888104","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Mansion",
+    "path": "texturegroups/Mansion",
   },
   "type": 0,
   "VTile": false,

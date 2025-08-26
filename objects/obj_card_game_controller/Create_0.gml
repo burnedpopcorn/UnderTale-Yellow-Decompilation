@@ -1,5 +1,3 @@
-var i;
-
 cardg_cards_move = false;
 cardg_draw_alpha = 0;
 cardg_fade_out = false;
@@ -20,7 +18,7 @@ cardg_time_silver = 75;
 cardg_intro_countdown = 150;
 cardg_intro_countdown_alpha = 0;
 
-for (i = 0; i < 36; i++)
+for (var i = 0; i < 36; i++)
 {
     current_card = instance_create(160, -10, obj_card_game_card);
     current_card.alarm[0] = i + cardg_intro_countdown + 15;

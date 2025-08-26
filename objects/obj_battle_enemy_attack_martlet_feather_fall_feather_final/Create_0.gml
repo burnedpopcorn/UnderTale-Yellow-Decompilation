@@ -1,5 +1,3 @@
-var random_number, battle_box;
-
 if (live_call())
     return global.live_result;
 
@@ -23,7 +21,7 @@ animation_disjoint_x = 0;
 animation_disjoint_y = 0;
 can_move = true;
 explosion_angle = irandom_range(0, 360);
-random_number = irandom_range(1, 3);
+var random_number = irandom_range(1, 3);
 
 switch (random_number)
 {
@@ -54,7 +52,7 @@ switch (random_number)
 image_speed = 0;
 image_index = 0;
 image_alpha = 0;
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 if (x < battle_box.x)
     random_number = 1;

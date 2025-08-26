@@ -1,7 +1,7 @@
 switch (scene)
 {
     case 0:
-        cutscene_sfx_play(436, 1);
+        cutscene_sfx_play(snd_ceroba_boom, 1);
         scr_screenshake_battle(10, 1);
         break;
     
@@ -25,7 +25,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Clover! I'm almost through!";
             message[1] = "* Whatever you're doing, it#  seems to be working!";
             message[2] = "* Keep at it until he's out of#  juice!";
@@ -73,7 +73,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* ...";
         }
         

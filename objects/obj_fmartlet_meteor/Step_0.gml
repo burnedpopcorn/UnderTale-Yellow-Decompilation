@@ -1,9 +1,7 @@
-var battle_box, i, meteor;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 if (image_alpha < 1)
     image_alpha += 0.2;
@@ -19,9 +17,9 @@ if (bullet_destroy_self)
     
     if (object_index != obj_fmartlet_meteor_small)
     {
-        for (i = 0; i < 2; i++)
+        for (var i = 0; i < 2; i++)
         {
-            meteor = instance_create_depth(x, y, -105, obj_fmartlet_meteor_small);
+            var meteor = instance_create_depth(x, y, -105, obj_fmartlet_meteor_small);
             meteor.vspeed = -6;
             meteor.hspeed = -3 + (i * 6);
         }

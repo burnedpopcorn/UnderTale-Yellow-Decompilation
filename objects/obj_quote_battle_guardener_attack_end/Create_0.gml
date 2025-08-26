@@ -1,12 +1,10 @@
-var turns_passed;
-
 text_effect = "twitchy";
 attack = false;
 scene = 0;
 cutscene_timer = 0;
 skippable = true;
 message_adv = false;
-turns_passed = global.turns_passed;
+var turns_passed = global.turns_passed;
 enemy_talker = 0;
 
 switch (turns_passed)

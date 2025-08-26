@@ -1,5 +1,3 @@
-var dist_temp;
-
 y += (move_speed * dir);
 
 if (fade_state == 0)
@@ -24,7 +22,7 @@ if (fade_state == 2)
 
 if (fade_state == 1)
 {
-    dist_temp = box.y - y;
+    var dist_temp = box.y - y;
     
     if (abs(dist_temp) >= abs(center_dist) && (sign(dist_temp) != sign(center_dist) || sign(center_dist) == 0))
         fade_state = 2;

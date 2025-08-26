@@ -1,5 +1,3 @@
-var x_check, y_check, colliding_cart, bumper;
-
 if (live_call())
     return global.live_result;
 
@@ -17,7 +15,7 @@ if (minecart_empty)
     exit;
 }
 
-if (abs(minecart_vsp + minecart_hsp) == 0 && keyboard_multicheck_pressed(0) && scr_interact())
+if (abs(minecart_vsp + minecart_hsp) == 0 && keyboard_multicheck_pressed(vk_nokey) && scr_interact())
 {
     minecart_base_speed = 2;
     minecart_start = true;
@@ -36,8 +34,8 @@ if (abs(minecart_vsp + minecart_hsp) == 0 && keyboard_multicheck_pressed(0) && s
         minecart_hsp = -1;
 }
 
-x_check = x;
-y_check = y;
+var x_check = x;
+var y_check = y;
 
 if (minecart_hsp > 0)
     x_check = bbox_left;
@@ -167,7 +165,7 @@ if (position_meeting(x_check, y_check, obj_mc_rail_barrier) && track_id == -4)
     minecart_hsp *= -1;
 }
 
-colliding_cart = instance_position(x_check + (sign(minecart_hsp) * sprite_width), y_check + (sign(minecart_vsp) * sprite_height), obj_mc_cart);
+var colliding_cart = instance_position(x_check + (sign(minecart_hsp) * sprite_width), y_check + (sign(minecart_vsp) * sprite_height), obj_mc_cart);
 
 if (colliding_cart != id && colliding_cart != -4 && track_id == -4)
 {
@@ -185,13 +183,13 @@ if (position_meeting(x_check, y_check, obj_mc_rail_bumper) && !minecart_start)
     minecart_hsp = 0;
     minecart_vsp = 0;
     audio_play_sound(snd_rock_break, 1, 0);
-    bumper = instance_position(x_check, y_check, obj_mc_rail_bumper);
+    var bumper = instance_position(x_check, y_check, obj_mc_rail_bumper);
     minecart_direction = bumper.minecart_direction;
 }
 
 if (position_meeting(x_check, y_check, obj_mc_pressure_pad) && !minecart_start)
 {
-    bumper = instance_position(x_check, y_check, obj_mc_pressure_pad);
+    var bumper = instance_position(x_check, y_check, obj_mc_pressure_pad);
     
     if (bumper.cart_color == cart_color)
     {

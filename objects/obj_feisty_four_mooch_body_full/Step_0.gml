@@ -1,7 +1,5 @@
-var enemy_dead, enemy_spared, image_yscale_store;
-
-enemy_dead = global.enemy_dead;
-enemy_spared = global.enemy_spared;
+var enemy_dead = global.enemy_dead;
+var enemy_spared = global.enemy_spared;
 
 if (mooch_fly_away == true && mooch_fly_away_no_loop == false)
 {
@@ -121,7 +119,7 @@ if (!(instance_exists(obj_text_damage_count) && global.fight_number == 1) && ene
     animation_disjoint_yscale = sign_modifier * (max_rise - game_maker_cannot_do_math);
     image_yscale = draw_position_yscale + animation_disjoint_yscale;
     image_xscale = draw_position_xscale - (animation_disjoint_yscale * (max_rise_ext / max_rise));
-    image_yscale_store = image_yscale;
+    var image_yscale_store = image_yscale;
     time_elapsed += time_increase;
     
     if (time_elapsed >= time_max)

@@ -1,6 +1,4 @@
-var actor_toriel;
-
-actor_toriel = 1159;
+var actor_toriel = obj_toriel_npc;
 
 switch (scene)
 {
@@ -16,8 +14,8 @@ switch (scene)
             talker[0] = actor_toriel;
             message[0] = "* In this room, you will#  need to trigger several#  switches.";
             message[1] = "* Do not worry, I have#  labelled the ones that#  you need to flip.";
-            prt[0] = 343;
-            prt[1] = 343;
+            prt[0] = toriel_normal;
+            prt[1] = toriel_normal;
         }
         
         if (!global.dialogue_open)
@@ -42,14 +40,14 @@ switch (scene)
                 talker[0] = actor_toriel;
                 message[0] = "* Oh, do you need some#  help?";
                 message[1] = "* Please flip the switch#  on the north wall.";
-                prt[0] = 340;
-                prt[1] = 343;
+                prt[0] = toriel_side;
+                prt[1] = toriel_normal;
             }
         }
         
         with (obj_switch2)
         {
-            if (scr_interact() && keyboard_multicheck_pressed(0))
+            if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             {
                 audio_play_sound(snd_switch, 1, 0);
                 image_index = 1;
@@ -67,7 +65,7 @@ switch (scene)
         {
             talker[0] = actor_toriel;
             message[0] = "* Splendid! I am proud#  of you my child. ";
-            prt[0] = 343;
+            prt[0] = toriel_normal;
         }
         
         actor_toriel.npc_direction = "up";
@@ -88,14 +86,14 @@ switch (scene)
                 talker[0] = actor_toriel;
                 message[0] = "* Go on, I believe in#  you!";
                 message[1] = "* Only one more switch#  remains.";
-                prt[0] = 343;
-                prt[1] = 343;
+                prt[0] = toriel_normal;
+                prt[1] = toriel_normal;
             }
         }
         
         with (obj_switch3)
         {
-            if (scr_interact() && keyboard_multicheck_pressed(0))
+            if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             {
                 audio_play_sound(snd_switch, 1, 0);
                 image_index = 1;
@@ -106,7 +104,7 @@ switch (scene)
         
         with (obj_switch4)
         {
-            if (scr_interact() && keyboard_multicheck_pressed(0))
+            if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             {
                 scr_text();
                 
@@ -115,15 +113,15 @@ switch (scene)
                     talker[0] = actor_toriel;
                     message[0] = "* Oh no, my child! That#  is the wrong switch.";
                     message[1] = "* I have labelled the one#  you need to flip.";
-                    prt[0] = 340;
-                    prt[1] = 343;
+                    prt[0] = toriel_side;
+                    prt[1] = toriel_normal;
                 }
             }
         }
         
         with (obj_switch2)
         {
-            if (scr_interact() && keyboard_multicheck_pressed(0))
+            if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             {
                 scr_text();
                 
@@ -132,8 +130,8 @@ switch (scene)
                     talker[0] = actor_toriel;
                     message[0] = "* That switch has already#  been flipped.";
                     message[1] = "* Why don't you come back#  across the bridge?";
-                    prt[0] = 340;
-                    prt[1] = 343;
+                    prt[0] = toriel_side;
+                    prt[1] = toriel_normal;
                 }
             }
         }
@@ -157,9 +155,9 @@ switch (scene)
             message[0] = "* ...It should have opened#  by now...";
             message[1] = "* I am sure I labelled the#  correct lever...";
             message[2] = "* Ah, do not worry, little#  one! Try flipping the#  other switch.";
-            prt[0] = 340;
-            prt[1] = 340;
-            prt[2] = 343;
+            prt[0] = toriel_side;
+            prt[1] = toriel_side;
+            prt[2] = toriel_normal;
         }
         
         break;
@@ -179,14 +177,14 @@ switch (scene)
                 talker[0] = actor_toriel;
                 message[0] = "* I am unsure as to why#  this switch is not#  working...";
                 message[1] = "* Please, try flipping#  the other switch.";
-                prt[0] = 340;
-                prt[1] = 343;
+                prt[0] = toriel_side;
+                prt[1] = toriel_normal;
             }
         }
         
         with (obj_switch4)
         {
-            if (scr_interact() && keyboard_multicheck_pressed(0))
+            if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             {
                 audio_play_sound(snd_switch, 1, 0);
                 image_index = 1;
@@ -197,7 +195,7 @@ switch (scene)
         
         with (obj_switch3)
         {
-            if (scr_interact() && keyboard_multicheck_pressed(0))
+            if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             {
                 scr_text();
                 
@@ -207,16 +205,16 @@ switch (scene)
                     message[0] = "* I must have labelled the#  wrong switch.";
                     message[1] = "* I apologize if I have#  confused you, my child.";
                     message[2] = "* Please flip the switch#  that is not labelled.";
-                    prt[0] = 340;
-                    prt[1] = 340;
-                    prt[2] = 343;
+                    prt[0] = toriel_side;
+                    prt[1] = toriel_side;
+                    prt[2] = toriel_normal;
                 }
             }
         }
         
         with (obj_switch2)
         {
-            if (scr_interact() && keyboard_multicheck_pressed(0))
+            if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
             {
                 scr_text();
                 
@@ -226,9 +224,9 @@ switch (scene)
                     message[0] = "* Um...";
                     message[1] = "* That is not what I#  meant.";
                     message[2] = "* You need to flip the#  switch you have not#  flipped yet.";
-                    prt[0] = 340;
-                    prt[1] = 340;
-                    prt[2] = 343;
+                    prt[0] = toriel_side;
+                    prt[1] = toriel_side;
+                    prt[2] = toriel_normal;
                 }
             }
         }
@@ -256,7 +254,7 @@ switch (scene)
         {
             skippable = false;
             message[0] = "* !...";
-            prt[0] = 341;
+            prt[0] = toriel_shocked;
         }
         
         if (cutscene_wait(1))

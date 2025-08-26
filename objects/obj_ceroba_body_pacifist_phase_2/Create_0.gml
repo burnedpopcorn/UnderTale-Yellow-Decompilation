@@ -3,8 +3,8 @@ if (live_call())
 
 no_loop_create_clouds = false;
 can_talk_no_loop = false;
-blend_color = c_white;
-blend_color_current = c_white;
+blend_color = 16777215;
+blend_color_current = 16777215;
 damage_disjoint_count = 0;
 damage_disjoint_x = 0;
 damage_disjoint_timer = 2;

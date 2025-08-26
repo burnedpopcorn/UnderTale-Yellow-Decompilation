@@ -11,7 +11,7 @@ if (interact)
         {
             case 0:
                 color = true;
-                col_modif[0] = 65535;
+                col_modif[0] = c_yellow;
                 message[0] = "* Visiting from the Wild East,#  are you?";
                 message_col[0][0] = "                    Wild East            ";
                 message[1] = "* I must say, I haven't seen your#  face around these parts.";

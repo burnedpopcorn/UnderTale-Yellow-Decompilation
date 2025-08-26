@@ -1,5 +1,3 @@
-var soul_dir, alpha_new;
-
 if (live_call())
     return global.live_result;
 
@@ -35,7 +33,7 @@ switch (scene)
         break;
     
     case 3:
-        soul_dir = point_direction(x, y, obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y);
+        var soul_dir = point_direction(x, y, obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y);
         
         if (launch_timer > 0)
             launch_timer -= 1;
@@ -78,6 +76,8 @@ image_angle = direction;
 
 if (scene != 4 && scene != -1)
     speed = lerp(speed, 0, 0.3);
+
+var alpha_new;
 
 if (scene == 2 || scene == 3)
     alpha_new = 1;

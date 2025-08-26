@@ -1,9 +1,7 @@
-var game_mode, shop_name, main_shop_screen_number;
-
 depth = -room_height - 164;
-game_mode = global.game_mode;
-shop_name = global.shop_name;
-main_shop_screen_number = global.main_shop_screen_number;
+var game_mode = global.game_mode;
+var shop_name = global.shop_name;
+var main_shop_screen_number = global.main_shop_screen_number;
 
 if (game_mode == "customs")
 {

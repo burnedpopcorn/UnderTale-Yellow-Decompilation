@@ -35,7 +35,7 @@ function scr_generate_battle_dalv()
     global.action_1_important = false;
     global.action_2_important = false;
     global.action_1_color = c_white;
-    global.action_2_color = 65535;
+    global.action_2_color = c_yellow;
     global.action_amount = 2;
     global.item_use = "Nothing";
     global.item_used = "Nothing";

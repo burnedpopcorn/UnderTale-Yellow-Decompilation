@@ -5,7 +5,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_sfx_play(25, 1);
+        cutscene_sfx_play(snd_undertale_explosion, 1);
         scr_screenshake_battle(20, 2);
         break;
     
@@ -29,15 +29,15 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* And there we go!";
             message[1] = "* Good job holding your#  own while I was#  occupied.";
             message[2] = "* Axis seems pretty#  dazed, one more shock#  should do him in!";
             message[3] = "* Let's end this!";
-            prt[0] = 372;
-            prt[1] = 372;
-            prt[2] = 371;
-            prt[3] = 370;
+            prt[0] = spr_portrait_ceroba_smile;
+            prt[1] = spr_portrait_ceroba_smile;
+            prt[2] = spr_portrait_ceroba_alt;
+            prt[3] = spr_portrait_ceroba_neutral;
         }
         
         if (!global.dialogue_open)
@@ -46,7 +46,7 @@ switch (scene)
         break;
     
     case 6:
-        global.party_member = 1171;
+        global.party_member = obj_ceroba_follower;
         scene++;
         break;
     

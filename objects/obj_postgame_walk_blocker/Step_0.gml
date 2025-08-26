@@ -1,9 +1,7 @@
-var door, i;
-
 if (live_call())
     return global.live_result;
 
-door = instance_place(x, y, obj_doorway);
+var door = instance_place(x, y, obj_doorway);
 
 if (door != -4)
     instance_destroy(door);
@@ -24,9 +22,9 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             
-            for (i = 0; i < array_length(other.message); i++)
+            for (var i = 0; i < array_length(other.message); i++)
             {
                 message[i] = other.message[i];
                 prt[i] = other.prt[i];

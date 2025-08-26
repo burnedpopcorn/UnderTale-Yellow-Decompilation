@@ -1,7 +1,5 @@
 function scr_battle_box_resize_midfight()
 {
-    var box;
-    
     if (instance_exists(obj_dialogue_box_battle_transformation_any))
     {
         with (obj_dialogue_box_battle_transformation_any)
@@ -18,7 +16,7 @@ function scr_battle_box_resize_midfight()
             
             if (abs(image_xscale - battle_box_target_xscale) < 0.01 && abs(image_yscale - battle_box_target_yscale) < 0.01 && abs(x - battle_box_target_x) < 0.1 && abs(y - battle_box_target_y) < 0.1)
             {
-                box = 3154;
+                var box = obj_dialogue_box_battle_transformation_any;
                 global.attack_surface_width = box.sprite_width - 8;
                 global.attack_surface_height = box.sprite_height - 8;
                 global.attack_surface_x = box.x - (global.attack_surface_width * 0.5);

@@ -5,7 +5,7 @@ part_type_shape(pt_ef_soul_particles, 0);
 part_type_size(pt_ef_soul_particles, 3, 3, 0, 0);
 part_type_scale(pt_ef_soul_particles, 1, 1);
 part_type_orientation(pt_ef_soul_particles, 0, 0, 0, 0, 1);
-part_type_color3(pt_ef_soul_particles, 65535, 65535, c_white);
+part_type_color3(pt_ef_soul_particles, 65535, 65535, 16777215);
 part_type_alpha3(pt_ef_soul_particles, 1, 1, 0);
 part_type_blend(pt_ef_soul_particles, 0);
 part_type_life(pt_ef_soul_particles, 30, 30);

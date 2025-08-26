@@ -1,15 +1,13 @@
 function scr_draw_text_effect_twitchy_textbox_battle_menu_options()
 {
-    var twitchy_text_probability, twitchy_text_intensity, i;
-    
-    twitchy_text_probability = global.twitchy_text_probability;
-    twitchy_text_intensity = global.twitchy_text_intensity;
+    var twitchy_text_probability = global.twitchy_text_probability;
+    var twitchy_text_intensity = global.twitchy_text_intensity;
     str_indent = "";
     str_indent_count = 0;
     str_offset = -string_width(string_hash_to_newline(string_copy("A", 1, 1)));
     battle_menu_option_string_count = string_length(battle_menu_option_string);
     
-    for (i = 1; i <= battle_menu_option_string_count; i += 1)
+    for (var i = 1; i <= battle_menu_option_string_count; i += 1)
     {
         twitchy_text_offset_x = 0;
         twitchy_text_offset_y = 0;

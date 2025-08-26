@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I'm famished.\t";
                 message[1] = "* 'Boutta yomp on some rocks!";
             }

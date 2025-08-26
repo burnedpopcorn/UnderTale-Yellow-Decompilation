@@ -1,14 +1,12 @@
-function scr_enemy_mode_shift_martlet_genocide(argument0)
+function scr_enemy_mode_shift_martlet_genocide(arg0)
 {
-    var reset_counters, enemy_mode, enemy_mode_gen_preprevious, enemy_mode_gen_current;
-    
-    reset_counters = false;
-    enemy_mode = global.enemy_mode;
+    var reset_counters = false;
+    var enemy_mode = global.enemy_mode;
     
     switch (enemy_mode)
     {
         case 0:
-            if (argument0 == "Fight 1")
+            if (arg0 == "Fight 1")
             {
                 if (global.enemy_hit == true)
                 {
@@ -23,7 +21,7 @@ function scr_enemy_mode_shift_martlet_genocide(argument0)
                     reset_counters = true;
                 }
             }
-            else if (argument0 == "Action 1")
+            else if (arg0 == "Action 1")
             {
                 global.enemy_mode_previous = global.enemy_mode;
                 global.enemy_mode = 4;
@@ -39,7 +37,7 @@ function scr_enemy_mode_shift_martlet_genocide(argument0)
             break;
         
         case 1:
-            if (argument0 == "Fight 1")
+            if (arg0 == "Fight 1")
             {
                 if (global.enemy_hit == true)
                 {
@@ -48,7 +46,7 @@ function scr_enemy_mode_shift_martlet_genocide(argument0)
                     reset_counters = true;
                 }
             }
-            else if (argument0 == "Action 1")
+            else if (arg0 == "Action 1")
             {
                 global.enemy_mode_previous = global.enemy_mode;
                 global.enemy_mode = 4;
@@ -58,7 +56,7 @@ function scr_enemy_mode_shift_martlet_genocide(argument0)
             break;
         
         case 2:
-            if (argument0 == "Action 1")
+            if (arg0 == "Action 1")
             {
                 global.enemy_mode_previous = global.enemy_mode;
                 global.enemy_mode = 4;
@@ -68,7 +66,7 @@ function scr_enemy_mode_shift_martlet_genocide(argument0)
             break;
         
         case 3:
-            if (argument0 == "Fight 1")
+            if (arg0 == "Fight 1")
             {
                 if (global.enemy_low_hp == true)
                 {
@@ -81,7 +79,7 @@ function scr_enemy_mode_shift_martlet_genocide(argument0)
             break;
         
         case 4:
-            if (argument0 == "Fight 1")
+            if (arg0 == "Fight 1")
             {
                 if (global.enemy_hit == true)
                 {
@@ -104,8 +102,8 @@ function scr_enemy_mode_shift_martlet_genocide(argument0)
     }
     
     enemy_mode = global.enemy_mode;
-    enemy_mode_gen_preprevious = global.enemy_mode_gen_previous;
-    enemy_mode_gen_current = global.enemy_mode_gen;
+    var enemy_mode_gen_preprevious = global.enemy_mode_gen_previous;
+    var enemy_mode_gen_current = global.enemy_mode_gen;
     
     switch (enemy_mode)
     {

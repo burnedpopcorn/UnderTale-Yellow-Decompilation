@@ -1,11 +1,9 @@
-function collision_circle_all(argument0, argument1, argument2, argument3, argument4, argument5)
+function collision_circle_all(arg0, arg1, arg2, arg3, arg4, arg5)
 {
-    var _a, _n, _h, _id, _i;
-    
-    _a = undefined;
-    _n = 0;
-    _h = abs(argument2);
-    _id = collision_circle(argument0, argument1, argument2, argument3, argument4, argument5);
+    var _a = undefined;
+    var _n = 0;
+    var _h = abs(arg2);
+    var _id = collision_circle(arg0, arg1, arg2, arg3, arg4, arg5);
     
     while (_id)
     {
@@ -16,10 +14,10 @@ function collision_circle_all(argument0, argument1, argument2, argument3, argume
             y -= (abs(sprite_height) + _h);
         }
         
-        _id = collision_circle(argument0, argument1, argument2, argument3, argument4, argument5);
+        _id = collision_circle(arg0, arg1, arg2, arg3, arg4, arg5);
     }
     
-    for (_i = 0; _i < _n; _i++)
+    for (var _i = 0; _i < _n; _i++)
     {
         with (_a[_i])
             y += (abs(sprite_height) + _h);

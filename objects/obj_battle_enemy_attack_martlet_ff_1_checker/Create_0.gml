@@ -1,5 +1,3 @@
-var random_number;
-
 x_store = 0;
 y_store = 0;
 angle_store = 0;
@@ -12,7 +10,7 @@ feather_angle_total = 0;
 feather_angle_total_max = 750;
 feather_count = 0;
 no_loop_destroy = false;
-random_number = 1;
+var random_number = 1;
 
 switch (random_number)
 {

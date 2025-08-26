@@ -1,9 +1,7 @@
-function joystick_pov(argument0)
+function joystick_pov(arg0)
 {
-    var jid, mask;
-    
-    jid = __joystick_2_gamepad(argument0);
-    mask = 0;
+    var jid = __joystick_2_gamepad(arg0);
+    var mask = 0;
     mask |= ((gamepad_button_value(jid, gp_padu) > 0) ? 1 : 0);
     mask |= ((gamepad_button_value(jid, gp_padr) > 0) ? 2 : 0);
     mask |= ((gamepad_button_value(jid, gp_padd) > 0) ? 4 : 0);

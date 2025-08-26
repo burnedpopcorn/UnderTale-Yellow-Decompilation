@@ -1,10 +1,8 @@
 function scr_battle_core_directory_action_5_name()
 {
-    var battle_enemy_name, act_number, game_mode;
-    
     if (global.battling_boss == true)
     {
-        battle_enemy_name = global.battle_enemy_name;
+        var battle_enemy_name = global.battle_enemy_name;
         
         if (global.action_5_important == true)
             draw_set_color(global.action_5_color);
@@ -13,12 +11,12 @@ function scr_battle_core_directory_action_5_name()
     }
     else
     {
-        act_number = global.act_number;
+        var act_number = global.act_number;
         
         switch (act_number)
         {
             case 1:
-                battle_enemy_name = global.battle_enemy_name_1;
+                var battle_enemy_name = global.battle_enemy_name_1;
                 
                 if (global.action_5_important == true)
                     draw_set_color(global.action_5_color);
@@ -28,7 +26,7 @@ function scr_battle_core_directory_action_5_name()
                 break;
             
             case 2:
-                battle_enemy_name = global.battle_enemy_name_2;
+                var battle_enemy_name = global.battle_enemy_name_2;
                 
                 if (global.action_5_important_2 == true)
                     draw_set_color(global.action_5_color_2);
@@ -38,7 +36,7 @@ function scr_battle_core_directory_action_5_name()
                 break;
             
             case 3:
-                battle_enemy_name = global.battle_enemy_name_3;
+                var battle_enemy_name = global.battle_enemy_name_3;
                 
                 if (global.action_5_important_3 == true)
                     draw_set_color(global.action_5_color_3);
@@ -48,7 +46,7 @@ function scr_battle_core_directory_action_5_name()
                 break;
             
             default:
-                battle_enemy_name = global.battle_enemy_name_1;
+                var battle_enemy_name = global.battle_enemy_name_1;
                 
                 if (global.action_5_important == true)
                 {
@@ -60,7 +58,7 @@ function scr_battle_core_directory_action_5_name()
         }
     }
     
-    game_mode = global.game_mode;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {

@@ -45,7 +45,7 @@ else
     }
 }
 
-if (keyboard_multicheck_pressed(0) == true)
+if (keyboard_multicheck_pressed(vk_nokey) == true)
 {
     if (room == rm_mainmenu)
     {

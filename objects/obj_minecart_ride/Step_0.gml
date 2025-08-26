@@ -1,14 +1,13 @@
-var scroll_speed_current, num, i, tile, tile_y, tile_x, tile_width, tile_shift;
+var scroll_speed_current = ceil(scroll_speed);
+var num = tile_get_count();
 
-scroll_speed_current = ceil(scroll_speed);
-num = tile_get_count();
-
-for (i = 0; i < num; i++)
+for (var i = 0; i < num; i++)
 {
-    tile = tile_get_id(i);
-    tile_y = tile_get_y(tile);
-    tile_x = tile_get_x(tile);
-    tile_width = tile_get_width(tile);
+    var tile = tile_get_id(i);
+    var tile_y = tile_get_y(tile);
+    var tile_x = tile_get_x(tile);
+    var tile_width = tile_get_width(tile);
+    var tile_shift;
     
     switch (tile_get_depth(tile))
     {

@@ -1,8 +1,6 @@
-var battle_box, movement_width, movement_height;
-
-battle_box = 3154;
-movement_width = (battle_box.sprite_width * 0.5) - 20;
-movement_height = (battle_box.sprite_height * 0.5) - 20;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var movement_width = (battle_box.sprite_width * 0.5) - 20;
+var movement_height = (battle_box.sprite_height * 0.5) - 20;
 image_angle = direction;
 
 if (image_alpha < 0.99)

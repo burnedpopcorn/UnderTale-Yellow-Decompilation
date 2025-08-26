@@ -48,7 +48,7 @@ if (room == rm_darkruins_07)
                 
                 with (msg)
                 {
-                    sndfnt = 100;
+                    sndfnt = sndfnt_dalv;
                     message[0] = "* Hello...";
                     message[1] = "* I'm happy to finally meet you#  face to face.";
                     message[2] = "* How long has it been?";
@@ -80,7 +80,7 @@ if (room == rm_darkruins_07)
                 
                 with (msg)
                 {
-                    sndfnt = 100;
+                    sndfnt = sndfnt_dalv;
                     message[0] = "* ...";
                     message[1] = "* Huh?";
                     portrait = false;
@@ -107,7 +107,7 @@ if (room == rm_darkruins_07)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* Who...?";
                 message[1] = "* I-I must be seeing things...";
             }
@@ -194,7 +194,7 @@ if (room == rm_darkruins_10 && global.flag[3] == false)
             
             with (msg)
             {
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* Is it wrong to hold doubt in#  my actions?";
                 portrait = false;
             }
@@ -222,7 +222,7 @@ if (room == rm_darkruins_10 && global.flag[3] == false)
             
             with (msg)
             {
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 position = 1;
                 message[0] = "* I enjoyed life before... I#  did... But I can't go back.";
                 message[1] = "* What happened that day would#  only repeat.";
@@ -252,7 +252,7 @@ if (room == rm_darkruins_10 && global.flag[3] == false)
             
             with (msg)
             {
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 position = 1;
                 message[0] = "* !";
                 message[1] = "* What is this?";
@@ -370,7 +370,7 @@ if (room == rm_darkruins_16 && global.flag[26] == 0)
         
         with (msg)
         {
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* Ah!";
             portrait = false;
         }
@@ -411,7 +411,7 @@ if (room == rm_darkruins_16 && global.flag[26] == 0)
         
         with (msg)
         {
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "* Umm...";
             portrait = false;
         }
@@ -437,7 +437,7 @@ if (room == rm_darkruins_16 && global.flag[26] == 0)
         
         with (msg)
         {
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             portrait = false;
             message[0] = "* I don't know who you are but I#  ask you...";
             message[1] = "* Please leave!";
@@ -517,7 +517,7 @@ if (room == rm_darkruins_18 && global.flag[27] == 0)
             
             with (msg)
             {
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* You're... still following me?";
                 message[1] = "* I thought I made it clear that#  I want to be left alone.";
                 portrait = false;
@@ -537,7 +537,7 @@ if (room == rm_darkruins_18 && global.flag[27] == 0)
             
             with (msg)
             {
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* I don't understand... You...#  you look just like them.";
                 message[1] = "* Is this some sort of haunting?#  Or have you come to finish the#  job?";
                 message[2] = "* Retreating here wasn't enough#  so you hunted me down...";
@@ -564,7 +564,7 @@ if (room == rm_darkruins_18 && global.flag[27] == 0)
             
             with (msg)
             {
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* And I was just starting to#  accept my reality.#  The cruelty...";
                 message[1] = "* ...";
                 message[2] = "* Whatever I did to you that day#  was not my intention, I was#  only...";
@@ -594,7 +594,7 @@ if (room == rm_darkruins_18 && global.flag[27] == 0)
             
             with (msg)
             {
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* I... I don't want to fight#  anybody, but you've invaded#  my home.";
                 message[1] = "* The exit is blocked and you#  can't stay here. I will not#  allow it.";
                 portrait = false;
@@ -632,9 +632,9 @@ if (room == rm_darkruins_18 && global.flag[27] == 0)
             
             with (msg)
             {
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* Only one thing to#  do...";
-                prt[0] = 1759;
+                prt[0] = spr_dalv_head_sleepy;
                 portrait = true;
                 position = 0;
             }
@@ -664,19 +664,19 @@ if (room == rm_darkruins_18 && global.flag[27] == 0)
                 
                 with (msg)
                 {
-                    sndfnt = 100;
+                    sndfnt = sndfnt_dalv;
                     message[0] = "* ...";
                     message[1] = "* ...";
                     message[2] = "* ...";
                     message[3] = "* What do friends do#  actually?";
                     message[4] = "* Do you want to, um,#  see my house?#  Or something?";
                     message[5] = "* I have to go there#  anyway so I guess stop#  by if you have time. ";
-                    prt[0] = 1755;
-                    prt[1] = 1780;
-                    prt[2] = 1763;
-                    prt[3] = 1755;
-                    prt[4] = 1776;
-                    prt[5] = 1769;
+                    prt[0] = spr_dalv_head_regular;
+                    prt[1] = spr_dalv_head_sad_side;
+                    prt[2] = spr_dalv_head_sad;
+                    prt[3] = spr_dalv_head_regular;
+                    prt[4] = spr_dalv_head_moderate;
+                    prt[5] = spr_dalv_head_content;
                     position = 0;
                 }
                 
@@ -707,7 +707,7 @@ if (room == rm_darkruins_18 && global.flag[27] == 0)
                 
                 with (msg)
                 {
-                    sndfnt = 100;
+                    sndfnt = sndfnt_dalv;
                     message[0] = "You're... sparing me?";
                     message[1] = "But... what about them?";
                     message[2] = "Why only me?";
@@ -720,18 +720,18 @@ if (room == rm_darkruins_18 && global.flag[27] == 0)
                     message[9] = "...";
                     message[10] = "I think you should leave.";
                     message[11] = "You've already done#enough damage here.";
-                    prt[0] = 1763;
-                    prt[1] = 1764;
-                    prt[2] = 1763;
-                    prt[3] = 1763;
-                    prt[4] = 1762;
-                    prt[5] = 1762;
-                    prt[6] = 1786;
-                    prt[7] = 1781;
-                    prt[8] = 1780;
-                    prt[9] = 1763;
-                    prt[10] = 1763;
-                    prt[11] = 1781;
+                    prt[0] = spr_dalv_head_sad;
+                    prt[1] = spr_dalv_head_sadder;
+                    prt[2] = spr_dalv_head_sad;
+                    prt[3] = spr_dalv_head_sad;
+                    prt[4] = spr_dalv_head_angry;
+                    prt[5] = spr_dalv_head_angry;
+                    prt[6] = spr_dalv_head_sad_sleepy;
+                    prt[7] = spr_dalv_head_sad_side_2;
+                    prt[8] = spr_dalv_head_sad_side;
+                    prt[9] = spr_dalv_head_sad;
+                    prt[10] = spr_dalv_head_sad;
+                    prt[11] = spr_dalv_head_sad_side_2;
                     position = 0;
                 }
                 
@@ -758,7 +758,7 @@ if (room == rm_darkruins_18 && global.flag[27] == 0)
                 
                 with (msg)
                 {
-                    sndfnt = 100;
+                    sndfnt = sndfnt_dalv;
                     message[0] = "* ...";
                     message[1] = "* I guess... I truly am#  alone now...";
                     portrait = false;
@@ -791,15 +791,15 @@ if (room == rm_darkruins_18 && global.flag[27] == 0)
             
             with (msg)
             {
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* This was all a#  misunderstanding, right?";
                 message[1] = "* ...";
                 message[2] = "* I'll be waiting in my#  house.";
                 message[3] = "* Come whenever you feel#  like it.";
-                prt[0] = 1755;
-                prt[1] = 1780;
-                prt[2] = 1755;
-                prt[3] = 1755;
+                prt[0] = spr_dalv_head_regular;
+                prt[1] = spr_dalv_head_sad_side;
+                prt[2] = spr_dalv_head_regular;
+                prt[3] = spr_dalv_head_regular;
                 position = 0;
             }
             
@@ -849,7 +849,7 @@ if (room == rm_dalvshouse && global.flag[28] == 0)
             {
                 global.route = 1;
                 genoCount = 0;
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* Welcome...";
                 message[1] = "* Make yourself at home.";
                 message[2] = "* I'm going to my room to#  rest.";
@@ -857,43 +857,43 @@ if (room == rm_dalvshouse && global.flag[28] == 0)
                 message[4] = "* We're... friends now#  so...";
                 message[5] = "* Look at whatever you#  like.";
                 message[6] = "* See you... later.";
-                prt[0] = 1780;
-                prt[1] = 1755;
-                prt[2] = 1780;
-                prt[3] = 1781;
-                prt[4] = 1755;
-                prt[5] = 1755;
-                prt[6] = 1780;
+                prt[0] = spr_dalv_head_sad_side;
+                prt[1] = spr_dalv_head_regular;
+                prt[2] = spr_dalv_head_sad_side;
+                prt[3] = spr_dalv_head_sad_side_2;
+                prt[4] = spr_dalv_head_regular;
+                prt[5] = spr_dalv_head_regular;
+                prt[6] = spr_dalv_head_sad_side;
             }
             else if (global.dalv_house_enter_count == 0)
             {
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* I have to um...#  fix something in the#  other room.";
                 message[1] = "* Sit down,#  get comfortable,#  take your shoes off.";
                 message[2] = "* ...";
                 message[3] = "* Actually please leave#  them on, the floors are#  a bit dirty.";
                 message[4] = "* I haven't swept since #  this morning.";
-                prt[0] = 1780;
-                prt[1] = 1776;
-                prt[2] = 1755;
-                prt[3] = 1763;
-                prt[4] = 1763;
+                prt[0] = spr_dalv_head_sad_side;
+                prt[1] = spr_dalv_head_moderate;
+                prt[2] = spr_dalv_head_regular;
+                prt[3] = spr_dalv_head_sad;
+                prt[4] = spr_dalv_head_sad;
             }
             else if (global.dalv_house_enter_count == 1)
             {
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* It seems like you#  took your time.";
                 message[1] = "* Oh, but don't worry, I'm#  used to standing around#  by my lonesome.";
                 message[2] = "* I keep myself occupied#  by cleaning around#  the house.";
                 message[3] = "* It's my hourly routine!";
                 message[4] = "* ...";
                 message[5] = "* I have to um...#  fix something...";
-                prt[0] = 1755;
-                prt[1] = 1780;
-                prt[2] = 1776;
-                prt[3] = 1776;
-                prt[4] = 1755;
-                prt[5] = 1780;
+                prt[0] = spr_dalv_head_regular;
+                prt[1] = spr_dalv_head_sad_side;
+                prt[2] = spr_dalv_head_moderate;
+                prt[3] = spr_dalv_head_moderate;
+                prt[4] = spr_dalv_head_regular;
+                prt[5] = spr_dalv_head_sad_side;
             }
         }
         

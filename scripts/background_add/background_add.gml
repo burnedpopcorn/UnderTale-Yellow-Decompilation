@@ -1,4 +1,4 @@
-function background_add(argument0, argument1, argument2)
+function background_add(arg0, arg1, arg2)
 {
-    return sprite_add(argument0, 0, argument1, argument2, 0, 0);
+    return sprite_add(arg0, 0, arg1, arg2, 0, 0);
 }

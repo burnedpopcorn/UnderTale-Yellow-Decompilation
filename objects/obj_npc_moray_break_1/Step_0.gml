@@ -23,18 +23,18 @@ switch (global.dunes_flag_ext[1])
             message[9] = "* The head of the Royal#  Guard, particularly.";
             message[10] = "* Hopefully you didn't#  have a run-in with her.";
             message[11] = "* I mean, I've never met#  her. I've just heard we#  look alike.";
-            prt[0] = 445;
-            prt[1] = 449;
-            prt[2] = 446;
-            prt[3] = 449;
-            prt[4] = 449;
-            prt[5] = 450;
-            prt[6] = 449;
-            prt[7] = 449;
-            prt[8] = 449;
-            prt[9] = 447;
-            prt[10] = 449;
-            prt[11] = 445;
+            prt[0] = spr_portrait_moray_normal;
+            prt[1] = spr_portrait_moray_plain;
+            prt[2] = spr_portrait_moray_downer;
+            prt[3] = spr_portrait_moray_plain;
+            prt[4] = spr_portrait_moray_plain;
+            prt[5] = spr_portrait_moray_sweat;
+            prt[6] = spr_portrait_moray_plain;
+            prt[7] = spr_portrait_moray_plain;
+            prt[8] = spr_portrait_moray_plain;
+            prt[9] = spr_portrait_moray_disbelief;
+            prt[10] = spr_portrait_moray_plain;
+            prt[11] = spr_portrait_moray_normal;
         }
         
         global.dunes_flag_ext[1] = 1;
@@ -46,8 +46,8 @@ switch (global.dunes_flag_ext[1])
             talker[0] = other.object_index;
             message[0] = "* Don't worry!";
             message[1] = "* It's super fun here, I#  promise!";
-            prt[0] = 445;
-            prt[1] = 445;
+            prt[0] = spr_portrait_moray_normal;
+            prt[1] = spr_portrait_moray_normal;
         }
         
         break;

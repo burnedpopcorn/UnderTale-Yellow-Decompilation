@@ -1,9 +1,7 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
-for (i = 0; i < array_length(shadow_actor); i += 1)
+for (var i = 0; i < array_length(shadow_actor); i += 1)
 {
     with (shadow_actor[i])
     {

@@ -1,8 +1,6 @@
-function tile_set_visible(argument0, argument1)
+function tile_set_visible(arg0, arg1)
 {
-    var __index, __visible;
-    
-    __index = argument0;
-    __visible = argument1;
+    var __index = arg0;
+    var __visible = arg1;
     layer_tile_visible(__index, __visible);
 }

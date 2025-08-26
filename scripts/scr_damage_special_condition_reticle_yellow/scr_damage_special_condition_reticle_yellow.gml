@@ -1,6 +1,6 @@
 function scr_damage_special_condition_reticle_yellow()
 {
-    var battle_enemy_name, act_number;
+    var battle_enemy_name;
     
     if (global.battling_boss == true)
     {
@@ -8,7 +8,7 @@ function scr_damage_special_condition_reticle_yellow()
     }
     else
     {
-        act_number = global.act_number;
+        var act_number = global.act_number;
         
         switch (act_number)
         {

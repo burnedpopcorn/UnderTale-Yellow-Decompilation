@@ -1,5 +1,3 @@
-var MSG_ADVANCE, message_length;
-
 if (global.dialogue_open == false)
 {
     if (instance_exists(obj_pl))
@@ -8,8 +6,8 @@ if (global.dialogue_open == false)
     instance_destroy();
 }
 
-MSG_ADVANCE = false;
-message_length = string_length(message[message_current]);
+var MSG_ADVANCE = false;
+var message_length = string_length(message[message_current]);
 
 if (message_reset == true)
 {
@@ -30,7 +28,7 @@ if (chujin_tapes_effects)
     }
 }
 
-if (keyboard_multicheck_pressed(1) && skippable == true)
+if (keyboard_multicheck_pressed(vk_anykey) && skippable == true)
     cutoff = message_length;
 
 if (cutoff < message_length)
@@ -56,7 +54,7 @@ if (cutoff < message_length)
         }
     }
 }
-else if (keyboard_multicheck_pressed(0) && skippable == true)
+else if (keyboard_multicheck_pressed(vk_nokey) && skippable == true)
 {
     if (choice == false)
         MSG_ADVANCE = true;
@@ -101,7 +99,7 @@ if (instance_exists(obj_mansion_chujin_tapes))
 {
     if ((array_length(prt) - 1) >= message_current)
     {
-        if (prt[message_current] != 0 && !obj_mansion_chujin_tapes.scene_change)
+        if (prt[message_current] != spr_collisionbox && !obj_mansion_chujin_tapes.scene_change)
             obj_mansion_chujin_tapes.sprite_index = prt[message_current];
     }
 }

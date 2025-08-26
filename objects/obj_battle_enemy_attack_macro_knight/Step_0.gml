@@ -1,9 +1,7 @@
-var soul, jump_chance, i, bullet;
-
 if (live_call())
     return global.live_result;
 
-soul = 2980;
+var soul = obj_heart_battle_fighting_red;
 
 switch (state)
 {
@@ -35,7 +33,7 @@ switch (state)
         }
         
         hsp = lerp(hsp, hsp_max, 0.25);
-        jump_chance = 5;
+        var jump_chance = 5;
         
         if (run_switch_count <= 0 && abs(x - soul.x) < 60)
         {
@@ -154,9 +152,9 @@ switch (state)
         }
         else if (image_index >= 1 && can_cast)
         {
-            for (i = 0; i < 3; i++)
+            for (var i = 0; i < 3; i++)
             {
-                bullet = instance_create_depth(x, y, depth + 1, obj_battle_enemy_attack_macro_knight_bullet);
+                var bullet = instance_create_depth(x, y, depth + 1, obj_battle_enemy_attack_macro_knight_bullet);
                 
                 if (hsp_max > 0)
                     bullet.direction = i * 30;
@@ -217,9 +215,9 @@ if ((y + vsp) >= (battle_box.bbox_bottom - 4))
 
 y += vsp;
 
-function state_switch(argument0)
+function state_switch(arg0)
 {
-    state = argument0;
+    state = arg0;
     state_timer = 15;
     
     if (attack_timer <= 0)

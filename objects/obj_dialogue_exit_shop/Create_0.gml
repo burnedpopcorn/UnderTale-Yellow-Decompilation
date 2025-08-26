@@ -1,8 +1,6 @@
-var shop_name, game_mode, message_alt_length;
-
-shop_name = global.shop_name;
+var shop_name = global.shop_name;
 depth = -room_height - 164;
-game_mode = global.game_mode;
+var game_mode = global.game_mode;
 shop_name = global.shop_name;
 
 if (game_mode == "customs")
@@ -106,7 +104,7 @@ message_draw_alt = "";
 
 if (shop_name == "Hotel Shop")
 {
-    message_alt_length = string_length(message_alt[message_current]);
+    var message_alt_length = string_length(message_alt[message_current]);
     
     if (message_alt_length > message_length)
         message_length = message_alt_length;

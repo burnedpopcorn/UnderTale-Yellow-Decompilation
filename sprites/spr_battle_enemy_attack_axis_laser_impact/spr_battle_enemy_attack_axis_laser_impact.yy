@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"357e2ab6-aee0-4b2f-8a31-b74e3f29f0e8",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3cb8f6d3-1337-492f-8ab9-3775a00129bb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d5f69cf7-f4d8-4c8b-a8f3-a6d048f8762d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bf005b80-524d-433b-9d56-674adb977428",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 48,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"74177b86-4a8b-42a8-b746-143f4cf803eb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a06bdf4f-476e-4390-b9ac-9e23082370a0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 5,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"357e2ab6-aee0-4b2f-8a31-b74e3f29f0e8","path":"sprites/spr_battle_enemy_attack_axis_laser_impact/spr_battle_enemy_attack_axis_laser_impact.yy",},},},"Disabled":false,"id":"58c38fd4-1529-41a4-8b06-f29a1622799f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3cb8f6d3-1337-492f-8ab9-3775a00129bb","path":"sprites/spr_battle_enemy_attack_axis_laser_impact/spr_battle_enemy_attack_axis_laser_impact.yy",},},},"Disabled":false,"id":"46894ea7-4898-40d3-8f45-a37d1321f37c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d5f69cf7-f4d8-4c8b-a8f3-a6d048f8762d","path":"sprites/spr_battle_enemy_attack_axis_laser_impact/spr_battle_enemy_attack_axis_laser_impact.yy",},},},"Disabled":false,"id":"084f7d2f-5109-47d1-8fe7-78f76c21a69e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bf005b80-524d-433b-9d56-674adb977428","path":"sprites/spr_battle_enemy_attack_axis_laser_impact/spr_battle_enemy_attack_axis_laser_impact.yy",},},},"Disabled":false,"id":"244b5a64-525c-4e56-b784-c98f0fa0e163","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

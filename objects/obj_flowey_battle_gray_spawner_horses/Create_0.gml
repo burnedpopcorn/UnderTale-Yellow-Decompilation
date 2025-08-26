@@ -1,9 +1,8 @@
-var side, horse1, horse2, explosive_enemy;
-
 if (live_call())
     return global.live_result;
 
-side = choose(1, 2);
+var side = choose(1, 2);
+var horse1, horse2;
 
 switch (side)
 {
@@ -18,7 +17,7 @@ switch (side)
         break;
 }
 
-explosive_enemy = choose(horse1, horse2);
+var explosive_enemy = choose(horse1, horse2);
 
 with (explosive_enemy)
     can_explode = true;

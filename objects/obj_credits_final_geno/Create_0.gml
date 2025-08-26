@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -26,15 +24,14 @@ credits_entry[4][6] = "InkuNoodle";
 credits_entry[4][7] = "Noteblock";
 credits_entry[4][8] = "AeroArtwork";
 credits_entry[5][0] = "Additional Concepts:";
-credits_entry[5][1] = "Ryla";
-credits_entry[5][2] = "MarshieMonarch";
-credits_entry[5][3] = "Greeli_";
-credits_entry[5][4] = "AWildDaydreamer";
-credits_entry[5][5] = "Grey Duovis";
-credits_entry[5][6] = "LitvacArt";
-credits_entry[5][7] = "Emmalume";
-credits_entry[5][8] = "Sweaterbat";
-credits_entry[5][9] = "Still Liam";
+credits_entry[5][1] = "MarshieMonarch";
+credits_entry[5][2] = "Greeli_";
+credits_entry[5][3] = "AWildDaydreamer";
+credits_entry[5][4] = "Grey Duovis";
+credits_entry[5][5] = "LitvacArt";
+credits_entry[5][6] = "Emmalume";
+credits_entry[5][7] = "Sweaterbat";
+credits_entry[5][8] = "Still Liam";
 credits_entry[6][0] = "Room & Level Design:";
 credits_entry[6][1] = "MasterSwordRemix";
 credits_entry[6][2] = "Figburn";
@@ -48,12 +45,11 @@ credits_entry[7][4] = "Gaziter";
 credits_entry[7][5] = "AeroArtwork";
 credits_entry[8][0] = "Additional\nSpritework:";
 credits_entry[8][1] = "Vegard Jensen";
-credits_entry[8][2] = "Ryla";
-credits_entry[8][3] = "Barosaros";
-credits_entry[8][4] = "Bloquito";
-credits_entry[8][5] = "AWildDaydreamer";
-credits_entry[8][6] = "TeleviQ";
-credits_entry[8][7] = "Kcadbackwards";
+credits_entry[8][2] = "Barosaros";
+credits_entry[8][3] = "Bloquito";
+credits_entry[8][4] = "AWildDaydreamer";
+credits_entry[8][5] = "TeleviQ";
+credits_entry[8][6] = "Kcadbackwards";
 credits_entry[9][0] = "'Red' Design:";
 credits_entry[9][1] = "Taxiderby";
 credits_entry[10][0] = "'Cooper' Design:";
@@ -83,7 +79,7 @@ credits_entry[16][2] = "Sunsetbyplane";
 credits_entry[16][3] = "LeopardBunny";
 credits_entry[16][4] = "Evan Smith";
 credits_entry[16][5] = "Saltydkdan";
-credits_entry[16][6] = "Bubble-tea-dreams";
+credits_entry[16][6] = "Bubbled-tea-dreams";
 credits_entry[16][7] = "Sr. Pelo";
 credits_entry[16][8] = "Frigadae";
 credits_entry[16][9] = "TheKameru";
@@ -139,7 +135,7 @@ credits_entry[19][2] = "Fatz";
 credits_entry[19][3] = "Norin";
 credits_entry[19][4] = "LegitimateNoodle";
 credits_entry[19][5] = "Shayy";
-credits_entry[19][6] = "Rynogg";
+credits_entry[19][6] = "VyletBunni";
 credits_entry[19][7] = "Easynam";
 credits_entry[19][8] = "Nightmargin";
 credits_entry[19][9] = "YellowAfterlife";
@@ -149,7 +145,7 @@ credits_entry[20][0] = "Based on the world of UNDERTALE,\ncreated by";
 credits_entry[20][1] = "";
 credits_entry[20][2] = "Toby Fox & Temmie Chang";
 
-for (i = 3; i < 21; i++)
+for (var i = 3; i < 21; i++)
     credits_entry[20][i] = "";
 
 current_slide = 0;

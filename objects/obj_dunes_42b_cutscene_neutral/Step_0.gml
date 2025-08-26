@@ -1,9 +1,7 @@
-var actor_crestina, actor_dad, actor_orion, actor_ceroba;
-
-actor_crestina = 769;
-actor_dad = 371;
-actor_orion = 553;
-actor_ceroba = 1161;
+var actor_crestina = 769;
+var actor_dad = 371;
+var actor_orion = 553;
+var actor_ceroba = obj_ceroba_npc;
 
 switch (scene)
 {
@@ -21,26 +19,26 @@ switch (scene)
             position = 0;
             talker[0] = actor_dad;
             talker[1] = actor_crestina;
-            talker[2] = 1161;
+            talker[2] = obj_ceroba_npc;
             talker[4] = actor_orion;
             talker[5] = actor_crestina;
             talker[6] = actor_orion;
             talker[7] = actor_dad;
             talker[8] = actor_crestina;
-            talker[9] = 1161;
+            talker[9] = obj_ceroba_npc;
             talker[11] = actor_dad;
-            sndfnt_array[0] = 391;
-            sndfnt_array[1] = 391;
-            sndfnt_array[2] = 108;
-            sndfnt_array[3] = 108;
-            sndfnt_array[4] = 391;
-            sndfnt_array[5] = 391;
-            sndfnt_array[6] = 391;
-            sndfnt_array[7] = 391;
-            sndfnt_array[8] = 391;
-            sndfnt_array[9] = 108;
-            sndfnt_array[10] = 108;
-            sndfnt_array[11] = 391;
+            sndfnt_array[0] = snd_talk_default;
+            sndfnt_array[1] = snd_talk_default;
+            sndfnt_array[2] = snd_talk_ceroba;
+            sndfnt_array[3] = snd_talk_ceroba;
+            sndfnt_array[4] = snd_talk_default;
+            sndfnt_array[5] = snd_talk_default;
+            sndfnt_array[6] = snd_talk_default;
+            sndfnt_array[7] = snd_talk_default;
+            sndfnt_array[8] = snd_talk_default;
+            sndfnt_array[9] = snd_talk_ceroba;
+            sndfnt_array[10] = snd_talk_ceroba;
+            sndfnt_array[11] = snd_talk_default;
             message[0] = "* So you can't find Starlo#  anywhere?";
             message[1] = "* That isn't like him at all!";
             message[2] = "* I was hoping he was#  here, hiding in his room#  or something.\t";
@@ -53,10 +51,10 @@ switch (scene)
             message[9] = "* It's okay, stay calm. We#  haven't exhausted our#  options yet.\t";
             message[10] = "* I'm sure he'll return#  soon. He's too much of#  a softy at heart.";
             message[11] = "* I hope you're right...";
-            prt[2] = 394;
-            prt[3] = 394;
-            prt[9] = 370;
-            prt[10] = 394;
+            prt[2] = spr_portrait_ceroba_disapproving;
+            prt[3] = spr_portrait_ceroba_disapproving;
+            prt[9] = spr_portrait_ceroba_neutral;
+            prt[10] = spr_portrait_ceroba_disapproving;
         }
         
         break;
@@ -79,7 +77,7 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_npc_walk(1168, 162, 162, 3, "y", "left");
+        cutscene_npc_walk(obj_player_npc, 162, 162, 3, "y", "left");
         break;
     
     case 7:

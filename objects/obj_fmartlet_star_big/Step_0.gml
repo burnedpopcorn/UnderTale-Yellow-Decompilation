@@ -1,5 +1,3 @@
-var spawn_count, i, star;
-
 if (live_call())
     return global.live_result;
 
@@ -38,11 +36,11 @@ if (scene > 0)
     
     if (bullet_destroy_self)
     {
-        spawn_count = 2;
+        var spawn_count = 2;
         
-        for (i = 0; i < spawn_count; i++)
+        for (var i = 0; i < spawn_count; i++)
         {
-            star = instance_create_depth(x + random_range(-10, 10), y + random_range(-10, 10), depth, obj_fmartlet_star_medium);
+            var star = instance_create_depth(x + random_range(-10, 10), y + random_range(-10, 10), depth, obj_fmartlet_star_medium);
             star.direction = (direction - 180) + (45 * i);
             star.speed = star.target_speed * 0.5;
         }

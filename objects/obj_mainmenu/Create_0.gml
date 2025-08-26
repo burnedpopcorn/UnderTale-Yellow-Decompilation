@@ -1,6 +1,4 @@
-var world_value;
-
-world_value = 0;
+var world_value = 0;
 route = 2;
 
 if (file_exists("Save.sav"))

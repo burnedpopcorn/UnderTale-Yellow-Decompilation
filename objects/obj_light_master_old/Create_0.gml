@@ -1,14 +1,12 @@
-var j, i, inst, object_found;
-
 light_amount = 0;
 active = false;
 reverse = false;
-j = 0;
+var j = 0;
 
-for (i = 0; i < instance_number(-3); i += 1)
+for (var i = 0; i < instance_number(-3); i += 1)
 {
-    inst = instance_find(-3, i);
-    object_found = false;
+    var inst = instance_find(-3, i);
+    var object_found = false;
     
     switch (inst.object_index)
     {

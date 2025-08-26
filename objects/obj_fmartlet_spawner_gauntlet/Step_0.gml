@@ -1,13 +1,11 @@
-var battle_box, heart, martlet_fly_x_start, martlet_fly_y_target, martlet_fly_y_target_bottom, y_diff, y_diff_current, attack_instance, sound_noloop, i, feather;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-heart = obj_heart_battle_fighting_parent;
-martlet_fly_x_start = 840;
-martlet_fly_y_target = 120;
-martlet_fly_y_target_bottom = 460;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var heart = obj_heart_battle_fighting_parent;
+var martlet_fly_x_start = 840;
+var martlet_fly_y_target = 120;
+var martlet_fly_y_target_bottom = 460;
 
 switch (scene)
 {
@@ -66,8 +64,8 @@ switch (scene)
         with (obj_martlet_final_base)
         {
             hspeed = -14;
-            y_diff = martlet_fly_x_start - 320;
-            y_diff_current = x - 320;
+            var y_diff = martlet_fly_x_start - 320;
+            var y_diff_current = x - 320;
             y = martlet_fly_y_target + (90 * (y_diff_current / y_diff));
             image_angle = -10 + (40 * (y_diff_current / y_diff));
             
@@ -175,25 +173,25 @@ if (can_attack == true)
         switch (attack_tick)
         {
             case 30:
-                attack_instance = instance_create_depth(battle_box.bbox_right + 40, battle_box.y, -100, obj_martlet_attack_splitting_feather);
+                var attack_instance = instance_create_depth(battle_box.bbox_right + 40, battle_box.y, -100, obj_martlet_attack_splitting_feather);
                 attack_instance.x_target_override = battle_box.bbox_left - 20;
                 attack_instance.y_target_override = battle_box.y;
                 break;
             
             case 44:
-                attack_instance = instance_create_depth(battle_box.bbox_right + 40, battle_box.bbox_top - 40, -100, obj_martlet_attack_splitting_feather);
+                var attack_instance = instance_create_depth(battle_box.bbox_right + 40, battle_box.bbox_top - 40, -100, obj_martlet_attack_splitting_feather);
                 attack_instance.x_target_override = battle_box.x;
                 attack_instance.y_target_override = battle_box.y;
                 break;
             
             case 58:
-                attack_instance = instance_create_depth(battle_box.bbox_left - 40, battle_box.bbox_top - 40, -100, obj_martlet_attack_splitting_feather);
+                var attack_instance = instance_create_depth(battle_box.bbox_left - 40, battle_box.bbox_top - 40, -100, obj_martlet_attack_splitting_feather);
                 attack_instance.x_target_override = heart.x;
                 attack_instance.y_target_override = heart.y;
                 break;
             
             case 72:
-                attack_instance = instance_create_depth(battle_box.bbox_left - 40, battle_box.bbox_top + 20, -100, obj_martlet_attack_splitting_feather);
+                var attack_instance = instance_create_depth(battle_box.bbox_left - 40, battle_box.bbox_top + 20, -100, obj_martlet_attack_splitting_feather);
                 attack_instance.x_target_override = battle_box.bbox_right + 20;
                 attack_instance.y_target_override = battle_box.y;
                 attack_instance = instance_create_depth(battle_box.bbox_right + 40, battle_box.bbox_top + 20, -100, obj_martlet_attack_splitting_feather);
@@ -202,12 +200,12 @@ if (can_attack == true)
                 break;
             
             case 80:
-                sound_noloop = false;
-                i = battle_box.bbox_left + 12;
+                var sound_noloop = false;
+                var i = battle_box.bbox_left + 12;
                 
                 while (i < (battle_box.bbox_right - 4))
                 {
-                    feather = instance_create_depth(i, battle_box.bbox_top - 20, -100, obj_fmartlet_feather_straight);
+                    var feather = instance_create_depth(i, battle_box.bbox_top - 20, -100, obj_fmartlet_feather_straight);
                     feather.direction = 270;
                     
                     if (sound_noloop == false)
@@ -223,72 +221,72 @@ if (can_attack == true)
             
             case 100:
             case 170:
-                feather = instance_create_depth(battle_box.bbox_left - 20, battle_box.y, -100, obj_fmartlet_feather_straight);
+                var feather = instance_create_depth(battle_box.bbox_left - 20, battle_box.y, -100, obj_fmartlet_feather_straight);
                 feather.direction = point_direction(feather.x, feather.y, heart.x, heart.y);
                 feather.can_play_sound = true;
                 break;
             
             case 105:
             case 165:
-                feather = instance_create_depth(battle_box.bbox_left - 20, battle_box.bbox_top - 20, -100, obj_fmartlet_feather_straight);
+                var feather = instance_create_depth(battle_box.bbox_left - 20, battle_box.bbox_top - 20, -100, obj_fmartlet_feather_straight);
                 feather.direction = point_direction(feather.x, feather.y, heart.x, heart.y);
                 feather.can_play_sound = true;
                 break;
             
             case 110:
             case 160:
-                feather = instance_create_depth(battle_box.x, battle_box.bbox_top - 20, -100, obj_fmartlet_feather_straight);
+                var feather = instance_create_depth(battle_box.x, battle_box.bbox_top - 20, -100, obj_fmartlet_feather_straight);
                 feather.direction = point_direction(feather.x, feather.y, heart.x, heart.y);
                 feather.can_play_sound = true;
                 break;
             
             case 115:
             case 155:
-                feather = instance_create_depth(battle_box.bbox_right + 20, battle_box.bbox_top - 20, -100, obj_fmartlet_feather_straight);
+                var feather = instance_create_depth(battle_box.bbox_right + 20, battle_box.bbox_top - 20, -100, obj_fmartlet_feather_straight);
                 feather.direction = point_direction(feather.x, feather.y, heart.x, heart.y);
                 feather.can_play_sound = true;
                 break;
             
             case 120:
             case 150:
-                feather = instance_create_depth(battle_box.bbox_right + 20, battle_box.y, -100, obj_fmartlet_feather_straight);
+                var feather = instance_create_depth(battle_box.bbox_right + 20, battle_box.y, -100, obj_fmartlet_feather_straight);
                 feather.direction = point_direction(feather.x, feather.y, heart.x, heart.y);
                 feather.can_play_sound = true;
                 break;
             
             case 125:
             case 145:
-                feather = instance_create_depth(battle_box.bbox_right + 20, battle_box.bbox_bottom + 20, -100, obj_fmartlet_feather_straight);
+                var feather = instance_create_depth(battle_box.bbox_right + 20, battle_box.bbox_bottom + 20, -100, obj_fmartlet_feather_straight);
                 feather.direction = point_direction(feather.x, feather.y, heart.x, heart.y);
                 feather.can_play_sound = true;
                 break;
             
             case 130:
             case 140:
-                feather = instance_create_depth(battle_box.x, battle_box.bbox_bottom + 20, -100, obj_fmartlet_feather_straight);
+                var feather = instance_create_depth(battle_box.x, battle_box.bbox_bottom + 20, -100, obj_fmartlet_feather_straight);
                 feather.direction = point_direction(feather.x, feather.y, heart.x, heart.y);
                 feather.can_play_sound = true;
                 break;
             
             case 135:
-                feather = instance_create_depth(battle_box.bbox_left - 20, battle_box.bbox_bottom + 20, -100, obj_fmartlet_feather_straight);
+                var feather = instance_create_depth(battle_box.bbox_left - 20, battle_box.bbox_bottom + 20, -100, obj_fmartlet_feather_straight);
                 feather.direction = point_direction(feather.x, feather.y, heart.x, heart.y);
                 feather.can_play_sound = true;
                 break;
             
             case 190:
-                attack_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
+                var attack_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
                 attack_instance.attack_delay = 5;
                 break;
             
             case 200:
-                attack_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
+                var attack_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
                 attack_instance.image_xscale = -1;
                 attack_instance.attack_delay = 10;
                 break;
             
             case 215:
-                attack_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
+                var attack_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
                 attack_instance.attack_delay = 15;
                 break;
             
@@ -337,28 +335,28 @@ if (can_attack == true)
             
             case 210:
             case 240:
-                attack_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
+                var attack_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
                 attack_instance.attack_delay = 3;
                 break;
             
             case 225:
-                attack_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
+                var attack_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
                 attack_instance.image_xscale = -1;
                 attack_instance.attack_delay = 3;
                 break;
             
             case 255:
-                attack_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
+                var attack_instance = instance_create_depth(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, -100, obj_martlet_attack_talon);
                 attack_instance.attack_delay = 75;
                 break;
             
             case 265:
-                sound_noloop = false;
-                i = battle_box.bbox_left + 12;
+                var sound_noloop = false;
+                var i = battle_box.bbox_left + 12;
                 
                 while (i < (battle_box.bbox_right - 4))
                 {
-                    feather = instance_create_depth(i, battle_box.bbox_top - 20, -100, obj_fmartlet_feather_straight);
+                    var feather = instance_create_depth(i, battle_box.bbox_top - 20, -100, obj_fmartlet_feather_straight);
                     feather.direction = 270;
                     
                     if (sound_noloop == false)
@@ -373,12 +371,12 @@ if (can_attack == true)
                 break;
             
             case 280:
-                sound_noloop = false;
-                i = battle_box.bbox_top + 12;
+                var sound_noloop = false;
+                var i = battle_box.bbox_top + 12;
                 
                 while (i < battle_box.y)
                 {
-                    feather = instance_create_depth(battle_box.bbox_left - 20, i, -100, obj_fmartlet_feather_straight);
+                    var feather = instance_create_depth(battle_box.bbox_left - 20, i, -100, obj_fmartlet_feather_straight);
                     feather.direction = 0;
                     
                     if (sound_noloop == false)
@@ -393,12 +391,12 @@ if (can_attack == true)
                 break;
             
             case 295:
-                sound_noloop = false;
-                i = battle_box.y;
+                var sound_noloop = false;
+                var i = battle_box.y;
                 
                 while (i < (battle_box.bbox_bottom - 4))
                 {
-                    feather = instance_create_depth(battle_box.bbox_right + 20, i, -100, obj_fmartlet_feather_straight);
+                    var feather = instance_create_depth(battle_box.bbox_right + 20, i, -100, obj_fmartlet_feather_straight);
                     feather.direction = 180;
                     
                     if (sound_noloop == false)

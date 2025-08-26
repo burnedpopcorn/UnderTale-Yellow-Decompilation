@@ -1,5 +1,3 @@
-var i;
-
 if (instance_exists(obj_dialogue_battle_flee))
 {
     switch (global.enemy_count)
@@ -40,7 +38,7 @@ if (instance_exists(obj_dialogue_battle_flee))
     
     if (global.player_exp >= global.player_exp_next[global.player_level])
     {
-        for (i = global.player_level; i <= 20; i += 1)
+        for (var i = global.player_level; i <= 20; i += 1)
         {
             if (global.player_exp >= global.player_exp_next[i])
             {

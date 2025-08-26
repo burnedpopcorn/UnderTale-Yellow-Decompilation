@@ -1,6 +1,4 @@
-var battle_flag;
-
-battle_flag = global.hotland_flag[2];
+var battle_flag = global.hotland_flag[2];
 
 if (instance_exists(obj_ceroba_phase_2_shield) && obj_ceroba_phase_2_shield.scene >= 9)
     exit;

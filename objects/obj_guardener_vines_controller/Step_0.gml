@@ -1,5 +1,3 @@
-var i;
-
 obj_fight.image_blend = c_white;
 obj_act.image_blend = c_white;
 obj_item.image_blend = c_white;
@@ -17,7 +15,7 @@ if (vine_count[2] > 0)
 if (vine_count[3] > 0)
     obj_mercy.image_blend = c_gray;
 
-for (i = 0; i < 4; i++)
+for (var i = 0; i < 4; i++)
 {
     if (vine_cut[i] == true)
     {

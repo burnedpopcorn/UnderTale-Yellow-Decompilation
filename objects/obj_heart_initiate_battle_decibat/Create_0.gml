@@ -1,5 +1,3 @@
-var player_character;
-
 image_xscale = 2;
 image_yscale = 2;
 moving = false;
@@ -14,7 +12,7 @@ vsp_sign = sign(vsp);
 x_position = x;
 y_position = y;
 no_loop_moving = false;
-player_character = global.player_character;
+var player_character = global.player_character;
 
 switch (player_character)
 {

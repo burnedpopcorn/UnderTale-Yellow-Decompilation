@@ -1,7 +1,5 @@
 function scr_generate_battle_dunebud_duo()
 {
-    var dunebud_2;
-    
     global.battle_enemy_name_1 = "dunebud a";
     global.battle_enemy_name_2 = "dunebud b";
     global.battle_menu_number = 1;
@@ -108,7 +106,7 @@ function scr_generate_battle_dunebud_duo()
     global.enemy_damage_y = obj_dunebud_a.y - 18;
     global.enemy_target_x = obj_dunebud_a.x;
     global.enemy_target_y = obj_dunebud_a.y - 18;
-    dunebud_2 = instance_create_depth(474, 220, 1, obj_dunebud_b);
+    var dunebud_2 = instance_create_depth(474, 220, 1, obj_dunebud_b);
     global.enemy_damage_x_2 = dunebud_2.x;
     global.enemy_damage_y_2 = dunebud_2.y - 18;
     global.enemy_target_x_2 = dunebud_2.x;

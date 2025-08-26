@@ -1,9 +1,7 @@
-function tile_get_width(argument0)
+function tile_get_width(arg0)
 {
-    var __index, __reg;
-    
-    __index = argument0;
-    __reg = layer_tile_get_region(__index);
+    var __index = arg0;
+    var __reg = layer_tile_get_region(__index);
     
     if (array_length_1d(__reg) == 0)
         return 0;

@@ -1,9 +1,7 @@
 function scr_dialogue_battle_action_selected_action_3_feisty_four()
 {
-    var act_number;
-    
     message[0] = "* You smirk at the four's antics.#* They're trying.";
-    act_number = global.act_number;
+    var act_number = global.act_number;
     
     switch (act_number)
     {

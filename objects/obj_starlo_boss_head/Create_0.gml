@@ -1,2 +1,2 @@
-head_sprite = spr_starlo_boss_head;
-hurt_sprite = spr_starlo_boss_head_hurt;
+head_sprite = 2124;
+hurt_sprite = 2127;

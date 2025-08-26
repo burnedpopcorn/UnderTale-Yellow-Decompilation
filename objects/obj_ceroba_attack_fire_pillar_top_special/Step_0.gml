@@ -1,9 +1,7 @@
-var battle_box, y_target;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
@@ -14,7 +12,7 @@ switch (scene)
         break;
     
     case 0:
-        y_target = battle_box.bbox_top + 30;
+        var y_target = battle_box.bbox_top + 30;
         y = lerp(y, y_target, 0.15);
         
         if (abs(y - y_target) < 0.1)

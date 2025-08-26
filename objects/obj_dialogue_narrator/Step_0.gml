@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -8,7 +6,7 @@ if (local_dialogue_open == false)
 
 if (letter_array == -1)
 {
-    for (i = 1; i <= string_length(message[message_current]); i++)
+    for (var i = 1; i <= string_length(message[message_current]); i++)
     {
         text_alpha[i] = 0;
         letter_array[i] = string_char_at(message[message_current], i);
@@ -61,7 +59,7 @@ if (message_advance == 1)
     
     if (draw_alpha <= 0)
     {
-        for (i = 0; i <= letter_current; i++)
+        for (var i = 0; i <= letter_current; i++)
             text_alpha[i] = 0;
         
         draw_alpha = 0;
@@ -94,7 +92,7 @@ if (message_advance != 1)
         draw_alpha += 0.1;
 }
 
-for (i = 0; i <= letter_current; i++)
+for (var i = 0; i <= letter_current; i++)
 {
     if (text_alpha[i] < 1)
         text_alpha[i] += 0.1;

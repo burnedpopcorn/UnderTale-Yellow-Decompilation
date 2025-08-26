@@ -1,5 +1,3 @@
-var subimg;
-
 if (drawing_poster)
 {
     draw_set_color(c_black);
@@ -7,7 +5,7 @@ if (drawing_poster)
     draw_rectangle(0, 0, 320, 240, 0);
     draw_set_color(c_white);
     draw_set_alpha(draw_alpha);
-    subimg = 0;
+    var subimg = 0;
     
     if (global.dunes_flag[24] == 2 || global.dunes_flag[40] > 0)
         subimg = 1;

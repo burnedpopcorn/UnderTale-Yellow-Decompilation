@@ -40,7 +40,7 @@ if (global.left_keyp)
     audio_play_sound(snd_mainmenu_select, 1, 0);
 }
 
-if (keyboard_multicheck_pressed(0) || train_timer == 0)
+if (keyboard_multicheck_pressed(vk_nokey) || train_timer == 0)
 {
     audio_play_sound(snd_confirm, 1, 0);
     fade_out = true;

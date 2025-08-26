@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"930acae1-bc68-4346-b18f-66d8a26b5c35",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"64844b8e-c6f4-48c0-bdc6-db2a2f31227a",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"388c835f-9ef8-4ea4-b11c-5e4f4e374f77",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"594ca383-b28f-4c77-97d5-2b5a3c632bfe",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec35feeb-b0bd-4247-9900-3f0c3c4810f5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"00fd36e0-1e6a-407a-9e06-7998b24f63de",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 24,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f0de0f53-ef61-4883-b259-c1dbecf66b31","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7dcae9eb-0250-417c-a180-372d22b112f8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"930acae1-bc68-4346-b18f-66d8a26b5c35","path":"sprites/spr_swimmer_snowdin_yellow/spr_swimmer_snowdin_yellow.yy",},},},"Disabled":false,"id":"3b7885a4-44bb-4d67-ad5a-ce1bf5397e9a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"64844b8e-c6f4-48c0-bdc6-db2a2f31227a","path":"sprites/spr_swimmer_snowdin_yellow/spr_swimmer_snowdin_yellow.yy",},},},"Disabled":false,"id":"a850c9df-15e1-4653-bb5f-705886a68970","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"388c835f-9ef8-4ea4-b11c-5e4f4e374f77","path":"sprites/spr_swimmer_snowdin_yellow/spr_swimmer_snowdin_yellow.yy",},},},"Disabled":false,"id":"5c48223e-30b8-4f59-ab36-c1054e7cc356","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"594ca383-b28f-4c77-97d5-2b5a3c632bfe","path":"sprites/spr_swimmer_snowdin_yellow/spr_swimmer_snowdin_yellow.yy",},},},"Disabled":false,"id":"5656e2bf-6c8c-496c-98ed-6647284ac134","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ec35feeb-b0bd-4247-9900-3f0c3c4810f5","path":"sprites/spr_swimmer_snowdin_yellow/spr_swimmer_snowdin_yellow.yy",},},},"Disabled":false,"id":"7c459eb5-1d2a-4f8f-99fb-b281e6c7cf18","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"00fd36e0-1e6a-407a-9e06-7998b24f63de","path":"sprites/spr_swimmer_snowdin_yellow/spr_swimmer_snowdin_yellow.yy",},},},"Disabled":false,"id":"151672e4-ddee-47eb-a73e-379752566640","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Snowdin",
+    "path": "texturegroups/Snowdin",
   },
   "type": 0,
   "VTile": false,

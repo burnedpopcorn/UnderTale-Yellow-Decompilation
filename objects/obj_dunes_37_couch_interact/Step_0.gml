@@ -1,4 +1,4 @@
-if (keyboard_multicheck_pressed(0) && scr_interact())
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
     scene = 1;
 
 if (scene == 1)
@@ -77,7 +77,7 @@ if (scene == 3)
 
 if (scene == 4)
 {
-    if (keyboard_multicheck_pressed(0) || keyboard_multicheck_pressed(0))
+    if (keyboard_multicheck_pressed(vk_nokey) || keyboard_multicheck_pressed(vk_nokey))
     {
         scene++;
         npc_clover.sprite_index = spr_pl_run_down;

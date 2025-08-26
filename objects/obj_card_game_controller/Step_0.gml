@@ -1,5 +1,3 @@
-var max_g_gained, time_in_seconds;
-
 if (cardg_fade_out == true)
 {
     if (cardg_draw_alpha > 0)
@@ -35,8 +33,8 @@ if (instance_number(obj_card_game_card) <= 0 && !cardg_failure && !cardg_fade_ou
     
     if (cardg_victory == true)
     {
-        max_g_gained = 25;
-        time_in_seconds = floor(cardg_timer / 30);
+        var max_g_gained = 25;
+        var time_in_seconds = floor(cardg_timer / 30);
         
         if (time_in_seconds <= cardg_time_gold)
             max_g_gained = 25;

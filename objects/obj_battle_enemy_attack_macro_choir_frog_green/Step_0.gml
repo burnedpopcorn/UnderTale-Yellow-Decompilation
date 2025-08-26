@@ -1,5 +1,3 @@
-var frog_sound;
-
 if (live_call())
     return global.live_result;
 
@@ -8,7 +6,7 @@ if (spawner == -4 || !instance_exists(spawner))
 
 if (frog_jump == true)
 {
-    frog_sound = audio_play_sound(snd_tinyfroggit, 1, 0);
+    var frog_sound = audio_play_sound(snd_tinyfroggit, 1, 0);
     audio_sound_pitch(frog_sound, irandom_range(8, 12) / 10);
     sprite_index = spr_bigfrog_jumpinbro;
     vsp = -5;

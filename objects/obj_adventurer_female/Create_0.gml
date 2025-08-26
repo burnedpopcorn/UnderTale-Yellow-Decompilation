@@ -1,6 +1,4 @@
-var geno_snowdin;
-
-geno_snowdin = false;
+var geno_snowdin = false;
 
 if (global.geno_complete[2])
     geno_snowdin = true;

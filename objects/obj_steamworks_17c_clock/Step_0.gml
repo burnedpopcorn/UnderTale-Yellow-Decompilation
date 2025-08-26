@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Tick-tock - tick-tock -#  tick-tock...";
                 message[1] = "* The current time is 6:26,#  Monday morning!";
                 message[2] = "* You may have noticed the#  apple trees outside the#  Steamworks are blooming.";

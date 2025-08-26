@@ -1,5 +1,3 @@
-var flowey;
-
 switch (scene)
 {
     case 0:
@@ -12,7 +10,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_npc_walk(1168, 200, 270, 2, "y", "up");
+        cutscene_npc_walk(obj_player_npc, 200, 270, 2, "y", "up");
         scene++;
         break;
     
@@ -22,14 +20,14 @@ switch (scene)
     
     case 3:
         obj_determination.image_alpha = 0;
-        flowey = instance_create(obj_determination.x, obj_determination.y, obj_flowey_npc);
+        var flowey = instance_create(obj_determination.x, obj_determination.y, obj_flowey_npc);
         flowey.image_alpha = 0;
         scene++;
         break;
     
     case 4:
         obj_flowey_npc.image_alpha = 1;
-        cutscene_npc_action_sprite(3194, 242, 0.2, false);
+        cutscene_npc_action_sprite(obj_flowey_npc, spr_floweyrise, 0.2, false);
         break;
     
     case 5:
@@ -41,9 +39,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Howdy!";
-            prt[0] = 348;
+            prt[0] = flowey_nice;
         }
         
         break;
@@ -53,7 +51,7 @@ switch (scene)
         break;
     
     case 8:
-        cutscene_npc_direction(3194, "up");
+        cutscene_npc_direction(obj_flowey_npc, "up");
         break;
     
     case 9:
@@ -73,11 +71,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Gee, wouldja look at#  that...\t";
             message[1] = "* I can almost see the#  King's Castle from here!";
-            prt[0] = 348;
-            prt[1] = 348;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_nice;
         }
         
         break;
@@ -87,7 +85,7 @@ switch (scene)
         break;
     
     case 14:
-        cutscene_npc_direction(3194, "down");
+        cutscene_npc_direction(obj_flowey_npc, "down");
         break;
     
     case 15:
@@ -99,9 +97,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             color = true;
-            col_modif[0] = 255;
+            col_modif[0] = c_red;
             message[0] = "* Heh, ASGORE...";
             message[1] = "* Monsters shower him#  with praise but it's#  totally overblown.";
             message[2] = "* See, he's what they#  call a 'Boss Monster'.";
@@ -112,15 +110,15 @@ switch (scene)
             message[6] = "* I've heard the guy's#  immortal too. Can't age#  a second!";
             message[7] = "* At least, not anymore.\t";
             message[8] = "* Wild, huh?";
-            prt[0] = 347;
-            prt[1] = 3640;
-            prt[2] = 353;
-            prt[3] = 348;
-            prt[4] = 347;
-            prt[5] = 3251;
-            prt[6] = 348;
-            prt[7] = 353;
-            prt[8] = 348;
+            prt[0] = flowey_niceside;
+            prt[1] = spr_flowey_meh;
+            prt[2] = flowey_plains;
+            prt[3] = flowey_nice;
+            prt[4] = flowey_niceside;
+            prt[5] = flowey_wink;
+            prt[6] = flowey_nice;
+            prt[7] = flowey_plains;
+            prt[8] = flowey_nice;
             
             if (global.route == 3)
             {
@@ -142,29 +140,29 @@ switch (scene)
                 message[17] = "* Sigh...";
                 message[18] = "* Just keep your eyes on#  the Castle, okay?";
                 message[19] = "* Okay.";
-                prt[4] = 347;
-                prt[5] = 348;
-                prt[6] = 349;
-                prt[7] = 349;
-                prt[8] = 348;
-                prt[9] = 347;
-                prt[10] = 348;
-                prt[11] = 352;
-                prt[12] = 357;
-                prt[13] = 353;
-                prt[14] = 348;
-                prt[15] = 357;
-                prt[16] = 347;
-                prt[17] = 353;
-                prt[18] = 352;
-                prt[19] = 348;
+                prt[4] = flowey_niceside;
+                prt[5] = flowey_nice;
+                prt[6] = flowey_smirk;
+                prt[7] = flowey_smirk;
+                prt[8] = flowey_nice;
+                prt[9] = flowey_niceside;
+                prt[10] = flowey_nice;
+                prt[11] = flowey_plain;
+                prt[12] = flowey_worried;
+                prt[13] = flowey_plains;
+                prt[14] = flowey_nice;
+                prt[15] = flowey_worried;
+                prt[16] = flowey_niceside;
+                prt[17] = flowey_plains;
+                prt[18] = flowey_plain;
+                prt[19] = flowey_nice;
             }
         }
         
         break;
     
     case 16:
-        cutscene_npc_direction(3194, "up");
+        cutscene_npc_direction(obj_flowey_npc, "up");
         break;
     
     case 17:
@@ -176,9 +174,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Boss Monsters know how#  to cling to life, that's#  for sure.";
-            prt[0] = 353;
+            prt[0] = flowey_plains;
         }
         
         break;
@@ -188,7 +186,7 @@ switch (scene)
         break;
     
     case 20:
-        cutscene_npc_direction(3194, "down");
+        cutscene_npc_direction(obj_flowey_npc, "down");
         break;
     
     case 21:
@@ -196,19 +194,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Hey, don't let all that#  info scare ya!";
             message[1] = "* Immortal doesn't mean#  invincible!";
             message[2] = "* And still, a human SOUL#  is more powerful than a#  Boss Monster SOUL.";
             message[3] = "* ASGORE may seem#  intimidating but it's#  all show.";
             message[4] = "* Deep down, he's afraid#  of you. A true pushover.";
             message[5] = "* Anyway, just thought#  I'd prepare my pal for#  what's to come!";
-            prt[0] = 348;
-            prt[1] = 3251;
-            prt[2] = 348;
-            prt[3] = 348;
-            prt[4] = 349;
-            prt[5] = 348;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_wink;
+            prt[2] = flowey_nice;
+            prt[3] = flowey_nice;
+            prt[4] = flowey_smirk;
+            prt[5] = flowey_nice;
         }
         
         break;
@@ -221,7 +219,7 @@ switch (scene)
         if (global.flowey_save_number < current_save_number)
             global.flowey_save_number = current_save_number;
         
-        box = instance_create(__view_get(e__VW.XView, 0) + 160, __view_get(e__VW.YView, obj_quote_battle_ceroba_outro_4) + 120, obj_savebox);
+        box = instance_create(__view_get(e__VW.XView, 0) + 160, __view_get(e__VW.YView, 0) + 120, obj_savebox);
         audio_play_sound(snd_mainmenu_select, 1, 0);
         global.menu_sprite = spr_savescreen_dunes;
         scene++;
@@ -236,7 +234,7 @@ switch (scene)
         {
             global.cutscene = true;
             
-            if (cutscene_npc_action_sprite(3194, 245, 0.2))
+            if (cutscene_npc_action_sprite(obj_flowey_npc, spr_floweyleave, 0.2))
             {
                 instance_destroy(obj_flowey_npc);
                 obj_determination.image_alpha = 1;

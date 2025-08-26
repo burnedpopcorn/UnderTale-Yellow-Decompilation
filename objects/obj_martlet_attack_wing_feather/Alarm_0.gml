@@ -1,5 +1,3 @@
-var shoot_sound;
-
 if (live_call())
     return global.live_result;
 
@@ -9,6 +7,6 @@ image_alpha = 1;
 
 if (!audio_is_playing(snd_mart_feather_atk3))
 {
-    shoot_sound = audio_play_sound(snd_mart_feather_atk3, 20, 0);
+    var shoot_sound = audio_play_sound(snd_mart_feather_atk3, 20, 0);
     audio_sound_set_track_position(shoot_sound, 0.7);
 }

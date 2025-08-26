@@ -1,5 +1,3 @@
-var camera_y;
-
 if (live_call())
     return global.live_result;
 
@@ -32,17 +30,17 @@ switch (scene)
         break;
     
     case 4:
-        cutscene_npc_set_sprites(1162, 155, 152, 154, 150, 155, 152, 154, 150);
+        cutscene_npc_set_sprites(obj_ed_npc, spr_ed_up_walk_clover, spr_ed_right_walk_clover, spr_ed_down_walk_clover, spr_ed_left_walk_clover, spr_ed_up_walk_clover, spr_ed_right_walk_clover, spr_ed_down_walk_clover, spr_ed_left_walk_clover);
         break;
     
     case 5:
-        cutscene_npc_walk(1162, 720, obj_ed_npc.y, 3, "x", "up");
+        cutscene_npc_walk(obj_ed_npc, 720, obj_ed_npc.y, 3, "x", "up");
         break;
     
     case 6:
-        if (cutscene_npc_action_sprite(1162, 156, 0.3, false, 0, 237, 6))
+        if (cutscene_npc_action_sprite(obj_ed_npc, spr_ed_place_clover, 0.3, false, 0, snd_gun_hit, 6))
         {
-            cutscene_npc_set_sprites(1162, 141, 140, 142, 139, 147, 146, 144, 145);
+            cutscene_npc_set_sprites(obj_ed_npc, spr_ed_up_walk, spr_ed_right_walk, spr_ed_down_walk, spr_ed_left_walk, spr_ed_up_talk, spr_ed_right_talk, spr_ed_down_talk, spr_ed_left_talk);
             scene -= 1;
         }
         
@@ -53,15 +51,15 @@ switch (scene)
         break;
     
     case 8:
-        cutscene_npc_direction(1168, "down");
+        cutscene_npc_direction(obj_player_npc, "down");
         break;
     
     case 9:
-        cutscene_npc_walk(1162, 660, 500, 3, "y", "right");
+        cutscene_npc_walk(obj_ed_npc, 660, 500, 3, "y", "right");
         break;
     
     case 10:
-        camera_y = camera_get_view_y(view_camera[0]);
+        var camera_y = camera_get_view_y(view_camera[0]);
         instance_create(680, camera_y - 30, obj_mooch_npc);
         instance_create(780, camera_y - 50, obj_ace_npc);
         instance_create(630, camera_y - 70, obj_moray_npc);
@@ -73,25 +71,25 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1162;
-            talker[1] = 1165;
+            talker[0] = obj_ed_npc;
+            talker[1] = obj_mooch_npc;
             message[0] = "* Ugh... I'm never#  travelin' via laundry#  chute again!";
             message[1] = "* Ed! You're back!";
-            prt[0] = 454;
+            prt[0] = spr_portrait_ed_mutter;
         }
         
         break;
     
     case 12:
-        cutscene_npc_direction(1162, "up");
+        cutscene_npc_direction(obj_ed_npc, "up");
         break;
     
     case 13:
-        cutscene_npc_direction(1168, "up");
+        cutscene_npc_direction(obj_player_npc, "up");
         break;
     
     case 14:
-        cutscene_npc_walk(1165, 680, 440, 4, "y", "down");
+        cutscene_npc_walk(obj_mooch_npc, 680, 440, 4, "y", "down");
         cutscene_advance();
         break;
     
@@ -100,18 +98,18 @@ switch (scene)
         break;
     
     case 16:
-        cutscene_npc_walk(1158, 760, 440, 4, "y", "down");
+        cutscene_npc_walk(obj_ace_npc, 760, 440, 4, "y", "down");
         cutscene_advance();
         break;
     
     case 17:
-        cutscene_npc_walk(1167, 720, 430, 4, "y", "down");
+        cutscene_npc_walk(obj_moray_npc, 720, 430, 4, "y", "down");
         cutscene_advance();
         break;
     
     case 18:
         if (obj_mooch_npc.npc_arrived)
-            cutscene_sfx_play(373, 1);
+            cutscene_sfx_play(snd_playerjump, 1);
         
         break;
     
@@ -124,9 +122,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1165;
+            talker[0] = obj_mooch_npc;
             message[0] = "* And Clover too?";
-            prt[0] = 455;
+            prt[0] = spr_portrait_mooch_normal;
             position = 0;
         }
         
@@ -140,11 +138,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1167;
-            talker[2] = 1162;
-            talker[3] = 1167;
-            talker[5] = 1158;
-            talker[6] = 1162;
+            talker[0] = obj_moray_npc;
+            talker[2] = obj_ed_npc;
+            talker[3] = obj_moray_npc;
+            talker[5] = obj_ace_npc;
+            talker[6] = obj_ed_npc;
             message[0] = "* I was worried sick#  about you!";
             message[1] = "* Where's Star?";
             message[2] = "* Ceroba ran away so he#  chased after her.";
@@ -152,13 +150,13 @@ switch (scene)
             message[4] = "* Why did you let him do#  that!?";
             message[5] = "* Star knows Ceroba more#  than anyone, Moray.";
             message[6] = "* Well... I'm not so sure#  of that anymore.";
-            prt[0] = 449;
-            prt[1] = 449;
-            prt[2] = 454;
-            prt[3] = 450;
-            prt[4] = 448;
-            prt[5] = 437;
-            prt[6] = 454;
+            prt[0] = spr_portrait_moray_plain;
+            prt[1] = spr_portrait_moray_plain;
+            prt[2] = spr_portrait_ed_mutter;
+            prt[3] = spr_portrait_moray_sweat;
+            prt[4] = spr_portrait_moray_shaded;
+            prt[5] = spr_portrait_ace_concealed;
+            prt[6] = spr_portrait_ed_mutter;
             
             if (message_current == 5)
                 obj_ace_npc.npc_direction = "left";
@@ -172,13 +170,13 @@ switch (scene)
         break;
     
     case 22:
-        camera_y = camera_get_view_y(view_camera[0]);
+        var camera_y = camera_get_view_y(view_camera[0]);
         instance_create(720, camera_y + 240 + 40, obj_martlet_npc);
         cutscene_advance();
         break;
     
     case 23:
-        cutscene_npc_walk(1164, 720, 540, 4, "y", "up");
+        cutscene_npc_walk(obj_martlet_npc, 720, 540, 4, "y", "up");
         break;
     
     case 24:
@@ -192,14 +190,14 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
-            talker[5] = 1164;
-            talker[12] = 1164;
-            talker[15] = 1164;
-            talker[3] = 1162;
-            talker[8] = 1162;
-            talker[13] = 1162;
-            talker[4] = 1167;
+            talker[0] = obj_martlet_npc;
+            talker[5] = obj_martlet_npc;
+            talker[12] = obj_martlet_npc;
+            talker[15] = obj_martlet_npc;
+            talker[3] = obj_ed_npc;
+            talker[8] = obj_ed_npc;
+            talker[13] = obj_ed_npc;
+            talker[4] = obj_moray_npc;
             message[0] = "* Clover!";
             message[1] = "* Moray messaged me about#  you being in danger...";
             message[2] = "* ...so I dropped what I#  was doing and flew over#  here!";
@@ -217,23 +215,23 @@ switch (scene)
             message[14] = "* There's a potential#  threat to their life!";
             message[15] = "* There's always a#  potential threat to#  their life.";
             message[16] = "* If anyone can fix this,#  it's Clover.";
-            prt[0] = 333;
-            prt[1] = 317;
-            prt[2] = 320;
-            prt[3] = 451;
-            prt[4] = 449;
-            prt[5] = 321;
-            prt[6] = 328;
-            prt[7] = 328;
-            prt[8] = 454;
-            prt[9] = 453;
-            prt[10] = 451;
-            prt[11] = 454;
-            prt[12] = 328;
-            prt[13] = 453;
-            prt[14] = 453;
-            prt[15] = 309;
-            prt[16] = 313;
+            prt[0] = spr_martlet_head_surprised;
+            prt[1] = spr_martlet_head_downer;
+            prt[2] = spr_martlet_head_melancholic;
+            prt[3] = spr_portrait_ed_normal;
+            prt[4] = spr_portrait_moray_plain;
+            prt[5] = spr_martlet_head_moderate;
+            prt[6] = spr_martlet_head_regular;
+            prt[7] = spr_martlet_head_regular;
+            prt[8] = spr_portrait_ed_mutter;
+            prt[9] = spr_portrait_ed_mad;
+            prt[10] = spr_portrait_ed_normal;
+            prt[11] = spr_portrait_ed_mutter;
+            prt[12] = spr_martlet_head_regular;
+            prt[13] = spr_portrait_ed_mad;
+            prt[14] = spr_portrait_ed_mad;
+            prt[15] = spr_martlet_head_angry;
+            prt[16] = spr_martlet_head_determined;
             
             if (message_current == 3)
                 obj_ed_npc.npc_direction = "up";
@@ -249,7 +247,7 @@ switch (scene)
         break;
     
     case 27:
-        cutscene_npc_direction(1162, "left");
+        cutscene_npc_direction(obj_ed_npc, "left");
         break;
     
     case 28:
@@ -267,7 +265,7 @@ switch (scene)
         break;
     
     case 31:
-        cutscene_npc_direction(1162, "down");
+        cutscene_npc_direction(obj_ed_npc, "down");
         break;
     
     case 32:
@@ -275,10 +273,10 @@ switch (scene)
         
         with (msg)
         {
-            talker[3] = 1164;
-            talker[6] = 1164;
-            talker[0] = 1162;
-            talker[4] = 1162;
+            talker[3] = obj_martlet_npc;
+            talker[6] = obj_martlet_npc;
+            talker[0] = obj_ed_npc;
+            talker[4] = obj_ed_npc;
             message[0] = "* Fine... Just stay on#  track.";
             message[1] = "* I can't have them#  runnin' away or nothin'.";
             message[2] = "* You know the way?";
@@ -287,20 +285,20 @@ switch (scene)
             message[5] = "* I still have to finish#  explainin' everythin' to#  the group.";
             message[6] = "* Until then.";
             message[7] = "* Come on, Clover.";
-            prt[0] = 454;
-            prt[1] = 453;
-            prt[2] = 451;
-            prt[3] = 321;
-            prt[4] = 451;
-            prt[5] = 451;
-            prt[6] = 321;
-            prt[7] = 328;
+            prt[0] = spr_portrait_ed_mutter;
+            prt[1] = spr_portrait_ed_mad;
+            prt[2] = spr_portrait_ed_normal;
+            prt[3] = spr_martlet_head_moderate;
+            prt[4] = spr_portrait_ed_normal;
+            prt[5] = spr_portrait_ed_normal;
+            prt[6] = spr_martlet_head_moderate;
+            prt[7] = spr_martlet_head_regular;
         }
         
         break;
     
     case 33:
-        cutscene_npc_walk(1168, obj_martlet_npc.x, obj_martlet_npc.y - 30, 3, "y", "down");
+        cutscene_npc_walk(obj_player_npc, obj_martlet_npc.x, obj_martlet_npc.y - 30, 3, "y", "down");
         break;
     
     case 34:
@@ -308,12 +306,12 @@ switch (scene)
         break;
     
     case 35:
-        cutscene_npc_walk(1164, obj_martlet_npc.x, 700, 3, "y", "down");
+        cutscene_npc_walk(obj_martlet_npc, obj_martlet_npc.x, 700, 3, "y", "down");
         scene++;
         break;
     
     case 36:
-        cutscene_npc_walk(1168, obj_player_npc.x, 700, 3, "y", "down");
+        cutscene_npc_walk(obj_player_npc, obj_player_npc.x, 700, 3, "y", "down");
         scene++;
         break;
     
@@ -323,7 +321,7 @@ switch (scene)
     
     case 38:
         persistent = true;
-        cutscene_change_room(126, 600, 30, 0.03);
+        cutscene_change_room(rm_dunes_36, 600, 30, 0.03);
         break;
     
     case 39:
@@ -336,8 +334,8 @@ switch (scene)
         break;
     
     case 40:
-        cutscene_npc_walk(1164, obj_martlet_npc.x, 140, 3, "y", "down");
-        cutscene_npc_walk(1168, obj_player_npc.x, 110, 3, "y", "down");
+        cutscene_npc_walk(obj_martlet_npc, obj_martlet_npc.x, 140, 3, "y", "down");
+        cutscene_npc_walk(obj_player_npc, obj_player_npc.x, 110, 3, "y", "down");
         scene++;
         break;
     
@@ -348,7 +346,7 @@ switch (scene)
         break;
     
     case 42:
-        cutscene_npc_direction(1164, "up");
+        cutscene_npc_direction(obj_martlet_npc, "up");
         break;
     
     case 43:
@@ -356,7 +354,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Hey, before we go, I#  need to apologize.";
             message[1] = "* I shouldn't have let#  Ceroba take you.";
             message[2] = "* I just... I really#  thought I could trust#  her. We all did.";
@@ -367,22 +365,22 @@ switch (scene)
             message[7] = "* Surely it's nothing...#  right? ";
             message[8] = "* Chujin was almost like#  a father to me.";
             message[9] = "* I don't know where I'd#  be in life without him.";
-            prt[0] = 317;
-            prt[1] = 329;
-            prt[2] = 329;
-            prt[3] = 317;
-            prt[4] = 321;
-            prt[5] = 320;
-            prt[6] = 321;
-            prt[7] = 338;
-            prt[8] = 321;
-            prt[9] = 317;
+            prt[0] = spr_martlet_head_downer;
+            prt[1] = spr_martlet_head_sad;
+            prt[2] = spr_martlet_head_sad;
+            prt[3] = spr_martlet_head_downer;
+            prt[4] = spr_martlet_head_moderate;
+            prt[5] = spr_martlet_head_melancholic;
+            prt[6] = spr_martlet_head_moderate;
+            prt[7] = spr_martlet_head_wondering;
+            prt[8] = spr_martlet_head_moderate;
+            prt[9] = spr_martlet_head_downer;
         }
         
         break;
     
     case 44:
-        cutscene_npc_direction(1164, "left");
+        cutscene_npc_direction(obj_martlet_npc, "left");
         break;
     
     case 45:
@@ -390,7 +388,7 @@ switch (scene)
         break;
     
     case 46:
-        cutscene_npc_direction(1164, "up");
+        cutscene_npc_direction(obj_martlet_npc, "up");
         break;
     
     case 47:
@@ -398,22 +396,22 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* I'll... let you lead.#  Just head to Oasis#  Valley.";
             message[1] = "* Nice to see you again,#  by the way.";
-            prt[0] = 317;
-            prt[1] = 320;
+            prt[0] = spr_martlet_head_downer;
+            prt[1] = spr_martlet_head_melancholic;
         }
         
         break;
     
     case 48:
-        cutscene_npc_walk(1164, obj_player_npc.x, obj_player_npc.y - 20, 3, "x", "down");
+        cutscene_npc_walk(obj_martlet_npc, obj_player_npc.x, obj_player_npc.y - 20, 3, "x", "down");
         break;
     
     case 49:
         scr_actor_into_follower(1164, 1170);
-        global.party_member = 1170;
+        global.party_member = obj_martlet_follower;
         obj_martlet_follower.dir_new[1] = 270;
         obj_martlet_follower.npc_reset = true;
         cutscene_advance();

@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 96.05081,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/well_be_okay.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "well_be_okay.ogg",
+  "type": 1,
   "volume": 1.0,
 }

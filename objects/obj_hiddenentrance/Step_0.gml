@@ -9,7 +9,7 @@ if (global.flag[7] == true)
         
         with (dr)
         {
-            nextroom = 28;
+            nextroom = rm_darkruins_14;
             xx = 410;
             yy = 860;
             image_xscale = 2.5;
@@ -20,7 +20,7 @@ if (global.flag[7] == true)
     exit;
 }
 
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     if (scr_interact() == true)
     {

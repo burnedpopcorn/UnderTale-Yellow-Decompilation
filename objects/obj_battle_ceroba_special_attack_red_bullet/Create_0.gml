@@ -1,10 +1,8 @@
-var player_soul, hitbox;
-
 if (live_call())
     return global.live_result;
 
-player_soul = 2979;
-hitbox = instance_create_depth(x, y, -100, obj_battle_ceroba_special_attack_red_bullet_hitbox);
+var player_soul = 2980;
+var hitbox = instance_create_depth(x, y, -100, obj_battle_ceroba_special_attack_red_bullet_hitbox);
 hitbox.spawner = id;
 image_alpha = 1;
 target_x = player_soul.x + random_range(-2, 2);

@@ -1,6 +1,4 @@
-var starlo;
-
-starlo = 1169;
+var starlo = 1169;
 
 with (starlo)
 {
@@ -15,33 +13,33 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = starlo;
             message[0] = "* Howdy howdy, Clover!";
             message[1] = "* Ready for round two?";
-            prt[0] = 417;
-            prt[1] = 417;
+            prt[0] = spr_portrait_starlo_normal;
+            prt[1] = spr_portrait_starlo_normal;
             ch_msg = 1;
             ch[1] = "Yes";
             ch[2] = "No";
             
             if (outcome == 1)
             {
-                if (audio_sound_get_gain(obj_radio.current_song) == snd_chem_05_axis_acid_1)
+                if (audio_sound_get_gain(obj_radio.current_song) == 1)
                     audio_sound_gain(obj_radio.current_song, 0, 500);
                 
                 message[2] = "* Swell!";
                 message[3] = "* Seein' as the original#  plans were altered, we#  got catchin' up to do.";
                 message[4] = "* Let's gather the others!";
-                prt[2] = 417;
-                prt[3] = 407;
-                prt[4] = 417;
+                prt[2] = spr_portrait_starlo_normal;
+                prt[3] = spr_portrait_starlo_distracted;
+                prt[4] = spr_portrait_starlo_normal;
             }
             
             if (outcome == 2)
             {
                 message[2] = "* Alright, take yer#  time.";
-                prt[2] = 417;
+                prt[2] = spr_portrait_starlo_normal;
                 other.scene = 0;
             }
         }

@@ -1,5 +1,3 @@
-var shield_perc;
-
 if (live_call())
     return global.live_result;
 
@@ -20,7 +18,7 @@ if (instance_exists(obj_battle_enemy_attack_ceroba_flower_barrage_black_hole) ||
 
 if (instance_exists(obj_ceroba_phase_2_shield))
 {
-    shield_perc = obj_ceroba_phase_2_shield.fill_percentage;
+    var shield_perc = obj_ceroba_phase_2_shield.fill_percentage;
     
     if (shield_perc >= 1)
     {

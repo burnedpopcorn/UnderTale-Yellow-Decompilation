@@ -1,5 +1,3 @@
-var random_pose;
-
 state = 0;
 default_x = x;
 default_xscale = 1;
@@ -19,7 +17,7 @@ direction_x = choose(-1, 1);
 
 if (direction_x == -1)
 {
-    random_pose = irandom_range(0, 1);
+    var random_pose = irandom_range(0, 1);
     
     switch (random_pose)
     {
@@ -42,7 +40,7 @@ if (direction_x == -1)
 
 if (direction_x == 1)
 {
-    random_pose = irandom_range(0, 2);
+    var random_pose = irandom_range(0, 2);
     
     switch (random_pose)
     {

@@ -1,7 +1,5 @@
-var battle_enemy_name, game_mode, enemy_mode;
-
-battle_enemy_name = global.battle_enemy_name;
-game_mode = global.game_mode;
+var battle_enemy_name = global.battle_enemy_name;
+var game_mode = global.game_mode;
 
 if (game_mode == "customs")
 {
@@ -38,7 +36,7 @@ else if (game_mode == "yellow")
 {
     if (battle_enemy_name == "dalv")
     {
-        enemy_mode = global.enemy_mode;
+        var enemy_mode = global.enemy_mode;
         
         switch (enemy_mode)
         {

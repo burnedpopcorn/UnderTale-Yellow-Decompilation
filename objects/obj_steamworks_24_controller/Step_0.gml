@@ -44,7 +44,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Howdy!";
             message[1] = "* Boy am I glad that fox#  lady let you roam free#  for a bit.";
             message[2] = "* Not being able to talk#  to my pal has been#  torture!";
@@ -57,24 +57,24 @@ switch (scene)
             message[9] = "* ASGORE's still out#  there threatening human#  lives!";
             message[10] = "* Keep your head in the#  game.";
             message[11] = "* This is our journey.#  Not Ceroba's.";
-            prt[0] = 348;
-            prt[1] = 347;
-            prt[2] = 357;
-            prt[3] = 347;
-            prt[4] = 349;
-            prt[5] = 349;
-            prt[6] = 3251;
-            prt[7] = 348;
-            prt[8] = 357;
-            prt[9] = 356;
-            prt[10] = 353;
-            prt[11] = 352;
+            prt[0] = flowey_nice;
+            prt[1] = flowey_niceside;
+            prt[2] = flowey_worried;
+            prt[3] = flowey_niceside;
+            prt[4] = flowey_smirk;
+            prt[5] = flowey_smirk;
+            prt[6] = flowey_wink;
+            prt[7] = flowey_nice;
+            prt[8] = flowey_worried;
+            prt[9] = flowey_sad;
+            prt[10] = flowey_plains;
+            prt[11] = flowey_plain;
         }
         
         break;
     
     case 5:
-        cutscene_npc_action_sprite(3194, 245, 0.25, true, 0);
+        cutscene_npc_action_sprite(obj_flowey_npc, spr_floweyleave, 0.25, true, 0);
         break;
     
     case 6:
@@ -92,9 +92,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Hey, wait up!";
-            prt[0] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
         }
         
         obj_pl.direction = 0;
@@ -106,7 +106,7 @@ switch (scene)
         break;
     
     case 10:
-        cutscene_npc_walk(1161, obj_pl.x + 40, obj_pl.y, 3, "x", "left");
+        cutscene_npc_walk(obj_ceroba_npc, obj_pl.x + 40, obj_pl.y, 3, "x", "left");
         break;
     
     case 11:
@@ -114,17 +114,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* I think I'm ready to#  get back into things.";
             message[1] = "* Lead the way.";
-            prt[0] = 377;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_neutral;
         }
         
         break;
     
     case 12:
-        cutscene_npc_walk(1161, obj_pl.x + 20, obj_pl.y, 3, "x", "left");
+        cutscene_npc_walk(obj_ceroba_npc, obj_pl.x + 20, obj_pl.y, 3, "x", "left");
         break;
     
     case 13:
@@ -135,7 +135,7 @@ switch (scene)
     case 14:
         obj_pl.direction = 180;
         scr_actor_into_follower(1161, 1171);
-        global.party_member = 1171;
+        global.party_member = obj_ceroba_follower;
         global.sworks_flag[15] = 1;
         cutscene_advance();
         break;

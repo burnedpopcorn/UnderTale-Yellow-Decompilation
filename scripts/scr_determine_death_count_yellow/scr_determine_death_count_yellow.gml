@@ -1,8 +1,6 @@
 function scr_determine_death_count_yellow()
 {
-    var battle_enemy_name, death_count_array_max, i;
-    
-    battle_enemy_name = global.battle_enemy_name;
+    var battle_enemy_name = global.battle_enemy_name;
     
     if (battle_enemy_name == "decibat")
         global.death_count[1] += 1;
@@ -18,9 +16,9 @@ function scr_determine_death_count_yellow()
         global.death_count[0] += 1;
     
     global.death_count_total = 0;
-    death_count_array_max = array_length_1d(global.death_count) - 1;
+    var death_count_array_max = array_length_1d(global.death_count) - 1;
     
-    for (i = 0; i <= death_count_array_max; i += 1)
+    for (var i = 0; i <= death_count_array_max; i += 1)
         global.death_count_total += global.death_count[i];
     
     scr_savegame_meta();

@@ -1,7 +1,5 @@
 function scr_battle_save()
 {
-    var inv1, list_string, i;
-    
     if (file_exists("tempsave.sav"))
         file_delete("tempsave.sav");
     
@@ -30,7 +28,7 @@ function scr_battle_save()
     if (instance_exists(obj_radio))
         ini_write_real("Save1", "owms", obj_radio.bgm);
     
-    inv1 = global.item_slot[1];
+    var inv1 = global.item_slot[1];
     ini_write_string("Items", "00", global.item_slot[1]);
     ini_write_string("Items", "01", global.item_slot[2]);
     ini_write_string("Items", "02", global.item_slot[3]);
@@ -43,7 +41,7 @@ function scr_battle_save()
     if (global.battle_enemy_name == "flowey")
     {
         ini_write_real("Special", "0", global.flowey_battle_1_phase);
-        list_string = ds_list_write(global.flowey_attack_list);
+        var list_string = ds_list_write(global.flowey_attack_list);
         ini_write_string("Special", "1", list_string);
         list_string = ds_list_write(global.flowey_stolen_attack_list);
         ini_write_string("Special", "2", list_string);
@@ -53,7 +51,7 @@ function scr_battle_save()
     }
     else if (global.battle_enemy_name == "flowey2")
     {
-        for (i = 0; i < array_length(obj_flowey_battle_final.petal_alive); i++)
+        for (var i = 0; i < array_length(obj_flowey_battle_final.petal_alive); i++)
             ini_write_real("petal", string(i), obj_flowey_battle_final.petal_alive[i]);
         
         ini_write_real("petal", "count", obj_flowey_battle_final.petal_count);

@@ -39,11 +39,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[4] = 92;
-            talker[5] = 1161;
-            talker[6] = 92;
-            talker[10] = 1161;
+            talker[0] = obj_ceroba_npc;
+            talker[4] = obj_chujin_npc;
+            talker[5] = obj_ceroba_npc;
+            talker[6] = obj_chujin_npc;
+            talker[10] = obj_ceroba_npc;
             message[0] = "* What would you like to#  wear tomorrow, honey?";
             message[1] = "* Solomon and Crestina#  are paying a visit, and#  bringing food too.";
             message[2] = "* I'll help you up and we#  can all enjoy a picnic#  on the front porch.";
@@ -55,27 +55,27 @@ switch (scene)
             message[8] = "* Heh.";
             message[9] = "* This is all so pitiful.";
             message[10] = "* Hey... don't say that.";
-            prt[0] = 398;
-            prt[1] = 372;
-            prt[2] = 372;
-            prt[3] = 398;
-            prt[4] = 2212;
-            prt[5] = 3757;
-            prt[6] = 1544;
-            prt[7] = 2623;
-            prt[8] = 3006;
-            prt[9] = 3006;
-            prt[10] = 3757;
+            prt[0] = spr_portrait_ceroba_happy;
+            prt[1] = spr_portrait_ceroba_smile;
+            prt[2] = spr_portrait_ceroba_smile;
+            prt[3] = spr_portrait_ceroba_happy;
+            prt[4] = spr_portrait_chujin_neutral;
+            prt[5] = spr_portrait_ceroba_pensive;
+            prt[6] = spr_portrait_chujin_down_talk;
+            prt[7] = spr_portrait_chujin_big_sad;
+            prt[8] = spr_portrait_chujin_smirk;
+            prt[9] = spr_portrait_chujin_smirk;
+            prt[10] = spr_portrait_ceroba_pensive;
         }
         
         break;
     
     case 4:
-        cutscene_npc_walk(1161, 186, 119, 3, "x", "left");
+        cutscene_npc_walk(obj_ceroba_npc, 186, 119, 3, "x", "left");
         break;
     
     case 5:
-        cutscene_npc_action_sprite(1161, 847, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_flashback_ceroba_sit, 1, true, 0);
         break;
     
     case 6:
@@ -93,22 +93,22 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[2] = 92;
-            talker[4] = 1161;
-            talker[5] = 92;
-            talker[9] = 1161;
-            talker[13] = 92;
-            talker[16] = 1161;
-            talker[17] = 92;
-            talker[18] = 1161;
-            talker[19] = 92;
-            talker[22] = 1161;
-            talker[23] = 92;
-            talker[26] = 1161;
-            talker[29] = 92;
-            talker[31] = 1161;
-            talker[32] = 92;
+            talker[0] = obj_ceroba_npc;
+            talker[2] = obj_chujin_npc;
+            talker[4] = obj_ceroba_npc;
+            talker[5] = obj_chujin_npc;
+            talker[9] = obj_ceroba_npc;
+            talker[13] = obj_chujin_npc;
+            talker[16] = obj_ceroba_npc;
+            talker[17] = obj_chujin_npc;
+            talker[18] = obj_ceroba_npc;
+            talker[19] = obj_chujin_npc;
+            talker[22] = obj_ceroba_npc;
+            talker[23] = obj_chujin_npc;
+            talker[26] = obj_ceroba_npc;
+            talker[29] = obj_chujin_npc;
+            talker[31] = obj_ceroba_npc;
+            talker[32] = obj_chujin_npc;
             message[0] = "* We don't need to have#  anyone over.";
             message[1] = "* It could just be us.";
             message[2] = "* A picnic sounds lovely.";
@@ -143,40 +143,40 @@ switch (scene)
             message[31] = "* I save them for the#  moments that matter.";
             message[32] = "* I'm glad...";
             message[33] = "* Because this moment#  matters a lot to me.";
-            prt[0] = 372;
-            prt[1] = 372;
-            prt[2] = 3002;
-            prt[3] = 3002;
-            prt[4] = 3757;
-            prt[5] = 2623;
-            prt[6] = 3002;
-            prt[7] = 1474;
-            prt[8] = 1474;
-            prt[9] = 609;
-            prt[10] = 609;
-            prt[11] = 609;
-            prt[12] = 3757;
-            prt[13] = 1544;
-            prt[14] = 1474;
-            prt[15] = 3002;
-            prt[16] = 370;
-            prt[17] = 1544;
-            prt[18] = 370;
-            prt[19] = 3002;
-            prt[20] = 1544;
-            prt[21] = 2623;
-            prt[22] = 2987;
-            prt[23] = 1544;
-            prt[24] = 3002;
-            prt[25] = 1474;
-            prt[26] = 2987;
-            prt[27] = 2987;
-            prt[28] = 2987;
-            prt[29] = 379;
-            prt[30] = 3621;
-            prt[31] = 2987;
-            prt[32] = 379;
-            prt[33] = 3002;
+            prt[0] = spr_portrait_ceroba_smile;
+            prt[1] = spr_portrait_ceroba_smile;
+            prt[2] = spr_portrait_chujin_content;
+            prt[3] = spr_portrait_chujin_content;
+            prt[4] = spr_portrait_ceroba_pensive;
+            prt[5] = spr_portrait_chujin_big_sad;
+            prt[6] = spr_portrait_chujin_content;
+            prt[7] = spr_portrait_chujin_sad_eye;
+            prt[8] = spr_portrait_chujin_sad_eye;
+            prt[9] = spr_portrait_ceroba_sorrowful;
+            prt[10] = spr_portrait_ceroba_sorrowful;
+            prt[11] = spr_portrait_ceroba_sorrowful;
+            prt[12] = spr_portrait_ceroba_pensive;
+            prt[13] = spr_portrait_chujin_down_talk;
+            prt[14] = spr_portrait_chujin_sad_eye;
+            prt[15] = spr_portrait_chujin_content;
+            prt[16] = spr_portrait_ceroba_neutral;
+            prt[17] = spr_portrait_chujin_down_talk;
+            prt[18] = spr_portrait_ceroba_neutral;
+            prt[19] = spr_portrait_chujin_content;
+            prt[20] = spr_portrait_chujin_down_talk;
+            prt[21] = spr_portrait_chujin_big_sad;
+            prt[22] = spr_portrait_ceroba_mourning;
+            prt[23] = spr_portrait_chujin_down_talk;
+            prt[24] = spr_portrait_chujin_content;
+            prt[25] = spr_portrait_chujin_sad_eye;
+            prt[26] = spr_portrait_ceroba_mourning;
+            prt[27] = spr_portrait_ceroba_mourning;
+            prt[28] = spr_portrait_ceroba_mourning;
+            prt[29] = spr_portrait_chujin_sad_eye_smirk;
+            prt[30] = spr_portrait_chujin_eye_smirk;
+            prt[31] = spr_portrait_ceroba_mourning;
+            prt[32] = spr_portrait_chujin_sad_eye_smirk;
+            prt[33] = spr_portrait_chujin_content;
             
             if (message_current == 2 && other.cutscene_music == 0)
                 other.cutscene_music = audio_play_sound(mus_tucked_in, 1, 1);
@@ -186,7 +186,7 @@ switch (scene)
     
     case 9:
         obj_chujin_npc.image_alpha = 0;
-        cutscene_npc_action_sprite(1161, 3625, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_flashback_ceroba_hold_chujin, 1, true, 0);
         break;
         break;
     

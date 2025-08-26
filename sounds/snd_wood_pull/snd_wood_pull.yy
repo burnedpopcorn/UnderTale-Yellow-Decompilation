@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 2.9759862,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "snd/wood_pull.ogg",
+  "soundFile": "wood_pull.ogg",
   "type": 0,
   "volume": 1.0,
 }

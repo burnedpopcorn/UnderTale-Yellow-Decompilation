@@ -10,5 +10,5 @@ damage_disjoint_x = 0;
 damage_disjoint_y = 0;
 damage_disjoint_count = 0;
 no_loop_damage_disjoint_count = false;
-hand_left_sprite = spr_martlet_hand_left;
+hand_left_sprite = 2054;
 instance_create(x, y, obj_martlet_hand_left_shadow);

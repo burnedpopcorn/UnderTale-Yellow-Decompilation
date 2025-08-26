@@ -29,7 +29,7 @@ if (global.sworks_flag[31] == 0)
     actor_follower.x = obj_pl.x + 40;
     actor_follower.y = obj_pl.y;
     
-    with (105642)
+    with (105643)
         y -= 80;
 }
 

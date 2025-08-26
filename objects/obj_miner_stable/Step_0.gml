@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I just ADORE mining!!";
                 message[1] = "* Mine mine mine mine mine mine#  day and night!!";
                 message[2] = "* Gonna find a whole buncha...#  SPARKLY GEmS!!";
@@ -24,7 +24,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Do not doubt my work ethic for#  one sEcond!!";
                 message[1] = "* I work HARD and am nOT on thin#  ice with the Foreman!!";
                 message[2] = "* I am on the thickest ice of all#  tIME!!";
@@ -37,7 +37,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Mining mining mining!!";
                 message[1] = "* ...";
                 message[2] = "* Okay, I can't handle this!!";
@@ -53,7 +53,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* HahA!! This is fun!!";
             }
             

@@ -1,8 +1,6 @@
-var spin_speed_max, spin_speed_inc, bullet_shoot_speed, battle_box, next_position_x, next_position_y, boundary_left, boundary_top, boundary_right, boundary_bottom;
-
-spin_speed_max = 5;
-spin_speed_inc = 0.15;
-bullet_shoot_speed = 5;
+var spin_speed_max = 5;
+var spin_speed_inc = 0.15;
+var bullet_shoot_speed = 5;
 
 if (bullet_fade_delay > 0)
 {
@@ -30,7 +28,7 @@ switch (bullet_state)
     
     case 2:
         speed = bullet_shoot_speed;
-        battle_box = 3154;
+        var battle_box = obj_dialogue_box_battle_transformation_any;
         
         if (point_in_rectangle(x, y, battle_box.bbox_left + 15, battle_box.bbox_top + 15, battle_box.bbox_right - 15, battle_box.bbox_bottom - 15))
             bullet_state = 3;
@@ -38,13 +36,13 @@ switch (bullet_state)
         break;
     
     case 3:
-        battle_box = 3154;
-        next_position_x = x + lengthdir_x(speed, direction);
-        next_position_y = y + lengthdir_y(speed, direction);
-        boundary_left = battle_box.bbox_left + 10;
-        boundary_top = battle_box.bbox_top + 10;
-        boundary_right = battle_box.bbox_right - 10;
-        boundary_bottom = battle_box.bbox_bottom - 10;
+        var battle_box = obj_dialogue_box_battle_transformation_any;
+        var next_position_x = x + lengthdir_x(speed, direction);
+        var next_position_y = y + lengthdir_y(speed, direction);
+        var boundary_left = battle_box.bbox_left + 10;
+        var boundary_top = battle_box.bbox_top + 10;
+        var boundary_right = battle_box.bbox_right - 10;
+        var boundary_bottom = battle_box.bbox_bottom - 10;
         
         if (!point_in_rectangle(next_position_x, next_position_y, boundary_left, boundary_top, boundary_right, boundary_bottom))
         {

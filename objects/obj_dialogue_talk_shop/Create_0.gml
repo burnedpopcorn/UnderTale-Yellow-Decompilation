@@ -1,10 +1,8 @@
-var game_mode, shop_name, buy_shop_screen_number, message_alt_length;
-
 depth = -room_height - 164;
 image_speed = 0.2;
-game_mode = global.game_mode;
-shop_name = global.shop_name;
-buy_shop_screen_number = global.buy_shop_screen_number;
+var game_mode = global.game_mode;
+var shop_name = global.shop_name;
+var buy_shop_screen_number = global.buy_shop_screen_number;
 box_portait[0] = -4;
 autoskip = false;
 
@@ -414,7 +412,7 @@ if (game_mode == "yellow")
                 message[3] = "* That's why snow covers the#  ground and plant life surrounds#  us despite the obvious lack of#  sunlight.#";
                 message[4] = "* There's also these gemstone#  things but that's a whole other#  can of snails...#";
                 message[5] = "* Oh, s-sorry for the lecture!#";
-                message[6] = "* I kind of want to be a teacher#  when I get older... It's not#  important...";
+                message[6] = "* I kind of want to be a teacher#  when I get older... It's not#  important......";
                 portrait[0] = 1409;
                 portrait[1] = 1409;
                 portrait[2] = 1402;
@@ -1883,7 +1881,7 @@ if (game_mode == "yellow")
                 message[0] = "* The Lab is located a good#  distance away from here on#  Level 1. It's where the#  brilliant Dr. Alphys conducts#  important work for the King!#";
                 message_alt[0] = "";
                 message[1] = "";
-                message_alt[1] = "* < I have a theory that some of#  the weird food in the#  Underground stem from#  experiments gone awry in that#  building. >#";
+                message_alt[1] = "* < I have a theory that some of#  the weird food in the#  Underground stems from#  experiments gone awry in that#  building. >#";
                 message[2] = "* Oh yeah? Like what?";
                 message_alt[2] = "* Oh yeah? Like what?#* < Ever heard of a thing called#  \"Instant Noodles?\" It's a#  frickin' square that turns into#  edible worms when put in water! >";
                 message[3] = "";
@@ -2116,7 +2114,7 @@ message_draw_alt = "";
 
 if (shop_name == "Hotel Shop")
 {
-    message_alt_length = string_length(message_alt[message_current]);
+    var message_alt_length = string_length(message_alt[message_current]);
     
     if (message_alt_length > message_length)
         message_length = message_alt_length;

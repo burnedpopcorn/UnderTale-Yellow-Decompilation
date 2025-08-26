@@ -1,5 +1,3 @@
-var xx, yy;
-
 if (live_call())
     return global.live_result;
 
@@ -9,8 +7,8 @@ if (!instance_exists(obj_heart_battle_fighting_parent))
     exit;
 }
 
-xx = obj_heart_battle_fighting_parent.x;
-yy = obj_heart_battle_fighting_parent.y - 20;
+var xx = obj_heart_battle_fighting_parent.x;
+var yy = obj_heart_battle_fighting_parent.y - 20;
 
 switch (image_angle)
 {

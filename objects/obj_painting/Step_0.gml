@@ -1,6 +1,6 @@
 if (global.flag[17] == 1)
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
         waiter = 1;
     
     if (waiter == 1)
@@ -22,7 +22,7 @@ if (global.flag[17] == 1)
             if (global.interaction_count_painting == 0)
             {
                 portrait = true;
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* Someone made that for me#  a while back.";
                 message[1] = "* It's a single corn from#  the corn field out in#  the Ruins.";
                 message[2] = "* I started that field#  from one piece of corn.";
@@ -38,28 +38,28 @@ if (global.flag[17] == 1)
                 message[12] = "* But I planted the last#  cob of corn I had down#  here.";
                 message[13] = "* It's taken to the#  environment surprisingly#  well.";
                 message[14] = "* I always found it rather#  inspiring.";
-                prt[0] = 1769;
-                prt[1] = 1769;
-                prt[2] = 1776;
-                prt[3] = 1755;
-                prt[4] = 1755;
-                prt[5] = 1755;
-                prt[6] = 1755;
-                prt[7] = 1769;
-                prt[8] = 1755;
-                prt[9] = 1780;
-                prt[10] = 1763;
-                prt[11] = 1759;
-                prt[12] = 1776;
-                prt[13] = 1776;
-                prt[14] = 1769;
+                prt[0] = spr_dalv_head_content;
+                prt[1] = spr_dalv_head_content;
+                prt[2] = spr_dalv_head_moderate;
+                prt[3] = spr_dalv_head_regular;
+                prt[4] = spr_dalv_head_regular;
+                prt[5] = spr_dalv_head_regular;
+                prt[6] = spr_dalv_head_regular;
+                prt[7] = spr_dalv_head_content;
+                prt[8] = spr_dalv_head_regular;
+                prt[9] = spr_dalv_head_sad_side;
+                prt[10] = spr_dalv_head_sad;
+                prt[11] = spr_dalv_head_sleepy;
+                prt[12] = spr_dalv_head_moderate;
+                prt[13] = spr_dalv_head_moderate;
+                prt[14] = spr_dalv_head_content;
             }
             else
             {
                 portrait = true;
-                sndfnt = 100;
+                sndfnt = sndfnt_dalv;
                 message[0] = "* ...";
-                prt[0] = 1755;
+                prt[0] = spr_dalv_head_regular;
             }
         }
         
@@ -97,7 +97,7 @@ if (global.flag[17] == 1)
 }
 else if (global.flag[17] != 1 && global.route != 3)
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
         waiter = 1;
     
     if (waiter == 1)
@@ -107,7 +107,7 @@ else if (global.flag[17] != 1 && global.route != 3)
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (It's a nice painting of a#  small, lonely cob.)";
             message[1] = "* (A signature that reads#  \"Penilla\", is written in the#  corner.)";
             obj_painting.waiter = 2;
@@ -123,7 +123,7 @@ else if (global.flag[17] != 1 && global.route != 3)
 }
 else if (global.route == 3)
 {
-    if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
+    if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && (waiter == 0 && !instance_exists(obj_dialogue)))
         waiter = 1;
     
     if (waiter == 1)
@@ -133,7 +133,7 @@ else if (global.route == 3)
         with (msg)
         {
             portrait = false;
-            sndfnt = 99;
+            sndfnt = sndfnt_default;
             message[0] = "* (A painting.)";
             message[1] = "* (It's lacking corn realism.)";
             obj_painting.waiter = 2;

@@ -1,9 +1,7 @@
-var axis_talknoise, i;
-
 if (live_call())
     return global.live_result;
 
-axis_talknoise = 111;
+var axis_talknoise = 111;
 audio_sound_pitch(axis_talknoise, axis_pitch);
 
 switch (scene)
@@ -23,7 +21,7 @@ switch (scene)
         break;
     
     case 0.5:
-        if (cutscene_npc_walk(1168, obj_player_npc.x, 160, 3, "y", "left"))
+        if (cutscene_npc_walk(obj_player_npc, obj_player_npc.x, 160, 3, "y", "left"))
             cutscene_advance(1);
         
         break;
@@ -50,7 +48,7 @@ switch (scene)
         break;
     
     case 6:
-        cutscene_sfx_play(270, 0.8);
+        cutscene_sfx_play(snd_elevator_start, 0.8);
         break;
     
     case 7:
@@ -66,7 +64,7 @@ switch (scene)
         break;
     
     case 10:
-        cutscene_npc_walk(1166, 190, obj_pl.y, 4, "y", "right", false);
+        cutscene_npc_walk(obj_axis_npc, 190, obj_pl.y, 4, "y", "right", false);
         break;
     
     case 11:
@@ -79,16 +77,16 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 16711935;
-            col_modif[1] = 16711935;
-            talker[0] = 1166;
+            col_modif[0] = c_fuchsia;
+            col_modif[1] = c_fuchsia;
+            talker[0] = obj_axis_npc;
             message[0] = "* AXIS MODEL 014 READY TO#  GUARD AND PROTECT.";
             message_col[0][1] = "  AXIS                                        ";
             message[1] = "* VANDAL SPOTTED.#  STEAMWORKS: EASTERN#  BRANCH.";
             message[2] = "* SCANNING_";
             message_col[2][0] = "* SCANNING_";
-            prt[0] = 473;
-            prt[1] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
         }
         
         break;
@@ -97,7 +95,7 @@ switch (scene)
         if (global.dialogue_open)
             exit;
         
-        cutscene_sfx_play(271, 1);
+        cutscene_sfx_play(snd_elevator, 1);
         audio_sound_pitch(snd_elevator, 2);
         break;
     
@@ -111,16 +109,16 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 16711935;
-            talker[0] = 1166;
+            col_modif[0] = c_fuchsia;
+            talker[0] = obj_axis_npc;
             message[0] = "* HUMAN DETECTED_";
             message_col[0][0] = "* HUMAN DETECTED_";
-            message[1] = "* WAIT. .";
+            message[1] = "* WAIT. . .";
             message[2] = "* THIS IS FAMILIAR.";
             message[3] = "* ACCESSING MEMORY BANK_";
             message_col[3][0] = "* ACCESSING MEMORY BANK_";
-            prt[1] = 473;
-            prt[2] = 473;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
         }
         
         break;
@@ -129,7 +127,7 @@ switch (scene)
         if (global.dialogue_open == true)
             exit;
         
-        cutscene_sfx_play(364, 1);
+        cutscene_sfx_play(snd_fail, 1);
         break;
     
     case 16:
@@ -142,16 +140,16 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 16711935;
-            talker[0] = 1166;
+            col_modif[0] = c_fuchsia;
+            talker[0] = obj_axis_npc;
             message[0] = "* MEMORY BANK BLOCKED_";
             message_col[0][0] = "* MEMORY BANK BLOCKED_";
             message[1] = "* HM.";
             message[2] = "* WELL. IT MATTERS NOT.";
             message[3] = "* THREAT DIAGNOSIS_";
             message_col[3][0] = "* THREAT DIAGNOSIS_";
-            prt[1] = 473;
-            prt[2] = 473;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
         }
         
         break;
@@ -166,12 +164,12 @@ switch (scene)
         with (msg)
         {
             color = true;
-            col_modif[0] = 255;
-            talker[0] = 1166;
-            message[0] = "* . .";
+            col_modif[0] = c_red;
+            talker[0] = obj_axis_npc;
+            message[0] = "* . . .";
             message[1] = "* THREAT LEVEL: 10_";
             message[2] = "* EMPATHY: BYPASSED_";
-            prt[0] = 473;
+            prt[0] = spr_portrait_axis_normal;
             message_col[1][0] = "* THREAT LEVEL: 10_";
             message_col[2][0] = "* EMPATHY: BYPASSED_";
             
@@ -207,37 +205,37 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* WELCOME TO THE#  STEAMWORKS, HUMAN.";
             message[1] = "* THINGS HAVEN'T BEEN#  GOING YOUR WAY, HAVE#  THEY?";
-            message[2] = "* I'M AFRAID WHAT YOU ARE#  AFTER HAS. .";
-            message[3] = "* . .EXPIRED.";
+            message[2] = "* I'M AFRAID WHAT YOU ARE#  AFTER HAS. . .";
+            message[3] = "* . . .EXPIRED.";
             message[4] = "* FIVE SOULS ARE ALL THAT#  WAIT FOR YOU IF YOU#  REACH THE CASTLE.";
             message[5] = "* BUT I'M GUESSING YOU#  PIECED THAT TOGETHER#  ALREADY.";
-            message[6] = "* IT IS INTERESTING. .";
+            message[6] = "* IT IS INTERESTING. . .";
             message[7] = "* HUMANS AND MONSTERS,#  WHILE DIFFERENT, DO#  SHARE ONE THING.";
             message[8] = "* A HUNGER FOR THE SOUL#  OF THE OTHER.";
             message[9] = "* I SUPPOSE THAT IS NO#  DIFFERENT HERE.";
-            message[10] = "* MY USUAL PROTOCOL CALLS#  FOR MERE APPREHENSION#  BUT. .";
+            message[10] = "* MY USUAL PROTOCOL CALLS#  FOR MERE APPREHENSION#  BUT. . .";
             message[11] = "* YOUR THREAT LEVEL#  PERMITS ME TO INITIATE#  ATTACK.";
-            prt[0] = 473;
-            prt[1] = 473;
-            prt[2] = 473;
-            prt[3] = 473;
-            prt[4] = 473;
-            prt[5] = 473;
-            prt[6] = 473;
-            prt[7] = 473;
-            prt[8] = 473;
-            prt[9] = 473;
-            prt[10] = 473;
-            prt[11] = 473;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_axis_normal;
+            prt[2] = spr_portrait_axis_normal;
+            prt[3] = spr_portrait_axis_normal;
+            prt[4] = spr_portrait_axis_normal;
+            prt[5] = spr_portrait_axis_normal;
+            prt[6] = spr_portrait_axis_normal;
+            prt[7] = spr_portrait_axis_normal;
+            prt[8] = spr_portrait_axis_normal;
+            prt[9] = spr_portrait_axis_normal;
+            prt[10] = spr_portrait_axis_normal;
+            prt[11] = spr_portrait_axis_normal;
         }
         
         break;
     
     case 22:
-        cutscene_npc_action_sprite(1166, 1554, 1, false);
+        cutscene_npc_action_sprite(obj_axis_npc, spr_axis_redeyes_charge, 1, false);
         obj_axis_npc.right_sprite_idle = spr_axis_redeyes_ball_loop;
         break;
     
@@ -250,9 +248,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* STAND DOWN, HUMAN. IT#  WILL ALL BE OVER SOON.";
-            prt[0] = 473;
+            prt[0] = spr_portrait_axis_normal;
         }
         
         break;
@@ -280,7 +278,7 @@ switch (scene)
         break;
     
     case 28:
-        cutscene_npc_action_sprite(1168, 316, 1, true, 0, 352, 8);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pl_left_geno_shoot, 1, true, 0, snd_revolver_shoot, 8);
         
         if (obj_player_npc.image_index >= 8)
         {
@@ -305,7 +303,7 @@ switch (scene)
         {
             if (action_sprite == true)
             {
-                i = floor(image_index);
+                var i = floor(image_index);
                 
                 switch (i)
                 {
@@ -386,15 +384,15 @@ switch (scene)
         break;
     
     case 35:
-        cutscene_npc_walk_relative(1168, -100, 0, 1, "x", "left");
+        cutscene_npc_walk_relative(obj_player_npc, -100, 0, 1, "x", "left");
         break;
     
     case 36:
-        cutscene_npc_set_sprites(1166, 2592, 383, 2749, 3415, 2592, 383, 2749, 3415);
+        cutscene_npc_set_sprites(obj_axis_npc, spr_axis_damaged_up, spr_axis_damaged_right, spr_axis_damaged_down, spr_axis_damaged_left, spr_axis_damaged_up, spr_axis_damaged_right, spr_axis_damaged_down, spr_axis_damaged_left);
         break;
     
     case 37:
-        if (cutscene_npc_action_sprite(1166, 1415, 1, false))
+        if (cutscene_npc_action_sprite(obj_axis_npc, spr_axis_redeyes_shot_end, 1, false))
             obj_axis_npc.x -= 29;
         
         break;
@@ -404,25 +402,25 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             color = true;
-            col_modif[0] = 16711935;
-            message[0] = "* AH. .";
+            col_modif[0] = c_fuchsia;
+            message[0] = "* AH. . .";
             message[1] = "* DAMAGE CRITICAL_";
             message_col[1][0] = "* DAMAGE CRITICAL_";
-            message[2] = "* t-zzz THReAT ..";
-            message_col[2][0] = "* t-zzz THReAT ..";
+            message[2] = "* t-zzz THReAT . ..";
+            message_col[2][0] = "* t-zzz THReAT . ..";
             message[3] = "* thReat L-LeVEL 99;99#  9999 99_9. .";
             message_col[3][0] = "* thReat L-LeVEL 99;99#  9999 99_9. .";
-            message[4] = "* . .";
-            prt[0] = 3282;
-            prt[4] = 3282;
+            message[4] = "* . . .";
+            prt[0] = spr_portrait_axis_damaged;
+            prt[4] = spr_portrait_axis_damaged;
         }
         
         break;
     
     case 39:
-        cutscene_npc_walk(1166, 280, 180, 2, "y", "right");
+        cutscene_npc_walk(obj_axis_npc, 280, 180, 2, "y", "right");
         
         if (obj_axis_npc.x > (obj_player_npc.x - 40))
             obj_player_npc.npc_direction = "down";
@@ -433,7 +431,7 @@ switch (scene)
         break;
     
     case 40:
-        cutscene_npc_walk(1166, 280, obj_player_npc.y, 2, "y", "right");
+        cutscene_npc_walk(obj_axis_npc, 280, obj_player_npc.y, 2, "y", "right");
         break;
     
     case 41:
@@ -445,21 +443,21 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
-            message[0] = "* I REMEMB3R NOW.. ..";
-            message[1] = "* . .";
+            talker[0] = obj_axis_npc;
+            message[0] = "* I REMEMB3R NOW.. . ..";
+            message[1] = "* . . .";
             message[2] = "* THe 0THERS.. .";
-            message[3] = "* I MUST EVaCUATE .";
-            prt[0] = 3282;
-            prt[1] = 3282;
-            prt[2] = 3282;
-            prt[3] = 3282;
+            message[3] = "* I MUST EVaCUATE . .";
+            prt[0] = spr_portrait_axis_damaged;
+            prt[1] = spr_portrait_axis_damaged;
+            prt[2] = spr_portrait_axis_damaged;
+            prt[3] = spr_portrait_axis_damaged;
         }
         
         break;
     
     case 43:
-        cutscene_npc_action_sprite(1168, 3295, 1, false);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pl_right_geno_shoot, 1, false);
         
         if (obj_player_npc.image_index >= 6)
         {
@@ -475,7 +473,7 @@ switch (scene)
         break;
     
     case 45:
-        cutscene_npc_direction(1166, "left");
+        cutscene_npc_direction(obj_axis_npc, "left");
         break;
     
     case 46:
@@ -492,7 +490,7 @@ switch (scene)
         break;
     
     case 49:
-        cutscene_sfx_play(401, 1);
+        cutscene_sfx_play(snd_decibatfall, 1);
         break;
     
     case 50:

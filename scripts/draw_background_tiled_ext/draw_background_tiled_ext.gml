@@ -1,4 +1,4 @@
-function draw_background_tiled_ext(argument0, argument1, argument2, argument3, argument4, argument5, argument6)
+function draw_background_tiled_ext(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
 {
-    draw_sprite_tiled_ext(argument0, 0, argument1, argument2, argument3, argument4, argument5, argument6);
+    draw_sprite_tiled_ext(arg0, 0, arg1, arg2, arg3, arg4, arg5, arg6);
 }

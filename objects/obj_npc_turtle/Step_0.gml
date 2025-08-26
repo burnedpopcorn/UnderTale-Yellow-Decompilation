@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Say, another explorer in this#  neck of the caves?";
                 message[1] = "* Pleased to meet ya!";
                 message[2] = "* You wouldn't be in the#  stone-moving business, would#  you?";
@@ -34,7 +34,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* If you're ever in Waterfall,#  be sure to stop by my shop!";
                 message[1] = "* Got plenty o'wares to sell ya!";
                 message[2] = "* No better place your allowance#  could go!";
@@ -47,7 +47,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Oh, do you want me to say my#  catchphrase as a farewell?";
                 message[1] = "* Alright then! Ready?";
                 message[2] = "* Let justice prevail!!!";
@@ -66,7 +66,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Be careful out there, kid!";
             }
             
@@ -81,7 +81,7 @@ if (waiter == 1)
     with (msg)
     {
         portrait = false;
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         message[0] = "* What's a young'n like you#  doing out here anyway?";
         message[1] = "* Surely it wasn't to meet ol'#  Gerson, was it?";
         message[2] = "* To hear one of my famous#  stories?";

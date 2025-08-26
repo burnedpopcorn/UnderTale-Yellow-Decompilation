@@ -1,5 +1,3 @@
-var xscale_multiplier, y_skew_temp;
-
 if (image_alpha < 1)
 {
     image_alpha += 0.1;
@@ -34,9 +32,9 @@ else
     depth = depth_default;
 }
 
-xscale_multiplier = 1 - (abs(x - x_center) / x_radius);
+var xscale_multiplier = 1 - (abs(x - x_center) / x_radius);
 image_xscale = xscale_sign * xscale_multiplier;
-y_skew_temp = round(y_skew_multiplier / 2);
+var y_skew_temp = round(y_skew_multiplier / 2);
 image_angle = -sign(y_skew_temp) * radtodeg(arctan(abs(y_skew_temp) / x_radius));
 
 for (i = 0; i < 2; i++)

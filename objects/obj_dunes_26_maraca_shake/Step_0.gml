@@ -9,7 +9,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_sfx_play(340, 1);
+        cutscene_sfx_play(snd_bailador_shake, 1);
         break;
     
     case 3:

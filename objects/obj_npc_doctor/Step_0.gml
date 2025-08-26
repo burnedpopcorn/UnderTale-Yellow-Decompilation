@@ -1,11 +1,9 @@
-var gold_missing_check;
-
 event_inherited();
 
 if (interact == true)
     interact_hold = true;
 
-gold_missing_check = false;
+var gold_missing_check = false;
 
 if (interact_hold == true)
 {

@@ -1,6 +1,6 @@
-function scr_item_stats_armor_mod(argument0)
+function scr_item_stats_armor_mod(arg0)
 {
-    switch (argument0)
+    switch (arg0)
     {
         case "Patch":
             return 0;

@@ -11,7 +11,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I read something in a book once.";
                 message[1] = "* It said, \"If life comes at you#  too fast, press " + global.cancel_key + " and take it#  slow.\"";
                 message[2] = "* Whatever that means.";
@@ -24,7 +24,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* You know, I read something else#  in that same book.";
                 message[1] = "* It said, \"Eat food to stay#  strong and healthy!\"";
                 message[2] = "* That one is plain obvious.";
@@ -37,7 +37,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Wanna know another excerpt from#  that book?";
                 message[1] = "* It said, \"Please stop talking#  to me, I've exhausted my book#  quotes.\"";
                 message[2] = "* A very wise book, indeed.";
@@ -50,7 +50,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Please leave me alone.";
             }
     }

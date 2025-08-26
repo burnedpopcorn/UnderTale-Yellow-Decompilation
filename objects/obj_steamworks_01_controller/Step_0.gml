@@ -5,7 +5,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_sfx_play(270, 1);
+        cutscene_sfx_play(snd_elevator_start, 1);
         break;
     
     case 2:

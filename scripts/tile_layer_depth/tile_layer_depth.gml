@@ -1,18 +1,17 @@
-function tile_layer_depth(argument0, argument1)
+function tile_layer_depth(arg0, arg1)
 {
-    var __depth, __newdepth, __layers, __numlayers, __numlayerstomove, __layertouse, __i, __layerdepth, __els, __numels, __j;
-    
-    __depth = argument0;
-    __newdepth = argument1;
-    __layers = layer_get_all();
-    __numlayers = array_length_1d(__layers);
+    var __depth = arg0;
+    var __newdepth = arg1;
+    var __layers = layer_get_all();
+    var __numlayers = array_length_1d(__layers);
+    var __layerstomove;
     __layerstomove[0] = -1;
-    __numlayerstomove = 0;
-    __layertouse = -1;
+    var __numlayerstomove = 0;
+    var __layertouse = -1;
     
-    for (__i = 0; __i < __numlayers; __i++)
+    for (var __i = 0; __i < __numlayers; __i++)
     {
-        __layerdepth = layer_get_depth(__layers[__i]);
+        var __layerdepth = layer_get_depth(__layers[__i]);
         
         if (__layerdepth == __depth)
         {
@@ -29,12 +28,12 @@ function tile_layer_depth(argument0, argument1)
     if (__layertouse == -1)
         __layertouse = layer_create(__newdepth);
     
-    for (__i = 0; __i < __numlayerstomove; __i++)
+    for (var __i = 0; __i < __numlayerstomove; __i++)
     {
-        __els = layer_get_all_elements(__layerstomove[__i]);
-        __numels = array_length_1d(__els);
+        var __els = layer_get_all_elements(__layerstomove[__i]);
+        var __numels = array_length_1d(__els);
         
-        for (__j = 0; __j < __numels; __j++)
+        for (var __j = 0; __j < __numels; __j++)
         {
             if (layer_get_element_type(__els[__j]) == 7)
                 layer_element_move(__els[__j], __layertouse);

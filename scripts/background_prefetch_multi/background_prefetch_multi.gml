@@ -1,4 +1,4 @@
-function background_prefetch_multi(argument0)
+function background_prefetch_multi(arg0)
 {
-    sprite_prefetch_multi(argument0);
+    sprite_prefetch_multi(arg0);
 }

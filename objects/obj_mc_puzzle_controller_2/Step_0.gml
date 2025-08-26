@@ -1,5 +1,3 @@
-var i;
-
 if (puzzle_count >= 3 && !puzzle_finished)
 {
     puzzle_finished = true;
@@ -8,7 +6,7 @@ if (puzzle_count >= 3 && !puzzle_finished)
     global.dialogue_open = false;
 }
 
-for (i = 0; i < array_length_1d(timer); i++)
+for (var i = 0; i < array_length_1d(timer); i++)
 {
     if (timer[i] > 0)
         timer[i]--;

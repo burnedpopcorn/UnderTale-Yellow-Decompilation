@@ -1,9 +1,7 @@
 function scr_enemy_attack_crispy_laser()
 {
-    var distance_x, distance_y;
-    
-    distance_x = 27;
-    distance_y = 26;
+    var distance_x = 27;
+    var distance_y = 26;
     global.attack_counter_max = 40;
     
     if (global.attack_counter == 0 && global.timer_attacks_counter < 6)

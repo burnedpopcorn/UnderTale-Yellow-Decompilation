@@ -24,7 +24,7 @@ function scr_controls_battle_main()
     }
     
     if (image_alpha == 1 && moveable == true)
-        key_select = keyboard_multicheck_pressed(0);
+        key_select = keyboard_multicheck_pressed(vk_nokey);
     else
         key_select = 0;
 }

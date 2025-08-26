@@ -1,7 +1,7 @@
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+battle_box = obj_dialogue_box_battle_transformation_any;
 bullet_number_max = 3;
 bullet_number_current = 0;
 bullet_speed = 2;

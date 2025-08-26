@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd352657-9c37-4fd8-863b-55b69e12a28a",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5797cf3d-0469-4183-a5ff-fce9ea617221",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a0551358-bca8-4d7a-9a56-8cd512abaa63",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6dfc6c15-5b5a-469f-996f-7e44c12b04ff",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b82fb8a7-65e7-4c2c-be68-16d006768037","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4688d825-69a9-4333-ab6f-133546cd223f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fd352657-9c37-4fd8-863b-55b69e12a28a","path":"sprites/spr_starlo_boss_head_crying/spr_starlo_boss_head_crying.yy",},},},"Disabled":false,"id":"0b0d149a-5af7-4da0-8e96-e8a542c51709","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5797cf3d-0469-4183-a5ff-fce9ea617221","path":"sprites/spr_starlo_boss_head_crying/spr_starlo_boss_head_crying.yy",},},},"Disabled":false,"id":"24a2fb5f-2a79-4c09-90ee-5c3144a10c7f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a0551358-bca8-4d7a-9a56-8cd512abaa63","path":"sprites/spr_starlo_boss_head_crying/spr_starlo_boss_head_crying.yy",},},},"Disabled":false,"id":"30013ae4-8c3e-4542-91ee-e2cc0ea83f20","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6dfc6c15-5b5a-469f-996f-7e44c12b04ff","path":"sprites/spr_starlo_boss_head_crying/spr_starlo_boss_head_crying.yy",},},},"Disabled":false,"id":"3c084476-3197-44b0-85f5-099386d6fe8a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleWildEast",
+    "path": "texturegroups/BattleWildEast",
   },
   "type": 0,
   "VTile": false,

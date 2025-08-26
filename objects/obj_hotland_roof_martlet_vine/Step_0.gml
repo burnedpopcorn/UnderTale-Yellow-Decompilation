@@ -34,7 +34,7 @@ switch (scene)
     
     case 4:
         if (image_index >= 47)
-            cutscene_sfx_play(412, 1);
+            cutscene_sfx_play(snd_monster_damage_death, 1);
         
         break;
     

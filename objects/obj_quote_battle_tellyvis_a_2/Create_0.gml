@@ -1,5 +1,3 @@
-var random_message;
-
 execute_normal = true;
 execute_random = false;
 text_effect = "twitchy";
@@ -19,7 +17,7 @@ if (execute_normal == true)
     }
     else if (global.last_action_selected == "Action 1 Message 0")
     {
-        random_message = obj_quote_battle_tellyvis_a.random_message;
+        var random_message = obj_quote_battle_tellyvis_a.random_message;
         
         switch (random_message)
         {
@@ -36,7 +34,7 @@ if (execute_normal == true)
     }
     else if (global.last_action_selected == "Action 1 Message 1")
     {
-        random_message = obj_quote_battle_tellyvis_a.random_message;
+        var random_message = obj_quote_battle_tellyvis_a.random_message;
         
         switch (random_message)
         {
@@ -53,7 +51,7 @@ if (execute_normal == true)
     }
     else if (global.last_action_selected_2 == "Action 2 Message 0")
     {
-        random_message = obj_quote_battle_tellyvis_a.random_message;
+        var random_message = obj_quote_battle_tellyvis_a.random_message;
         
         switch (random_message)
         {
@@ -70,7 +68,7 @@ if (execute_normal == true)
     }
     else if (global.last_action_selected_3 == "Action 3 Message 0")
     {
-        random_message = obj_quote_battle_tellyvis_a.random_message;
+        var random_message = obj_quote_battle_tellyvis_a.random_message;
         
         switch (random_message)
         {
@@ -87,7 +85,7 @@ if (execute_normal == true)
     }
     else if (global.last_action_selected_3 == "Action 3 Message 1")
     {
-        random_message = obj_quote_battle_tellyvis_a.random_message;
+        var random_message = obj_quote_battle_tellyvis_a.random_message;
         
         switch (random_message)
         {

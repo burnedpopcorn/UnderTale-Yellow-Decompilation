@@ -1,8 +1,6 @@
-var enemy_dead, enemy_spared, enemy_sparing, random_doggo, random_x, random_y;
-
-enemy_dead = global.enemy_dead;
-enemy_spared = global.enemy_spared;
-enemy_sparing = global.enemy_sparing;
+var enemy_dead = global.enemy_dead;
+var enemy_spared = global.enemy_spared;
+var enemy_sparing = global.enemy_sparing;
 
 if (enemy_dead == false && enemy_spared == false)
     image_alpha = global.image_alpha_enemy_attacking;
@@ -99,7 +97,7 @@ if (!(instance_exists(obj_text_damage_count) && global.fight_number == 1) && ene
     {
         if (!instance_exists(obj_bowll_doggo_a))
         {
-            random_doggo = irandom_range(1, doggo_chance);
+            var random_doggo = irandom_range(1, doggo_chance);
             
             if (random_doggo == 1)
                 instance_create(doggo_x, doggo_y, obj_bowll_doggo_a);
@@ -112,8 +110,8 @@ if (!(instance_exists(obj_text_damage_count) && global.fight_number == 1) && ene
         
         if (time_elapsed_sparkles >= time_max_sparkles)
         {
-            random_x = 2 * round(irandom_range(bbox_left + 12, bbox_right - 12) / 2);
-            random_y = 2 * round(irandom_range(bbox_top + 26, bbox_bottom - 8) / 2);
+            var random_x = 2 * round(irandom_range(bbox_left + 12, bbox_right - 12) / 2);
+            var random_y = 2 * round(irandom_range(bbox_top + 26, bbox_bottom - 8) / 2);
             instance_create(random_x, random_y, obj_bowll_sparkles);
             time_elapsed_sparkles = 0;
         }

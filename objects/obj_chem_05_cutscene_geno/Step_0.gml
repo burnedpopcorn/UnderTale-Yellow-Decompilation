@@ -11,7 +11,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_npc_walk(1168, 304, obj_player_npc.y, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 304, obj_player_npc.y, 3, "x", "up");
         break;
     
     case 2:
@@ -23,7 +23,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 111;
+            sndfnt = snd_talk_axis;
             message[0] = "* ThIS D_OR iS SEALED SO.. .";
             message[1] = "* LeAVE US Al0NE, PLeASE.";
             message[2] = "* I KN0W W_WHY YOU ARE heRE.";
@@ -44,7 +44,7 @@ switch (scene)
     
     case 4:
         if (global.route == 3)
-            cutscene_npc_action_sprite(1168, 3313, 1, false, 0, 231, 8);
+            cutscene_npc_action_sprite(obj_player_npc, spr_pl_up_geno_shoot, 1, false, 0, snd_shotmid, 8);
         else
             cutscene_advance(7);
         
@@ -59,7 +59,7 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 111;
+            sndfnt = snd_talk_axis;
             message[0] = "* BRuTE FoRCE_WON'T S0LVE#  ANyTHING.";
             message[1] = "* TRY ALL yOU LIKE BUT tHE#  STEAMWORKS... .";
             message[2] = "* ALL oF US.";
@@ -73,7 +73,7 @@ switch (scene)
         break;
     
     case 8:
-        cutscene_npc_walk(1168, 304, 140, 2, "y", "up");
+        cutscene_npc_walk(obj_player_npc, 304, 140, 2, "y", "up");
         break;
     
     case 9:
@@ -105,9 +105,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* He's gone.";
-            prt[0] = 353;
+            prt[0] = flowey_plains;
         }
         
         break;
@@ -121,11 +121,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* So what's the plan now?";
             message[1] = "* This door's beyond my#  abilities so don't look#  at me.";
-            prt[0] = 353;
-            prt[1] = 3692;
+            prt[0] = flowey_plains;
+            prt[1] = spr_flowey_disappointed;
         }
         
         break;
@@ -135,7 +135,7 @@ switch (scene)
         break;
     
     case 16:
-        cutscene_npc_direction(1168, "right");
+        cutscene_npc_direction(obj_player_npc, "right");
         break;
     
     case 17:
@@ -147,18 +147,18 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Already checked it.";
             message[1] = "* The factory wing,#  right?";
             message[2] = "* Yeah. Place has more#  locks than a hair salon.";
-            prt[0] = 353;
-            prt[1] = 348;
-            prt[2] = 347;
+            prt[0] = flowey_plains;
+            prt[1] = flowey_nice;
+            prt[2] = flowey_niceside;
             
             if (global.route != 3)
             {
                 message[3] = "* Okay let's see...";
-                prt[3] = 348;
+                prt[3] = flowey_nice;
                 
                 if (message_current == 0)
                     obj_player_npc.npc_direction = "down";
@@ -169,7 +169,7 @@ switch (scene)
     
     case 19:
         if (global.route == 3)
-            cutscene_npc_direction(1168, "down");
+            cutscene_npc_direction(obj_player_npc, "down");
         else
             cutscene_advance(22);
         
@@ -184,21 +184,21 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* It's called \"humor.\"#  Don't suppose you've#  heard of it.";
             message[1] = "* (Geez, and I thought I#  was soulless.)";
             message[2] = "* Sigh...";
             message[3] = "* Okay let's see...";
-            prt[0] = 3640;
-            prt[1] = 3692;
-            prt[2] = 353;
-            prt[3] = 352;
+            prt[0] = spr_flowey_meh;
+            prt[1] = spr_flowey_disappointed;
+            prt[2] = flowey_plains;
+            prt[3] = flowey_plain;
         }
         
         break;
     
     case 22:
-        cutscene_npc_direction(3194, "left");
+        cutscene_npc_direction(obj_flowey_npc, "left");
         break;
     
     case 23:
@@ -206,7 +206,7 @@ switch (scene)
         break;
     
     case 24:
-        cutscene_npc_direction(3194, "right");
+        cutscene_npc_direction(obj_flowey_npc, "right");
         break;
     
     case 25:
@@ -214,7 +214,7 @@ switch (scene)
         break;
     
     case 26:
-        cutscene_npc_direction(3194, "up");
+        cutscene_npc_direction(obj_flowey_npc, "up");
         break;
     
     case 27:
@@ -222,19 +222,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Well, there's certainly#  a lot of junk lying#  around.";
             message[1] = "* I know you're on a#  strict \"shoot don't#  think\" regiment but...";
             message[2] = "* For once, you're gonna#  have to get creative.";
             message[3] = "* Shocking. Distressing,#  even. I know.";
             message[4] = "* But I've seen you work#  your brain before so... ";
             message[5] = "* Give it a shot.";
-            prt[0] = 347;
-            prt[1] = 348;
-            prt[2] = 357;
-            prt[3] = 347;
-            prt[4] = 348;
-            prt[5] = 349;
+            prt[0] = flowey_niceside;
+            prt[1] = flowey_nice;
+            prt[2] = flowey_worried;
+            prt[3] = flowey_niceside;
+            prt[4] = flowey_nice;
+            prt[5] = flowey_smirk;
             
             if (message_current == 5)
             {
@@ -248,7 +248,7 @@ switch (scene)
             if (global.route != 3)
             {
                 message[5] = "* Get to it!";
-                prt[5] = 348;
+                prt[5] = flowey_nice;
             }
         }
         
@@ -256,7 +256,7 @@ switch (scene)
     
     case 28:
         if (global.route == 3)
-            cutscene_npc_walk_relative(1168, 0, 10, 1, "y", "down");
+            cutscene_npc_walk_relative(obj_player_npc, 0, 10, 1, "y", "down");
         else
             cutscene_advance(30);
         
@@ -267,15 +267,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 3194;
+            talker[0] = obj_flowey_npc;
             message[0] = "* Gotta go!";
-            prt[0] = 347;
+            prt[0] = flowey_niceside;
         }
         
         break;
     
     case 30:
-        if (cutscene_npc_action_sprite_reverse(3194, 242, 0.25, true, 0))
+        if (cutscene_npc_action_sprite_reverse(obj_flowey_npc, spr_floweyrise, 0.25, true, 0))
         {
             scr_radio_restart();
             global.sworks_flag[25] = 1;

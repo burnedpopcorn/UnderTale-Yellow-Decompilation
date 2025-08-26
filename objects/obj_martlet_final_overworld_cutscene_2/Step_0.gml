@@ -24,8 +24,8 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
-            talker[1] = 2588;
+            talker[0] = obj_martlet_npc;
+            talker[1] = obj_alphys_npc;
             message[0] = "* Where are you off to in such a#  hurry?";
             message[1] = "* O-Oh, me?";
             message[2] = "* Umm...";
@@ -53,10 +53,10 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 2588;
-            talker[2] = 1164;
-            talker[3] = 2588;
-            talker[6] = 1164;
+            talker[0] = obj_alphys_npc;
+            talker[2] = obj_martlet_npc;
+            talker[3] = obj_alphys_npc;
+            talker[6] = obj_martlet_npc;
             message[0] = "* I'm still waiting on#  the new security budget#  so in the meantime...";
             message[1] = "* ...I decided to move#  the lab cameras to#  Waterfall.";
             message[2] = "* Waterfall?";
@@ -64,19 +64,19 @@ switch (scene)
             message[4] = "* Yeah! So... ";
             message[5] = "* Keep watch while the#  lab surveillance is#  down, okay?";
             message[6] = "* Aye aye!";
-            prt[0] = 1565;
-            prt[1] = 1565;
-            prt[2] = 311;
-            prt[3] = 2591;
-            prt[4] = 2629;
-            prt[5] = 2591;
-            prt[6] = 313;
+            prt[0] = spr_portrait_alphys_default;
+            prt[1] = spr_portrait_alphys_default;
+            prt[2] = spr_martlet_head_confused;
+            prt[3] = spr_portrait_alphys_determined;
+            prt[4] = spr_portrait_alphys_nervous;
+            prt[5] = spr_portrait_alphys_determined;
+            prt[6] = spr_martlet_head_determined;
         }
         
         break;
     
     case 7:
-        cutscene_npc_walk(2588, -40, obj_alphys_npc.y, 3, "x", "left");
+        cutscene_npc_walk(obj_alphys_npc, -40, obj_alphys_npc.y, 3, "x", "left");
         break;
     
     case 8:
@@ -84,7 +84,7 @@ switch (scene)
         break;
     
     case 9:
-        cutscene_npc_action_sprite(1164, 1727, 1, true, 0);
+        cutscene_npc_action_sprite(obj_martlet_npc, spr_martlet_left_turn, 1, true, 0);
         break;
     
     case 10:
@@ -96,9 +96,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* ...";
-            prt[0] = 315;
+            prt[0] = spr_martlet_head_disappointed;
         }
         
         break;
@@ -123,7 +123,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Deep breaths, Martlet.";
             message[1] = "* Deep breaths...";
         }
@@ -131,5 +131,5 @@ switch (scene)
         break;
     
     case 15:
-        cutscene_change_room(262, 0, 0, 0.1);
+        cutscene_change_room(rm_hotland_lab, 0, 0, 0.1);
 }

@@ -1,5 +1,3 @@
-var lerp_amount_h, lerp_amount_v, can_trail;
-
 if (live_call())
     return global.live_result;
 
@@ -30,10 +28,14 @@ else if (speed_sound_noloop == true)
     speed_sound_noloop = false;
 }
 
+var lerp_amount_h;
+
 if (hsp != 0)
     lerp_amount_h = 0.2;
 else
     lerp_amount_h = 0.05;
+
+var lerp_amount_v;
 
 if (vsp != 0)
     lerp_amount_v = 0.2;
@@ -93,7 +95,7 @@ if (instance_exists(obj_heart_battle_effect_glow))
 
 if (moveable == true && global.current_sp_self > 0)
 {
-    can_trail = false;
+    var can_trail = false;
     trail_cc_current += 1;
     
     if (trail_cc_current >= trail_cc_max)

@@ -1,7 +1,5 @@
-var xx, yy;
-
-xx = 160;
-yy = 60;
+var xx = 160;
+var yy = 60;
 draw_set_alpha(draw_alpha);
 draw_sprite_ext(spr_dialoguebox, 1, xx, yy + 56, 4.5, 3, image_angle, c_white, image_alpha);
 draw_sprite_ext(spr_dialoguebox, 0, xx, yy + 56, 4.4, 2.9, image_angle, c_white, image_alpha);

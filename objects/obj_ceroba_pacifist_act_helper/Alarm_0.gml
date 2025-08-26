@@ -1,5 +1,3 @@
-var heal_amount;
-
 switch (global.last_action_selected)
 {
     case "Action 1 Message 0":
@@ -13,6 +11,8 @@ switch (global.last_action_selected)
         break;
     
     case "Action 2 Message 0":
+        var heal_amount;
+        
         with (obj_dialogue_battle_action_selected_action_2)
         {
             heal_amount = choose(5, 5, 5, 5, 6, 6, 6, 7, 7, 7, 8, 8, 9, 9, 10);

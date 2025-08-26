@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 1.3191836,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "snd/wild_east_shocking_sound.ogg",
-  "type": 0,
+  "soundFile": "wild_east_shocking_sound.ogg",
+  "type": 1,
   "volume": 1.0,
 }

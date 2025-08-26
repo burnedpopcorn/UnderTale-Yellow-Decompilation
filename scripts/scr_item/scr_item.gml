@@ -1,10 +1,8 @@
-function scr_item(argument0)
+function scr_item(arg0)
 {
-    var i;
+    nm = arg0;
     
-    nm = argument0;
-    
-    for (i = 1; i <= 8; i++)
+    for (var i = 1; i <= 8; i++)
     {
         if (global.item_slot[i] == "Nothing")
         {

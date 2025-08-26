@@ -1,12 +1,10 @@
 function cutscene_camera_freeze()
 {
-    var xx, yy;
-    
     if (instance_exists(obj_camera))
         instance_destroy(obj_camera);
     
-    xx = __view_get(e__VW.Object, 0).x;
-    yy = __view_get(e__VW.Object, 0).y;
+    var xx = __view_get(e__VW.Object, 0).x;
+    var yy = __view_get(e__VW.Object, 0).y;
     
     if (argument_count > 0)
     {

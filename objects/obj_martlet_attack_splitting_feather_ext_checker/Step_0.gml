@@ -1,5 +1,3 @@
-var fade_out_result;
-
 if (live_call())
     return global.live_result;
 
@@ -35,7 +33,7 @@ if (can_move == true)
     
     if (can_fade_out == false)
     {
-        fade_out_result = true;
+        var fade_out_result = true;
         
         for (i = 0; i < fcreate_count; i += 1)
         {

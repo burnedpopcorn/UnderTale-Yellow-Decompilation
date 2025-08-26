@@ -1,4 +1,4 @@
-function gml_macro(argument0, argument1, argument2, argument3) constructor
+function gml_macro(arg0, arg1, arg2, arg3) constructor
 {
     static h_name = undefined;
     static h_node = undefined;
@@ -7,7 +7,7 @@ function gml_macro(argument0, argument1, argument2, argument3) constructor
     static __class__ = global.mt_gml_macro;
 }
 
-function gml_source(argument0, argument1, argument2, argument3) constructor
+function gml_source(arg0, arg1, arg2, arg3) constructor
 {
     static h_name = undefined;
     static h_code = undefined;
@@ -30,11 +30,11 @@ function gml_source(argument0, argument1, argument2, argument3) constructor
     
     static __class__ = global.mt_gml_source;
     
-    if (argument3 == undefined)
-        argument3 = false;
+    if (arg3 == undefined)
+        arg3 = false;
 }
 
-function shader_set_live(argument0, argument1)
+function shader_set_live(arg0, arg1)
 {
 }
 

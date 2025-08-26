@@ -5,7 +5,7 @@ if (is_undefined(ds_map_find_value(global.npc_map, npc_id)))
     ds_map_add(global.npc_map, npc_id, 0);
 
 npc_flag = ds_map_find_value(global.npc_map, npc_id);
-npc_voice_sfx = 105;
+npc_voice_sfx = snd_talk_mooch;
 up_sprite_idle = spr_mooch_up_talk;
 right_sprite_idle = spr_mooch_right_talk;
 down_sprite_idle = spr_mooch_down_talk;

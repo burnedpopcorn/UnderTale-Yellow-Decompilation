@@ -1,5 +1,3 @@
-var attack_duration, xx, yy, speed_perc, bell, shake_amount;
-
 if (live_call())
     return global.live_result;
 
@@ -47,7 +45,7 @@ switch (scene)
         break;
     
     case 1:
-        attack_duration = 3;
+        var attack_duration = 3;
         
         if (global.current_hp_self < 1)
             cutscene_wait(attack_duration);
@@ -110,8 +108,8 @@ switch (scene)
         }
         
         ceroba_shake_intensity += 0.015;
-        xx = random_range(-ceroba_shake_intensity, ceroba_shake_intensity);
-        yy = random_range(-ceroba_shake_intensity, ceroba_shake_intensity);
+        var xx = random_range(-ceroba_shake_intensity, ceroba_shake_intensity);
+        var yy = random_range(-ceroba_shake_intensity, ceroba_shake_intensity);
         
         with (obj_ceroba_transformation_p1_4_arm)
         {
@@ -201,7 +199,7 @@ switch (scene)
                 other.bullet_speed = lerp(other.bullet_speed, 0, 0.1);
         }
         
-        speed_perc = bullet_speed / bullet_speed_max;
+        var speed_perc = bullet_speed / bullet_speed_max;
         
         with (obj_ceroba_body_pacifist_phase_1)
             image_speed = speed_perc;
@@ -301,7 +299,7 @@ switch (scene)
         if (bullet_speed < bullet_speed_max)
             bullet_speed += 0.1;
         
-        speed_perc = bullet_speed / bullet_speed_max;
+        var speed_perc = bullet_speed / bullet_speed_max;
         
         with (obj_ceroba_body_pacifist_phase_1)
         {
@@ -442,8 +440,8 @@ switch (scene)
         if (!instance_exists(obj_quote_battle_ceroba_transform_4))
         {
             global.battle_music = audio_play_sound(mus_mothers_love_intro, 20, false);
-            xx = -1000;
-            yy = -1000;
+            var xx = -1000;
+            var yy = -1000;
             instance_create_depth(xx, yy, -1000, obj_ceroba_transformation_mask);
             obj_ceroba_transformation_mask.sprite_index = spr_ceroba_mask_resting;
             scene++;
@@ -510,7 +508,7 @@ switch (scene)
         break;
     
     case 22:
-        bell = instance_create_depth(320, 10, -1100, obj_ceroba_transformation_p1_bell);
+        var bell = instance_create_depth(320, 10, -1100, obj_ceroba_transformation_p1_bell);
         bell.alarm[0] = 1;
         bell = instance_create_depth(400, 90, -1100, obj_ceroba_transformation_p1_bell);
         bell.alarm[0] = 30;
@@ -687,7 +685,7 @@ if (instance_exists(obj_ceroba_transformation_soul))
 
 if (scene < 7)
 {
-    shake_amount = soul_hurt_count * soul_shake_modif;
+    var shake_amount = soul_hurt_count * soul_shake_modif;
     soul_x_offset = random_range(-shake_amount, shake_amount);
     soul_y_offset = random_range(-shake_amount, shake_amount);
     

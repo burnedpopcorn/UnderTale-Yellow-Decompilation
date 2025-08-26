@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.205,
+  "duration": 1.2054421,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

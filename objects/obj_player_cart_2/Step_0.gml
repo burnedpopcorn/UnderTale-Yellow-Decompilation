@@ -1,8 +1,6 @@
-var last_room;
+var last_room = global.last_room_overworld;
 
-last_room = global.last_room_overworld;
-
-if ((last_room == "rm_dunes_20" && x > 280) || (last_room == "rm_dunes_22" && x < 40) || (global.dunes_flag[10] == 1 && keyboard_multicheck_pressed(0)))
+if ((last_room == "rm_dunes_20" && x > 280) || (last_room == "rm_dunes_22" && x < 40) || (global.dunes_flag[10] == 1 && keyboard_multicheck_pressed(vk_nokey)))
 {
     if (!instance_exists(obj_transition))
     {

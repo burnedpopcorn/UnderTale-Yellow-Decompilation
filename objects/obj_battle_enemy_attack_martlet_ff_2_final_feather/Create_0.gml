@@ -1,12 +1,10 @@
-var feather_direction;
-
 if (live_call())
     return global.live_result;
 
 damage_number = scr_determine_damage_number_enemy("martlet", "void", "void");
 x_center = obj_dialogue_box_battle_transformation_any.x;
 y_center = obj_dialogue_box_battle_transformation_any.y;
-feather_direction = obj_battle_enemy_attack_martlet_ff_2_final_checker.feather_angle_direction;
+var feather_direction = obj_battle_enemy_attack_martlet_ff_2_final_checker.feather_angle_direction;
 feather_radius = distance_to_point(x_center, y_center);
 feather_radius_increase = -6;
 feather_angle_increase = -12 * feather_direction;

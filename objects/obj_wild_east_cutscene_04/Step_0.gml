@@ -1,12 +1,10 @@
-var actor_starlo, actor_ed, actor_ace, actor_mooch, actor_moray, actor_ceroba, actor_clover;
-
-actor_starlo = 1169;
-actor_ed = 1162;
-actor_ace = 1158;
-actor_mooch = 1165;
-actor_moray = 1167;
-actor_ceroba = 1161;
-actor_clover = 1168;
+var actor_starlo = 1169;
+var actor_ed = 1162;
+var actor_ace = 1158;
+var actor_mooch = 1165;
+var actor_moray = 1167;
+var actor_ceroba = obj_ceroba_npc;
+var actor_clover = obj_player_npc;
 
 switch (scene)
 {
@@ -42,12 +40,12 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = actor_starlo;
             message[0] = "* You know the drill,#  team!";
             message[1] = "* Ain't no time to be#  lazin' 'round.";
-            prt[0] = 415;
-            prt[1] = 417;
+            prt[0] = spr_portrait_starlo_hidden;
+            prt[1] = spr_portrait_starlo_normal;
         }
         
         break;
@@ -76,8 +74,8 @@ switch (scene)
         {
             message[0] = "* Uh, hellooo?";
             message[1] = "* Where is everyone?";
-            prt[0] = 426;
-            prt[1] = 428;
+            prt[0] = spr_portrait_starlo_surprised;
+            prt[1] = spr_portrait_starlo_sweat;
             talker[0] = actor_starlo;
         }
         
@@ -123,7 +121,7 @@ switch (scene)
         with (msg)
         {
             message[0] = "* Sorry 'bout this,#  Clover. They should be#  here any second no-   ";
-            prt[0] = 418;
+            prt[0] = spr_portrait_starlo_plain;
             talker[0] = actor_starlo;
             skippable = false;
             
@@ -148,7 +146,7 @@ switch (scene)
         with (msg)
         {
             message[0] = "* Star, what is happening#  on the west end of town?";
-            prt[0] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
             talker[0] = actor_ceroba;
         }
         
@@ -166,8 +164,8 @@ switch (scene)
         {
             message[0] = "* Would you care to#  explain?";
             message[1] = "* WHAT???";
-            prt[0] = 370;
-            prt[1] = 404;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_starlo_blush;
             talker[0] = actor_ceroba;
             talker[1] = actor_starlo;
         }
@@ -200,22 +198,22 @@ switch (scene)
             message[13] = "* What are you waiting#  for?";
             message[14] = "* That's the spirit!";
             message[15] = "* Let's put a stop to#  this, Clover!";
-            prt[0] = 421;
-            prt[1] = 394;
-            prt[2] = 404;
-            prt[3] = 417;
-            prt[4] = 393;
-            prt[5] = 371;
-            prt[6] = 410;
-            prt[7] = 410;
-            prt[8] = 406;
-            prt[9] = 406;
-            prt[10] = 388;
-            prt[11] = 393;
-            prt[12] = 3754;
-            prt[13] = 3754;
-            prt[14] = 417;
-            prt[15] = 417;
+            prt[0] = spr_portrait_starlo_serious;
+            prt[1] = spr_portrait_ceroba_disapproving;
+            prt[2] = spr_portrait_starlo_blush;
+            prt[3] = spr_portrait_starlo_normal;
+            prt[4] = spr_portrait_ceroba_surprised;
+            prt[5] = spr_portrait_ceroba_alt;
+            prt[6] = spr_portrait_starlo_embarassed;
+            prt[7] = spr_portrait_starlo_embarassed;
+            prt[8] = spr_portrait_starlo_disappointed;
+            prt[9] = spr_portrait_starlo_disappointed;
+            prt[10] = spr_portrait_ceroba_confounded;
+            prt[11] = spr_portrait_ceroba_surprised;
+            prt[12] = spr_portrait_ceroba_nervous_smile;
+            prt[13] = spr_portrait_ceroba_nervous_smile;
+            prt[14] = spr_portrait_starlo_normal;
+            prt[15] = spr_portrait_starlo_normal;
             talker[0] = actor_starlo;
             talker[1] = actor_ceroba;
             talker[2] = actor_starlo;
@@ -291,9 +289,9 @@ switch (scene)
             message[0] = "* Huh.";
             message[1] = "* You sure you saw#  somethin' troublin'#  here?";
             message[2] = "* Look down.";
-            prt[0] = 421;
-            prt[1] = 407;
-            prt[2] = 382;
+            prt[0] = spr_portrait_starlo_serious;
+            prt[1] = spr_portrait_starlo_distracted;
+            prt[2] = spr_portrait_ceroba_muttering;
             talker[0] = actor_starlo;
             talker[2] = actor_ceroba;
         }
@@ -310,7 +308,7 @@ switch (scene)
         with (msg)
         {
             message[0] = "* GASP!";
-            prt[0] = 404;
+            prt[0] = spr_portrait_starlo_blush;
             talker[0] = actor_starlo;
         }
         
@@ -358,33 +356,33 @@ switch (scene)
             message[24] = "* It'll be by yer hand#  but only Ed gets hit.";
             message[25] = "* Not as much of a#  sacrifice.";
             message[26] = "* What did I do to#  deserve this?";
-            prt[0] = 453;
-            prt[1] = 453;
-            prt[2] = 419;
-            prt[3] = 421;
-            prt[4] = 384;
-            prt[5] = 413;
-            prt[6] = 419;
-            prt[7] = 371;
-            prt[8] = 450;
-            prt[9] = 446;
-            prt[10] = 463;
-            prt[11] = 454;
-            prt[12] = 458;
-            prt[13] = 454;
-            prt[14] = 418;
-            prt[15] = 435;
-            prt[16] = 419;
-            prt[17] = 424;
-            prt[18] = 417;
-            prt[19] = 381;
-            prt[20] = 422;
-            prt[21] = 419;
-            prt[22] = 421;
-            prt[23] = 407;
-            prt[24] = 421;
-            prt[25] = 421;
-            prt[26] = 454;
+            prt[0] = spr_portrait_ed_mad;
+            prt[1] = spr_portrait_ed_mad;
+            prt[2] = spr_portrait_starlo_point;
+            prt[3] = spr_portrait_starlo_serious;
+            prt[4] = spr_portrait_ceroba_unamused;
+            prt[5] = spr_portrait_starlo_flustered;
+            prt[6] = spr_portrait_starlo_point;
+            prt[7] = spr_portrait_ceroba_alt;
+            prt[8] = spr_portrait_moray_sweat;
+            prt[9] = spr_portrait_moray_downer;
+            prt[10] = spr_portrait_mooch_smirk;
+            prt[11] = spr_portrait_ed_mutter;
+            prt[12] = spr_portrait_mooch_happy;
+            prt[13] = spr_portrait_ed_mutter;
+            prt[14] = spr_portrait_starlo_plain;
+            prt[15] = spr_portrait_ace_stern;
+            prt[16] = spr_portrait_starlo_point;
+            prt[17] = spr_portrait_starlo_smirk;
+            prt[18] = spr_portrait_starlo_normal;
+            prt[19] = spr_portrait_ceroba_nervous;
+            prt[20] = spr_portrait_starlo_smile;
+            prt[21] = spr_portrait_starlo_point;
+            prt[22] = spr_portrait_starlo_serious;
+            prt[23] = spr_portrait_starlo_distracted;
+            prt[24] = spr_portrait_starlo_serious;
+            prt[25] = spr_portrait_starlo_serious;
+            prt[26] = spr_portrait_ed_mutter;
             talker[0] = actor_ed;
             talker[2] = actor_starlo;
             talker[4] = actor_ceroba;
@@ -407,7 +405,7 @@ switch (scene)
         break;
     
     case 37:
-        cutscene_sfx_play(266, 0.65);
+        cutscene_sfx_play(snd_wild_east_train_horn, 0.65);
         break;
     
     case 38:
@@ -422,10 +420,10 @@ switch (scene)
             message[1] = "* If only we coulda#  untied everyone!";
             message[2] = "* If only.";
             message[3] = "* You gotta choose now,#  Clover!";
-            prt[0] = 419;
-            prt[1] = 418;
-            prt[2] = 384;
-            prt[3] = 419;
+            prt[0] = spr_portrait_starlo_point;
+            prt[1] = spr_portrait_starlo_plain;
+            prt[2] = spr_portrait_ceroba_unamused;
+            prt[3] = spr_portrait_starlo_point;
             talker[0] = actor_starlo;
             talker[2] = actor_ceroba;
             talker[3] = actor_starlo;
@@ -436,7 +434,7 @@ switch (scene)
     case 39:
         if (!instance_exists(obj_wild_east_train_lever))
         {
-            prop_lever = instance_create(__view_get(e__VW.XView, 0) + __view_get(e__VW.WView, obj_quote_battle_ceroba_outro_4) + 35, actor_clover.y + 40, obj_wild_east_train_lever);
+            prop_lever = instance_create(__view_get(e__VW.XView, 0) + __view_get(e__VW.WView, 0) + 35, actor_clover.y + 40, obj_wild_east_train_lever);
             prop_lever.hspeed = (((__view_get(e__VW.XView, 0) + __view_get(e__VW.WView, 0) + 40) - actor_clover.x) / 60) * -2;
             audio_play_sound(snd_slide_whistle, 1, 0);
         }
@@ -474,7 +472,7 @@ switch (scene)
         break;
     
     case 42:
-        cutscene_sfx_play(266, 1);
+        cutscene_sfx_play(snd_wild_east_train_horn, 1);
         break;
     
     case 43:
@@ -502,7 +500,7 @@ switch (scene)
         break;
     
     case 46:
-        cutscene_npc_action_sprite(actor_train, 1236, 0.3, true, 0, 425, 3);
+        cutscene_npc_action_sprite(actor_train, spr_npc_train_fall, 0.3, true, 0, snd_mart_impact_3, 3);
         break;
     
     case 47:
@@ -536,24 +534,24 @@ switch (scene)
             message[15] = "* I can't tell if that#  was an insult.";
             message[16] = "* Anywho. I'll see ya at#  the usual spot, kid.";
             message[17] = "* Come to me when ye're#  ready for the final#  mission!";
-            prt[0] = 456;
-            prt[1] = 460;
-            prt[2] = 446;
-            prt[3] = 436;
-            prt[4] = 452;
-            prt[5] = 421;
-            prt[6] = 419;
-            prt[7] = 407;
-            prt[8] = 377;
-            prt[9] = 371;
-            prt[10] = 419;
-            prt[11] = 421;
-            prt[12] = 447;
-            prt[13] = 410;
-            prt[14] = 407;
-            prt[15] = 454;
-            prt[16] = 417;
-            prt[17] = 417;
+            prt[0] = spr_portrait_mooch_surprised;
+            prt[1] = spr_portrait_mooch_nervous;
+            prt[2] = spr_portrait_moray_downer;
+            prt[3] = spr_portrait_ace_smile;
+            prt[4] = spr_portrait_ed_smile;
+            prt[5] = spr_portrait_starlo_serious;
+            prt[6] = spr_portrait_starlo_point;
+            prt[7] = spr_portrait_starlo_distracted;
+            prt[8] = spr_portrait_ceroba_closed_eyes;
+            prt[9] = spr_portrait_ceroba_alt;
+            prt[10] = spr_portrait_starlo_point;
+            prt[11] = spr_portrait_starlo_serious;
+            prt[12] = spr_portrait_moray_disbelief;
+            prt[13] = spr_portrait_starlo_embarassed;
+            prt[14] = spr_portrait_starlo_distracted;
+            prt[15] = spr_portrait_ed_mutter;
+            prt[16] = spr_portrait_starlo_normal;
+            prt[17] = spr_portrait_starlo_normal;
             talker[0] = actor_mooch;
             talker[2] = actor_moray;
             talker[3] = actor_ace;
@@ -599,7 +597,7 @@ switch (scene)
         break;
     
     case 53:
-        cutscene_npc_action_sprite(actor_train, 1236, 0.3, true, 0, 425, 3);
+        cutscene_npc_action_sprite(actor_train, spr_npc_train_fall, 0.3, true, 0, snd_mart_impact_3, 3);
         break;
     
     case 54:
@@ -625,20 +623,20 @@ switch (scene)
             message[11] = "* This was a test of yer#  judgment.";
             message[12] = "* I'd say you passed,#  buddy!";
             message[13] = "* I'll be in the usual#  spot for yer final task!";
-            prt[0] = 454;
-            prt[1] = 451;
-            prt[2] = 454;
-            prt[3] = 415;
-            prt[4] = 419;
-            prt[5] = 454;
-            prt[6] = 419;
-            prt[7] = 407;
-            prt[8] = 370;
-            prt[9] = 377;
-            prt[10] = 415;
-            prt[11] = 417;
-            prt[12] = 422;
-            prt[13] = 417;
+            prt[0] = spr_portrait_ed_mutter;
+            prt[1] = spr_portrait_ed_normal;
+            prt[2] = spr_portrait_ed_mutter;
+            prt[3] = spr_portrait_starlo_hidden;
+            prt[4] = spr_portrait_starlo_point;
+            prt[5] = spr_portrait_ed_mutter;
+            prt[6] = spr_portrait_starlo_point;
+            prt[7] = spr_portrait_starlo_distracted;
+            prt[8] = spr_portrait_ceroba_neutral;
+            prt[9] = spr_portrait_ceroba_closed_eyes;
+            prt[10] = spr_portrait_starlo_hidden;
+            prt[11] = spr_portrait_starlo_normal;
+            prt[12] = spr_portrait_starlo_smile;
+            prt[13] = spr_portrait_starlo_normal;
             talker[0] = actor_ed;
             talker[3] = actor_starlo;
             talker[5] = actor_ed;
@@ -675,8 +673,8 @@ switch (scene)
         {
             message[0] = "* Sigh...";
             message[1] = "* See you around.";
-            prt[0] = 384;
-            prt[1] = 382;
+            prt[0] = spr_portrait_ceroba_unamused;
+            prt[1] = spr_portrait_ceroba_muttering;
             talker[0] = actor_ceroba;
         }
         
@@ -687,7 +685,7 @@ switch (scene)
         break;
     
     case 58:
-        cutscene_sfx_play(361, 1);
+        cutscene_sfx_play(snd_doorclose, 1);
         instance_destroy(actor_ceroba);
         instance_destroy(actor_starlo);
         break;
@@ -702,7 +700,7 @@ switch (scene)
         with (msg)
         {
             message[0] = "* Hey! Is anyone gonna#  untie us?";
-            prt[0] = 450;
+            prt[0] = spr_portrait_moray_sweat;
             talker[0] = actor_moray;
         }
         

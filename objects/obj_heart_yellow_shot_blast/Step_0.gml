@@ -1,5 +1,3 @@
-var target_width;
-
 if (live_call())
     return global.live_result;
 
@@ -7,7 +5,7 @@ image_angle = round(direction);
 
 if (laser_grow == true)
 {
-    target_width = 1.35;
+    var target_width = 1.35;
     laser_width = lerp(laser_width, target_width, 0.5);
     
     if (abs(laser_width - target_width) < 0.1)
@@ -15,7 +13,7 @@ if (laser_grow == true)
 }
 else if (laser_shrink == true)
 {
-    target_width = 0;
+    var target_width = 0;
     laser_width = lerp(laser_width, target_width, 0.5);
     
     if (abs(laser_width - target_width) < 0.1)
@@ -25,7 +23,7 @@ else
 {
     sin_timer += 30;
     sin_timer_current = degtorad(sin_timer);
-    target_width = 1 + (sin(sin_timer_current) * 0.2);
+    var target_width = 1 + (sin(sin_timer_current) * 0.2);
     laser_width = lerp(laser_width, target_width, 0.25);
 }
 

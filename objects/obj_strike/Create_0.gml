@@ -1,6 +1,4 @@
-var player_weapon;
-
-player_weapon = global.player_weapon;
+var player_weapon = global.player_weapon;
 
 switch (player_weapon)
 {

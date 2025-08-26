@@ -1,12 +1,10 @@
-var dimensional_box_number_row, dimensional_box_number_column, retrieved_item, max_row_number, x_offset, y_offset;
-
 if (live_call())
     return global.live_result;
 
-dimensional_box_number_row = global.dimensional_box_number_row;
-dimensional_box_number_column = global.dimensional_box_number_column;
+var dimensional_box_number_row = global.dimensional_box_number_row;
+var dimensional_box_number_column = global.dimensional_box_number_column;
 
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     audio_play_sound(snd_confirm, 0, 0);
     
@@ -25,7 +23,7 @@ if (keyboard_multicheck_pressed(0))
     }
     else if (dimensional_box_number_column == 2)
     {
-        retrieved_item = ds_list_find_value(global.box_slot_list, (dimensional_box_number_row - 1) + global.dimensional_box_offset);
+        var retrieved_item = ds_list_find_value(global.box_slot_list, (dimensional_box_number_row - 1) + global.dimensional_box_offset);
         
         if (retrieved_item != undefined && scr_item(retrieved_item))
         {
@@ -38,7 +36,7 @@ if (keyboard_multicheck_pressed(0))
         }
     }
 }
-else if (keyboard_multicheck_pressed(1))
+else if (keyboard_multicheck_pressed(vk_anykey))
 {
     audio_play_sound(snd_fail, 1, 0);
     
@@ -50,7 +48,7 @@ else if (keyboard_multicheck_pressed(1))
     exit;
 }
 
-if (!keyboard_multicheck_pressed(0))
+if (!keyboard_multicheck_pressed(vk_nokey))
 {
     if (global.right_keyp && global.left_keyp == 0)
     {
@@ -74,12 +72,14 @@ if (!keyboard_multicheck_pressed(0))
     }
 }
 
+var max_row_number;
+
 if (dimensional_box_number_column == 1)
     max_row_number = 8;
 else if (dimensional_box_number_column == 2)
     max_row_number = 10;
 
-if (!keyboard_multicheck_pressed(0))
+if (!keyboard_multicheck_pressed(vk_nokey))
 {
     if (global.down_keyp && global.up_keyp == 0)
     {
@@ -113,8 +113,8 @@ if (!keyboard_multicheck_pressed(0))
 
 dimensional_box_number_row = global.dimensional_box_number_row;
 dimensional_box_number_column = global.dimensional_box_number_column;
-x_offset = 8;
-y_offset = 8;
+var x_offset = 8;
+var y_offset = 8;
 
 if (dimensional_box_number_column == 1)
 {

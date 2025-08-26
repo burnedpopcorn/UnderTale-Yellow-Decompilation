@@ -1,8 +1,6 @@
 function scr_dialogue_battle_action_selected_action_2_hec()
 {
-    var action_2_selected_count_2;
-    
-    action_2_selected_count_2 = global.action_2_selected_count_2;
+    var action_2_selected_count_2 = global.action_2_selected_count_2;
     
     if (global.enemy_low_hp_2 == true)
     {

@@ -1,4 +1,4 @@
-function sound_loop(argument0)
+function sound_loop(arg0)
 {
-    audio_play_sound(argument0, 10, true);
+    audio_play_sound(arg0, 10, true);
 }

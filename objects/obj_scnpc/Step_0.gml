@@ -13,7 +13,7 @@ if (instance_exists(obj_dialogue) && talk == true)
     }
 }
 
-if (keyboard_multicheck_pressed(0) && scr_interact() == true)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true)
 {
     scr_text();
     talk = 1;
@@ -24,7 +24,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Now I can fulfill my dreams#  of opening a free hugs#  booth!";
                 message[1] = "* I'll get to see everyone's#  smiling faces! ";
             }
@@ -36,7 +36,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Watch out Dalv! You're#  well overdue for a big#  hug! ";
                 message[1] = "* Everyone needs a good hug#  now and then! ";
                 message[2] = "* Especially big mopey mopes#  like Dalv! ";
@@ -49,7 +49,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* If you ever turn into a#  big mopey mope like Dalv#  call my new business!";
                 message[1] = "* Sweet Corn's Perennial Hugs!";
                 message[2] = "* No really! Give me your#  phone and I'll give#  you the number!";
@@ -62,7 +62,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Hugs make the world#  go 'round!";
             }
             

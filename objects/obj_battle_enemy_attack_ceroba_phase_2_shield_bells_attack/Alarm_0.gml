@@ -1,16 +1,14 @@
-var shot_offset, wave_offset, bullet_number, bullet_speed, spawn_dir, i, fireball;
-
 if (live_call())
     return global.live_result;
 
 if (!instance_exists(obj_ceroba_phase_2_shield))
     exit;
 
-shot_offset = 6;
-wave_offset = 15;
-bullet_number = 5;
-bullet_speed = 6;
-spawn_dir = bullet_spawn_direction;
+var shot_offset = 6;
+var wave_offset = 15;
+var bullet_number = 5;
+var bullet_speed = 6;
+var spawn_dir = bullet_spawn_direction;
 
 if (current_bell == -4)
 {
@@ -27,11 +25,11 @@ if (instance_exists(current_bell))
 {
     with (current_bell)
     {
-        i = spawn_dir;
+        var i = spawn_dir;
         
         while (i < (360 + spawn_dir))
         {
-            fireball = instance_create_depth(x, y, depth + 1, obj_ceroba_attack_fireball);
+            var fireball = instance_create_depth(x, y, depth + 1, obj_ceroba_attack_fireball);
             fireball.direction = i;
             fireball.speed = bullet_speed;
             i += (360 / bullet_number);

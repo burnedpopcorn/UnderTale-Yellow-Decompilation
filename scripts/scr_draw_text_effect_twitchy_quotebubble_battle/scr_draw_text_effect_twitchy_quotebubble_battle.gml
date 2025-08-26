@@ -1,14 +1,12 @@
-function scr_draw_text_effect_twitchy_quotebubble_battle(argument0, argument1, argument2)
+function scr_draw_text_effect_twitchy_quotebubble_battle(arg0, arg1, arg2)
 {
-    var twitchy_text_probability, twitchy_text_intensity, i;
-    
-    twitchy_text_probability = global.twitchy_text_probability;
-    twitchy_text_intensity = global.twitchy_text_intensity;
+    var twitchy_text_probability = global.twitchy_text_probability;
+    var twitchy_text_intensity = global.twitchy_text_intensity;
     str_indent = "";
     str_indent_count = 0;
     str_offset = -string_width(string_hash_to_newline(string_copy("A", 1, 1)));
     
-    for (i = 1; i <= characters; i += 1)
+    for (var i = 1; i <= characters; i += 1)
     {
         twitchy_text_offset_x = 0;
         twitchy_text_offset_y = 0;
@@ -42,7 +40,7 @@ function scr_draw_text_effect_twitchy_quotebubble_battle(argument0, argument1, a
             }
         }
         
-        str_char = string_char_at(argument0, i);
+        str_char = string_char_at(arg0, i);
         
         if (str_char == "#")
         {
@@ -63,8 +61,8 @@ function scr_draw_text_effect_twitchy_quotebubble_battle(argument0, argument1, a
         str_offset += string_width(string_hash_to_newline(string_copy("A", 1, 1)));
         
         if (string_lettersdigits(str_char) == "")
-            draw_text(argument1 + str_offset, argument2, string_hash_to_newline(str_indent + str_char));
+            draw_text(arg1 + str_offset, arg2, string_hash_to_newline(str_indent + str_char));
         else
-            draw_text(argument1 + str_offset + (twitchy_text_offset_x * twitchy_text_intensity), argument2 + (twitchy_text_offset_y * twitchy_text_intensity), string_hash_to_newline(str_indent + str_char));
+            draw_text(arg1 + str_offset + (twitchy_text_offset_x * twitchy_text_intensity), arg2 + (twitchy_text_offset_y * twitchy_text_intensity), string_hash_to_newline(str_indent + str_char));
     }
 }

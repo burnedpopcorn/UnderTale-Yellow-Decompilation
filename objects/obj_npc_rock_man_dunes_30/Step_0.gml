@@ -8,11 +8,11 @@ if (interact)
         
         with (msg)
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "* (We need to stay#  focused.)";
             message[1] = "* (Let's not bother the#  townsfolk with our#  problems.)";
-            prt[0] = 321;
-            prt[1] = 338;
+            prt[0] = spr_martlet_head_moderate;
+            prt[1] = spr_martlet_head_wondering;
         }
         
         exit;
@@ -27,11 +27,11 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Something going on at the old#  Ketsukane residence?";
                 message[1] = "* I've noticed an unusual number#  of monsters visiting.";
                 message[2] = "* Guess there's never a bad time#  to pay your respects. \t";
-                message[3] = "* Brilliant minds, the#  Ketsukane's.";
+                message[3] = "* Brilliant minds, the#  Ketsukanes'.";
             }
             
             npc_flag += 1;
@@ -41,7 +41,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Have you seen our little#  sapling south of here?";
                 message[1] = "* Well, perhaps I shouldn't call#  it \"little\" anymore.";
                 message[2] = "* Its rate of growth has been#  unprecedented.";

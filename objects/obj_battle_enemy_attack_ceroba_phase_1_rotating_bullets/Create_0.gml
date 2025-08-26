@@ -1,7 +1,7 @@
 if (live_call())
     return global.live_result;
 
-soul = 2979;
+soul = obj_heart_battle_fighting_parent;
 bullet_count = 4;
 bullet_count_max = 4;
 spawn_dir = irandom_range(0, 360);

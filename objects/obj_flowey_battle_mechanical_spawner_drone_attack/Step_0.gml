@@ -1,5 +1,3 @@
-var xx, yy, bullet;
-
 if (live_call())
     return global.live_result;
 
@@ -14,9 +12,9 @@ switch (scene)
     case 0:
         fire_sound = audio_play_sound(snd_f_mechpellet, 1, 0);
         audio_sound_gain(fire_sound, 0.5, 0);
-        xx = spawner.x;
-        yy = spawner.y;
-        bullet = instance_create_depth(xx, yy, -100, obj_flowey_battle_phase_2_mechanical_pellet);
+        var xx = spawner.x;
+        var yy = spawner.y;
+        var bullet = instance_create_depth(xx, yy, -100, obj_flowey_battle_phase_2_mechanical_pellet);
         bullet.direction = spawn_dir_current;
         bullet.image_angle = bullet.direction;
         bullet.speed = 12;

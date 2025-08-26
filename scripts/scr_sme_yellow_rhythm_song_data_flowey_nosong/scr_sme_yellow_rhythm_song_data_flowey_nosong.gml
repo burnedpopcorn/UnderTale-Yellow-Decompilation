@@ -1,20 +1,18 @@
-function scr_sme_yellow_rhythm_song_data_flowey_nosong(argument0 = 499, argument1 = false, argument2 = false, argument3 = 2, argument4 = [520, 517, 514])
+function scr_sme_yellow_rhythm_song_data_flowey_nosong(arg0 = 499, arg1 = false, arg2 = false, arg3 = 2, arg4 = [520, 517, 514])
 {
-    var sound, i;
-    
     can_end_script = true;
-    sound = array_create(array_length(argument1), 0);
+    var sound = array_create(array_length(arg1), 0);
     
-    for (i = 0; i < array_length(sound); i++)
-        sound[i] = argument4[argument2[i]];
+    for (var i = 0; i < array_length(sound); i++)
+        sound[i] = arg4[arg2[i]];
     
     note_1second = 30;
-    note_speed_denominator = 30 * argument3;
+    note_speed_denominator = 30 * arg3;
     note_speed = note_speed_numerator / note_speed_denominator;
     note_current = 0;
     note_time = 0;
     note_add = 0;
-    note_total = array_length(argument1);
+    note_total = array_length(arg1);
     note_final = false;
     
     if (song_play_ct == 0)
@@ -24,17 +22,17 @@ function scr_sme_yellow_rhythm_song_data_flowey_nosong(argument0 = 499, argument
     else
         timeline_clear(timeline);
     
-    note_time = (argument1[0] * note_1second) - note_speed_denominator;
+    note_time = (arg1[0] * note_1second) - note_speed_denominator;
     note_sarray[0] = sound[0];
-    note_parray[0] = argument2[0];
+    note_parray[0] = arg2[0];
     timeline_moment_add_script(timeline, note_time, scr_sme_yellow_rhythm_create_note);
     
-    for (i = 1; i < array_length(argument1); i++)
+    for (var i = 1; i < array_length(arg1); i++)
     {
-        note_add = (argument1[i] - argument1[i - 1]) * note_1second;
+        note_add = (arg1[i] - arg1[i - 1]) * note_1second;
         note_time += note_add;
         note_sarray[i] = sound[i];
-        note_parray[i] = argument2[i];
+        note_parray[i] = arg2[i];
         timeline_moment_add_script(timeline, note_time, scr_sme_yellow_rhythm_create_note);
     }
     

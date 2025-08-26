@@ -24,7 +24,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I lost all of my TNT...";
                 message[1] = "* I have to tell the Foreman.";
                 message[2] = "* He'll fire me, I'm sure, but#  it's my fault.";
@@ -40,7 +40,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I have a brother, you see.";
                 message[1] = "* I work at the Mines to provide#  for us.";
                 message[2] = "* He doesn't have a job. Mostly#  just gets into mischief.";
@@ -55,7 +55,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Today isn't my day...";
             }
             

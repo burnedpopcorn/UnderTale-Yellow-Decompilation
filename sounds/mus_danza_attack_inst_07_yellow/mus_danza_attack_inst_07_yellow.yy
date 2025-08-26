@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 11.639031,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/danza_attack_inst_07_yellow.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "danza_attack_inst_07_yellow.ogg",
+  "type": 1,
   "volume": 1.0,
 }

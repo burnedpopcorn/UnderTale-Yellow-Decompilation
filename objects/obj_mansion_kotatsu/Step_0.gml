@@ -1,12 +1,10 @@
-var doorway;
-
 if (live_call())
     return global.live_result;
 
 switch (scene)
 {
     case 0:
-        if (scr_interact() && keyboard_multicheck_pressed(0) && obj_pl.direction == 90)
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey) && obj_pl.direction == 90)
         {
             scr_cutscene_start();
             instance_create(obj_pl.x, obj_pl.y, obj_player_npc);
@@ -16,7 +14,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_npc_walk(1164, 130, 200, 2, "y", "up");
+        cutscene_npc_walk(obj_martlet_npc, 130, 200, 2, "y", "up");
         break;
     
     case 2:
@@ -24,9 +22,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* This must be where they#  ate their meals...";
-            prt[0] = 329;
+            prt[0] = spr_martlet_head_sad;
         }
         
         break;
@@ -36,11 +34,11 @@ switch (scene)
         break;
     
     case 4:
-        cutscene_npc_direction(1164, "right");
+        cutscene_npc_direction(obj_martlet_npc, "right");
         break;
     
     case 5:
-        cutscene_npc_walk(1168, 195, 200, 3, "y", "up");
+        cutscene_npc_walk(obj_player_npc, 195, 200, 3, "y", "up");
         break;
     
     case 6:
@@ -65,15 +63,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* What do you see?";
-            prt[0] = 321;
+            prt[0] = spr_martlet_head_moderate;
         }
         
         break;
     
     case 11:
-        cutscene_npc_walk(1168, 160, 200, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 160, 200, 3, "x", "up");
         break;
     
     case 12:
@@ -121,15 +119,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Hey uh...";
-            prt[0] = 311;
+            prt[0] = spr_martlet_head_confused;
         }
         
         break;
     
     case 15:
-        cutscene_npc_direction(1168, "left");
+        cutscene_npc_direction(obj_player_npc, "left");
         break;
     
     case 16:
@@ -143,23 +141,23 @@ switch (scene)
         {
             ch_msg = 0;
             ch[1] = "I need your help";
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* ...";
             message[1] = "* You think something's#  under there?";
             message[2] = "* Alright then...";
-            prt[0] = 311;
-            prt[1] = 321;
-            prt[2] = 338;
+            prt[0] = spr_martlet_head_confused;
+            prt[1] = spr_martlet_head_moderate;
+            prt[2] = spr_martlet_head_wondering;
         }
         
         break;
     
     case 18:
-        cutscene_npc_direction(1168, "up");
+        cutscene_npc_direction(obj_player_npc, "up");
         break;
     
     case 19:
-        cutscene_npc_walk(1164, 116, 200, 3, "y", "down", -4, 160, 130);
+        cutscene_npc_walk(obj_martlet_npc, 116, 200, 3, "y", "down", -4, 160, 130);
         break;
     
     case 20:
@@ -175,15 +173,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* On \"three.\"";
             message[1] = "* One...";
             message[2] = "* Two...";
             message[3] = "* Three!";
-            prt[0] = 321;
-            prt[1] = 321;
-            prt[2] = 321;
-            prt[3] = 328;
+            prt[0] = spr_martlet_head_moderate;
+            prt[1] = spr_martlet_head_moderate;
+            prt[2] = spr_martlet_head_moderate;
+            prt[3] = spr_martlet_head_regular;
         }
         
         break;
@@ -211,8 +209,8 @@ switch (scene)
         obj_martlet_npc.npc_direction = "up";
         obj_player_npc.npc_direction = "up";
         layer_set_visible("chairs", false);
+        instance_destroy(106769);
         instance_destroy(106768);
-        instance_destroy(106767);
         cutscene_advance();
         break;
     
@@ -221,9 +219,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Whoa...";
-            prt[0] = 333;
+            prt[0] = spr_martlet_head_surprised;
         }
         
         break;
@@ -237,7 +235,7 @@ switch (scene)
         break;
     
     case 28:
-        cutscene_npc_direction(1164, "left");
+        cutscene_npc_direction(obj_martlet_npc, "left");
         break;
     
     case 29:
@@ -245,15 +243,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Good eye, Clover.";
-            prt[0] = 312;
+            prt[0] = spr_martlet_head_content;
         }
         
         break;
     
     case 30:
-        cutscene_npc_direction(1164, "up");
+        cutscene_npc_direction(obj_martlet_npc, "up");
         break;
     
     case 31:
@@ -261,7 +259,7 @@ switch (scene)
         break;
     
     case 32:
-        cutscene_npc_walk(1168, 160, 190, 3, "y", "up");
+        cutscene_npc_walk(obj_player_npc, 160, 190, 3, "y", "up");
         break;
     
     case 33:
@@ -290,7 +288,7 @@ switch (scene)
         break;
     
     case 36:
-        cutscene_npc_direction(1168, "down");
+        cutscene_npc_direction(obj_player_npc, "down");
         break;
     
     case 37:
@@ -298,25 +296,25 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Spooky...";
             message[1] = "* Well, uh... After you.";
-            prt[0] = 321;
-            prt[1] = 320;
+            prt[0] = spr_martlet_head_moderate;
+            prt[1] = spr_martlet_head_melancholic;
         }
         
         break;
     
     case 38:
-        cutscene_npc_direction(1168, "up");
+        cutscene_npc_direction(obj_player_npc, "up");
         break;
     
     case 39:
-        cutscene_npc_walk(1164, obj_player_npc.x, obj_player_npc.y + 20, 3, "y", "up");
+        cutscene_npc_walk(obj_martlet_npc, obj_player_npc.x, obj_player_npc.y + 20, 3, "y", "up");
         break;
     
     case 40:
-        doorway = instance_create(136, 150, obj_doorway_secret_study);
+        var doorway = instance_create(136, 150, obj_doorway_secret_study);
         
         with (doorway)
         {
@@ -324,7 +322,7 @@ switch (scene)
             image_yscale = 2.3125;
             xx = 135;
             yy = 420;
-            nextroom = 250;
+            nextroom = rm_mansion_study;
         }
         
         scr_radio_restart();

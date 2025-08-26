@@ -1,6 +1,6 @@
 image_speed = 1/3;
 image_index = 0;
-sound_looper = snd_ceroba_staff_lock;
+sound_looper = 0;
 id_martlet = 2345;
 global.id_store = id;
 

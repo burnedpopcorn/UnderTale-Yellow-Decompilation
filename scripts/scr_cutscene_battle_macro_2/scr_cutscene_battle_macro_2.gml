@@ -1,11 +1,9 @@
 function scr_cutscene_battle_macro_2()
 {
-    var soul, buffrog;
-    
     if (live_call())
         return global.live_result;
     
-    soul = 2980;
+    var soul = obj_heart_battle_fighting_red;
     
     switch (scene)
     {
@@ -43,7 +41,7 @@ function scr_cutscene_battle_macro_2()
             obj_macro_froggit_body.sprite_index = spr_macro_froggit_scared_2;
             obj_macro_froggit_body.image_speed = 0;
             obj_macro_froggit_body.image_index = 0;
-            buffrog = instance_create_depth(320, 180, obj_macro_froggit_body.depth + 1, obj_buff_froggit_body);
+            var buffrog = instance_create_depth(320, 180, obj_macro_froggit_body.depth + 1, obj_buff_froggit_body);
             obj_background_macro_froggit.fade_out = true;
             cutscene_advance();
             break;

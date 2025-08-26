@@ -13,7 +13,7 @@ if (interact)
         {
             case 0:
                 color = true;
-                col_modif[0] = 255;
+                col_modif[0] = c_red;
                 message[0] = "* 'Ay kid. The getup.";
                 message[1] = "* I'm guessin' you're from the#  Dunes eh?";
                 message_col[1][0] = "                              #  Dunes    ";

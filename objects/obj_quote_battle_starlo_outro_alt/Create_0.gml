@@ -1,8 +1,6 @@
-var turns_passed;
-
 text_effect = "twitchy";
 attack = false;
-turns_passed = global.turns_passed;
+var turns_passed = global.turns_passed;
 message[0] = "What...#What are you doing?";
 message[1] = "This isn't fair...";
 portrait_head[0] = 2127;

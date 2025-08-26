@@ -1,8 +1,6 @@
 function scr_mail_sort()
 {
-    var old_pinned;
-    
-    old_pinned = "";
+    var old_pinned = "";
     
     if (global.mail_pinned == true)
     {

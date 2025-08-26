@@ -1,6 +1,4 @@
-var fade_inc;
-
-fade_inc = 0.2;
+var fade_inc = 0.2;
 image_alpha -= fade_inc;
 
 if (image_alpha >= 1)

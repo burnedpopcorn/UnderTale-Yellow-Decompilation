@@ -1,6 +1,4 @@
-var box, flower, arm;
-
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
@@ -9,7 +7,7 @@ switch (scene)
         break;
     
     case 1:
-        flower = instance_create_depth(320, box.bbox_bottom - 4, obj_heart_battle_fighting_parent.depth - 1, obj_guardener_flower);
+        var flower = instance_create_depth(320, box.bbox_bottom - 4, obj_heart_battle_fighting_parent.depth - 1, obj_guardener_flower);
         flower.image_xscale = 1;
         flower.image_yscale = 1;
         cutscene_advance();
@@ -20,7 +18,7 @@ switch (scene)
         break;
     
     case 3:
-        arm = instance_create_depth(box.bbox_left - 5, box.bbox_top + 40, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_arm);
+        var arm = instance_create_depth(box.bbox_left - 5, box.bbox_top + 40, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_arm);
         arm.launch_dir = "right";
         arm.image_angle = 90;
         arm.arm_return = 5;
@@ -32,7 +30,7 @@ switch (scene)
         break;
     
     case 5:
-        arm = instance_create_depth(box.bbox_left - 5, box.bbox_top + 70, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_arm);
+        var arm = instance_create_depth(box.bbox_left - 5, box.bbox_top + 70, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_arm);
         arm.launch_dir = "right";
         arm.image_angle = 90;
         arm.arm_return = 5;
@@ -44,7 +42,7 @@ switch (scene)
         break;
     
     case 7:
-        arm = instance_create_depth(box.bbox_left - 5, box.bbox_top + 100, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_arm);
+        var arm = instance_create_depth(box.bbox_left - 5, box.bbox_top + 100, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_arm);
         arm.launch_dir = "right";
         arm.image_angle = 90;
         arm.arm_return = 5;

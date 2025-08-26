@@ -1,11 +1,9 @@
 function scr_battle_draw_item_names()
 {
-    var item_object_hold, draw_x_disjoint, draw_y_disjoint, item_slot;
-    
-    item_object_hold = global.item_object_hold;
-    draw_x_disjoint = item_object_hold.draw_x_disjoint;
-    draw_y_disjoint = item_object_hold.draw_y_disjoint;
-    item_slot = item_object_hold.item_slot;
+    var item_object_hold = global.item_object_hold;
+    var draw_x_disjoint = item_object_hold.draw_x_disjoint;
+    var draw_y_disjoint = item_object_hold.draw_y_disjoint;
+    var item_slot = item_object_hold.item_slot;
     
     if (global.game_mode == "customs")
     {

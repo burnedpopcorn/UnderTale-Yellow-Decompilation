@@ -11,7 +11,7 @@ function scr_start_enemy_no_attack_axis()
     }
     else if (global.route == 2 && global.action_1_selected_count > 0)
     {
-        scr_audio_fade_out(40, 1000);
+        scr_audio_fade_out(mus_guns_blazing, 1000);
         instance_create(0, 0, obj_steamworks_35_in_battle_cutscene_4);
         global.action_1_important = false;
     }

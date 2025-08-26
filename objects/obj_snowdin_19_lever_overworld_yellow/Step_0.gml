@@ -1,7 +1,7 @@
 if (obj_snowdin_19_watermeter.image_speed != 0 || (instance_exists(obj_snowdin_19_icecube) && obj_snowdin_19_icecube.shrink == true))
     exit;
 
-if (keyboard_multicheck_pressed(0) && scr_interact())
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
 {
     if (waiter == 0)
     {
@@ -21,7 +21,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact())
             
             with (msg)
             {
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 portrait = false;
                 message[0] = "* The switch won't budge anymore.";
             }

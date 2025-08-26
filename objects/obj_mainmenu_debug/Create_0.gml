@@ -1,5 +1,3 @@
-var dbg_room_current;
-
 if (live_call())
     return global.live_result;
 
@@ -11,7 +9,7 @@ follower_list = [1171, 1170, -4];
 room_selection = "rm_ruins00";
 room_list = ds_list_create();
 
-for (dbg_room_current = 0; room_exists(dbg_room_current); dbg_room_current += 1)
+for (var dbg_room_current = 0; room_exists(dbg_room_current); dbg_room_current += 1)
     ds_list_add(room_list, room_get_name(dbg_room_current));
 
 ds_list_sort(room_list, true);

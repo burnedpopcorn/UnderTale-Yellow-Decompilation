@@ -1,4 +1,4 @@
-function background_get_texture(argument0)
+function background_get_texture(arg0)
 {
-    return sprite_get_texture(argument0, 0);
+    return sprite_get_texture(arg0, 0);
 }

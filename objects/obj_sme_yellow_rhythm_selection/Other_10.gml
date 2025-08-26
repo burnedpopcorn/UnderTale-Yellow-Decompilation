@@ -1,6 +1,4 @@
-var heart;
-
-heart = obj_heart_battle_fighting_yellow_rhythm;
+var heart = obj_heart_battle_fighting_yellow_rhythm;
 y = pos_y;
 
 if (heart.move_x < 0)

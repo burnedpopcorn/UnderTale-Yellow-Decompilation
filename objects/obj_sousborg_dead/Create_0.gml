@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -29,7 +27,7 @@ instance_create_depth(x + 109, y - 144.5, depth, obj_sousborg_glass_destroy);
 instance_create_depth(x + 147, y - 112, depth, obj_sousborg_salt_destroy);
 instance_create_depth(x + 147, y - 112, depth, obj_sousborg_salt_destroy);
 
-for (i = 0; i < 4; i++)
+for (var i = 0; i < 4; i++)
     instance_create_depth(x + irandom_range(64, 144), y - irandom_range(111, 150), depth - 1, obj_sousborg_shard_destroy);
 
 instance_create_depth(x + 107, y - 72.5, depth, obj_sousborg_plate_2_destroy);

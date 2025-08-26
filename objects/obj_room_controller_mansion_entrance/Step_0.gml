@@ -13,7 +13,7 @@ switch (scene)
         break;
     
     case 1:
-        cutscene_npc_walk(1164, 160, 185, 2, "y", "up");
+        cutscene_npc_walk(obj_martlet_npc, 160, 185, 2, "y", "up");
         
         if (abs(obj_martlet_npc.y - obj_player_npc.y) > 30)
             scene = 2;
@@ -21,7 +21,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_npc_walk(1168, 160, 220, 2, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 160, 220, 2, "x", "up");
         break;
     
     case 3:
@@ -33,7 +33,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_npc_direction(1164, "down");
+        cutscene_npc_direction(obj_martlet_npc, "down");
         break;
     
     case 6:
@@ -41,13 +41,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* I should've asked where#  the \"papers and tapes\"#  are located, huh?";
             message[1] = "* Hmm... I guess we can#  take a look around.";
             message[2] = "* Should be an office#  somewhere...";
-            prt[0] = 311;
-            prt[1] = 324;
-            prt[2] = 321;
+            prt[0] = spr_martlet_head_confused;
+            prt[1] = spr_martlet_head_questioning;
+            prt[2] = spr_martlet_head_moderate;
             
             if (message_current == 2)
                 obj_martlet_npc.npc_direction = "up";
@@ -56,7 +56,7 @@ switch (scene)
         break;
     
     case 7:
-        cutscene_npc_walk(1164, obj_player_npc.x, obj_player_npc.y + 20, 3, "y", "up");
+        cutscene_npc_walk(obj_martlet_npc, obj_player_npc.x, obj_player_npc.y + 20, 3, "y", "up");
         break;
     
     case 8:
@@ -90,14 +90,14 @@ switch (scene)
         with (msg)
         {
             message[0] = "* We need to find the#  things Ed mentioned#  before we go.";
-            prt[0] = 321;
-            sndfnt = 102;
+            prt[0] = spr_martlet_head_moderate;
+            sndfnt = snd_talk_martlet;
         }
         
         break;
     
     case 13:
-        cutscene_npc_walk(1168, obj_pl.x, 250, 3, "y", "up");
+        cutscene_npc_walk(obj_player_npc, obj_pl.x, 250, 3, "y", "up");
         break;
     
     case 14:

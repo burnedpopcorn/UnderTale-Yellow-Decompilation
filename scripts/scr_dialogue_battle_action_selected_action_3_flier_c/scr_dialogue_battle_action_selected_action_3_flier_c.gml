@@ -1,8 +1,6 @@
 function scr_dialogue_battle_action_selected_action_3_flier_c()
 {
-    var action_3_selected_count_3;
-    
-    action_3_selected_count_3 = global.action_3_selected_count_3;
+    var action_3_selected_count_3 = global.action_3_selected_count_3;
     
     if (global.enemy_low_hp_3 == true)
     {

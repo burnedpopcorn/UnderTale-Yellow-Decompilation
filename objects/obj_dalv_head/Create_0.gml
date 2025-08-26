@@ -11,5 +11,5 @@ damage_disjoint_y = 0;
 damage_disjoint_count = 0;
 no_loop_damage_disjoint_count = false;
 can_talk_no_loop = false;
-head_sprite = spr_dalv_head_regular;
+head_sprite = 1755;
 instance_create(x, y, obj_dalv_head_shadow);

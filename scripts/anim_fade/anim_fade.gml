@@ -1,6 +1,6 @@
-function anim_fade(argument0)
+function anim_fade(arg0)
 {
-    aspd = argument0;
+    aspd = arg0;
     
     if (image_alpha < 1)
         image_alpha += aspd;

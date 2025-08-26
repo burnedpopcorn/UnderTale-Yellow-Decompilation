@@ -27,12 +27,12 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_npc_walk(1168, 660, 660, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 660, 660, 3, "x", "up");
         scene++;
         break;
     
     case 3:
-        cutscene_npc_walk(1161, 630, 660, 3, "x", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 630, 660, 3, "x", "up");
         scene++;
         break;
     
@@ -51,13 +51,13 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* Really? Another door?";
             message[1] = "* ...";
             message[2] = "* Let's look around. Has#  to be a switch or a#  panel somewhere.";
-            prt[0] = 368;
-            prt[1] = 394;
-            prt[2] = 370;
+            prt[0] = spr_portrait_ceroba_irked;
+            prt[1] = spr_portrait_ceroba_disapproving;
+            prt[2] = spr_portrait_ceroba_neutral;
             
             if (message_current == 2)
                 obj_ceroba_npc.npc_direction = "right";
@@ -66,7 +66,7 @@ switch (scene)
         break;
     
     case 7:
-        cutscene_npc_walk(1161, obj_pl.x, obj_pl.y + 20, 3, "y", "up");
+        cutscene_npc_walk(obj_ceroba_npc, obj_pl.x, obj_pl.y + 20, 3, "y", "up");
         break;
     
     case 8:

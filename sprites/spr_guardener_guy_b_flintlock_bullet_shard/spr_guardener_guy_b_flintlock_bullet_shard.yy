@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"191be548-0c2c-46d7-bbb1-07a68341ebde",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"65bdece5-7c81-4847-9d6f-be415cc5b7f4",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b66a15da-0004-476a-b4f5-6a647966c66d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9a716fd5-3007-490d-81f2-3e3415237501",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"90d6ac71-6785-414a-afac-11a1c61f5964",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0fde80b8-96fb-40fa-b844-89a0ccfc50a2",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 23,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a8d60c1c-55c5-4ec6-8b0a-453fe79055ce","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a2394f05-3781-4156-916a-2f711afa99e2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"191be548-0c2c-46d7-bbb1-07a68341ebde","path":"sprites/spr_guardener_guy_b_flintlock_bullet_shard/spr_guardener_guy_b_flintlock_bullet_shard.yy",},},},"Disabled":false,"id":"17ecc33e-95ec-47d8-8f18-a232b9938ff3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"65bdece5-7c81-4847-9d6f-be415cc5b7f4","path":"sprites/spr_guardener_guy_b_flintlock_bullet_shard/spr_guardener_guy_b_flintlock_bullet_shard.yy",},},},"Disabled":false,"id":"49488dda-42d5-49d5-a928-c93e75c77f86","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b66a15da-0004-476a-b4f5-6a647966c66d","path":"sprites/spr_guardener_guy_b_flintlock_bullet_shard/spr_guardener_guy_b_flintlock_bullet_shard.yy",},},},"Disabled":false,"id":"8fd97674-01da-4003-bcc5-ace7fdefaa59","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9a716fd5-3007-490d-81f2-3e3415237501","path":"sprites/spr_guardener_guy_b_flintlock_bullet_shard/spr_guardener_guy_b_flintlock_bullet_shard.yy",},},},"Disabled":false,"id":"be19d59e-0a04-4078-9e42-966fb3b7f572","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"90d6ac71-6785-414a-afac-11a1c61f5964","path":"sprites/spr_guardener_guy_b_flintlock_bullet_shard/spr_guardener_guy_b_flintlock_bullet_shard.yy",},},},"Disabled":false,"id":"5abd78f2-4283-42da-9dff-aefc1461f1ee","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0fde80b8-96fb-40fa-b844-89a0ccfc50a2","path":"sprites/spr_guardener_guy_b_flintlock_bullet_shard/spr_guardener_guy_b_flintlock_bullet_shard.yy",},},},"Disabled":false,"id":"1232c1df-5159-4b46-b5da-ff7287584765","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

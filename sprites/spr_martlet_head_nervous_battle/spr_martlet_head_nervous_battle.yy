@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bcc8b79a-077b-431d-b9c3-018589067c8d",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"43ec0046-483c-46a9-9368-c7542334047c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"985b2f3d-5f1a-4ce2-948a-c43d8fcb3339",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec83b8d3-fce6-4f7d-b2ac-00ed434b1b1a",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 68,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7dee80ad-5f72-45cc-829c-c7a05093fc37","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"033e606a-2faa-4c4f-b374-60510b720ff9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bcc8b79a-077b-431d-b9c3-018589067c8d","path":"sprites/spr_martlet_head_nervous_battle/spr_martlet_head_nervous_battle.yy",},},},"Disabled":false,"id":"71c23cef-4bd1-4747-bcf7-791871c33e73","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"43ec0046-483c-46a9-9368-c7542334047c","path":"sprites/spr_martlet_head_nervous_battle/spr_martlet_head_nervous_battle.yy",},},},"Disabled":false,"id":"83cee490-079d-4088-bde3-e3397a7eadb8","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"985b2f3d-5f1a-4ce2-948a-c43d8fcb3339","path":"sprites/spr_martlet_head_nervous_battle/spr_martlet_head_nervous_battle.yy",},},},"Disabled":false,"id":"626c9b7c-cbb5-42e1-ab18-726ec19b47c6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ec83b8d3-fce6-4f7d-b2ac-00ed434b1b1a","path":"sprites/spr_martlet_head_nervous_battle/spr_martlet_head_nervous_battle.yy",},},},"Disabled":false,"id":"395768b1-ffd3-4ed1-b37b-1aedbe9b69b5","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "GeneralUse",
+    "path": "texturegroups/GeneralUse",
   },
   "type": 0,
   "VTile": false,

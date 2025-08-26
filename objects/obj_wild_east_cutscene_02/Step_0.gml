@@ -1,11 +1,9 @@
-var starlo, ed, mooch, moray, ace, clover_npc;
-
-starlo = 1169;
-ed = 1162;
-mooch = 1165;
-moray = 1167;
-ace = 1158;
-clover_npc = 1168;
+var starlo = 1169;
+var ed = 1162;
+var mooch = 1165;
+var moray = 1167;
+var ace = 1158;
+var clover_npc = 1168;
 
 switch (scene)
 {
@@ -80,10 +78,10 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             talker[0] = starlo;
             message[0] = "* Alright, everyone! Come# 'ere!";
-            prt[0] = 417;
+            prt[0] = spr_portrait_starlo_normal;
         }
         
         if (!global.dialogue_open)
@@ -146,20 +144,20 @@ switch (scene)
             {
                 talker[0] = mooch;
                 message[0] = "* Watcha want, boss?";
-                prt[0] = 455;
+                prt[0] = spr_portrait_mooch_normal;
                 talker[1] = moray;
                 message[1] = "* Oooh, are we going to#  begin training with#  Clover?";
-                prt[1] = 445;
+                prt[1] = spr_portrait_moray_normal;
                 talker[2] = starlo;
                 message[2] = "* Precisely, Moray!";
                 message[3] = "* I thought we'd start#  with a classic game that#  involves pacin'.";
-                prt[2] = 417;
-                prt[3] = 424;
+                prt[2] = spr_portrait_starlo_normal;
+                prt[3] = spr_portrait_starlo_smirk;
                 talker[4] = ed;
                 message[4] = "* You mean what I see#  you doin' every night#  outside the house?";
                 message[5] = "* Back and forth,#  whispering to#  yourself...";
-                prt[4] = 454;
-                prt[5] = 453;
+                prt[4] = spr_portrait_ed_mutter;
+                prt[5] = spr_portrait_ed_mad;
                 talker[6] = starlo;
                 message[6] = "* What? I don't do that!";
                 message[7] = "* Some monsters have#  unique ways of gettin'#  their thoughts out.";
@@ -167,24 +165,24 @@ switch (scene)
                 message[9] = "* ...";
                 message[10] = "* Ahem.";
                 message[11] = "* Can anyone CORRECTLY#  guess what game I'm#  hintin' at?";
-                prt[6] = 412;
-                prt[7] = 407;
-                prt[8] = 410;
-                prt[9] = 428;
-                prt[10] = 415;
-                prt[11] = 417;
+                prt[6] = spr_portrait_starlo_embarassed_smile;
+                prt[7] = spr_portrait_starlo_distracted;
+                prt[8] = spr_portrait_starlo_embarassed;
+                prt[9] = spr_portrait_starlo_sweat;
+                prt[10] = spr_portrait_starlo_hidden;
+                prt[11] = spr_portrait_starlo_normal;
                 talker[12] = mooch;
                 message[12] = "* Oh! Oh! I know!";
-                prt[12] = 458;
+                prt[12] = spr_portrait_mooch_happy;
                 talker[13] = starlo;
                 message[13] = "* Yes, Mooch.";
-                prt[13] = 417;
+                prt[13] = spr_portrait_starlo_normal;
                 talker[14] = mooch;
                 message[14] = "* A DUEL!";
-                prt[14] = 463;
+                prt[14] = spr_portrait_mooch_smirk;
                 talker[15] = starlo;
                 message[15] = "* Bingo!";
-                prt[15] = 422;
+                prt[15] = spr_portrait_starlo_smile;
             }
             
             if (!global.dialogue_open)
@@ -222,28 +220,28 @@ switch (scene)
             col_modif[0] = make_color_rgb(111, 104, 145);
             talker[0] = ace;
             message[0] = "* No, no. This is all#  wrong.";
-            prt[0] = 435;
+            prt[0] = spr_portrait_ace_stern;
             talker[1] = moray;
             message[1] = "* Oh? What's the matter?";
-            prt[1] = 449;
+            prt[1] = spr_portrait_moray_plain;
             talker[2] = ace;
             message[2] = "* Clover doesn't... look#  right.";
             message[3] = "* Look at their hat. It's#  tattered and practically#  decomposing.";
             message[4] = "* And that iron in their#  holster. What kinda#  peashooter is that?";
-            prt[2] = 435;
-            prt[3] = 437;
-            prt[4] = 435;
+            prt[2] = spr_portrait_ace_stern;
+            prt[3] = spr_portrait_ace_concealed;
+            prt[4] = spr_portrait_ace_stern;
             talker[5] = ed;
             message[5] = "* Cool it, Ace. I'm sure#  they tried their best.";
             message_col[5][0] = "           Ace                                   ";
-            prt[5] = 453;
+            prt[5] = spr_portrait_ed_mad;
             talker[6] = starlo;
             message[6] = "* No, Ace has a point!";
             message[7] = "* What kinda host am I if#  I don't spoil you with#  gifts?";
             message[8] = "* To the weapon store!";
-            prt[6] = 419;
-            prt[7] = 417;
-            prt[8] = 422;
+            prt[6] = spr_portrait_starlo_point;
+            prt[7] = spr_portrait_starlo_normal;
+            prt[8] = spr_portrait_starlo_smile;
         }
         
         if (!global.dialogue_open)
@@ -264,7 +262,7 @@ switch (scene)
     
     case 9:
         cutscene_camera_freeze();
-        scr_audio_fade_out(184, 1);
+        scr_audio_fade_out(mus_feisty, 1);
         timer = 30;
         break;
     

@@ -1,5 +1,3 @@
-var player_character;
-
 if (live_call())
     return global.live_result;
 
@@ -30,7 +28,7 @@ idle_hsp_count = 0;
 idle_vsp_count = 0;
 max_speed_counter = 100;
 speed_sound_noloop = false;
-player_character = global.player_character;
+var player_character = global.player_character;
 
 switch (player_character)
 {
@@ -51,4 +49,4 @@ max_points_trail = 5;
 trail_cc_max = 3;
 trail_cc_start = trail_cc_max - 1;
 trail_cc_current = trail_cc_start;
-trail_sprite = spr_heart_white;
+trail_sprite = 1677;

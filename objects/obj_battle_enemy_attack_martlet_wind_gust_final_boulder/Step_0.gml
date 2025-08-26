@@ -1,5 +1,3 @@
-var box, break_sound, i, debris;
-
 if (live_call())
     return global.live_result;
 
@@ -17,17 +15,17 @@ vspeed += 1;
 if (vspeed > fall_speed)
     vspeed = fall_speed;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if (y >= (box.bbox_bottom - 12))
 {
     instance_destroy();
-    break_sound = audio_play_sound(snd_rock_break, 1, 0);
+    var break_sound = audio_play_sound(snd_rock_break, 1, 0);
     audio_sound_gain(break_sound, 0.7, 0);
     
-    for (i = 0; i < 3; i++)
+    for (var i = 0; i < 3; i++)
     {
-        debris = instance_create_depth(x, y, depth - 1, obj_battle_enemy_attack_martlet_wind_gust_final_boulder_piece);
+        var debris = instance_create_depth(x, y, depth - 1, obj_battle_enemy_attack_martlet_wind_gust_final_boulder_piece);
         debris.hspeed = -3 + (i * 3);
     }
 }

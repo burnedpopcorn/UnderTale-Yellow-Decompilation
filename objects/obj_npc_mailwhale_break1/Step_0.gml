@@ -1,6 +1,6 @@
 interact = 0;
 
-if (keyboard_multicheck_pressed(0) && scr_interact() == true)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true)
     interact = 1;
 
 if (scene < 7)
@@ -90,7 +90,7 @@ switch (scene)
         break;
     
     case 4:
-        cutscene_sfx_play(342, 0.75);
+        cutscene_sfx_play(snd_bell_ring_cow, 0.75);
         break;
     
     case 5:
@@ -111,7 +111,7 @@ switch (scene)
         break;
     
     case 7:
-        cutscene_sfx_play(309, 0.75);
+        cutscene_sfx_play(snd_slide_whistle, 0.75);
         break;
     
     case 8:

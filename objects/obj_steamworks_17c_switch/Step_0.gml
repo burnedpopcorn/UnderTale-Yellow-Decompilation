@@ -1,7 +1,7 @@
 switch (scene)
 {
     case 0:
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
         {
             scr_cutscene_start();
             audio_play_sound(snd_switch, 1, 0);
@@ -32,7 +32,7 @@ switch (scene)
         break;
     
     case 4:
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
         {
             scr_text();
             

@@ -1,5 +1,3 @@
-var turns_passed, stage;
-
 if (instance_exists(obj_battle_enemy_attack_el_bailador_dance) || global.current_hp_enemy <= 0)
 {
     if (image_alpha > min_alpha)
@@ -18,7 +16,7 @@ else if (image_alpha < max_alpha)
         image_alpha = max_alpha;
 }
 
-turns_passed = global.turns_passed;
+var turns_passed = global.turns_passed;
 
 if (turns_passed <= 3)
     image_speed = image_speed_slow;
@@ -62,7 +60,7 @@ with (background_obj)
     }
     else
     {
-        stage = 2536;
+        var stage = 2536;
         alpha_base = (stage.max_alpha - stage.image_alpha) * 0.7142857142857143;
     }
 }

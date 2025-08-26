@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ce2b22c9-4f02-4812-a8e7-a7f05c8e70ce",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e7f26cd7-7d88-4720-a602-99b321dd6a8c",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ffa4afee-1648-4459-b059-e1b24e0c2a26",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cfa53990-c0e9-4ef5-925b-b9e16ccd83a1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f1ced48f-eb2b-4127-83d1-d6e9cda9421f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"29eeeb99-d4ad-4867-a8c3-2f605c66940d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 40,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"59df7a38-d8f9-49ac-9284-5c52d1a06fca","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"96318e79-5ab8-4928-adc8-10f56a692cdf","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ce2b22c9-4f02-4812-a8e7-a7f05c8e70ce","path":"sprites/spr_sousborg_shard_destroy/spr_sousborg_shard_destroy.yy",},},},"Disabled":false,"id":"3db6e288-248f-4e73-8a3f-c5a3a79f5a17","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e7f26cd7-7d88-4720-a602-99b321dd6a8c","path":"sprites/spr_sousborg_shard_destroy/spr_sousborg_shard_destroy.yy",},},},"Disabled":false,"id":"68f947fa-a493-4617-9c6c-49d7f8328ceb","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ffa4afee-1648-4459-b059-e1b24e0c2a26","path":"sprites/spr_sousborg_shard_destroy/spr_sousborg_shard_destroy.yy",},},},"Disabled":false,"id":"19f8508e-fd5f-4ec0-afd4-b426ba61ba22","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cfa53990-c0e9-4ef5-925b-b9e16ccd83a1","path":"sprites/spr_sousborg_shard_destroy/spr_sousborg_shard_destroy.yy",},},},"Disabled":false,"id":"b07aac95-a54c-43fb-bd3f-2277fb1471d1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f1ced48f-eb2b-4127-83d1-d6e9cda9421f","path":"sprites/spr_sousborg_shard_destroy/spr_sousborg_shard_destroy.yy",},},},"Disabled":false,"id":"b74ffcdb-c603-4839-8c9c-db3b8a201aa7","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"29eeeb99-d4ad-4867-a8c3-2f605c66940d","path":"sprites/spr_sousborg_shard_destroy/spr_sousborg_shard_destroy.yy",},},},"Disabled":false,"id":"740ab5db-2c5e-4862-bee5-7cac36ebc5c8","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

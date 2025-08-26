@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -12,7 +10,7 @@ bounce = 0.9;
 p_gravity = 0.8;
 p_friction = 0.9;
 precision = 3;
-rope_sprite = spr_rope_section_example;
+rope_sprite = 3581;
 base_x = x;
 base_y = y;
 r_length = 130;
@@ -30,10 +28,10 @@ alarm[1] = 30;
 points = [];
 array_push(points, [base_x, base_y, base_x, base_y, true, rope_sprite]);
 
-for (i = 0; i < (r_segments - 1); i++)
+for (var i = 0; i < (r_segments - 1); i++)
     array_push(points, [base_x, points[i][1] + (r_length / r_segments), base_x, points[i][1] + (r_length / r_segments), false, rope_sprite]);
 
 sticks = [];
 
-for (i = 0; i < (r_segments - 1); i++)
+for (var i = 0; i < (r_segments - 1); i++)
     array_push(sticks, [points[i], points[i + 1], scr_distance(points[i], points[i + 1]), r_width, 255, 255, false]);

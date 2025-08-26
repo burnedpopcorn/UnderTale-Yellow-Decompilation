@@ -1,13 +1,11 @@
-var x_target, y_target;
-
 if (live_call())
     return global.live_result;
 
 switch (scene)
 {
     case 0:
-        x_target = x_previous + lengthdir_x(30, direction);
-        y_target = y_previous + lengthdir_y(30, direction);
+        var x_target = x_previous + lengthdir_x(30, direction);
+        var y_target = y_previous + lengthdir_y(30, direction);
         
         if (distance_to_point(x_target, y_target) > 0.1)
         {
@@ -30,8 +28,8 @@ switch (scene)
         break;
     
     case 2:
-        x_target = x_previous - lengthdir_x(sign(flying_speed) * 20, direction);
-        y_target = y_previous - lengthdir_y(sign(flying_speed) * 20, direction);
+        var x_target = x_previous - lengthdir_x(sign(flying_speed) * 20, direction);
+        var y_target = y_previous - lengthdir_y(sign(flying_speed) * 20, direction);
         
         if (distance_to_point(x_target, y_target) > 0.1)
         {

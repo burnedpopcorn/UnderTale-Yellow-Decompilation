@@ -1,6 +1,4 @@
-var n, pressedText, pressedButton;
-
-if (keyboard_multicheck_pressed(0) && control_test == false)
+if (keyboard_multicheck_pressed(vk_nokey) && control_test == false)
 {
     if (binding == false)
         audio_play_sound(snd_confirm, 1, 0);
@@ -18,7 +16,7 @@ if (keyboard_multicheck_pressed(0) && control_test == false)
         global.buttonText3 = "4(Y)";
         global.button1 = gp_face1;
         global.button2 = gp_face2;
-        global.button3 = 32772;
+        global.button3 = gp_face4;
         global.gamepad_deadzone = 0.15;
     }
     
@@ -35,7 +33,7 @@ if (binding == false && control_test == false)
     {
         audio_play_sound(snd_mainmenu_select, 1, 0);
         
-        for (n = 0; n <= 6; n++)
+        for (var n = 0; n <= 6; n++)
         {
             if (p[n] == true && n < 6)
             {
@@ -50,7 +48,7 @@ if (binding == false && control_test == false)
     {
         audio_play_sound(snd_mainmenu_select, 1, 0);
         
-        for (n = 0; n <= 6; n++)
+        for (var n = 0; n <= 6; n++)
         {
             if (p[n] == true && n > 0)
             {
@@ -93,6 +91,8 @@ if (keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X")))
     
     exit;
 }
+
+var pressedButton, pressedText;
 
 if (binding == true && waiter == 1)
 {

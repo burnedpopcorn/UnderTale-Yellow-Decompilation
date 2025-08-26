@@ -1,5 +1,3 @@
-var i;
-
 xs = 1;
 ys = 1;
 sizex = 1;
@@ -29,7 +27,7 @@ selection_max = 3;
 
 if (global.player_has_satchel == true)
 {
-    for (i = 1; i <= 5; i++)
+    for (var i = 1; i <= 5; i++)
     {
         if (choice[i] == "NOTHING")
         {
@@ -43,7 +41,7 @@ if (global.player_has_satchel == true)
 
 if (global.party_member != -4)
 {
-    for (i = 1; i <= 5; i++)
+    for (var i = 1; i <= 5; i++)
     {
         if (choice[i] == "NOTHING")
         {

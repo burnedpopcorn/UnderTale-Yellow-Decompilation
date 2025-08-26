@@ -1,7 +1,7 @@
 function cutscene_camera_move()
 {
     if (!instance_exists(obj_camera))
-        instance_create(__view_get(e__VW.XView, 0) + (__view_get(e__VW.WView, 0) * 0.5), __view_get(e__VW.YView, 0) + (__view_get(e__VW.HView, obj_quote_battle_ceroba_outro_4) * 0.5), obj_camera);
+        instance_create(__view_get(e__VW.XView, 0) + (__view_get(e__VW.WView, 0) * 0.5), __view_get(e__VW.YView, 0) + (__view_get(e__VW.HView, 0) * 0.5), obj_camera);
     
     __view_set(e__VW.Object, 0, obj_camera);
     obj_camera.move = true;

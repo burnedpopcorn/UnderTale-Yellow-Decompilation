@@ -8,7 +8,7 @@ scr_text();
 
 with (msg)
 {
-    sndfnt = 99;
+    sndfnt = sndfnt_default;
     skippable = false;
     portrait = false;
     position = 0;

@@ -25,7 +25,7 @@ switch (attack_tick)
     
     case 115:
         with (instance_create_depth(320, room_height + 60, -200, obj_battle_enemy_attack_ceroba_jumping_flower))
-            ring_object = 2725;
+            ring_object = 2726;
         
         break;
     
@@ -35,13 +35,13 @@ switch (attack_tick)
     
     case 145:
         with (instance_create_depth(240, room_height + 60, -200, obj_battle_enemy_attack_ceroba_jumping_flower))
-            ring_object = 2725;
+            ring_object = 2726;
         
         break;
     
     case 165:
         with (instance_create_depth(400, room_height + 60, -200, obj_battle_enemy_attack_ceroba_jumping_flower))
-            ring_object = 2727;
+            ring_object = 2728;
         
         break;
     

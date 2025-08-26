@@ -1,15 +1,13 @@
 function scr_enemy_attack_insomnitot_stars()
 {
-    var distance, max_variations, sector, sector_2;
-    
     global.attack_counter_max = 20;
     
     if (global.attack_counter == 0)
     {
-        distance = 20;
-        max_variations = 4;
-        sector = irandom_range(0, 1);
-        sector_2 = irandom_range(0, 1);
+        var distance = 20;
+        var max_variations = 4;
+        var sector = irandom_range(0, 1);
+        var sector_2 = irandom_range(0, 1);
         
         if (sector == 0)
         {

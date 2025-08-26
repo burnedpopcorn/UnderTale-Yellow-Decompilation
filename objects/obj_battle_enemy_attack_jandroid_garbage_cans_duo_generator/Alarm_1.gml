@@ -1,6 +1,4 @@
-var box;
-
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if (excluded_number != 1)
     instance_create_depth(box.bbox_left - 20, box.bbox_top + 20, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_jandroid_slippery_floor_bucket);

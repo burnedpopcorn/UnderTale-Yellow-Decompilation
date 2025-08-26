@@ -1,9 +1,9 @@
-function live_method(argument0, argument1)
+function live_method(arg0, arg1)
 {
     return undefined;
 }
 
-function live_method_get_self(argument0)
+function live_method_get_self(arg0)
 {
     return undefined;
 }

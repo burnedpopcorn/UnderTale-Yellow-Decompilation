@@ -1,6 +1,4 @@
-var heart;
-
-heart = obj_heart_battle_fighting_red;
+var heart = obj_heart_battle_fighting_red;
 attack_state = 1;
 direction = point_direction(x, y, heart.x, heart.y);
 speed = -charge_speed;

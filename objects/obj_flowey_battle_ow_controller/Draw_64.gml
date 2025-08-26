@@ -1,13 +1,11 @@
-var xx, xx2, yy, yy2, hp_current;
-
 if (live_call())
     return global.live_result;
 
-xx = 140;
-xx2 = 180;
-yy = 220;
-yy2 = 230;
-hp_current = global.current_hp_self / global.max_hp_self;
+var xx = 140;
+var xx2 = 180;
+var yy = 220;
+var yy2 = 230;
+var hp_current = global.current_hp_self / global.max_hp_self;
 draw_set_color(c_black);
 draw_set_alpha(gui_alpha);
 draw_set_color(c_white);

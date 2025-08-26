@@ -38,7 +38,7 @@ if (interact == 1)
                 message[0] = "* Oh, yes, I forgot to mention#  that we are L-I-V-E live right#  now !";
                 message[1] = "* We have a lovely audience#  tonight !";
                 message[2] = "* Say \"hi\", audience ! !";
-                message[3] = "* . .";
+                message[3] = "* . . .";
                 message[4] = "* Must be a w-w-weak signal ? ?";
             }
             

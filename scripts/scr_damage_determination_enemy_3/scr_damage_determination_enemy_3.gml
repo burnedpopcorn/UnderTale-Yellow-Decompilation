@@ -1,8 +1,6 @@
-function scr_damage_determination_enemy_3(argument0)
+function scr_damage_determination_enemy_3(arg0)
 {
-    var b_diff, st_temp, b_inc;
-    
-    switch (argument0)
+    switch (arg0)
     {
         case "Gun Single":
             global.attacking_damage_stat_betrayal = global.current_hp_enemy_3;
@@ -31,7 +29,8 @@ function scr_damage_determination_enemy_3(argument0)
             global.attacking_damage_stat_critical_3 = round((((global.player_weapon_attack + global.player_weapon_modifier_attack + global.player_attack) - global.enemy_defense_stat_3) + 2) * 2.5);
             r = random_range(0, 2);
             b = 1.5;
-            b_diff = 1 / circle_count;
+            var b_diff = 1 / circle_count;
+            var st_temp;
             
             for (st_temp = shot_total; st_temp > 3; st_temp -= 3)
                 b += b_diff;
@@ -58,7 +57,7 @@ function scr_damage_determination_enemy_3(argument0)
             global.attacking_damage_stat_critical_3 = round((((global.player_weapon_attack + global.player_weapon_modifier_attack + global.player_attack) - global.enemy_defense_stat_3) + 2) * 3.5);
             r = random_range(0, 2);
             b = 0;
-            b_inc = 0.5833333333333334;
+            var b_inc = 0.5833333333333334;
             
             switch (shot_type)
             {
@@ -73,6 +72,8 @@ function scr_damage_determination_enemy_3(argument0)
                 default:
                     b = 0;
             }
+            
+            var st_temp;
             
             for (st_temp = shot_total_pre; st_temp > 3; st_temp -= 3)
                 b += b_inc;
@@ -99,7 +100,8 @@ function scr_damage_determination_enemy_3(argument0)
             global.attacking_damage_stat_critical_3 = round((((global.player_weapon_attack + global.player_weapon_modifier_attack + global.player_attack) - global.enemy_defense_stat) + 2) * 3.5);
             r = random_range(0, 2);
             b = 0;
-            b_inc = 0.5833333333333334;
+            var b_inc = 0.5833333333333334;
+            var st_temp;
             
             for (st_temp = shot_total; st_temp > 3; st_temp -= 3)
                 b += b_inc;
@@ -179,7 +181,7 @@ function scr_damage_determination_enemy_3(argument0)
         }
         else if (global.enemy_vulnerable_3 == true)
         {
-            if ((argument0 == "Knife Single" && x == 319) || ((argument0 == "Gun Single" || argument0 == "Revolver Single") && b == 3.5) || ((argument0 == "Gun Multi" || argument0 == "Revolver Multi") && b == 3.5) || global.current_hp_enemy_3 <= global.attacking_damage_stat_critical_3)
+            if ((arg0 == "Knife Single" && x == 319) || ((arg0 == "Gun Single" || arg0 == "Revolver Single") && b == 3.5) || ((arg0 == "Gun Multi" || arg0 == "Revolver Multi") && b == 3.5) || global.current_hp_enemy_3 <= global.attacking_damage_stat_critical_3)
             {
                 global.last_hp_enemy_3 = global.current_hp_enemy_3;
                 global.current_hp_enemy_3 -= global.attacking_damage_stat_critical_3;

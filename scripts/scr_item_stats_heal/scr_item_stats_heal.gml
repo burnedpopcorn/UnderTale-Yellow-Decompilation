@@ -1,6 +1,6 @@
-function scr_item_stats_heal(argument0)
+function scr_item_stats_heal(arg0)
 {
-    switch (argument0)
+    switch (arg0)
     {
         case "Lemonade":
             return 7;

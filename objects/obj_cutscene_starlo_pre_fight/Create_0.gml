@@ -1,5 +1,3 @@
-var actor_starlo;
-
 scene = 0;
 cutscene_timer = 0;
 cutscene_music = 0;
@@ -32,7 +30,7 @@ else if (global.dunes_flag[24] == 1 && global.route == 1)
     exit;
 }
 
-actor_starlo = instance_create(160, 80, obj_starlo_npc);
+var actor_starlo = instance_create(160, 80, obj_starlo_npc);
 
 with (actor_starlo)
 {

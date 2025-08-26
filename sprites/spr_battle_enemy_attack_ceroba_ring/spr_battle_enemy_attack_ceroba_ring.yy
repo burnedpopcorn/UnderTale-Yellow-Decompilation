@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"18ca7ece-dc37-4da5-ab3d-e0d74c884015",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bd5eaeee-c7c3-4368-b798-9884d2f896e0",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"38b5ba74-87f3-4219-8706-d2b8a06f902a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6a3e372c-aaef-406f-9332-e255807bf07c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"39102ad6-5fcc-4e6a-adf2-f9cfa7cf9bf2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8305cbd8-6120-4431-8853-1ea534d1e6e5",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 51,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8991ba10-2fe4-4535-9dd0-ea26cf2e3f55","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6e767cf7-665b-45c3-b065-d587f4b0e4a6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"18ca7ece-dc37-4da5-ab3d-e0d74c884015","path":"sprites/spr_battle_enemy_attack_ceroba_ring/spr_battle_enemy_attack_ceroba_ring.yy",},},},"Disabled":false,"id":"f8003770-57b3-4485-8892-14397cdf8586","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bd5eaeee-c7c3-4368-b798-9884d2f896e0","path":"sprites/spr_battle_enemy_attack_ceroba_ring/spr_battle_enemy_attack_ceroba_ring.yy",},},},"Disabled":false,"id":"9fc63be9-72cd-4651-96c6-4ba6847f3d4d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"38b5ba74-87f3-4219-8706-d2b8a06f902a","path":"sprites/spr_battle_enemy_attack_ceroba_ring/spr_battle_enemy_attack_ceroba_ring.yy",},},},"Disabled":false,"id":"0478243d-3531-433c-bbd1-156eb1d92fe3","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6a3e372c-aaef-406f-9332-e255807bf07c","path":"sprites/spr_battle_enemy_attack_ceroba_ring/spr_battle_enemy_attack_ceroba_ring.yy",},},},"Disabled":false,"id":"ac62c392-6361-408f-b44f-7c8d213acfbe","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"39102ad6-5fcc-4e6a-adf2-f9cfa7cf9bf2","path":"sprites/spr_battle_enemy_attack_ceroba_ring/spr_battle_enemy_attack_ceroba_ring.yy",},},},"Disabled":false,"id":"c5c7c15b-5cb5-461d-959a-14db8e289194","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8305cbd8-6120-4431-8853-1ea534d1e6e5","path":"sprites/spr_battle_enemy_attack_ceroba_ring/spr_battle_enemy_attack_ceroba_ring.yy",},},},"Disabled":false,"id":"abbc4c7b-abad-44ea-a137-6a54951b8bdd","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleWildEast",
+    "path": "texturegroups/BattleWildEast",
   },
   "type": 0,
   "VTile": false,

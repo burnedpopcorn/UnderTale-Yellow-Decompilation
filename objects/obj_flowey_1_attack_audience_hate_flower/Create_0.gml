@@ -1,9 +1,7 @@
-var box;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 image_alpha = 0;
 speed = clamp(7 - (abs(320 - x) * 0.01), 0, 999);
 target_x = irandom_range(box.bbox_left, box.bbox_right);

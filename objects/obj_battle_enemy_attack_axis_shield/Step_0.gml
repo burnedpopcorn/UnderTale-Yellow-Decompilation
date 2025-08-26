@@ -1,8 +1,6 @@
-var impact_sound;
-
 if (shield_hit == true)
 {
-    impact_sound = audio_play_sound(snd_axis_trash_can_hit, 1, 0);
+    var impact_sound = audio_play_sound(snd_axis_trash_can_hit, 1, 0);
     audio_sound_pitch(impact_sound, random_range(0.7, 1.3));
     shield_offset = shield_offset_min;
     shield_hit = false;

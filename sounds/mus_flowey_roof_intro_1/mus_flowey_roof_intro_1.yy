@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 20.0,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/flowey_roof_intro_1.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "flowey_roof_intro_1.ogg",
+  "type": 1,
   "volume": 1.0,
 }

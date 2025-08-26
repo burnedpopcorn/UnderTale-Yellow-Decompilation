@@ -32,11 +32,11 @@ switch (global.attack_cycle)
     
     case 9:
         message[0] = "OK.";
-        message[1] = "OK. .";
+        message[1] = "OK. .. .";
         message[2] = "LET M3 CATCH#mY STEAM.";
-        message[3] = ". .";
+        message[3] = ". . .";
         message[4] = "I THINK. .";
-        message[5] = "IT is TIME#FOR A BrEAK..#. .";
+        message[5] = "IT is TIME#FOR A BrEAK..#. . .";
         scr_audio_fade_out(global.battle_music, 1000);
         message_end = 5;
         break;

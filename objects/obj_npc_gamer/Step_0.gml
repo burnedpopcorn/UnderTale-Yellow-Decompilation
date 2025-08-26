@@ -11,9 +11,9 @@ if (interact)
             with (msg)
             {
                 color = true;
-                col_modif[0] = 16711680;
+                col_modif[0] = c_blue;
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* What's up- I mean howdy, human.";
                 message[1] = "* Don't tell North Star about#  this, but I have a secret.";
                 message[2] = "* When everyone is busy or#  sleeping, I sneak out.";
@@ -33,7 +33,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I heard one of the arcade#  machines used to be named \"Luck#  Man.\"";
                 message[1] = "* They changed it because...#  Well I'm sure you know why.\t";
                 message[2] = "* Monsters kept scribbling the#  word \"bad\" in front of \"luck#  man\"!!!";
@@ -46,7 +46,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Do you think they'll ever#  invent another videogame?";
                 message[1] = "* Kind of a missed opportunity to#  only make three.";
             }

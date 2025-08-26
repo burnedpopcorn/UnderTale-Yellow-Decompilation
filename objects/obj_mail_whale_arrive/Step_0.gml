@@ -17,7 +17,7 @@ switch (scene)
         obj_pl.direction = 270;
         obj_pl.image_alpha = 1;
         sprite_index = spr_mail_whale_basket_empty_yellow;
-        cutscene_sfx_play(373, 1);
+        cutscene_sfx_play(snd_playerjump, 1);
         break;
     
     case 2:

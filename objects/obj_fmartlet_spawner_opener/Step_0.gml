@@ -1,9 +1,7 @@
-var battle_box, sound_noloop, i, feather, speed_perc, walk_speed, move_x, move_y;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 switch (attack_tick)
 {
@@ -44,12 +42,12 @@ switch (attack_tick)
         break;
     
     case 210:
-        sound_noloop = false;
-        i = battle_box.bbox_left + 12;
+        var sound_noloop = false;
+        var i = battle_box.bbox_left + 12;
         
         while (i < (battle_box.bbox_left + 4 + 140))
         {
-            feather = instance_create_depth(i, battle_box.bbox_top - 20, -100, obj_fmartlet_feather_straight);
+            var feather = instance_create_depth(i, battle_box.bbox_top - 20, -100, obj_fmartlet_feather_straight);
             feather.direction = 270;
             
             if (sound_noloop == false)
@@ -64,12 +62,12 @@ switch (attack_tick)
         break;
     
     case 245:
-        sound_noloop = false;
-        i = battle_box.bbox_top + 12;
+        var sound_noloop = false;
+        var i = battle_box.bbox_top + 12;
         
         while (i < (battle_box.bbox_top + 4 + 70))
         {
-            feather = instance_create_depth(battle_box.bbox_left - 20, i, -100, obj_fmartlet_feather_straight);
+            var feather = instance_create_depth(battle_box.bbox_left - 20, i, -100, obj_fmartlet_feather_straight);
             feather.direction = 0;
             
             if (sound_noloop == false)
@@ -84,12 +82,12 @@ switch (attack_tick)
         break;
     
     case 250:
-        sound_noloop = false;
-        i = battle_box.bbox_top + 4 + 70;
+        var sound_noloop = false;
+        var i = battle_box.bbox_top + 4 + 70;
         
         while (i < (battle_box.bbox_top + 4 + 140))
         {
-            feather = instance_create_depth(battle_box.bbox_right + 20, i, -100, obj_fmartlet_feather_straight);
+            var feather = instance_create_depth(battle_box.bbox_right + 20, i, -100, obj_fmartlet_feather_straight);
             feather.direction = 180;
             
             if (sound_noloop == false)
@@ -104,11 +102,11 @@ switch (attack_tick)
         break;
     
     case 280:
-        sound_noloop = false;
+        var sound_noloop = false;
         
-        for (i = 0; i < 70; i += 14)
+        for (var i = 0; i < 70; i += 14)
         {
-            feather = instance_create_depth(battle_box.bbox_right + 20 + lengthdir_x(i, 45), battle_box.bbox_bottom + lengthdir_y(i, 45), -100, obj_fmartlet_feather_straight);
+            var feather = instance_create_depth(battle_box.bbox_right + 20 + lengthdir_x(i, 45), battle_box.bbox_bottom + lengthdir_y(i, 45), -100, obj_fmartlet_feather_straight);
             feather.direction = 135;
             
             if (sound_noloop == false)
@@ -121,11 +119,11 @@ switch (attack_tick)
         break;
     
     case 285:
-        sound_noloop = false;
+        var sound_noloop = false;
         
-        for (i = 0; i < 70; i += 14)
+        for (var i = 0; i < 70; i += 14)
         {
-            feather = instance_create_depth((battle_box.bbox_left - 20) + lengthdir_x(i, 225), (battle_box.bbox_top - 20) + lengthdir_y(i, 225), -100, obj_fmartlet_feather_straight);
+            var feather = instance_create_depth((battle_box.bbox_left - 20) + lengthdir_x(i, 225), (battle_box.bbox_top - 20) + lengthdir_y(i, 225), -100, obj_fmartlet_feather_straight);
             feather.direction = 315;
             
             if (sound_noloop == false)
@@ -223,7 +221,7 @@ switch (attack_tick)
                 if (!instance_exists(obj_martlet_final_slowdown))
                     instance_create_depth(0, 0, obj_martlet_final_base.depth - 10, obj_martlet_final_slowdown);
                 
-                speed_perc = _speed_perc;
+                var speed_perc = _speed_perc;
                 
                 with (obj_martlet_attack_glass)
                     vspeed = other.glass_speed_original * speed_perc;
@@ -253,12 +251,12 @@ switch (attack_tick)
             case 2:
                 hint_draw = true;
                 
-                if (keyboard_multicheck_pressed(1))
+                if (keyboard_multicheck_pressed(vk_anykey))
                 {
-                    walk_speed = global.speed_self + (1 * sign(global.current_sp_self));
-                    move_x = 0;
-                    move_y = -1;
-                    battle_box = 3154;
+                    var walk_speed = global.speed_self + (1 * sign(global.current_sp_self));
+                    var move_x = 0;
+                    var move_y = -1;
+                    battle_box = obj_dialogue_box_battle_transformation_any;
                     
                     with (obj_heart_battle_fighting_yellow_final)
                     {
@@ -277,7 +275,7 @@ switch (attack_tick)
                 break;
             
             case 3:
-                speed_perc = _speed_perc;
+                var speed_perc = _speed_perc;
                 
                 with (obj_martlet_attack_glass)
                     vspeed = other.glass_speed_original * speed_perc;

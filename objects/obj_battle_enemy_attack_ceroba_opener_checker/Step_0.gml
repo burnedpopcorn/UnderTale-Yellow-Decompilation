@@ -1,5 +1,3 @@
-var explosion;
-
 switch (counter_current)
 {
     case 0:
@@ -80,10 +78,10 @@ switch (counter_current)
             exit;
         }
         
-        explosion = instance_create(320, obj_dialogue_box_battle_transformation_any.bbox_bottom + 60, obj_battle_enemy_attack_ceroba_flower_exploding);
+        var explosion = instance_create(320, obj_dialogue_box_battle_transformation_any.bbox_bottom + 60, obj_battle_enemy_attack_ceroba_flower_exploding);
         
         with (explosion)
-            ring_object = 2727;
+            ring_object = 2728;
         
         counter_timer = 30;
         counter_current++;

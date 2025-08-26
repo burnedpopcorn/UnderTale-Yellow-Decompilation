@@ -31,7 +31,7 @@ if (waiter == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* Hey, just in time!";
                     message[1] = "* I'm sure you noticed all this#  mining mumbo jumbo lying around,#  yea?";
                     message[2] = "* Well, Corporate said we have to#  solve puzzles as we work to#  exercise the ol' noggin.";
@@ -53,7 +53,7 @@ if (waiter == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* What do ya need?";
                     ch_msg = 0;
                     ch[1] = "Can you help me?";
@@ -75,7 +75,7 @@ if (waiter == 1)
                 with (msg)
                 {
                     portrait = false;
-                    sndfnt = 99;
+                    sndfnt = sndfnt_default;
                     message[0] = "* You're not gonna solve the#  puzzle by talking to me.";
                     message[1] = "* Kids these days are so#  lazy, I swear.";
                 }

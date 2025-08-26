@@ -1,8 +1,6 @@
-function tile_set_background(argument0, argument1)
+function tile_set_background(arg0, arg1)
 {
-    var __index, __background;
-    
-    __index = argument0;
-    __background = argument1;
+    var __index = arg0;
+    var __background = arg1;
     return layer_tile_change(__index, __background);
 }

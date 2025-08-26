@@ -1,7 +1,7 @@
 depth = -999;
 interact = 0;
 
-if (keyboard_multicheck_pressed(0) && scr_interact() == true)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true)
     interact = 1;
 
 if (instance_exists(obj_dialogue) && is_talking == true)

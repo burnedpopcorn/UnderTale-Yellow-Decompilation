@@ -1,9 +1,7 @@
-var battle_box, base_speed, angle_dif;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 if (dir_start == -1)
 {
@@ -17,7 +15,7 @@ if (image_alpha < 1)
 }
 else if (noloop == false)
 {
-    base_speed = 12;
+    var base_speed = 12;
     
     switch (gravity_direction)
     {
@@ -43,14 +41,14 @@ if (noloop == true && dir_switch == false)
     if (bomb_collision_check())
     {
         dir_switch = true;
-        angle_dif = angle_difference(gravity_direction, point_direction(x, y, obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y));
+        var angle_dif = angle_difference(gravity_direction, point_direction(x, y, obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y));
         gravity_direction -= (angle_dif * 0.01);
     }
 }
 
 if (dir_switch)
 {
-    angle_dif = angle_difference(gravity_direction, dir_start - 180);
+    var angle_dif = angle_difference(gravity_direction, dir_start - 180);
     gravity_direction -= (angle_dif * 0.5);
     gravity = 0.8;
     

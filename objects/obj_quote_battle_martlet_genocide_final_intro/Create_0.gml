@@ -1,5 +1,3 @@
-var turns_passed;
-
 text_effect = "twitchy";
 attack = false;
 scene = 0;
@@ -7,7 +5,7 @@ cutscene_timer = 0;
 skippable = true;
 message_adv = false;
 fade_out_gui = true;
-turns_passed = global.turns_passed;
+var turns_passed = global.turns_passed;
 message[0] = "Not wasting any#time, huh?";
 message[1] = "...";
 message[2] = "You know...";

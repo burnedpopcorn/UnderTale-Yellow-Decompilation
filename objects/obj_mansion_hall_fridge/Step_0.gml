@@ -1,5 +1,3 @@
-var msg_number;
-
 event_inherited();
 
 if (interact)
@@ -13,7 +11,7 @@ if (waiter)
         
         with (msg)
         {
-            sndfnt_array[0] = 391;
+            sndfnt_array[0] = snd_talk_default;
             ch_msg = 1;
             ch[1] = "Yes";
             ch[2] = "No";
@@ -24,18 +22,20 @@ if (waiter)
             {
                 if (global.party_member != -4)
                 {
-                    sndfnt_array[2] = 102;
+                    sndfnt_array[2] = snd_talk_martlet;
                     message[2] = "* You that hungry?";
                     message[3] = "* Um, alright then.    ";
                     message[4] = "* I suppose she won't#  miss it... right?";
-                    prt[2] = 311;
-                    prt[3] = 324;
-                    prt[4] = 321;
-                    sndfnt_array[5] = 391;
+                    prt[2] = spr_martlet_head_confused;
+                    prt[3] = spr_martlet_head_questioning;
+                    prt[4] = spr_martlet_head_moderate;
+                    sndfnt_array[5] = snd_talk_default;
                 }
                 
                 if (scr_item("Corn Chowder"))
                 {
+                    var msg_number;
+                    
                     if (global.party_member != -4)
                         msg_number = 5;
                     else
@@ -46,6 +46,8 @@ if (waiter)
                 }
                 else
                 {
+                    var msg_number;
+                    
                     if (global.party_member != -4)
                         msg_number = 5;
                     else

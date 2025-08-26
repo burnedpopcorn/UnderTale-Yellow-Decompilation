@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4a89963f-ec68-46c0-aac8-8abea935b74e",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"031659fc-4cf4-447e-9f21-8a91fd0b9d06",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"957c8177-4287-496c-b68b-e23186fd96d9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6d80f517-84e4-4507-9faa-180a35647352",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 20,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b60520dd-d392-4ef0-889c-c733315045d1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"019e880a-0fb3-4974-b9ae-d7619db81772","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4a89963f-ec68-46c0-aac8-8abea935b74e","path":"sprites/spr_hotland_food_enjoyer/spr_hotland_food_enjoyer.yy",},},},"Disabled":false,"id":"bef169da-a782-43a3-b48c-27e4d84872d9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"031659fc-4cf4-447e-9f21-8a91fd0b9d06","path":"sprites/spr_hotland_food_enjoyer/spr_hotland_food_enjoyer.yy",},},},"Disabled":false,"id":"21a1bf07-9ae6-42a2-aae6-b2979b98c5ad","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"957c8177-4287-496c-b68b-e23186fd96d9","path":"sprites/spr_hotland_food_enjoyer/spr_hotland_food_enjoyer.yy",},},},"Disabled":false,"id":"a328df79-cbff-42f9-a05f-a751771784cb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6d80f517-84e4-4507-9faa-180a35647352","path":"sprites/spr_hotland_food_enjoyer/spr_hotland_food_enjoyer.yy",},},},"Disabled":false,"id":"ec964d3e-5655-4972-a639-93134a5a8970","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Hotland",
+    "path": "texturegroups/Hotland",
   },
   "type": 0,
   "VTile": false,

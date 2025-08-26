@@ -25,7 +25,7 @@ if (sprite_index == spr_storm_fan_stop)
         image_speed = 0;
 }
 
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
     waiter = 1;
 
 if (waiter == 1)

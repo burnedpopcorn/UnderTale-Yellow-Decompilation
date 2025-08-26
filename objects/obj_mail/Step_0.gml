@@ -22,7 +22,7 @@ if (global.up_key)
     alarm[0] = 15;
 }
 
-if (keyboard_multicheck_pressed(1))
+if (keyboard_multicheck_pressed(vk_anykey))
     instance_destroy();
 
 if (scrolling_active)

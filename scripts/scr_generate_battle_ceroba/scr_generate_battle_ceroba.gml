@@ -1,7 +1,5 @@
 function scr_generate_battle_ceroba()
 {
-    var spawn_x, spawn_y;
-    
     if (live_call())
         return global.live_result;
     
@@ -71,8 +69,8 @@ function scr_generate_battle_ceroba()
     audio_extend = false;
     global.sound_carry_battle = false;
     global.mettaton_voice_count = 1;
-    spawn_x = 318;
-    spawn_y = 240;
+    var spawn_x = 318;
+    var spawn_y = 240;
     instance_create_depth(spawn_x - 14, spawn_y - 99, 100, obj_ceroba_staff);
     instance_create_depth(spawn_x + 5, spawn_y - 177, 100, obj_ceroba_ponytail);
     instance_create_depth(spawn_x - 18, spawn_y - 116, 100, obj_ceroba_hand_left);

@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 57.561344,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "mus/honeydew_lodge.ogg",
-  "type": 0,
+  "sampleRate": 32000,
+  "soundFile": "honeydew_lodge.ogg",
+  "type": 1,
   "volume": 1.0,
 }

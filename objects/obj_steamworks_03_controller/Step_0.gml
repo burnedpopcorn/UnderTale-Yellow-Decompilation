@@ -1,6 +1,4 @@
-var actor_ceroba;
-
-actor_ceroba = 1161;
+var actor_ceroba = obj_ceroba_npc;
 
 switch (scene)
 {
@@ -20,7 +18,7 @@ switch (scene)
         {
             talker[0] = actor_ceroba;
             message[0] = "* I see something. Follow#  me.";
-            prt[0] = 393;
+            prt[0] = spr_portrait_ceroba_surprised;
         }
         
         break;

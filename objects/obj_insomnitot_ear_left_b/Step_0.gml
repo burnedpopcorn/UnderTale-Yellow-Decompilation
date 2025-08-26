@@ -1,7 +1,5 @@
-var enemy_dead_2, enemy_spared_2;
-
-enemy_dead_2 = global.enemy_dead_2;
-enemy_spared_2 = global.enemy_spared_2;
+var enemy_dead_2 = global.enemy_dead_2;
+var enemy_spared_2 = global.enemy_spared_2;
 
 if (enemy_dead_2 == false && enemy_spared_2 == false)
     image_alpha = global.image_alpha_enemy_attacking;

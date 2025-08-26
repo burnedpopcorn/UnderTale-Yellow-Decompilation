@@ -70,7 +70,7 @@ function cts_shufflers_puzzle()
     
     if (timer == 90)
     {
-        scr_audio_fade(156, 500);
+        scr_audio_fade(mus_occupied_turf_yellow, 500);
         
         with (obj_snowdin_13_shuffler_overworld_yellow)
             has_ball = false;

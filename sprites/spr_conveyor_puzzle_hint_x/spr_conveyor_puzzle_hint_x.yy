@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f35f4050-353d-4e79-a318-87354c270380",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dd6fd512-42ea-411e-bf55-de32a05a6f1e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"14949c8f-cdaf-4859-9132-c96a2e626158",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"acd85720-4a57-4c21-b74b-d057e60400e5",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 15,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e1c307c8-f820-4682-9727-85f25f286032","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cf61914e-a9eb-4b10-ac77-64cec03053bf","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f35f4050-353d-4e79-a318-87354c270380","path":"sprites/spr_conveyor_puzzle_hint_x/spr_conveyor_puzzle_hint_x.yy",},},},"Disabled":false,"id":"260b8396-cc84-4286-bef3-348691f3b0bc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dd6fd512-42ea-411e-bf55-de32a05a6f1e","path":"sprites/spr_conveyor_puzzle_hint_x/spr_conveyor_puzzle_hint_x.yy",},},},"Disabled":false,"id":"05fa1de4-3653-4f2e-9622-bdcd603e0c6f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"14949c8f-cdaf-4859-9132-c96a2e626158","path":"sprites/spr_conveyor_puzzle_hint_x/spr_conveyor_puzzle_hint_x.yy",},},},"Disabled":false,"id":"5675e523-f5f4-4066-8626-4b4915fbe5ec","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"acd85720-4a57-4c21-b74b-d057e60400e5","path":"sprites/spr_conveyor_puzzle_hint_x/spr_conveyor_puzzle_hint_x.yy",},},},"Disabled":false,"id":"9b9e4844-5189-4829-8205-bf899fbd60a5","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Steamworks",
+    "path": "texturegroups/Steamworks",
   },
   "type": 0,
   "VTile": false,

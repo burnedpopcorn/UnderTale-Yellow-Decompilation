@@ -20,7 +20,7 @@ switch (scene)
         with (msg)
         {
             position = 0;
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             
             if (global.meta_flowey_fight_count == 0)
             {
@@ -270,7 +270,7 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_sfx_play(263, 1);
+        cutscene_sfx_play(snd_toy_squeak, 1);
         break;
     
     case 3:
@@ -284,7 +284,7 @@ switch (scene)
         with (msg)
         {
             position = 0;
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "* Hahahahaha!!!";
             message[1] = "* Alright, alright, I'll let you#  go.";
             message[2] = "* I do need a little time to#  practice my intro monologue,#  though.";

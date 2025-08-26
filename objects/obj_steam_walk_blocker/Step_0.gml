@@ -1,5 +1,3 @@
-var i;
-
 if (live_call())
     return global.live_result;
 
@@ -31,9 +29,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             
-            for (i = 0; i < array_length(other.message); i++)
+            for (var i = 0; i < array_length(other.message); i++)
             {
                 message[i] = other.message[i];
                 prt[i] = other.prt[i];

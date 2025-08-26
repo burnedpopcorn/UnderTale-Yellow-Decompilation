@@ -1,8 +1,6 @@
 function scr_recreate_heart_battle_menu_text_dummy_training_pacifist()
 {
-    var last_text_move_select, random_text_move_select;
-    
-    last_text_move_select = global.last_text_move_select;
+    var last_text_move_select = global.last_text_move_select;
     
     if (text_deadlock_1 == true)
     {
@@ -10,24 +8,24 @@ function scr_recreate_heart_battle_menu_text_dummy_training_pacifist()
     }
     else
     {
-        random_text_move_select = irandom_range(1, 3);
+        var random_text_move_select = irandom_range(1, 3);
         
         if (random_text_move_select == 1)
         {
             instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_1);
-            text_deadlock_contents_1 = 3020;
+            text_deadlock_contents_1 = spr_sousborg_egg_fire_burn;
             text_deadlock_1 = true;
         }
         else if (random_text_move_select == 2)
         {
             instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_2);
-            text_deadlock_contents_1 = 3021;
+            text_deadlock_contents_1 = spr_sousborg_egg_smoke;
             text_deadlock_1 = true;
         }
         else if (random_text_move_select == 3)
         {
             instance_create(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, obj_dialogue_battle_move_select_3);
-            text_deadlock_contents_1 = 3022;
+            text_deadlock_contents_1 = spr_credits_SPROUT_BLOOM;
             text_deadlock_1 = true;
         }
     }

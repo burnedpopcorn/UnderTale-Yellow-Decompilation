@@ -1,6 +1,6 @@
-function scr_mail_add(argument0)
+function scr_mail_add(arg0)
 {
-    ds_list_add(global.mail_list, argument0);
+    ds_list_add(global.mail_list, arg0);
     
     if (irandom(global.spam_mail_chance) == 1)
     {

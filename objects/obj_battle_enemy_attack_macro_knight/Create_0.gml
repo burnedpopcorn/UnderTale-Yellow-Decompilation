@@ -3,7 +3,7 @@ if (live_call())
 
 damage_number = scr_determine_damage_number_enemy("macro froggit", "void", "void");
 grav = 0.7;
-battle_box = 3154;
+battle_box = obj_dialogue_box_battle_transformation_any;
 vsp = 0;
 hsp = 0;
 hsp_max = 8 * choose(-1, 1);

@@ -1,10 +1,8 @@
 function scr_battle_core_directory_flavor_text_enemy_1_default_5()
 {
-    var battle_enemy_name, enemy_mode, game_mode;
-    
-    battle_enemy_name = global.battle_enemy_name;
-    enemy_mode = global.enemy_mode;
-    game_mode = global.game_mode;
+    var battle_enemy_name = global.battle_enemy_name;
+    var enemy_mode = global.enemy_mode;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {
@@ -115,7 +113,7 @@ function scr_battle_core_directory_flavor_text_enemy_1_default_5()
         }
         else if (battle_enemy_name == "jandroid duo")
         {
-            message[0] = "* The Jandroid's are trying to#  harmonize.";
+            message[0] = "* The Jandroids are trying to#  harmonize.";
         }
         else if (battle_enemy_name == "ceroba genocide")
         {

@@ -1,8 +1,6 @@
 function scr_dialogue_battle_action_selected_action_3_insomnitot_b()
 {
-    var action_3_selected_count_2;
-    
-    action_3_selected_count_2 = global.action_3_selected_count_2;
+    var action_3_selected_count_2 = global.action_3_selected_count_2;
     
     if (global.enemy_low_hp_2 == true)
     {
@@ -13,7 +11,7 @@ function scr_dialogue_battle_action_selected_action_3_insomnitot_b()
     }
     else if (global.enemy_sparing_2 == true)
     {
-        message[0] = "* You reach for Insomnitot's#  tassle, but think better of#  disturbing its slumber.";
+        message[0] = "* You reach for Insomnitot's#  tassel, but think better of#  disturbing its slumber.";
         global.last_action_selected = "Nothing";
         global.last_action_selected_2 = "Action 3 Sparing";
         global.last_action_selected_3 = "Nothing";

@@ -1,5 +1,3 @@
-var clay_piece;
-
 if (live_call())
     return global.live_result;
 
@@ -46,7 +44,7 @@ switch (scene)
         }
         else
         {
-            clay_piece = instance_create_depth(x, y, -100, obj_battle_enemy_attack_slither_snake_clay_piece);
+            var clay_piece = instance_create_depth(x, y, -100, obj_battle_enemy_attack_slither_snake_clay_piece);
             clay_piece.direction = spawn_direction;
             clay_piece.speed = 10;
             spawn_direction += spawn_direction_inc;

@@ -1,12 +1,10 @@
-var x_target, y_target;
-
 if (live_call())
     return global.live_result;
 
 switch (scene)
 {
     case 0:
-        if (keyboard_multicheck_pressed(0) && scr_interact())
+        if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
         {
             scr_cutscene_start();
             scene++;
@@ -160,8 +158,8 @@ switch (scene)
     
     case 14:
         cutscene_wait(1.5);
-        x_target = camera_get_view_x(view_camera[0]) + 160;
-        y_target = camera_get_view_y(view_camera[0]) + 210;
+        var x_target = camera_get_view_x(view_camera[0]) + 160;
+        var y_target = camera_get_view_y(view_camera[0]) + 210;
         obj_player_npc.x = lerp(obj_player_npc.x, x_target, 0.05);
         obj_player_npc.y = lerp(obj_player_npc.y, y_target, 0.05);
         break;

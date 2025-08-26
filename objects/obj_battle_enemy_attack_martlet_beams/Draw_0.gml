@@ -1,12 +1,10 @@
-var y_original, y_max, x_original, x_max;
-
 if (live_call())
     return global.live_result;
 
-y_original = 0;
-y_max = room_height;
-x_original = 0;
-x_max = room_width;
+var y_original = 0;
+var y_max = room_height;
+var x_original = 0;
+var x_max = room_width;
 draw_set_color(attack_beam_draw_color);
 draw_rectangle(x - (attack_beam_width_current / 2), y_original, x + (attack_beam_width_current / 2), y_max, false);
 draw_rectangle(x - (attack_beam_width_current / 2), y_original, x + (attack_beam_width_current / 2), y_max, true);

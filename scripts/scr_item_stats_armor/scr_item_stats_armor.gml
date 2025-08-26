@@ -1,6 +1,6 @@
-function scr_item_stats_armor(argument0)
+function scr_item_stats_armor(arg0)
 {
-    switch (argument0)
+    switch (arg0)
     {
         case "Worn Hat":
             if (global.option_easymode == true)

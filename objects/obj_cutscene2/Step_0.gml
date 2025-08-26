@@ -1,7 +1,5 @@
-var actor_starlo, actor_ceroba;
-
-actor_starlo = 1169;
-actor_ceroba = 1161;
+var actor_starlo = 1169;
+var actor_ceroba = obj_ceroba_npc;
 
 switch (scene)
 {
@@ -20,9 +18,9 @@ switch (scene)
         {
             message[0] = "* I'm really sorry about#  the pops Starlo.";
             message[1] = "* When I see them...#  It's like a demon takes#  over.";
-            prt[0] = 375;
-            prt[1] = 375;
-            sndfnt_array[0] = 108;
+            prt[0] = spr_portrait_ceroba_default;
+            prt[1] = spr_portrait_ceroba_default;
+            sndfnt_array[0] = snd_talk_ceroba;
             talker[0] = actor_ceroba;
             position = 0;
         }
@@ -46,11 +44,11 @@ switch (scene)
             message[1] = "* You're looking forward#  to some pops after a#  long hard work day...";
             message[2] = "* Only to come home#  just to see...";
             message[3] = "* Just to see...";
-            prt[0] = 419;
-            prt[1] = 419;
-            prt[2] = 406;
-            prt[3] = 406;
-            sndfnt_array[0] = 107;
+            prt[0] = spr_portrait_starlo_point;
+            prt[1] = spr_portrait_starlo_point;
+            prt[2] = spr_portrait_starlo_disappointed;
+            prt[3] = spr_portrait_starlo_disappointed;
+            sndfnt_array[0] = snd_talk_starlo;
             talker[0] = actor_starlo;
             position = 0;
         }
@@ -72,9 +70,9 @@ switch (scene)
         {
             message[0] = "* Argh!";
             message[1] = "* I need time...";
-            prt[0] = 406;
-            prt[1] = 406;
-            sndfnt_array[0] = 107;
+            prt[0] = spr_portrait_starlo_disappointed;
+            prt[1] = spr_portrait_starlo_disappointed;
+            sndfnt_array[0] = snd_talk_starlo;
             talker[0] = actor_starlo;
             position = 0;
         }
@@ -96,9 +94,9 @@ switch (scene)
         {
             message[0] = "* Loool worth it.";
             message[1] = "* Those pops were#  delicious.";
-            prt[0] = 375;
-            prt[1] = 375;
-            sndfnt_array[0] = 108;
+            prt[0] = spr_portrait_ceroba_default;
+            prt[1] = spr_portrait_ceroba_default;
+            sndfnt_array[0] = snd_talk_ceroba;
             talker[0] = actor_ceroba;
             position = 0;
         }
@@ -123,8 +121,8 @@ switch (scene)
         with (msg)
         {
             message[0] = "* What are YOU looking#  at?!";
-            prt[0] = 375;
-            sndfnt_array[0] = 108;
+            prt[0] = spr_portrait_ceroba_default;
+            sndfnt_array[0] = snd_talk_ceroba;
             talker[0] = actor_ceroba;
             position = 0;
         }

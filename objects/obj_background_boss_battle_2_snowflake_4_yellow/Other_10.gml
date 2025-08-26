@@ -1,5 +1,3 @@
-var random_number;
-
 fall_speed = irandom_range(1, 1);
 x_point = x;
 y_point = y;
@@ -13,7 +11,7 @@ starting_position_y = y;
 animation_disjoint_x = 0;
 animation_disjoint_y = 0;
 can_move = false;
-random_number = irandom_range(1, 4);
+var random_number = irandom_range(1, 4);
 
 switch (random_number)
 {

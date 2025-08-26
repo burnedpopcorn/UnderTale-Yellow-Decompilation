@@ -1,7 +1,5 @@
-var box;
-
 damage_number = scr_determine_damage_number_enemy("cactony a", "cactony b", "cactony c");
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 if (x < box.x)
 {

@@ -1,5 +1,3 @@
-var anim_loop_time_half, anim_inc_current;
-
 if (live_call())
     return global.live_result;
 
@@ -38,8 +36,8 @@ if (sprite_index == spr_ceroba_phase_switch && image_index >= 17)
     image_yscale = 1;
 }
 
-anim_loop_time_half = anim_loop_time / 2;
-anim_inc_current = ((anim_stretch_max - 1) / anim_loop_time_half) * anim_inc_multiplier;
+var anim_loop_time_half = anim_loop_time / 2;
+var anim_inc_current = ((anim_stretch_max - 1) / anim_loop_time_half) * anim_inc_multiplier;
 
 if (anim_stage == 1)
 {

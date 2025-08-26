@@ -1,14 +1,12 @@
-var battle_box, gap, i, laser;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-gap = 75;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var gap = 75;
 
-for (i = 0; i < 14; i++)
+for (var i = 0; i < 14; i++)
 {
-    laser = instance_create_depth(battle_box.x, (battle_box.y + (gap * 0.5)) - (i * gap), -100, obj_battle_enemy_attack_axis_blue_laser_grid);
+    var laser = instance_create_depth(battle_box.x, (battle_box.y + (gap * 0.5)) - (i * gap), -100, obj_battle_enemy_attack_axis_blue_laser_grid);
     laser.image_angle = 0;
     laser.speed_target = 2;
 }

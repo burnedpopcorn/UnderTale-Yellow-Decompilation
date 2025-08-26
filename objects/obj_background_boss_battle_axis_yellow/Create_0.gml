@@ -1,5 +1,3 @@
-var bg_color, bg_color_2, a, i;
-
 part_axis_bg_sys = part_system_create();
 part_axis_bg_em = part_emitter_create(part_axis_bg_sys);
 part_system_depth(part_axis_bg_sys, 9999);
@@ -16,8 +14,8 @@ part_axis_bg_dark = part_type_create();
 part_axis_bg_dark_speed = 4;
 part_type_sprite(part_axis_bg_dark, 238, 0, 0, 1);
 part_type_size(part_axis_bg_dark, 3, 3, 0, 0);
-bg_color = make_color_rgb(19, 63, 26);
-bg_color_2 = make_color_rgb(43, 145, 60);
+var bg_color = make_color_rgb(19, 63, 26);
+var bg_color_2 = make_color_rgb(43, 145, 60);
 part_type_colour_mix(part_axis_bg_dark, bg_color, bg_color_2);
 part_type_alpha1(part_axis_bg_dark, 0.22);
 part_type_speed(part_axis_bg_dark, part_axis_bg_dark_speed, part_axis_bg_dark_speed, 0, 0);
@@ -29,9 +27,9 @@ part_x_last = 0;
 alarm[0] = irandom_range(25, 45);
 alarm[2] = irandom_range(25, 45);
 
-for (a = room_height; a >= 0; a -= 36)
+for (var a = room_height; a >= 0; a -= 36)
 {
-    i = room_width + 15;
+    var i = room_width + 15;
     
     while (i >= 0)
     {

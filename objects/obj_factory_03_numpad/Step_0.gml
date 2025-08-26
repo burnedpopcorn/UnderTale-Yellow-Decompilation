@@ -1,7 +1,7 @@
 switch (scene)
 {
     case 0:
-        if (keyboard_multicheck_pressed(0) && scr_interact())
+        if (keyboard_multicheck_pressed(vk_nokey) && scr_interact())
         {
             scr_cutscene_start();
             cutscene_advance();
@@ -14,11 +14,11 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* (You figured out a#  code?)";
             message[1] = "* (Hurry and give it a#  try!)";
-            prt[0] = 370;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_neutral;
         }
         
         break;
@@ -46,9 +46,9 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "* (Try something else!#  Come on!)";
-            prt[0] = 370;
+            prt[0] = spr_portrait_ceroba_neutral;
         }
         
         break;
@@ -70,7 +70,7 @@ switch (scene)
         
         if (obj_axis_npc.x > 400)
         {
-            if (cutscene_npc_walk(1166, 400, obj_axis_npc.y, 4, "x", "left"))
+            if (cutscene_npc_walk(obj_axis_npc, 400, obj_axis_npc.y, 4, "x", "left"))
                 cutscene_advance(8);
         }
         else
@@ -128,7 +128,7 @@ switch (scene)
         break;
     
     case 13:
-        cutscene_npc_walk(1161, obj_pl.x - 30, obj_pl.y, 3, "x", "right");
+        cutscene_npc_walk(obj_ceroba_npc, obj_pl.x - 30, obj_pl.y, 3, "x", "right");
         
         if (obj_ceroba_npc.x < obj_player_npc.x)
             obj_player_npc.npc_direction = "left";
@@ -141,9 +141,9 @@ switch (scene)
         with (msg)
         {
             skippable = false;
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Okay! Let's head#  upstairs before Axis- ";
-            prt[0] = 377;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
             
             if (cutoff >= string_length(message[message_current]))
             {
@@ -179,18 +179,18 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
-            talker[1] = 1161;
-            talker[4] = 1166;
-            talker[7] = 1161;
-            talker[9] = 1166;
-            talker[13] = 1161;
-            talker[14] = 1166;
-            talker[15] = 1161;
-            talker[16] = 1166;
-            talker[17] = 1161;
-            talker[19] = 1166;
-            talker[20] = 1161;
+            talker[0] = obj_axis_npc;
+            talker[1] = obj_ceroba_npc;
+            talker[4] = obj_axis_npc;
+            talker[7] = obj_ceroba_npc;
+            talker[9] = obj_axis_npc;
+            talker[13] = obj_ceroba_npc;
+            talker[14] = obj_axis_npc;
+            talker[15] = obj_ceroba_npc;
+            talker[16] = obj_axis_npc;
+            talker[17] = obj_ceroba_npc;
+            talker[19] = obj_axis_npc;
+            talker[20] = obj_ceroba_npc;
             message[0] = "* HELLO.";
             message[1] = "* Axis!";
             message[2] = "* ...Juuust the bot I was#  looking for!";
@@ -212,27 +212,27 @@ switch (scene)
             message[18] = "* And others require a#  Steamworks ID?";
             message[19] = "* TWO-FACTOR#  AUTHENTICATION.";
             message[20] = "* Huh...";
-            prt[0] = 473;
-            prt[1] = 381;
-            prt[2] = 3754;
-            prt[3] = 3754;
-            prt[4] = 473;
-            prt[5] = 473;
-            prt[6] = 473;
-            prt[7] = 377;
-            prt[8] = 370;
-            prt[9] = 473;
-            prt[10] = 473;
-            prt[11] = 473;
-            prt[12] = 473;
-            prt[13] = 370;
-            prt[14] = 473;
-            prt[15] = 370;
-            prt[16] = 473;
-            prt[17] = 377;
-            prt[18] = 370;
-            prt[19] = 473;
-            prt[20] = 370;
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_ceroba_nervous;
+            prt[2] = spr_portrait_ceroba_nervous_smile;
+            prt[3] = spr_portrait_ceroba_nervous_smile;
+            prt[4] = spr_portrait_axis_normal;
+            prt[5] = spr_portrait_axis_normal;
+            prt[6] = spr_portrait_axis_normal;
+            prt[7] = spr_portrait_ceroba_closed_eyes;
+            prt[8] = spr_portrait_ceroba_neutral;
+            prt[9] = spr_portrait_axis_normal;
+            prt[10] = spr_portrait_axis_normal;
+            prt[11] = spr_portrait_axis_normal;
+            prt[12] = spr_portrait_axis_normal;
+            prt[13] = spr_portrait_ceroba_neutral;
+            prt[14] = spr_portrait_axis_normal;
+            prt[15] = spr_portrait_ceroba_neutral;
+            prt[16] = spr_portrait_axis_normal;
+            prt[17] = spr_portrait_ceroba_closed_eyes;
+            prt[18] = spr_portrait_ceroba_neutral;
+            prt[19] = spr_portrait_axis_normal;
+            prt[20] = spr_portrait_ceroba_neutral;
             
             if (message_current == 1)
             {
@@ -257,12 +257,12 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
-            talker[1] = 1161;
-            message[0] = "* . .";
-            message[1] = "* . .";
-            prt[0] = 473;
-            prt[1] = 371;
+            talker[0] = obj_axis_npc;
+            talker[1] = obj_ceroba_npc;
+            message[0] = "* . . .";
+            message[1] = "* . . .";
+            prt[0] = spr_portrait_axis_normal;
+            prt[1] = spr_portrait_ceroba_alt;
         }
         
         break;
@@ -272,20 +272,20 @@ switch (scene)
         break;
     
     case 21:
-        cutscene_npc_set_sprites(1168, 15, 16, 18, 17, 24, 21, 23, 22);
+        cutscene_npc_set_sprites(obj_player_npc, spr_pl_run_up, spr_pl_run_right, spr_pl_run_down, spr_pl_run_left, spr_pl_up, spr_pl_right, spr_pl_down, spr_pl_left);
         break;
     
     case 22:
-        cutscene_npc_set_sprites(1161, 81, 80, 78, 79, 61, 65, 60, 63);
+        cutscene_npc_set_sprites(obj_ceroba_npc, spr_ceroba_up_run, spr_ceroba_right_run, spr_ceroba_down_run, spr_ceroba_left_run, spr_ceroba_up_talk, spr_ceroba_right_talk, spr_ceroba_down_talk, spr_ceroba_left_talk);
         break;
     
     case 23:
-        cutscene_npc_walk(1168, 740, 710, 4, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 740, 710, 4, "x", "up");
         cutscene_advance();
         break;
     
     case 24:
-        cutscene_npc_walk(1161, 740, 710, 4, "x", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 740, 710, 4, "x", "up");
         cutscene_advance();
         break;
     
@@ -321,15 +321,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1166;
+            talker[0] = obj_axis_npc;
             message[0] = "* COOL.";
-            prt[0] = 473;
+            prt[0] = spr_portrait_axis_normal;
         }
         
         break;
     
     case 28:
         global.sworks_flag[37] = 3;
-        cutscene_change_room(240, 400, 760, 0.03);
+        cutscene_change_room(rm_steamworks_factory_04, 400, 760, 0.03);
         break;
 }

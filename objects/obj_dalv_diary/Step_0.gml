@@ -1,9 +1,7 @@
-var diary_music, audio_gain;
-
-if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && waiter == 0)
+if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && waiter == 0)
     waiter = 1;
 
-diary_music = 135;
+var diary_music = 135;
 
 if (waiter == 1)
 {
@@ -16,7 +14,7 @@ if (waiter == 1)
         ch[1] = "Yes";
         ch[2] = "No";
         portrait = false;
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         
         if (other.npc_flag == 0)
         {
@@ -55,7 +53,7 @@ if (waiter == 2 && !global.dialogue_open)
         if (audio_is_playing(mus_dalventertainer))
         {
             audio_sound_gain(mus_dalventertainer, 0, 500);
-            audio_gain = audio_sound_get_gain(mus_dalventertainer);
+            var audio_gain = audio_sound_get_gain(mus_dalventertainer);
             
             if (audio_gain == 0)
                 audio_stop_sound(mus_dalventertainer);
@@ -73,7 +71,7 @@ if (waiter == 3)
     
     with (msg)
     {
-        sndfnt = 100;
+        sndfnt = sndfnt_dalv;
         portrait = false;
         message[0] = "* Today began like every other#  day.";
         message[1] = "* I got out of bed, brushed my#  fangs, and had a nice bowl of#  corn for breakfast.";
@@ -123,7 +121,7 @@ if (waiter == 4)
     
     with (msg)
     {
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         portrait = false;
         message[0] = "* (The entry ends there.)";
     }

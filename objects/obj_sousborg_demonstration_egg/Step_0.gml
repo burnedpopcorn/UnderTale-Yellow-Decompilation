@@ -1,6 +1,4 @@
-var x_target;
-
-x_target = 100;
+var x_target = 100;
 
 if (global.enemy_attacking == true)
     destroy_self = true;

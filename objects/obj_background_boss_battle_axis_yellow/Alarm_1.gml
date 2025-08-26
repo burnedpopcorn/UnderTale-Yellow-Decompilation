@@ -1,6 +1,4 @@
-var i;
-
-i = room_width + 15;
+var i = room_width + 15;
 
 while (i >= 0)
 {

@@ -38,7 +38,7 @@ if (interact == true)
             {
                 talker[0] = other.object_index;
                 message[0] = "* Big red guy... and his dumb,#  stupid, little hat...";
-                message[1] = "* Trust me, if i had landed the#  first hit things would've ended#  MUCH differently.";
+                message[1] = "* Trust me, if I had landed the#  first hit things would've ended#  MUCH differently.";
                 message[2] = "* He got lucky...";
             }
             

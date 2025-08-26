@@ -1,5 +1,3 @@
-var battle_box;
-
 if (live_call())
     return global.live_result;
 
@@ -9,7 +7,7 @@ if (!instance_exists(obj_dialogue_box_battle_transformation_any))
     exit;
 }
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 
 if (speed == 0)
 {

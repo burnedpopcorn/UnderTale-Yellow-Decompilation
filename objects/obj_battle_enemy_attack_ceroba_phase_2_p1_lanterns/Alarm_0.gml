@@ -1,5 +1,3 @@
-var ds_list_pos, position_current, xx, yy;
-
 if (live_call())
     return global.live_result;
 
@@ -11,9 +9,10 @@ if (ds_list_size(position_list) <= 0)
     exit;
 }
 
-ds_list_pos = irandom_range(0, ds_list_size(position_list) - 1);
-position_current = ds_list_find_value(position_list, ds_list_pos);
+var ds_list_pos = irandom_range(0, ds_list_size(position_list) - 1);
+var position_current = ds_list_find_value(position_list, ds_list_pos);
 ds_list_delete(position_list, ds_list_pos);
+var xx, yy;
 
 switch (position_current)
 {

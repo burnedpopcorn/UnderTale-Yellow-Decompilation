@@ -1,7 +1,5 @@
-var enemy_dead, enemy_spared, micro_cloud, shake_direction_x, shake_direction_y;
-
-enemy_dead = global.enemy_dead;
-enemy_spared = global.enemy_spared;
+var enemy_dead = global.enemy_dead;
+var enemy_spared = global.enemy_spared;
 
 if (enemy_dead == false && enemy_spared == false)
     image_alpha = global.image_alpha_enemy_attacking;
@@ -28,7 +26,7 @@ else if (enemy_spared == true)
     {
         for (i = 0; i <= 11; i += 1)
         {
-            micro_cloud = instance_create(x, y, obj_spare_cloud);
+            var micro_cloud = instance_create(x, y, obj_spare_cloud);
             micro_cloud.image_xscale = 0.5;
             micro_cloud.image_yscale = 0.5;
         }
@@ -118,6 +116,8 @@ if (!(instance_exists(obj_text_damage_count) && global.fight_number == 1) && ene
 
 if (stomped_on == true)
 {
+    var shake_direction_x, shake_direction_y;
+    
     if (stomp_counter < stomp_counter_max)
     {
         shake_direction_x = irandom_range(-shake_intensity_x, shake_intensity_x);

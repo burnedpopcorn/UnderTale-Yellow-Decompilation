@@ -1,12 +1,10 @@
 function unstick_from()
 {
-    var _dir, _len, _x, _y, _offset;
-    
-    _dir = 0;
-    _len = 0;
-    _x = x;
-    _y = y;
-    _offset = round(irandom(359) / (360 / argument[0])) * (360 / argument[0]);
+    var _dir = 0;
+    var _len = 0;
+    var _x = x;
+    var _y = y;
+    var _offset = round(irandom(359) / (360 / argument[0])) * (360 / argument[0]);
     
     while (place_meeting(x, y, argument[1]))
     {

@@ -1,5 +1,3 @@
-var world_current;
-
 npc_id = room_get_name(room) + object_get_name(object_index);
 
 if (is_undefined(ds_map_find_value(global.npc_map, npc_id)))
@@ -14,7 +12,7 @@ if (enc_flag == true)
 if (instance_exists(obj_martlet_follower))
     instance_destroy();
 
-world_current = scr_determine_world_value_yellow();
+var world_current = scr_determine_world_value_yellow();
 
 if (global.geno_complete[world_current] == true)
 {

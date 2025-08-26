@@ -1,8 +1,6 @@
 function map()
 {
-    var __val;
-    
-    __val = argument[0];
+    var __val = argument[0];
     __val -= argument[1];
     
     if (argument[1] != argument[2] && argument[3] != argument[4])

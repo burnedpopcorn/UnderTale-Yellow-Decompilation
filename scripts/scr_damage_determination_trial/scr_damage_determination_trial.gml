@@ -1,8 +1,6 @@
-function scr_damage_determination_trial(argument0)
+function scr_damage_determination_trial(arg0)
 {
-    var st_temp, boss_mini;
-    
-    switch (argument0)
+    switch (arg0)
     {
         case "Gun Single":
             global.attacking_damage_stat_betrayal = global.current_hp_enemy;
@@ -19,7 +17,7 @@ function scr_damage_determination_trial(argument0)
             global.attacking_damage_stat_betrayal = global.current_hp_enemy;
             global.attacking_damage_stat_critical = 100 * circle_count;
             b = 0;
-            st_temp = shot_total;
+            var st_temp = shot_total;
             
             while (st_temp > 3)
                 b += 100;
@@ -61,6 +59,8 @@ function scr_damage_determination_trial(argument0)
                     b = 0;
             }
             
+            var st_temp;
+            
             for (st_temp = shot_total_pre; st_temp > 3; st_temp -= 3)
                 c += 16;
             
@@ -87,6 +87,7 @@ function scr_damage_determination_trial(argument0)
             r = random_range(0, 2);
             b = 0;
             c = 0;
+            var st_temp;
             
             for (st_temp = shot_total; st_temp > 3; st_temp -= 3)
                 b += 60;
@@ -140,7 +141,7 @@ function scr_damage_determination_trial(argument0)
             global.attacking_damage_stat_critical = global.attacking_damage_cap;
     }
     
-    boss_mini = global.boss_mini;
+    var boss_mini = global.boss_mini;
     
     if (button_pressed == true)
     {
@@ -160,7 +161,7 @@ function scr_damage_determination_trial(argument0)
         }
         else if (global.enemy_vulnerable == true)
         {
-            if ((argument0 == "Knife Single" && x == 319) || ((argument0 == "Gun Single" || argument0 == "Revolver Single") && shot_type == "strong") || ((argument0 == "Gun Multi" || argument0 == "Revolver Multi") && shot_total == (circle_count * 3)) || global.current_hp_enemy <= global.attacking_damage_stat_critical)
+            if ((arg0 == "Knife Single" && x == 319) || ((arg0 == "Gun Single" || arg0 == "Revolver Single") && shot_type == "strong") || ((arg0 == "Gun Multi" || arg0 == "Revolver Multi") && shot_total == (circle_count * 3)) || global.current_hp_enemy <= global.attacking_damage_stat_critical)
             {
                 global.last_hp_enemy = global.current_hp_enemy;
                 global.current_hp_enemy -= global.attacking_damage_stat_critical;

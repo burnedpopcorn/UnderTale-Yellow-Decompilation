@@ -1,9 +1,7 @@
-var battle_box, spawn_number, spawn_point_x, spawn_point_y;
-
-battle_box = 3154;
-spawn_number = choose(1, 2, 3);
-spawn_point_x = 0;
-spawn_point_y = battle_box.bbox_top - 50;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var spawn_number = choose(1, 2, 3);
+var spawn_point_x = 0;
+var spawn_point_y = battle_box.bbox_top - 50;
 
 if (spawn_number == exc_number)
 {

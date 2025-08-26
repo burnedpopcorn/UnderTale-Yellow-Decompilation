@@ -13,7 +13,7 @@ if (instance_exists(obj_dialogue) && talk == true)
     }
 }
 
-if (keyboard_multicheck_pressed(0) && scr_interact() == true)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true)
 {
     scr_text();
     talk = 1;
@@ -24,7 +24,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Yo, Dalv is opening the door to#  Snowdin!";
                 message[1] = "* It's been so long!";
                 message[2] = "* I know what my first#  stop will be. ";
@@ -38,7 +38,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Do you watch anime? ";
                 message[1] = "* I HIGHLY recommend it!";
                 message[2] = "* I mean some of it is#  total garbage... ";
@@ -52,7 +52,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Maybe we could watch some#  together!";
             }
             

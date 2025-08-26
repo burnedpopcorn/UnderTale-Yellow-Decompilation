@@ -1,14 +1,12 @@
 function scr_enemy_attack_know_cone_oranges()
 {
-    var distance_factor, random_generator_1, random_generator_2;
-    
     global.attack_counter_max = 20;
     
     if (global.attack_counter == 0)
     {
-        distance_factor = 15;
-        random_generator_1 = irandom_range(0, 1);
-        random_generator_2 = irandom_range(0, 4);
+        var distance_factor = 15;
+        var random_generator_1 = irandom_range(0, 1);
+        var random_generator_2 = irandom_range(0, 4);
         
         if (random_generator_1 == 0)
         {

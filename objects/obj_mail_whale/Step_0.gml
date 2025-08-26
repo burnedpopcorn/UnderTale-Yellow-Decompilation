@@ -1,5 +1,3 @@
-var yy;
-
 palette_index = obj_pl.palette_index;
 shader_on = obj_pl.shader_on;
 
@@ -183,12 +181,12 @@ switch (scene)
         }
         else
         {
-            yy = y + 40;
+            var yy = y + 40;
             
             if (room == rm_steamworks_32)
                 yy = y + 20;
             
-            cutscene_npc_walk(1168, x, yy, 2, "nothing", "up");
+            cutscene_npc_walk(obj_player_npc, x, yy, 2, "nothing", "up");
         }
         
         break;

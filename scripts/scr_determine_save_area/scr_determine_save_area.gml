@@ -1,8 +1,6 @@
 function scr_determine_save_area()
 {
-    var current_room;
-    
-    current_room = room_get_name(room);
+    var current_room = room_get_name(room);
     
     switch (current_room)
     {

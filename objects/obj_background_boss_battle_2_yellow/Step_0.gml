@@ -1,5 +1,3 @@
-var time_elapsed_tail;
-
 game_maker_cannot_do_math = power((time_elapsed / ((time_max / 2) * (1 / sqrt(max_rise)))) - sqrt(max_rise), 2);
 animation_disjoint_x = sign_modifier * (max_rise - game_maker_cannot_do_math);
 
@@ -14,7 +12,7 @@ time_elapsed_decrease_total = 0;
 for (i = 2; i < 4; i += 2)
 {
     time_elapsed_decrease_total += time_elapsed_decrease;
-    time_elapsed_tail = time_elapsed - time_elapsed_decrease_total;
+    var time_elapsed_tail = time_elapsed - time_elapsed_decrease_total;
     
     if (time_elapsed_tail < 0)
     {

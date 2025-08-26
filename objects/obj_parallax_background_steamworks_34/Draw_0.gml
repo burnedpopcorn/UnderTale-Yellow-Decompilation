@@ -1,8 +1,6 @@
-var view_x, sin_offset;
-
-view_x = __view_get(e__VW.XView, 0);
+var view_x = __view_get(e__VW.XView, 0);
 draw_background(3506, (view_x + 200) / 1.75, 0);
-sin_offset = (sin(current_time / 1000) * 10) - 3;
+var sin_offset = (sin(current_time / 1000) * 10) - 3;
 draw_primitive_begin(pr_trianglelist);
 draw_vertex_color(0, gradient_height + sin_offset, colors[2], 0);
 draw_vertex_color(room_width, gradient_height + sin_offset, colors[2], 0);

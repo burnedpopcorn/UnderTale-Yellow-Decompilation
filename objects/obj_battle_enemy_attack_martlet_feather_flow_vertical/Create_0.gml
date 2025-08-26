@@ -1,5 +1,3 @@
-var random_number;
-
 damage_number = scr_determine_damage_number_enemy("martlet", "void", "void");
 state = 0;
 fly_speed = irandom_range(3, 5);
@@ -19,6 +17,7 @@ feather_explode_counter = 0;
 feather_explode_timer = 10;
 can_move = false;
 fade_out = false;
+var random_number;
 
 if (!instance_exists(obj_martlet_body))
 {

@@ -65,7 +65,7 @@ if (interact)
                 with (msg)
                 {
                     message[0] = "* If you plan on leavin' here,#  don't expect it to be easy.";
-                    message[1] = "* When North Star gets his mind#  set on something, he sees it#  though.";
+                    message[1] = "* When North Star gets his mind#  set on something, he sees it#  through.";
                     message[2] = "* So embrace yer position. I'm#  sure only good things can come#  from it!";
                 }
                 

@@ -1,7 +1,5 @@
-var shop_name, shop_geno;
-
 if (global.draw_scanlines == true)
-    instance_create(__view_get(e__VW.XView, 0), __view_get(e__VW.YView, obj_quote_battle_ceroba_outro_4), obj_scanlines);
+    instance_create(__view_get(e__VW.XView, 0), __view_get(e__VW.YView, 0), obj_scanlines);
 
 global.main_shop_screen_number = 1;
 global.buy_shop_screen_number = 1;
@@ -11,8 +9,8 @@ global.able_to_buy = 0;
 global.sell_count = 0;
 global.text_linebreak_limit_shop = 999;
 global.text_separation_shop = 18;
-shop_name = global.shop_name;
-shop_geno = false;
+var shop_name = global.shop_name;
+var shop_geno = false;
 
 if (shop_name == "Honeydew Resort Normal")
 {

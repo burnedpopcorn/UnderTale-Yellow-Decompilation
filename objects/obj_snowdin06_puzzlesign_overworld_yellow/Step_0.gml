@@ -1,4 +1,4 @@
-if ((keyboard_multicheck_pressed(0) && scr_interact() == true) && waiter == 0)
+if ((keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true) && waiter == 0)
     waiter = 1;
 
 if (waiter == 1)
@@ -8,7 +8,7 @@ if (waiter == 1)
     
     with (msg)
     {
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         portrait = false;
         
         if (other.npc_flag == 0)
@@ -26,7 +26,7 @@ if (waiter == 1)
         
         color = true;
         col_modif[0] = make_color_rgb(92, 186, 249);
-        col_modif[1] = 255;
+        col_modif[1] = c_red;
         message[0] = "* (Read the instructions again?)";
         message[1] = "* To whom it may concern:";
         message[2] = "* In accordance with Royal Guard#  guide book section four,#  paragraph two,";
@@ -65,25 +65,25 @@ if (waiter == 3)
     
     with (msg)
     {
-        sndfnt = 99;
+        sndfnt = sndfnt_default;
         portrait = false;
         message[0] = "* P.S.";
         message[1] = "* If one of the logs gets stuck,#  just jiggle it a little.";
         message[2] = "* I noticed it was sticking the#  other day, but you know how it#  is with D.I.Y. projects.";
         message[3] = "* Always something has to go#  wrong!";
         message[4] = "* So yeah, just a quick jiggle#  will do!";
-        message[5] = "* P.S.";
+        message[5] = "* P.P.S.";
         message[6] = "* I just realized that you might#  not be able to reach the log to#  jiggle it!";
         message[7] = "* I mean, not everyone can fly,#  or is freakishly tall!";
         message[8] = "* Especially if you're a human or#  something!";
         message[9] = "* So just hope it doesn't get#  stuck!";
-        message[10] = "* P.P.S.";
+        message[10] = "* P.P.P.S.";
         message[11] = "* I figured it out!";
         message[12] = "* If it gets stuck, just wait!";
         message[13] = "* I come around to inspect the#  puzzle quality every third day!";
         message[14] = "* Just hang out right where you#  are for a day or two!";
         message[15] = "* Oh, and hope it doesn't get#  stuck!";
-        message[16] = "* P.P.S.";
+        message[16] = "* P.P.P.P.S.";
         message[17] = "* I have been informed that the#  amount of P.S.'s on this sign#  is \"unseemly.\"";
         message[18] = "* I am very sorry for any trouble#  they've caused.";
     }

@@ -1,13 +1,11 @@
-function insert_separator_commas(argument0)
+function insert_separator_commas(arg0)
 {
-    var _neg, _str, _frac, _c;
+    var _neg = "";
+    var _str = string(floor(abs(arg0)));
+    var _frac = string(frac(abs(arg0)));
+    var _c = 0;
     
-    _neg = "";
-    _str = string(floor(abs(argument0)));
-    _frac = string(frac(abs(argument0)));
-    _c = 0;
-    
-    if (argument0 < 0)
+    if (arg0 < 0)
         _neg = "-";
     
     repeat (floor((string_length(_str) - 1) / 3))

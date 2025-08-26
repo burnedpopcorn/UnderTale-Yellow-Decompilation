@@ -1,9 +1,7 @@
-var actor_starlo;
-
 scene = 17;
 cutscene_timer = 0;
 cutscene_music = 0;
-actor_starlo = instance_create(160, 80, obj_starlo_npc);
+var actor_starlo = instance_create(160, 80, obj_starlo_npc);
 
 with (actor_starlo)
 {
@@ -17,5 +15,5 @@ with (actor_starlo)
     left_sprite_idle = spr_starlo_sad_left_talk;
 }
 
-instance_create(obj_pl.x, __view_get(e__VW.YView, 0) + __view_get(e__VW.WView, obj_quote_battle_ceroba_outro_4) + 50, obj_ceroba_npc);
+instance_create(obj_pl.x, __view_get(e__VW.YView, 0) + __view_get(e__VW.WView, 0) + 50, obj_ceroba_npc);
 actor_clover = instance_create(obj_pl.x, obj_pl.y, obj_player_npc);

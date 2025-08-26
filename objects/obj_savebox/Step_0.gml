@@ -14,7 +14,7 @@ if (p2 == true && global.left_keyp)
     audio_play_sound(snd_mainmenu_select, 1, 0);
 }
 
-if (keyboard_multicheck_pressed(0) && ready == true)
+if (keyboard_multicheck_pressed(vk_nokey) && ready == true)
 {
     if (p1 == true)
     {

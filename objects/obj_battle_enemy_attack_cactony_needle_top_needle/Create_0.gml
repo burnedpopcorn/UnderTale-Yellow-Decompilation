@@ -1,5 +1,5 @@
 damage_number = scr_determine_damage_number_enemy("cactony a", "cactony b", "cactony c");
-launch_sprite = spr_battle_enemy_attack_cactony_needle_white;
+launch_sprite = 2179;
 launched = false;
 prep_speed = 1;
 attack_speed = 5;

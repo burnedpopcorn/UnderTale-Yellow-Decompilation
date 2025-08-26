@@ -1,5 +1,3 @@
-var player_character;
-
 if (live_call())
     return global.live_result;
 
@@ -8,7 +6,7 @@ walk_speed = global.speed_self + (1 * sign(global.current_sp_self));
 if (room == rm_battle_flowey_phase_2)
     walk_speed += 2;
 
-base_sprite = spr_heart_yellow_up;
+base_sprite = 1662;
 image_speed = 0;
 image_index = 0;
 vulnerable = true;
@@ -31,7 +29,7 @@ move_vsp_count = 0;
 idle_hsp_count = 0;
 idle_vsp_count = 0;
 max_speed_counter = 100;
-player_character = global.player_character;
+var player_character = global.player_character;
 instance_create(x, y, obj_heart_red_hitbox);
 
 if (global.current_pp_self > 0)
@@ -44,7 +42,7 @@ max_points_trail = 5;
 trail_cc_max = 3;
 trail_cc_start = trail_cc_max - 1;
 trail_cc_current = trail_cc_start;
-trail_sprite = spr_heart_white;
+trail_sprite = 1677;
 shoot_delay = 5;
 shoot_buffer = 0;
 can_shoot = true;
@@ -56,7 +54,7 @@ charge_time = 30;
 charge_time_max = 30;
 is_charged = false;
 is_charging = false;
-charge_sound = snd_ceroba_staff_lock;
+charge_sound = 0;
 charged_shot_type = 1;
 blast_is_firing = false;
 

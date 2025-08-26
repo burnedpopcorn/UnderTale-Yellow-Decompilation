@@ -1,22 +1,20 @@
-var battle_box, ball_offset, bomb, ball;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-ball_offset = 30;
-bomb = -4;
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var ball_offset = 30;
+var bomb = -4;
 
 switch (attack_tick)
 {
     case 30:
-        ball = instance_create_depth(battle_box.bbox_left - 10, battle_box.bbox_top - 10, -100, obj_battle_enemy_attack_axis_energy_ball_boss_geno);
+        var ball = instance_create_depth(battle_box.bbox_left - 10, battle_box.bbox_top - 10, -100, obj_battle_enemy_attack_axis_energy_ball_boss_geno);
         ball.alarm[0] = 30;
         ball.direction = 315;
         break;
     
     case 60:
-        ball = instance_create_depth(battle_box.bbox_right + 10, battle_box.bbox_top - 10, -100, obj_battle_enemy_attack_axis_energy_ball_boss_geno);
+        var ball = instance_create_depth(battle_box.bbox_right + 10, battle_box.bbox_top - 10, -100, obj_battle_enemy_attack_axis_energy_ball_boss_geno);
         ball.alarm[0] = 30;
         ball.direction = 225;
         break;
@@ -26,13 +24,13 @@ switch (attack_tick)
         break;
     
     case 160:
-        ball = instance_create_depth(battle_box.bbox_right + 20, battle_box.y, -100, obj_battle_enemy_attack_axis_energy_ball_boss_geno);
+        var ball = instance_create_depth(battle_box.bbox_right + 20, battle_box.y, -100, obj_battle_enemy_attack_axis_energy_ball_boss_geno);
         ball.alarm[0] = 60;
         ball.direction = 180;
         break;
     
     case 180:
-        ball = instance_create_depth(battle_box.x + 30, battle_box.bbox_top - 20, -100, obj_battle_enemy_attack_axis_energy_ball_boss_geno);
+        var ball = instance_create_depth(battle_box.x + 30, battle_box.bbox_top - 20, -100, obj_battle_enemy_attack_axis_energy_ball_boss_geno);
         ball.alarm[0] = 60;
         ball.direction = 225;
         ball = instance_create_depth(battle_box.x + 30, battle_box.bbox_bottom + 20, -100, obj_battle_enemy_attack_axis_energy_ball_boss_geno);

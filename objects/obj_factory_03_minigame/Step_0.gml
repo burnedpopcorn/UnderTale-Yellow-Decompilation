@@ -1,14 +1,12 @@
-var axis_move, axis_speed;
-
 if (live_call())
     return global.live_result;
 
-axis_move = false;
-axis_speed = 2;
+var axis_move = false;
+var axis_speed = 2;
 
 with (obj_factory_03_furnace)
 {
-    if (scr_interact() && keyboard_multicheck_pressed(0) && state == 0)
+    if (scr_interact() && keyboard_multicheck_pressed(vk_nokey) && state == 0)
         state = 1;
 }
 

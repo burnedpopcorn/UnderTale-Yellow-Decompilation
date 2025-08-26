@@ -1,11 +1,9 @@
-var player_soul, battle_box;
-
 if (live_call())
     return global.live_result;
 
 damage_number = 1;
-player_soul = 2979;
-battle_box = 3154;
+var player_soul = 2980;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 image_alpha = 1;
 target_x = battle_box.x + random_range(-2, 2);
 target_y = battle_box.y;

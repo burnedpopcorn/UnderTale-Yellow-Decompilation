@@ -1,23 +1,21 @@
-function room_set_view(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9, argument10, argument11, argument12, argument13, argument14, argument15)
+function room_set_view(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15)
 {
-    var __ind, __vind, __vis, __xview, __yview, __wview, __hview, __xport, __yport, __wport, __hport, __hborder, __vborder, __hspeed, __vspeed, __obj, __newcam, __currcam;
-    
-    __ind = argument0;
-    __vind = argument1;
-    __vis = argument2;
-    __xview = argument3;
-    __yview = argument4;
-    __wview = argument5;
-    __hview = argument6;
-    __xport = argument7;
-    __yport = argument8;
-    __wport = argument9;
-    __hport = argument10;
-    __hborder = argument11;
-    __vborder = argument12;
-    __hspeed = argument13;
-    __vspeed = argument14;
-    __obj = argument15;
+    var __ind = arg0;
+    var __vind = arg1;
+    var __vis = arg2;
+    var __xview = arg3;
+    var __yview = arg4;
+    var __wview = arg5;
+    var __hview = arg6;
+    var __xport = arg7;
+    var __yport = arg8;
+    var __wport = arg9;
+    var __hport = arg10;
+    var __hborder = arg11;
+    var __vborder = arg12;
+    var __hspeed = arg13;
+    var __vspeed = arg14;
+    var __obj = arg15;
     
     if (!room_exists(__ind))
     {
@@ -31,8 +29,8 @@ function room_set_view(argument0, argument1, argument2, argument3, argument4, ar
         return -1;
     }
     
-    __newcam = camera_create_view(__xview, __yview, __wview, __hview, 0, __obj, __hspeed, __vspeed, __hborder, __vborder);
-    __currcam = room_get_camera(__ind, __vind);
+    var __newcam = camera_create_view(__xview, __yview, __wview, __hview, 0, __obj, __hspeed, __vspeed, __hborder, __vborder);
+    var __currcam = room_get_camera(__ind, __vind);
     
     if (__currcam != -1)
         camera_destroy(__currcam);

@@ -1,5 +1,3 @@
-var y_original, y_max, x_original, x_max, damage;
-
 if (live_call())
     return global.live_result;
 
@@ -53,14 +51,14 @@ switch (attack_beam_stage)
 if (attack_beam_stage == 0)
     exit;
 
-y_original = 0;
-y_max = room_height;
-x_original = 0;
-x_max = room_width;
+var y_original = 0;
+var y_max = room_height;
+var x_original = 0;
+var x_max = room_width;
 
 if (obj_heart_battle_fighting_parent.vulnerable == true && (point_in_rectangle(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, x - (attack_beam_width_current / 2), y_original, x + (attack_beam_width_current / 2), y_max) || point_in_rectangle(obj_heart_battle_fighting_parent.x, obj_heart_battle_fighting_parent.y, x_original, y - (attack_beam_width_current / 2), x_max, y + (attack_beam_width_current / 2))))
 {
-    damage = (global.enemy_attack_stat - global.player_armor_defense - global.player_armor_modifier_defense - global.player_defense) + 10;
+    var damage = (global.enemy_attack_stat - global.player_armor_defense - global.player_armor_modifier_defense - global.player_defense) + 10;
     
     if (damage < 1)
         damage = 1;

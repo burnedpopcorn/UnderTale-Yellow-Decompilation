@@ -1,5 +1,3 @@
-var narrator;
-
 if (live_call())
     return global.live_result;
 
@@ -15,7 +13,7 @@ switch (scene)
         break;
     
     case 1:
-        narrator = instance_create_depth(0, 0, -100, obj_dialogue_narrator);
+        var narrator = instance_create_depth(0, 0, -100, obj_dialogue_narrator);
         
         with (narrator)
             message[0] = "* (The other way.)";

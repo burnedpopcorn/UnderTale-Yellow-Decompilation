@@ -16,8 +16,8 @@ switch (scene)
         break;
     
     case 2:
-        cutscene_npc_walk(1161, 220, 620, 3, "x", "up");
-        cutscene_npc_walk(1168, 220, 640, 3, "x", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 220, 620, 3, "x", "up");
+        cutscene_npc_walk(obj_player_npc, 220, 640, 3, "x", "up");
         scene = 3;
         break;
     
@@ -40,13 +40,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Workstations...";
             message[1] = "* Okay, well... Probably#  another code to find.";
             message[2] = "* You know the drill.";
-            prt[0] = 377;
-            prt[1] = 371;
-            prt[2] = 370;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_alt;
+            prt[2] = spr_portrait_ceroba_neutral;
             
             if (message_current >= 1)
                 obj_ceroba_npc.npc_direction = "down";
@@ -55,7 +55,7 @@ switch (scene)
         break;
     
     case 7:
-        cutscene_npc_walk(1161, 220, 660, 3, "y", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 220, 660, 3, "y", "up");
         break;
     
     case 8:
@@ -105,13 +105,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Must be the manager's#  office.";
             message[1] = "* Surely they had access#  to all passcodes.";
             message[2] = "* Let's check those file#  cabinets.";
-            prt[0] = 371;
-            prt[1] = 371;
-            prt[2] = 370;
+            prt[0] = spr_portrait_ceroba_alt;
+            prt[1] = spr_portrait_ceroba_alt;
+            prt[2] = spr_portrait_ceroba_neutral;
             
             if (message_current >= 2)
                 obj_ceroba_npc.npc_direction = "down";
@@ -121,8 +121,8 @@ switch (scene)
     
     case 17:
         instance_create(obj_pl.x, obj_pl.y, obj_player_npc);
-        cutscene_npc_walk(1161, 220, 250, 3, "x", "up", -4, 290, 180);
-        cutscene_npc_walk(1168, 220, 250, 3, "x", "up", -4, 270, 220);
+        cutscene_npc_walk(obj_ceroba_npc, 220, 250, 3, "x", "up", -4, 290, 180);
+        cutscene_npc_walk(obj_player_npc, 220, 250, 3, "x", "up", -4, 270, 220);
         scene = 18;
         break;
     
@@ -137,17 +137,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* ...";
             message[1] = "* Hold on, look here.";
             message[2] = "* Performance reports for#  all factory employees.";
             message[3] = "* A... B...";
             message[4] = "* ...";
-            prt[0] = 371;
-            prt[1] = 370;
-            prt[2] = 371;
-            prt[3] = 371;
-            prt[4] = 609;
+            prt[0] = spr_portrait_ceroba_alt;
+            prt[1] = spr_portrait_ceroba_neutral;
+            prt[2] = spr_portrait_ceroba_alt;
+            prt[3] = spr_portrait_ceroba_alt;
+            prt[4] = spr_portrait_ceroba_sorrowful;
             
             if (message_current == 1)
                 obj_ceroba_npc.npc_direction = "down";
@@ -159,7 +159,7 @@ switch (scene)
         break;
     
     case 20:
-        cutscene_npc_action_sprite(1161, 3667, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_ceroba_reading_1, 1, true, 0);
         break;
     
     case 21:
@@ -171,7 +171,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* \"01/16/20XX...";
             message[1] = "* Mr. Chujin pitched his#  blueprints for a \"guard bot\" of#  sorts.";
             message[2] = "* He called the project: AXIS.\"";
@@ -184,7 +184,7 @@ switch (scene)
         break;
     
     case 24:
-        cutscene_npc_action_sprite(1161, 2938, 1, true, 0, 372, 9);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_ceroba_reading_2, 1, true, 0, snd_paperfall, 9);
         break;
     
     case 25:
@@ -197,7 +197,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* \"03/19/20XX...";
             message[1] = "* Axis Model 01 was presented to#  King ASGORE but was swiftly#  rejected.";
             message[2] = "* The poor thing couldn't stay#  powered up for more than six#  seconds.\"";
@@ -206,7 +206,7 @@ switch (scene)
         break;
     
     case 27:
-        cutscene_npc_action_sprite_reverse(1161, 2938, 1, true, 0, 372, 9);
+        cutscene_npc_action_sprite_reverse(obj_ceroba_npc, spr_ceroba_reading_2, 1, true, 0, snd_paperfall, 9);
         break;
     
     case 28:
@@ -219,7 +219,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* \"05/10/20XX...";
             message[1] = "* Axis Model 04 backfired and#  shot one of its gloves at the#  King.";
             message[2] = "* This is getting embarrassing.\"";
@@ -228,7 +228,7 @@ switch (scene)
         break;
     
     case 30:
-        cutscene_npc_action_sprite(1161, 2938, 1, true, 0, 372, 9);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_ceroba_reading_2, 1, true, 0, snd_paperfall, 9);
         break;
     
     case 31:
@@ -241,7 +241,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* \"07/23/20XX...";
             message[1] = "* Axis Model 07 refused to enter#  the throne room.";
             message[2] = "* ...ASGORE gave Chujin one more#  shot after incessant pleading.";
@@ -260,15 +260,15 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "...";
-            prt[0] = 609;
+            prt[0] = spr_portrait_ceroba_sorrowful;
         }
         
         break;
     
     case 35:
-        cutscene_npc_action_sprite_reverse(1161, 2938, 1, true, 0, 372, 9);
+        cutscene_npc_action_sprite_reverse(obj_ceroba_npc, spr_ceroba_reading_2, 1, true, 0, snd_paperfall, 9);
         break;
     
     case 36:
@@ -281,7 +281,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* \"09/23/20XX...";
             message[1] = "* Well, this is it.";
             message[2] = "* Model 08 booted up and seemed#  to be stable for a moment.";
@@ -316,11 +316,11 @@ switch (scene)
             color = true;
             col_modif[0] = make_color_rgb(94, 84, 146);
             col_modif[1] = make_color_rgb(51, 178, 106);
-            sndfnt_array[0] = 267;
-            sndfnt_array[1] = 626;
-            sndfnt_array[4] = 267;
-            sndfnt_array[5] = 626;
-            sndfnt_array[6] = 267;
+            sndfnt_array[0] = snd_talk_asgore;
+            sndfnt_array[1] = snd_talk_chujin;
+            sndfnt_array[4] = snd_talk_asgore;
+            sndfnt_array[5] = snd_talk_chujin;
+            sndfnt_array[6] = snd_talk_asgore;
             message[0] = "* Please leave. Leave and do not#  return.";
             message_col[0][0] = "* Please leave. Leave and do not#  return.";
             message[1] = "* I... I apologize deeply.";
@@ -375,15 +375,15 @@ switch (scene)
         
         with (msg)
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "...";
-            prt[0] = 609;
+            prt[0] = spr_portrait_ceroba_sorrowful;
         }
         
         break;
     
     case 46:
-        cutscene_action_sprite(1161, 2209, 1, true, 0, 621, 1);
+        cutscene_action_sprite(obj_ceroba_npc, spr_ceroba_reading_3, 1, true, 0, snd_ceroba_newspaper_tear, 1);
         break;
     
     case 47:
@@ -398,7 +398,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* \"Capable hands\" he#  says.";
             message[1] = "* Look at Axis now. The#  TRUE realization of#  Chujin's vision.";
             message[2] = "* He far exceeds ANY model#  Asgore ever saw!";
@@ -406,19 +406,19 @@ switch (scene)
             message[4] = "* The scientist who has#  Kanako.";
             message[5] = "* Dr. Alphys.";
             message[6] = "* ...";
-            prt[0] = 609;
-            prt[1] = 609;
-            prt[2] = 609;
-            prt[3] = 609;
-            prt[4] = 609;
-            prt[5] = 609;
-            prt[6] = 394;
+            prt[0] = spr_portrait_ceroba_sorrowful;
+            prt[1] = spr_portrait_ceroba_sorrowful;
+            prt[2] = spr_portrait_ceroba_sorrowful;
+            prt[3] = spr_portrait_ceroba_sorrowful;
+            prt[4] = spr_portrait_ceroba_sorrowful;
+            prt[5] = spr_portrait_ceroba_sorrowful;
+            prt[6] = spr_portrait_ceroba_disapproving;
         }
         
         break;
     
     case 49:
-        cutscene_npc_action_sprite(1161, 3342, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_ceroba_reading_4, 1, true, 0);
         break;
     
     case 50:
@@ -430,19 +430,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* A while back, she built#  a robot too.";
             message[1] = "* One so \"lifelike\" it#  got her the position she#  has now.";
             message[2] = "* It must've been real#  impressive!";
             message[3] = "* So impressive that#  Asgore kicked the other#  visionaries to the curb.";
             message[4] = "* ...";
             message[5] = "* I understand now... Why#  Chujin never shared this#  with me...";
-            prt[0] = 370;
-            prt[1] = 394;
-            prt[2] = 377;
-            prt[3] = 368;
-            prt[4] = 609;
-            prt[5] = 394;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_portrait_ceroba_disapproving;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
+            prt[3] = spr_portrait_ceroba_irked;
+            prt[4] = spr_portrait_ceroba_sorrowful;
+            prt[5] = spr_portrait_ceroba_disapproving;
             message[6] = "* He must've been#  absolutely gutted#  hearing those words... ";
             message[7] = "* ...";
             message[8] = "* Screw the Royals.";
@@ -450,13 +450,13 @@ switch (scene)
             message[10] = "* This, Clover, this is#  why the mission is so#  important.";
             message[11] = "* You can't trust these#  close-minded gatekeepers#  to do anything right.";
             message[12] = "* Not for a second.";
-            prt[6] = 394;
-            prt[7] = 394;
-            prt[8] = 366;
-            prt[9] = 368;
-            prt[10] = 2735;
-            prt[11] = 2735;
-            prt[12] = 366;
+            prt[6] = spr_portrait_ceroba_disapproving;
+            prt[7] = spr_portrait_ceroba_disapproving;
+            prt[8] = spr_portrait_ceroba_angry;
+            prt[9] = spr_portrait_ceroba_irked;
+            prt[10] = spr_portrait_ceroba_angry_alt;
+            prt[11] = spr_portrait_ceroba_angry_alt;
+            prt[12] = spr_portrait_ceroba_angry;
             
             if (message_current == 7)
             {
@@ -471,7 +471,7 @@ switch (scene)
         break;
     
     case 52:
-        cutscene_npc_reset_sprite(1161, "up");
+        cutscene_npc_reset_sprite(obj_ceroba_npc, "up");
         scr_audio_fade_out(cutscene_music, 1000);
         break;
     
@@ -480,7 +480,7 @@ switch (scene)
         break;
     
     case 54:
-        cutscene_npc_direction(1161, "down");
+        cutscene_npc_direction(obj_ceroba_npc, "down");
         break;
     
     case 55:
@@ -488,17 +488,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* ...";
             message[1] = "* Let's go.";
-            prt[0] = 394;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_disapproving;
+            prt[1] = spr_portrait_ceroba_neutral;
         }
         
         break;
     
     case 56:
-        cutscene_npc_walk(1161, obj_pl.x, obj_pl.y + 20, 3, "y", "up");
+        cutscene_npc_walk(obj_ceroba_npc, obj_pl.x, obj_pl.y + 20, 3, "y", "up");
         break;
     
     case 57:

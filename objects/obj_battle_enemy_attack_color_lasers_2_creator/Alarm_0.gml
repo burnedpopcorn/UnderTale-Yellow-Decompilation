@@ -1,7 +1,6 @@
-var battle_box, current_side, spawn_x, spawn_y, ball;
-
-battle_box = 3154;
-current_side = choose("hor", "ver");
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var current_side = choose("hor", "ver");
+var spawn_x, spawn_y;
 
 if (current_side == "hor")
 {
@@ -14,7 +13,7 @@ else
     spawn_x = irandom_range(battle_box.bbox_left - 80, battle_box.bbox_right + 80);
 }
 
-ball = instance_create_depth(spawn_x, spawn_y, -100, obj_battle_enemy_attack_axis_energy_ball_boss);
+var ball = instance_create_depth(spawn_x, spawn_y, -100, obj_battle_enemy_attack_axis_energy_ball_boss);
 ball.direction = point_direction(ball.x, ball.y, battle_box.x, battle_box.y);
 ball.speed = 4;
 

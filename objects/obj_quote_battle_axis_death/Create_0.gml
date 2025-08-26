@@ -1,10 +1,10 @@
 text_effect = "twitchy";
 message[0] = "BzZT-Z// z. ._ .";
-message[1] = ". . W-wW-";
+message[1] = ". . . W-wW-";
 message[2] = "-WHA_T HAS H/APPENeD#TO M..E?";
 message[3] = "D-D-DAMAGE CRITICAL_";
 message[4] = "Se-EK R/ePAI'RS IM#EDIATELY_";
-message[5] = "I S_EE .  .";
+message[5] = "I S_EE .  . .";
 message[6] = "CALLInG MR. ChUJIN_";
 message[7] = "CREaTOR. .. ?";
 message[8] = "CALLInG MR. ChUJIN_";

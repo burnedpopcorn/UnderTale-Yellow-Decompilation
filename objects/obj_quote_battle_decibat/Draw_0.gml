@@ -1,6 +1,4 @@
-var enemy_attack;
-
-enemy_attack = global.enemy_attack;
+var enemy_attack = global.enemy_attack;
 draw_set_font(fnt_dotumche);
 draw_set_color(c_black);
 draw_set_halign(fa_left);

@@ -1,15 +1,15 @@
-var box, side, angle, yy, xx, new_flowey;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
+var side;
 
 do
     side = choose(1, 2, 3, 4);
 until (side != side_last);
 
-angle = 0;
+var angle = 0;
+var xx, yy;
 
 switch (side)
 {
@@ -38,7 +38,7 @@ switch (side)
         break;
 }
 
-new_flowey = instance_create_depth(xx, yy, -100, obj_flowey_1_attack_8_flower);
+var new_flowey = instance_create_depth(xx, yy, -100, obj_flowey_1_attack_8_flower);
 new_flowey.image_angle = angle - 90;
 alarm[0] = spawn_delay;
 side_last = side;

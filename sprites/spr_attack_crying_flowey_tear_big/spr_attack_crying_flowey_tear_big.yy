@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"70c29c9d-a437-41d3-b4dc-2b8e4ef4931f",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e7b04584-e8e2-448d-bb11-26041f31bb7d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c4882454-801b-41d0-9aec-b3a71d4ae5a2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ba09faa2-f1c2-410d-9cc1-48c9ab832519",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 41,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c10096c1-3aeb-4b78-a916-0e9f9c64fe58","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5417cbe2-266c-41b0-bee9-70727070cf41","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"70c29c9d-a437-41d3-b4dc-2b8e4ef4931f","path":"sprites/spr_attack_crying_flowey_tear_big/spr_attack_crying_flowey_tear_big.yy",},},},"Disabled":false,"id":"02f2a1d3-73a5-4159-89e6-a320774e0407","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e7b04584-e8e2-448d-bb11-26041f31bb7d","path":"sprites/spr_attack_crying_flowey_tear_big/spr_attack_crying_flowey_tear_big.yy",},},},"Disabled":false,"id":"1845dffc-006f-4a8d-b9e4-ac7c14da1f46","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c4882454-801b-41d0-9aec-b3a71d4ae5a2","path":"sprites/spr_attack_crying_flowey_tear_big/spr_attack_crying_flowey_tear_big.yy",},},},"Disabled":false,"id":"7be965cd-6f25-4b59-bedf-584e6b27db7d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ba09faa2-f1c2-410d-9cc1-48c9ab832519","path":"sprites/spr_attack_crying_flowey_tear_big/spr_attack_crying_flowey_tear_big.yy",},},},"Disabled":false,"id":"d39adfa8-2b4c-4fb5-a262-7cfdbf1a9fef","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleHotlandFloweyPhase1",
+    "path": "texturegroups/BattleHotlandFloweyPhase1",
   },
   "type": 0,
   "VTile": false,

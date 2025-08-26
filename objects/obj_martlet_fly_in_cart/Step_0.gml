@@ -15,6 +15,6 @@ if (y >= (obj_pl.y - 20))
     with (msg)
     {
         message[0] = "* Heyo!";
-        prt[0] = 312;
+        prt[0] = spr_martlet_head_content;
     }
 }

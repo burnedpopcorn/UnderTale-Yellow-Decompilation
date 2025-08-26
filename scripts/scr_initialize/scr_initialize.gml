@@ -1,7 +1,5 @@
 function scr_initialize()
 {
-    var i;
-    
     randomize();
     global.player_level = 1;
     global.current_hp_self = 20;
@@ -69,22 +67,22 @@ function scr_initialize()
     global.kill_area[0][0] = 9999;
     global.kill_number[1] = 20;
     
-    for (i = 0; i <= 6; i++)
+    for (var i = 0; i <= 6; i++)
         global.kill_area[1][i] = 5;
     
     global.kill_number[2] = 20;
     
-    for (i = 0; i <= 7; i++)
+    for (var i = 0; i <= 7; i++)
         global.kill_area[2][i] = 5;
     
     global.kill_number[3] = 20;
     
-    for (i = 0; i <= 8; i++)
+    for (var i = 0; i <= 8; i++)
         global.kill_area[3][i] = 3;
     
     global.kill_number[4] = 20;
     
-    for (i = 0; i <= 12; i++)
+    for (var i = 0; i <= 12; i++)
         global.kill_area[4][i] = 3;
     
     global.kill_area_current = 0;
@@ -135,7 +133,7 @@ function scr_initialize()
     global.fast_travel_newx = 0;
     global.fast_travel_newy = 0;
     
-    for (i = 1; i <= 8; i++)
+    for (var i = 1; i <= 8; i++)
         global.item_slot[i] = "Nothing";
     
     global.box_slot_list = ds_list_create();

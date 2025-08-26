@@ -1,9 +1,7 @@
-var robot_item_x_player, robot_item_y_player, pl_image_index;
+var robot_item_x_player = obj_pl.x;
+var robot_item_y_player = obj_pl.y - 9 - (sprite_height - sprite_yoffset);
 
-robot_item_x_player = obj_pl.x;
-robot_item_y_player = obj_pl.y - 9 - (sprite_height - sprite_yoffset);
-
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     if (global.route == 2)
     {
@@ -76,7 +74,7 @@ if (robot_item_is_carried == true)
     x = robot_item_x_player;
     y = robot_item_y_player;
     depth = obj_pl.depth - 1;
-    pl_image_index = floor(obj_pl.image_index);
+    var pl_image_index = floor(obj_pl.image_index);
     
     if (obj_pl.direction == 0 || obj_pl.direction == 180)
     {
@@ -88,7 +86,7 @@ if (robot_item_is_carried == true)
         y -= 1;
     }
     
-    if (keyboard_multicheck(1) && obj_pl.state == scr_normal_state)
+    if (keyboard_multicheck(vk_anykey) && obj_pl.state == scr_normal_state)
     {
         robot_item_is_jumping = true;
         audio_play_sound(snd_playerjump, 1, 0);

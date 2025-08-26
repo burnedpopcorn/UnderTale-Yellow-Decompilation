@@ -13,7 +13,7 @@ if (instance_exists(obj_dialogue) && talk == true)
     }
 }
 
-if (keyboard_multicheck_pressed(0) && scr_interact() == true)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true)
 {
     scr_text();
     talk = 1;
@@ -24,7 +24,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* Wow, I can go wherever I want#  now? I was tired of hiding#  from Dalv! ";
                 message[1] = "* You can only draw so many#  landscapes of tiny cracks and#  good hiding rocks! ";
             }
@@ -36,7 +36,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I finally got to see the big#  drawing of a sweet corn cob#  I made!";
                 message[1] = "* I can't believe Dalv hung#  it up!";
                 message[2] = "* I know he loves his corn#  but I can't believe he#  liked my art that much!";
@@ -50,7 +50,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I've always considered Dalv#  and me to be friends. ";
                 message[1] = "* He just likes to not#  be bothered sometimes. ";
                 message[2] = "* I get that. Sometimes I just#  want to be alone to do#  my art! ";
@@ -64,7 +64,7 @@ if (keyboard_multicheck_pressed(0) && scr_interact() == true)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* I just can't wait to sketch#  the outside!";
             }
             

@@ -1,5 +1,3 @@
-var clovjump;
-
 palette_index = obj_pl.palette_index;
 shader_on = obj_pl.shader_on;
 
@@ -35,10 +33,10 @@ with (other)
                 exit;
             
             audio_sound_gain(obj_radio.current_song, 1, 500);
-            scr_audio_fade_out(194, 250);
+            scr_audio_fade_out(mus_shimmer, 250);
             instance_destroy();
             instance_create(x, y, obj_player_cart);
-            clovjump = instance_create(x, y, obj_clover_minesjump);
+            var clovjump = instance_create(x, y, obj_clover_minesjump);
             
             if (room == rm_dunes_20)
                 clovjump.hsp *= -1;

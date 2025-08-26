@@ -1,5 +1,3 @@
-var heart_xx, heart_yy;
-
 draw_set_font(global.font_type_text);
 draw_set_alpha(image_alpha);
 draw_set_color(c_white);
@@ -34,6 +32,7 @@ if (autofire_enabled)
 }
 
 draw_text(320, 340, string_hash_to_newline("Continue"));
+var heart_xx, heart_yy;
 
 if (menu_option_selected == 1)
 {

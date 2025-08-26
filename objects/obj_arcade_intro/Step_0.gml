@@ -1,8 +1,6 @@
-var trn, i;
-
 if (arc_controls_open == true)
 {
-    if (keyboard_multicheck_pressed(0) || keyboard_multicheck_pressed(1))
+    if (keyboard_multicheck_pressed(vk_nokey) || keyboard_multicheck_pressed(vk_anykey))
     {
         arc_controls_open = false;
         audio_play_sound(snd_arc_menu_select, 1, 0);
@@ -19,7 +17,7 @@ if (end_game)
     if (!audio_is_playing(snd_mew_seeya) && !instance_exists(obj_transition))
     {
         global.cutscene = false;
-        trn = instance_create(0, 0, obj_transition);
+        var trn = instance_create(0, 0, obj_transition);
         
         with (trn)
         {
@@ -69,7 +67,7 @@ switch (scene)
             audio_play_sound(snd_arc_menu_move, 1, 0);
         }
         
-        if (keyboard_multicheck_pressed(0))
+        if (keyboard_multicheck_pressed(vk_nokey))
         {
             switch (arc_cursor_pos)
             {
@@ -102,7 +100,7 @@ switch (scene)
 
 if (scene < 5)
 {
-    if (keyboard_multicheck_pressed(0))
+    if (keyboard_multicheck_pressed(vk_nokey))
     {
         arc_title_x = 160;
         arc_draw_menu_options = true;
@@ -110,7 +108,7 @@ if (scene < 5)
         audio_play_sound(snd_mew_title, 1, 0);
         scene = 5;
         
-        for (i = 0; i < 12; i++)
+        for (var i = 0; i < 12; i++)
         {
             if (alarm_get(i) > 0)
                 alarm_set(i, -1);

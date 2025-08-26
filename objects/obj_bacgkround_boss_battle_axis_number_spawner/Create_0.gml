@@ -1,7 +1,5 @@
-var move;
-
 part_x = round(irandom_range(0, room_width) / 40) * 40;
-move = false;
+var move = false;
 
 while (move == false)
 {

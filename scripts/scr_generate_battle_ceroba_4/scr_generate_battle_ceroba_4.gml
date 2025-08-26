@@ -1,7 +1,5 @@
 function scr_generate_battle_ceroba_4()
 {
-    var battle_bg;
-    
     if (live_call())
         return global.live_result;
     
@@ -76,7 +74,7 @@ function scr_generate_battle_ceroba_4()
     if (!instance_exists(obj_ceroba_body_pacifist_phase_2))
     {
         instance_create_depth(318, 96, -1000, obj_ceroba_transformation_mask);
-        battle_bg = instance_create_depth(0, 0, 0, obj_petal_generator_phase_2);
+        var battle_bg = instance_create_depth(0, 0, 0, obj_petal_generator_phase_2);
         
         with (battle_bg)
         {

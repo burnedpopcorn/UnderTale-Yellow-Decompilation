@@ -4,7 +4,7 @@ if (floor(image_index) == 2)
         audio_play_sound(snd_tarpdrop, 1, 0);
 }
 
-if (keyboard_multicheck_pressed(0) && scr_interact() && waiter == 0)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() && waiter == 0)
     waiter = 1;
 
 if (waiter == 1)

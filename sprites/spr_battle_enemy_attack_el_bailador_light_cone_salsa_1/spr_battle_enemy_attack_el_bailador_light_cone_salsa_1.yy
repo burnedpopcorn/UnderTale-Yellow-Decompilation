@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bcc15164-da83-4592-8572-bb1bc503abfd",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"32f2ec77-5aa1-46b6-9536-0b3e9cf654a0",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ba185ec2-6fa6-4b8f-9ac0-f163a05908be",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"26fa0ffa-cb7c-4405-aa0f-3e8688bd80cc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d1e402e6-8515-4ffd-819f-31d425deb68a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5f412008-ad39-46c1-a7e7-e79b0a64ba03",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 90,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5d5b47d5-bd58-44e4-b68e-56498bf91f61","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"74b46b74-e709-46c5-b652-ee922751fa7a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 8,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bcc15164-da83-4592-8572-bb1bc503abfd","path":"sprites/spr_battle_enemy_attack_el_bailador_light_cone_salsa_1/spr_battle_enemy_attack_el_bailador_light_cone_salsa_1.yy",},},},"Disabled":false,"id":"ddadc050-b387-4542-b904-847ab287c16e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"32f2ec77-5aa1-46b6-9536-0b3e9cf654a0","path":"sprites/spr_battle_enemy_attack_el_bailador_light_cone_salsa_1/spr_battle_enemy_attack_el_bailador_light_cone_salsa_1.yy",},},},"Disabled":false,"id":"85c9e9ff-651d-48b1-9a67-b7b7d0c641b8","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ba185ec2-6fa6-4b8f-9ac0-f163a05908be","path":"sprites/spr_battle_enemy_attack_el_bailador_light_cone_salsa_1/spr_battle_enemy_attack_el_bailador_light_cone_salsa_1.yy",},},},"Disabled":false,"id":"918d7625-1a8e-416e-8507-ee22e196daef","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"26fa0ffa-cb7c-4405-aa0f-3e8688bd80cc","path":"sprites/spr_battle_enemy_attack_el_bailador_light_cone_salsa_1/spr_battle_enemy_attack_el_bailador_light_cone_salsa_1.yy",},},},"Disabled":false,"id":"689c3da1-fad1-48c8-9ab6-74af2c4409d5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d1e402e6-8515-4ffd-819f-31d425deb68a","path":"sprites/spr_battle_enemy_attack_el_bailador_light_cone_salsa_1/spr_battle_enemy_attack_el_bailador_light_cone_salsa_1.yy",},},},"Disabled":false,"id":"5e3e7c9c-4080-4850-9879-0c873eca13fc","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5f412008-ad39-46c1-a7e7-e79b0a64ba03","path":"sprites/spr_battle_enemy_attack_el_bailador_light_cone_salsa_1/spr_battle_enemy_attack_el_bailador_light_cone_salsa_1.yy",},},},"Disabled":false,"id":"17cab964-79b5-4be8-92c1-0f2cf20d50d2","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleDunes",
+    "path": "texturegroups/BattleDunes",
   },
   "type": 0,
   "VTile": false,

@@ -1,6 +1,6 @@
 function scr_battle_core_directory_check_selected_text()
 {
-    var battle_enemy_name, enemy_attack_stat, enemy_defense_stat, enemy_mode, enemy_low_hp, act_number, game_mode;
+    var battle_enemy_name, enemy_attack_stat, enemy_defense_stat, enemy_mode, enemy_low_hp;
     
     if (global.battling_boss == true)
     {
@@ -12,7 +12,7 @@ function scr_battle_core_directory_check_selected_text()
     }
     else
     {
-        act_number = global.act_number;
+        var act_number = global.act_number;
         
         switch (act_number)
         {
@@ -49,7 +49,7 @@ function scr_battle_core_directory_check_selected_text()
         }
     }
     
-    game_mode = global.game_mode;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {

@@ -1,5 +1,3 @@
-var index, next_attack;
-
 if (live_call())
     return global.live_result;
 
@@ -11,7 +9,7 @@ if (global.flowey_attack_number == 3 || global.flowey_attack_number == 7 || glob
 {
     if (global.flowey_attack_number == 3)
     {
-        index = ds_list_find_index(global.flowey_stolen_attack_list, 1);
+        var index = ds_list_find_index(global.flowey_stolen_attack_list, 1);
         
         if (index != -1)
         {
@@ -31,7 +29,7 @@ if (global.flowey_attack_number == 3 || global.flowey_attack_number == 7 || glob
     }
     else if (global.flowey_attack_number == 7)
     {
-        index = ds_list_find_index(global.flowey_stolen_attack_list, 2);
+        var index = ds_list_find_index(global.flowey_stolen_attack_list, 2);
         
         if (index != -1)
         {
@@ -60,7 +58,7 @@ if (global.flowey_attack_number == 3 || global.flowey_attack_number == 7 || glob
     }
     else if (global.flowey_attack_number == 11)
     {
-        index = ds_list_find_index(global.flowey_stolen_attack_list, 5);
+        var index = ds_list_find_index(global.flowey_stolen_attack_list, 5);
         
         if (index != -1)
         {
@@ -84,7 +82,7 @@ if (global.flowey_attack_number == 3 || global.flowey_attack_number == 7 || glob
 else if (ds_list_size(global.flowey_attack_list) >= 1)
 {
     ds_list_shuffle(global.flowey_attack_list);
-    next_attack = ds_list_find_value(global.flowey_attack_list, 0);
+    var next_attack = ds_list_find_value(global.flowey_attack_list, 0);
     ds_list_delete(global.flowey_attack_list, 0);
     global.enemy_attack = "Flowey Attack " + string(next_attack);
 }

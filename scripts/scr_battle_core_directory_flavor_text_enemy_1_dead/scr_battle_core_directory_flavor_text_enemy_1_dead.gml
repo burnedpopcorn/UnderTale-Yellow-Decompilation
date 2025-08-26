@@ -1,22 +1,20 @@
 function scr_battle_core_directory_flavor_text_enemy_1_dead()
 {
-    var battle_enemy_name, enemy_count, enemy_mode, enemy_mode_2, enemy_mode_3, game_mode;
-    
-    battle_enemy_name = global.battle_enemy_name;
-    enemy_count = global.enemy_count;
-    enemy_mode = global.enemy_mode;
+    var battle_enemy_name = global.battle_enemy_name;
+    var enemy_count = global.enemy_count;
+    var enemy_mode = global.enemy_mode;
     
     if (enemy_count >= 3)
     {
-        enemy_mode_2 = global.enemy_mode_2;
-        enemy_mode_3 = global.enemy_mode_3;
+        var enemy_mode_2 = global.enemy_mode_2;
+        var enemy_mode_3 = global.enemy_mode_3;
     }
     else if (enemy_count >= 2)
     {
-        enemy_mode_2 = global.enemy_mode_2;
+        var enemy_mode_2 = global.enemy_mode_2;
     }
     
-    game_mode = global.game_mode;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {
@@ -38,7 +36,7 @@ function scr_battle_core_directory_flavor_text_enemy_1_dead()
         else if (battle_enemy_name == "know cone insomnitot duo")
             message[0] = "* Know Cone stomps the ground in#  a fit of rage.";
         else if (battle_enemy_name == "frostermit know cone duo")
-            message[0] = "* Frostermit doesn't know what to do.";
+            message[0] = "* Frostermit doesn't know what#  to do.";
         else if (battle_enemy_name == "dunebud duo")
             message[0] = "* The remaining Dunebud glances#  around, looking for their#  partner.";
         else if (battle_enemy_name == "cactony slither duo")

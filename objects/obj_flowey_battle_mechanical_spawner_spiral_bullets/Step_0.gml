@@ -1,19 +1,17 @@
-var xx, yy, i, bullet;
-
 if (live_call())
     return global.live_result;
 
 switch (scene)
 {
     case 0:
-        xx = 320;
-        yy = 160;
+        var xx = 320;
+        var yy = 160;
         fire_sound = audio_play_sound(snd_f_mechpellet, 1, 0);
         audio_sound_gain(fire_sound, 0.5, 0);
         
-        for (i = 0; i < bullet_count; i++)
+        for (var i = 0; i < bullet_count; i++)
         {
-            bullet = instance_create_depth(xx, yy, -100, obj_flowey_battle_phase_2_mechanical_pellet);
+            var bullet = instance_create_depth(xx, yy, -100, obj_flowey_battle_phase_2_mechanical_pellet);
             bullet.direction = spawn_dir + (spawn_dir_inc * i);
             bullet.image_angle = bullet.direction;
             bullet.speed = 12;

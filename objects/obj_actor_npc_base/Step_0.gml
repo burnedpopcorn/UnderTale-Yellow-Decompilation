@@ -1,11 +1,9 @@
-var destination_count, up_sprite_old, left_sprite_old;
-
 if (npc_dynamic_depth == true)
     depth = -y;
 
 interact = 0;
 
-if (keyboard_multicheck_pressed(0) && scr_interact() == true && can_interact && is_walking == false)
+if (keyboard_multicheck_pressed(vk_nokey) && scr_interact() == true && can_interact && is_walking == false)
 {
     npc_direction_hold = npc_direction;
     
@@ -116,7 +114,7 @@ if (can_walk == true)
     x_destination = x_dest[current_destination];
     y_destination = y_dest[current_destination];
     npc_arrived = false;
-    destination_count = array_length_1d(x_dest) - 1;
+    var destination_count = array_length_1d(x_dest) - 1;
     
     if (scr_walk_npc_free(x_destination, y_destination, actor_speed, 0.2, axis_override, end_direction, walk_collider))
     {
@@ -139,10 +137,10 @@ if (can_walk == true)
 
 if (walk_direction_flip == true)
 {
-    up_sprite_old = up_sprite;
+    var up_sprite_old = up_sprite;
     up_sprite = down_sprite;
     down_sprite = up_sprite_old;
-    left_sprite_old = left_sprite;
+    var left_sprite_old = left_sprite;
     left_sprite = right_sprite;
     right_sprite = left_sprite_old;
     up_sprite_old = up_sprite_idle;

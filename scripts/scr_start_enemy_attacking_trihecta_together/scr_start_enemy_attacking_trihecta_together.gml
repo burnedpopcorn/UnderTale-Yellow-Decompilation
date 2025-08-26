@@ -1,9 +1,7 @@
 function scr_start_enemy_attacking_trihecta_together()
 {
-    var quote_position;
-    
     instance_create(319, 320, obj_dialogue_box_battle_transformation_any);
-    quote_position = irandom_range(0, 2);
+    var quote_position = irandom_range(0, 2);
     
     if (quote_position == 0)
     {

@@ -1,8 +1,6 @@
-var item_number, i;
+var item_number = 8;
 
-item_number = 8;
-
-for (i = 1; i <= 8; i++)
+for (var i = 1; i <= 8; i++)
 {
     if (global.item_slot[i] == "Nothing")
     {
@@ -31,14 +29,14 @@ if (global.up_keyp)
     audio_play_sound(snd_mainmenu_select, 1, 0);
 }
 
-if (keyboard_multicheck_pressed(0))
+if (keyboard_multicheck_pressed(vk_nokey))
 {
     global.item_used_overworld = global.item_slot[item_selected];
     audio_play_sound(snd_confirm, 1, 0);
     instance_destroy();
 }
 
-if (keyboard_multicheck_pressed(1))
+if (keyboard_multicheck_pressed(vk_anykey))
 {
     audio_play_sound(snd_fail, 1, 0);
     scr_cutscene_end();

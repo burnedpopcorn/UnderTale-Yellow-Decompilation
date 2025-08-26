@@ -1,8 +1,6 @@
 function scr_recreate_heart_battle_menu_text_feisty_four()
 {
-    var last_text_move_select, random_text_move_select;
-    
-    last_text_move_select = global.last_text_move_select;
+    var last_text_move_select = global.last_text_move_select;
     instance_create_depth(obj_dialogue_box_battle.x + 20, obj_dialogue_box_battle.x + 20, -642, obj_dialogue_battle_move_select_any);
     
     if (text_deadlock_1 == true)
@@ -15,7 +13,7 @@ function scr_recreate_heart_battle_menu_text_feisty_four()
     }
     else
     {
-        random_text_move_select = irandom_range(1, 9);
+        var random_text_move_select = irandom_range(1, 9);
         
         if (random_text_move_select == 1)
         {

@@ -1,5 +1,3 @@
-var martlet, red;
-
 event_inherited();
 
 if (interact)
@@ -23,7 +21,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* WHOA!";
                 message[1] = "* Whoa whoa WHOA!";
                 message[2] = "* How many times are you gonna#  bring me in? I TOLD you I'm not#  a—";
@@ -40,7 +38,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* You kinda look like the same#  might've happened to you.";
                 message[1] = "* Dressing the way a human#  wouldn't is a good start,";
                 message[2] = "* but a lot of folks down here#  don't know the nuances of#  ~human fashion~.";
@@ -55,7 +53,7 @@ if (interact)
             with (msg)
             {
                 portrait = false;
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
                 message[0] = "* So, do you just walk up to#  people repeatedly and expect#  them to talk to you?";
                 message[1] = "* ...Does it work?";
                 message[2] = "* ...Should I try it?";
@@ -92,8 +90,8 @@ if (interact)
             with (msg)
             {
                 message[0] = "* ...Wait, did you get arrested#  on PURPOSE to try and make new#  friends?";
-                message[1] = "* ..";
-                message[2] = "* ..........";
+                message[1] = "* ....";
+                message[2] = "* ...................";
                 message[3] = "* ...You might be onto something,#  buster.";
             }
             
@@ -156,25 +154,25 @@ switch (scene)
         if (!scr_timer())
             exit;
         
-        martlet = martlet_npc;
-        red = id;
+        var martlet = martlet_npc;
+        var red = id;
         scr_text();
         
         with (msg)
         {
             if (talker[message_current] == red)
-                sndfnt = 99;
+                sndfnt = sndfnt_default;
             
             if (talker[message_current] == martlet || message_current == 0)
-                sndfnt = 102;
+                sndfnt = snd_talk_martlet;
             
             talker[0] = martlet;
             message[0] = "* Ooooh! Oh, hey! Clover!";
             message[1] = "* Remember how I told you#  I apprehended a human#  last week?";
             message[2] = "* Thaaat's her!";
-            prt[0] = 328;
-            prt[1] = 328;
-            prt[2] = 318;
+            prt[0] = spr_martlet_head_regular;
+            prt[1] = spr_martlet_head_regular;
+            prt[2] = spr_martlet_head_happy;
             talker[3] = red;
             message[3] = "* ?";
             message[4] = "* ????????????";
@@ -182,7 +180,7 @@ switch (scene)
             message[6] = "* Please tell me she did.";
             talker[7] = martlet;
             message[7] = "* Oh! I'm so sorry! I just#  thought you-";
-            prt[7] = 333;
+            prt[7] = spr_martlet_head_surprised;
             talker[8] = red;
             message[8] = "* No, no, I'm sorry, I just...#  get it often.";
             message[9] = "* You MAY OR MAY NOT be the first#  that apprehended me repeatedly,#  though.";
@@ -197,15 +195,15 @@ switch (scene)
             ch_msg = 14;
             ch[1] = "It's Clover";
             message[15] = "* Huh? No, not you, silly,#  her!";
-            prt[9] = 318;
-            prt[10] = 328;
-            prt[11] = 333;
-            prt[12] = 323;
-            prt[13] = 335;
-            prt[14] = 320;
-            prt[15] = 333;
+            prt[9] = spr_martlet_head_happy;
+            prt[10] = spr_martlet_head_regular;
+            prt[11] = spr_martlet_head_surprised;
+            prt[12] = spr_martlet_head_nervous_smile;
+            prt[13] = spr_martlet_head_suspiciouser;
+            prt[14] = spr_martlet_head_melancholic;
+            prt[15] = spr_martlet_head_surprised;
             talker[16] = red;
-            message[16] = "* I.. Actually, how about#  \"Red?\"";
+            message[16] = "* I.... Actually, how about#  \"Red?\"";
             message[17] = "* That's what your colleagues#  have kept calling me every time#  I get falsely apprehended.";
             message[18] = "* To be honest...";
             message[19] = "* I hoped that eventually I'd be#  \"caught\" enough that you'd all#  recognize me and it'd stop.";
@@ -217,12 +215,12 @@ switch (scene)
             message[24] = "* You could even help me#  build puzzles!";
             message[25] = "* That might be a code#  violation now that I#  think about it...";
             message[26] = "* Aaahh, it's fine!";
-            prt[21] = 333;
-            prt[22] = 318;
-            prt[23] = 318;
-            prt[24] = 313;
-            prt[25] = 335;
-            prt[26] = 313;
+            prt[21] = spr_martlet_head_surprised;
+            prt[22] = spr_martlet_head_happy;
+            prt[23] = spr_martlet_head_happy;
+            prt[24] = spr_martlet_head_determined;
+            prt[25] = spr_martlet_head_suspiciouser;
+            prt[26] = spr_martlet_head_determined;
             talker[27] = red;
             message[27] = "* What?";
             message[28] = "* It can't be THAT easy to get in,#  right?";
@@ -232,11 +230,11 @@ switch (scene)
             message[31] = "* Me and Clover have some#  important business to#  attend to.";
             message[32] = "* But I should be free#  next week!";
             message[33] = "* You can find me doing#  my duty around Snowdin#  any day.";
-            prt[29] = 337;
-            prt[30] = 313;
-            prt[31] = 338;
-            prt[32] = 328;
-            prt[33] = 328;
+            prt[29] = spr_martlet_head_wink;
+            prt[30] = spr_martlet_head_determined;
+            prt[31] = spr_martlet_head_wondering;
+            prt[32] = spr_martlet_head_regular;
+            prt[33] = spr_martlet_head_regular;
             talker[34] = red;
             message[34] = "* Oh.";
             message[35] = "* You're serious.";
@@ -245,7 +243,7 @@ switch (scene)
             message[38] = "* See you then!!";
             talker[39] = martlet;
             message[39] = "* See ya!";
-            prt[39] = 312;
+            prt[39] = spr_martlet_head_content;
         }
         
         if (!global.dialogue_open)

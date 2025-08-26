@@ -43,7 +43,7 @@ with (obj_martlet_g_head)
     image_index = 0;
     image_xscale = 1;
     image_yscale = 1;
-    head_sprite = spr_martlet_head_angry;
+    head_sprite = 309;
 }
 
 with (obj_martlet_g_hand_left)
@@ -63,7 +63,7 @@ with (obj_martlet_g_hand_left)
     image_index = 0;
     image_xscale = 1;
     image_yscale = 1;
-    hand_left_sprite = spr_martlet_g_hand_left;
+    hand_left_sprite = 2072;
 }
 
 with (obj_martlet_g_hand_right)
@@ -83,5 +83,5 @@ with (obj_martlet_g_hand_right)
     image_index = 0;
     image_xscale = 1;
     image_yscale = 1;
-    hand_left_sprite = spr_martlet_g_hand_right;
+    hand_left_sprite = 2074;
 }

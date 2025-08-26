@@ -1,16 +1,14 @@
-var offset, camera_border_y, camera_border_x, i;
-
 if (live_call())
     return global.live_result;
 
-offset = 18;
+var offset = 18;
 draw_set_color(c_white);
 draw_set_font(fnt_main);
 draw_set_halign(fa_center);
-camera_border_y = 240;
-camera_border_x = 320;
+var camera_border_y = 240;
+var camera_border_x = 320;
 
-for (i = 0; i < array_length(credits_entry_one); i++)
+for (var i = 0; i < array_length(credits_entry_one); i++)
 {
     if (i == 0)
         draw_set_color(c_yellow);
@@ -20,7 +18,7 @@ for (i = 0; i < array_length(credits_entry_one); i++)
     draw_text(camera_border_x - 90, (camera_border_y - credits_y_offset) + (i * offset), credits_entry_one[i]);
 }
 
-for (i = 0; i < array_length(credits_entry_two); i++)
+for (var i = 0; i < array_length(credits_entry_two); i++)
 {
     if (i == 0)
         draw_set_color(c_yellow);
@@ -32,7 +30,7 @@ for (i = 0; i < array_length(credits_entry_two); i++)
 
 draw_set_alpha(credits_final_alpha);
 
-for (i = 0; i < array_length(credits_entry_three); i++)
+for (var i = 0; i < array_length(credits_entry_three); i++)
 {
     if (i == 0)
         draw_set_color(c_yellow);

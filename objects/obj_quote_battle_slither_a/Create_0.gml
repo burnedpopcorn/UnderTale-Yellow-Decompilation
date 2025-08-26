@@ -9,7 +9,7 @@ if (execute_normal == true)
 {
     if (global.last_action_selected == "Action 1 Low HP")
     {
-        message[0] = "They were only#greetings!I#ssswear!";
+        message[0] = "They were only#greetings!#I ssswear!";
         message_end = 0;
     }
     else if (global.last_action_selected == "Action 2 Low HP")

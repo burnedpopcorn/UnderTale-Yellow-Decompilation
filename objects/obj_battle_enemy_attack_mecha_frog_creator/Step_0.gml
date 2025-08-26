@@ -1,5 +1,3 @@
-var new_hand;
-
 if (live_call())
     return global.live_result;
 
@@ -26,7 +24,7 @@ else if (scene == 1)
 
 if (hand_reroll == true)
 {
-    new_hand = choose(hand_right, hand_left);
+    var new_hand = choose(hand_right, hand_left);
     
     with (new_hand)
         active = true;

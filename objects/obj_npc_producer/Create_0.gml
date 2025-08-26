@@ -7,5 +7,5 @@ npc_flag = ds_map_find_value(global.npc_map, npc_id);
 image_speed = 0;
 is_talking = 0;
 interact_count = 0;
-npc_voice_sfx = 0;
+npc_voice_sfx = snd_ceroba_staff_lock;
 depth = -y;

@@ -1,12 +1,10 @@
 function scr_dialogue_battle_action_selected_action_1_martlet_final()
 {
-    var action_1_selected_count, rnd;
-    
-    action_1_selected_count = global.action_1_selected_count;
+    var action_1_selected_count = global.action_1_selected_count;
     
     if (global.hotland_flag[9] < 2)
     {
-        rnd = choose(0, 1, 2);
+        var rnd = choose(0, 1, 2);
         
         switch (rnd)
         {

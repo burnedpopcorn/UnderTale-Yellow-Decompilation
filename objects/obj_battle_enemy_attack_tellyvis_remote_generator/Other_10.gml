@@ -1,5 +1,3 @@
-var enemy_attack, script_tgt, destroy_self, i;
-
 if (live_call())
     return global.live_result;
 
@@ -9,7 +7,7 @@ if (random_attack_current == "nothing")
 while (random_attack_current == random_attack_current_last)
     random_attack_current = ds_list_find_value(random_attack_list, irandom_range(0, ds_list_size(random_attack_list) - 1));
 
-enemy_attack = random_attack_current;
+var enemy_attack = random_attack_current;
 
 if (enemy_attack == "Crispy Slash")
 {
@@ -130,7 +128,7 @@ else if (enemy_attack == "Cactony Needle Side" && !instance_exists(obj_battle_en
     if (attack_counter_current == -1)
         attack_counter_current = 90;
     
-    script_tgt = 3154;
+    var script_tgt = obj_dialogue_box_battle_transformation_any;
     scr_create_attack_boundary(script_tgt.bbox_left + 5, script_tgt.bbox_top + 5, script_tgt.sprite_width - 10, script_tgt.sprite_height - 10, 20, 0);
     instance_create(0, 0, obj_battle_enemy_attack_cactony_needle_side_generator);
 }
@@ -157,9 +155,9 @@ if (attack_counter_current == 0)
         if (object_index == obj_quote_bubble_battle || object_index == obj_quote_battle_tellyvis_a_mid_attack)
             exit;
         
-        destroy_self = true;
+        var destroy_self = true;
         
-        for (i = 0; i < ds_list_size(other.instance_list); i++)
+        for (var i = 0; i < ds_list_size(other.instance_list); i++)
         {
             if (ds_list_find_value(other.instance_list, i) == id)
                 destroy_self = false;

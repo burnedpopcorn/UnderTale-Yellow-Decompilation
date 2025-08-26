@@ -1,7 +1,5 @@
-var main_shop_screen_number, buy_shop_screen_number, selected_item;
-
-main_shop_screen_number = global.main_shop_screen_number;
-buy_shop_screen_number = global.buy_shop_screen_number;
+var main_shop_screen_number = global.main_shop_screen_number;
+var buy_shop_screen_number = global.buy_shop_screen_number;
 script_execute(scr_controls_shop_buy);
 
 if (key_select)
@@ -10,7 +8,7 @@ if (key_select)
     {
         if (main_shop_screen_number == 1)
         {
-            selected_item = global.shop_item[buy_shop_screen_number];
+            var selected_item = global.shop_item[buy_shop_screen_number];
             
             if (scr_determine_item_stealable(selected_item) == false || global.item_stock[global.shop_stock[buy_shop_screen_number]] <= 0)
             {

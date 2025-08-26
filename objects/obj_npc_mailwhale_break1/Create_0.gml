@@ -1,4 +1,4 @@
-npc_voice_sfx = 0;
+npc_voice_sfx = snd_ceroba_staff_lock;
 
 if (global.dunes_flag_ext[5] == 1 || global.geno_complete[2] == true)
     instance_destroy();

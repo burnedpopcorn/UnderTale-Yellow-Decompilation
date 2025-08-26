@@ -1,14 +1,12 @@
 function scr_interact()
 {
-    var pl_dir, pl_x, pl_y, check_distance_x, check_distance_y;
-    
     if (distance_to_object(obj_pl) < 20 && obj_pl.state == scr_normal_state)
     {
-        pl_dir = obj_pl.direction;
-        pl_x = 0;
-        pl_y = 0;
-        check_distance_x = 0;
-        check_distance_y = 0;
+        var pl_dir = obj_pl.direction;
+        var pl_x = 0;
+        var pl_y = 0;
+        var check_distance_x = 0;
+        var check_distance_y = 0;
         
         switch (pl_dir)
         {

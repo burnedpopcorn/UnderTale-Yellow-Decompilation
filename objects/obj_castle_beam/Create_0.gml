@@ -1,9 +1,7 @@
-var blast_sound;
-
 if (live_call())
     return global.live_result;
 
-blast_sound = audio_play_sound(snd_kamehamehablast, 1, 0);
+var blast_sound = audio_play_sound(snd_kamehamehablast, 1, 0);
 audio_sound_pitch(blast_sound, 0.75);
 scene = 0;
 cutscene_timer = 0;

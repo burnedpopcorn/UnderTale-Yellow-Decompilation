@@ -1,5 +1,3 @@
-var box;
-
 if (live_call())
     return global.live_result;
 
@@ -8,7 +6,7 @@ if (scene < 8)
 else
     background_alpha = lerp(background_alpha, -0.01, 0.35);
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {

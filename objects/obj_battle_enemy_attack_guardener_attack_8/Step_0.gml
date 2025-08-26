@@ -1,9 +1,7 @@
-var box, seed;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
@@ -12,7 +10,7 @@ switch (scene)
         break;
     
     case 1:
-        seed = instance_create_depth(grass_spawn_x_ar[grass_current], grass_spawn_y_ar[grass_current], obj_heart_battle_fighting_parent.depth - 3, obj_battle_enemy_attack_guardener_seed_grow);
+        var seed = instance_create_depth(grass_spawn_x_ar[grass_current], grass_spawn_y_ar[grass_current], obj_heart_battle_fighting_parent.depth - 3, obj_battle_enemy_attack_guardener_seed_grow);
         seed.direction = grass_spawn_direction[grass_current];
         grass_current += 1;
         

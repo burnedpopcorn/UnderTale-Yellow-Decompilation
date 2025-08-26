@@ -1,10 +1,8 @@
 function scr_battle_core_directory_flavor_text_enemy_2_default_6()
 {
-    var battle_enemy_name, enemy_mode_2, game_mode;
-    
-    battle_enemy_name = global.battle_enemy_name;
-    enemy_mode_2 = global.enemy_mode_2;
-    game_mode = global.game_mode;
+    var battle_enemy_name = global.battle_enemy_name;
+    var enemy_mode_2 = global.enemy_mode_2;
+    var game_mode = global.game_mode;
     
     if (game_mode == "customs")
     {
@@ -14,7 +12,7 @@ function scr_battle_core_directory_flavor_text_enemy_2_default_6()
         if (battle_enemy_name == "flier penilla duo")
             message[0] = "* Penilla rolls her eyes.";
         else if (battle_enemy_name == "sweet corn penilla duo")
-            message[0] = "* Penilla is overwhelmed with cutscenes.";
+            message[0] = "* Penilla is overwhelmed with#  cuteness.";
         else if (battle_enemy_name == "crispy scroll penilla duo")
             message[0] = "* Penilla tries to draw in an anime artstyle to make Crispy Scroll calm down.";
         else if (battle_enemy_name == "know cone insomnitot duo")

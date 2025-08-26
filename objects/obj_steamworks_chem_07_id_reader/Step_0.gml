@@ -4,7 +4,7 @@ if (live_call())
 switch (scene)
 {
     case 0:
-        if (scr_interact() && keyboard_multicheck_pressed(0))
+        if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
         {
             if (global.sworks_flag[55] == 0)
             {

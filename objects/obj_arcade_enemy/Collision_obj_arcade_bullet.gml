@@ -1,5 +1,3 @@
-var scr;
-
 if (arc_enemy_hp > 0)
     instance_destroy(other);
 
@@ -19,6 +17,6 @@ else if (arc_enemy_death == false)
     image_index = 0;
     sprite_index = arc_sprite_spared;
     audio_play_sound(snd_arc_defeat, 1, 0);
-    scr = instance_create(x, y - 20, obj_arcade_score);
+    var scr = instance_create(x, y - 20, obj_arcade_score);
     scr.score_amount = arc_enemy_score;
 }

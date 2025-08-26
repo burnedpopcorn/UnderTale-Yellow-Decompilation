@@ -1,5 +1,3 @@
-var glitch;
-
 no_loop = true;
 script_execute(scr_battle_load);
 script_execute(scr_determine_death_count_yellow);
@@ -20,7 +18,7 @@ switch (global.battle_enemy_name)
         break;
 }
 
-glitch = instance_create(x, y, obj_flowey_battle_screen_glitch_fight);
+var glitch = instance_create(x, y, obj_flowey_battle_screen_glitch_fight);
 glitch.persistent = true;
 glitch.alarm[0] = 9;
 audio_play_sound(snd_flowey_glitch_yellow, 1, 0);

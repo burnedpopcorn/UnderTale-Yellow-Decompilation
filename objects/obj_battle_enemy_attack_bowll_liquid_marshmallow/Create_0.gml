@@ -1,5 +1,5 @@
 damage_number = scr_determine_damage_number_enemy("bowll a", "bowll b", "bowll c");
-box = 3154;
+box = obj_dialogue_box_battle_transformation_any;
 generator = 2512;
 
 while (x < (box.bbox_left + generator.marsh_disjoint))

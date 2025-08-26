@@ -1,6 +1,5 @@
-var act_number, action_amount, enemy_count;
-
-act_number = global.act_number;
+var act_number = global.act_number;
+var action_amount;
 
 if (act_number == 1)
     action_amount = global.action_amount;
@@ -11,7 +10,7 @@ if (act_number == 2)
 if (act_number == 3)
     action_amount = global.action_amount_3;
 
-enemy_count = global.enemy_count;
+var enemy_count = global.enemy_count;
 script_execute(scr_controls_battle_act);
 
 if (instance_exists(obj_text_battle_move_selected_enemy_name_parent))
@@ -274,7 +273,7 @@ if (key_select == 0 && key_revert == 0)
             else
                 global.act_number += 1;
             
-            check_sound = snd_ceroba_staff_lock;
+            check_sound = 0;
             
             for (counter = 0; counter < 2; counter += 1)
             {
@@ -307,7 +306,7 @@ if (key_select == 0 && key_revert == 0)
             else
                 global.act_number_column += 1;
             
-            check_sound = snd_ceroba_staff_lock;
+            check_sound = 0;
             counter = 0;
             
             if (global.act_number_row == 1)
@@ -375,7 +374,7 @@ if (key_select == 0 && key_revert == 0)
             else
                 global.act_number -= 1;
             
-            check_sound = snd_ceroba_staff_lock;
+            check_sound = 0;
             
             for (counter = 0; counter < 2; counter += 1)
             {
@@ -408,7 +407,7 @@ if (key_select == 0 && key_revert == 0)
             else
                 global.act_number_column -= 1;
             
-            check_sound = snd_ceroba_staff_lock;
+            check_sound = 0;
             counter = 0;
             
             if (global.act_number_row == 1)

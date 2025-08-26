@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f3018e88-417c-43c3-9147-6d7b1a4490b6",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d84f9d2e-e38f-4756-b453-686cdb6f1589",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0c499dbb-075d-43e2-86f1-62a173371d85",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d3faf750-d21e-4279-9005-e9003cc08cca",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b776cdd4-67ed-4672-9f06-37feb1e0cf06",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9902569a-ab12-4f9e-a26e-1928a0a86a39",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 240,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cec217a3-3da4-432c-9d38-1180e4095145","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"65cce8d1-70b8-4c09-b56c-70b05f6aaf60","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f3018e88-417c-43c3-9147-6d7b1a4490b6","path":"sprites/spr_wildeast_blackjack_gun_holster_shop/spr_wildeast_blackjack_gun_holster_shop.yy",},},},"Disabled":false,"id":"32bc4074-a8b9-4084-825f-1fc04bd7a5c5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d84f9d2e-e38f-4756-b453-686cdb6f1589","path":"sprites/spr_wildeast_blackjack_gun_holster_shop/spr_wildeast_blackjack_gun_holster_shop.yy",},},},"Disabled":false,"id":"3e8fb762-2161-4340-8327-ee96268c93e3","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0c499dbb-075d-43e2-86f1-62a173371d85","path":"sprites/spr_wildeast_blackjack_gun_holster_shop/spr_wildeast_blackjack_gun_holster_shop.yy",},},},"Disabled":false,"id":"a7b13366-b99b-49d0-9aa3-abd91ee332b8","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d3faf750-d21e-4279-9005-e9003cc08cca","path":"sprites/spr_wildeast_blackjack_gun_holster_shop/spr_wildeast_blackjack_gun_holster_shop.yy",},},},"Disabled":false,"id":"43b05765-ddc7-4531-b3df-4fad3dec9a16","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b776cdd4-67ed-4672-9f06-37feb1e0cf06","path":"sprites/spr_wildeast_blackjack_gun_holster_shop/spr_wildeast_blackjack_gun_holster_shop.yy",},},},"Disabled":false,"id":"57944d5a-e2f4-49d0-aa37-69d8d26e85a9","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9902569a-ab12-4f9e-a26e-1928a0a86a39","path":"sprites/spr_wildeast_blackjack_gun_holster_shop/spr_wildeast_blackjack_gun_holster_shop.yy",},},},"Disabled":false,"id":"e6f9ba83-58c9-431c-9783-00da981b69ee","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Shops",
+    "path": "texturegroups/Shops",
   },
   "type": 0,
   "VTile": false,

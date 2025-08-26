@@ -1,5 +1,3 @@
-var x_min, x_max, y_min, y_max;
-
 if (arcade_intro == true)
     exit;
 
@@ -8,7 +6,7 @@ if (arcade_game_win)
     audio_stop_sound(mus_mew);
     global.dunes_flag[25] = true;
     
-    if (keyboard_multicheck_pressed(0) || keyboard_multicheck_pressed(1))
+    if (keyboard_multicheck_pressed(vk_nokey) || keyboard_multicheck_pressed(vk_anykey))
         room_restart();
     
     exit;
@@ -16,7 +14,7 @@ if (arcade_game_win)
 
 if (arcade_game_over)
 {
-    if (keyboard_multicheck_pressed(0) || keyboard_multicheck_pressed(1))
+    if (keyboard_multicheck_pressed(vk_nokey) || keyboard_multicheck_pressed(vk_anykey))
     {
         audio_sound_gain(mus_mew_boss, 1, 0);
         audio_sound_gain(mus_mew, 1, 0);
@@ -27,10 +25,10 @@ if (arcade_game_over)
     exit;
 }
 
-x_min = 90;
-x_max = 225;
-y_min = 60;
-y_max = 140;
+var x_min = 90;
+var x_max = 225;
+var y_min = 60;
+var y_max = 140;
 
 if (arcade_boss == false)
 {

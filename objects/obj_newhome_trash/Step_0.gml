@@ -1,5 +1,3 @@
-var narrator, msg_number;
-
 if (live_call())
     return global.live_result;
 
@@ -13,7 +11,7 @@ if (interact)
         {
             if (!instance_exists(obj_dialogue_narrator))
             {
-                narrator = instance_create_depth(0, 0, -100, obj_dialogue_narrator);
+                var narrator = instance_create_depth(0, 0, -100, obj_dialogue_narrator);
                 
                 with (narrator)
                     message[0] = "* (Not of interest.)";
@@ -34,7 +32,7 @@ if (waiter)
         
         with (msg)
         {
-            sndfnt_array[0] = 391;
+            sndfnt_array[0] = snd_talk_default;
             ch_msg = 1;
             ch[1] = "Yes";
             ch[2] = "No";
@@ -45,20 +43,22 @@ if (waiter)
             {
                 if (global.party_member != -4)
                 {
-                    sndfnt_array[2] = 102;
+                    sndfnt_array[2] = snd_talk_martlet;
                     message[2] = "* Do humans often eat#  from the garbage?";
                     message[3] = "* Shoot, I coulda left a#  trash bag out in Snowdin#  as a lure.";
                     message[4] = "* I'm only joking, of#  course!";
                     message[5] = "* I can't judge anyone's#  culinary preferences#  after today...";
-                    prt[2] = 311;
-                    prt[3] = 335;
-                    prt[4] = 320;
-                    prt[5] = 329;
-                    sndfnt_array[6] = 391;
+                    prt[2] = spr_martlet_head_confused;
+                    prt[3] = spr_martlet_head_suspiciouser;
+                    prt[4] = spr_martlet_head_melancholic;
+                    prt[5] = spr_martlet_head_sad;
+                    sndfnt_array[6] = snd_talk_default;
                 }
                 
                 if (scr_item("Adult Soda"))
                 {
+                    var msg_number;
+                    
                     if (global.party_member != -4)
                         msg_number = 6;
                     else
@@ -69,6 +69,8 @@ if (waiter)
                 }
                 else
                 {
+                    var msg_number;
+                    
                     if (global.party_member != -4)
                         msg_number = 6;
                     else

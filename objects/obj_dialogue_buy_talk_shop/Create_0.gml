@@ -1,11 +1,9 @@
-var game_mode, shop_name, main_shop_screen_number, player_response, able_to_buy, message_alt_length;
-
 depth = -room_height - 164;
-game_mode = global.game_mode;
-shop_name = global.shop_name;
-main_shop_screen_number = global.main_shop_screen_number;
-player_response = global.player_response;
-able_to_buy = global.able_to_buy;
+var game_mode = global.game_mode;
+var shop_name = global.shop_name;
+var main_shop_screen_number = global.main_shop_screen_number;
+var player_response = global.player_response;
+var able_to_buy = global.able_to_buy;
 
 if (shop_name == "Honeydew Resort Normal")
 {
@@ -267,7 +265,7 @@ if (shop_name == "Steamworks Vendy")
                 }
                 else
                 {
-                    message[0] = "* You do not have enough money#  :[";
+                    message[0] = "* You do not#have enough money#  :[";
                     portrait[0] = 863;
                 }
                 
@@ -426,7 +424,7 @@ message_draw_alt = "";
 
 if (shop_name == "Hotel Shop")
 {
-    message_alt_length = string_length(message_alt[message_current]);
+    var message_alt_length = string_length(message_alt[message_current]);
     
     if (message_alt_length > message_length)
         message_length = message_alt_length;

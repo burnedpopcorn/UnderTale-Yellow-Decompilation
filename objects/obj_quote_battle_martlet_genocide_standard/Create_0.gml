@@ -1,7 +1,5 @@
-var random_number;
-
 text_effect = "twitchy";
-random_number = irandom_range(1, 3);
+var random_number = irandom_range(1, 3);
 
 if (random_number == 1)
 {

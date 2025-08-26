@@ -1,7 +1,19 @@
-var camera_xx, soul, soul_canister;
-
 if (live_call())
     return global.live_result;
+
+function dialogueCheck()
+{
+    if (instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+    {
+        with (obj_dialogue_pacifist_ending_flashbacks)
+        {
+            if (local_dialogue_open == true)
+                return false;
+        }
+        
+        return true;
+    }
+}
 
 switch (scene)
 {
@@ -18,19 +30,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
+            talker[0] = obj_starlo_npc;
             message[0] = "* You... beat me up#  pretty b-badly, huh?";
-            prt[0] = 416;
+            prt[0] = spr_portrait_starlo_hurt;
         }
         
         break;
     
     case 2:
-        cutscene_npc_action_sprite(1169, 693, 1, false);
+        cutscene_npc_action_sprite(obj_starlo_npc, spr_pacifist_ending_starlo_getup, 1, false);
         break;
     
     case 3:
-        cutscene_npc_walk(1169, 190, 297, 2, "x", "up");
+        cutscene_npc_walk(obj_starlo_npc, 190, 297, 2, "x", "up");
         break;
     
     case 4:
@@ -39,17 +51,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[1] = 1169;
-            talker[3] = 1161;
+            talker[0] = obj_ceroba_npc;
+            talker[1] = obj_starlo_npc;
+            talker[3] = obj_ceroba_npc;
             message[0] = "* S-Star I...";
             message[1] = "* Don't sweat it too#  much...";
             message[2] = "* I reckon I deserved it#  for the Wild East#  fiasco.";
             message[3] = "* ...";
-            prt[0] = 609;
-            prt[1] = 418;
-            prt[2] = 415;
-            prt[3] = 609;
+            prt[0] = spr_portrait_ceroba_sorrowful;
+            prt[1] = spr_portrait_starlo_plain;
+            prt[2] = spr_portrait_starlo_hidden;
+            prt[3] = spr_portrait_ceroba_sorrowful;
             
             if (message_current == 0)
             {
@@ -69,7 +81,7 @@ switch (scene)
         break;
     
     case 5:
-        cutscene_npc_action_sprite(1169, 1135, 1, true, 0);
+        cutscene_npc_action_sprite(obj_starlo_npc, spr_pacifist_ending_starlo_headrub, 1, true, 0);
         break;
     
     case 6:
@@ -81,14 +93,14 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
-            talker[2] = 1161;
+            talker[0] = obj_starlo_npc;
+            talker[2] = obj_ceroba_npc;
             message[0] = "* Heck of a hit though.";
             message[1] = "* I didn't know you had#  that in you.";
             message[2] = "* I'm... I'm so sorry.";
-            prt[0] = 407;
-            prt[1] = 417;
-            prt[2] = 609;
+            prt[0] = spr_portrait_starlo_distracted;
+            prt[1] = spr_portrait_starlo_normal;
+            prt[2] = spr_portrait_ceroba_sorrowful;
         }
         
         break;
@@ -98,7 +110,7 @@ switch (scene)
         break;
     
     case 9:
-        cutscene_npc_action_sprite(1164, 3388, 1, true, 0);
+        cutscene_npc_action_sprite(obj_martlet_npc, spr_pacifist_ending_martlet_getting_up, 1, true, 0);
         break;
     
     case 10:
@@ -108,7 +120,7 @@ switch (scene)
         obj_starlo_npc.npc_direction = "left";
         obj_player_npc.npc_direction = "left";
         obj_ceroba_npc.image_index = 2;
-        cutscene_sfx_play(362, 1);
+        cutscene_sfx_play(snd_encounter, 1);
         break;
     
     case 11:
@@ -123,22 +135,22 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Wh...";
             message[1] = "* Where am I...?";
-            prt[0] = 315;
-            prt[1] = 311;
+            prt[0] = spr_martlet_head_disappointed;
+            prt[1] = spr_martlet_head_confused;
         }
         
         break;
     
     case 13:
         instance_create_depth(65, 255, -500, obj_cutscene_ex);
-        cutscene_sfx_play(362, 0.7);
+        cutscene_sfx_play(snd_encounter, 0.7);
         break;
     
     case 14:
-        if (cutscene_npc_action_sprite(1164, 2970, 1, true, 0))
+        if (cutscene_npc_action_sprite(obj_martlet_npc, spr_pacifist_ending_martlet_getting_up_2, 1, true, 0))
             obj_martlet_npc.action_sprite = false;
         
         if (obj_martlet_npc.image_index > 9)
@@ -154,11 +166,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
-            talker[1] = 1161;
-            talker[5] = 1169;
-            talker[7] = 1164;
-            talker[8] = 1161;
+            talker[0] = obj_martlet_npc;
+            talker[1] = obj_ceroba_npc;
+            talker[5] = obj_starlo_npc;
+            talker[7] = obj_martlet_npc;
+            talker[8] = obj_ceroba_npc;
             message[0] = "* Clover! We gotta get#  out of here!";
             message[1] = "* No.";
             message[2] = "* It's finished.";
@@ -172,19 +184,19 @@ switch (scene)
             message[10] = "* Apologize, make#  excuses, nothing would#  change reality.";
             message[11] = "* I've dug a hole far too#  deep to climb out of.";
             message[12] = "* And for nothing...";
-            prt[0] = 330;
-            prt[1] = 609;
-            prt[2] = 609;
-            prt[3] = 609;
-            prt[4] = 2987;
-            prt[5] = 404;
-            prt[6] = 415;
-            prt[7] = 311;
-            prt[8] = 2987;
-            prt[9] = 2987;
-            prt[10] = 609;
-            prt[11] = 609;
-            prt[12] = 609;
+            prt[0] = spr_martlet_head_shocked;
+            prt[1] = spr_portrait_ceroba_sorrowful;
+            prt[2] = spr_portrait_ceroba_sorrowful;
+            prt[3] = spr_portrait_ceroba_sorrowful;
+            prt[4] = spr_portrait_ceroba_mourning;
+            prt[5] = spr_portrait_starlo_blush;
+            prt[6] = spr_portrait_starlo_hidden;
+            prt[7] = spr_martlet_head_confused;
+            prt[8] = spr_portrait_ceroba_mourning;
+            prt[9] = spr_portrait_ceroba_mourning;
+            prt[10] = spr_portrait_ceroba_sorrowful;
+            prt[11] = spr_portrait_ceroba_sorrowful;
+            prt[12] = spr_portrait_ceroba_sorrowful;
             
             switch (message_current)
             {
@@ -226,7 +238,7 @@ switch (scene)
         break;
     
     case 16:
-        cutscene_npc_walk(1164, 133, 298, 3, "x", "up");
+        cutscene_npc_walk(obj_martlet_npc, 133, 298, 3, "x", "up");
         break;
     
     case 17:
@@ -243,7 +255,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
+            talker[0] = obj_starlo_npc;
             message[0] = "* Hey...";
             message[1] = "* Where was I a few hours#  ago?";
             message[2] = "* In this same situation.";
@@ -251,13 +263,13 @@ switch (scene)
             message[4] = "* But you forgave me. The#  four others did as well.";
             message[5] = "* We've both made poor#  choices, no#  sugar-coating that...";
             message[6] = "* But there is hope. At#  least... I believe there#  is.";
-            prt[0] = 416;
-            prt[1] = 418;
-            prt[2] = 418;
-            prt[3] = 420;
-            prt[4] = 418;
-            prt[5] = 416;
-            prt[6] = 418;
+            prt[0] = spr_portrait_starlo_hurt;
+            prt[1] = spr_portrait_starlo_plain;
+            prt[2] = spr_portrait_starlo_plain;
+            prt[3] = spr_portrait_starlo_sad;
+            prt[4] = spr_portrait_starlo_plain;
+            prt[5] = spr_portrait_starlo_hurt;
+            prt[6] = spr_portrait_starlo_plain;
         }
         
         break;
@@ -271,14 +283,14 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
-            talker[2] = 1161;
+            talker[0] = obj_martlet_npc;
+            talker[2] = obj_ceroba_npc;
             message[0] = "* I... can't begin to#  grasp what you've gone#  through...";
             message[1] = "* But this was an#  absolutely horrible way#  of dealing with it.";
             message[2] = "* ...";
-            prt[0] = 329;
-            prt[1] = 317;
-            prt[2] = 609;
+            prt[0] = spr_martlet_head_sad;
+            prt[1] = spr_martlet_head_downer;
+            prt[2] = spr_portrait_ceroba_sorrowful;
             
             switch (message_current)
             {
@@ -299,13 +311,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* You can't change what#  has happened, you're#  right.";
             message[1] = "* But you can control how#  you live from now on.";
             message[2] = "* Your actions will mean#  everything.";
-            prt[0] = 338;
-            prt[1] = 321;
-            prt[2] = 321;
+            prt[0] = spr_martlet_head_wondering;
+            prt[1] = spr_martlet_head_moderate;
+            prt[2] = spr_martlet_head_moderate;
         }
         
         break;
@@ -324,10 +336,10 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[3] = 1164;
-            talker[9] = 1169;
-            talker[12] = 1161;
+            talker[0] = obj_ceroba_npc;
+            talker[3] = obj_martlet_npc;
+            talker[9] = obj_starlo_npc;
+            talker[12] = obj_ceroba_npc;
             message[0] = "* But...";
             message[1] = "* Chujin. His legacy. His#  wish.";
             message[2] = "* It will never be#  fulfilled.";
@@ -343,27 +355,27 @@ switch (scene)
             message[12] = "* I... never thought#  about it like that.";
             message[13] = "* What the hell was I#  thinking?";
             message[14] = "* I was so#  tunnel-visioned. So#  lost...";
-            prt[0] = 609;
-            prt[1] = 2987;
-            prt[2] = 2599;
-            prt[3] = 317;
-            prt[4] = 321;
-            prt[5] = 328;
-            prt[6] = 321;
-            prt[7] = 338;
-            prt[8] = 321;
-            prt[9] = 421;
-            prt[10] = 418;
-            prt[11] = 416;
-            prt[12] = 2987;
-            prt[13] = 2599;
-            prt[14] = 2599;
+            prt[0] = spr_portrait_ceroba_sorrowful;
+            prt[1] = spr_portrait_ceroba_mourning;
+            prt[2] = spr_portrait_ceroba_wailing;
+            prt[3] = spr_martlet_head_downer;
+            prt[4] = spr_martlet_head_moderate;
+            prt[5] = spr_martlet_head_regular;
+            prt[6] = spr_martlet_head_moderate;
+            prt[7] = spr_martlet_head_wondering;
+            prt[8] = spr_martlet_head_moderate;
+            prt[9] = spr_portrait_starlo_serious;
+            prt[10] = spr_portrait_starlo_plain;
+            prt[11] = spr_portrait_starlo_hurt;
+            prt[12] = spr_portrait_ceroba_mourning;
+            prt[13] = spr_portrait_ceroba_wailing;
+            prt[14] = spr_portrait_ceroba_wailing;
         }
         
         break;
     
     case 27:
-        cutscene_npc_walk(1169, 183, 238, 3, "y", "left");
+        cutscene_npc_walk(obj_starlo_npc, 183, 238, 3, "y", "left");
         break;
     
     case 28:
@@ -373,7 +385,7 @@ switch (scene)
         break;
     
     case 28.3:
-        if (cutscene_npc_action_sprite(1161, 928, 1, true, 0))
+        if (cutscene_npc_action_sprite(obj_ceroba_npc, spr_pacifist_ending_ceroba_stuff_disappear, 1, true, 0))
             cutscene_advance(28.6);
         
         break;
@@ -386,7 +398,7 @@ switch (scene)
     
     case 29:
         obj_starlo_npc.image_alpha = 0;
-        cutscene_npc_action_sprite(1161, 3323, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_pacifist_ending_starlo_kneel, 1, true, 0);
         break;
     
     case 30:
@@ -398,11 +410,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
+            talker[0] = obj_starlo_npc;
             message[0] = "* We can work through#  this.";
             message[1] = "* We're here for you.";
-            prt[0] = 416;
-            prt[1] = 418;
+            prt[0] = spr_portrait_starlo_hurt;
+            prt[1] = spr_portrait_starlo_plain;
         }
         
         break;
@@ -412,7 +424,7 @@ switch (scene)
         break;
     
     case 33:
-        cutscene_npc_action_sprite(1161, 3041, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_pacifist_ending_starlo_kneel_getup, 1, true, 0);
         
         if (obj_ceroba_npc.image_index >= 8)
         {
@@ -431,8 +443,8 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
-            talker[5] = 1161;
+            talker[0] = obj_martlet_npc;
+            talker[5] = obj_ceroba_npc;
             message[0] = "* Now...";
             message[1] = "* You should take some#  time to heal. Recoup.";
             message[2] = "* But... Kanako's#  wellbeing is still a#  valid concern.";
@@ -440,24 +452,24 @@ switch (scene)
             message[4] = "* I'll begin an#  investigation. Try my#  best to help.";
             message[5] = "* I don't know what to#  say...";
             message[6] = "* Thank you, Martlet.";
-            prt[0] = 338;
-            prt[1] = 321;
-            prt[2] = 317;
-            prt[3] = 329;
-            prt[4] = 320;
-            prt[5] = 2987;
-            prt[6] = 609;
+            prt[0] = spr_martlet_head_wondering;
+            prt[1] = spr_martlet_head_moderate;
+            prt[2] = spr_martlet_head_downer;
+            prt[3] = spr_martlet_head_sad;
+            prt[4] = spr_martlet_head_melancholic;
+            prt[5] = spr_portrait_ceroba_mourning;
+            prt[6] = spr_portrait_ceroba_sorrowful;
         }
         
         break;
     
     case 36:
         obj_ceroba_npc.image_speed = 1;
-        cutscene_npc_action_sprite(1161, 3041, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_pacifist_ending_starlo_kneel_getup, 1, true, 0);
         break;
     
     case 37:
-        if (cutscene_npc_action_sprite(1161, 2850, 1, false, 0))
+        if (cutscene_npc_action_sprite(obj_ceroba_npc, spr_pacifist_ending_ceroba_look_up, 1, false, 0))
             obj_ceroba_npc.npc_direction = "down";
         
         if (obj_ceroba_npc.image_index > 2)
@@ -471,7 +483,7 @@ switch (scene)
         break;
     
     case 38:
-        cutscene_npc_walk(1169, 198, 238, 2, "x", "left");
+        cutscene_npc_walk(obj_starlo_npc, 198, 238, 2, "x", "left");
         break;
     
     case 39:
@@ -483,23 +495,23 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Clover.";
             message[1] = "* I owe an apology to#  you, most of all.";
             message[2] = "* Our time in the#  Steamworks and what I#  said... It wasn't fake.";
             message[3] = "* It did allow me to#  briefly forget my#  troubles and have fun.";
             message[4] = "* But my reasoning for#  being there...";
-            prt[0] = 394;
-            prt[1] = 394;
-            prt[2] = 3757;
-            prt[3] = 394;
-            prt[4] = 2987;
+            prt[0] = spr_portrait_ceroba_disapproving;
+            prt[1] = spr_portrait_ceroba_disapproving;
+            prt[2] = spr_portrait_ceroba_pensive;
+            prt[3] = spr_portrait_ceroba_disapproving;
+            prt[4] = spr_portrait_ceroba_mourning;
         }
         
         break;
     
     case 41:
-        if (cutscene_npc_walk(1168, 161, 244, 2, "y", "up"))
+        if (cutscene_npc_walk(obj_player_npc, 161, 244, 2, "y", "up"))
             obj_starlo_npc.npc_direction = "left";
         
         break;
@@ -513,9 +525,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* I can't begin to ";
-            prt[0] = 2987;
+            prt[0] = spr_portrait_ceroba_mourning;
             message_timer = 5;
             skippable = false;
         }
@@ -524,7 +536,7 @@ switch (scene)
     
     case 44:
         obj_ceroba_npc.image_alpha = 0;
-        cutscene_npc_action_sprite(1168, 3142, 1, true, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_ceroba_hug_alone, 1, true, 0);
         
         if (obj_player_npc.image_index >= 12)
         {
@@ -545,18 +557,18 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* W-Why?";
             message[1] = "* I mean...";
-            prt[0] = 393;
-            prt[1] = 2987;
+            prt[0] = spr_portrait_ceroba_surprised;
+            prt[1] = spr_portrait_ceroba_mourning;
         }
         
         break;
     
     case 46:
         obj_player_npc.image_speed = 1;
-        cutscene_npc_action_sprite(1168, 3142, 1, true, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_ceroba_hug_alone, 1, true, 0);
         break;
     
     case 47:
@@ -568,12 +580,12 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[1] = 1169;
+            talker[0] = obj_ceroba_npc;
+            talker[1] = obj_starlo_npc;
             message[0] = "* ...Thank you.";
             message[1] = "* I'm gonna cry.";
-            prt[0] = 609;
-            prt[1] = 410;
+            prt[0] = spr_portrait_ceroba_sorrowful;
+            prt[1] = spr_portrait_starlo_embarassed;
             
             if (message_current == 1)
                 obj_starlo_npc.npc_direction = "right";
@@ -587,7 +599,7 @@ switch (scene)
         break;
     
     case 50:
-        if (cutscene_npc_action_sprite(1168, 1985, 1, true, 0))
+        if (cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_ceroba_unhug_alone, 1, true, 0))
         {
             obj_ceroba_npc.image_alpha = 1;
             obj_player_npc.action_sprite = false;
@@ -600,7 +612,7 @@ switch (scene)
         break;
     
     case 52:
-        cutscene_npc_walk(1168, 161, 298, 3, "y", "up");
+        cutscene_npc_walk(obj_player_npc, 161, 298, 3, "y", "up");
         break;
     
     case 53:
@@ -615,19 +627,19 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* I... can't believe it's#  come to this but...";
             message[1] = "* Clover, I think your#  journey is at its end.";
             message[2] = "* ASGORE and the barrier#  await us.";
-            prt[0] = 329;
-            prt[1] = 317;
-            prt[2] = 317;
+            prt[0] = spr_martlet_head_sad;
+            prt[1] = spr_martlet_head_downer;
+            prt[2] = spr_martlet_head_downer;
         }
         
         break;
     
     case 55:
-        cutscene_npc_walk(1169, 198, 298, 4, "y", "left");
+        cutscene_npc_walk(obj_starlo_npc, 198, 298, 4, "y", "left");
         break;
     
     case 56:
@@ -635,27 +647,27 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
-            talker[1] = 1164;
-            talker[2] = 1161;
-            talker[3] = 1164;
-            talker[4] = 1161;
-            talker[6] = 1164;
-            talker[8] = 1169;
-            talker[9] = 1161;
-            talker[10] = 1169;
-            talker[11] = 1161;
-            talker[13] = 1164;
-            talker[16] = 1169;
-            talker[17] = 1161;
-            talker[19] = 1164;
-            talker[20] = 1169;
-            talker[21] = 1161;
-            talker[22] = 1164;
-            talker[25] = 1169;
-            talker[26] = 1161;
-            talker[28] = 1164;
-            talker[30] = 1161;
+            talker[0] = obj_starlo_npc;
+            talker[1] = obj_martlet_npc;
+            talker[2] = obj_ceroba_npc;
+            talker[3] = obj_martlet_npc;
+            talker[4] = obj_ceroba_npc;
+            talker[6] = obj_martlet_npc;
+            talker[8] = obj_starlo_npc;
+            talker[9] = obj_ceroba_npc;
+            talker[10] = obj_starlo_npc;
+            talker[11] = obj_ceroba_npc;
+            talker[13] = obj_martlet_npc;
+            talker[16] = obj_starlo_npc;
+            talker[17] = obj_ceroba_npc;
+            talker[19] = obj_martlet_npc;
+            talker[20] = obj_starlo_npc;
+            talker[21] = obj_ceroba_npc;
+            talker[22] = obj_martlet_npc;
+            talker[25] = obj_starlo_npc;
+            talker[26] = obj_ceroba_npc;
+            talker[28] = obj_martlet_npc;
+            talker[30] = obj_ceroba_npc;
             message[0] = "* No! Already???";
             message[1] = "* As sad as it is, Clover#  needs to go home.";
             message[2] = "* That won't work.";
@@ -688,43 +700,43 @@ switch (scene)
             message[29] = "* Have you learned#  anything?";
             message[30] = "* I'm just weighing our#  options!";
             message[31] = "* We're backed into a#  corner here, alright?";
-            prt[0] = 406;
-            prt[1] = 317;
-            prt[2] = 377;
-            prt[3] = 333;
-            prt[4] = 371;
-            prt[5] = 377;
-            prt[6] = 309;
-            prt[7] = 309;
-            prt[8] = 417;
-            prt[9] = 377;
-            prt[10] = 420;
-            prt[11] = 394;
-            prt[12] = 394;
-            prt[13] = 338;
-            prt[14] = 321;
-            prt[15] = 321;
-            prt[16] = 417;
-            prt[17] = 370;
-            prt[18] = 371;
-            prt[19] = 338;
-            prt[20] = 419;
-            prt[21] = 394;
-            prt[22] = 329;
-            prt[23] = 317;
-            prt[24] = 315;
-            prt[25] = 420;
-            prt[26] = 371;
-            prt[27] = 370;
-            prt[28] = 309;
-            prt[29] = 309;
-            prt[30] = 377;
-            prt[31] = 370;
-            talker[32] = 1169;
-            talker[33] = 1164;
-            talker[36] = 1161;
-            talker[37] = 1164;
-            talker[38] = 1169;
+            prt[0] = spr_portrait_starlo_disappointed;
+            prt[1] = spr_martlet_head_downer;
+            prt[2] = spr_portrait_ceroba_closed_eyes;
+            prt[3] = spr_martlet_head_surprised;
+            prt[4] = spr_portrait_ceroba_alt;
+            prt[5] = spr_portrait_ceroba_closed_eyes;
+            prt[6] = spr_martlet_head_angry;
+            prt[7] = spr_martlet_head_angry;
+            prt[8] = spr_portrait_starlo_normal;
+            prt[9] = spr_portrait_ceroba_closed_eyes;
+            prt[10] = spr_portrait_starlo_sad;
+            prt[11] = spr_portrait_ceroba_disapproving;
+            prt[12] = spr_portrait_ceroba_disapproving;
+            prt[13] = spr_martlet_head_wondering;
+            prt[14] = spr_martlet_head_moderate;
+            prt[15] = spr_martlet_head_moderate;
+            prt[16] = spr_portrait_starlo_normal;
+            prt[17] = spr_portrait_ceroba_neutral;
+            prt[18] = spr_portrait_ceroba_alt;
+            prt[19] = spr_martlet_head_wondering;
+            prt[20] = spr_portrait_starlo_point;
+            prt[21] = spr_portrait_ceroba_disapproving;
+            prt[22] = spr_martlet_head_sad;
+            prt[23] = spr_martlet_head_downer;
+            prt[24] = spr_martlet_head_disappointed;
+            prt[25] = spr_portrait_starlo_sad;
+            prt[26] = spr_portrait_ceroba_alt;
+            prt[27] = spr_portrait_ceroba_neutral;
+            prt[28] = spr_martlet_head_angry;
+            prt[29] = spr_martlet_head_angry;
+            prt[30] = spr_portrait_ceroba_closed_eyes;
+            prt[31] = spr_portrait_ceroba_neutral;
+            talker[32] = obj_starlo_npc;
+            talker[33] = obj_martlet_npc;
+            talker[36] = obj_ceroba_npc;
+            talker[37] = obj_martlet_npc;
+            talker[38] = obj_starlo_npc;
             message[32] = "* Hey, calm down, guys.";
             message[33] = "* You know I really#  thought tonight's fiasco#  was enough!";
             message[34] = "* We all talked it#  through and things were#  going well.";
@@ -732,13 +744,13 @@ switch (scene)
             message[36] = "* I didn't mean it like#  that! Get off my case!";
             message[37] = "* I'm sorry but I don't#  think you exactly have#  room to talk right now.";
             message[38] = "* Come on you two! Cut it#  out!";
-            prt[32] = 419;
-            prt[33] = 309;
-            prt[34] = 321;
-            prt[35] = 308;
-            prt[36] = 368;
-            prt[37] = 338;
-            prt[38] = 421;
+            prt[32] = spr_portrait_starlo_point;
+            prt[33] = spr_martlet_head_angry;
+            prt[34] = spr_martlet_head_moderate;
+            prt[35] = spr_martlet_head_angrier;
+            prt[36] = spr_portrait_ceroba_irked;
+            prt[37] = spr_martlet_head_wondering;
+            prt[38] = spr_portrait_starlo_serious;
             
             if (message_current == 27)
             {
@@ -786,7 +798,7 @@ switch (scene)
         break;
     
     case 57:
-        cutscene_npc_direction(1168, "down");
+        cutscene_npc_direction(obj_player_npc, "down");
         break;
     
     case 58:
@@ -794,7 +806,7 @@ switch (scene)
         break;
     
     case 59:
-        cutscene_npc_walk(1168, obj_player_npc.x, 312, 0.5, "y", "down");
+        cutscene_npc_walk(obj_player_npc, obj_player_npc.x, 312, 0.5, "y", "down");
         break;
     
     case 60:
@@ -802,7 +814,7 @@ switch (scene)
         break;
     
     case 61:
-        cutscene_npc_action_sprite(1168, 3114, 1, true, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_clover_close_eyes, 1, true, 0);
         break;
     
     case 62:
@@ -893,7 +905,7 @@ switch (scene)
         break;
     
     case 73.5:
-        camera_xx = __view_get(e__VW.XView, 0) + (__view_get(e__VW.WView, 0) * 0.5);
+        var camera_xx = __view_get(e__VW.XView, 0) + (__view_get(e__VW.WView, 0) * 0.5);
         
         if (cutscene_camera_move(camera_xx, 270, 0.5))
             cutscene_advance(73.75);
@@ -909,7 +921,7 @@ switch (scene)
     case 74:
         obj_player_npc.npc_direction = "down";
         
-        if (cutscene_npc_action_sprite(1168, 2233, 1, false))
+        if (cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_clover_nod, 1, false))
             cutscene_advance(74.5);
         
         if (obj_player_npc.image_index < 6 && obj_player_npc.sprite_index == spr_pacifist_ending_clover_nod)
@@ -926,7 +938,7 @@ switch (scene)
     case 75:
         with (instance_create_depth(16, 20, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "You probably want to go home dontcha?";
             fade_timer = 45;
         }
@@ -935,7 +947,7 @@ switch (scene)
         break;
     
     case 76:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -943,7 +955,7 @@ switch (scene)
     case 77:
         with (instance_create_depth(16, 164, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 626;
+            sndfnt = snd_talk_chujin;
             message[0] = "Humanity already won by trapping us#down here, yet they keep twisting#the knife.";
             fade_timer = 45;
         }
@@ -952,7 +964,7 @@ switch (scene)
         break;
     
     case 78:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -960,7 +972,7 @@ switch (scene)
     case 79:
         with (instance_create_depth(32, 176, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 626;
+            sndfnt = snd_talk_chujin;
             message[0] = "This cannot continue any longer!";
             fade_timer = 30;
         }
@@ -969,7 +981,7 @@ switch (scene)
         break;
     
     case 80:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -977,7 +989,7 @@ switch (scene)
     case 81:
         with (instance_create_depth(13, 80, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "You must have#places to go,#correct?";
             message[1] = "The Castle...#The barrier.";
             fade_timer = 30;
@@ -987,7 +999,7 @@ switch (scene)
         break;
     
     case 82:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -995,7 +1007,7 @@ switch (scene)
     case 83:
         with (instance_create_depth(189, 88, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             message[0] = "I did everything#in my power to#entertain...";
             fade_timer = 30;
         }
@@ -1004,7 +1016,7 @@ switch (scene)
         break;
     
     case 84:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1012,7 +1024,7 @@ switch (scene)
     case 85:
         with (instance_create_depth(181, 80, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             message[0] = "...so monsters#wouldn't have to#worry about being#stuck down here.";
             fade_timer = 30;
         }
@@ -1021,7 +1033,7 @@ switch (scene)
         break;
     
     case 86:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1029,7 +1041,7 @@ switch (scene)
     case 87:
         with (instance_create_depth(16, 164, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "Anyway, we'll bypass the Royal Guard#and plead your case to ASGORE!";
             fade_timer = 45;
         }
@@ -1038,7 +1050,7 @@ switch (scene)
         break;
     
     case 88:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1046,7 +1058,7 @@ switch (scene)
     case 89:
         with (instance_create_depth(20, 32, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "Remember your REAL mission, Clover.";
             fade_timer = 30;
         }
@@ -1055,7 +1067,7 @@ switch (scene)
         break;
     
     case 90:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1063,7 +1075,7 @@ switch (scene)
     case 91:
         with (instance_create_depth(13, 142, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "Asgore only needs#two more SOULS to#shatter the barrier.";
             fade_timer = 30;
         }
@@ -1072,7 +1084,7 @@ switch (scene)
         break;
     
     case 92:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1080,7 +1092,7 @@ switch (scene)
     case 93:
         with (instance_create_depth(173, 22, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 100;
+            sndfnt = sndfnt_dalv;
             message[0] = "What a world it#would be if I had#two whole friends.";
             fade_timer = 30;
         }
@@ -1089,7 +1101,7 @@ switch (scene)
         break;
     
     case 94:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1097,7 +1109,7 @@ switch (scene)
     case 95:
         with (instance_create_depth(69, 140, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "Most might act cheerful,#but life down here...";
             fade_timer = 30;
         }
@@ -1106,7 +1118,7 @@ switch (scene)
         break;
     
     case 96:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1114,7 +1126,7 @@ switch (scene)
     case 97:
         with (instance_create_depth(92, 148, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "...It's hopeless.";
             fade_timer = 30;
         }
@@ -1123,19 +1135,19 @@ switch (scene)
         break;
     
     case 98:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
     
     case 99:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_wait(1.5);
         
         break;
     
     case 100:
-        cutscene_npc_action_sprite(1168, 3114, 1, true, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_clover_close_eyes, 1, true, 0);
         break;
     
     case 101:
@@ -1157,7 +1169,7 @@ switch (scene)
     case 105:
         with (instance_create_depth(9, 10, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "...The five children#you set out to find#in the first place.";
             fade_timer = 30;
         }
@@ -1166,7 +1178,7 @@ switch (scene)
         break;
     
     case 106:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1174,7 +1186,7 @@ switch (scene)
     case 107:
         with (instance_create_depth(140, 174, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 107;
+            sndfnt = snd_talk_starlo;
             message[0] = "Despite its ups and#downs, our little#adventure was a blast.";
             fade_timer = 30;
         }
@@ -1183,7 +1195,7 @@ switch (scene)
         break;
     
     case 108:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1191,7 +1203,7 @@ switch (scene)
     case 109:
         with (instance_create_depth(20, 68, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "ASGORE's still out there#threatening human lives!";
             fade_timer = 30;
         }
@@ -1200,7 +1212,7 @@ switch (scene)
         break;
     
     case 110:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1208,7 +1220,7 @@ switch (scene)
     case 111:
         with (instance_create_depth(189, 128, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 111;
+            sndfnt = snd_talk_axis;
             message[0] = "I MUST THANK#YOU FOR OPENING#MY EYES.";
             fade_timer = 30;
         }
@@ -1217,7 +1229,7 @@ switch (scene)
         break;
     
     case 112:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1225,7 +1237,7 @@ switch (scene)
     case 113:
         with (instance_create_depth(30, 68, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "Keep your head in the game!";
             fade_timer = 45;
             shake_intensity = 0.25;
@@ -1236,7 +1248,7 @@ switch (scene)
         break;
     
     case 114:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1244,7 +1256,7 @@ switch (scene)
     case 115:
         with (instance_create_depth(60, 172, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 108;
+            sndfnt = snd_talk_ceroba;
             message[0] = "Turns out you're a pretty#damn good leader, Clover!";
             fade_timer = 30;
         }
@@ -1253,7 +1265,7 @@ switch (scene)
         break;
     
     case 116:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1261,7 +1273,7 @@ switch (scene)
     case 117:
         with (instance_create_depth(96, 68, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "Come on, Clover!";
             fade_timer = 45;
             shake_intensity = 0.5;
@@ -1272,7 +1284,7 @@ switch (scene)
         break;
     
     case 118:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1280,7 +1292,7 @@ switch (scene)
     case 119:
         with (instance_create_depth(16, 160, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 102;
+            sndfnt = snd_talk_martlet;
             message[0] = "You are a kind soul.#One of the best I've met.";
             fade_timer = 30;
         }
@@ -1289,7 +1301,7 @@ switch (scene)
         break;
     
     case 120:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1297,7 +1309,7 @@ switch (scene)
     case 121:
         with (instance_create_depth(132, 16, depth - 1, obj_dialogue_pacifist_ending_flashbacks))
         {
-            sndfnt = 96;
+            sndfnt = sndfnt_flowey;
             message[0] = "Clover!";
             fade_timer = 75;
             shake_intensity = 1;
@@ -1308,7 +1320,7 @@ switch (scene)
         break;
     
     case 122:
-        if (!instance_exists(obj_dialogue_pacifist_ending_flashbacks))
+        if (dialogueCheck() == true)
             cutscene_advance();
         
         break;
@@ -1322,8 +1334,8 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
-            talker[1] = 1164;
+            talker[0] = obj_starlo_npc;
+            talker[1] = obj_martlet_npc;
             message[0] = "* Clover!";
             message[1] = "* Clover, what are you doing!?";
         }
@@ -1368,7 +1380,7 @@ switch (scene)
         break;
     
     case 127:
-        camera_xx = __view_get(e__VW.XView, 0) + (__view_get(e__VW.WView, 0) * 0.5);
+        var camera_xx = __view_get(e__VW.XView, 0) + (__view_get(e__VW.WView, 0) * 0.5);
         cutscene_camera_move(camera_xx, 230, 1);
         break;
     
@@ -1397,18 +1409,18 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[1] = 1164;
+            talker[0] = obj_ceroba_npc;
+            talker[1] = obj_martlet_npc;
             message[0] = "* Hey, uh...";
             message[1] = "* Clover? What's going#  on?";
             message[2] = "* You're scaring us here.";
             message[3] = "";
             message[4] = "* Wh-What does that mean?";
             message[5] = "";
-            prt[0] = 370;
-            prt[1] = 317;
-            prt[2] = 317;
-            prt[4] = 332;
+            prt[0] = spr_portrait_ceroba_neutral;
+            prt[1] = spr_martlet_head_downer;
+            prt[2] = spr_martlet_head_downer;
+            prt[4] = spr_martlet_head_spook;
             
             if (message_current == 3)
             {
@@ -1455,7 +1467,7 @@ switch (scene)
     
     case 132:
         instance_create(obj_martlet_npc.x, obj_martlet_npc.y - 40, obj_cutscene_ex);
-        cutscene_sfx_play(362, 0.7);
+        cutscene_sfx_play(snd_encounter, 0.7);
         break;
     
     case 133:
@@ -1473,10 +1485,10 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
-            talker[3] = 1169;
-            talker[6] = 1164;
-            talker[9] = 1161;
+            talker[0] = obj_martlet_npc;
+            talker[3] = obj_starlo_npc;
+            talker[6] = obj_martlet_npc;
+            talker[9] = obj_ceroba_npc;
             message[0] = "* No... ";
             message[1] = "* No no no no no-we'll#  think of a plan!";
             message[2] = "* We have options!";
@@ -1487,16 +1499,16 @@ switch (scene)
             message[7] = "* You deserve better.";
             message[8] = "* You're...";
             message[9] = "* You're serious.";
-            prt[0] = 332;
-            prt[1] = 330;
-            prt[2] = 322;
-            prt[3] = 406;
-            prt[4] = 418;
-            prt[5] = 420;
-            prt[6] = 322;
-            prt[7] = 323;
-            prt[8] = 322;
-            prt[9] = 370;
+            prt[0] = spr_martlet_head_spook;
+            prt[1] = spr_martlet_head_shocked;
+            prt[2] = spr_martlet_head_nervous;
+            prt[3] = spr_portrait_starlo_disappointed;
+            prt[4] = spr_portrait_starlo_plain;
+            prt[5] = spr_portrait_starlo_sad;
+            prt[6] = spr_martlet_head_nervous;
+            prt[7] = spr_martlet_head_nervous_smile;
+            prt[8] = spr_martlet_head_nervous;
+            prt[9] = spr_portrait_ceroba_neutral;
             
             if (message_current == 8)
             {
@@ -1517,7 +1529,7 @@ switch (scene)
         break;
     
     case 137:
-        cutscene_npc_action_sprite(1168, 2233, 1, false);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_clover_nod, 1, false);
         
         if (obj_player_npc.image_index < 6 && obj_player_npc.sprite_index == spr_pacifist_ending_clover_nod)
             obj_player_npc.image_index = 6;
@@ -1547,7 +1559,7 @@ switch (scene)
         break;
     
     case 141:
-        cutscene_npc_action_sprite(1168, 2233, 1, false);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_clover_nod, 1, false);
         break;
     
     case 142:
@@ -1559,13 +1571,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
-            talker[2] = 1169;
-            talker[3] = 1161;
-            talker[6] = 1164;
-            talker[7] = 1161;
-            talker[9] = 1169;
-            talker[11] = 1161;
+            talker[0] = obj_ceroba_npc;
+            talker[2] = obj_starlo_npc;
+            talker[3] = obj_ceroba_npc;
+            talker[6] = obj_martlet_npc;
+            talker[7] = obj_ceroba_npc;
+            talker[9] = obj_starlo_npc;
+            talker[11] = obj_ceroba_npc;
             message[0] = "* ...";
             message[1] = "* ...I understand.";
             message[2] = "* Ceroba...";
@@ -1580,20 +1592,20 @@ switch (scene)
             message[11] = "* If there was another#  way...";
             message[12] = "* But let's face it.#  There isn't.";
             message[13] = "* I believe Clover#  realized that a long#  time ago.";
-            prt[0] = 394;
-            prt[1] = 371;
-            prt[2] = 418;
-            prt[3] = 370;
-            prt[4] = 377;
-            prt[5] = 371;
-            prt[6] = 329;
-            prt[7] = 377;
-            prt[8] = 370;
-            prt[9] = 406;
-            prt[10] = 406;
-            prt[11] = 377;
-            prt[12] = 370;
-            prt[13] = 371;
+            prt[0] = spr_portrait_ceroba_disapproving;
+            prt[1] = spr_portrait_ceroba_alt;
+            prt[2] = spr_portrait_starlo_plain;
+            prt[3] = spr_portrait_ceroba_neutral;
+            prt[4] = spr_portrait_ceroba_closed_eyes;
+            prt[5] = spr_portrait_ceroba_alt;
+            prt[6] = spr_martlet_head_sad;
+            prt[7] = spr_portrait_ceroba_closed_eyes;
+            prt[8] = spr_portrait_ceroba_neutral;
+            prt[9] = spr_portrait_starlo_disappointed;
+            prt[10] = spr_portrait_starlo_disappointed;
+            prt[11] = spr_portrait_ceroba_closed_eyes;
+            prt[12] = spr_portrait_ceroba_neutral;
+            prt[13] = spr_portrait_ceroba_alt;
             
             switch (message_current)
             {
@@ -1639,7 +1651,7 @@ switch (scene)
         break;
     
     case 145:
-        cutscene_npc_direction(1169, "up");
+        cutscene_npc_direction(obj_starlo_npc, "up");
         break;
     
     case 146:
@@ -1651,23 +1663,23 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* ...";
             message[1] = "* I don't know what to#  say...";
             message[2] = "* As much as I want to#  stop you...";
             message[3] = "* I see it. In your eyes.";
             message[4] = "* This is about our#  freedom... isn't it?";
-            prt[0] = 317;
-            prt[1] = 317;
-            prt[2] = 329;
-            prt[3] = 317;
-            prt[4] = 317;
+            prt[0] = spr_martlet_head_downer;
+            prt[1] = spr_martlet_head_downer;
+            prt[2] = spr_martlet_head_sad;
+            prt[3] = spr_martlet_head_downer;
+            prt[4] = spr_martlet_head_downer;
         }
         
         break;
     
     case 148:
-        cutscene_npc_action_sprite(1168, 3114, 1, true, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_clover_close_eyes, 1, true, 0);
         break;
     
     case 149:
@@ -1679,7 +1691,7 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
+            talker[0] = obj_starlo_npc;
             message[0] = "* ...";
             message[1] = "* Clover.";
             message[2] = "* You are the bravest,#  most selfless human I've#  met.";
@@ -1688,14 +1700,14 @@ switch (scene)
             message[5] = "* I'd promote you to#  sheriff 'cause lord#  knows you've earned it,";
             message[6] = "* But you aren't sheriff#  material. ";
             message[7] = "* You're much more.";
-            prt[0] = 406;
-            prt[1] = 416;
-            prt[2] = 418;
-            prt[3] = 407;
-            prt[4] = 419;
-            prt[5] = 421;
-            prt[6] = 416;
-            prt[7] = 418;
+            prt[0] = spr_portrait_starlo_disappointed;
+            prt[1] = spr_portrait_starlo_hurt;
+            prt[2] = spr_portrait_starlo_plain;
+            prt[3] = spr_portrait_starlo_distracted;
+            prt[4] = spr_portrait_starlo_point;
+            prt[5] = spr_portrait_starlo_serious;
+            prt[6] = spr_portrait_starlo_hurt;
+            prt[7] = spr_portrait_starlo_plain;
         }
         
         break;
@@ -1705,7 +1717,7 @@ switch (scene)
         break;
     
     case 152:
-        cutscene_npc_action_sprite(1168, 2233, 1, false);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_clover_nod, 1, false);
         
         if (obj_player_npc.image_index < 6 && obj_player_npc.sprite_index == spr_pacifist_ending_clover_nod)
             obj_player_npc.image_index = 6;
@@ -1717,7 +1729,7 @@ switch (scene)
         break;
     
     case 154:
-        cutscene_npc_walk(1164, 144, 269, 3, "y", "right");
+        cutscene_npc_walk(obj_martlet_npc, 144, 269, 3, "y", "right");
         break;
     
     case 155:
@@ -1734,18 +1746,18 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* I... already made my#  feelings known in#  Hotland.";
             message[1] = "* So...";
-            prt[0] = 317;
-            prt[1] = 317;
+            prt[0] = spr_martlet_head_downer;
+            prt[1] = spr_martlet_head_downer;
         }
         
         break;
     
     case 158:
         obj_player_npc.image_alpha = 0;
-        cutscene_npc_action_sprite(1164, 1547, 1, true, 0);
+        cutscene_npc_action_sprite(obj_martlet_npc, spr_pacifist_ending_group_hug_martlet, 1, true, 0);
         break;
     
     case 159:
@@ -1753,7 +1765,7 @@ switch (scene)
         break;
     
     case 160:
-        cutscene_npc_walk(1169, 179, 268, 2, "y", "left");
+        cutscene_npc_walk(obj_starlo_npc, 179, 268, 2, "y", "left");
         break;
     
     case 161:
@@ -1762,7 +1774,7 @@ switch (scene)
     
     case 162:
         obj_martlet_npc.image_alpha = 0;
-        cutscene_npc_action_sprite(1169, 1563, 1, true, 0);
+        cutscene_npc_action_sprite(obj_starlo_npc, spr_pacifist_ending_group_hug_starlo, 1, true, 0);
         break;
     
     case 163:
@@ -1774,18 +1786,18 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
-            talker[1] = 1161;
+            talker[0] = obj_starlo_npc;
+            talker[1] = obj_ceroba_npc;
             message[0] = "* Psst.";
             message[1] = "* ...";
-            prt[0] = 407;
-            prt[1] = 382;
+            prt[0] = spr_portrait_starlo_distracted;
+            prt[1] = spr_portrait_ceroba_muttering;
         }
         
         break;
     
     case 165:
-        cutscene_npc_walk(1161, 161, 281, 2, "y", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 161, 281, 2, "y", "up");
         break;
     
     case 166:
@@ -1798,7 +1810,7 @@ switch (scene)
     
     case 168:
         obj_starlo_npc.image_alpha = 0;
-        cutscene_npc_action_sprite(1161, 2991, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_pacifist_ending_group_hug_ceroba, 1, true, 0);
         break;
     
     case 169:
@@ -1810,17 +1822,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* This means more to us#  than you know.";
             message[1] = "* To everyone.";
-            prt[0] = 609;
-            prt[1] = 2987;
-            talker[2] = 1164;
-            talker[3] = 1169;
+            prt[0] = spr_portrait_ceroba_sorrowful;
+            prt[1] = spr_portrait_ceroba_mourning;
+            talker[2] = obj_martlet_npc;
+            talker[3] = obj_starlo_npc;
             message[2] = "* ...";
             message[3] = "* ...";
-            prt[2] = 317;
-            prt[3] = 420;
+            prt[2] = spr_martlet_head_downer;
+            prt[3] = spr_portrait_starlo_sad;
         }
         
         break;
@@ -1830,13 +1842,13 @@ switch (scene)
         break;
     
     case 172:
-        if (cutscene_npc_action_sprite(1161, 2780, 1, false, 0))
+        if (cutscene_npc_action_sprite(obj_ceroba_npc, spr_pacifist_ending_group_unhug_ceroba, 1, false, 0))
             obj_starlo_npc.image_alpha = 1;
         
         break;
     
     case 173:
-        cutscene_npc_walk(1161, obj_ceroba_npc.x, 310, 3, "y", "up");
+        cutscene_npc_walk(obj_ceroba_npc, obj_ceroba_npc.x, 310, 3, "y", "up");
         break;
     
     case 174:
@@ -1844,13 +1856,13 @@ switch (scene)
         break;
     
     case 175:
-        if (cutscene_npc_action_sprite(1169, 3112, 1, false, 0))
+        if (cutscene_npc_action_sprite(obj_starlo_npc, spr_pacifist_ending_group_unhug_starlo, 1, false, 0))
             obj_martlet_npc.image_alpha = 1;
         
         break;
     
     case 176:
-        cutscene_npc_walk(1169, 210, obj_starlo_npc.y, 3, "y", "left");
+        cutscene_npc_walk(obj_starlo_npc, 210, obj_starlo_npc.y, 3, "y", "left");
         break;
     
     case 177:
@@ -1858,13 +1870,13 @@ switch (scene)
         break;
     
     case 178:
-        if (cutscene_npc_action_sprite(1164, 1643, 1, false, 0))
+        if (cutscene_npc_action_sprite(obj_martlet_npc, spr_pacifist_ending_group_unhug_martlet, 1, false, 0))
             obj_player_npc.image_alpha = 1;
         
         break;
     
     case 179:
-        cutscene_npc_walk(1164, 132, 269, 3, "y", "right");
+        cutscene_npc_walk(obj_martlet_npc, 132, 269, 3, "y", "right");
         break;
     
     case 180:
@@ -1879,23 +1891,23 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Well...\t";
             message[1] = "* I understand if you two#  don't want to be here#  for...";
             message[2] = "* You know.";
-            prt[0] = 377;
-            prt[1] = 394;
-            prt[2] = 370;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_disapproving;
+            prt[2] = spr_portrait_ceroba_neutral;
         }
         
         break;
     
     case 182:
-        cutscene_npc_walk(1169, 189, obj_ceroba_npc.y, 2, "x", "left");
+        cutscene_npc_walk(obj_starlo_npc, 189, obj_ceroba_npc.y, 2, "x", "left");
         break;
     
     case 183:
-        cutscene_npc_direction(1161, "right");
+        cutscene_npc_direction(obj_ceroba_npc, "right");
         break;
     
     case 184:
@@ -1907,22 +1919,22 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
-            talker[1] = 1161;
+            talker[0] = obj_starlo_npc;
+            talker[1] = obj_ceroba_npc;
             message[0] = "* Do you have what you#  need?";
             message[1] = "* I do.";
-            prt[0] = 416;
-            prt[1] = 370;
+            prt[0] = spr_portrait_starlo_hurt;
+            prt[1] = spr_portrait_ceroba_neutral;
         }
         
         break;
     
     case 186:
-        cutscene_npc_walk(1161, obj_ceroba_npc.x, 330, 1, "y", "up");
+        cutscene_npc_walk(obj_ceroba_npc, obj_ceroba_npc.x, 330, 1, "y", "up");
         break;
     
     case 187:
-        if (cutscene_npc_walk(1169, 191, 269, 2, "y", "left"))
+        if (cutscene_npc_walk(obj_starlo_npc, 191, 269, 2, "y", "left"))
         {
             obj_player_npc.npc_direction = "right";
             obj_martlet_npc.npc_direction = "right";
@@ -1939,11 +1951,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
-            message[0] = "* Guess the suns getting#  low.";
+            talker[0] = obj_starlo_npc;
+            message[0] = "* Guess the sun's getting#  low.";
             message[1] = "* I'll... see you around,#  partner.";
-            prt[0] = 416;
-            prt[1] = 418;
+            prt[0] = spr_portrait_starlo_hurt;
+            prt[1] = spr_portrait_starlo_plain;
         }
         
         break;
@@ -1954,7 +1966,7 @@ switch (scene)
     
     case 191:
         obj_player_npc.image_alpha = 0;
-        cutscene_npc_action_sprite(1169, 844, 1, true, 0);
+        cutscene_npc_action_sprite(obj_starlo_npc, spr_pacifist_ending_starlo_take_gun, 1, true, 0);
         
         if (obj_starlo_npc.sprite_index == spr_pacifist_ending_starlo_take_gun && obj_starlo_npc.image_index >= 12)
         {
@@ -1970,7 +1982,7 @@ switch (scene)
     
     case 193:
         obj_starlo_npc.image_speed = 1;
-        cutscene_npc_action_sprite(1169, 844, 1, true, 0);
+        cutscene_npc_action_sprite(obj_starlo_npc, spr_pacifist_ending_starlo_take_gun, 1, true, 0);
         
         if (obj_starlo_npc.sprite_index == spr_pacifist_ending_starlo_take_gun && obj_starlo_npc.image_index >= 20)
         {
@@ -1991,17 +2003,17 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
+            talker[0] = obj_starlo_npc;
             message[0] = "* ...";
             message[1] = "* You got a receipt for#  that?";
-            prt[0] = 416;
-            prt[1] = 415;
+            prt[0] = spr_portrait_starlo_hurt;
+            prt[1] = spr_portrait_starlo_hidden;
         }
         
         break;
     
     case 196:
-        if (cutscene_npc_action_sprite(1169, 844, 1, false, 0))
+        if (cutscene_npc_action_sprite(obj_starlo_npc, spr_pacifist_ending_starlo_take_gun, 1, false, 0))
         {
             obj_player_npc.image_alpha = 1;
             obj_starlo_npc.action_sprite = false;
@@ -2019,9 +2031,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
+            talker[0] = obj_starlo_npc;
             message[0] = "* Thanks, kid.";
-            prt[0] = 418;
+            prt[0] = spr_portrait_starlo_plain;
         }
         
         break;
@@ -2031,7 +2043,7 @@ switch (scene)
         break;
     
     case 199:
-        cutscene_npc_walk(1169, 190, 330, 2, "y", "up");
+        cutscene_npc_walk(obj_starlo_npc, 190, 330, 2, "y", "up");
         
         if (obj_starlo_npc.y > (obj_player_npc.y + 15))
             obj_player_npc.npc_direction = "down";
@@ -2056,11 +2068,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Goodbye, Clover.";
             message[1] = "* You've changed my life.#  Truly.";
-            prt[0] = 317;
-            prt[1] = 320;
+            prt[0] = spr_martlet_head_downer;
+            prt[1] = spr_martlet_head_melancholic;
         }
         
         break;
@@ -2071,7 +2083,7 @@ switch (scene)
     
     case 205:
         obj_player_npc.image_alpha = 0;
-        cutscene_npc_action_sprite(1164, 3281, 1, true, 0);
+        cutscene_npc_action_sprite(obj_martlet_npc, spr_pacifist_ending_martlet_take_hat, 1, true, 0);
         
         if (obj_martlet_npc.sprite_index == spr_pacifist_ending_martlet_take_hat && obj_martlet_npc.image_index >= 23)
         {
@@ -2090,11 +2102,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* Heh...";
             message[1] = "* How will I know you're#  a human now, huh?";
-            prt[0] = 320;
-            prt[1] = 320;
+            prt[0] = spr_martlet_head_melancholic;
+            prt[1] = spr_martlet_head_melancholic;
         }
         
         break;
@@ -2106,7 +2118,7 @@ switch (scene)
     case 209:
         obj_martlet_npc.image_speed = 1;
         
-        if (cutscene_npc_action_sprite(1164, 3281, 1, true, 0))
+        if (cutscene_npc_action_sprite(obj_martlet_npc, spr_pacifist_ending_martlet_take_hat, 1, true, 0))
         {
             obj_player_npc.left_sprite = spr_pacifist_ending_clover_hatless_left;
             obj_player_npc.left_sprite_idle = spr_pacifist_ending_clover_hatless_left;
@@ -2127,9 +2139,9 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* This means a lot.";
-            prt[0] = 320;
+            prt[0] = spr_martlet_head_melancholic;
         }
         
         break;
@@ -2143,13 +2155,13 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1164;
+            talker[0] = obj_martlet_npc;
             message[0] = "* I'm sorry the world is#  like this...";
             message[1] = "* But people like you#  make it better.";
             message[2] = "* Thank you.";
-            prt[0] = 315;
-            prt[1] = 317;
-            prt[2] = 320;
+            prt[0] = spr_martlet_head_disappointed;
+            prt[1] = spr_martlet_head_downer;
+            prt[2] = spr_martlet_head_melancholic;
         }
         
         break;
@@ -2159,7 +2171,7 @@ switch (scene)
         break;
     
     case 214:
-        cutscene_npc_walk(1164, obj_martlet_npc.x, 330, 2, "y", "right");
+        cutscene_npc_walk(obj_martlet_npc, obj_martlet_npc.x, 330, 2, "y", "right");
         
         if (obj_martlet_npc.y > (obj_player_npc.y + 20))
             obj_player_npc.npc_direction = "down";
@@ -2167,7 +2179,7 @@ switch (scene)
         break;
     
     case 215:
-        cutscene_npc_direction(1161, "left");
+        cutscene_npc_direction(obj_ceroba_npc, "left");
         break;
     
     case 216:
@@ -2175,11 +2187,11 @@ switch (scene)
         break;
     
     case 217:
-        cutscene_npc_walk(1161, 160, 310, 3, "y", "down");
+        cutscene_npc_walk(obj_ceroba_npc, 160, 310, 3, "y", "down");
         break;
     
     case 218:
-        cutscene_npc_walk(1164, 160, 440, 2, "x", "down");
+        cutscene_npc_walk(obj_martlet_npc, 160, 440, 2, "x", "down");
         
         if (obj_martlet_npc.y > (obj_starlo_npc.y + 20))
             obj_starlo_npc.npc_direction = "down";
@@ -2191,7 +2203,7 @@ switch (scene)
         break;
     
     case 220:
-        cutscene_npc_walk(1169, 160, 330, 3, "y", "up");
+        cutscene_npc_walk(obj_starlo_npc, 160, 330, 3, "y", "up");
         break;
     
     case 221:
@@ -2199,18 +2211,18 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1169;
+            talker[0] = obj_starlo_npc;
             message[0] = "* We'll... ";
             message[1] = "* We'll be outside.";
-            prt[0] = 416;
-            prt[1] = 420;
+            prt[0] = spr_portrait_starlo_hurt;
+            prt[1] = spr_portrait_starlo_sad;
         }
         
         break;
     
     case 222:
         scr_audio_fade_out(cutscene_music, 1000);
-        cutscene_npc_walk(1169, 160, 440, 2, "y", "down");
+        cutscene_npc_walk(obj_starlo_npc, 160, 440, 2, "y", "down");
         break;
     
     case 223:
@@ -2222,11 +2234,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* You've gained my#  respect.";
             message[1] = "* I mean it.";
-            prt[0] = 377;
-            prt[1] = 370;
+            prt[0] = spr_portrait_ceroba_closed_eyes;
+            prt[1] = spr_portrait_ceroba_neutral;
             
             if (message_current == 1)
                 obj_ceroba_npc.npc_direction = "up";
@@ -2239,7 +2251,7 @@ switch (scene)
         break;
     
     case 226:
-        cutscene_npc_walk(1161, 160, 300, 0.5, "x", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 160, 300, 0.5, "x", "up");
         break;
     
     case 227:
@@ -2247,7 +2259,7 @@ switch (scene)
         break;
     
     case 228:
-        cutscene_npc_action_sprite(1161, 3215, 1, true, 0);
+        cutscene_npc_action_sprite(obj_ceroba_npc, spr_pacifist_ending_ceroba_capsule, 1, true, 0);
         break;
     
     case 229:
@@ -2275,8 +2287,8 @@ switch (scene)
         break;
     
     case 234:
-        soul = instance_create_depth(160, 272, depth - 2, obj_newhome_03_cutscene_clover_soul);
-        soul_canister = instance_create_depth(161, 272, depth - 1, obj_newhome_03_cutscene_clover_soul_capsule);
+        var soul = instance_create_depth(160, 272, depth - 2, obj_newhome_03_cutscene_clover_soul);
+        var soul_canister = instance_create_depth(161, 272, depth - 1, obj_newhome_03_cutscene_clover_soul_capsule);
         soul.image_alpha = 0;
         soul.scene = 3;
         soul.image_xscale = 1;
@@ -2361,7 +2373,7 @@ switch (scene)
         break;
     
     case 251:
-        cutscene_npc_walk(1161, 160, 320, 0.5, "y", "up");
+        cutscene_npc_walk(obj_ceroba_npc, 160, 320, 0.5, "y", "up");
         break;
     
     case 252:
@@ -2373,11 +2385,11 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* Do you...";
             message[1] = "* ...want me to stay?";
-            prt[0] = 609;
-            prt[1] = 609;
+            prt[0] = spr_portrait_ceroba_sorrowful;
+            prt[1] = spr_portrait_ceroba_sorrowful;
             ch_msg = 1;
             ch[1] = "...";
             
@@ -2449,15 +2461,15 @@ switch (scene)
         
         with (msg)
         {
-            talker[0] = 1161;
+            talker[0] = obj_ceroba_npc;
             message[0] = "* ...";
             message[1] = "* Very well.";
             message[2] = "* This won't be#  forgotten.";
             message[3] = "* Goodbye, Clover.";
-            prt[0] = 609;
-            prt[1] = 2987;
-            prt[2] = 2987;
-            prt[3] = 609;
+            prt[0] = spr_portrait_ceroba_sorrowful;
+            prt[1] = spr_portrait_ceroba_mourning;
+            prt[2] = spr_portrait_ceroba_mourning;
+            prt[3] = spr_portrait_ceroba_sorrowful;
         }
         
         break;
@@ -2467,7 +2479,7 @@ switch (scene)
         break;
     
     case 261:
-        cutscene_npc_walk(1161, 160, 440, 1, "y", "down");
+        cutscene_npc_walk(obj_ceroba_npc, 160, 440, 1, "y", "down");
         break;
     
     case 262:
@@ -2475,7 +2487,7 @@ switch (scene)
         break;
     
     case 263:
-        cutscene_npc_action_sprite(1168, 380, 0, true, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_clover_wobbly, 0, true, 0);
         audio_play_sound(snd_hurt, 1, 0);
         scr_screenshake(6, 2);
         cutscene_advance();
@@ -2487,7 +2499,7 @@ switch (scene)
     
     case 265:
         obj_player_npc.image_speed = 1;
-        cutscene_npc_action_sprite(1168, 380, 1, true, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_clover_wobbly, 1, true, 0);
         break;
     
     case 266:
@@ -2538,7 +2550,7 @@ switch (scene)
         break;
     
     case 269:
-        cutscene_npc_action_sprite(1168, 803, 1, true, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_clover_crawl, 1, true, 0);
         obj_player_npc.action_sprite_stop = false;
         cutscene_advance();
         break;
@@ -2562,7 +2574,7 @@ switch (scene)
         break;
     
     case 271:
-        cutscene_npc_action_sprite(1168, 3440, 1, true, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_clover_crawl_wall, 1, true, 0);
         break;
     
     case 272:
@@ -2570,7 +2582,7 @@ switch (scene)
         break;
     
     case 273:
-        cutscene_npc_action_sprite(1168, 3537, 1, true, 0);
+        cutscene_npc_action_sprite(obj_player_npc, spr_pacifist_ending_clover_death, 1, true, 0);
         break;
     
     case 274:

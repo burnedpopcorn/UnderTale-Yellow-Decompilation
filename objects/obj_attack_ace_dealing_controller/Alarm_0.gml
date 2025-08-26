@@ -1,6 +1,4 @@
-var inactive_card;
-
-inactive_card = irandom_range(1, 8);
+var inactive_card = irandom_range(1, 8);
 
 with (obj_attack_ace_dealing_cards)
 {

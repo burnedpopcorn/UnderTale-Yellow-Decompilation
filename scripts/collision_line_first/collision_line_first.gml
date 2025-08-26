@@ -1,17 +1,15 @@
-function collision_line_first(argument0, argument1, argument2, argument3, argument4, argument5, argument6)
+function collision_line_first(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
 {
-    var ox, oy, dx, dy, object, prec, notme, sx, sy, inst, i;
-    
-    ox = argument0;
-    oy = argument1;
-    dx = argument2;
-    dy = argument3;
-    object = argument4;
-    prec = argument5;
-    notme = argument6;
-    sx = dx - ox;
-    sy = dy - oy;
-    inst = collision_line(ox, oy, dx, dy, object, prec, notme);
+    var ox = arg0;
+    var oy = arg1;
+    var dx = arg2;
+    var dy = arg3;
+    var object = arg4;
+    var prec = arg5;
+    var notme = arg6;
+    var sx = dx - ox;
+    var sy = dy - oy;
+    var inst = collision_line(ox, oy, dx, dy, object, prec, notme);
     
     if (inst != -4)
     {
@@ -19,7 +17,7 @@ function collision_line_first(argument0, argument1, argument2, argument3, argume
         {
             sx /= 2;
             sy /= 2;
-            i = collision_line(ox, oy, dx, dy, object, prec, notme);
+            var i = collision_line(ox, oy, dx, dy, object, prec, notme);
             
             if (i)
             {

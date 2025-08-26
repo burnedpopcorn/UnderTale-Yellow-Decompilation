@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b544c516-5df1-421f-93e6-57d1218bcada",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"30cf559b-b09f-4b66-8e5c-d4de28d631f2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cef90e63-9b41-46a6-bceb-646d5956d493",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2671ee33-5659-4cf6-a108-43cdc2461e0e",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 18,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"37ee1d5c-0114-44bf-ac8b-7fdd74b9a6bd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b81f0297-6633-4e8e-b1b7-8cbbf733beed","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b544c516-5df1-421f-93e6-57d1218bcada","path":"sprites/spr_npc_frostermit_dunes/spr_npc_frostermit_dunes.yy",},},},"Disabled":false,"id":"5e5c30ea-ccd9-4e09-a16b-d3dd8718bb59","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"30cf559b-b09f-4b66-8e5c-d4de28d631f2","path":"sprites/spr_npc_frostermit_dunes/spr_npc_frostermit_dunes.yy",},},},"Disabled":false,"id":"e9150277-5fb0-4da6-b362-068936ad1f85","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cef90e63-9b41-46a6-bceb-646d5956d493","path":"sprites/spr_npc_frostermit_dunes/spr_npc_frostermit_dunes.yy",},},},"Disabled":false,"id":"dff86d27-1ca1-4371-ab88-ba5e12ca6917","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2671ee33-5659-4cf6-a108-43cdc2461e0e","path":"sprites/spr_npc_frostermit_dunes/spr_npc_frostermit_dunes.yy",},},},"Disabled":false,"id":"b8a1b6db-7904-48e9-8636-10292365e72c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Dunes",
+    "path": "texturegroups/Dunes",
   },
   "type": 0,
   "VTile": false,

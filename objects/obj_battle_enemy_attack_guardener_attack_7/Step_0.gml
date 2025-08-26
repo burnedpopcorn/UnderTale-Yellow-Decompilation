@@ -1,15 +1,13 @@
-var box, xx, yy, launch_dir_new, dir_new, arm;
-
 if (live_call())
     return global.live_result;
 
-box = 3154;
+var box = obj_dialogue_box_battle_transformation_any;
 
 switch (scene)
 {
     case 0:
-        xx = choose(box.bbox_left + 40, box.bbox_right - 40);
-        yy = choose(box.bbox_top + 40, box.bbox_bottom - 40);
+        var xx = choose(box.bbox_left + 40, box.bbox_right - 40);
+        var yy = choose(box.bbox_top + 40, box.bbox_bottom - 40);
         
         if (place_free(xx, yy))
         {
@@ -24,6 +22,8 @@ switch (scene)
         break;
     
     case 2:
+        var yy, launch_dir_new, dir_new;
+        
         if (gear_current.y < box.y)
         {
             launch_dir_new = "up";
@@ -37,8 +37,8 @@ switch (scene)
             yy = box.bbox_top - 5;
         }
         
-        xx = gear_current.x;
-        arm = instance_create_depth(xx, yy, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_arm);
+        var xx = gear_current.x;
+        var arm = instance_create_depth(xx, yy, obj_heart_battle_fighting_parent.depth - 1, obj_battle_enemy_attack_guardener_arm);
         arm.launch_dir = launch_dir_new;
         arm.image_angle = dir_new;
         arm.arm_return = 10;

@@ -1,6 +1,6 @@
 swit = false;
 
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     if (place_meeting(x, y, obj_mc_cart))
     {

@@ -1,5 +1,3 @@
-var can_trail;
-
 if (live_call())
     return global.live_result;
 
@@ -64,7 +62,7 @@ if (instance_exists(obj_heart_battle_effect_glow))
 
 if (moveable == true && global.current_sp_self > 0)
 {
-    can_trail = false;
+    var can_trail = false;
     trail_cc_current += 1;
     
     if (trail_cc_current >= trail_cc_max)
@@ -86,7 +84,7 @@ if (moveable == true && global.current_sp_self > 0)
     }
 }
 
-if (keyboard_multicheck_pressed(0) && sprite_index == spr_heart_yellow_up && can_shoot == true)
+if (keyboard_multicheck_pressed(vk_nokey) && sprite_index == spr_heart_yellow_up && can_shoot == true)
 {
     sprite_index = spr_heart_yellow_shoot;
     image_index = 0;

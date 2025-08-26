@@ -6,7 +6,7 @@ letter_current = 1;
 letter_waiter = 0;
 line_current = 0;
 letter_speed = 1;
-sndfnt = 391;
+sndfnt = snd_talk_default;
 message[0] = "";
 message_current = 0;
 message_advance = false;
@@ -25,7 +25,7 @@ if (instance_exists(obj_pl))
 can_skip = false;
 can_draw = false;
 text_x[1] = 30;
-text_col = c_white;
+text_col = 16777215;
 text_x_mod = 0;
 text_y_mod = 0;
 mode = "swirl";

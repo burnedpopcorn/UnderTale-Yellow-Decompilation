@@ -1,4 +1,4 @@
-if (scr_interact() && keyboard_multicheck_pressed(0))
+if (scr_interact() && keyboard_multicheck_pressed(vk_nokey))
 {
     if (waiter == 0)
     {
@@ -53,5 +53,5 @@ if (waiter == 1)
 if (scene == 1)
 {
     instance_create(0, 0, obj_steamworks_chute_travel_effect);
-    cutscene_change_room(206, 150, 148, 0.1);
+    cutscene_change_room(rm_steamworks_36, 150, 148, 0.1);
 }

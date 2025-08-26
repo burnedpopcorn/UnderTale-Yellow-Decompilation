@@ -5,7 +5,7 @@ if (!instance_exists(obj_dialogue))
 
 with (msg)
 {
-    sndfnt = 99;
+    sndfnt = sndfnt_default;
     message[0] = "* The Micro Froggits are waving#  goodbye.";
     portrait = false;
 }

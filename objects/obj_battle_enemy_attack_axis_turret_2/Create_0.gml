@@ -1,9 +1,7 @@
-var battle_box;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
+var battle_box = obj_dialogue_box_battle_transformation_any;
 image_angle = point_direction(x, y, battle_box.x, battle_box.y);
 image_alpha = 0;
 image_speed = 0;

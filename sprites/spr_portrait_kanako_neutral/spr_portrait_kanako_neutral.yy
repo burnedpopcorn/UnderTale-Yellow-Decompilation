@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9ffa7c0e-308c-4476-8729-50ff3265f43b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9eef6751-2368-42c5-bcb1-89ecc0aba27e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"371e0cf4-deeb-45df-b91a-bcd45a3dbca8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1fb1eef5-9397-4a7c-9e8a-16043da7e087",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 106,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"170f7640-1e23-42cd-bc5f-afb991d1bc29","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"132eb83a-58e5-4444-8a0e-db94eaebac40","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,9 +54,9 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9ffa7c0e-308c-4476-8729-50ff3265f43b","path":"sprites/spr_portrait_kanako_neutral/spr_portrait_kanako_neutral.yy",},},},"Disabled":false,"id":"1fc138a6-5a58-4c37-9083-dd68443ea344","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9eef6751-2368-42c5-bcb1-89ecc0aba27e","path":"sprites/spr_portrait_kanako_neutral/spr_portrait_kanako_neutral.yy",},},},"Disabled":false,"id":"2a56065b-64fb-4ae8-8037-7f5fb25466ce","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"371e0cf4-deeb-45df-b91a-bcd45a3dbca8","path":"sprites/spr_portrait_kanako_neutral/spr_portrait_kanako_neutral.yy",},},},"Disabled":false,"id":"1c9ce994-8ffd-4412-837a-e243a1c1e02b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1fb1eef5-9397-4a7c-9e8a-16043da7e087","path":"sprites/spr_portrait_kanako_neutral/spr_portrait_kanako_neutral.yy",},},},"Disabled":false,"id":"bb31e78e-8344-409d-8b06-224ffd9462ed","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -67,8 +67,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Mansion",
+    "path": "texturegroups/Mansion",
   },
   "type": 0,
   "VTile": false,

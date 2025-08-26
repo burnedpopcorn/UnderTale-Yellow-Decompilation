@@ -1,8 +1,6 @@
 function scr_enemy_attack_rorrim_mirror()
 {
-    var distance_y;
-    
-    distance_y = 10;
+    var distance_y = 10;
     global.attack_counter_max = 30;
     
     if (global.attack_counter == 0)

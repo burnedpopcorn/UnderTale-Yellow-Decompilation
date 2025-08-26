@@ -1,10 +1,8 @@
-var battle_box, type;
-
 if (live_call())
     return global.live_result;
 
-battle_box = 3154;
-type = choose(1, 2, 3);
+var battle_box = obj_dialogue_box_battle_transformation_any;
+var type = choose(1, 2, 3);
 
 switch (type)
 {

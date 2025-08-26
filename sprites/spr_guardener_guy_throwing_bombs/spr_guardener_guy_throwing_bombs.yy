@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1f4ddbe7-9145-445f-91e7-a5ff6214bcf6",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e88e9056-ba66-40dc-b225-995c2b9f7be5",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"db2d1955-9a40-4634-b9f0-1b652f0777ac",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e125847d-fe0b-47f1-abf7-45feb0e07854",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"25256071-a7e1-4430-8d0c-fa160948f3ad",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"286fe160-72cc-4ad7-9541-7954d6069b1d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 31,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cbbb0f6f-adcf-4a15-9d6a-f0d8b0d5f7c4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"80a93632-a2ba-407d-ab17-a98c3409967e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,10 +55,10 @@
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1f4ddbe7-9145-445f-91e7-a5ff6214bcf6","path":"sprites/spr_guardener_guy_throwing_bombs/spr_guardener_guy_throwing_bombs.yy",},},},"Disabled":false,"id":"dacee24e-61df-4687-841d-048918f762e2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e88e9056-ba66-40dc-b225-995c2b9f7be5","path":"sprites/spr_guardener_guy_throwing_bombs/spr_guardener_guy_throwing_bombs.yy",},},},"Disabled":false,"id":"f200f380-d061-4a75-b5a9-e0a405ab2cac","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"db2d1955-9a40-4634-b9f0-1b652f0777ac","path":"sprites/spr_guardener_guy_throwing_bombs/spr_guardener_guy_throwing_bombs.yy",},},},"Disabled":false,"id":"5d0283ca-35cc-49fe-bd43-4b3d9fee5b96","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":-1,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e125847d-fe0b-47f1-abf7-45feb0e07854","path":"sprites/spr_guardener_guy_throwing_bombs/spr_guardener_guy_throwing_bombs.yy",},},},"Disabled":false,"id":"62492914-e6a2-417d-a592-4379069da212","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"25256071-a7e1-4430-8d0c-fa160948f3ad","path":"sprites/spr_guardener_guy_throwing_bombs/spr_guardener_guy_throwing_bombs.yy",},},},"Disabled":false,"id":"93401a8e-d396-4200-937d-0a4b10fb934d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"286fe160-72cc-4ad7-9541-7954d6069b1d","path":"sprites/spr_guardener_guy_throwing_bombs/spr_guardener_guy_throwing_bombs.yy",},},},"Disabled":false,"id":"d630c044-e08c-4193-ab99-19bb6b270398","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -69,8 +69,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "BattleSteamworks",
+    "path": "texturegroups/BattleSteamworks",
   },
   "type": 0,
   "VTile": false,

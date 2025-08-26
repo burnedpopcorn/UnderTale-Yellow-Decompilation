@@ -1,5 +1,3 @@
-var item_number, i, current_item, mail_number, current_mail;
-
 if (live_call())
     return global.live_result;
 
@@ -21,10 +19,10 @@ if (!inventory_open && !stats_open && !mail_open && !item_drop)
         audio_play_sound(snd_mainmenu_select, 1, 0);
     }
     
-    if (keyboard_multicheck_pressed(1) || keyboard_multicheck_pressed(2))
+    if (keyboard_multicheck_pressed(vk_anykey) || keyboard_multicheck_pressed(2))
         instance_destroy();
     
-    if (keyboard_multicheck_pressed(0))
+    if (keyboard_multicheck_pressed(vk_nokey))
     {
         switch (choice[selection])
         {
@@ -69,7 +67,7 @@ if (!inventory_open && !stats_open && !mail_open && !item_drop)
 }
 else if (stats_open)
 {
-    if (keyboard_multicheck_pressed(1))
+    if (keyboard_multicheck_pressed(vk_anykey))
     {
         audio_play_sound(snd_mainmenu_select, 1, 0);
         stats_open = false;
@@ -77,9 +75,9 @@ else if (stats_open)
 }
 else if (inventory_open && !item_inspect)
 {
-    item_number = 8;
+    var item_number = 8;
     
-    for (i = 1; i <= 8; i++)
+    for (var i = 1; i <= 8; i++)
     {
         if (global.item_slot[i] == "Nothing")
         {
@@ -108,13 +106,13 @@ else if (inventory_open && !item_inspect)
         audio_play_sound(snd_mainmenu_select, 1, 0);
     }
     
-    if (keyboard_multicheck_pressed(0))
+    if (keyboard_multicheck_pressed(vk_nokey))
     {
         item_inspect = true;
         selection = 1;
         audio_play_sound(snd_confirm, 1, 0);
     }
-    else if (keyboard_multicheck_pressed(1))
+    else if (keyboard_multicheck_pressed(vk_anykey))
     {
         audio_play_sound(snd_mainmenu_select, 1, 0);
         inventory_open = false;
@@ -142,9 +140,9 @@ else if (item_inspect == true)
             selection = 3;
     }
     
-    current_item = global.item_slot[item_selected];
+    var current_item = global.item_slot[item_selected];
     
-    if (keyboard_multicheck_pressed(0))
+    if (keyboard_multicheck_pressed(vk_nokey))
     {
         switch (selection)
         {
@@ -166,7 +164,7 @@ else if (item_inspect == true)
         }
     }
     
-    if (keyboard_multicheck_pressed(1))
+    if (keyboard_multicheck_pressed(vk_anykey))
     {
         audio_play_sound(snd_mainmenu_select, 1, 0);
         item_inspect = false;
@@ -176,7 +174,7 @@ else if (mail_open)
 {
     if (!mail_inspect)
     {
-        mail_number = ds_list_size(global.mail_list) - 1;
+        var mail_number = ds_list_size(global.mail_list) - 1;
         
         if (global.down_keyp)
         {
@@ -198,14 +196,14 @@ else if (mail_open)
             audio_play_sound(snd_mainmenu_select, 1, 0);
         }
         
-        if (keyboard_multicheck_pressed(0))
+        if (keyboard_multicheck_pressed(vk_nokey))
         {
             mail_inspect = true;
             selection = 1;
             audio_play_sound(snd_confirm, 1, 0);
         }
         
-        if (keyboard_multicheck_pressed(1))
+        if (keyboard_multicheck_pressed(vk_anykey))
         {
             audio_play_sound(snd_mainmenu_select, 1, 0);
             mail_open = false;
@@ -241,15 +239,15 @@ else if (mail_open)
                 selection = 3;
         }
         
-        current_mail = ds_list_find_value(global.mail_list, mail_selected + mail_offset);
+        var current_mail = ds_list_find_value(global.mail_list, mail_selected + mail_offset);
         
-        if (keyboard_multicheck_pressed(1))
+        if (keyboard_multicheck_pressed(vk_anykey))
         {
             audio_play_sound(snd_mainmenu_select, 1, 0);
             mail_inspect = false;
         }
         
-        if (keyboard_multicheck_pressed(0))
+        if (keyboard_multicheck_pressed(vk_nokey))
         {
             switch (selection)
             {
