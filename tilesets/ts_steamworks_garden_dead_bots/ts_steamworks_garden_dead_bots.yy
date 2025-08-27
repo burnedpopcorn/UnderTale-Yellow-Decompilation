@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Steamworks",
+    "path": "folders/Tile Sets/Steamworks.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_steamworks_garden_dead_bots",
@@ -24,7 +24,7 @@
     "name": "Steamworks",
     "path": "texturegroups/Steamworks",
   },
-  "tile_count": 32,
+  "tile_count": 36,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -59,6 +59,10 @@
       29,
       30,
       31,
+      32,
+      33,
+      34,
+      35,
     ],
     "SerialiseFrameCount": 1,
   },

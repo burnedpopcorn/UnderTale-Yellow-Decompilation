@@ -24,8 +24,8 @@
     "Keyframes": [],
   },
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "Ending",
+    "path": "folders/Sequences/Ending.yy",
   },
   "playback": 0,
   "playbackSpeed": 30.0,

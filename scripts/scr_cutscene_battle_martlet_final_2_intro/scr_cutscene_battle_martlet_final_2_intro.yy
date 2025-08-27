@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Battle Cutscenes",
+    "path": "folders/Scripts/General/Cutscenes/Battle Cutscenes.yy",
   },
 }

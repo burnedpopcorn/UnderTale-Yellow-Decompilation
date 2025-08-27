@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Backgrounds",
+    "path": "folders/Objects/Battle/Backgrounds.yy",
   },
   "parentObjectId": {
     "name": "obj_background_el_bailador_parent_yellow",

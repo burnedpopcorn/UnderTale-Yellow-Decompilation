@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Chem Lab",
+    "path": "folders/Tile Sets/Steamworks/Chem Lab.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_chem_compound_new",
@@ -24,7 +24,7 @@
     "name": "Steamworks",
     "path": "texturegroups/Steamworks",
   },
-  "tile_count": 66,
+  "tile_count": 72,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -93,6 +93,12 @@
       63,
       64,
       65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
     ],
     "SerialiseFrameCount": 1,
   },

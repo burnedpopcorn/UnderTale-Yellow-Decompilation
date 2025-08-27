@@ -50,8 +50,8 @@
 -360,176,],"TileDataFormat":1,},"tilesetId":{"name":"ts_steamworks_tileset","path":"tilesets/ts_steamworks_tileset/ts_steamworks_tileset.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Steamworks",
+    "path": "folders/Rooms/Game World/Steamworks.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

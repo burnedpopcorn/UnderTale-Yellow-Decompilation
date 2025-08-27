@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Hotland",
+    "path": "folders/Objects/Level Assets/Hotland.yy",
   },
   "parentObjectId": {
     "name": "obj_dunes_29_geno_blocker",

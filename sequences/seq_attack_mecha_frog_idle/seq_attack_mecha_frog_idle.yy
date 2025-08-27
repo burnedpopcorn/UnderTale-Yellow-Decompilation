@@ -24,8 +24,8 @@
     "Keyframes": [],
   },
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "Attacks",
+    "path": "folders/Sequences/Attacks.yy",
   },
   "playback": 1,
   "playbackSpeed": 30.0,

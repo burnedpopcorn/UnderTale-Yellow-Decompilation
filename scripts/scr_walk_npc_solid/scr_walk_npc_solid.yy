@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Walk AI",
+    "path": "folders/Scripts/General/NPC Scripts/Walk AI.yy",
   },
 }

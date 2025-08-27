@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Mines",
+    "path": "folders/Tile Sets/Mines.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_mine_assets_2_tileset",
@@ -24,7 +24,7 @@
     "name": "Dunes",
     "path": "texturegroups/Dunes",
   },
-  "tile_count": 160,
+  "tile_count": 169,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -187,6 +187,15 @@
       157,
       158,
       159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
     ],
     "SerialiseFrameCount": 1,
   },

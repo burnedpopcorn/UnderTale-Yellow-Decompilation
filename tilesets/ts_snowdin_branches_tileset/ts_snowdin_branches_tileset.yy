@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Snowdin",
+    "path": "folders/Tile Sets/Snowdin.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_snowdin_branches_tileset",

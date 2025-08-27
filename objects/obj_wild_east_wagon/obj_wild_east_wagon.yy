@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Wild East",
+    "path": "folders/Objects/Level Assets/Wild East.yy",
   },
   "parentObjectId": {
     "name": "obj_npc_base",

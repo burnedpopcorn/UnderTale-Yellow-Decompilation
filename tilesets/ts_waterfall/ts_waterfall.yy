@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Waterfall",
+    "path": "folders/Tile Sets/Waterfall.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_waterfall",
@@ -24,7 +24,7 @@
     "name": "BattleHotlandFloweyPhase1",
     "path": "texturegroups/BattleHotlandFloweyPhase1",
   },
-  "tile_count": 360,
+  "tile_count": 361,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -387,6 +387,7 @@
       357,
       358,
       359,
+      360,
     ],
     "SerialiseFrameCount": 1,
   },

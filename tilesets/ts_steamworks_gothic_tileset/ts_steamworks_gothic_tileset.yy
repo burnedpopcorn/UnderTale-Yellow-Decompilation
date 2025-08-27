@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Steamworks",
+    "path": "folders/Tile Sets/Steamworks.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_steamworks_gothic_tileset",
@@ -24,7 +24,7 @@
     "name": "Steamworks",
     "path": "texturegroups/Steamworks",
   },
-  "tile_count": 70,
+  "tile_count": 72,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -97,6 +97,8 @@
       67,
       68,
       69,
+      70,
+      71,
     ],
     "SerialiseFrameCount": 1,
   },

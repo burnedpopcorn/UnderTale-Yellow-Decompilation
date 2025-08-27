@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "sh_flowey_pixelate",
   "parent": {
-    "name": "Shaders",
-    "path": "folders/Shaders.yy",
+    "name": "Flowey",
+    "path": "folders/Shaders/Flowey.yy",
   },
   "type": 1,
 }

@@ -9,8 +9,8 @@
   "managed": false,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Steamworks",
+    "path": "folders/Objects/Level Assets/Steamworks.yy",
   },
   "parentObjectId": null,
   "persistent": false,

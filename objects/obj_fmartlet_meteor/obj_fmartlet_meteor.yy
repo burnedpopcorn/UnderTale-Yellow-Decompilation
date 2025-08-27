@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Martlet Battle",
+    "path": "folders/Objects/Battle/Martlet Battle.yy",
   },
   "parentObjectId": {
     "name": "obj_battle_enemy_attack_parent",

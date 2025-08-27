@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Flowey Battle",
+    "path": "folders/Objects/Battle/Flowey Battle.yy",
   },
   "parentObjectId": {
     "name": "obj_flowey_battle_phase_2_weakpoint_parent",

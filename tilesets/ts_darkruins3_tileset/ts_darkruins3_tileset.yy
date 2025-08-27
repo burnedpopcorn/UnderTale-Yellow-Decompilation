@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Ruins",
+    "path": "folders/Tile Sets/Ruins.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_darkruins3_tileset",
@@ -24,7 +24,7 @@
     "name": "Ruins",
     "path": "texturegroups/Ruins",
   },
-  "tile_count": 75,
+  "tile_count": 81,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -102,6 +102,12 @@
       72,
       73,
       74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
     ],
     "SerialiseFrameCount": 1,
   },

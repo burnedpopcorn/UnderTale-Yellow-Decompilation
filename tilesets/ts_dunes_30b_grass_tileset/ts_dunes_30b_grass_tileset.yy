@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Dunes",
+    "path": "folders/Tile Sets/Dunes.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_dunes_30b_grass_tileset",
@@ -24,7 +24,7 @@
     "name": "Dunes",
     "path": "texturegroups/Dunes",
   },
-  "tile_count": 50,
+  "tile_count": 56,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -77,6 +77,12 @@
       47,
       48,
       49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
     ],
     "SerialiseFrameCount": 1,
   },

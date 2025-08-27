@@ -2314,8 +2314,8 @@
       ],"depth":1000000,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
   ],
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Snowdin",
+    "path": "folders/Rooms/Game World/Snowdin.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

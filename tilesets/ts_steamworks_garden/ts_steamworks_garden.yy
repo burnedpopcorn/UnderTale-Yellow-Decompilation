@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Steamworks",
+    "path": "folders/Tile Sets/Steamworks.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_steamworks_garden",
@@ -24,7 +24,7 @@
     "name": "Steamworks",
     "path": "texturegroups/Steamworks",
   },
-  "tile_count": 525,
+  "tile_count": 529,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -552,6 +552,10 @@
       522,
       523,
       524,
+      525,
+      526,
+      527,
+      528,
     ],
     "SerialiseFrameCount": 1,
   },

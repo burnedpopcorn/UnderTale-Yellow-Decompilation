@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "HP",
+    "path": "folders/Objects/Battle/HP.yy",
   },
   "parentObjectId": {
     "name": "obj_battle_hp_enemy_attacking_parent",

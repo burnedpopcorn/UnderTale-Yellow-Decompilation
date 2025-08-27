@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Snowdin",
+    "path": "folders/Tile Sets/Snowdin.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_snowdin_21_arches_tileset",
@@ -24,7 +24,7 @@
     "name": "Snowdin",
     "path": "texturegroups/Snowdin",
   },
-  "tile_count": 84,
+  "tile_count": 90,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -111,6 +111,12 @@
       81,
       82,
       83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
     ],
     "SerialiseFrameCount": 1,
   },

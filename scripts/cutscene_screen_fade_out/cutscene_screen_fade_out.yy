@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Screen Effects",
+    "path": "folders/Scripts/General/Cutscenes/Screen Effects.yy",
   },
 }

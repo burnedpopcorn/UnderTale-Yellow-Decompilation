@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Talking",
+    "path": "folders/Scripts/General/NPC Scripts/Talking.yy",
   },
 }

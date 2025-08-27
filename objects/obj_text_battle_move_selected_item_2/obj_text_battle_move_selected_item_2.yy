@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Text",
+    "path": "folders/Objects/Battle/Text.yy",
   },
   "parentObjectId": {
     "name": "obj_text_battle_move_selected_item_parent",

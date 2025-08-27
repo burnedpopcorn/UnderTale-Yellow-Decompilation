@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Tiles",
+    "path": "folders/Scripts/Utilities - GMS1 Compatiability/Tiles.yy",
   },
 }

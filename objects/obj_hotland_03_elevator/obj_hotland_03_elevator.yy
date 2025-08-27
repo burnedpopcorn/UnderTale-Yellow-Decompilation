@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Hotland",
+    "path": "folders/Objects/Level Assets/Hotland.yy",
   },
   "parentObjectId": null,
   "persistent": false,

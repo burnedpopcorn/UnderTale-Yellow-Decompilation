@@ -18,8 +18,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Arcade",
+    "path": "folders/Objects/Arcade.yy",
   },
   "parentObjectId": null,
   "persistent": false,

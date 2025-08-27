@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Waterfall",
+    "path": "folders/Tile Sets/Waterfall.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_waterfall_foreground_pillars_tileset",
@@ -24,12 +24,13 @@
     "name": "Waterfall",
     "path": "texturegroups/Waterfall",
   },
-  "tile_count": 3,
+  "tile_count": 4,
   "tileAnimation": {
     "FrameData": [
       0,
       1,
       2,
+      3,
     ],
     "SerialiseFrameCount": 1,
   },

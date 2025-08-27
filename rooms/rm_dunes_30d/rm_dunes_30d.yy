@@ -83,8 +83,8 @@
 -480,404,],"TileDataFormat":1,},"tilesetId":{"name":"ts_dunes_tileset","path":"tilesets/ts_dunes_tileset/ts_dunes_tileset.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Dunes",
+    "path": "folders/Rooms/Game World/Dunes.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Mail Station",
+    "path": "folders/Objects/Level Assets/Mail Station.yy",
   },
   "parentObjectId": null,
   "persistent": false,

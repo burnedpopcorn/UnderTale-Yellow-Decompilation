@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Starlo's House",
+    "path": "folders/Tile Sets/Wild East/Starlo's House.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_starlo_farm_tileset",
@@ -24,7 +24,7 @@
     "name": "WildEast",
     "path": "texturegroups/WildEast",
   },
-  "tile_count": 104,
+  "tile_count": 110,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -131,6 +131,12 @@
       101,
       102,
       103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
     ],
     "SerialiseFrameCount": 1,
   },

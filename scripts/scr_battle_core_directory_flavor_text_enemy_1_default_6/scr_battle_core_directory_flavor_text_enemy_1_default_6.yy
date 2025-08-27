@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Flavor Text",
+    "path": "folders/Scripts/General/Battle Scripts/Flavor Text.yy",
   },
 }

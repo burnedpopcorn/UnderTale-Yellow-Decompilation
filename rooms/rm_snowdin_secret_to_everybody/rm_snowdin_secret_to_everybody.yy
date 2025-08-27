@@ -81,8 +81,8 @@
 -192,69,],"TileDataFormat":1,},"tilesetId":{"name":"ts_snowdin_01_yellow_tileset","path":"tilesets/ts_snowdin_01_yellow_tileset/ts_snowdin_01_yellow_tileset.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Snowdin",
+    "path": "folders/Rooms/Game World/Snowdin.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

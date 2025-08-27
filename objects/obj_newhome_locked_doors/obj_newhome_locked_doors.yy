@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "New Home Cutscene",
+    "path": "folders/Objects/Cutscene/New Home Cutscene.yy",
   },
   "parentObjectId": {
     "name": "obj_npc_base",

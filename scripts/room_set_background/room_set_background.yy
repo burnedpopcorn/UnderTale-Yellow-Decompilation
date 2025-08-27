@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Rooms",
+    "path": "folders/Scripts/Utilities - GMS1 Compatiability/Rooms.yy",
   },
 }

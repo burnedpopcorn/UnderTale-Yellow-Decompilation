@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Wild East",
+    "path": "folders/Tile Sets/Wild East.yy",
   },
   "spriteId": {
     "name": "_decompiled_bg_wild_east_feistyhouse_foreground_tileset",

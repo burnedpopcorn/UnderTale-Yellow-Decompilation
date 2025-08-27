@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Enemy Attacks",
+    "path": "folders/Objects/Battle/Enemy Attacks.yy",
   },
   "parentObjectId": {
     "name": "obj_axis_attack_controller_parent",

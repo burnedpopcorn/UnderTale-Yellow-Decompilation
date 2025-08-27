@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Dunes",
+    "path": "folders/Objects/Level Assets/Dunes.yy",
   },
   "parentObjectId": {
     "name": "obj_interactable",

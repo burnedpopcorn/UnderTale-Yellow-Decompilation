@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Dunes",
+    "path": "folders/Tile Sets/Dunes.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_dunes_2_tileset",

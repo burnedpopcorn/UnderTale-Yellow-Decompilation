@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Chem Lab",
+    "path": "folders/Objects/Level Assets/Chem Lab.yy",
   },
   "parentObjectId": {
     "name": "obj_compound_parent",

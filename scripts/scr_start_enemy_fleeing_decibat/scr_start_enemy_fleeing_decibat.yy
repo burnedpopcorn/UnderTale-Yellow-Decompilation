@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Start Fleeing",
+    "path": "folders/Scripts/General/Battle Scripts/Start Fleeing.yy",
   },
 }

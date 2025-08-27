@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "UI Controls",
+    "path": "folders/Scripts/General/UI Controls.yy",
   },
 }

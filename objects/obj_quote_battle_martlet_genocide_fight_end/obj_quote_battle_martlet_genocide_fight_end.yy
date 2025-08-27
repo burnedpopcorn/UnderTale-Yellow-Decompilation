@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Quote",
+    "path": "folders/Objects/Battle/Quote.yy",
   },
   "parentObjectId": {
     "name": "obj_quote_battle_martlet_genocide_flee_parent",

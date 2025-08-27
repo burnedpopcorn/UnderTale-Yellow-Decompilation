@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Ruins",
+    "path": "folders/Tile Sets/Ruins.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_darkruins_broken_bridge_tileset",

@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Ceroba's House",
+    "path": "folders/Objects/Level Assets/Ceroba's House.yy",
   },
   "parentObjectId": {
     "name": "obj_mansion_chujin_tapes",

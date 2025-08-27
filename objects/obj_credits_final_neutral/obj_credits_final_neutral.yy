@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Credits",
+    "path": "folders/Objects/Cutscene/Credits.yy",
   },
   "parentObjectId": null,
   "persistent": true,

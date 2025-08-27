@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Ruins",
+    "path": "folders/Tile Sets/Ruins.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_ruins_newhome",
@@ -24,7 +24,7 @@
     "name": "newhome",
     "path": "texturegroups/newhome",
   },
-  "tile_count": 128,
+  "tile_count": 132,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -155,6 +155,10 @@
       125,
       126,
       127,
+      128,
+      129,
+      130,
+      131,
     ],
     "SerialiseFrameCount": 1,
   },

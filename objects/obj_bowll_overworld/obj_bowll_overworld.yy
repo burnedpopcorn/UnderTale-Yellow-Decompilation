@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Bowl",
+    "path": "folders/Objects/Battle/Enemies/Bowl.yy",
   },
   "parentObjectId": {
     "name": "obj_npc_base",

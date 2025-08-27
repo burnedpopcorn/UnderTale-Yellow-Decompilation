@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Ceroba Battle",
+    "path": "folders/Objects/Battle/Ceroba Battle.yy",
   },
   "parentObjectId": null,
   "persistent": false,

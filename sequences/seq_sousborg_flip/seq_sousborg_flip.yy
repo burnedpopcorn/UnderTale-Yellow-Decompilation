@@ -28,8 +28,8 @@
     "Keyframes": [],
   },
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "Enemies",
+    "path": "folders/Sequences/Enemies.yy",
   },
   "playback": 0,
   "playbackSpeed": 30.0,

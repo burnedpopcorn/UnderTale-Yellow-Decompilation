@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "sh_reflection",
   "parent": {
-    "name": "Shaders",
-    "path": "folders/Shaders.yy",
+    "name": "Reflection",
+    "path": "folders/Shaders/Reflection.yy",
   },
   "type": 1,
 }

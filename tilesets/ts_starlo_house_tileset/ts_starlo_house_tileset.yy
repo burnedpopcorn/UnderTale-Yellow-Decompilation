@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Starlo's House",
+    "path": "folders/Tile Sets/Wild East/Starlo's House.yy",
   },
   "spriteId": {
     "name": "_decompiled_ts_starlo_house_tileset",

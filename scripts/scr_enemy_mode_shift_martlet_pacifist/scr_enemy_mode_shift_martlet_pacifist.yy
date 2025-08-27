@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Enemy Shift",
+    "path": "folders/Scripts/General/Battle Scripts/Enemy Shift.yy",
   },
 }

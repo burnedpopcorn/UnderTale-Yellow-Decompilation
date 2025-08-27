@@ -28,8 +28,8 @@
       ],"userdefinedDepth":false,"visible":true,},
   ],
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Flowley Playable Flashbacks",
+    "path": "folders/Rooms/Battle/Flowey Battle/Flowley Playable Flashbacks.yy",
   },
   "parentRoom": null,
   "physicsSettings": {
